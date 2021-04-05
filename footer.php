@@ -154,7 +154,7 @@
 							</div>
 					</div>
 					<div class="copyright">
-							<span>&copy;2020 VirgoCX Inc. MSB (FINTRAC): M19955733
+							<span>&copy;2019-2021 VirgoCX Inc. MSB (FINTRAC): M19955733
 							&nbsp; &nbsp;<img src="<?= get_template_directory_uri() ?>/img/canada2x.png" alt="canada flag" width="20" /> Proudly made in Canada</span>
 					</div>
 			</div>
