@@ -1,0 +1,204 @@
+{
+	"code": 0,
+	"msg": "success",
+	"data": {
+		"quickTradeList": [{
+			"coinId": 2,
+			"marketName": "BTC/CAD",
+			"minTotal": 5.00000000,
+			"maxTotal": 20000.00000000,
+			"marketCoinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/微信图片_20190614162019.png",
+			"priceDecimals": 1,
+			"qtyDecimals": 7,
+			"id": 24,
+			"maxQty": 2.00000000,
+			"marketCoinId": 14,
+			"coinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png",
+			"minQty": 0.00010000
+		}, {
+			"coinId": 1,
+			"marketName": "ETH/CAD",
+			"minTotal": 5.00000000,
+			"maxTotal": 15000.00000000,
+			"marketCoinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/微信图片_20190614162019.png",
+			"priceDecimals": 2,
+			"qtyDecimals": 6,
+			"id": 25,
+			"maxQty": 50.00000000,
+			"marketCoinId": 14,
+			"coinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/ethereum_200_200.png",
+			"minQty": 0.01000000
+		}, {
+			"coinId": 10,
+			"marketName": "USDT/CAD",
+			"minTotal": 5.00000000,
+			"maxTotal": 15000.00000000,
+			"marketCoinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/微信图片_20190614162019.png",
+			"priceDecimals": 4,
+			"qtyDecimals": 3,
+			"id": 26,
+			"maxQty": 10000.00000000,
+			"marketCoinId": 14,
+			"coinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/tether_200_200.png",
+			"minQty": 5.00000000
+		}, {
+			"coinId": 2,
+			"marketName": "BTC/USD",
+			"minTotal": 5.00000000,
+			"maxTotal": 10000.00000000,
+			"marketCoinImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2019/11/04/620324017b4f4f24b5d9ea773c82c47e.png",
+			"priceDecimals": 1,
+			"qtyDecimals": 7,
+			"id": 32,
+			"maxQty": 1.00000000,
+			"marketCoinId": 22,
+			"coinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png",
+			"minQty": 0.00010000
+		}, {
+			"coinId": 10,
+			"marketName": "USDT/USD",
+			"minTotal": 5.00000000,
+			"maxTotal": 10000.00000000,
+			"marketCoinImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2019/11/04/620324017b4f4f24b5d9ea773c82c47e.png",
+			"priceDecimals": 4,
+			"qtyDecimals": 4,
+			"id": 33,
+			"maxQty": 10000.00000000,
+			"marketCoinId": 22,
+			"coinImage": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/tether_200_200.png",
+			"minQty": 5.00000000
+		}],
+		"articleList": [{
+			"id": 110,
+			"cnTitle": "NEW Listing PAXG/CAD\n",
+			"enTitle": "NEW Listing PAXG/CAD\n",
+			"cnSummary": "Get Your Deposit & Trading Bonus Now！",
+			"enSummary": "Get Your Deposit & Trading Bonus Now！",
+			"enImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/10/01/f499b606ed6e4abab0ef8af9518d0c42.png",
+			"cnImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/10/01/fc9b90fe162144d6933c2b3f6a8e6686.png",
+			"url": "https://virgocx.zendesk.com/hc/en-us/articles/360049963992-NEW-Listing-PAXG-CAD-Get-Your-Deposit-Trading-Bonus-Now-",
+			"status": 1,
+			"createTime": 1601562389000,
+			"updateTime": 1601562389000,
+			"sort": 0
+		}, {
+			"id": 107,
+			"cnTitle": "Top 7 Best Canadian Cryptocurrency Trading Platforms",
+			"enTitle": "Top 7 Best Canadian Cryptocurrency Trading Platforms",
+			"cnSummary": "VirgoCX Named Top 7 Best Canadian Cryptocurrency Trading Platforms 2020 by Blockgeeks. Come to check it out!",
+			"enSummary": "VirgoCX Named Top 7 Best Canadian Cryptocurrency Trading Platforms 2020 by Blockgeeks. Come to check it out!",
+			"enImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/05/06/f2e3d5a7348140ec9749c965d0cfb250.png",
+			"cnImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/05/06/18705dd4cecd4ce6bbc509c1a0dc2797.png",
+			"url": "https://blockgeeks.com/best-canadian-cryptocurrency-exchanges/",
+			"status": 1,
+			"createTime": 1588694413000,
+			"updateTime": 1588694872000,
+			"sort": 2
+		}, {
+			"id": 88,
+			"cnTitle": "邀请好友使用VirgoCX，无需充值双方即可获得10加元奖励。",
+			"enTitle": "Refer a friend, and you both earn $10. No deposit required.",
+			"cnSummary": "Refer a friend and you will each receive a $10 CAD credit (“Sign-up Reward”) in your VirgoCX account. No deposit required.",
+			"enSummary": "Refer a friend and you will each receive a $10 CAD credit (“Sign-up Reward”) in your VirgoCX account. No deposit required.",
+			"enImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/03/31/b9d3fc65268a4f21bafa757aa2d76fa6.png",
+			"cnImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/03/31/ae062d088884489d9cfcbb03fefa0dec.png",
+			"url": "https://virgocx.zendesk.com/hc/en-us/articles/360032164511-VirgoCX-Referral-Program",
+			"status": 1,
+			"createTime": 1563442328000,
+			"updateTime": 1585627794000,
+			"sort": 3
+		}, {
+			"id": 101,
+			"cnTitle": "VirgoCX Named as a Top Trading Platform in 2020",
+			"enTitle": "VirgoCX Named as a Top Trading Platform in 2020",
+			"cnSummary": "Top Crypto Trading Platform and Blockchain Companies to Watch for in Canada: 2020 Edition",
+			"enSummary": "Top Crypto Trading Platform and Blockchain Companies to Watch for in Canada: 2020 Edition",
+			"enImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/01/21/545f649447264ed3a304282ea59d4870.png",
+			"cnImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/01/21/750db830ed5c422d882a4e6ea81b73ae.png",
+			"url": "https://hackernoon.com/2020-top-crypto-exchange-and-blockchain-companies-to-watch-for-in-canada-jhr449u",
+			"status": 1,
+			"createTime": 1579511726000,
+			"updateTime": 1583168488000,
+			"sort": 4
+		}, {
+			"id": 102,
+			"cnTitle": "VirgoCX Has a New FX Desk",
+			"enTitle": "VirgoCX Has a New FX Desk",
+			"cnSummary": "The Best Foreign Exchange Rates for Your Money! Get a quote now!",
+			"enSummary": "The Best Foreign Exchange Rates for Your Money! Get a quote now!",
+			"enImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/01/20/e192633756fd46498ffc8618664db778.png",
+			"cnImage": "https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/01/20/c57d73c736d04de984e2adb71a5a6be2.png",
+			"url": "https://virgocx.ca/#/foreignExchange",
+			"status": 1,
+			"createTime": 1579511862000,
+			"updateTime": 1583168502000,
+			"sort": 5
+		}],
+		"indexList": [{
+			"symbol": "BTC/CAD",
+			"sort": 1,
+			"changeRate": "+0.63%",
+			"marketId": 24,
+			"lastPrice": "20161.6",
+			"fullName": "Bitcoin",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png"
+		}, {
+			"symbol": "BTC/USD",
+			"sort": 2,
+			"changeRate": "+0.82%",
+			"marketId": 32,
+			"lastPrice": "15472.9",
+			"fullName": "Bitcoin",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png"
+		}, {
+			"symbol": "USDT/CAD",
+			"sort": 3,
+			"changeRate": "-0.22%",
+			"marketId": 26,
+			"lastPrice": "1.3054",
+			"fullName": "USDT",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/tether_200_200.png"
+		}, {
+			"symbol": "USDT/USD",
+			"sort": 4,
+			"changeRate": "-0.03%",
+			"marketId": 33,
+			"lastPrice": "1.0020",
+			"fullName": "Tether",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png"
+		}, {
+			"symbol": "ETH/CAD",
+			"sort": 5,
+			"changeRate": "-0.41%",
+			"marketId": 25,
+			"lastPrice": "590.17",
+			"fullName": "Tether",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/tether_200_200.png"
+		}, {
+			"symbol": "BCH/CAD",
+			"sort": 6,
+			"changeRate": "-2.10%",
+			"marketId": 29,
+			"lastPrice": "349.4",
+			"fullName": "Bitcore Cash",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png"
+		}, {
+			"symbol": "LTC/CAD",
+			"sort": 7,
+			"changeRate": "-1.55%",
+			"marketId": 30,
+			"lastPrice": "78.69",
+			"fullName": "Litecoin",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png"
+		}, {
+			"symbol": "EOS/CAD",
+			"sort": 8,
+			"changeRate": "-0.84%",
+			"marketId": 31,
+			"lastPrice": "3.2907",
+			"fullName": "EnterpriseOS",
+			"logo": "https://virgocxtest.oss-cn-shenzhen.aliyuncs.com//test/bitcoin_200_200.png"
+		}]
+	},
+	"success": true
+}
