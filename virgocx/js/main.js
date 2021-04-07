@@ -282,6 +282,7 @@
         'xlm/cad': '/page#/advancedTrade/56',
         'usdc/cad': '/page#/advancedTrade/55',
         'dai/cad': '/page#/advancedTrade/58',
+        'uni/cad': '/page#/advancedTrade/59',
         'doge/cad': '/page#/advancedTrade/57',
         'bch/cad': '/page#/advancedTrade/29',
         'btc/usd': '/page#/advancedTrade/32',
