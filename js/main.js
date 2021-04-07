@@ -272,6 +272,7 @@
       // Empty it
       itemsWrapper.innerHTML = '';
 
+	  // 首页交易对设置URL
       const tradingMapping = {
         'btc/cad': '/page#/advancedTrade/24',
         'eth/cad': '/page#/advancedTrade/25',
