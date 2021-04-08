@@ -339,6 +339,15 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     .flipText p{
         margin: 0;
     }
+	
+	.h1-style {
+		font-size: 1.6rem !important; 
+		word-spacing: 2px !important;
+		margin-bottom: 2rem !important;
+		font-weight: 900 !important;
+	}
+	
+	
 </style>
 
 <?php
@@ -395,7 +404,7 @@ if ($totalNumber === 1): ?>
                                     </div>
                                 </div>
                             </div>
-                            <h1>We make crypto trading safe, easy and affordable.</h1>
+                            <h1 class="h1-style">We make crypto trading safe, easy and affordable.</h1>
 
                             <div class="hero-signup get-started-content">
                                 <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
