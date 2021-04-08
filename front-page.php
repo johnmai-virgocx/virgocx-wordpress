@@ -344,7 +344,10 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 		font-size: 1.6rem !important; 
 		word-spacing: 2px !important;
 		margin-bottom: 2rem !important;
+		font-family: 'avenirnextregular' !important;
 		font-weight: 900 !important;
+		margin-top: 0 !important;
+		margin-bottom: 1rem !important;
 	}
 	
 	
