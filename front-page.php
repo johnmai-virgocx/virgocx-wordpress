@@ -9,7 +9,7 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 
 <style type="text/css">
     #trading-fee-wrapper {
-        margin-left: -8px;
+        padding: 0 15px;
     }
 
     .hero-area-wrapper {
@@ -330,6 +330,10 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 
     .trading-fee img {
         width: 100%;
+    }
+
+    .trading-fee{
+        padding: 0;
     }
 
     .hide {
