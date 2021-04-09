@@ -255,7 +255,7 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 
         /*Sentence*/
         .sentence {
-            font-size: 23px !important;
+            font-size: 20px !important;
         }
 
         .sliding-vertical {
@@ -333,6 +333,7 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     }
 
     .trading-fee{
+        margin-left: -1.5%;
         padding: 0;
     }
 
