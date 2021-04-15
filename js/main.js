@@ -302,7 +302,9 @@
         index++;
 
         item.id = `item-${price.symbol.replace('/', '-')}`;
-        item.innerHTML = `
+		
+		if (price.changeRate.charAt(0) == '-') {
+			item.innerHTML = `
                             <div class="col-lg-3 col-md-4 col-sm-12">
                                 <div class="bcl-item">
                                     <a href="${link}" class="pg-top">
@@ -315,13 +317,49 @@
                                               <h5>${price.symbol}</h5>
                                             </div>
                                             <p>
-                                                <strong>${price.changeRate} <img src="${_virgocx_theme_url}/img/arrowD.svg" alt="images not found" /> </strong><span>$${price.lastPrice}</span>
+                                                <strong>
+													${price.changeRate} 
+													<img src="${_virgocx_theme_url}/img/arrowD.svg" alt="images not found" /> 
+												</strong>
+												
+												<span>
+													$${price.lastPrice}
+												</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+        	`
+		} else {
+			item.innerHTML = `
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="bcl-item">
+                                    <a href="${link}" class="pg-top">
+                                        <div class="pg-img">
+                                            <img src="${price.logo}" alt="images not found" />
+                                        </div>
+                                        <div class="pg-text">
+                                            <div class="d-flex justify-content-between">
+                                              <h5>${price.fullName}</h5>
+                                              <h5>${price.symbol}</h5>
+                                            </div>
+                                            <p>
+                                                <strong>
+													${price.changeRate} 
+													<img src="${_virgocx_theme_url}/img/arrowU.svg" alt="images not found" /> 
+												</strong>
+												
+												<span>
+													$${price.lastPrice}
+												</span>
                                             </p>
                                         </div>
                                     </a>
                                 </div>
                             </div>
         `
+		}
         itemsWrapper.append(item);
       });
 
