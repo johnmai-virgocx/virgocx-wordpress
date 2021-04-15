@@ -604,9 +604,8 @@ if ($totalNumber === 1): ?>
             <div class="col-md-6 col-lg-3">
                 <div class="feature-item fibg-1">
                     <img src="<?= get_template_directory_uri() ?>/img/feature2.png" alt="images not found"/>
-                    <h5>Funds Secured</h5>
-                    <p>We partnered with Ledger Vault to provide the latest in secure wallet technology. Our fiat
-                        currencies are stored with trusted financial institutions in North America.</p>
+                    <h5>Instant Funding</h5>
+                    <p>Fund your account instantly with INTERAC e-Transfer. Trade cryptos within minutes.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
