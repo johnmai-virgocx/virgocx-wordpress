@@ -366,7 +366,13 @@ function renderFeesPerEntryTable(entries, title) {
 		if (entry.transferWay === 'Wire Transfer') {
 			processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
 		} else if (entry.transferWay === 'Interac e-Transfer') {
-			processingTime = 'Instantaneous<sup>1,2</sup>';
+			if (title === "Fund Canadian Dollars") {
+				processingTime = 'Instantaneous<sup>1,2</sup>';
+			} else if (title === "Withdrawal Canadian Dollars" ) {
+				processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+			} else {
+				processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+			}
 		}
 
 		acc += `
