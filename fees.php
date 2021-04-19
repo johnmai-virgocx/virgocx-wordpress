@@ -366,7 +366,7 @@ function renderFeesPerEntryTable(entries, title) {
 		if (entry.transferWay === 'Wire Transfer') {
 			processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
 		} else if (entry.transferWay === 'Interac e-Transfer') {
-			processingTime = 'instantaneous<sup>1,2</sup>';
+			processingTime = 'Instantaneous<sup>1,2</sup>';
 		}
 
 		acc += `
