@@ -411,8 +411,8 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                "en": "/wordpress/wp-content/themes/virgocx/en.json",
-                "zh": "/wordpress/wp-content/themes/virgocx/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json",
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json"
             };
 
 
