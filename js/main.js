@@ -402,26 +402,39 @@
             //jQuery('#myModal2').modal('show'); //this is the bootstrap modal popup id
         }, false);
 
-
-        //langSwitcher
+// **************************************************************************************
+// **************************************************************************************
+// langSwitcher
 
         // Some variables for later
-        var dictionary = {}, currentLang='en';
+        var dictionary = {},
+            currentLang = 'en',
+             languagePair = {
+                "en": "/wordpress/wp-content/themes/virgocx/en.json",
+                "zh": "/wordpress/wp-content/themes/virgocx/zh.json"
+            };
+
 
         // Checking lang on page change
-        function checkSessionLang(){
-            var lang = sessionStorage.getItem('lang');
-            currentLang = lang? lang: 'en';
+        function checkSessionLang() {
+            // none-onload action
+            let langLoader = async function () {
+                var url = window.location.href;
+                const promises = Object.keys(languagePair).map(async function (key) {
+                    var langParam = '/' + key + '-';
+                    if (url.indexOf(langParam) > -1) {
+                        currentLang = key;
+                    }
+                })
+                const result = await Promise.all(promises);
+            }
+            langLoader();
         }
         checkSessionLang();
 
         // Object literal behaving as multi-dictionary
         function loadLangJson() {
-            const languagePair = {
-                "en": "/wordpress/wp-content/themes/virgocx/en.json",
-                "zh": "/wordpress/wp-content/themes/virgocx/zh.json"
-            };
-            let fileLoader = async function (){
+            let fileLoader = async function () {
                 const promises = Object.keys(languagePair).map(async function (key) {
                     await $.getJSON(languagePair[key], function (data) {
                         dictionary[key] = data;
@@ -435,6 +448,9 @@
             fileLoader();
         }
         loadLangJson();
+
+
+
 
         // Function for swapping dictionaries
         function setLang(dictionary) {
@@ -450,17 +466,31 @@
         $("#lang").on("change", function () {
             var language = $(this).val().toLowerCase();
             if (dictionary.hasOwnProperty(language)) {
+                redirection(language);
                 currentLang = language;
-                sessionStorage.setItem('lang', language);
                 setLang(dictionary[language]);
             }
         });
 
         // set switcher to currentLang
-        function loadLangSwitcher(){
+        function loadLangSwitcher() {
             $("#lang").val(currentLang);
         }
+
         loadLangSwitcher();
+
+        //redirect
+        function redirection(language) {
+            var url = window.location.href;
+            const langParam = '/' + currentLang;
+            if (url.indexOf(langParam) > -1) {
+                window.location = url.replace(langParam, '/' + language);
+            }
+        }
+
+// langSwitcher ends
+// **************************************************************************************
+// **************************************************************************************
 
 
     });
