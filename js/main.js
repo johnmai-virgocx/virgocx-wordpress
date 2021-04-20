@@ -409,6 +409,7 @@
         // Some variables for later
         var dictionary = {},
             currentLang = 'en',
+            langPageIndicator =0,
              languagePair = {
                 "en": "/wordpress/wp-content/themes/virgocx/en.json",
                 "zh": "/wordpress/wp-content/themes/virgocx/zh.json"
@@ -423,12 +424,19 @@
                 const promises = Object.keys(languagePair).map(async function (key) {
                     var langParam = '/' + key + '-';
                     if (url.indexOf(langParam) > -1) {
+                        langPageIndicator = 1;
+                        sessionStorage.setItem('lang', key);
                         currentLang = key;
                     }
                 })
                 const result = await Promise.all(promises);
             }
             langLoader();
+
+            if (langPageIndicator == 0){
+                var lang = sessionStorage.getItem('lang');
+                currentLang = lang? lang: 'en';
+            }
         }
         checkSessionLang();
 
@@ -466,7 +474,8 @@
         $("#lang").on("change", function () {
             var language = $(this).val().toLowerCase();
             if (dictionary.hasOwnProperty(language)) {
-                redirection(language);
+                var url = window.location.href;
+                redirection(url,language);
                 currentLang = language;
                 setLang(dictionary[language]);
             }
@@ -479,14 +488,35 @@
 
         loadLangSwitcher();
 
-        //redirect
-        function redirection(language) {
-            var url = window.location.href;
-            const langParam = '/' + currentLang;
-            if (url.indexOf(langParam) > -1) {
-                window.location = url.replace(langParam, '/' + language);
+        //lang switcher redirect
+        async function redirection(url,language) {
+            if (language == ''){
+                language = sessionStorage.getItem('lang');
+            }else{
+                sessionStorage.setItem('lang', language);
+            }
+            const promises = Object.keys(languagePair).map(async function (key) {
+                var langParam = '/' + key + '-';
+                if (url.indexOf(langParam) > -1) {
+                    langPageIndicator = 1;
+                    window.location = url.replace(langParam, '/' + language + '-');
+                }
+            })
+            const result = await Promise.all(promises);
+
+            if (langPageIndicator == 0 &&  window.location.href !== url){
+                window.location.href = url;
             }
         }
+
+        // force hard coded href goes to right lang page
+        $('a').click(function(event) {
+            event.preventDefault();
+            const url =$(this).attr('href');
+            redirection(url,'');
+            return false; // for good measure
+        });
+
 
 // langSwitcher ends
 // **************************************************************************************
