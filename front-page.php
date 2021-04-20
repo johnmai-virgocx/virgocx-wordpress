@@ -2,7 +2,6 @@
 // Get the header
 
 get_header();
-
 $announcementText = get_theme_mod('virgocx_announcement_text');
 $announcementLink = get_theme_mod('virgocx_announcement_link');
 ?>
@@ -389,6 +388,10 @@ if ($totalNumber === 1): ?>
         endif;
         endif; ?>
     </div>
+    <!--langSwitcher Example-->
+    <span data-translate="hello"></span>
+    <span data-translate="dictionary"></span>
+
 
     <div class="hero-area-wrapper">
         <div class="hero-area">
