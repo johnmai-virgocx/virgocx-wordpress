@@ -4,338 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36c0f012-ab75-4b46-953a-22c179f07b9d" name="Default Changelist" comment="setup config, uni page init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/shelf/Uncommitted_changes_before_Update_at_2021-03-25,_10_52_a_m__[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/shelf/Uncommitted_changes_before_Update_at_2021-03-25__10_52_a_m___Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/shelf/Uncommitted_changes_before_Update_at_2021-03-26,_1_07_p_m__[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/shelf/Uncommitted_changes_before_Update_at_2021-03-26,_9_41_p_m__[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/shelf/Uncommitted_changes_before_Update_at_2021-03-26__1_07_p_m___Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/shelf/Uncommitted_changes_before_Update_at_2021-03-26__9_41_p_m___Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/virgocd.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/OTCReferral.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/about-us.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/affiliate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/app-download.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-bch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-coin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-dai.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-dodge.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-eos.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-eth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-ltc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-paxgold.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-usdc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-usdt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/buy-xlm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/canvas-page-content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/contact-us.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/responsive.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/scrollpage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/scrollpage.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fees.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fonts/AvenirNext-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/footer-otc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/front-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/fx.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/header-otc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/BCH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/BTC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/CAD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/DAI.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/DOGE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/EOS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/ETH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/ETH.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/LTC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/LTC.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/PAXG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/USD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/USDC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/USDT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/USDT.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/XLM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-photo1-97B17115-FC41-450C-8BDF-5ADED8B108B6@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-photo4-158E4D4D-3E06-461F-87D2-99710B67B617.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-photo5-EFBC0F98-29A8-41E7-AD2D-12E89DB95F36@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-photo6-CA663112-202A-4C89-B192-6E50B97779CE@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-photo7-5C0A7C0D-A6AC-419F-93F8-01A562405098@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-u77e9u5f62u5907u4efd-2-2D7A86A6-AC8C-491C-BC7C-5F1F4135AA35@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-u8499u7248-51BB052B-5A5E-4A67-BE4E-67B70A4EEBB1@2x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/aboutus/04-about-us-u8499u7248u5907u4efd-9C933301-4671-420A-B1F5-570BC1A124D1@2x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/affiliate/affiliate-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/affiliate/affiliate-sec1-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/affiliate/affiliate-sec1-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/affiliate/affiliate-sec1-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/affiliate/affiliate-sec2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/all_crypto_coin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/andorid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/android_download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_buttons/android.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_buttons/android_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_buttons/app_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_buttons/app_store_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_buttons/play_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_buttons/play_store_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_display.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/app_qr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/appb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/appb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/appw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/arrowD.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/arrowU.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/arrowdd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/banner1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/bg2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/247_support.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/best_price.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/bitcoin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/buy_coin_step.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/BCH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/BTC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/DAI.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/DOGE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/EOS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/ETH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/LTC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/Paxgold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/USDC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/USDT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/coins/XLM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/compliant_and_regulated.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/easy_and_convenient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/low_fees.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/buy_coins/safe_and_secure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/canada2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-customer-support-DC2F9B2E-24A8-4A4A-B92F-B3C94FB18DBD3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-head-office-4ABBC471-756B-4CDE-9103-479B2C853FE43x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-phone-6B7FD295-4CB4-41E6-80A8-1F3F81E729433x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-press-and-media-90332D0C-4F85-4982-8BE8-8B76E7C28BD53x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-u63d2u56fe-2E768509-59EA-4BD3-BFF1-EE51BC511F8C2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-u692du5706u5f62-A2C610F5-ADB5-407C-8B2F-8BF066E79F502x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/contactus/03-contact-us-u7f16u7ec4-24D16722-3217-4406-B257-9E9A948C49DE2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/feature1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/feature2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/feature3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/feature4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/feature5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fees_commission.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fees_fiat_payment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fees_impeccable_security.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fees_regulated.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fees_zero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fees_zero_fees.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/flag-button-square-250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/IOS_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/IOS_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/WeChat500535bb4b0a957272c7de50c3934693.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/android_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/android_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/play_blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/footer/play_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-247-586DA73B-E1DC-43BE-A4AA-27D655AC9B183x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-excellent-service-5E11B475-34F7-449F-9401-B56B542A49B43x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-expert-knowledge-C4935AFB-96EC-4251-A75E-C54DFA41E3A13x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-full-regulated-service-CD199AC3-E22E-448F-8B0D-11429A998FC43x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-hassan-ouajbir-iyuymmrm7s-unsplash-96799969-E4E8-4E05-B9C6-92806B4758D83x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-icon-coin-cad-white-A5C72CF2-D6EE-42A9-B9BE-40A37F70BA9B2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-person-holding-white-and-red-card-294A5F98-4961-48B1-89D1-FC2AABF2C5953x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-person-using-laptop-on-white-wooden-table-67BE5C4E-C146-439B-9586-372F5AA134313x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-photo-2A33329F-E730-4C90-8A69-4CE151DBBDBC3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-rectangle-copy-4F6B0E3E-B55F-4D70-90AD-44C236226A3C2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u63d2u56fe3-52979B17-A728-44DB-8407-E6FAB90026683x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u7535u8bdd-186511F1-2E54-4844-9DC1-60F0D2F5B1EF3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u76f4u7ebf-661A1F49-6FD6-4BC1-B04E-D8E277AFE8B02x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u7f16u7ec4-D0B384AB-D967-4E2A-A82F-6A50320BF1A43x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u8499u7248-81338F5D-28D6-4E23-9944-69E9E8C8C222@2x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u8499u7248u5907u4efd-2-EBF5EBC0-6E41-45E8-A834-CEF2308A7640@2x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u8499u7248u5907u4efd-51EDAD66-3B52-4D47-961C-CB33B1147795@2x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx/06-fx-u90aeu7bb1-FF44E17B-761E-4AC1-8AEB-F2CA558367833x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/fx_flags.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/gift.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/gold_send.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/handshake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/home-hero-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/homepage/fund_secure.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/homepage/personal_secure.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/homepage/system_secure.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/icon-coin-cad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/in.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/input_mail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/input_man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/input_phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/instra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/ios.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/lang.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/ledger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/ledger.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/left_arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/line.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/line2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/line3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/andorid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/appb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/appw.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/arrowD.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/arrowU.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/arrowdd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/email.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/exchange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/gold_btc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/gold_cad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/gold_convert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/gold_eth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/gold_usd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/gold_usdt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/hero-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/how.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/how2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/how3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/jiantou.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/lang.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/medium.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/more-coins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/otc_best_price.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/otc_fx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/otc_personalized_services.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/otc_rapid_settlement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/otc_saving.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/otc_zero_trading_fee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/send.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/why1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc/youtube.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/otc_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/MNP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/MNP_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/blakes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/blakes_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/blockgeeks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/blockgeeks_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/chainalysis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/chainalysis_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/coindesk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/coindesk_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/ledger_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/yahoo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/partners/yahoo_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/play_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/play_store_bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/profile_man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/purple-man.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_android.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_app_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_codes/android.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_codes/app_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_codes/play_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_play_store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/qr_play_store_original.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/question-mark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/referral_link_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/referral_link_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/referral_link_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/right_arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/security_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/security_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/security_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/security_gear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/security_shield.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/send.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/speaker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/virgocx_logo_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/wave_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/yt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/zero-trading-fee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/img/zero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/inc/custom-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/inc/customizer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/inc/jetpack.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/inc/template-functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/inc/template-tags.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/indexPage.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/cu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/customizer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/smartScroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/smartbanner.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/js/smartbanner.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/languages/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/languages/virgocx.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/otc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/referral.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/retailReferral.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/security.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-bch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-bitcoin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-dai.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-doge.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-eos.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-eth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-ltc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-paxgold.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-usdc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-usdt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sell-xlm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/sidebar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/single.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/style-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/app-qr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/buy-coin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/content-none.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/content-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/content-search.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/content.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virgocx/template-parts/sell-coin.php" beforeDir="false" />
-    </list>
+    <list default="true" id="36c0f012-ab75-4b46-953a-22c179f07b9d" name="Default Changelist" comment="setup config, uni page init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -359,6 +28,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="97230919-d316-4654-bff2-b72bd36a9d08" />
+        <option name="url" value="https://github.com/johnmai-virgocx/virgocx-wordpress.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -425,6 +102,7 @@
       <updated>1617757460223</updated>
       <workItem from="1617757462113" duration="50000" />
       <workItem from="1617757514789" duration="2413000" />
+      <workItem from="1618953514536" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="setup config, uni page init">
       <created>1617759303645</created>
@@ -444,11 +122,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="ppe" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup config, uni page init" />
