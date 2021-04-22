@@ -434,7 +434,7 @@
             langLoader();
 
             if (langPageIndicator == 0){
-                var lang = sessionStorage.getItem('lang');
+                var lang = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
                 currentLang = lang? lang: 'en';
             }
         }
@@ -490,8 +490,8 @@
 
         //lang switcher redirect
         async function redirection(url,language) {
-            if (language == ''){
-                language = sessionStorage.getItem('lang');
+            if (language == '' || language == null){
+                language = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
             }else{
                 sessionStorage.setItem('lang', language);
             }
