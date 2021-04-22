@@ -388,11 +388,6 @@ if ($totalNumber === 1): ?>
         endif;
         endif; ?>
     </div>
-    <!--langSwitcher Example-->
-    <span data-translate="hello"></span>
-    <span data-translate="dictionary"></span>
-
-
     <div class="hero-area-wrapper">
         <div class="hero-area">
             <div class="container custom-container">
