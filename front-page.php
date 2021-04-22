@@ -695,12 +695,11 @@ if ($totalNumber === 1): ?>
                     <p>Our System is Secure</p>
                 </div>
             </a>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <div class="security-more bold-font">
-					<!-- <a href="/en-security">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-                    <a>Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					<a href="/en-security">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
