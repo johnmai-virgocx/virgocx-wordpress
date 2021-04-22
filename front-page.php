@@ -678,7 +678,7 @@ if ($totalNumber === 1): ?>
         </div>
         <div class="row align-items-center">
 			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a href="/" class="col-md-4">
+            <a class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/personal_secure.gif"
                          alt="images not found"/>
@@ -686,14 +686,14 @@ if ($totalNumber === 1): ?>
                 </div>
             </a>
 			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a href="/" class="col-md-4">
+            <a class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/fund_secure.gif" alt="images not found"/>
                     <p>Your Funds are Secure</p>
                 </div>
             </a>
 			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a href="/" class="col-md-4">
+            <a class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/system_secure.gif"
                          alt="images not found"/>
@@ -703,7 +703,7 @@ if ($totalNumber === 1): ?>
             <div class="col-md-12">
                 <div class="security-more bold-font">
 					<!-- <a href="/en-security">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-                    <a href="/">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a>Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
