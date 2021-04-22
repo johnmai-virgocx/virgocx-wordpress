@@ -350,8 +350,13 @@ function renderFeesPerEntryTable(entries, title) {
 
 	const rowContent = entries.reduce(function(acc, entry) {
 		let maximum = entry.maximum;
+		let minimum = entry.minimum;
 		if (typeof maximum !== 'string') {
 			maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
+		}
+		
+		if (typeof entry.minimum === 'string') {
+			minimum = minimum === 0 ? "-" : '$' + entry.minimum
 		}
 
 		let feeContent = 'Free';
@@ -385,7 +390,7 @@ function renderFeesPerEntryTable(entries, title) {
 						${feeContent}
 					</td>
 					<td>
-						${typeof entry.minimum === 'string' ? entry.minimum : '$' + entry.minimum}
+						${minimum}
 					</td>
 					<td>
 						${maximum}
