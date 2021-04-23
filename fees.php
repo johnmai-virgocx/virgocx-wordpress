@@ -355,9 +355,10 @@ function renderFeesPerEntryTable(entries, title) {
 			maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
 		}
 		
-		if (typeof entry.minimum === 'string') {
+		if (typeof entry.minimum !== 'string') {
 			minimum = minimum === 0 ? "-" : '$' + entry.minimum
 		}
+				
 
 		let feeContent = 'Free';
 		if (entry.fee !== 0) {
@@ -475,7 +476,7 @@ function handleFees(data) {
 	container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
 }
 
-//fetch('/transferFee/getList')
+// fetch('/transferFee/getList')
 fetch('https://virgocx.ca/transferFee/getList')
 	.then(res => res.json())
 	.then(data => handleFees(data));
