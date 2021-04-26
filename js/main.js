@@ -418,25 +418,29 @@
 
         // Checking lang on page change
         function checkSessionLang() {
+            var lang = sessionStorage.getItem('lang');
+            if (lang){
+                currentLang = lang;
+            }else{
+                sessionStorage.setItem('lang', 'en');
+                currentLang = 'en';
+            }
             // none-onload action
             let langLoader = async function () {
                 var url = window.location.href;
                 const promises = Object.keys(languagePair).map(async function (key) {
                     var langParam = '/' + key + '-';
                     if (url.indexOf(langParam) > -1) {
-                        langPageIndicator = 1;
-                        sessionStorage.setItem('lang', key);
-                        currentLang = key;
+                        if(key != currentLang){
+                            redirection(url, currentLang);
+                        }
                     }
                 })
                 const result = await Promise.all(promises);
             }
             langLoader();
 
-            if (langPageIndicator == 0){
-                var lang = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
-                currentLang = lang? lang: 'en';
-            }
+
         }
         checkSessionLang();
 
@@ -462,12 +466,13 @@
 
         // Function for swapping dictionaries
         function setLang(dictionary) {
-            $("[data-translate]").text(function () {
-                var key = $(this).data("translate");
-                if (dictionary.hasOwnProperty(key)) {
-                    return dictionary[key];
+            $("[data-translate]").each(function(){
+                if($(this).is( "input" )){
+                    $(this).attr('placeholder',dictionary[$(this).data("translate")] )
+                } else{
+                    $(this).text(dictionary[$(this).data("translate")])
                 }
-            });
+            })
         };
 
         // Swap languages when menu changes

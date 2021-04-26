@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="36c0f012-ab75-4b46-953a-22c179f07b9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/affiliate.php" beforeDir="false" afterPath="$PROJECT_DIR$/affiliate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/dictionary/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/dictionary/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/dictionary/zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/languages/dictionary/zh.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <updated>1617757460223</updated>
       <workItem from="1617757462113" duration="50000" />
       <workItem from="1617757514789" duration="2413000" />
-      <workItem from="1619475504925" duration="82000" />
+      <workItem from="1619475504925" duration="234000" />
     </task>
     <task id="LOCAL-00001" summary="setup config, uni page init">
       <created>1617759303645</created>
@@ -108,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617759303645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add translation on front-page.php">
+      <created>1619475645319</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619475645319</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup config, uni page init" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup config, uni page init" />
+    <MESSAGE value="Add translation on front-page.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add translation on front-page.php" />
   </component>
 </project>

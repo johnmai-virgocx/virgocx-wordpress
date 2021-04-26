@@ -389,9 +389,9 @@ if ($totalNumber === 1): ?>
         endif; ?>
     </div>
     <!--langSwitcher Example-->
-    <!-- <span data-translate="hello"></span> -->
-    <!-- <span data-translate="dictionary"></span> -->
-	<!-- <span data-translate=""/> -->
+//     <span data-translate="hello"></span>
+//     <option data-translate="dictionary"></option>
+//     <input data-translate="dictionary" name="username" id="username" placeholder="aaa">
 
 
     <div class="hero-area-wrapper">
