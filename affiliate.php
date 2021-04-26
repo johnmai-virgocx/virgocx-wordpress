@@ -94,7 +94,6 @@ get_header();
     </style>
     <!--langSwitcher Example-->
     <span data-translate="hello"></span>
-    <span data-translate="dictionary"></span>
 
     <div id="page1" class="hero-area-wrapper">
         <div class="hero-area">

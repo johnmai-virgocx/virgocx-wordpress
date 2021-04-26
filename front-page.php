@@ -390,7 +390,8 @@ if ($totalNumber === 1): ?>
     </div>
     <!--langSwitcher Example-->
     <span data-translate="hello"></span>
-    <span data-translate="dictionary"></span>
+    <option data-translate="dictionary"></option>
+    <input data-translate="dictionary" name="username" id="username" placeholder="aaa">
 
 
     <div class="hero-area-wrapper">
