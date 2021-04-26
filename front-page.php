@@ -389,8 +389,9 @@ if ($totalNumber === 1): ?>
         endif; ?>
     </div>
     <!--langSwitcher Example-->
-    <span data-translate="hello"></span>
-    <span data-translate="dictionary"></span>
+    <!-- <span data-translate="hello"></span> -->
+    <!-- <span data-translate="dictionary"></span> -->
+	<!-- <span data-translate=""/> -->
 
 
     <div class="hero-area-wrapper">
@@ -404,16 +405,23 @@ if ($totalNumber === 1): ?>
                                     <img src="<?= get_template_directory_uri() ?>/img/zero-trading-fee.png"
                                          alt="announcement"/>
                                 </a>
-                                <div class="sentence col-10">Buy & Sell
+                                <div class="sentence col-10">
+									<span data-translate="frontpage_Buy_Sell"></span>
                                     <div class="sliding-vertical ">
-                                        <span>Bitcoin</span>
-                                        <span>Ethereum</span>
-                                        <span>USDT</span>
-                                        <span>Cryptocurrency</span>
+										<span>Bitcoin</span>
+										<span>Ethereum</span>
+										<span>USDT</span>
+										<span>Cryptocurrency</span>
+
+										<!-- 这里无法使用Span来替换 -->
+										<!-- <span data-translate="frontpage_Bitcoin"/>
+										<span data-translate="frontpage_Ethereum"/>
+										<span data-translate="frontpage_USDT"/>
+										<span data-translate="frontpage_Cryptocurrency"/> -->
                                     </div>
                                 </div>
                             </div>
-                            <h1 class="h1-style">We make crypto trading safe, easy and affordable.</h1>
+                            <h1 class="h1-style"> <span data-translate="frontpage_description"/></h1>
 
                             <div class="hero-signup get-started-content">
                                 <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
@@ -495,7 +503,9 @@ if ($totalNumber === 1): ?>
                                         <!-- End This -->
                                     </div>
 
-                                    <a href="/page#/login" class="col-lg-2 blue-gradient-btn">Buy Now</a>
+                                    <a href="/page#/login" class="col-lg-2 blue-gradient-btn">
+										<span data-translate="frontpage_Buy_Now"/> 
+									</a>
                                 </form>
                             </div>
                         </div>
@@ -529,7 +539,7 @@ if ($totalNumber === 1): ?>
 
 <section class="press-area">
     <div class="container custom-container">
-        <h2>Press & Partners</h2>
+        <h2><span data-translate="frontpage_Press_Partners"/></h2>
         <div class="row">
             <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                 <div class="press-img mnp">
@@ -583,39 +593,36 @@ if ($totalNumber === 1): ?>
 <section class="feature-area">
     <div class="container custom-container">
         <div class="feature-title">
-            <h2>Made for Both Aspiring and Expert Crypto Traders</h2>
-            <p>We provide easy and affordable access for all Canadians to buy and sell digital currencies, including
-                Bitcoin, Ethereum, Litecoin,
-                Tether and more. And whether you are new to this world or are experienced, we support you throughout
-                your journey.</p>
+            <h2><span data-translate="frontpage_header1"/></h2>
+            <p><span data-translate="frontpage_header1_desc"/></p>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-3">
                 <div class="feature-item fibg-1">
                     <img src="<?= get_template_directory_uri() ?>/img/feature5.png" alt="images not found"/>
-                    <h5>Best Pricing in Canada</h5>
-                    <p>The best buy & sell prices supported by superior liquidity and competitive spreads.</p>
+                    <h5><span data-translate="frontpage_header1_tag1"/></h5>
+                    <p><span data-translate="frontpage_header1_tag1_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="feature-item fibg-2">
                     <img src="<?= get_template_directory_uri() ?>/img/feature4.png" alt="images not found"/>
-                    <h5>Zero Trading Fees</h5>
-                    <p>We make crypto trading affordable by offering ZERO trading fee and deposit fee.</p>
+                    <h5><span data-translate="frontpage_header1_tag2"/></h5>
+                    <p><span data-translate="frontpage_header1_tag2_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="feature-item fibg-1">
                     <img src="<?= get_template_directory_uri() ?>/img/feature2.png" alt="images not found"/>
-                    <h5>Instant Funding</h5>
-                    <p>Fund your account instantly with INTERAC e-Transfer. Trade cryptos within minutes.</p>
+                    <h5><span data-translate="frontpage_header1_tag3"/></h5>
+                    <p><span data-translate="frontpage_header1_tag3_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="feature-item fibg-2">
                     <img src="<?= get_template_directory_uri() ?>/img/feature3.png" alt="images not found"/>
-                    <h5>24/7 Live Support</h5>
-                    <p>Our multilingual support team works around the clock to address your concerns.</p>
+                    <h5><span data-translate="frontpage_header1_tag4"/></h5>
+                    <p><span data-translate="frontpage_header1_tag4_desc"/></p>
                 </div>
             </div>
         </div>
@@ -624,16 +631,13 @@ if ($totalNumber === 1): ?>
 <section class="fingertips-area">
     <div class="container custom-container">
         <div class="feature-title">
-            <h2>Cryptocurrency Trading at Your Fingertips</h2>
-            <p>VirgoCX is available on mobile so you can trade on the go. You will be able to navigate our live
-                streaming prices for BTC (or any other cryptocurrency) to USD & CAD to execute trades. Funding options
-                such as INTERAC e-Transfers, wire transfers, and cryptocurrency fundings are accessible seamlessly
-                through our app.</p>
+            <h2><span data-translate="frontpage_header2"/></h2>
+            <p><span data-translate="frontpage_header2_desc"/></p>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-12 d-flex justify-content-center">
                 <div id="fp-download-apps" class="fingertips-item">
-                    <h5>Download the VirgoCX Mobile App</h5>
+                    <h5><span data-translate="frontpage_Download"/></h5>
                     <div class="d-flex">
                         <div id="stores" class="app-store">
                             <a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048"><img
@@ -668,38 +672,35 @@ if ($totalNumber === 1): ?>
 <section class="security-area">
     <div class="container custom-container">
         <div class="feature-title">
-            <h2>Safe Trading Begins with Best-in-Class Security Systems</h2>
+            <h2><span data-translate="frontpage_header3"/></h2>
             <p>
-                Our clients are provided with the tools required to protect their funds on our platform. Crypto assets
-                are safe with our 2FA and SSL protocols as well as cold-storage protection by Ledger Vault. We also have
-                reliable
-                banking and payment partners to allow for secure transfer of your fiat currencies.
+                <span data-translate="frontpage_header3_desc"/>
             </p>
         </div>
         <div class="row align-items-center">
-            <a href="/en-security" class="col-md-4">
+            <a href="/" class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/personal_secure.gif"
                          alt="images not found"/>
-                    <p>Your Information is Secure</p>
+                    <p><span data-translate="frontpage_header3_tag1"/></p>
                 </div>
             </a>
-            <a href="/en-security" class="col-md-4">
+            <a href="/" class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/fund_secure.gif" alt="images not found"/>
-                    <p>Your Funds are Secure</p>
+                    <p><span data-translate="frontpage_header3_tag2"/></p>
                 </div>
             </a>
-            <a href="/en-security" class="col-md-4">
+            <a href="/" class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/system_secure.gif"
                          alt="images not found"/>
-                    <p>Our System is Secure</p>
+                    <p><span data-translate="frontpage_header3_tag3"/></p>
                 </div>
             </a>
             <div class="col-md-12">
                 <div class="security-more bold-font">
-                    <a href="/en-security">Learn More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="/"><span data-translate="frontpage_header3_tag4"/> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -711,21 +712,23 @@ if ($totalNumber === 1): ?>
             <div class="col-md-7">
                 <div class="otc-title">
                     <h3>
-                        VirgoCX OTC is Available for Trades <br/>
-                        Over $30,000 CAD
+                        <span data-translate="frontpage_header4_1"/> 
                     </h3>
+					<h3>
+						<span data-translate="frontpage_header4_2"/>
+					</h3>
                     <p>
-                        Satisfying institutional buyers and sellers with our deep liquidity pools by providing large
-                        volume trading of Cryptocurrencies and Stablecoins to our clients without price slippage.
-                        VirgoCX have dedicated OTC
-                        account managers to provide you with a personalized service from start to finish.&nbsp;&nbsp;Click
-                        below to learn more about our OTC desk.
+                        <span data-translate="frontpage_header4_desc"/>
                     </p>
                 </div>
                 <div id="speak-with-account" class="otc-item">
-                    <div class="speak-with-account">Speak with an Account Manager <i class="fa fa-angle-right"
-                                                                                     aria-hidden="true"></i></div>
-                    <a href="/en-otc" class="learn-btn">Learn More</a>
+                    <div class="speak-with-account">
+						<span data-translate="frontpage_header4_tag1"/>
+						<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    <a href="/en-otc" class="learn-btn">
+						<span data-translate="frontpage_header4_tag2"/>
+						
+						</a>
                 </div>
             </div>
             <div class="col-md-5">
@@ -740,9 +743,11 @@ if ($totalNumber === 1): ?>
 
 <section class="getStart-area">
     <div class="container custom-container">
-        <h3>Buy and Sell Cryptocurrency Today</h3>
+        <h3><span data-translate="frontpage_header5"/></h3>
         <div class="getStart-content get-started-content">
-            <span>Email Address</span>
+            <span>
+				<span data-translate="frontpage_Email_Address"/>
+			</span>
             <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
         </div>
     </div>
