@@ -365,7 +365,8 @@ $totalNumber = $q->found_posts;
 if ($totalNumber > 0):
 if ($totalNumber === 1): ?>
 <div class="announcement-banner d-flex justify-content-center" id="rollingBanner">
-    <a class="flipText" style="top: 0px; opacity: 1;"
+    <a class="flipText" style="top: 0px; opacity: 1;" data-translate="<?php $str = wp_strip_all_tags( get_the_content() );
+    echo str_replace(' ', '', $str);?>"
        href="<?php the_title(); ?>"><?php the_content(); ?></a>
     <?php else:
     //    udpate total second for rolling aniamtion
@@ -382,7 +383,8 @@ if ($totalNumber === 1): ?>
         <?php if ($q->have_posts()) :$count = -1;
             while ($q->have_posts()) :$q->the_post();
                 $count++; ?>
-                <a class="hide"
+                <a class="hide" data-translate="<?php $str = wp_strip_all_tags( get_the_content() );
+                echo str_replace(' ', '', $str);?>"
                    href="<?php the_title();?>"><?php the_content(); ?></a>
             <?php endwhile; endif;
         endif;
