@@ -97,7 +97,7 @@
 																	<a href="https://medium.com/virgocx" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/m.png" alt="images not found" /> Medium</a>
 															</li>
 															<li>
-																	<a href="https://www.facebook.com/virgocx/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/fb.png" alt="images not found" /> Facebook</a>
+																	<a href="https://www.facebook.com/virgocxofficial" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/fb.png" alt="images not found" /> Facebook</a>
 															</li>
 															<li>
 																	<a href="https://www.linkedin.com/company/virgocx/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/in.png" alt="images not found" /> Linkedin</a>
@@ -106,7 +106,7 @@
 																	<a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/yt.png" alt="images not found" /> YouTube</a>
 															</li>
 															<li>
-																	<a href="https://www.instagram.com/virgo.cx/?hl=en" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/instra.png" alt="images not found" /> Instagram</a>
+																	<a href="https://www.instagram.com/virgocx_official/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/instra.png" alt="images not found" /> Instagram</a>
 															</li>
 													</ul>
 											</div>
