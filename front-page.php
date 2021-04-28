@@ -390,10 +390,12 @@ if ($totalNumber === 1): ?>
         endif;
         endif; ?>
     </div>
+
     <!--langSwitcher Example-->
-//     <span data-translate="hello"></span>
-//     <option data-translate="dictionary"></option>
-//     <input data-translate="dictionary" name="username" id="username" placeholder="aaa">
+<!--   <span data-translate="hello"></span>
+    <option data-translate="dictionary"></option>
+   <input data-translate="dictionary" name="username" id="username" placeholder="aaa"> -->
+
 
 
     <div class="hero-area-wrapper">
@@ -680,6 +682,7 @@ if ($totalNumber === 1): ?>
             </p>
         </div>
         <div class="row align-items-center">
+			<!-- <a href="/en-security" class="col-md-4"> -->
             <a class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/personal_secure.gif"
@@ -687,12 +690,14 @@ if ($totalNumber === 1): ?>
                     <p><span data-translate="frontpage_header3_tag1"/></p>
                 </div>
             </a>
-            <a  class="col-md-4">
+			<!-- <a href="/en-security" class="col-md-4"> -->
+            <a class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/fund_secure.gif" alt="images not found"/>
                     <p><span data-translate="frontpage_header3_tag2"/></p>
                 </div>
             </a>
+			<!-- <a href="/en-security" class="col-md-4"> -->
             <a class="col-md-4">
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/system_secure.gif"
@@ -700,11 +705,11 @@ if ($totalNumber === 1): ?>
                     <p><span data-translate="frontpage_header3_tag3"/></p>
                 </div>
             </a>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <div class="security-more bold-font">
                     <a><span data-translate="frontpage_header3_tag4"/> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

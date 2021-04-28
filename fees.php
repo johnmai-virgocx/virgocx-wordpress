@@ -350,9 +350,15 @@ function renderFeesPerEntryTable(entries, title) {
 
 	const rowContent = entries.reduce(function(acc, entry) {
 		let maximum = entry.maximum;
+		let minimum = entry.minimum;
 		if (typeof maximum !== 'string') {
 			maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
 		}
+		
+		if (typeof entry.minimum !== 'string') {
+			minimum = minimum === 0 ? "-" : '$' + entry.minimum
+		}
+				
 
 		let feeContent = 'Free';
 		if (entry.fee !== 0) {
@@ -366,7 +372,13 @@ function renderFeesPerEntryTable(entries, title) {
 		if (entry.transferWay === 'Wire Transfer') {
 			processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
 		} else if (entry.transferWay === 'Interac e-Transfer') {
-			processingTime = 'Instantaneous<sup>1,2</sup>';
+			if (title === "Fund Canadian Dollars") {
+				processingTime = 'Instantaneous<sup>1,2</sup>';
+			} else if (title === "Withdrawal Canadian Dollars" ) {
+				processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+			} else {
+				processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+			}
 		}
 
 		acc += `
@@ -379,7 +391,7 @@ function renderFeesPerEntryTable(entries, title) {
 						${feeContent}
 					</td>
 					<td>
-						${typeof entry.minimum === 'string' ? entry.minimum : '$' + entry.minimum}
+						${minimum}
 					</td>
 					<td>
 						${maximum}
@@ -464,7 +476,7 @@ function handleFees(data) {
 	container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
 }
 
-//fetch('/transferFee/getList')
+// fetch('/transferFee/getList')
 fetch('https://virgocx.ca/transferFee/getList')
 	.then(res => res.json())
 	.then(data => handleFees(data));
