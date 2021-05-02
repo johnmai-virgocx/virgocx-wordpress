@@ -469,11 +469,15 @@
         function setLang(dictionary) {
             $("[data-translate]").each(function(){
                 if($(this).is( "input" )){
-                    $(this).attr('placeholder',dictionary[$(this).data("translate")] )
-                } else{
+                    $(this).attr('placeholder',dictionary[$(this).data("translate")])
+                } else if($(this).is( ".popper-trigger" )){
+                    $(this).attr('data-content',dictionary[$(this).data("translate")])
+                }else{
                     $(this).text(dictionary[$(this).data("translate")])
                 }
             })
+
+
         };
 
         // Swap languages when menu changes
