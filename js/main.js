@@ -453,7 +453,7 @@
                     });
                 });
                 const result = await Promise.all(promises);
-                const footerAttrUpdate = await footerUpdate();
+                const menuAttrUpdate = await menuUpdate();
 
                 // Set initial language to English
                 setLang(dictionary[currentLang]);
@@ -528,12 +528,19 @@
         });
 
         // replace footer data tag
-        async function footerUpdate(){
-            const promises = $('.page_item a').each(function(i, obj) {
+        async function menuUpdate(){
+            const headerPromises = $('.page_item a').each(function(i, obj) {
                var key = $( obj ).text();
                 $( obj ).attr("data-translate",key);
             });
-            const result = await Promise.all(promises);
+
+            const footerPromises = $('.menu-item a').each(function(i, obj) {
+                var key = $( obj ).text();
+                $( obj ).attr("data-translate",key);
+            });
+
+            const header = await Promise.all(headerPromises);
+            const footer = await Promise.all(footerPromises);
         }
 // langSwitcher ends
 // **************************************************************************************
