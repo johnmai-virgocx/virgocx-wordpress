@@ -114,12 +114,12 @@
 															Log In
 													</a>
 													<a track="nav-signup-click" class="singup" href="/page#/register" class="regular-button w-button">Register</a>
-													<div class="header_select">
-															<select name="format" id="format">
-																	<option value="English" selected="">Eng</option>
-																	<option value="Chinese">中文(即将上线)</option>
-															</select>
-													</div>
+                                                <div class="header_select">
+                                                    <select  id="lang">
+                                                        <option value="en" id="en">Eng</option>
+                                                        <option value="zh" id="zh">中文(即将上线)</option>
+                                                    </select>
+                                                </div>
 											</div>
 									</div>
 							</nav>
