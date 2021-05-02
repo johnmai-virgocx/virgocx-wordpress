@@ -14,7 +14,11 @@ get_header('otc');
                     <div class="lhero-content">
                         <h5 class="ht-tp">
 													<img class="question-mark" src="<?= get_template_directory_uri() ?>/img/question-mark.png" alt="images not found" width="20" height="20" />
-													<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients."><span data-translate="OTC_what_is_otc"/></div>
+													<div class="popper-trigger" 
+													data-placement="bottom" 
+													data-toggle="popover" 
+													data-translate="OTC_what_is_otc"
+													data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients."></div>
 												</h5>
                         <div class="lhero-text">
                             <h1><span data-translate="OTC_title"/> </h1>
@@ -30,12 +34,12 @@ get_header('otc');
 															<img src="<?= get_template_directory_uri() ?>/img/otc/more-coins.png" alt="images not found" />
 															<img id="converter" src="<?= get_template_directory_uri() ?>/img/otc/gold_convert.png" alt="images not found" />
 															<div class="fiat-currencies">
-																<span><span data-translate="OTC_USD"/></span>
-																<span><span data-translate="OTC_CAD"/></span>
-																<span><span data-translate="OTC_EUR"/></span>
-																<span><span data-translate="OTC_GBP"/></span>
-																<span><span data-translate="OTC_AUD"/></span>
-																<span><span data-translate="OTC_NZD"/></span>
+																<span data-translate="OTC_USD"></span>
+																<span data-translate="OTC_CAD"></span>
+																<span data-translate="OTC_EUR"></span>
+																<span data-translate="OTC_GBP"></span>
+																<span data-translate="OTC_AUD"></span>
+																<span data-translate="OTC_NZD"></span>
 															</div>
 														</div>
                         </div>
@@ -59,7 +63,7 @@ get_header('otc');
         <section class="how-area">
             <div class="container custom-container">
                 <div class="who-text">
-                    <h2><span data-translate="OTC_header2"/></h2>
+                    <h2 data-translate="OTC_header2"></h2>
                 </div>
                 <div class="row d-flex justify-content-around">
                     <div class="col-lg-4 col-md-6">
@@ -69,8 +73,8 @@ get_header('otc');
                                     <img src="<?= get_template_directory_uri() ?>/img/otc/how.png" alt="images not found" />
                                 </div>
                                 <div class="how-text">
-                                    <span><span data-translate="OTC_header2_tag1"/></span>
-                                    <span><span data-translate="OTC_header2_tag1_desc"/></span>
+                                    <span data-translate="OTC_header2_tag1"></span>
+                                    <span data-translate="OTC_header2_tag1_desc"></span>
                                 </div>
                             </div>
                             <div class="how-arrow">
@@ -85,8 +89,8 @@ get_header('otc');
                                     <img src="<?= get_template_directory_uri() ?>/img/otc/how2.png" alt="images not found" />
                                 </div>
                                 <div class="how-text">
-                                    <span>Trade</span>
-                                    <span>Our traders are available 24/7 to provide you with an indicative quote to buy or sell cryptocurrencies.</span>
+                                    <span data-translate="OTC_header2_tag2"></span>
+                                    <span data-translate="OTC_header2_tag2_desc"></span>
                                 </div>
                             </div>
                             <div class="how-arrow">
@@ -101,8 +105,8 @@ get_header('otc');
                                     <img src="<?= get_template_directory_uri() ?>/img/otc/how3.png" alt="images not found" />
                                 </div>
                                 <div class="how-text">
-                                    <span>Settle</span>
-                                    <span>Settlement typically occurs within 1 business day after your trade has been successfully confirmed.</span>
+                                    <span data-translate="OTC_header2_tag3"></span>
+                                    <span data-translate="OTC_header2_tag3_desc"></span>
                                 </div>
                             </div>
                         </div>
@@ -114,50 +118,50 @@ get_header('otc');
         <section class="why-area">
             <div class="container custom-container">
                 <div class="who-text">
-                    <h2>Why trade with us?</h2>
+                    <h2 data-translate="OTC_header3"></h2>
                 </div>
                 <div class="why-content">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
                             <div class="why-item">
                                 <img src="<?= get_template_directory_uri() ?>/img/otc/otc_saving.png" class="img-fluid" alt="images not found" />
-                                <h5>Save on Execution Costs</h5>
-                                <p>We eliminate slippage on larger trades. Save up to 2% compared to trading on other exchanges.</p>
+                                <h5 data-translate="OTC_header3_tag1"></h5>
+                                <p data-translate="OTC_header3_tag1_desc"></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="why-item">
                                 <img src="<?= get_template_directory_uri() ?>/img/otc/otc_zero_trading_fee.png" class="img-fluid" alt="images not found" />
-                                <h5>Zero Trading Fees</h5>
-                                <p>We don’t charge anything on top. What you see is what you get.</p>
+                                <h5 data-translate="OTC_header3_tag2"></h5>
+                                <p data-translate="OTC_header3_tag2_desc"></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="why-item">
                                 <img src="<?= get_template_directory_uri() ?>/img/otc/otc_best_price.png" class="img-fluid" alt="images not found" />
-                                <h5>Best Pricing in Canada</h5>
-                                <p>Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC, ETH, USDT, and more.</p>
+                                <h5 data-translate="OTC_header3_tag3"></h5>
+                                <p data-translate="OTC_header3_tag3_desc"></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="why-item">
                                 <img src="<?= get_template_directory_uri() ?>/img/otc/otc_fx.png" class="img-fluid" alt="images not found" />
-                                <h5>Access to Foreign Currencies</h5>
-                                <p>We have unique market access via digital assets, to provide a competitive pricing for other foreign currencies.</p>
+                                <h5 data-translate="OTC_header3_tag4"></h5>
+                                <p data-translate="OTC_header3_tag4_desc"></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="why-item">
                                 <img src="<?= get_template_directory_uri() ?>/img/otc/otc_personalized_services.png" class="img-fluid" alt="images not found" />
-                                <h5>Personalized Services</h5>
-                                <p>Our OTC account managers are available 24/7 to facilitate every request for your business or trading needs. You will also have access to industry insights on the cryptocurrency markets.</p>
+								<h5 data-translate="OTC_header3_tag5"></h5>
+								<p data-translate="OTC_header3_tag5_desc"></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="why-item">
                                 <img src="<?= get_template_directory_uri() ?>/img/otc/otc_rapid_settlement.png" class="img-fluid" alt="images not found" />
-                                <h5>Rapid Settlement</h5>
-                                <p>We provide a same day, no limit settlement for your USD and CAD trades. This also applies to your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+								<h5 data-translate="OTC_header3_tag6"></h5>
+								<p data-translate="OTC_header3_tag6_desc"></p>
                             </div>
                         </div>
                     </div>

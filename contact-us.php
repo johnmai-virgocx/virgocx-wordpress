@@ -75,7 +75,7 @@ form.normal .form-control input:focus {
 
 				<div class="contact-us-banner">
 					<div class="container">
-						<h2>Contact Us</h2>
+						<h2 data-translate="ContactUs"></h2>
 					</div>
 				</div>
 
@@ -92,7 +92,7 @@ form.normal .form-control input:focus {
 						<div class="row justify-content-between">
 							<div class="col-5">
 								<img class="customer-support-MPri8b" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-customer-support-DC2F9B2E-24A8-4A4A-B92F-B3C94FB18DBD3x.png" />
-								<div class="next-to-img">General Inquiry:</div>
+								<div class="next-to-img" data-translate="ContactUs_general_Inquiry"></div>
 							</div>
 
 							<div class="col-6">
@@ -103,10 +103,10 @@ form.normal .form-control input:focus {
 						<div class="row justify-content-between">
 							<div class="col-5">
 								<img class="customer-support-MPri8b" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-customer-support-DC2F9B2E-24A8-4A4A-B92F-B3C94FB18DBD3x.png" />
-								<div class="next-to-img">Customer Support:</div>
+								<div class="next-to-img" data-translate="ContactUs_sustomer_support"></div>
 							</div>
 
-								<div class="col-6">
+								<div class="col-6" data-translate="ContactUs_info">
 									Visit our Support Centre or email us at support@virgocx.ca
 								</div>
 						</div>
@@ -114,7 +114,7 @@ form.normal .form-control input:focus {
 						<div class="row justify-content-between">
 							<div class="col-5">
 								<img class="press-and-media-hZ8U6E" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-press-and-media-90332D0C-4F85-4982-8BE8-8B76E7C28BD53x.png" />
-								<div class="next-to-img">Press and Media:</div>
+								<div class="next-to-img" data-translate="ContactUs_press_media"></div>
 							</div>
 
 							<div class="col-6">media@virgocx.ca</div>
@@ -123,7 +123,7 @@ form.normal .form-control input:focus {
 						<div class="row justify-content-between">
 							<div class="col-5">
 								<img class="phone-XWuRxg" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-phone-6B7FD295-4CB4-41E6-80A8-1F3F81E729433x.png" />
-								<div class="next-to-img">Phone:</div>
+								<div class="next-to-img" data-translate="ContactUs_phone"></div>
 							</div>
 
 							<div class="col-6">+1 (416) 583-1838</div>
@@ -132,7 +132,7 @@ form.normal .form-control input:focus {
 						<div class="row justify-content-between">
 							<div class="col-5">
 								<img class="head-office-rWRKVs" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-head-office-4ABBC471-756B-4CDE-9103-479B2C853FE43x.png" />
-								<div class="next-to-img">Head Office:</div>
+								<div class="next-to-img" data-translate="ContactUs_head_office"></div>
 							</div>
 
 							<div class="col-6">
