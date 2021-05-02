@@ -13,12 +13,15 @@ get_header('otc');
                 <div class="container">
                     <div class="lhero-content">
                         <h5 class="ht-tp">
-													<img class="question-mark" src="<?= get_template_directory_uri() ?>/img/question-mark.png" alt="images not found" width="20" height="20" />
-													<div class="popper-trigger" 
-													data-placement="bottom" 
-													data-toggle="popover" 
-													data-translate="OTC_what_is_otc"
-													data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients."></div>
+							<img class="question-mark" src="<?= get_template_directory_uri() ?>/img/question-mark.png" alt="images not found" width="20" height="20" />
+							<div class="popper-trigger" 
+								data-placement="bottom" 
+								data-toggle="popover" 
+								data-translate="OTC_what_is_otc_desc"
+								data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
+								<div data-translate="OTC_what_is_otc">
+								</div>
+							</div>
 												</h5>
                         <div class="lhero-text">
                             <h1><span data-translate="OTC_title"/> </h1>
