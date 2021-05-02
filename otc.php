@@ -18,7 +18,7 @@ get_header('otc');
 													data-placement="bottom" 
 													data-toggle="popover" 
 													data-translate="OTC_what_is_otc"
-													data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients."></div>
+													data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">what is otc</div>
 												</h5>
                         <div class="lhero-text">
                             <h1><span data-translate="OTC_title"/> </h1>
