@@ -453,6 +453,7 @@
                     });
                 });
                 const result = await Promise.all(promises);
+                const footerAttrUpdate = await footerUpdate();
 
                 // Set initial language to English
                 setLang(dictionary[currentLang]);
@@ -522,7 +523,14 @@
             return false; // for good measure
         });
 
-
+        // replace footer data tag
+        async function footerUpdate(){
+            const promises = $('.page_item a').each(function(i, obj) {
+               var key = $( obj ).text();
+                $( obj ).attr("data-translate",key);
+            });
+            const result = await Promise.all(promises);
+        }
 // langSwitcher ends
 // **************************************************************************************
 // **************************************************************************************
