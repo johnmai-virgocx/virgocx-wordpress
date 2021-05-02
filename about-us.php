@@ -138,13 +138,9 @@ Xtra Small Screen - Small Mobile
 
 	<div id="aboutus-intro" class="container-wrapper">
 		<div class="container">
-        <h2>About Us</h2>
-				<h4>VirgoCX is the most trusted cryptocurrency trading platform in Canada.</h4>
-				<p>Digital asset platforms should be safe, reliable, and easy to understand and with that, VirgoCX is making
-					cryptocurrencies available to Canadians everywhere. We acknowledge that innovation moves rapidly and as we
-					are changing the way the world stores wealth, we operate diligently to provide quality services that adheres
-					to global compliance requirements.  With our platform, we are accelerating the adoption for Bitcoin,
-					Ethereum, Litecoin, and other Cryptocurrencies. </p>
+        <h2 data-translate="AboutUs_header1"></h2>
+				<h4 data-translate="AboutUs_header1_desc1"></h4>
+				<p data-translate="AboutUs_header1_desc2"></p>
 		</div>
 	</div>
 
@@ -152,9 +148,8 @@ Xtra Small Screen - Small Mobile
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-lg-4 col-sm-12">
-					<p>
-						Our mission is to provide the world’s most trusted platform for retail and institutional investors to access a
-						new global asset class and to provide global adoption for cryptocurrency.
+					<p data-translate="AboutUs_mission">
+						
 					</p>
 				</div>
 				<div class="col-lg-6 col-sm-12">
@@ -166,27 +161,30 @@ Xtra Small Screen - Small Mobile
 
 	<div id="aboutus-values" class="half-bg">
 		<div class="container">
-        <h2>Our Values</h2>
+        <h2 data-translate="AboutUs_header2"></h2>
 				<div class="row justify-content-between">
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<h4>Safety</h4>
-						<div class="virgo-cx-a-lows-canad-pFQedc font-class-1">
-							VirgoCX allows Canadians to buy and sell cryptocurrency conveniently. We provide the means for you to trade Bitcoin, Ethereum, Litecoin, USDT Tether, Bitcoin Cash, EOS, PAX Gold, and more. We make depositing and trading available within seconds after verification.</div>
+						<h4 data-translate="AboutUs_header2_tag1"></h4>
+						<div 
+						class="virgo-cx-a-lows-canad-pFQedc font-class-1" data-translate="AboutUs_header2_tag1_desc">
+						
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<h4>Fairness</h4>
-						<div class="we-take-pride-in-our-IfDNHD font-class-1">
-							We take pride in our competitive pricing and liquidity of our trading platform, offering the best prices in Canada for any investor to secure their cryptocurrencies.</div>
+						<h4 data-translate="AboutUs_header2_tag2"></h4>
+						<div class="we-take-pride-in-our-IfDNHD font-class-1" data-translate="AboutUs_header2_tag2_desc">
+							
+							</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<h4>Transparency</h4>
-						<div class="your-trust-requires-gc2QiZ font-class-1">
-							Your trust requires our transparency. Our trading platform has removed trading fees so what you see is what you get.</div>
+						<h4 data-translate="AboutUs_header2_tag3"></h4>
+						<div class="your-trust-requires-gc2QiZ font-class-1" data-translate="AboutUs_header2_tag3_desc">
+						
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<h4>Professionalism</h4>
-						<div class="we-are-regulated-and-sziVuj font-class-1">
-							We are regulated and we operate diligently. Our company is externally audited and we hold the highest standard of legal compliance, business conduct and ethics.  
+						<h4 data-translate="AboutUs_header2_tag4"></h4>
+						<div class="we-are-regulated-and-sziVuj font-class-1" data-translate="AboutUs_header2_tag4_desc">   
 						</div>
 					</div>
 				</div><!-- end of row -->
@@ -195,7 +193,7 @@ Xtra Small Screen - Small Mobile
 
 	<div id="in-the-community" class="container-wrapper">
 		<div class="container">
-        <h2>In the Community</h2>
+        <h2 data-translate="AboutUs_header3"></h2>
 
 				<div id="grey-bg"></div>
         <img class="photo4-C61RwL" src="<?= get_template_directory_uri() ?>/img/aboutus/04-about-us-photo4-158E4D4D-3E06-461F-87D2-99710B67B617.png" />
@@ -206,12 +204,11 @@ Xtra Small Screen - Small Mobile
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-sm-12">
-					<h2>Join the Virgo Team</h2>
-          <div class="since-our-humble-beg-1DesI1 font-class-1">
-            Since our humble beginning, our team has been rapidly growing with people that have interdisciplinary skill sets. We are always looking for the talented, the inspired, and the striving to join us to lead the financial revolution. If you are interested in joining the VirgoCX team, we encourage you to click the link below to learn about our career opportunities!
+					<h2 data-translate="AboutUs_header4"></h2>
+          <div class="since-our-humble-beg-1DesI1 font-class-1" data-translate="AboutUs_header4_desc">
           </div>
 					<div class="view-openings">
-						<a href="https://www.linkedin.com/company/virgocx/" class="btn blue-gradient-btn">View Openings</a>
+						<a href="https://www.linkedin.com/company/virgocx/" class="btn blue-gradient-btn" data-translate="AboutUs_header4_btn"></a>
 					</div>
 				</div>
 
