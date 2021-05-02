@@ -34,7 +34,7 @@ get_header();
                             <div class="rmain-right-one">
                                 <div class="rmain-ro-work">
                                     <h3>How it Works</h3>
-                                    <div class="popper-trigger" data-placement="bottom" data-toggle="popover"
+                                    <div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello"
                                          data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
                                         <span></span>
                                         What is OTC ?

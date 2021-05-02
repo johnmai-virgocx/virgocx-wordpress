@@ -12,7 +12,7 @@ get_header('otc');
             <section class="lhero-area">
                 <div class="container">
                     <div class="lhero-content">
-                        <h5 class="ht-tp">
+                        <h5 class="ht-tp">L
 							<img class="question-mark" src="<?= get_template_directory_uri() ?>/img/question-mark.png" alt="images not found" width="20" height="20" />
 							<div class="popper-trigger" 
 								data-placement="bottom" 
