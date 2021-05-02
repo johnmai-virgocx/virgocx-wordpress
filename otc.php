@@ -14,27 +14,28 @@ get_header('otc');
                     <div class="lhero-content">
                         <h5 class="ht-tp">
 													<img class="question-mark" src="<?= get_template_directory_uri() ?>/img/question-mark.png" alt="images not found" width="20" height="20" />
-													<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">What is OTC ?</div>
+													<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients."><span data-translate="OTC_what_is_otc"/></div>
 												</h5>
                         <div class="lhero-text">
-                            <h1>VirgoCX OTC Desk</h1>
+                            <h1><span data-translate="OTC_title"/> </h1>
                             <p>
-                                Dedicated for seamless execution of trades <br />
-                                above $30,000 CAD.
+                                <span data-translate="OTC_title_desc1"/> <br />
+                                <span data-translate="OTC_title_desc2"/>
                             </p>
+
 														<div class="conversion-images d-flex justify-content-around">
 															<img src="<?= get_template_directory_uri() ?>/img/otc/gold_btc.png" alt="images not found" />
-															<img src="<?= get_template_directory_uri() ?>/img/otc/gold_eth.png" alt="images not found" />
+															<img src="<?L= get_template_directory_uri() ?>/img/otc/gold_eth.png" alt="images not found" />
 															<img src="<?= get_template_directory_uri() ?>/img/otc/gold_usdt.png" alt="images not found" />
 															<img src="<?= get_template_directory_uri() ?>/img/otc/more-coins.png" alt="images not found" />
 															<img id="converter" src="<?= get_template_directory_uri() ?>/img/otc/gold_convert.png" alt="images not found" />
 															<div class="fiat-currencies">
-																<span>USD</span>
-																<span>CAD</span>
-																<span>EUR</span>
-																<span>GBP</span>
-																<span>AUD</span>
-																<span>NZD</span>
+																<span><span data-translate="OTC_USD"/></span>
+																<span><span data-translate="OTC_CAD"/></span>
+																<span><span data-translate="OTC_EUR"/></span>
+																<span><span data-translate="OTC_GBP"/></span>
+																<span><span data-translate="OTC_AUD"/></span>
+																<span><span data-translate="OTC_NZD"/></span>
 															</div>
 														</div>
                         </div>
@@ -50,15 +51,15 @@ get_header('otc');
         <section class="who-area">
             <div class="container custom-container">
                 <div class="who-text">
-                    <h2>Who we are</h2>
-                    <p>Headquartered in Toronto with a global presence, we bridge the gap between traditional financial services and the cryptocurrency markets. We trade and manage a deep pool of crypto and fiat currencies designed for large traders that cannot fill large orders at a desired market price. VirgoCX OTC offers total market access for cryptocurrencies with optimal price execution.</p>
+                    <h2><span data-translate="OTC_header1"/></h2>
+                    <p><span data-translate="OTC_header1_desc"/></p>
                 </div>
             </div>
         </section>
         <section class="how-area">
             <div class="container custom-container">
                 <div class="who-text">
-                    <h2>How it works?</h2>
+                    <h2><span data-translate="OTC_header2"/></h2>
                 </div>
                 <div class="row d-flex justify-content-around">
                     <div class="col-lg-4 col-md-6">
@@ -68,8 +69,8 @@ get_header('otc');
                                     <img src="<?= get_template_directory_uri() ?>/img/otc/how.png" alt="images not found" />
                                 </div>
                                 <div class="how-text">
-                                    <span>Onboard</span>
-                                    <span>Once you have been approved, our traders will establish a direct line of contact with you.</span>
+                                    <span><span data-translate="OTC_header2_tag1"/></span>
+                                    <span><span data-translate="OTC_header2_tag1_desc"/></span>
                                 </div>
                             </div>
                             <div class="how-arrow">
@@ -574,7 +575,7 @@ img.question-mark {
 
 <script type="text/javascript">
 (function($){
-	$(document).ready(function() {	
+	$(document).ready(function() {
 		$('[data-toggle="popover"]').popover()
 	});
 })(jQuery);
