@@ -156,7 +156,7 @@ Xtra Small Screen - Small Mobile
 
 			<p class="foot-note">
 				<sup>3</sup>
-				<span data-translate=""></span>
+				<span data-translate="Fees_note3"></span>
 			</p>
 		</div>
 	</main><!-- #main -->
