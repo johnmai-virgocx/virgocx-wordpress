@@ -36,7 +36,11 @@ get_header();
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
 						<h2 data-translate="Buy_header2"></h2>
-						<p ><span data-translate="Buy_header2_desc1"></span><a href="https://virgocx.ca/page#/register" data-translate="Buy_header2_desc2">click here</a> <span data-translate="Buy_header2_desc3"></span></p>
+						<p >
+							<span data-translate="Buy_header2_desc1"></span>
+							<a href="https://virgocx.ca/page#/register" data-translate="Buy_header2_desc2"></a> 
+							<span data-translate="Buy_header2_desc3"></span>
+						</p>
 					</div>
 				</div>
 

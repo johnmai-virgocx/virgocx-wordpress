@@ -18,7 +18,7 @@
 							<div class="row">
 									<div class="col-lg-2 col-sm-4">
 											<div class="fp-menu">
-													<h5 data-translate="footer_row1"></h5>
+													<h5 data-translate="footer_col1"></h5>
 													<?php
 													wp_nav_menu(
 														array(
@@ -32,7 +32,7 @@
 									</div>
 									<div class="col-lg-2 col-sm-4">
 											<div class="fp-menu">
-													<h5 data-translate="footer_row2" ></h5>
+													<h5 data-translate="footer_col2" ></h5>
 													<?php
 													wp_nav_menu(
 														array(
@@ -46,7 +46,7 @@
 									</div>
 									<div class="col-lg-2 col-sm-4">
 											<div class="fp-menu">
-													<h5  data-translate="footer_row3"></h5>
+													<h5  data-translate="footer_col3"></h5>
 													<?php
 													wp_nav_menu(
 														array(
@@ -60,7 +60,7 @@
 									</div>
 									<div class="col-lg-2 col-sm-4">
 											<div class="fp-menu">
-													<h5 data-translate="footer_row4"></h5>
+													<h5 data-translate="footer_col4"></h5>
 													<?php
 													wp_nav_menu(
 														array(
@@ -74,7 +74,7 @@
 									</div>
 									<div class="col-lg-2 col-sm-4">
 											<div class="fp-menu">
-													<h5 data-translate="footer_row5"></h5>
+													<h5 data-translate="footer_col5"></h5>
 													<?php
 													wp_nav_menu(
 														array(
@@ -88,25 +88,25 @@
 									</div>
 									<div class="col-lg-2 col-sm-4">
 											<div class="fp-menu">
-													<h5 data-translate="footer_row6"></h5>
+													<h5 data-translate="footer_col6"></h5>
 													<ul id="social-links">
 															<li>
-																	<a href="https://twitter.com/Virgocx"><img src="<?= get_template_directory_uri() ?>/img/otc/twitter.svg" alt="images not found" /> <span data-translate="footer_row6_Twitter"></span></a>
+																	<a href="https://twitter.com/Virgocx"><img src="<?= get_template_directory_uri() ?>/img/otc/twitter.svg" alt="images not found" /> <span data-translate="footer_col6_Twitter"></span></a>
 															</li>
 															<li>
-																	<a href="https://medium.com/virgocx"><img src="<?= get_template_directory_uri() ?>/img/otc/medium.svg" alt="images not found" /> <span data-translate="footer_row6_Medium"></span></a>
+																	<a href="https://medium.com/virgocx"><img src="<?= get_template_directory_uri() ?>/img/otc/medium.svg" alt="images not found" /> <span data-translate="footer_col6_Medium"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.facebook.com/virgocxofficial"><img src="<?= get_template_directory_uri() ?>/img/otc/facebook.svg" alt="images not found" /> <span data-translate="footer_row6_Facebook"></span></a>
+																	<a href="https://www.facebook.com/virgocxofficial"><img src="<?= get_template_directory_uri() ?>/img/otc/facebook.svg" alt="images not found" /> <span data-translate="footer_col6_Facebook"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.linkedin.com/company/virgocx/"><img src="<?= get_template_directory_uri() ?>/img/otc/linkedin.svg" alt="images not found" /> <span data-translate="footer_row6_LinkedIn"></span></a>
+																	<a href="https://www.linkedin.com/company/virgocx/"><img src="<?= get_template_directory_uri() ?>/img/otc/linkedin.svg" alt="images not found" /> <span data-translate="footer_col6_LinkedIn"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ"><img src="<?= get_template_directory_uri() ?>/img/otc/youtube.svg" alt="images not found" /> <span data-translate="footer_row6_YouTube"></span></a>
+																	<a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ"><img src="<?= get_template_directory_uri() ?>/img/otc/youtube.svg" alt="images not found" /> <span data-translate="footer_col6_YouTube"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.instagram.com/virgocx_official/"><img src="<?= get_template_directory_uri() ?>/img/otc/instagram.png" alt="images not found" /> <span data-translate="footer_row6_Instagram"></span></a>
+																	<a href="https://www.instagram.com/virgocx_official/"><img src="<?= get_template_directory_uri() ?>/img/otc/instagram.png" alt="images not found" /> <span data-translate="footer_col6_Instagram"></span></a>
 															</li>
 													</ul>
 											</div>
@@ -122,7 +122,7 @@
 																	<a class="ios" href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048" target="_blank">
 																		<div class="text">
 																			<span data-translate="footer_App_Apple1"></span>
-																			<span class="highlight" data-translate="footer_App_Apple1"></span>
+																			<span class="highlight" data-translate="footer_App_Apple2"></span>
 																		</div>
 																	</a>
 															</li>

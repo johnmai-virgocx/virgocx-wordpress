@@ -12,7 +12,7 @@ get_header('otc');
             <section class="lhero-area">
                 <div class="container">
                     <div class="lhero-content">
-                        <h5 class="ht-tp">L
+                        <h5 class="ht-tp">
 							<img class="question-mark" src="<?= get_template_directory_uri() ?>/img/question-mark.png" alt="images not found" width="20" height="20" />
 							<div class="popper-trigger" 
 								data-placement="bottom" 
@@ -32,7 +32,7 @@ get_header('otc');
 
 														<div class="conversion-images d-flex justify-content-around">
 															<img src="<?= get_template_directory_uri() ?>/img/otc/gold_btc.png" alt="images not found" />
-															<img src="<?L= get_template_directory_uri() ?>/img/otc/gold_eth.png" alt="images not found" />
+															<img src="<?= get_template_directory_uri() ?>/img/otc/gold_eth.png" alt="images not found" />
 															<img src="<?= get_template_directory_uri() ?>/img/otc/gold_usdt.png" alt="images not found" />
 															<img src="<?= get_template_directory_uri() ?>/img/otc/more-coins.png" alt="images not found" />
 															<img id="converter" src="<?= get_template_directory_uri() ?>/img/otc/gold_convert.png" alt="images not found" />
@@ -54,6 +54,7 @@ get_header('otc');
             <div class="container custom-container">
 								<?= do_shortcode('[contact-form-7 id="70" title="OTC"]') ?>
             </div>
+			
         </section>
         <section class="who-area">
             <div class="container custom-container">

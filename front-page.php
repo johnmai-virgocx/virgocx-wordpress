@@ -412,16 +412,10 @@ if ($totalNumber === 1): ?>
                                 <div class="sentence col-10">
 									<span data-translate="frontpage_Buy_Sell"></span>
                                     <div class="sliding-vertical ">
-										<span>Bitcoin</span>
-										<span>Ethereum</span>
-										<span>USDT</span>
-										<span>Cryptocurrency</span>
-
-										<!-- 这里无法使用Span来替换 -->
-										<!-- <span data-translate="frontpage_Bitcoin"/>
-										<span data-translate="frontpage_Ethereum"/>
-										<span data-translate="frontpage_USDT"/>
-										<span data-translate="frontpage_Cryptocurrency"/> -->
+										<span data-translate="frontpage_Bitcoin">Bitcoin</span>
+										<span data-translate="frontpage_Ethereum">Ethereum</span>
+										<span data-translate="frontpage_USDT">USDT</span>
+										<span data-translate="frontpage_Cryptocurrency">Cryptocurrency</span>
                                     </div>
                                 </div>
                             </div>
@@ -644,9 +638,10 @@ if ($totalNumber === 1): ?>
                     <h5><span data-translate="frontpage_Download"/></h5>
                     <div class="d-flex">
                         <div id="stores" class="app-store">
-                            <a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048"><img
-                                        class="app_store_download" data-value="app_store"
-                                        src="<?= get_template_directory_uri() ?>/img/app_buttons/app_store.png"
+                            <a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048">
+								<img class="app_store_download" 
+									 data-value="app_store"
+                                     src="<?= get_template_directory_uri() ?>/img/app_buttons/app_store.png"
                                         alt="images not found"/></a>
                             <a href="https://play.google.com/store/apps/details?id=ca.virgocx.exchange"><img
                                         class="play_store_download" data-value="play_store"

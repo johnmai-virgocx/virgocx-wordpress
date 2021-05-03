@@ -16,13 +16,13 @@ get_header();
 				<div class="row justify-content-between">
 					<div class="col-lg-4 col-md-12">
 						<div class="row mb-4">
-							<h2>Mobile App</h2>
-							<p class="">Trade cryptocurrency anytime from anywhere in the world. Get all of the powerful trading tools, funding options and live price streaming in the palm of your hand.</p>
+							<h2 data-translate="AppDownload_header1"></h2>
+							<p data-translate="AppDownload_header1_desc"></p>
 						</div>
 
 						<div class="row">
                         <div class="fingertips-item">
-                            <h5>Download the VirgoCX Mobile App</h5>
+                            <h5 data-translate="AppDownload_header2"></h5>
 														<div class="d-flex">
 															<div id="stores" class="app-store">
 																	<a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048"><img class="app_store_download" data-value="app_store" src="<?= get_template_directory_uri() ?>/img/app_buttons/app_store.png" alt="images not found" /></a>
@@ -49,26 +49,26 @@ get_header();
                 <div class="row mb-4">
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-item fibg-1">
-                            <h5>Trade Cryptocurrencies Instantly</h5>
-														<p> The process of buying and selling Bitcoin (BTC), Tether (USDT), Ethereum (ETH), Litecoin (LTC), and more becomes fast and easy. Our users can access the Quick Trade functionality to buy and sell on a whim.</p>
+                            <h5 data-translate="AppDownload_header2_tag1"></h5>
+							<p data-translate="AppDownload_header2_tag1_desc"></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-item fibg-2">
-                            <h5>Open a Trading Account</h5>
-                            <p>Our user-friendly interface and automatic verification process allows you to open an account in minutes.</p>
+                            <h5 data-translate="AppDownload_header2_tag2"></h5>
+                            <p data-translate="AppDownload_header2_tag2_desc"></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-item fibg-1">
-														<h5>Commission Free, Real-time Trading</h5>
-                            <p>Enjoy trading on your mobile with zero trading fees, high liquidity, and free deposits.</p>
+							<h5 data-translate="AppDownload_header2_tag3"></h5>
+                            <p data-translate="AppDownload_header2_tag3_desc"></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="feature-item fibg-2">
-                            <h5>State-of-the-art Security</h5>
-                            <p>We store all fiat funds with trusted financial institutions. For digital assets, VirgoCX stores 90% of the assets in multi-signature cold wallet technology by Ledger Vault. Your funds are safe.</p>
+                            <h5 data-translate="AppDownload_header2_tag4"></h5>
+                            <p data-translate="AppDownload_header2_tag4_desc"></p>
                         </div>
                     </div>
                 </div>

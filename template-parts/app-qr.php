@@ -1,5 +1,5 @@
 <div class="fingertips-item app-qr-parts">
-	<h5>Download the VirgoCX Mobile App</h5>
+	<h5 data-translate="Buy_header2_download"></h5>
 	<div class="row">
 		<div id="stores" class="col-lg-5 col-md-5 app-store">
 				<a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048"><img class="app_store_download" data-value="app_store" src="<?= get_template_directory_uri() ?>/img/app_buttons/app_store.png" alt="images not found" /></a>

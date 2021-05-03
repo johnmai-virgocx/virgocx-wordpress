@@ -19,8 +19,8 @@ get_header();
         <div id="page1" class="hero-area-wrapper">
             <div class="container">
                 <div class="hero-content" style="text-align: center;">
-                    <h2>VirgoCX OTC Referral Program </h2>
-                    <p>We offer a one-time $200 CAD reward on the first trade and a reward equal to 0.2% of the notional value of every subsequent trade.</p>
+                    <h2 data-translate="ReferOTC_title"></h2>
+                    <p data-translate="ReferOTC_title_desc"></p>
                 </div>
             </div>
         </div>
@@ -33,11 +33,11 @@ get_header();
                         <div class="rmain-right">
                             <div class="rmain-right-one">
                                 <div class="rmain-ro-work">
-                                    <h3>How it Works</h3>
-                                    <div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello"
+                                    <h3 data-translate="ReferOTC_header1"></h3>
+                                    <div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="ReferOTC_What_is_OTC_desc"
                                          data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
                                         <span></span>
-                                        What is OTC ?
+										<div data-translate="ReferOTC_What_is_OTC" style="width: 6.25rem; display: inline;"></div>
                                     </div>
                                 </div>
                                 <div class="rmain-ro-block">
@@ -49,10 +49,16 @@ get_header();
                                                          alt="images not found">
                                                 </div>
                                                 <div class="rmrob-one-content">
-                                                    <p>Contact an Account Manager</p>
-                                                    <p>Fill out the contact form below or reach us at <a
-                                                            href="tel:+14165831835">+1 (416) 583-1835</a> or <a
-                                                            href="mailto:otc@virgocx.ca">otc@virgocx.ca</a></p>
+                                                    <p data-translate="ReferOTC_header1_tag1"></p>
+                                                    <p>
+														<span data-translate="ReferOTC_header1_tag1_desc_1"></span>
+													<a href="tel:+14165831835">
+														+1 (416) 583-1835
+													</a>
+													 <span data-translate="ReferOTC_header1_tag1_desc_2"></span>
+													 <a href="mailto:otc@virgocx.ca">otc@virgocx.ca</a>
+													 <span data-translate="ReferOTC_header1_tag1_desc_3"></span>
+													 </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,9 +69,8 @@ get_header();
                                                          alt="images not found">
                                                 </div>
                                                 <div class="rmrob-one-content">
-                                                    <p>Make the Introduction</p>
-                                                    <p>Our OTC account manager will reply immediately and help your
-                                                        referral get set up.</p>
+                                                    <p data-translate="ReferOTC_header1_tag2"></p>
+                                                    <p data-translate="ReferOTC_header1_tag2_desc"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,9 +81,8 @@ get_header();
                                                          alt="images not found">
                                                 </div>
                                                 <div class="rmrob-one-content">
-                                                    <p>Receive Continuous Rewards </p>
-                                                    <p>Your referrals trade volume will be directly reflected in the
-                                                        payouts that you receive every month. </p>
+                                                    <p data-translate="ReferOTC_header1_tag3"></p>
+                                                    <p data-translate="ReferOTC_header1_tag3_desc"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,7 +93,11 @@ get_header();
                                 </div>
 
                                 <div class="rmain-ro-block">
-                                    <p>Please see <a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811">Terms and Conditions</a>  for more details.</p>
+                                    <p>
+										<span data-translate="ReferOTC_More_Detail_1"></span>
+										<a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811" data-translate="ReferOTC_More_Detail_2">
+										</a>
+										<span data-translate="ReferOTC_More_Detail_3"></span></p>
                                 </div>
                             </div>
                         </div>
