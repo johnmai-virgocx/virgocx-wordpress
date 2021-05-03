@@ -96,8 +96,8 @@ Xtra Small Screen - Small Mobile
 				<div class="container">
 					<div class="row justify-content-md-center">
 							<div class="fees-header">
-								<h2>Fees</h2>
-								<p>Enjoy low fees with full transparency from VirgoCX.</p>
+								<h2 data-translate="Fees_title1"></h2>
+								<p  data-translate="Fees_title1_desc"></p>
 							</div>
 					</div>
 
@@ -105,28 +105,28 @@ Xtra Small Screen - Small Mobile
 						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
 							<div class="hero-feature-item" href="#personalinformation">
 								<img src="<?= get_template_directory_uri() ?>/img/fees_zero_fees.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Zero Trading Fee</h5>
+								<h5 data-translate="Fees_title1_tag1"></h5>
 							</div>
 						</div>
 
 						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
 							<div class="hero-feature-item" href="#fund">
 								<img src="<?= get_template_directory_uri() ?>/img/fees_impeccable_security.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Impeccable Security</h5>
+								<h5 data-translate="Fees_title1_tag2"></h5>
 							</div>
 						</div>
 
 						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
 							<div class="hero-feature-item" href="#system">
 								<img src="<?= get_template_directory_uri() ?>/img/fees_fiat_payment.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Efficient Fiat Payment</h5>
+								<h5 data-translate="Fees_title1_tag3"></h5>
 							</div>
 						</div>
 
 						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
 							<div class="hero-feature-item" href="#system">
 								<img src="<?= get_template_directory_uri() ?>/img/fees_regulated.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Fully Regulated Service</h5>
+								<h5 data-translate="Fees_title1_tag4"></h5>
 							</div>
 						</div>
 					</div>
@@ -140,10 +140,24 @@ Xtra Small Screen - Small Mobile
 			<div id="fees-tables">
 			</div><!-- end of custom container -->
 
-			<p class="foot-note"><sup>1</sup>Processing time refers to the amount of time needed by VirgoCX staff to process your transaction. Fiat currency transactions may be further delayed by banks and/or Interac for reasons beyond VirgoCX’s control. Wire transfer requests submitted after our wire transfer cut-off time or on a weekend will be processed on the next working day. Furthermore, wire transfer transactions requested on US/Canada statutory or banking holidays will be processed on the next working day. Cryptocurrency networks may become congested and during such times of congestion, transactions may require significantly longer times to settle. Further delays may result from VirgoCX internal reviews or other reasons as stated within our <a href="https://www.virgocx.ca/termsOofService.html">Terms of Service</a>.</p>
-			<p class="foot-note"><sup>2</sup>Please see our <a href="https://virgocx.zendesk.com/hc/en-us/articles/360052293232-Fiat-Rejection-Fees">Other Fees</a> page for fiat currency rejection fees</p>
+			<p class="foot-note">
+				<sup>1</sup>
+				<span data-translate="Fees_note1_1"></span>
+				<a href="https://www.virgocx.ca/termsOofService.html" data-translate="Fees_note1_2">
+				</a>
+				<span data-translate="Fees_note1_3"></span>
+				</p>
+			<p class="foot-note">
+				<sup>2</sup>
+				<span data-translate="Fees_note2_1"></span>
+				<a href="https://virgocx.zendesk.com/hc/en-us/articles/360052293232-Fiat-Rejection-Fees" data-translate="Fees_note2_2"></a> 
+				<span data-translate="Fees_note2_3"></span>
+				</p>
 
-			<p class="foot-note"><sup>3</sup>Transaction/gas fees will be charged by the respective networks. Fees charged by VirgoCX will cover all network transaction/gas fees for outbound (withdrawal) transactions. Please be aware that various cryptocurrency networks may become congested from time to time and will cause delays beyond VirgoCX’s control.</p>
+			<p class="foot-note">
+				<sup>3</sup>
+				<span data-translate=""></span>
+			</p>
 		</div>
 	</main><!-- #main -->
 
@@ -485,9 +499,9 @@ fetch('https://virgocx.ca/transferFee/getList')
 
 	<section class="getStart-area">
 			<div class="container custom-container">
-					<h3>Buy and Sell Cryptocurrency Today</h3>
+					<h3 data-translate="Fees_title2"></h3>
 					<div class="getStart-content get-started-content">
-							<span>Email Address</span>
+							<span data-translate="Fees_Email"></span>
 							<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
 					</div>
 			</div>

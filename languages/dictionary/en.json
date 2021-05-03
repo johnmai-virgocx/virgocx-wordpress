@@ -326,5 +326,47 @@
 	"ReferOTC_Get_Started": "Get Started ",
 	"ReferOTC_More_Detail_1": "Please see ",
 	"ReferOTC_More_Detail_2": "Terms and Conditions ",
-	"ReferOTC_More_Detail_3": "for more details."
+	"ReferOTC_More_Detail_3": "for more details.",
+	
+	"Fees_title1":"Fees",
+	"Fees_title1_desc":"Enjoy low fees with full transparency from VirgoCX.",
+	"Fees_title1_tag1":"Zero Trading Fee",
+	"Fees_title1_tag2":"Impeccable Security",
+	"Fees_title1_tag3":"Efficient Fiat Payment",
+	"Fees_title1_tag4":"Fully Regulated Service",
+	"Fees_header1":"Fund Canadian Dollars",
+	"Fees_header2":"Withdrawal Canadian Dollars",
+	"Fees_header3":"Fund US Dollars",
+	"Fees_header4":"Withdrawal US Dollars",
+	"Fees_header5":"Deposit Cryptocurrency",
+	"Fees_header6":"Withdrawal Cryptocurrency",
+	"Fees_header7":"Trading Fee",
+	"Fees_Wire_Transfer":"Wire Transfer",
+	"Fees_ETransfer":"Interac e-Transfer",
+	"Fees_All_Cryptocurrency":"All Cryptocurrency",
+	"Fees_Commission":"Commission",
+	"Fees_Fee":"Fee",
+	"Fees_Minimum":"Minimum",
+	"Fees_Maximum":"Maximum",
+	"Fees_Processing_Time":"Processing Time",
+	"Fees_Free":"Free",
+	"Fees_Unlimited":"Unlimited",
+	"Fees_time1":"Up to 24 hours(typically Within 45 minutes)1,2",
+	"Fees_time2":"Instantaneous",
+	"Fees_time3":"Immediate",
+	"Fees_note1_1":"Processing time refers to the amount of time needed by VirgoCX staff to process your transaction. Fiat currency transactions may be further delayed by banks and/or Interac for reasons beyond VirgoCX’s control. Wire transfer requests submitted after our wire transfer cut-off time or on a weekend will be processed on the next working day. Furthermore, wire transfer transactions requested on US/Canada statutory or banking holidays will be processed on the next working day. Cryptocurrency networks may become congested and during such times of congestion, transactions may require significantly longer times to settle. Further delays may result from VirgoCX internal reviews or other reasons as stated within our Terms of Service.",
+	"Fees_note1_2":"Terms of Service.",
+	"Fees_note1_3":"",
+	"Fees_note2_1":"Please see our ",
+	"Fees_note2_2":"Other Fees ",
+	"Fees_note2_3":"page for fiat currency rejection fees",
+	"Fees_note3":"Transaction/gas fees will be charged by the respective networks. Fees charged by VirgoCX will cover all network transaction/gas fees for outbound (withdrawal) transactions. Please be aware that various cryptocurrency networks may become congested from time to time and will cause delays beyond VirgoCX’s control.",
+	"Fees_title2":"Buy and Sell Cryptocurrency Today",
+	"Fees_Email":"Email Address"
+	
+	
+	
+	
+
+	
 }
