@@ -478,6 +478,14 @@
             })
 
 
+            // Contact form update
+            $("input").each(function(){
+                if(this.placeholder.indexOf('data translate')>= 0){
+                    var string = this.placeholder;
+                    const  key = string.substring(15,string.length);
+                    $(this).attr("placeholder", dictionary[key]);
+                }
+            })
         };
 
         // Swap languages when menu changes
