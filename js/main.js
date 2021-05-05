@@ -481,9 +481,15 @@
             // Contact form update
             $("input").each(function(){
                 if(this.placeholder.indexOf('data translate')>= 0){
-                    var string = this.placeholder;
-                    const  key = string.substring(15,string.length);
-                    $(this).attr("placeholder", dictionary[key]);
+                    //check if data-translate attribute added
+                    if(this.hasAttribute("data-translate")){
+                        $(this).attr('placeholder',dictionary[$(this).data("translate")])
+                    }else{
+                        var string = this.placeholder;
+                        const  key = string.substring(15,string.length);
+                        $(this).attr("placeholder", dictionary[key]);
+                        this.setAttribute("data-translate", key);
+                    }
                 }
             })
         };
