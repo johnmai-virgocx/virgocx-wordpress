@@ -8,7 +8,7 @@
  */
 
 $args = [
-	'name' => 'USD Coin',
+	'name' => 'USD_Coin',
 	'ticker' => 'USDC',
 ];
 get_template_part('template-parts/sell', 'coin', $args);

@@ -10,6 +10,20 @@
 get_header();
 ?>
     <style>
+		
+		#contactUs-GetStarted {
+			width: 40%;
+			background: linear-gradient(180deg, #56a6d4 0%, #7173e2 98%);
+			color: #fff;
+			padding: 0;
+			margin-bottom: 2rem;
+			border-radius: 5px;
+			border: none;
+			-webkit-transition: 0.4s all ease;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+		}
 
 .contact-us-banner {
   background-image: url(<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-u63d2u56fe-2E768509-59EA-4BD3-BFF1-EE51BC511F8C2x.png);

@@ -9,6 +9,25 @@
 get_header();
 ?>
 
+<style type="text/css">
+	#homepage-GetStarted {
+		width: 195px;
+		margin-left: 6px;
+		background: #7965e6;
+		color: #fff;
+		border-radius: 5px;
+		border: none;
+		padding: 12px 12px;
+		margin-bottom: 10px;
+		transition: 0.4s all ease;
+		-webkit-transition: 0.4s all ease;
+		-moz-transition: 0.4s all ease;
+	}
+	
+	
+	
+</style>
+
 	<div id="buy-coin">
 		<div class="buy-coin-header">
 			<div class="container">
@@ -61,12 +80,13 @@ get_header();
 							<p data-translate="Buy_header3_desc"></p>
 						</div>
 						<div class="step-header">
-						<h2><span data-translate="Buy_header4"></span><?= $args['name'] ?></h2>
+						<h2><span data-translate="Buy_header4"></span> <span data-translate="<?= $args['name'] ?>"></span></h2>
 							<p >
 								<span data-translate="Buy_header4_desc1"></span>
 								<br />
 								<span data-translate="Buy_header4_desc2"></span>
-								<?= $args['ticker'] ?>.</p>
+								<span data-translate="<?= $args['ticker'] ?>"></span>
+								.</p>
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12">
@@ -166,9 +186,13 @@ get_header();
 		<section class="getStart-area">
 			<div class="container custom-container">
 				<h3 data-translate="Buy_header6"></h3>
+				
+				
 				<div class="getStart-content get-started-content">
 										<span data-translate="Buy_email"></span>
-										<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+										<div style="width: 50rem;">
+											<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+										</div>
 				</div>
 			</div>
 		</section>

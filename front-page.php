@@ -10,6 +10,46 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     #trading-fee-wrapper {
         padding: 0 15px;
     }
+	
+	#homepage-GetStarted {
+		width: 195px;
+		margin-left: 6px;
+		background: #7965e6;
+		color: #fff;
+		border-radius: 5px;
+		border: none;
+		padding: 12px 12px;
+		margin-bottom: 10px;
+		transition: 0.4s all ease;
+		-webkit-transition: 0.4s all ease;
+		-moz-transition: 0.4s all ease;
+	}
+	
+	#homepage-GetStarted:hover{
+		background: linear-gradient(180deg, #7173e2 0%, #56a6d4 98%);
+		transition: 0.4s all ease;
+		-webkit-transition: 0.4s all ease;
+		-moz-transition: 0.4s all ease;
+	}
+	
+	.homepage2 {
+		width: 50rem;
+	}
+	
+	.homepage2 	#contactUs-GetStarted {
+			width: 40%;
+			background: linear-gradient(180deg, #56a6d4 0%, #7173e2 98%);
+			color: #fff;
+			padding: 0;
+			margin-bottom: 2rem;
+			border-radius: 5px;
+			border: none;
+			-webkit-transition: 0.4s all ease;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			
+	}
 
     .hero-area-wrapper {
         background-size: contain;
@@ -462,7 +502,7 @@ if ($totalNumber === 1): ?>
                                       class="row justify-content-md-center d-flex justify-content-center align-items-baseline">
                                     <div class="amount-input col-lg-4">
                                         <input id="base-input" type="number" name="youammout"
-                                               placeholder="Enter Quantity"/>
+                                               placeholder="Enter Quantity" data-translate="frontpage_Quantity"/>
                                         <!-- Use This! #just fix width+height IMG  -->
                                         <div class="mm-dropdown">
                                             <div class="conversion-selectioin d-flex">
@@ -483,7 +523,7 @@ if ($totalNumber === 1): ?>
 
                                     <div class="amount-input col-lg-4">
                                         <input id="quote-input" type="number" name="amount"
-                                               placeholder="Enter Total Amount"/>
+                                               placeholder="Enter Total Amount" data-translate="frontpage_Amount"/>
                                         <!-- Use This! #just fix width+height IMG  -->
                                         <div class="mm-dropdown2">
                                             <div class="conversion-selectioin d-flex">
@@ -750,7 +790,9 @@ if ($totalNumber === 1): ?>
             <span>
 				<span data-translate="frontpage_Email_Address"/>
 			</span>
-            <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+			<div class="homepage2">
+				<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+			</div>
         </div>
     </div>
 </section>

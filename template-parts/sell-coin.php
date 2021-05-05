@@ -9,13 +9,31 @@
 get_header();
 ?>
 
+<style type="text/css">
+	#homepage-GetStarted {
+		width: 195px;
+		margin-left: 6px;
+		background: #7965e6;
+		color: #fff;
+		border-radius: 5px;
+		border: none;
+		padding: 12px 12px;
+		margin-bottom: 10px;
+		transition: 0.4s all ease;
+		-webkit-transition: 0.4s all ease;
+		-moz-transition: 0.4s all ease;
+	}
+	
+	
+</style>
+
 	<div id="buy-coin">
 		<div class="buy-coin-header">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-5 col-md-12">
 						<div class="row">
-							<h1><span data-translate="Sell_header1_1"></span><?= $args['name'] ?><br /><span data-translate="Sell_header1_2"></span></h1>
+							<h1><span data-translate="Sell_header1_1"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
 							<p class="tag-line" data-translate="Sell_header1_desc"></p>
 
 							<div class="hero-signup get-started-content">
@@ -60,8 +78,8 @@ get_header();
 							<p data-translate="Sell_header3_desc"></p>
 						</div>
 						<div class="step-header">
-							<h2><span data-translate="Sell_header4_1"></span><?= $args['name'] ?><span data-translate="Sell_header4_2"></h2>
-							<p><span data-translate="Sell_header4_desc1"></span><?= $args['ticker'] ?> <span data-translate="Sell_header4_desc2"> </p>
+							<h2><span data-translate="Sell_header4_1"></span><span data-translate="<?= $args['name'] ?>"></span><span data-translate="Sell_header4_2"></h2>
+							<p><span data-translate="Sell_header4_desc1"></span><span data-translate="<?= $args['ticker'] ?>"></span> <span data-translate="Sell_header4_desc2"> </p>
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12">
@@ -161,9 +179,11 @@ get_header();
 		<section class="getStart-area">
 			<div class="container custom-container">
 				<h3 data-translate="Sell_header6"></h3>
-				<div class="getStart-content get-started-content">
+				<div class="getStart-content get-started-content" style="width: 50rem;">
 										<span data-translate="Sell_email"></span>
+										<div style="width: 50rem;">
 										<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+										</div>
 				</div>
 			</div>
 		</section>

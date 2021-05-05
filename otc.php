@@ -452,7 +452,9 @@ get_header('otc');
     margin: 10px auto;
     color: #ffffff;
 }
-.started-form .sf-contact span {
+
+
+.started-form .sf-contact #email_phone {
     color: #e3bd94;
 }
 

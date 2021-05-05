@@ -1,8 +1,6 @@
 {
 	"hello": "你好呀",
 	"dictionary": "测试",
-	"c": "西",
-	"Bitcoin": "比特币",
 
 	"frontpage_Buy_Sell": "购买&出售",
 	"frontpage_Cryptocurrency": "加密货币 ",
@@ -320,9 +318,9 @@
 	"ReferOTC_header1_tag2_desc": "我们的客户经理将立即回复并帮助受邀人建立账户。",
 	"ReferOTC_header1_tag3": "奖励拿不停",
 	"ReferOTC_header1_tag3_desc": "您的邀请交易量将直接反映在您每月收到的奖励中。",
-	"ReferOTC_firstName": "名",
-	"ReferOTC_lastName": "姓",
-	"ReferOTC_emailAddress": "邮箱",
+	"ReferOTC_firstName": "名*",
+	"ReferOTC_lastName": "姓*",
+	"ReferOTC_emailAddress": "邮箱*",
 	"ReferOTC_phoneNumber": "电话",
 	"ReferOTC_Get_Started": "一键开启",
 	"ReferOTC_More_Detail_1": "更多详情，请参见",
@@ -363,7 +361,33 @@
 	"Fees_note2_3":"”页面，了解法定货币拒绝费用",
 	"Fees_note3":"交易/矿工费将由相应的区块链网络收取。 VirgoCX 收取的费用将涵盖提现交易的所有网络交易/矿工费用。请注意，各种加密货币网络可能会不时变得拥挤，并会导致延迟，对此已超出 VirgoCX 的控制范围",
 	"Fees_title2":"购买&出售加密货币",
-	"Fees_Email":"邮箱"
+	"Fees_Email":"邮箱",
+	
+	"Bitcoin_Cash": "比特币现金",
+	"BCH":"BCH",
+	"Bitcoin":"比特币",
+	"BTC":"BCH",
+	"Dai":"Dai",
+	"DAI":"DAI",
+	"Dogecoin":"狗狗币",
+	"DOGE":"DOGE",
+	"EOS":"EOS",
+	"Ethereum":"以太坊",
+	"ETH":"ETH",
+	"Litecoin":"莱特币",
+	"LTC":"LTC",
+	"PAX_Gold":"PAX Gold",
+	"Paxgold":"Paxgold",
+	"Uniswap":"Uniswap",
+	"UNI":"UNI",
+	"USD_Coin":"USD Coin",
+	"USDC":"USDC",
+	"Tether":"泰达币",
+	"USDT":"USDT",
+	"Stellar":"恒星币",
+	"XLM":"XLM"
+	
+	
 
 
 

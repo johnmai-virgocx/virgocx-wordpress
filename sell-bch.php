@@ -8,7 +8,7 @@
  */
 
 $args = [
-	'name' => 'Bitcoin Cash',
+	'name' => 'Bitcoin_Cash',
 	'ticker' => 'BCH',
 ];
 get_template_part('template-parts/sell', 'coin', $args);
