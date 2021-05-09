@@ -101,8 +101,8 @@
 											);
 											?>
                                         <div class="navbar-nav nav-item mr-auto">
-                                            <a class="nav-link earn-btn dropdown-toggle" href="/en-referral" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-translate="header_Earn">
-                                              
+                                            <a class="nav-link earn-btn dropdown-toggle"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-translate="header_Earn">
+
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                 <a href="/en-referral-friend" class="dropdown-item"  data-translate="header_Refer_Friend"></a>

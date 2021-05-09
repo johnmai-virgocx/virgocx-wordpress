@@ -490,6 +490,13 @@
                         $(this).attr("placeholder", dictionary[key]);
                         this.setAttribute("data-translate", key);
                     }
+
+
+
+                }else{
+                    if(this.value === 'Get Started'||this.value === '一键开启'){
+                        $(this).attr('value',dictionary['frontpage_Started'])
+                    }
                 }
             })
         };
@@ -535,11 +542,15 @@
 
         // force hard coded href goes to right lang page
         $('a').click(function(event) {
-            event.preventDefault();
-            const url =$(this).attr('href');
-            redirection(url,'');
-            return false; // for good measure
+            if(this.attributes['data-toggle']<0){
+                event.preventDefault();
+                const url =$(this).attr('href');
+                redirection(url,'');
+                return false; // for good measure
+            }
         });
+
+
 
         // replace footer data tag
         async function menuUpdate(){
