@@ -37,6 +37,7 @@
   <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=ca.virgocx.exchange">
   <meta name="smartbanner:enabled-platforms" content="android,ios">
   <meta name="smartbanner:close-label" content="Close this banner">
+    <link rel="canonical" href="https://virgocx.ca/">
 
 	<!-- Fav Icon -->
 	<link rel="shortcut icon" href="img/fav.png" />
