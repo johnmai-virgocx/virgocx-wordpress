@@ -411,8 +411,8 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
             };
 
 
@@ -506,9 +506,11 @@
             var language = $(this).val().toLowerCase();
             if (dictionary.hasOwnProperty(language)) {
                 var url = window.location.href;
+                if(url.indexOf('/'+currentLang+'-')<0){
+                    setLang(dictionary[language]);
+                }
                 redirection(url,language);
                 currentLang = language;
-                setLang(dictionary[language]);
             }
         });
 
@@ -547,6 +549,11 @@
                 const url =$(this).attr('href');
                 redirection(url,'');
                 return false; // for good measure
+            }else {
+                event.preventDefault();
+                const url =$(this).attr('href');
+                redirection(url,'');
+                return false;
             }
         });
 
