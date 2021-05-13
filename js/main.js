@@ -459,7 +459,7 @@
                 setLang(dictionary[currentLang]);
             }
             fileLoader();
-        }
+        };
         loadLangJson();
 
 
@@ -499,7 +499,7 @@
                     }
                 }
             })
-        };
+        }
 
         // Swap languages when menu changes
         $("#lang").on("change", function () {
@@ -517,7 +517,7 @@
         // set switcher to currentLang
         function loadLangSwitcher() {
             $("#lang").val(currentLang);
-        }
+        };
 
         loadLangSwitcher();
 
@@ -577,6 +577,31 @@
 // langSwitcher ends
 // **************************************************************************************
 // **************************************************************************************
+
+
+// **************************************************************************************
+// **************************************************************************************
+// affilicat sesstion detector start
+
+        function checkAffiliateSessionId(){
+            var url = window.location.href;
+            if(url.indexOf('aff_id')>=0 && url.indexOf('offer_id')>=0 ){
+                var affIdIndexStartingPoint = url.indexOf('&aff_id')+8;
+                var affIdIndexEnds = url.length;
+                var offerIdIndexStartingPoint = url.indexOf('offer_id')+9;
+                var offerIdIndexEnds = url.indexOf('&aff_id');
+                var offerId = url.slice(offerIdIndexStartingPoint,offerIdIndexEnds);
+                var affId = url.slice(affIdIndexStartingPoint,affIdIndexEnds);
+                sessionName = 'offerId_affId';
+                sessionStorage.setItem(sessionName, offerId+','+affId+','+Date().toString());
+            }
+        };
+        checkAffiliateSessionId();
+// affilicat sesstion detector
+// **************************************************************************************
+// **************************************************************************************
+
+
 
 
 
