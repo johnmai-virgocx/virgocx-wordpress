@@ -174,6 +174,7 @@ get_header();
                     // langSwitcher
 
                     // Some variables for later
+                    var titleTranslate;
                     var dictionary = {},
                         currentLang = 'en',
                         langPageIndicator = 0,
@@ -365,6 +366,7 @@ get_header();
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
 
+
                         const rowContent = data.fee.reduce(function (acc, entry) {
                             acc += `
 				<tr>
@@ -392,15 +394,15 @@ get_header();
                         }, '');
 
                         const theContent = `
-				<h4>${title}</h4>
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col" ><p data-translate="hello">Fee</p></th>
-								<th scope="col">Minimum</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Minimum">Minimum</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -455,8 +457,8 @@ get_header();
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fees</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -473,7 +475,11 @@ get_header();
                     function renderFundCryptoTable(entries, title) {
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
-
+                        if (title === "Deposit Cryptocurrency") {
+                            titleTranslate = 'Fees_header5';
+                        } else {
+                            titleTranslate ='Fees_header6';
+                        }
                         const rowContent = entries.reduce(function (acc, entry) {
                             let maximum = entry.maximum;
                             if (typeof maximum !== 'string') {
@@ -507,14 +513,14 @@ get_header();
                         }, '');
 
                         const theContent = `
-				<h4>${title}</h4>
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fee</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -557,11 +563,14 @@ get_header();
                                 processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
                             } else if (entry.transferWay === 'Interac e-Transfer') {
                                 if (title === "Fund Canadian Dollars") {
+                                    titleTranslate = 'Fees_header1';
                                     processingTime = 'Instantaneous<sup>1,2</sup>';
                                 } else if (title === "Withdrawal Canadian Dollars") {
-                                    processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                                    titleTranslate ='Fees_header2';
+                                        processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
                                 } else {
-                                    processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                                    titleTranslate ='Fees_header3';
+                                        processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
                                 }
                             }
 
@@ -577,7 +586,7 @@ get_header();
 					<td>
 						${minimum}
 					</td>
-					<td>
+					<td >
 						${maximum}
 					</td>
 					<td>
@@ -590,16 +599,16 @@ get_header();
                         }, '');
 
                         const theContent = `
-				<h4>${title}</h4>
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fee</th>
-								<th scope="col">Minimum</th>
-								<th scope="col">Maximum</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Minimum">Minimum</th>
+								<th scope="col" data-translate="Fees_Maximum">Minimum</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
