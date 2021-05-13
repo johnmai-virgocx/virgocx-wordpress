@@ -411,8 +411,8 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json",
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json"
             };
 
 
@@ -544,16 +544,11 @@
 
         // force hard coded href goes to right lang page
         $('a').click(function(event) {
-            if(this.attributes['data-toggle']<0){
+            if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0){
                 event.preventDefault();
                 const url =$(this).attr('href');
                 redirection(url,'');
                 return false; // for good measure
-            }else {
-                event.preventDefault();
-                const url =$(this).attr('href');
-                redirection(url,'');
-                return false;
             }
         });
 
