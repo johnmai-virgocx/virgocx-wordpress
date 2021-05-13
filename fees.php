@@ -246,14 +246,14 @@ get_header();
                         })
 
                         // Contact form update
-                        $("input").each(function(){
-                            if(this.placeholder.indexOf('data translate')>= 0){
+                        $("input").each(function () {
+                            if (this.placeholder.indexOf('data translate') >= 0) {
                                 //check if data-translate attribute added
-                                if(this.hasAttribute("data-translate")){
-                                    $(this).attr('placeholder',dictionary[$(this).data("translate")])
-                                }else{
+                                if (this.hasAttribute("data-translate")) {
+                                    $(this).attr('placeholder', dictionary[$(this).data("translate")])
+                                } else {
                                     var string = this.placeholder;
-                                    const  key = string.substring(15,string.length);
+                                    const key = string.substring(15, string.length);
                                     $(this).attr("placeholder", dictionary[key]);
                                     this.setAttribute("data-translate", key);
                                 }
@@ -334,17 +334,18 @@ get_header();
                     function renderTradingFee(tradingFee, title) {
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
+                        titleTranslate ='Fees_header7';
 
                         const theContent = `
-				<h4>${title}</h4>
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 						</thead>
 							<tr>
-								<th scope="row">
+								<th scope="row" >
 									<img src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
-									Commission
+                                    Commission
 								</th>
 								<td>
 									<span>${tradingFee.maker === '0' ? 'Free' : tradingFee.maker}</span>
@@ -365,7 +366,7 @@ get_header();
                     function renderCryptoPerEntryTable(data, title) {
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
-
+                        titleTranslate = 'Fees_header6';
 
                         const rowContent = data.fee.reduce(function (acc, entry) {
                             acc += `
@@ -475,11 +476,7 @@ get_header();
                     function renderFundCryptoTable(entries, title) {
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
-                        if (title === "Deposit Cryptocurrency") {
-                            titleTranslate = 'Fees_header5';
-                        } else {
-                            titleTranslate ='Fees_header6';
-                        }
+                        titleTranslate = 'Fees_header5';
                         const rowContent = entries.reduce(function (acc, entry) {
                             let maximum = entry.maximum;
                             if (typeof maximum !== 'string') {
@@ -537,7 +534,12 @@ get_header();
                     function renderFeesPerEntryTable(entries, title) {
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
-
+                        titleTranslate = 'Fees_header6';
+                        if (title === "Fund US Dollars") {
+                            titleTranslate = 'Fees_header3';
+                        } else if (title === "Withdrawal US Dollars") {
+                            titleTranslate = 'Fees_header4';
+                        }
                         const rowContent = entries.reduce(function (acc, entry) {
                             let maximum = entry.maximum;
                             let minimum = entry.minimum;
@@ -566,11 +568,10 @@ get_header();
                                     titleTranslate = 'Fees_header1';
                                     processingTime = 'Instantaneous<sup>1,2</sup>';
                                 } else if (title === "Withdrawal Canadian Dollars") {
-                                    titleTranslate ='Fees_header2';
-                                        processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                                    titleTranslate = 'Fees_header2';
+                                    processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
                                 } else {
-                                    titleTranslate ='Fees_header3';
-                                        processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                                    processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
                                 }
                             }
 
