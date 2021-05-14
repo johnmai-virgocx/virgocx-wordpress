@@ -579,7 +579,8 @@ get_header();
 				<tr>
 					<th scope="row">
 						<img src="${entry.logo}" width="40" alt="${entry.transferWay}" />
-						${entry.transferWay}
+                        <p data-translate="hello">${entry.transferWay}</p>
+
 					</th>
 					<td class="fee-content">
 						${feeContent}
