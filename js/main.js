@@ -588,7 +588,7 @@
                 var offerId = url.slice(offerIdIndexStartingPoint,offerIdIndexEnds);
                 var affId = url.slice(affIdIndexStartingPoint,affIdIndexEnds);
                 sessionName = 'offerId_affId';
-                sessionStorage.setItem(sessionName, offerId+','+affId+','+Date().toString());
+                sessionStorage.setItem(sessionName, offerId+','+affId+','+Date.parse(Date()));
             }
         };
         checkAffiliateSessionId();
