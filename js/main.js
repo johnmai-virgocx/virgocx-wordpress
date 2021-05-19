@@ -411,8 +411,8 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
             };
 
 
@@ -570,28 +570,37 @@
             const footer = await Promise.all(footerPromises);
         }
 // langSwitcher ends
-// **************************************************************************************
-// **************************************************************************************
 
 
-// **************************************************************************************
-// **************************************************************************************
 // affilicat sesstion detector start
 
         function checkAffiliateSessionId(){
             var url = window.location.href;
-            if(url.indexOf('aff_id')>=0 && url.indexOf('offer_id')>=0 ){
-                var affIdIndexStartingPoint = url.indexOf('&aff_id')+8;
+            if(url.indexOf('affiliate_id')>=0 && url.indexOf('offer_id')>=0 ){
+                var affIdIndexStartingPoint = url.indexOf('&affiliate_id')+14;
                 var affIdIndexEnds = url.length;
                 var offerIdIndexStartingPoint = url.indexOf('offer_id')+9;
-                var offerIdIndexEnds = url.indexOf('&aff_id');
+                var offerIdIndexEnds = url.indexOf('&affiliate_id');
                 var offerId = url.slice(offerIdIndexStartingPoint,offerIdIndexEnds);
                 var affId = url.slice(affIdIndexStartingPoint,affIdIndexEnds);
                 sessionName = 'offerId_affId';
-                sessionStorage.setItem(sessionName, offerId+','+affId+','+Date().toString());
+                sessionStorage.setItem(sessionName, offerId+','+affId+','+Date.parse(Date()));
             }
         };
         checkAffiliateSessionId();
+
+
+        function canonicalUpdate(){
+            var url = window.location.href;
+            // if(url == window.location.origin){
+                $('link[rel="canonical"]').each(function(){
+                    var oldUrl = $(this).attr("href");
+                    $(this).attr("href", window.location.origin);
+                });
+
+            // }
+        }
+        canonicalUpdate();
 // affilicat sesstion detector
 // **************************************************************************************
 // **************************************************************************************
