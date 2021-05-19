@@ -335,6 +335,10 @@ get_header();
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
                         titleTranslate ='Fees_header7';
+                        let tradingFeeMaker1 = tradingFee.maker;
+                        if(tradingFee.maker === '0'){
+                            tradingFeeMaker1 = 'Free';
+                        }
 
                         const theContent = `
 				<h4 data-translate="${titleTranslate}">${title}</h4>
@@ -344,11 +348,11 @@ get_header();
 						</thead>
 							<tr>
 								<th scope="row" >
-									<img src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
-                                    Commission
+									<img style="display:inline" src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
+                                    <div style="display:inline" data-translate="Fees_Commission">Commission</div>
 								</th>
 								<td>
-									<span>${tradingFee.maker === '0' ? 'Free' : tradingFee.maker}</span>
+                                    <div data-translate="Fees_${tradingFeeMaker1}">${tradingFeeMaker1}</div>
 								</td>
 								<td>
 								</td>
@@ -386,7 +390,8 @@ get_header();
 						${entry.minQty} ${entry.coinName}
 					</td>
 					<td>
-						Immediate<sup>1,3</sup>
+	                    <div style="display:inline" data-translate="Fees_Immediate">Immediate</div>
+                        <sup>1,3</sup>
 					</td>
 				</tr>
 		`;
@@ -494,14 +499,16 @@ get_header();
                             acc += `
 				<tr>
 					<th scope="row">
-						<img src="${entry.logo}" width="40" alt="${entry.transferWay}" />
-						${entry.transferWay}
+						<img style="display:inline" src="${entry.logo}" width="40" alt="${entry.transferWay}" />
+                        <div style="display:inline" data-translate="Fees_${entry.transferWay}">${entry.transferWay}</div>
 					</th>
 					<td class="fee-content">
-						${feeContent}<sup>3</sup>
+	                    <div style="display:inline" data-translate="Fees_${feeContent}">${feeContent}</div>
+                        <sup>3</sup>
 					</td>
 					<td>
-						Immediate<sup>1,3</sup>
+	                    <div style="display:inline" data-translate="Fees_Immediate">Immediate</div>
+                        <sup>1,3</sup>
 					</td>
 				</tr>
 		`;
@@ -552,47 +559,66 @@ get_header();
                             }
 
 
-                            let feeContent = 'Free';
+                            let feeContent1 = 'Free';
+                            let feeContent2 = '';
                             if (entry.fee !== 0) {
-                                feeContent = `${entry.fee * 100}%`;
+                                feeContent1 = `${entry.fee * 100}%`;
                                 if (entry.minFee !== 0) {
-                                    feeContent += `<br />($${entry.minFee} Minimum)`;
+                                    feeContent2 = `($${entry.minFee} Minimum)`;
                                 }
                             }
 
-                            let processingTime = entry.processingTime;
+                            // let processingTime = entry.processingTime;
+                            // if (entry.transferWay === 'Wire Transfer') {
+                            //     processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
+                            // } else if (entry.transferWay === 'Interac e-Transfer') {
+                            //     if (title === "Fund Canadian Dollars") {
+                            //         titleTranslate = 'Fees_header1';
+                            //         processingTime = 'Instantaneous<sup>1,2</sup>';
+                            //     } else if (title === "Withdrawal Canadian Dollars") {
+                            //         titleTranslate = 'Fees_header2';
+                            //         processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                            //     } else {
+                            //         processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                            //     }
+                            // }
+                            let processingTime1 = '';
+                            let processingTime2 = '';
                             if (entry.transferWay === 'Wire Transfer') {
-                                processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
+                                processingTime1 = 'Up to 24 hours'
+                                processingTime2 = '(typically Within 45 minutes)';
                             } else if (entry.transferWay === 'Interac e-Transfer') {
                                 if (title === "Fund Canadian Dollars") {
                                     titleTranslate = 'Fees_header1';
-                                    processingTime = 'Instantaneous<sup>1,2</sup>';
+                                    processingTime2 = 'Instantaneous';
                                 } else if (title === "Withdrawal Canadian Dollars") {
                                     titleTranslate = 'Fees_header2';
-                                    processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                                    processingTime2 = '(typically Within 45 minutes)';
                                 } else {
-                                    processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                                    processingTime2 = '(typically Within 45 minutes)';
                                 }
                             }
 
                             acc += `
-				<tr>
+                <tr>
 					<th scope="row">
-						<img src="${entry.logo}" width="40" alt="${entry.transferWay}" />
-                        <p data-translate="hello">${entry.transferWay}</p>
-
+                        <img style="display:inline" src="${entry.logo}" width="40" alt="${entry.transferWay}"/>
+                        <div style="display:inline" data-translate="Fees_${entry.transferWay}">${entry.transferWay}</div>
 					</th>
 					<td class="fee-content">
-						${feeContent}
+	                    <div data-translate="Fees_${feeContent1}">${feeContent1}</div>
+	                    <div data-translate="Fees_${feeContent2}">${feeContent2}</div>
 					</td>
 					<td>
-						${minimum}
+	                    <div data-translate="Fees_${minimum}">${minimum}</div>
 					</td>
 					<td >
-						${maximum}
+	                    <div data-translate="Fees_${maximum}">${maximum}</div>
 					</td>
 					<td>
-						${processingTime}
+	                    <div data-translate="Fees_${processingTime1}">${processingTime1}</div>
+	                    <div style="display:inline" data-translate="Fees_${processingTime2}">${processingTime2}</div>
+                        <sup style="display:inline">1,2</sup>
 					</td>
 				</tr>
 		`;

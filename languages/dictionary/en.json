@@ -363,6 +363,16 @@
 	"Fees_note3":"Transaction/gas fees will be charged by the respective networks. Fees charged by VirgoCX will cover all network transaction/gas fees for outbound (withdrawal) transactions. Please be aware that various cryptocurrency networks may become congested from time to time and will cause delays beyond VirgoCX’s control.",
 	"Fees_title2":"Buy and Sell Cryptocurrency Today",
 	"Fees_Email":"Email Address",
+	"Fees_Wire Transfer":"Wire Transfer",
+	"Fees_Interac e-Transfer":"Interac e-Transfer",
+	"Fees_0.75%":"0.75%",
+	"Fees_($20 Minimum)":"($20 Minimum)",
+	"Fees_0.5%":"0.5%",
+	"Fees_($5 Minimum)":"($5 Minimum)",
+	"Fees_$3000":"$3000",
+
+
+
 	
 	"Bitcoin_Cash": "Bitcoin Cash",
 	"BCH":"BCH",
