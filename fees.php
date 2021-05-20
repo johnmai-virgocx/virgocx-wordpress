@@ -179,8 +179,8 @@ get_header();
                         currentLang = 'en',
                         langPageIndicator = 0,
                         languagePair = {
-                            "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json",
-                            "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                            "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                            "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
                         };
 
 
