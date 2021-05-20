@@ -790,9 +790,7 @@ if ($totalNumber === 1): ?>
             <span>
 				<span data-translate="frontpage_Email_Address"/>
 			</span>
-			<div class="homepage2">
-				<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
-			</div>
+            <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
         </div>
     </div>
 </section>
