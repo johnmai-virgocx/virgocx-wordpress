@@ -595,7 +595,10 @@
             // if(url == window.location.origin){
                 $('link[rel="canonical"]').each(function(){
                     var oldUrl = $(this).attr("href");
-                    $(this).attr("href", window.location.origin);
+                    // $(this).attr("href", window.location.origin);
+                    if(window.location.pathname=="/"){
+                        $(this).attr("href", "https://virgocx.ca/");
+                    }
                 });
 
             // }
