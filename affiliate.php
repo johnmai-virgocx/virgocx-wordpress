@@ -195,7 +195,7 @@ get_header();
                     <h2>Become a VirgoCX Affiliate</h2>
                 </div>
                 <div class="row">
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKryDxoDT4WlRIl3dEjlNzMEdURFpBN1FGUkYyMTRKWVZNUUdDWDBUMTNYTy4u"
+                    <a href="https://partners.virgocx.ca/signup"
                        class="col-lg-2 blue-gradient-btn button-center">Start Now</a>
 
                 </div>
