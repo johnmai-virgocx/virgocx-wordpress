@@ -94,16 +94,16 @@
 																	<a href="https://twitter.com/Virgocx" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/twitter.png" alt="images not found" /> <span data-translate="footer_col6_Twitter"></span></a>
 															</li>
 															<li>
-																	<a href="https://medium.com/virgocx" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/m.png" alt="images not found" /> <span data-translate="footer_col6_Medium"></span></a>
+																	<a href="https://www.reddit.com/r/VirgoCX/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/Reddit.png" alt="images not found" /> <span data-translate="footer_col6_Medium"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.facebook.com/virgocxofficial" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/fb.png" alt="images not found" /> <span data-translate="footer_col6_Facebook"></span></a>
+																	<a href="https://www.facebook.com/virgocxofficial" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/facebook.png" alt="images not found" /> <span data-translate="footer_col6_Facebook"></span></a>
 															</li>
 															<li>
 																	<a href="https://www.linkedin.com/company/virgocx/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/in.png" alt="images not found" /> <span data-translate="footer_col6_LinkedIn"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/yt.png" alt="images not found" /> <span data-translate="footer_col6_YouTube"></span></a>
+																	<a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/youtube.png" alt="images not found" /> <span data-translate="footer_col6_YouTube"></span></a>
 															</li>
 															<li>
 																	<a href="https://www.instagram.com/virgocx_official/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/instra.png" alt="images not found" /> <span data-translate="footer_col6_Instagram"></span></a>

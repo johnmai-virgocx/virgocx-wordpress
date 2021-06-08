@@ -759,8 +759,11 @@ if ($totalNumber === 1): ?>
 					<h3>
 						<span data-translate="frontpage_header4_2"/>
 					</h3>
+                    <p style="margin-bottom:0px">
+                        <span data-translate="frontpage_header4_desc_1"/>
+                    </p>
                     <p>
-                        <span data-translate="frontpage_header4_desc"/>
+                        <span data-translate="frontpage_header4_desc_2"/>
                     </p>
                 </div>
                 <div id="speak-with-account" class="otc-item">
