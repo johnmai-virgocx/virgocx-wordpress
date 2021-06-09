@@ -94,7 +94,7 @@
 																	<a href="https://twitter.com/Virgocx"><img src="<?= get_template_directory_uri() ?>/img/otc/twitter.svg" alt="images not found" /> <span data-translate="footer_col6_Twitter"></span></a>
 															</li>
 															<li>
-																	<a href="https://medium.com/virgocx"><img src="<?= get_template_directory_uri() ?>/img/otc/medium.svg" alt="images not found" /> <span data-translate="footer_col6_Medium"></span></a>
+																	<a href="https://www.reddit.com/r/VirgoCX/"><img src="<?= get_template_directory_uri() ?>/img/Reddit.png" alt="images not found" /> <span data-translate="footer_col6_Medium"></span></a>
 															</li>
 															<li>
 																	<a href="https://www.facebook.com/virgocxofficial"><img src="<?= get_template_directory_uri() ?>/img/otc/facebook.svg" alt="images not found" /> <span data-translate="footer_col6_Facebook"></span></a>
