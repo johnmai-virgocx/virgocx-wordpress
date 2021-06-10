@@ -424,9 +424,20 @@
             if (lang){
                 currentLang = lang;
             }else{
-                sessionStorage.setItem('lang', 'en');
-                currentLang = 'en';
+                var browerLang = navigator.language || navigator.userLanguage;
+                if(browerLang !=null){
+                    // switch between zh and en
+                    currentLang = browerLang.indexOf('en')>=0?'en':browerLang.indexOf('zh')>=0?'zh':'en';
+                }else {
+                    currentLang = 'en';
+                }
+                sessionStorage.setItem('lang', currentLang);
+                $("#lang").val(currentLang);
             }
+
+
+
+
             // none-onload action
             let langLoader = async function () {
                 var url = window.location.href;
@@ -434,7 +445,8 @@
                     var langParam = '/' + key + '-';
                     if (url.indexOf(langParam) > -1) {
                         if(key != currentLang){
-                            redirection(url, currentLang);
+                            // redirection(url, currentLang);
+                            redirection(url, key);
                         }
                     }
                 })
@@ -457,7 +469,7 @@
                 const result = await Promise.all(promises);
                 const menuAttrUpdate = await menuUpdate();
 
-                // Set initial language to English
+                // Set initial language to browser default language
                 setLang(dictionary[currentLang]);
             }
             fileLoader();
@@ -546,7 +558,9 @@
 
         // force hard coded href goes to right lang page
         $('a').click(function(event) {
-            if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0){
+            // avoid data-toggle and data-slide button
+            if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0 &&
+                [false, null, 'undefined',undefined].indexOf( this.attributes['data-slide'])>=0){
                 event.preventDefault();
                 const url =$(this).attr('href');
                 redirection(url,'');
@@ -590,22 +604,6 @@
             }
         };
         checkAffiliateSessionId();
-
-
-        function canonicalUpdate(){
-            var url = window.location.href;
-            // if(url == window.location.origin){
-                $('link[rel="canonical"]').each(function(){
-                    var oldUrl = $(this).attr("href");
-                    // $(this).attr("href", window.location.origin);
-                    if(window.location.pathname=="/"){
-                        $(this).attr("href", "https://virgocx.ca/");
-                    }
-                });
-
-            // }
-        }
-        canonicalUpdate();
 // affilicat sesstion detector
 // **************************************************************************************
 // **************************************************************************************
