@@ -186,13 +186,9 @@ get_header();
 		<section class="getStart-area">
 			<div class="container custom-container">
 				<h3 data-translate="Buy_header6"></h3>
-				
-				
 				<div class="getStart-content get-started-content">
 										<span data-translate="Buy_email"></span>
-										<div style="width: 50rem;">
-											<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
-										</div>
+										<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
 				</div>
 			</div>
 		</section>
