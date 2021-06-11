@@ -137,8 +137,8 @@
 															<li class="app-download">
 																	<a class="android" href="https://virgocx.oss-us-west-1.aliyuncs.com//prod/2020/10/31/2dd4caebf9c547058e418a600ff48b95.apk" target="_blank">
 																		<div class="text">
-																			<span data-translate="footer_App_Andriod1"></span>
-																			<span class="highlight" data-translate="footer_App_Andriod2"></span>
+																			<span data-translate="footer_App_Android1"></span>
+																			<span class="highlight" data-translate="footer_App_Android2"></span>
 																		</div>
 																	</a>
 															</li>

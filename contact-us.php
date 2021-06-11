@@ -117,7 +117,7 @@ form.normal .form-control input:focus {
 						<div class="row justify-content-between">
 							<div class="col-5">
 								<img class="customer-support-MPri8b" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-customer-support-DC2F9B2E-24A8-4A4A-B92F-B3C94FB18DBD3x.png" />
-								<div class="next-to-img" data-translate="ContactUs_sustomer_support"></div>
+								<div class="next-to-img" data-translate="ContactUs_customer_support"></div>
 							</div>
 
 								<div class="col-6" data-translate="ContactUs_info">
