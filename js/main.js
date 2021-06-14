@@ -60,10 +60,10 @@
         function handleBaseValueChange(rawValue) {
             const value = parseFloatInput(rawValue);
             const thePair = getSelectedPair();
-            console.log('base input key up', {
-                value,
-                thePair,
-            });
+            // console.log('base input key up', {
+            //     value,
+            //     thePair,
+            // });
             if (!thePair) {
                 return;
             }
@@ -74,16 +74,16 @@
         function handleQuoteValueChange(rawValue) {
             const value = parseFloatInput(rawValue);
             const thePair = getSelectedPair();
-            console.log('quote value changed', {
-                value,
-                thePair,
-            });
+            // console.log('quote value changed', {
+            //     value,
+            //     thePair,
+            // });
 
             if (!thePair) {
                 return;
             }
 
-            console.log('going to change the base input value to ', value / thePair);
+            // console.log('going to change the base input value to ', value / thePair);
             baseInput.value = value / thePair;
         }
 
@@ -145,7 +145,7 @@
                 })
             });
 
-            console.log('all the pairs', pairs, cryptoToFiatPairs);
+            // console.log('all the pairs', pairs, cryptoToFiatPairs);
 
             // Render it if its the first time
             if (!window._pairs) {
@@ -170,13 +170,13 @@
                 const image = `<img src="${_virgocx_theme_url}/img/${coinName}.png" /> ${coinName}`;
                 li.innerHTML = image;
 
-                console.log('going through coin name', {
-                    coinName,
-                    selectedBase,
-                })
+                // console.log('going through coin name', {
+                //     coinName,
+                //     selectedBase,
+                // })
                 if (coinName === selectedBase) {
                     cryptoSelected.innerHTML = image;
-                    console.log('going to add', coinName, cryptoSelected, li);
+                    // console.log('going to add', coinName, cryptoSelected, li);
                 }
                 cryptoOptions.append(li);
             })
@@ -300,7 +300,7 @@
             prices.forEach(function (price) {
                 const link = tradingMapping[price.symbol.toLowerCase()];
 
-                console.log('go through each price', price)
+                // console.log('go through each price', price)
                 const item = document.createElement('div');
                 item.classList.add('carousel-item');
                 if (index === 1) {
@@ -383,7 +383,7 @@
 
         function fetchLivePrices() {
             fetch('/indexPage')
-                //fetch('/wp-content/themes/virgocx/indexPage.json')
+                // fetch('/wp-content/themes/virgocx/indexPage.json')
                 .then(res => res.json())
                 .then(data => handleLivePrices(data))
         }
@@ -411,10 +411,10 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
@@ -446,7 +446,7 @@
                     if (url.indexOf(langParam) > -1) {
                         if(key != currentLang){
                             // redirection(url, currentLang);
-                            redirection(url, key);
+                            redirection(url, key,false);
                         }
                     }
                 })
@@ -523,7 +523,7 @@
                 if(url.indexOf('/'+currentLang+'-')<0){
                     setLang(dictionary[language]);
                 }
-                redirection(url,language);
+                redirection(url,language,true);
                 currentLang = language;
             }
         });
@@ -535,18 +535,22 @@
 
         loadLangSwitcher();
 
-        //lang switcher redirect
-        async function redirection(url,language) {
+        //lang redirect
+        async function redirection(url,language,fromSwitcher) {
             if (language == '' || language == null){
                 language = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
+                currentLang = language;
             }else{
                 sessionStorage.setItem('lang', language);
+                currentLang = language;
             }
             const promises = Object.keys(languagePair).map(async function (key) {
                 var langParam = '/' + key + '-';
                 if (url.indexOf(langParam) > -1) {
                     langPageIndicator = 1;
-                    window.location = url.replace(langParam, '/' + language + '-');
+                    if(fromSwitcher){
+                        window.location = url.replace(langParam, '/' + language + '-');
+                    }
                 }
             })
             const result = await Promise.all(promises);
@@ -563,7 +567,7 @@
                 [false, null, 'undefined',undefined].indexOf( this.attributes['data-slide'])>=0){
                 event.preventDefault();
                 const url =$(this).attr('href');
-                redirection(url,'');
+                redirection(url,'',true);
                 return false; // for good measure
             }
         });
