@@ -21,7 +21,7 @@ get_header();
 						</div>
 
 						<div class="row">
-                        <div class="fingertips-item">
+                        <div id="fp-download-apps" class="fingertips-item">
                             <h5 data-translate="AppDownload_header2"></h5>
 														<div class="d-flex">
 															<div id="stores" class="app-store">

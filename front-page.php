@@ -251,7 +251,10 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     Small Screen - Tablate
     ====================================
     */
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    @media screen and (min-width: 1170px) {
+        .otc-area .otc-title{
+            height: 200px;
+        }
     }
 
     @media screen and (max-width: 768px) {

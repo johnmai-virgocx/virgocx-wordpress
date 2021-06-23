@@ -65,7 +65,7 @@ get_header();
 							<div id="core-values-right" class="col-lg-8 col-md-12">
 								<div class="row mb-4">
 									<div class="col-lg-6">
-										<img class="full-regul-ed-service-kwjGAF" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-full-regulated-service-CD199AC3-E22E-448F-8B0D-11429A998FC43x.png" />
+										<img class="full-regul-ed-service-kwjGAF" style="height:40px;margin-top:1.3px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-full-regulated-service-CD199AC3-E22E-448F-8B0D-11429A998FC43x.png" />
 										<h3 data-translate="ForeignExchange_header2_tag1"></h3>
 										<div class="we-are-fully-complia-kwjGAF font-class-1" data-translate="ForeignExchange_header2_tag1_desc">
 											
@@ -73,7 +73,7 @@ get_header();
 									</div>
 
 									<div class="col-lg-6">
-										<img class="expert-knowledge-xMazAW" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-expert-knowledge-C4935AFB-96EC-4251-A75E-C54DFA41E3A13x.png" />
+										<img class="expert-knowledge-xMazAW" style="height:40px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-expert-knowledge-C4935AFB-96EC-4251-A75E-C54DFA41E3A13x.png" />
 										<h3 data-translate="ForeignExchange_header2_tag2"></h3>
 										<div class="we-offer-unparallell-xMazAW font-class-1" data-translate="ForeignExchange_header2_tag2_desc">
 										</div>
@@ -82,14 +82,14 @@ get_header();
 
 								<div class="row">
 									<div class="col-lg-6">
-										<img class="x247-AKAqTd" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-247-586DA73B-E1DC-43BE-A4AA-27D655AC9B183x.png" />
+										<img class="x247-AKAqTd" style="height:40px;margin-top:1.3px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-247-586DA73B-E1DC-43BE-A4AA-27D655AC9B183x.png" />
 										<h3 data-translate="ForeignExchange_header2_tag3"></h3>
 										<div class="our-customer-support-AKAqTd font-class-1" data-translate="ForeignExchange_header2_tag3_desc">
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="u7f16u7ec4-8-zxfmYr">
-											<img class="excellent-service-txb9EP" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-excellent-service-5E11B475-34F7-449F-9401-B56B542A49B43x.png" />
+											<img class="excellent-service-txb9EP" style="height:40px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-excellent-service-5E11B475-34F7-449F-9401-B56B542A49B43x.png" />
 											<h3 data-translate="ForeignExchange_header2_tag4"></h3>
 										</div>
 										<div class="our-strong-relations-zxfmYr font-class-1" data-translate="ForeignExchange_header2_tag4_desc">
@@ -145,7 +145,7 @@ get_header();
 						</div>
 
 						<div class="u7f16u7ec4-17-oM9t79">
-							<a href="/en-contact-us" class="btn blue-gradient-btn" data-translate="ForeignExchange_header4_btn"></a>
+							<a href="/en-contact" class="btn blue-gradient-btn" data-translate="ForeignExchange_header4_btn"></a>
 						</div>
 					</div>
         </div><!-- fx learn more -->

@@ -60,7 +60,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rmain2-link-one rmain2-link-two text-center">
+                                            <div class="rmain2-link-one rmain2-link-two text-center" style="padding-bottom:30px">
                                                 <div href="#">
                                                     <div class="rmain2-link-one-img">
                                                         <img src="<?= get_template_directory_uri() ?>/img/referral_link_2.png"
