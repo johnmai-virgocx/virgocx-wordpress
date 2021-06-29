@@ -78,6 +78,9 @@
 	"footer_col2_Buy_DOGE": "购买狗狗币 (DOGE)",
 	"footer_col2_Buy_DAI": "购买 Dai (DAI)",
 	"footer_col2_Buy_UNI": "购买 Uniswap (UNI)",
+	"footer_col2_Buy_LINK": "购买 ChainLink (LINK)",
+	"footer_col2_Buy_CRV": "购买 Curve (CRV)",
+	"footer_col2_Buy_AAVE": "购买 Aave (AAVE)",
 	"footer_col3": "产品",
 	"footer_col3_Trading_Platform": "交易平台",
 	"footer_col3_OTC": "OTC 场外交易",
@@ -403,7 +406,13 @@
 	"Tether":"泰达币",
 	"USDT":"USDT",
 	"Stellar":"恒星币",
-	"XLM":"XLM"
+	"XLM":"XLM",
+	"LINK":"LINK",
+	"ChainLink":"ChainLink",
+	"CRV":"CRV",
+	"Curve":"Curve",
+	"AAVE":"AAVE",
+	"Aave":"Aave"
 	
 	
 

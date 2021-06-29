@@ -294,6 +294,9 @@
                 'bch/cad': '/page#/advancedTrade/29',
                 'btc/usd': '/page#/advancedTrade/32',
                 'usdt/usd': '/page#/advancedTrade/33',
+                'link/cad': '/page#/advancedTrade/60',
+                'crv/cad': '/page#/advancedTrade/61',
+                'aave/cad': '/page#/advancedTrade/62',
             }
 
             let index = 1;
@@ -382,8 +385,8 @@
         }
 
         function fetchLivePrices() {
+            // fetch('/wordpress/wp-content/themes/virgocx/indexPage.json')
             fetch('/indexPage')
-                // fetch('/wp-content/themes/virgocx/indexPage.json')
                 .then(res => res.json())
                 .then(data => handleLivePrices(data))
         }

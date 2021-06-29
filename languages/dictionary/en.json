@@ -78,6 +78,9 @@
 	"footer_col2_Buy_DOGE": "Buy Dogecoin (DOGE)",
 	"footer_col2_Buy_DAI": "Buy Dai (DAI)",
 	"footer_col2_Buy_UNI": "Buy Uniswap (UNI)",
+	"footer_col2_Buy_LINK": "Buy ChainLink (LINK)",
+	"footer_col2_Buy_CRV": "Buy Curve (CRV)",
+	"footer_col2_Buy_AAVE": "Buy Aave (AAVE)",
 	"footer_col3": "Products",
 	"footer_col3_Trading_Platform": "Trading Platform",
 	"footer_col3_OTC": "OTC",
@@ -397,7 +400,14 @@
 	"Tether":"Tether",
 	"USDT":"USDT",
 	"Stellar":"Stellar",
-	"XLM":"XLM"
+	"XLM":"XLM",
+	"LINK":"LINK",
+	"ChainLink":"ChainLink",
+	"CRV":"CRV",
+	"Curve":"Curve",
+	"AAVE":"AAVE",
+	"Aave":"Aave"
+
 	
 	
 
