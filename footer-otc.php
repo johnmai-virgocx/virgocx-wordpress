@@ -12,7 +12,7 @@
 ?>
 
 	<!-- footer-area start -->
-	<footer class="footer-area">
+	<footer class="footer-area-otc">
 			<div class="container custom-container">
 					<div class="footer-tp">
 							<div class="row">

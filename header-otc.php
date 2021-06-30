@@ -67,9 +67,8 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'virgocx' ); ?></a>
 -->
 	<!-- header-area start -->
-
 	<div class="header-wrapper">
-			<header class="header-area">
+			<header class="header-area-otc">
 					<div class="container custom-container">
 							<nav class="navbar navbar-expand-lg">
 									<a href="/" class="navbar-brand"><img src="<?= get_template_directory_uri() ?>/img/virgocx_logo_gold.png" height="36" alt="images not found" /></a>
@@ -125,4 +124,3 @@
 							</nav>
 					</div>
 			</header>
-	<!-- header-area end -->
