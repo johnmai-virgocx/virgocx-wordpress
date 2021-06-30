@@ -86,7 +86,8 @@ get_header();
 								<br />
 								<span data-translate="Buy_header4_desc2"></span>
 								<span data-translate="<?= $args['ticker'] ?>"></span>
-								.</p>
+								<span data-translate="Buy_header4_period"></span>
+							</p>
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12">

@@ -8,7 +8,7 @@
  */
 
 $args = [
-	'name' => 'ChainLink',
+	'name' => 'Chainlink',
 	'ticker' => 'LINK',
 ];
 get_template_part('template-parts/buy', 'coin', $args);
