@@ -12399,6 +12399,7 @@ form.normal input[type="submit"] {
 	background-color: white;
 	transition: 0.3s all ease;
 	-webkit-transition: 0.3s all ease;
+	cursor: pointer;
 }
 
 .round-btn-light a{

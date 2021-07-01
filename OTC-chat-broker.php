@@ -462,7 +462,6 @@ get_header('otc');
         .faq .panel-default .panel-title img {
             color: #05004d;
             float: right;
-            width: 20px;
         }
 
         .faq .panel-default .panel-body {
@@ -570,7 +569,7 @@ get_header('otc');
             text-align: left;
             vertical-align: middle;
         }
-        
+
         .custom-container{
             position: relative;
         }

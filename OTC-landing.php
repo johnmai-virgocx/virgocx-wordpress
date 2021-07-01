@@ -39,293 +39,252 @@ get_header('otc');
     </section>
     <section class="carousel-area">
         <div class="container custom-container">
-            <div class="tabs">
-                <div class="tab-2">
-                    <label for="tab2-3">Cryptocurrency</label>
-                    <input id="tab2-3" name="tabs-two" type="radio" checked="checked">
-<!--                    <div class="owl-carousel owl-theme owl-loaded owl-drag">-->
-<!--                        <div class="owl-stage-outer">-->
-<!--                            <div class="owl-stage"-->
-<!--                                 style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="col-lg-3 col-md-4 col-sm-12">-->
-<!--                                        <div class="carousel-item">-->
-<!--                                            <a href="/page#/advancedTrade/25" class="pg-top">-->
-<!--                                                <div class="carousel-img">-->
-<!--                                                    <img-->
-<!--                                                            src="--><?//= get_template_directory_uri() ?><!--/img/cad.svg"-->
-<!--                                                            alt="images not found"-->
-<!--                                                            class="avatar avatar-ex-sm">-->
-<!--                                                </div>-->
-<!--                                                <div class="pg-text">-->
-<!--                                                    <div class="row">-->
-<!--                                                        <h5>Ethereum</h5>-->
-<!--                                                    </div>-->
-<!--                                                    <div class="row">-->
-<!--                                                        <h5>ETH</h5>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </a>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>8</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>9</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>10</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>11</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>12</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>1</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>2</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>3</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>4</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>5</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>6</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>7</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>8</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>9</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>10</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>11</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>12</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>1</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>2</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>3</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>4</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>5</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>6</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                    <div>
-                        <h1>tab1</h1>
-
+            <div class="tabs-horizontal">
+                <nav class="row">
+                    <a>Cryptocurrency</a>
+                    <a>Fiat Currency</a>
+                </nav>
+                <div class="row">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                     style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <div class="col-lg-3 col-md-4 col-sm-12">
+                                            <div class="carousel-item">
+                                                1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found">
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Ethereum</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">ETH</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Tether</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">USDT</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Bitcoin Cash</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">BCH</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Doge</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">DOGE</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Litecoin</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">LTC</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="tab-2">
-                    <label for="tab2-2">Fiat Currency</label>
-                    <input id="tab2-2" name="tabs-two" type="radio">
-                    <div>
-
-                        <h1>tab2</h1>
+                    <div class="container">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                     style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                            <div class="carousel-item">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>US Dollar</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">USD</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Canadian Dollar</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">CAD</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Euro</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">EUR</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Pound Sterling</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">
+                                                                GBP</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>Australian Dollar</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">AUD</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                                <a href="/page#/advancedTrade/25" class="pg-top">
+                                                    <div class="carousel-img">
+                                                        <img
+                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                                alt="images not found"
+                                                                >
+                                                    </div>
+                                                    <div class="pg-text">
+                                                        <div class="row">
+                                                            <span>New Zealand Dollar</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="bold">NZD</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-<!--                    <div class="owl-carousel owl-theme owl-loaded owl-drag">-->
-<!--                        <div class="owl-stage-outer">-->
-<!--                            <div class="owl-stage"-->
-<!--                                 style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>7</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>8</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>9</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>10</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>11</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>12</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>1</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>2</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>3</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>4</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item active" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>5</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>6</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>7</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>8</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>9</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>10</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>11</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>12</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>1</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>2</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>3</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>4</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>5</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">-->
-<!--                                    <div class="item">-->
-<!--                                        <h4>6</h4>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -339,28 +298,26 @@ get_header('otc');
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-2 col-6 text-center"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            class="avatar avatar-ex-sm">
+                            >
                 </div>
                 <div class="col-lg-2 col-md-2 col-6 text-center"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            class="avatar avatar-ex-sm">
+                            >
                 </div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            class="avatar avatar-ex-sm"></div>
+                            ></div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            class="avatar avatar-ex-sm"></div>
+                            ></div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            class="avatar avatar-ex-sm"></div>
+                            ></div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            class="avatar avatar-ex-sm"></div>
+                            ></div>
             </div>
         </div>
-    </section>
-    <section class="carousel-container">
     </section>
     <section class="product-area">
         <div class="container custom-container">
@@ -408,7 +365,7 @@ get_header('otc');
                                         <img
                                                 src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                                 alt="images not found"
-                                                class="avatar avatar-ex-sm">
+                                                >
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +393,7 @@ get_header('otc');
                                         <img
                                                 src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                                 alt="images not found"
-                                                class="avatar avatar-ex-sm">
+                                                >
                                     </div>
                                 </div>
                             </div>
@@ -462,13 +419,13 @@ get_header('otc');
                 <div class="tabs-vertical row d-flex justify-content-around">
                     <div class="col-lg-6 col-md-12">
                         <div class="row">
-                            <div class="col-6">
-                                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
-                            </div>
-                            <nav class="col-6">
+                            <nav class="tab-dots">
+                                <span class="tab-dot"></span>
+                                <span class="tab-dot"></span>
+                                <span class="tab-dot"></span>
+                                <span class="tab-dot"></span>
+                            </nav>
+                            <nav>
                                 <a>Institutions</a>
                                 <a>Trading Firms</a>
                                 <a>Miners</a>
@@ -511,22 +468,76 @@ get_header('otc');
     </section>
     <section class="why-area">
         <div class="container custom-container">
-            <div class="row d-flex justify-content-center">
-                <div class="why-text">
-                    <h2 data-translate="Our_Product">Why Trade with us</h2>
-                </div>
+            <div class="why-title">
+                <h2 data-translate="Our_Product">Why Trade with us</h2>
             </div>
-            <div class="row d-flex justify-content-around">
-                <div class="col-lg-6 col-md-12">
-                    <ul class="why-text">
-                        <li>Save on Execution Costs</li>
-                        <li>Zero Trading Fees</li>
-                        <li>Best Pricing in Canada</li>
-                        <li>Access to Foreign Currencies</li>
-                        <li>Personalized Services</li>
-                        <li>Rapid Settlement</li>
-                        <li></li>
-                    </ul>
+            <div class="why-content">
+
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 why-text">
+                        <div class="">
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                        </div>
+                        <h3>Save on Execution Costs</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>We eliminate slippage on larger trades. Save up to 2% compared to trading on other exchanges.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 why-text">
+                        <div class="">
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                        </div>
+                        <h3>Zero Trading Fees</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>We don’t charge anything on top. What you see is what you get.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 why-text">
+                        <div class="">
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                        </div>
+                        <h3>Best Pricing in Canada</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC, ETH, USDT, and more.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 why-text">
+                        <div class="">
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                        </div>
+                        <h3>Access to Foreign Currencies</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>We have unique market access via digital assets, to provide a competitive pricing for other foreign currencies.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 why-text">
+                        <div class="">
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                        </div>
+                        <h3>Personalized Services</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>Our OTC account managers are available 24/7 to facilitate every request for your business or trading needs. You will also have access to industry insights on the cryptocurrency markets.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-6 col-md-12 why-text">
+                        <div class="">
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                        </div>
+                        <h3>Rapid Settlement</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>We provide a same day, no limit settlement for your USD and CAD trades. This also applies to your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -559,7 +570,7 @@ get_header('otc');
 
         /*;*/
 
-
+        .carousel-area,
         .client-area {
             padding: 40px 0px 60px;
             color: white;
@@ -580,17 +591,31 @@ get_header('otc');
             background: white;
         }
 
-        .why-text {
-            height: 600px;
-        }
-
-        .why-text h2,
+        .why-title h2,
         .how-text h2,
         .who-text h2 {
             color: #05004d;
             font-weight: 600;
             font-size: 36px;
+            text-align: center;
             margin-bottom: 26px;
+        }
+
+        .why-text > *{
+            display: inline;
+        }
+        .why-text img{
+            margin-right: 5px;
+        }
+
+        .why-content >*{
+            padding: 5% 3%;
+        }
+
+        @media screen and (min-width: 900px) {
+            .why-content >*{
+                height: 100px;
+            }
         }
 
         .who-text h2 {
@@ -724,12 +749,34 @@ get_header('otc');
             width: 150px;
         }
 
+        .tab-dots{
+            width: 50px!important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .tabs-vertical nav a {
             border-left: 1px solid rgba(239, 237, 239, 0.5);
             padding: 5px 0 5px 20px;
             text-align: start;
             width: 100%;
             cursor: pointer;
+        }
+
+        .tab-dot {
+            border-radius: 50%;
+            margin: 5px 0 5px 20px;
+            text-align: end;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            background-color: rgba(239, 237, 239, 0.5);
+        }
+
+        .tab-dot:hover,
+        .tabs-vertical nav .tab-dot.selected {
+            background-color: #c7ba9a;
         }
 
         .tabs-vertical nav a:hover,
@@ -762,6 +809,56 @@ get_header('otc');
             padding-bottom: 0px;
         }
 
+        .tabs-horizontal {
+            margin: 0px 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .tabs-horizontal nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            color: rgba(239, 237, 239, 0.5);
+            width: 100%;
+        }
+
+        .tabs-horizontal nav a {
+            font-size:1.5em ;
+            color: white ;
+            border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+            padding: 5px 0 5px 20px;
+            text-align: center;
+            width: 50%;
+            cursor: pointer;
+        }
+
+        .tabs-horizontal nav a:hover,
+        .tabs-horizontal nav a.selected {
+            border-bottom: 3px solid #c7ba9a;
+            color: #c7ba9a;
+        }
+
+        .tabs-horizontal .container {
+            left: 150px;
+            color: white;
+            display: none;
+            transition: opacity 0.1s linear 0s;
+        }
+
+        .tabs-horizontal .container.visible {
+            width: 100%;
+            display: block;
+        }
+
+        .tabs-horizontal .container p {
+            padding-bottom: 2px;
+        }
+
+        .tabs-horizontal .container p:last-of-type {
+            padding-bottom: 0px;
+        }
+
         .banner-area {
             position: relative;
             z-index: 888888;
@@ -771,16 +868,31 @@ get_header('otc');
             font-size: 1.4rem;
         }
 
-        .carousel-img img {
-            width: 30px;
-            height: auto;
+        .carousel-area nav{
+            margin-bottom: 40px;
         }
 
-        .carousel-item{
-            color: white;
+        .owl-stage{
             background-color: #c7ba9a ;
         }
 
+        .owl-carousel .owl-item img {
+            width: 30px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .owl-carousel .owl-item{
+            width: 200px;
+            height: 50px;
+            color: white;
+            /*opacity: 0.1;*/
+            /*background-color: beige;*/
+        }
+
+        .pg-text {
+            color: white;
+        }
     </style>
 
     <script type="text/javascript">
@@ -789,17 +901,40 @@ get_header('otc');
                 $('[data-toggle="popover"]').popover()
                 var owl = $('.owl-carousel');
                 owl.owlCarousel({
-                    items: 4,
+                    items: 6,
                     loop: true,
                     margin: 10,
                     autoplay: true,
                     autoplayTimeout: 1000,
+                    pagination: false,
+                    dots: false,
                     autoplayHoverPause: true
                 });
 
-            });
+
 
             $('.tabs-vertical nav a').on('click', function () {
+                show_container_vertical($(this).index());
+            });
+            $('.tabs-vertical nav .tab-dot').on('click', function () {
+                show_container_vertical($(this).index());
+            });
+
+            show_container_vertical(0);
+
+            function show_container_vertical(index) {
+                // Make the container visible
+                $('.tabs-vertical .container.visible').removeClass('visible');
+                $('.tabs-vertical .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+                // Set the tab to selected
+                $('.tabs-vertical nav a.selected').removeClass('selected');
+                $('.tabs-vertical nav .tab-dot.selected').removeClass('selected');
+                $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                $('.tabs-horizontal nav .tab-dot:nth-of-type(' + (index + 1) + ')').addClass('selected');
+            }
+
+            $('.tabs-horizontal nav a').on('click', function () {
                 show_container($(this).index());
             });
 
@@ -807,14 +942,14 @@ get_header('otc');
 
             function show_container(index) {
                 // Make the container visible
-                $('.tabs-vertical .container.visible').removeClass('visible');
-                $('.tabs-vertical .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
+                $('.tabs-horizontal .container.visible').removeClass('visible');
+                $('.tabs-horizontal .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
 
                 // Set the tab to selected
-                $('.tabs-vertical nav a.selected').removeClass('selected');
-                $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                $('.tabs-horizontal nav a.selected').removeClass('selected');
+                $('.tabs-horizontal nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
             }
-
+            });
 
         })(jQuery);
     </script>
