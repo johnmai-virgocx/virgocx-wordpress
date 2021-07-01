@@ -32,7 +32,7 @@ get_header('otc');
                     </div>
 
                     <div class="col-lg-6 col-md-12">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/OTC_Direc_ Banner.png" alt="flags"
                              width="100%"/>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ get_header('otc');
         <h2>Why Use OTC Direct? </h2>
         <div class="row custom-container">
             <div class="why-container col-lg-4 col-md-12">
-                <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags" width="100%"/>
+                <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.png" alt="flags" width="100%"/>
                 <h5>24/7</h5>
                 <p>OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
 
@@ -55,7 +55,7 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
 
-                <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags" width="100%"/>
+                <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best_Execution.png" alt="flags" width="100%"/>
                 <h5>Best Execution</h5>
                 <p>We aggregate liquidity through a multitude of different providers in order to provide you with the
                     best price at that point in time.
@@ -69,7 +69,7 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
 
-                <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags" width="100%"/>
+                <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid_Settlemment.png" alt="flags" width="100%"/>
                 <h5>Rapid Settlement</h5>
                 <p>
                     We offer conditional same-day settlement for our client trades.
@@ -97,9 +97,10 @@ get_header('otc');
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Onboard.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png" alt="flags" width="100%"/>
                         <div class="how-text">
                             <h3>Onboard with VirgoCX OTC
 
@@ -123,9 +124,10 @@ get_header('otc');
                 <div class="row custom-container">
 
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set_Up.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.2.png" alt="flags" width="100%"/>
                         <div class="how-text">
                             <h3>
                                 Set Up
@@ -145,10 +147,10 @@ get_header('otc');
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set_Up.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
-
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png" alt="flags" width="100%"/>
                         <div class="how-text">
                             <h3>
                                 Deposit Funds
@@ -169,10 +171,11 @@ get_header('otc');
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Trade.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
+                            <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.4.png" alt="flags" width="100%"/>
                             <h3>
                                 Trade
                             </h3>
@@ -189,9 +192,10 @@ get_header('otc');
             <div class="how-container">
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Settlement.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png" alt="flags" width="100%"/>
                         <div class="how-text">
                             <h3>
                                 Settlement

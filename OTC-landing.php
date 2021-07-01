@@ -30,7 +30,9 @@ get_header('otc');
                     </div>
 
                     <div class="col-lg-6 col-md-12">
-                        <img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/BTC.png" alt="flags"
+                        <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Banner/Background_Photo.png" alt="flags"
+                             width="100%"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Banner/Banner_Illustration.png" alt="flags"
                              width="100%"/>
                     </div>
                 </div>
@@ -76,92 +78,92 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found">
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Ethereum</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">ETH</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                     alt="images not found">
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Ethereum</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">ETH</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Tether</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">USDT</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Tether</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">USDT</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Bitcoin Cash</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">BCH</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin Cash</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BCH</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Doge</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">DOGE</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Doge</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">DOGE</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Litecoin</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">LTC</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Litecoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">LTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -173,113 +175,113 @@ get_header('otc');
                                 <div class="owl-stage"
                                      style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                            <div class="carousel-item">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>US Dollar</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">USD</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <div class="carousel-item">
+                                            <a href="/page#/advancedTrade/25" class="pg-top">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                        </div>
+                                        <div class="pg-text">
+                                            <div class="row">
+                                                <span>US Dollar</span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="bold">USD</span>
+                                            </div>
+                                        </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Canadian Dollar</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">CAD</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Canadian Dollar</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">CAD</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Euro</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">EUR</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Euro</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">EUR</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Pound Sterling</span>
-                                                        </div>
-                                                        <div class="row">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Pound Sterling</span>
+                                                </div>
+                                                <div class="row">
                                                             <span class="bold">
                                                                 GBP</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>Australian Dollar</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">AUD</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Australian Dollar</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">AUD</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
-                                                <a href="/page#/advancedTrade/25" class="pg-top">
-                                                    <div class="carousel-img">
-                                                        <img
-                                                                src="<?= get_template_directory_uri() ?>/img/cad.svg"
-                                                                alt="images not found"
-                                                                >
-                                                    </div>
-                                                    <div class="pg-text">
-                                                        <div class="row">
-                                                            <span>New Zealand Dollar</span>
-                                                        </div>
-                                                        <div class="row">
-                                                            <span class="bold">NZD</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>New Zealand Dollar</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">NZD</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -298,24 +300,24 @@ get_header('otc');
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-2 col-6 text-center"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            >
+                    >
                 </div>
                 <div class="col-lg-2 col-md-2 col-6 text-center"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            >
+                    >
                 </div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            ></div>
+                    ></div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            ></div>
+                    ></div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            ></div>
+                    ></div>
                 <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0"><img
                             src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"
-                            ></div>
+                    ></div>
             </div>
         </div>
     </section>
@@ -323,11 +325,16 @@ get_header('otc');
         <div class="container custom-container">
             <div class="row d-flex justify-content-around">
 
-                <div class="col-6 product-text">
-                    <h2 data-translate="OTC_header1"></h2>
+                <div class="col-lg-6 col-md-12 product-text">
+                    <h2 data-translate="OTC_header1">
+                        VirgoCX OTC is A Full Service Trade Desk for Large Block Transactions.
+                    </h2>
                 </div>
-                <div class="col-6 product-text">
-                    <p data-translate="OTC_header1_desc"></p>
+                <div class="col-lg-6 col-md-12 product-text">
+                    <p data-translate="OTC_header1_desc">
+                        VirgoCX OTC offers direct market access for cryptocurrencies with optimal price execution. We bridge the gap between traditional financial services
+                        and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto and fiat currencies to fill large orders at a desired market price.
+                    </p>
                 </div>
             </div>
         </div>
@@ -345,7 +352,7 @@ get_header('otc');
                             <input id="tab2-3" name="tabs-two" type="radio" checked="checked">
                             <div>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-12">
                                         <h3>
                                             Accss deep liquidity anytime electronically.
                                         </h3>
@@ -355,17 +362,17 @@ get_header('otc');
                                             Our seamless workflow allows our institution clients to be able to receive
                                             best execution and flexible settlements post-trade.
                                         </p>
-                                        <div class="round-btn-light">
+                                        <a class="round-btn-light">
                                             <a href="">
                                                 learn more
                                             </a>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-12">
                                         <img
                                                 src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                                 alt="images not found"
-                                                >
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -375,25 +382,26 @@ get_header('otc');
                             <input id="tab2-4" name="tabs-two" type="radio">
                             <div>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-12">
                                         <h3>
                                             Personalized service for executing large block transactions.
                                         </h3>
                                         <p>
-                                            Our OTC trade team will facilitate any trade requests you will have for your business. From trading like Bitcoin, Ethereum,
+                                            Our OTC trade team will facilitate any trade requests you will have for your
+                                            business. From trading like Bitcoin, Ethereum,
                                             and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                         </p>
-                                        <div class="round-btn-light">
+                                        <a class="round-btn-light">
                                             <a href="">
                                                 learn more
                                             </a>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-12">
                                         <img
                                                 src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                                 alt="images not found"
-                                                >
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -406,15 +414,11 @@ get_header('otc');
 
     <section class="client-area">
         <div class="container custom-container">
-            <div class="row d-flex justify-content-around">
-                <div class="col-lg-6 col-md-12">
+            <div class="row">
                     <div class="client-text">
                         <h2 data-translate="Our_Product">Our_Client</h2>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
-                </div>
-            </div>
             <div class="row d-flex justify-content-around">
                 <div class="tabs-vertical row d-flex justify-content-around">
                     <div class="col-lg-6 col-md-12">
@@ -476,18 +480,19 @@ get_header('otc');
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                         </div>
                         <h3>Save on Execution Costs</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We eliminate slippage on larger trades. Save up to 2% compared to trading on other exchanges.</p>
+                        <p>We eliminate slippage on larger trades. Save up to 2% compared to trading on other
+                            exchanges.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                         </div>
                         <h3>Zero Trading Fees</h3>
                     </div>
@@ -498,45 +503,50 @@ get_header('otc');
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                         </div>
                         <h3>Best Pricing in Canada</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC, ETH, USDT, and more.</p>
+                        <p>Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC,
+                            ETH, USDT, and more.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                         </div>
                         <h3>Access to Foreign Currencies</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We have unique market access via digital assets, to provide a competitive pricing for other foreign currencies.</p>
+                        <p>We have unique market access via digital assets, to provide a competitive pricing for other
+                            foreign currencies.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                         </div>
                         <h3>Personalized Services</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>Our OTC account managers are available 24/7 to facilitate every request for your business or trading needs. You will also have access to industry insights on the cryptocurrency markets.</p>
+                        <p>Our OTC account managers are available 24/7 to facilitate every request for your business or
+                            trading needs. You will also have access to industry insights on the cryptocurrency
+                            markets.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                            <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                         </div>
                         <h3>Rapid Settlement</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We provide a same day, no limit settlement for your USD and CAD trades. This also applies to your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+                        <p>We provide a same day, no limit settlement for your USD and CAD trades. This also applies to
+                            your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
                     </div>
                 </div>
             </div>
@@ -552,6 +562,7 @@ get_header('otc');
                     <div class="how-content">
                         <div class="how-item">
                             <?= do_shortcode('[contact-form-7 id="70" title="OTC-signup"]') ?>
+
                         </div>
                     </div>
                 </div>
@@ -560,21 +571,29 @@ get_header('otc');
     </section>
 
     <style type="text/css">
-        /*virgoOTC-blue:#05004d*/
 
-        /*;*/
-        /*virgoOTC-purple:#080449*/
+        :root {
+            --color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+            --color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+            --color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+            --color-interaction: #1e4bd1;
+            --color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+            --color-danger: #b50706;
+            --VirgoCX-purple-contrast: #eff1f2;
+            --color-ink-high-contrast: #121212;
+            --VirgoCX-purple-contrast-light: #ffffff;
+            --VirgoCX-blue: #05004d;
+            --VirgoCX-purple: #080449;
+            --VirgoCX-gold: #c7ba9a;
 
-        /*;*/
-        /*virgoOTC-gold:#c7ba9a*/
 
-        /*;*/
+        }
 
         .carousel-area,
         .client-area {
             padding: 40px 0px 60px;
             color: white;
-            background: #05004d;
+            background: var(--VirgoCX-blue);
         }
 
         .signup-area,
@@ -584,44 +603,66 @@ get_header('otc');
             background: #080449;
         }
 
+        .signup-area h2{
+            text-align: center;
+        }
+        .signup-area .round-btn{
+            margin: auto;
+        }
+
         .why-area,
         .product-area {
             padding: 40px 0px 60px;
-            color: #05004d;
+            color: var(--VirgoCX-blue);
             background: white;
         }
 
+        .who-text {
+            min-height: 50px;
+            margin-bottom: 50px;
+        }
+
         .why-title h2,
-        .how-text h2,
-        .who-text h2 {
-            color: #05004d;
+        .how-text h2 {
+            color: var(--VirgoCX-blue);
             font-weight: 600;
             font-size: 36px;
             text-align: center;
             margin-bottom: 26px;
         }
 
-        .why-text > *{
+        .who-text h2 {
+            color: var(--VirgoCX-blue);
+            font-weight: 600;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .why-text > * {
             display: inline;
         }
-        .why-text img{
+
+        .why-text img {
             margin-right: 5px;
         }
 
-        .why-content >*{
+        .why-content > * {
             padding: 5% 3%;
         }
 
         @media screen and (min-width: 900px) {
-            .why-content >*{
+            .why-content > * {
                 height: 100px;
             }
+
+            .who-text h2 {
+                top: 50%;
+                position: absolute;
+            }
+
+
         }
 
-        .who-text h2 {
-            top: 50%;
-            position: absolute;
-        }
 
         .product-text h2 {
             color: #c7ba9a;
@@ -631,7 +672,7 @@ get_header('otc');
         }
 
         .product-text p {
-            color: #05004d;
+            color: var(--VirgoCX-blue);
             font-weight: 600;
             font-size: 16px;
             margin-bottom: 26px;
@@ -641,7 +682,16 @@ get_header('otc');
             color: white;
             font-weight: 600;
             font-size: 36px;
-            margin-bottom: 26px;
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .client-text{
+                width: 100%;
+            }
+            .client-text h2 {
+                text-align: center;
+            }
         }
 
 
@@ -661,7 +711,7 @@ get_header('otc');
 
         .tabs [class^="tab"] label,
         .tabs [class*=" tab"] label {
-            color: #05004D;
+            color: var(--VirgoCX-blue);
             cursor: pointer;
             display: block;
             font-size: 1.5em;
@@ -746,11 +796,11 @@ get_header('otc');
             flex-wrap: wrap;
             align-items: stretch;
             color: rgba(239, 237, 239, 0.5);
-            width: 150px;
+            width: 70%;
         }
 
-        .tab-dots{
-            width: 50px!important;
+        .tab-dots {
+            width: 50px !important;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -782,23 +832,37 @@ get_header('otc');
         .tabs-vertical nav a:hover,
         .tabs-vertical nav a.selected {
             border-left: 3px solid #c7ba9a;
-            color: #c7ba9a;
+            color: #c7ba9a !important;
         }
 
         .tabs-vertical .container {
+            display: none;
             position: absolute;
             top: 0px;
-            left: 150px;
             color: white;
-            width: 0px;
-            height: 100%;
             opacity: 0;
             transition: opacity 0.1s linear 0s;
         }
 
         .tabs-vertical .container.visible {
+            display: block;
             width: calc(100% - 150px);
             opacity: 1;
+        }
+
+        @media screen and (max-width: 900px) {
+            .tabs-vertical .container {
+                position: relative;
+                margin-top: 50px;
+                color: white;
+                opacity: 0;
+                transition: opacity 0.1s linear 0s;
+            }
+
+            .tabs-vertical .container.visible {
+                width: 100%;
+                opacity: 1;
+            }
         }
 
         .tabs-vertical .container p {
@@ -824,8 +888,8 @@ get_header('otc');
         }
 
         .tabs-horizontal nav a {
-            font-size:1.5em ;
-            color: white ;
+            font-size: 1.5em;
+            color: white !important;
             border-bottom: 1px solid rgba(239, 237, 239, 0.5);
             padding: 5px 0 5px 20px;
             text-align: center;
@@ -836,7 +900,8 @@ get_header('otc');
         .tabs-horizontal nav a:hover,
         .tabs-horizontal nav a.selected {
             border-bottom: 3px solid #c7ba9a;
-            color: #c7ba9a;
+            color: white;
+            font-weight: bold;
         }
 
         .tabs-horizontal .container {
@@ -864,16 +929,16 @@ get_header('otc');
             z-index: 888888;
             padding-top: 8rem;
             padding-bottom: 8rem;
-            background-color: #05004D;
+            background-color: var(--VirgoCX-blue);
             font-size: 1.4rem;
         }
 
-        .carousel-area nav{
+        .carousel-area nav {
             margin-bottom: 40px;
         }
 
-        .owl-stage{
-            background-color: #c7ba9a ;
+        .owl-stage {
+            background-color: #c7ba9a;
         }
 
         .owl-carousel .owl-item img {
@@ -882,7 +947,7 @@ get_header('otc');
             margin: 10px;
         }
 
-        .owl-carousel .owl-item{
+        .owl-carousel .owl-item {
             width: 200px;
             height: 50px;
             color: white;
@@ -893,6 +958,69 @@ get_header('otc');
         .pg-text {
             color: white;
         }
+
+
+
+        /* Input*/
+
+        .input-underlined{
+            width: 100%;
+        }
+        .input-underlined  input,
+        .input-filled  input {
+            border: none;
+            border-bottom: 0.125rem solid var(--VirgoCX-purple-contrast);
+            background:var(--VirgoCX-purple);
+            width: 100%;
+            height: 2rem;
+            font-size: 1.0625rem;
+            padding-left: 0.875rem;
+            line-height: 147.6%;
+            padding-top: 0.825rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .input-underlined  input:focus,
+        .input-filled  input:focus {
+            outline: none;
+        }
+
+        .input-underlined  .input-label,
+        .input-filled  .input-label {
+            position: absolute;
+            left: 30px;
+            line-height: 147.6%;
+            color: var(--VirgoCX-purple-contrast);
+            border-color: var(--VirgoCX-purple-contrast);
+            transition: top .2s;
+        }
+
+        .input-underlined  img,
+        .input-filled  img {
+            position: absolute;
+            left: 0;
+            fill: var(--VirgoCX-purple-contrast);
+        }
+
+        .input-underlined  input:hover,
+        .input-filled  input:hover {
+            background:var(--VirgoCX-purple);
+            border-color: var(--VirgoCX-purple-contrast-light);
+        }
+
+        .input-underlined  input:focus + .input-label,
+        .input-underlined  input:valid + .input-label,
+        .input-filled > input:focus + .input-label,
+        .input-filled > input:valid + .input-label {
+            top: 0;
+            font-size: 0.9375rem;
+            margin-bottom: 32px;;
+        }
+        input::placeholder {
+            color: white;
+            left: 30px;
+        }
+
     </style>
 
     <script type="text/javascript">
@@ -912,43 +1040,42 @@ get_header('otc');
                 });
 
 
+                $('.tabs-vertical nav a').on('click', function () {
+                    show_container_vertical($(this).index());
+                });
+                $('.tabs-vertical nav .tab-dot').on('click', function () {
+                    show_container_vertical($(this).index());
+                });
 
-            $('.tabs-vertical nav a').on('click', function () {
-                show_container_vertical($(this).index());
-            });
-            $('.tabs-vertical nav .tab-dot').on('click', function () {
-                show_container_vertical($(this).index());
-            });
+                show_container_vertical(0);
 
-            show_container_vertical(0);
+                function show_container_vertical(index) {
+                    // Make the container visible
+                    $('.tabs-vertical .container.visible').removeClass('visible');
+                    $('.tabs-vertical .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
 
-            function show_container_vertical(index) {
-                // Make the container visible
-                $('.tabs-vertical .container.visible').removeClass('visible');
-                $('.tabs-vertical .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
+                    // Set the tab to selected
+                    $('.tabs-vertical nav a.selected').removeClass('selected');
+                    $('.tabs-vertical nav .tab-dot.selected').removeClass('selected');
+                    $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                    $('.tabs-vertical nav .tab-dot:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                }
 
-                // Set the tab to selected
-                $('.tabs-vertical nav a.selected').removeClass('selected');
-                $('.tabs-vertical nav .tab-dot.selected').removeClass('selected');
-                $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
-                $('.tabs-horizontal nav .tab-dot:nth-of-type(' + (index + 1) + ')').addClass('selected');
-            }
+                $('.tabs-horizontal nav a').on('click', function () {
+                    show_container($(this).index());
+                });
 
-            $('.tabs-horizontal nav a').on('click', function () {
-                show_container($(this).index());
-            });
+                show_container(0);
 
-            show_container(0);
+                function show_container(index) {
+                    // Make the container visible
+                    $('.tabs-horizontal .container.visible').removeClass('visible');
+                    $('.tabs-horizontal .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
 
-            function show_container(index) {
-                // Make the container visible
-                $('.tabs-horizontal .container.visible').removeClass('visible');
-                $('.tabs-horizontal .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
-
-                // Set the tab to selected
-                $('.tabs-horizontal nav a.selected').removeClass('selected');
-                $('.tabs-horizontal nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
-            }
+                    // Set the tab to selected
+                    $('.tabs-horizontal nav a.selected').removeClass('selected');
+                    $('.tabs-horizontal nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                }
             });
 
         })(jQuery);
