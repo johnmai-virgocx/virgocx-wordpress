@@ -9966,6 +9966,12 @@ input[type="number"] {
 	background: #ffffff;
 }
 
+.header-area-otc {
+	padding: 16px 0px;
+	/* border-bottom: 1px solid #9484eb; */
+	background: #05004d;
+}
+
 .navbar {
 	padding: 0.5rem 0rem;
 }
@@ -10665,6 +10671,12 @@ form input[type="submit"]:hover {
 .footer-area {
 	background: #7965e6;
 	padding: 70px 0px;
+}
+
+.footer-area-otc {
+	padding: 16px 0px;
+	/* border-bottom: 1px solid #9484eb; */
+	background: #05004d;
 }
 
 .footer-tp h5 {
@@ -12354,5 +12366,47 @@ form.normal input[type="submit"] {
 .rmain2-right {
 	width: 100%;
 }
+.round-btn{
+	width: 200px;
+	display: block;
+	text-decoration: none;
+	padding: 3px 10px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	border: 1.5px solid white;
+	width: 120px;
+	text-align: center;
+	border-radius: 50px;
+	background-color: #05004D;
+	transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+}
 
+
+.round-btn-light{
+	width: 200px;
+	display: block;
+	text-decoration: none;
+	padding: 3px 10px;
+	color: #05004D;
+	font-size: 16px;
+	font-weight: 500;
+	border: 1.5px solid #05004D;
+	width: 120px;
+	text-align: center;
+	border-radius: 50px;
+	background-color: white;
+	transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	cursor: pointer;
+}
+
+.round-btn-light a{
+	color: #05004D;
+}
+
+.gold{
+	color: #c7ba9a;
+}
 /*# sourceMappingURL=style.css.map */
