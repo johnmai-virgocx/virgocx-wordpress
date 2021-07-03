@@ -30,7 +30,7 @@ get_header('otc');
                     </div>
 
                     <div class="col-lg-6 col-md-12">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/OTC_Direc_ Banner.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/OTC Direct Banner.png"
                              alt="flags"
                              width="100%"/>
                     </div>
@@ -57,7 +57,7 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best_Execution.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.png"
                          alt="flags"/>
                 </div>
                 <h5>Best Execution</h5>
@@ -73,7 +73,7 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid_Settlemment.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid Settlemment.png"
                          alt="flags"/>
                 </div>
 
@@ -136,7 +136,7 @@ get_header('otc');
                 <div class="row custom-container">
 
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set_Up.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set Up.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <img class="number-left"
@@ -162,7 +162,7 @@ get_header('otc');
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set_Up.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Deposit Funds.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <img class="number-right"
