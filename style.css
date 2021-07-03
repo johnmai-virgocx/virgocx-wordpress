@@ -108,6 +108,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--danger:#dc3545;
 	--light:#f8f9fa;
 	--dark:#343a40;
+	--color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--color-interaction: #1e4bd1;
+	--color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+	--color-danger: #b50706;
+	--VirgoCX-purple-contrast: #eff1f2;
+	--color-ink-high-contrast: #121212;
+	--VirgoCX-purple-contrast-light: #ffffff;
+	--VirgoCX-blue: #05004d;
+	--VirgoCX-purple: #080449;
+	--VirgoCX-gold: #c7ba9a;
 	--breakpoint-xs:0;
 	--breakpoint-sm:576px;
 	--breakpoint-md:768px;
@@ -115,6 +127,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--breakpoint-xl:1200px;
 	--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+
 }
 
 *, ::after, ::before {
@@ -9807,11 +9821,11 @@ ul {
 }
 
 textarea:hover,
-input:hover,
+/*input:hover,*/
 textarea:active,
 input:active,
 textarea:focus,
-input:focus,
+/*input:focus,*/
 button:focus,
 button:active,
 button:hover,
@@ -12371,10 +12385,11 @@ form.normal input[type="submit"] {
 	display: block;
 	text-decoration: none;
 	padding: 3px 10px;
-	color: #ffffff;
+	cursor: pointer;
+	color: #ffffff!important;
 	font-size: 16px;
 	font-weight: 500;
-	border: 1.5px solid white;
+	border: 1.5px solid white!important;
 	width: 120px;
 	text-align: center;
 	border-radius: 50px;
@@ -12408,5 +12423,144 @@ form.normal input[type="submit"] {
 
 .gold{
 	color: #c7ba9a;
+}
+
+.blue{
+	color: var(--VirgoCX-blue);
+}
+
+
+/* Sign up input style*/
+
+.input-underlined{
+	width: 100%;
+}
+.input-underlined  input,
+.input-filled  input {
+	border: none;
+	border-bottom: 0.125rem solid var(--VirgoCX-purple-contrast);
+	background:var(--VirgoCX-purple);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 1.5rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+
+
+.input-underlined  .input-label,
+.input-filled  .input-label {
+	position: absolute;
+	left: 30px;
+	line-height: 147.6%;
+	color: var(--VirgoCX-purple-contrast);
+	border-color: var(--VirgoCX-purple-contrast);
+	transition: top .2s;
+}
+
+.input-underlined  img,
+.input-filled  img {
+	position: absolute;
+	left: 0;
+	top: 34px;
+	fill: var(--VirgoCX-purple-contrast);
+}
+
+
+input::placeholder {
+	color: white;
+	left: 70px!important;
+}
+#checkbox{
+	position: absolute;
+	left: 20px;
+	top: 4px;
+}
+
+#checkbox lable{
+	position: absolute;
+	top: 0;
+	width: 80%;
+	left: 0;
+}
+
+
+.navbar-nav-otc .earn-btn {
+	background: var(--VirgoCX-blue);
+	color: white;
+	border-radius: 50px;
+	border: 1px solid var(--VirgoCX-gold);
+	padding: 2px 14px !important;
+	display: block;
+	max-width: 120px;
+	margin-top: 15px;
+}
+.navbar-nav-otc .nav-item img{
+	position: relative;
+	top: 40px;
+	left: 20px;
+}
+
+.navbar-nav-otc .nav-link {
+	background: var(--VirgoCX-blue);
+	color: white;
+	border-bottom: 1px solid white;
+	padding: 2px 14px !important;
+	display: block;
+	max-width: 120px;
+	margin-top: 15px;
+}
+
+
+
+.navbar-nav-otc .dropdown-item {
+	display: block;
+	width: 100%;
+	clear: both;
+	font-weight: 400;
+	color: white;
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: #1E1A5F;
+	border-bottom: 1px solid white;
+}
+.navbar-nav-otc .dropdown-menu{
+	background-color: #1E1A5F;
+	border-bottom: 0;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+}
+
+.right_side_btn_otc {
+	display: flex;
+	align-items: center;
+}
+
+.right_side_btn_otc a {
+	display: block;
+	text-decoration: none;
+	margin-left: 16px;
+	padding: 6px 10px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 500;
+	width: 120px;
+	text-align: center;
+	transition: 0.3s all ease;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+}
+
+.menu-otc-header-container #primary-menu ul li:nth-child(2) sub-menu{
+	display: none;
+}
+.menu-otc-header-container #primary-menu ul li:nth-child(2):hover{
+	sub-menu{
+		display: block;
+	}
 }
 /*# sourceMappingURL=style.css.map */
