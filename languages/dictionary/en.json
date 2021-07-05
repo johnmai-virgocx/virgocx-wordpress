@@ -81,6 +81,8 @@
 	"footer_col2_Buy_LINK": "Buy Chainlink (LINK)",
 	"footer_col2_Buy_CRV": "Buy Curve (CRV)",
 	"footer_col2_Buy_AAVE": "Buy Aave (AAVE)",
+	"footer_col2_Buy_SNX":"Buy Synthetix (SNX)",
+	"footer_col2_Buy_MKR":"Buy Maker (MKR)",
 	"footer_col3": "Products",
 	"footer_col3_Trading_Platform": "Trading Platform",
 	"footer_col3_OTC": "OTC",
@@ -407,10 +409,10 @@
 	"CRV":"CRV",
 	"Curve":"Curve",
 	"AAVE":"AAVE",
-	"Aave":"Aave"
+	"Aave":"Aave",
+	"Synthetix":"Synthetix",
+	"SNX":"SNX",
+	"Maker":"Maker",
+	"MKR":"MKR"
 
-	
-	
-
-	
 }
