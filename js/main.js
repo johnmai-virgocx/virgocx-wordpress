@@ -297,6 +297,8 @@
                 'link/cad': '/page#/advancedTrade/60',
                 'crv/cad': '/page#/advancedTrade/61',
                 'aave/cad': '/page#/advancedTrade/62',
+                'snx/cad': '/page#/advancedTrade/63',
+                'mkr/cad': '/page#/advancedTrade/64',
             }
 
             let index = 1;
@@ -414,10 +416,10 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
