@@ -111,22 +111,24 @@
 
 											<div class="right_side_btn_otc y-2 my-lg-0">
                                                 <div class="navbar-nav-otc nav-item mr-auto">
-                                                    <img src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found" />
-                                                    <a class="nav-link dropdown-toggle" href="/en-referral" role="button" id="dropdownMenuLink"
-                                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="header_ENG">
-                                                        EN
+                                                    <img class="dropdown-left-img"  src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found" />
+                                                    <a class="nav-link dropdown-toggle" href="/en-referral" role="button" id="dropdownMenuLinkEN"
+                                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="header_full">
+                                                        English
                                                     </a>
+                                                    <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="lang">
-                                                        <option value="en" id="en" class="dropdown-item" data-translate="header_ENG"></option>
-                                                        <option value="zh" id="zh" class="dropdown-item" data-translate="header_CH"></option>
+                                                        <option value="en" id="en" class="dropdown-item lang-dropdown" data-translate="header_ENG"></option>
+                                                        <option value="zh" id="zh" class="dropdown-item lang-dropdown" data-translate="header_CH"></option>
                                                     </div>
                                                 </div>
                                                 <div class="navbar-nav-otc nav-item mr-auto">
-                                                    <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+                                                    <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/Sign Up Today/First Name Icon.png" alt="images not found" />
                                                     <a class="nav-link dropdown-toggle" href="/en-referral" role="button" id="dropdownMenuLink"
                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-translate="my_account">
                                                         My Account
                                                     </a>
+                                                    <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                         <option href="/en-referral-friend" class="dropdown-item" data-translate="header_Login">login</option>
                                                         <option href="/en-referral-otc" class="dropdown-item"  data-translate="header_Register">Sign Up</option>

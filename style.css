@@ -12474,19 +12474,15 @@ input::placeholder {
 	color: white;
 	left: 70px!important;
 }
-#checkbox{
-	position: absolute;
-	left: 20px;
-	top: 4px;
-}
 
-#checkbox lable{
+.terms label{
 	position: absolute;
 	top: 0;
-	width: 80%;
-	left: 0;
+	left: 40px;
 }
-
+.navbar-nav-otc{
+	position: relative;
+}
 
 .navbar-nav-otc .earn-btn {
 	background: var(--VirgoCX-blue);
@@ -12498,10 +12494,11 @@ input::placeholder {
 	max-width: 120px;
 	margin-top: 15px;
 }
-.navbar-nav-otc .nav-item img{
-	position: relative;
-	top: 40px;
+.navbar-nav-otc .dropdown-left-img{
+	position: absolute;
+	top: 20px;
 	left: 20px;
+	width: 15px;
 }
 
 .navbar-nav-otc .nav-link {
@@ -12527,16 +12524,32 @@ input::placeholder {
 	background-color: #1E1A5F;
 	border-bottom: 1px solid white;
 }
+
+.navbar-nav-otc .arrow-down{
+	position: absolute;
+	right: 5px;
+	top: 25px;
+	left: auto;
+}
+
+.navbar-nav-otc .dropdown-toggle::after{
+
+	content: none;
+}
 .navbar-nav-otc .dropdown-menu{
 	background-color: #1E1A5F;
 	border-bottom: 0;
 	padding: 0;
-	margin: 0;
+	margin-left: 15px;
 	box-shadow: none;
 }
 
 .right_side_btn_otc {
 	display: flex;
+	position: relative;
+	width: auto;
+	right: 0;
+	margin-left: auto;
 	align-items: center;
 }
 
@@ -12558,9 +12571,14 @@ input::placeholder {
 .menu-otc-header-container #primary-menu ul li:nth-child(2) sub-menu{
 	display: none;
 }
-.menu-otc-header-container #primary-menu ul li:nth-child(2):hover{
-	sub-menu{
-		display: block;
-	}
+
+#dropdownMenuLinkZH{
+	display: none;
 }
+
+/*.menu-otc-header-container #primary-menu ul li:nth-child(2):hover{*/
+/*	sub-menu{*/
+/*		display: block;*/
+/*	}*/
+/*}*/
 /*# sourceMappingURL=style.css.map */

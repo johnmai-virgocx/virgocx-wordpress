@@ -52,7 +52,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -69,7 +69,115 @@ get_header('otc');
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
-                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/ETH Icon.png"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/EOS Icon.png"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/Doge Icon.png"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/DAI Icon.png"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BCH Icon.png"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/LTC Icon.png"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>Bitcoin</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">BTC</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                            <div class="carousel-img">
+                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/PAXG Icon.png"
                                                      alt="images not found">
                                             </div>
                                             <div class="pg-text">
@@ -86,7 +194,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/Uni Icon.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -104,7 +212,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDC Icon.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -122,7 +230,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDT Icon.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -140,7 +248,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/XLM Icon.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -167,7 +275,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>img/Landing_Page/Fiat Currency Icon/AUD.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/AUD.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -184,7 +292,7 @@ get_header('otc');
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
-                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/CAD.png
+                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/255px-Flag_of_Australia_(converted) 1.png"
                                                      alt="images not found">
                                             </div>
                                             <div class="pg-text">
@@ -201,7 +309,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_Canada_(Pantone) 2.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -219,7 +327,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_New_Zealand 1.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -237,7 +345,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_the_United_Kingdom 1.png"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -255,7 +363,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_the_United_States 1.png"
                                                         alt="images not found"
                                                 >
                                             </div>
