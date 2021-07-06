@@ -298,7 +298,7 @@
                 'crv/cad': '/page#/advancedTrade/61',
                 'aave/cad': '/page#/advancedTrade/62',
                 'snx/cad': '/page#/advancedTrade/64',
-                'mkr/cad': '/page#/advancedTrade/63',
+                'knc/cad': '/page#/advancedTrade/63',
             }
 
             let index = 1;

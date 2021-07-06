@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Buy MKR page
+ * Template Name: Buy KNC page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -8,8 +8,8 @@
  */
 
 $args = [
-	'name' => 'Maker',
-	'ticker' => 'MKR',
+	'name' => 'Kyber Network',
+	'ticker' => 'KNC',
 ];
 get_template_part('template-parts/buy', 'coin', $args);
 ?>

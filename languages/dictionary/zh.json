@@ -82,7 +82,7 @@
 	"footer_col2_Buy_CRV": "购买 Curve (CRV)",
 	"footer_col2_Buy_AAVE": "购买 Aave (AAVE)",
 	"footer_col2_Buy_SNX":"购买 Synthetix (SNX)",
-	"footer_col2_Buy_MKR":"购买 Maker (MKR)",
+	"footer_col2_Buy_KNC":"购买 Kyber Network (KNC)",
 	"footer_col3": "产品",
 	"footer_col3_Trading_Platform": "交易平台",
 	"footer_col3_OTC": "OTC 场外交易",
@@ -418,7 +418,7 @@
 	"Aave":"Aave",
 	"Synthetix":"Synthetix",
 	"SNX":"SNX",
-	"Maker":"Maker",
-	"MKR":"MKR"
+	"Kyber Network":"Kyber Network",
+	"KNC":"KNC"
 
 }
