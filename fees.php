@@ -652,13 +652,13 @@ get_header();
                     }
 
                     function handleFees(data) {
-                        console.log('handle fee data', data);
+                        // console.log('handle fee data', data);
                         if (!data.success) {
                             return;
                         }
 
                         const container = document.getElementById('fees-tables');
-                        console.log('container', container);
+                        // console.log('container', container);
 
                         // Handle deposit candadian dollars
                         if (data.data.fundCanadianDollars) {
