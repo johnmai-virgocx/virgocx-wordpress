@@ -33,7 +33,11 @@ get_header();
 				<div class="row justify-content-between">
 					<div class="col-lg-5 col-md-12">
 						<div class="row">
-							<h1><span data-translate="Sell_header1_1"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+							<?php if($args['name']=="Kyber Network") : ?>
+								<h1><span data-translate="Sell_header1_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+							<?php else : ?>
+								<h1><span data-translate="Sell_header1_1"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+							<?php endif; ?>
 							<p class="tag-line" data-translate="Sell_header1_desc"></p>
 
 							<div class="hero-signup get-started-content">
