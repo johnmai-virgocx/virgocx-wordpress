@@ -213,8 +213,8 @@
         }
 
         function fetchPrices() {
-            fetch('/wordpress/wp-content/themes/virgocx/marketList.json')
-            // fetch('/market/list')
+            // fetch('/wordpress/wp-content/themes/virgocx/marketList.json')
+            fetch('/market/list')
                 .then(res => res.json())
                 .then(data => handleConversion(data))
         }
@@ -224,17 +224,36 @@
             var main = $("div.mm-dropdown .selected-option");
             var li = $("div.mm-dropdown > ul > li.input-option");
             var default_text = `Select`;
+            var ul = $("div.mm-dropdown > ul");
+            ul.hide();
+            li.show();
+            var isShow = false;
+            
 
             // Animation
             main.click(function () {
                 main.html(default_text);
-                li.toggle("fast");
+                // li.toggle("fast");
+                if(isShow==true){
+                    ul.hide();
+                    isShow=false;
+                }else{
+                    ul.show();
+                    isShow=true;
+                }
             });
 
             // Insert Data
             li.click(function () {
                 // hide
-                li.toggle("fast");
+                // li.toggle("fast");
+                if(isShow==true){
+                    ul.hide();
+                    isShow=false;
+                }else{
+                    ul.show();
+                    isShow=false;
+                }
                 var livalue = $(this).data("value");
                 var lihtml = $(this).html();
                 main.html(lihtml);
@@ -417,10 +436,10 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
