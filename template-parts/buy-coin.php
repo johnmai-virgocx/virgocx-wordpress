@@ -84,7 +84,7 @@ get_header();
 							<p data-translate="Buy_header3_desc"></p>
 						</div>
 						<div class="step-header">
-							<?php if($args['name']=="Kyber Network") : ?>
+							<?php if($args['name']=="Kyber Network" || $args['name']=="Basic Attention Token") : ?>
 								<h2><span data-translate="Buy_header4"></span><br /><span data-translate="<?= $args['name'] ?>"></span></h2>
 							<?php else : ?>
 								<h2><span data-translate="Buy_header4"></span> <span data-translate="<?= $args['name'] ?>"></span></h2>
