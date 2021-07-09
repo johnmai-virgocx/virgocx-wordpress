@@ -319,6 +319,8 @@
                 'aave/cad': '/page#/advancedTrade/62',
                 'snx/cad': '/page#/advancedTrade/64',
                 'knc/cad': '/page#/advancedTrade/65',
+                'bat/cad': '/page#/advancedTrade/66',
+                'cmp/cad': '/page#/advancedTrade/67',
             }
 
             let index = 1;

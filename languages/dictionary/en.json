@@ -83,6 +83,11 @@
 	"footer_col2_Buy_AAVE": "Buy Aave (AAVE)",
 	"footer_col2_Buy_SNX":"Buy Synthetix (SNX)",
 	"footer_col2_Buy_KNC":"Buy Kyber Network (KNC)",
+	"footer_col2_Buy_BAT":"Buy Basic Attention Token (BAT)",
+	"footer_col2_Buy_CMP":"Buy Compound (CMP)",
+	
+
+
 	"footer_col3": "Products",
 	"footer_col3_Trading_Platform": "Trading Platform",
 	"footer_col3_OTC": "OTC",
@@ -413,6 +418,10 @@
 	"Synthetix":"Synthetix",
 	"SNX":"SNX",
 	"Kyber Network":"Kyber Network",
-	"KNC":"KNC"
+	"KNC":"KNC",
+	"Basic Attention Token":"Basic Attention Token",
+	"BAT":"BAT",
+	"Compound":"Compound",
+	"CMP":"CMP"
 
 }

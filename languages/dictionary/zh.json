@@ -83,6 +83,10 @@
 	"footer_col2_Buy_AAVE": "购买 Aave (AAVE)",
 	"footer_col2_Buy_SNX":"购买 Synthetix (SNX)",
 	"footer_col2_Buy_KNC":"购买 Kyber Network (KNC)",
+	"footer_col2_Buy_BAT":"购买 Basic Attention Token (BAT)",
+	"footer_col2_Buy_CMP":"购买 Compound (CMP)",
+	
+	
 	"footer_col3": "产品",
 	"footer_col3_Trading_Platform": "交易平台",
 	"footer_col3_OTC": "OTC 场外交易",
@@ -419,6 +423,10 @@
 	"Synthetix":"Synthetix",
 	"SNX":"SNX",
 	"Kyber Network":"Kyber Network",
-	"KNC":"KNC"
+	"KNC":"KNC",
+	"Basic Attention Token":"Basic Attention Token",
+	"BAT":"BAT",
+	"Compound":"Compound",
+	"CMP":"CMP"
 
 }
