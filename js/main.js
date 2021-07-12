@@ -347,7 +347,7 @@
                                         </div>
                                         <div class="pg-text">
                                             <div class="d-flex justify-content-between">
-                                              <h5>${price.fullName}</h5>
+                                              
                                               <h5>${price.symbol}</h5>
                                             </div>
                                             <p>
@@ -375,7 +375,7 @@
                                         </div>
                                         <div class="pg-text">
                                             <div class="d-flex justify-content-between">
-                                              <h5>${price.fullName}</h5>
+                                              
                                               <h5>${price.symbol}</h5>
                                             </div>
                                             <p>
