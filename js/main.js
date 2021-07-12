@@ -409,7 +409,7 @@
         }
 
         function fetchLivePrices() {
-            // fetch('/wordpress/wp-content/themes/virgocx/indexPage.json')
+            // fetch('/wordpress/wp-content/themes/virgocx/carouseldata.json')
             fetch('/indexPage')
                 .then(res => res.json())
                 .then(data => handleLivePrices(data))
