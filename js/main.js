@@ -225,6 +225,7 @@
             var li = $("div.mm-dropdown > ul > li.input-option");
             var default_text = `Select`;
             var ul = $("div.mm-dropdown > ul");
+           
             ul.hide();
             li.show();
             var isShow = false;
@@ -233,6 +234,7 @@
             // Animation
             main.click(function () {
                 main.html(default_text);
+                // ul.toggle("fast");
                 // li.toggle("fast");
                 if(isShow==true){
                     ul.hide();

@@ -51,9 +51,15 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 			
 	}
 
+    .mm-dropdown{
+        position:relative;
+        height:100%;
+    }
+
     #crypto-options{
         height:286px;
         overflow-y:scroll;
+        position:absolute;
         
         
         
