@@ -15,12 +15,12 @@ get_header('otc');
                 <div class="row justify-content-between">
                     <div class="col-lg-6 col-md-12">
                             <h1>
-                                <span data-translate="">
+                                <span data-translate="OTC_landing_banner">
                                     24/7 Institutional Liquidity
                                     for Digital Assets
                                 </span>
                             </h1>
-                            <p class="tag-line gold" data-translate="Buy_header1_desc">Dedicated for seamless execution of large block transactions over $30,000 CAD</p>
+                            <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless execution of large block transactions over $30,000 CAD</p>
 
                             <a class="round-btn">
                                 Get started
@@ -418,12 +418,12 @@ get_header('otc');
             <div class="row d-flex justify-content-around">
 
                 <div class="col-lg-6 col-md-12 product-text">
-                    <h2 data-translate="">
+                    <h2 data-translate="OTC_landing_banner_2">
                         VirgoCX OTC is A Full Service Trade Desk for Large Block Transactions.
                     </h2>
                 </div>
                 <div class="col-lg-6 col-md-12 product-text">
-                    <p data-translate="OTC_header1_desc">
+                    <p data-translate="OTC_landing_banner_2desc">
                         VirgoCX OTC offers direct market access for cryptocurrencies with optimal price execution. We bridge the gap between traditional financial services
                         and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto and fiat currencies to fill large orders at a desired market price.
                     </p>
@@ -440,17 +440,17 @@ get_header('otc');
                 <div class="col-lg-8 col-md-12">
                     <div class="tabs">
                         <div class="tab-2">
-                            <label for="tab2-3">OTC Direct</label>
+                            <label for="tab2-3" data-translate="OTC_landing_banner2_tag1">OTC Direct</label>
                             <input id="tab2-3" name="tabs-two" type="radio" checked="checked">
                             <div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <h3>
-                                            Access deep liquidity anytime<span class="gold">
+                                        <h3 data-translate="OTC_landing_banner2_tag1_desc_p1">
+                                            Access deep liquidity anytime<span data-translate="OTC_landing_banner2_tag1_desc_p2" class="gold">
                                             electronically.
                                         </span>
                                         </h3>
-                                        <p>
+                                        <p data-translate="OTC_landing_banner2_tag1_desc2"> 
                                             By being connected to Virgo OTC Direct, our clients are able to execute
                                             large block trades instantaneously.
                                             Our seamless workflow allows our institution clients to be able to receive
@@ -470,18 +470,18 @@ get_header('otc');
                             </div>
                         </div>
                         <div class="tab-2">
-                            <label for="tab2-4">OTC Chat Broker</label>
+                            <label for="tab2-4" data-translate="OTC_landing_banner2_tag2">OTC Chat Broker</label>
                             <input id="tab2-4" name="tabs-two" type="radio">
                             <div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <h3>
-                                            Personalized service for executing<span class="gold">
+                                        <h3  data-translate="OTC_landing_banner2_tag2_desc_p1">
+                                            Personalized service for executing<span  data-translate="OTC_landing_banner2_tag1_desc_p2" class="gold">
                                             large block transactions.
                                         </span>
                                         </h3>
 
-                                        <p>
+                                        <p data-translate="OTC_landing_banner2_tag2_desc2">
                                             Our OTC trade team will facilitate any trade requests you will have for your
                                             business. From trading like Bitcoin, Ethereum,
                                             and Litecoin, to hedging out risk by trading back into Tether (USDT).
@@ -508,7 +508,7 @@ get_header('otc');
         <div class="container custom-container">
             <div class="row">
                     <div class="client-text">
-                        <h2 data-translate="Our_Product">Our_Client</h2>
+                        <h2 data-translate="Our_client">Our_Client</h2>
                     </div>
                 </div>
             <div class="row d-flex justify-content-around">
@@ -522,36 +522,36 @@ get_header('otc');
                                 <span class="tab-dot"></span>
                             </nav>
                             <nav>
-                                <a>Institutions</a>
-                                <a>Trading Firms</a>
-                                <a>Miners</a>
-                                <a>High Net Worth Individuals</a>
+                                <a data-translate="Institutions">Institutions</a>
+                                <a data-translate="Trading_Firms">Trading Firms</a>
+                                <a data-translate="Miners">Miners</a>
+                                <a data-translate="Individual">High Net Worth Individuals</a>
                             </nav>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
 
-                        <div class="container">
+                        <div class="container" data-translate="OTC_landing_banner3_1">
                             <p>VirgoCX provides institutional investors with flexibility in regards to investing in
                                 digital currencies. Our digital system and our chat brokerage options allows
                                 institutions to be able to access the market efficiently. In addition to fast execution,
                                 our flexible settlements allow our clients to be able to access funds from our tier 1
                                 banks when they need it.</p>
                         </div>
-                        <div class="container">
+                        <div class="container" data-translate="OTC_landing_banner3_2">
                             <p>Proprietary Trading Firms find utility within our OTC desk by being able to hedge risk
                                 efficiently by utilizing our highly liquid digital assets
                                 and USDT/CAD on/off ramps. We help our clients quickly settle their transactions with us
                                 so they are able to hedge other risks and optimize their cryptocurrency trading
                                 strategies.</p>
                         </div>
-                        <div class="container">
+                        <div class="container" data-translate="OTC_landing_banner3_3">
                             <p>Cryptocurrency Mining Firms optimize their working capital by utilizing VirgoCX OTC. We
                                 provide best in class execution of digital
                                 assets and rapid settlement for our clients to be able to have liquidity to hedge, pay
                                 expenses, and more. </p>
                         </div>
-                        <div class="container">
+                        <div class="container" data-translate="OTC_landing_banner3_4">
                             <p>Our HNW clients receive VIP service in regards to having access to a complete view of the
                                 digital currency markets through our market commentary.
                                 They will also have access to optionality to be able to purchase digital assets from our
@@ -569,7 +569,7 @@ get_header('otc');
     <section class="why-area">
         <div class="container custom-container">
             <div class="why-title">
-                <h2 data-translate="Our_Product">Why Trade with us</h2>
+                <h2 data-translate="Why_trade">Why Trade with us</h2>
             </div>
             <div class="why-content">
 
@@ -578,10 +578,10 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png" alt="images not found"/>
                         </div>
-                        <h3>Save on Execution Costs</h3>
+                        <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We eliminate slippage on larger trades. Save up to 2% compared to trading on other
+                        <p data-translate="OTC_landing_banner4_col2-1">We eliminate slippage on larger trades. Save up to 2% compared to trading on other
                             exchanges.</p>
                     </div>
                 </div>
@@ -590,10 +590,10 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.png" alt="images not found"/>
                         </div>
-                        <h3>Zero Trading Fees</h3>
+                        <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We don’t charge anything on top. What you see is what you get.</p>
+                        <p data-translate="OTC_landing_banner4_col2-2">We don’t charge anything on top. What you see is what you get.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
@@ -601,20 +601,20 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.png" alt="images not found"/>
                         </div>
-                        <h3>Best Pricing in Canada</h3>
+                        <h3  data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC,
+                        <p  data-translate="OTC_landing_banner4_col2-3">Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC,
                             ETH, USDT, and more.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.png" alt="images not found"/>
-                        <h3>Access to Foreign Currencies</h3>
+                        <h3  data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We have unique market access via digital assets, to provide a competitive pricing for other
+                        <p  data-translate="OTC_landing_banner4_col2-4">We have unique market access via digital assets, to provide a competitive pricing for other
                             foreign currencies.</p>
                     </div>
                 </div>
@@ -623,10 +623,10 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.png" alt="images not found"/>
                         </div>
-                        <h3>Personalized Services</h3>
+                        <h3 data-translate="OTC_landing_banner4_col1-5">Personalized Services</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>Our OTC account managers are available 24/7 to facilitate every request for your business or
+                        <p  data-translate="OTC_landing_banner4_col2-5">Our OTC account managers are available 24/7 to facilitate every request for your business or
                             trading needs. You will also have access to industry insights on the cryptocurrency
                             markets.</p>
                     </div>
@@ -636,10 +636,10 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.png" alt="images not found"/>
                         </div>
-                        <h3>Rapid Settlement</h3>
+                        <h3  data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p>We provide a same day, no limit settlement for your USD and CAD trades. This also applies to
+                        <p  data-translate="OTC_landing_banner4_col2-6">We provide a same day, no limit settlement for your USD and CAD trades. This also applies to
                             your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ get_header('otc');
                 <div class="row justify-content-between">
                     <div class="col-lg-6 col-md-12">
                         <div class="row">
-                            <h1>
+                            <h1 data-translate="OTC_direct_h">
                                 <span data-translate="OTC_header1_1">
                                     Fill Large Block Trades Using
                                 </span>
@@ -46,11 +46,11 @@ get_header('otc');
                     <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.png"
                          alt="flags"/>
                 </div>
-                <h5>24/7</h5>
-                <p>OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
+                <h5 data-translate="OTC_direct_24_7">24/7</h5>
+                <p data-translate="OTC_direct_banner2_col1">OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
 
                 </p>
-                <p>
+                <p data-translate="OTC_direct_banner2_col1_2">
                     With optimized uptime on our platform, OTC Direct can provide your team with a <span class="blue">seamless trading
                     experience</span> for your larger orders.
                 </p>
@@ -60,12 +60,12 @@ get_header('otc');
                     <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.png"
                          alt="flags"/>
                 </div>
-                <h5>Best Execution</h5>
-                <p>We aggregate liquidity through a multitude of different providers in order to provide you with the
+                <h5 data-translate="OTC_direct_banner2_col2">Best Execution</h5>
+                <p data-translate="OTC_direct_banner2_col2_2">We aggregate liquidity through a multitude of different providers in order to provide you with the
                     <span class="blue">best price</span> at that point in time.
 
                 </p>
-                <p>
+                <p data-translate="OTC_direct_banner2_col2_3">
 
                     By routing your large block order across our liquidity pools, you will save on your market orders
                     without having to manually route your orders out to different venues.
@@ -77,11 +77,11 @@ get_header('otc');
                          alt="flags"/>
                 </div>
 
-                <h5>Rapid Settlement</h5>
-                <p>
+                <h5 data-translate="OTC_direct_banner2_col3">Rapid Settlement</h5>
+                <p  data-translate="OTC_direct_banner2_col3_1">
                     We offer conditional same-day settlement for our client trades.
                 </p>
-                <p>
+                <p  data-translate="OTC_direct_banner2_col3_2">
                     By having close relationships with our partner banks, our settlement speeds for fiat to
                     cryptocurrency is<span class="blue">one of the most competitive</span> in Canada.
                 </p>
@@ -89,7 +89,7 @@ get_header('otc');
         </div>
     </section>
     <section class="how-area">
-        <h2>How It Works?</h2>
+        <h2 data-translate="OTC_direct_how">How It Works?</h2>
 
         <div class="tabs">
             <nav class="tab-switch row">
@@ -114,15 +114,15 @@ get_header('otc');
                              src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.png"
                              alt="flags" width="100%"/>
                         <div class="how-text">
-                            <h3>Onboard with VirgoCX OTC
+                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC
 
                             </h3>
-                            <p>
+                            <p  data-translate="OTC_direct_how_1_1">
                                 Contact our OTC account managers to get started as an individual or as a corporate
                                 entity.
                             <ul>
-                                <li>All onboarding information will be securely stored.</li>
-                                <li>Account registration will typically take less than one day.</li>
+                                <li data-translate="OTC_direct_how_1_2">All onboarding information will be securely stored.</li>
+                                <li data-translate="OTC_direct_how_1_3">Account registration will typically take less than one day.</li>
                             </ul>
 
 
@@ -143,15 +143,15 @@ get_header('otc');
                              src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.2.png"
                              alt="flags" width="100%"/>
                         <div class="how-text">
-                            <h3>
+                            <h3  data-translate="OTC_direct_how_t2">
                                 Set Up
                             </h3>
-                            <p>
+                            <p data-translate="OTC_direct_how_2_1">
                                 Upon onboarding, our OTC managers will provide you with your account information to log
                                 onto OTC Direct.
                             <ul>
-                                <li>You will be provided login credentials for your OTC Direct account.</li>
-                                <li>Login credentials are secure.</li>
+                                <li data-translate="OTC_direct_how_2_2">You will be provided login credentials for your OTC Direct account.</li>
+                                <li data-translate="OTC_direct_how_2_3">Login credentials are secure.</li>
                             </ul>
                             </p>
                         </div>
@@ -172,15 +172,15 @@ get_header('otc');
                              src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.png"
                              alt="flags" width="100%"/>
                         <div class="how-text">
-                            <h3>
+                            <h3  data-translate="OTC_direct_how_t3">
                                 Deposit Funds
                             </h3>
-                            <p>Once you have onboarded, you will be able to deposit fiat and digital assets at any time.
+                            <p data-translate="OTC_direct_how_3_1">Once you have onboarded, you will be able to deposit fiat and digital assets at any time.
                             <ul>
-                                <li>Wires will be processed and handled by our partner bank the moment it has been
+                                <li data-translate="OTC_direct_how_3_2">Wires will be processed and handled by our partner bank the moment it has been
                                     sent.
                                 </li>
-                                <li>Digital assets require several confirmations on the blockchain before we can credit
+                                <li  data-translate="OTC_direct_how_3_3">Digital assets require several confirmations on the blockchain before we can credit
                                     your account.
                                 </li>
                             </ul>
@@ -202,15 +202,15 @@ get_header('otc');
                             <img class="number-left"
                                  src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.4.png"
                                  alt="flags" width="100%"/>
-                            <h3>
+                            <h3  data-translate="OTC_direct_how_t4">
                                 Trade
                             </h3>
-                            <p>Execute transactions for the best price using OTC Direct.
+                            <p data-translate="OTC_direct_how_4_1">Execute transactions for the best price using OTC Direct.
                             <ul>
-                                <li>You will be able to trade directly on our platform 24/7 (excluding scheduled
+                                <li  data-translate="OTC_direct_how_4_2">You will be able to trade directly on our platform 24/7 (excluding scheduled
                                     maintenance times)
                                 </li>
-                                <li>Access large liquidity limit orders and RFQ orders on our platform.</li>
+                                <li  data-translate="OTC_direct_how_4_3">Access large liquidity limit orders and RFQ orders on our platform.</li>
                             </ul>
                             </p>
                         </div>
@@ -231,16 +231,16 @@ get_header('otc');
                              src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.png"
                              alt="flags" width="100%"/>
                         <div class="how-text">
-                            <h3>
+                            <h3  data-translate="OTC_direct_how_t5">
                                 Settlement
                             </h3>
-                            <p>Once you have updated the banking / wallet address information, you will be able to
+                            <p data-translate="OTC_direct_how_5_1">Once you have updated the banking / wallet address information, you will be able to
                                 withdraw funds.
                             <ul>
-                                <li>We have long standing relationships with our partner banks to provide you with rapid
+                                <li data-translate="OTC_direct_how_5_2">We have long standing relationships with our partner banks to provide you with rapid
                                     settlement.
                                 </li>
-                                <li>Digital assets will be settled immediately upon confirmation of the trade details.
+                                <li data-translate="OTC_direct_how_5_3">Digital assets will be settled immediately upon confirmation of the trade details.
                                 </li>
                             </ul>
                             </p>
@@ -252,13 +252,13 @@ get_header('otc');
     </section>
     <section class="faq" aria-label="Question Accordions">
         <div class="custom-container">
-            <h2>Frequently Asked Questions </h2>
+            <h2 data-translate="OTC_direct_faq">Frequently Asked Questions </h2>
             <div class="panel-group" id="faq" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                                 href="#collapse0" aria-expanded="true" aria-controls="collapse0"  data-translate="OTC_direct_faq_1">
                                 What if I’m already onboarded?
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
@@ -267,7 +267,7 @@ get_header('otc');
                     </div>
                     <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body px-3 mb-4">
-                            <p>We can offer a fast track enrollment on OTC if you have already onboarded on the retail
+                            <p data-translate="OTC_direct_faq_1_1">We can offer a fast track enrollment on OTC if you have already onboarded on the retail
                                 platform.</p>
                         </div>
                     </div>
@@ -277,7 +277,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                 href="#collapse1" aria-expanded="true" aria-controls="collapse1"  data-translate="OTC_direct_faq_2">
                                 What type of order types do you have on OTC Direct?
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
@@ -287,7 +287,7 @@ get_header('otc');
                     </div>
                     <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
                         <div class="panel-body px-3 mb-4">
-                            <p>We currently support Request for Quote (RFQ) and Limit Orders.</p>
+                            <p data-translate="OTC_direct_faq_2_1">We currently support Request for Quote (RFQ) and Limit Orders.</p>
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                 href="#collapse2" aria-expanded="true" aria-controls="collapse2"  data-translate="OTC_direct_faq_3">
                                 How fast is the settlement?
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
@@ -304,7 +304,7 @@ get_header('otc');
                     </div>
                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                         <div class="panel-body px-3 mb-4">
-                            <p>We typically settle fiat and digital currencies within one business day. </p>
+                            <p  data-translate="OTC_direct_faq_3_1">We typically settle fiat and digital currencies within one business day. </p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                 href="#collapse3" aria-expanded="true" aria-controls="collapse3"  data-translate="OTC_direct_faq_4">
                                 What is the minimum amount for settlement on OTC Direct?
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
@@ -322,7 +322,7 @@ get_header('otc');
                     </div>
                     <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                         <div class="panel-body px-3 mb-4">
-                            <p>The minimum amount to begin settlement is 30,000 CAD or equivalent.</p>
+                            <p data-translate="OTC_direct_faq_4_1">The minimum amount to begin settlement is 30,000 CAD or equivalent.</p>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                 href="#collapse4" aria-expanded="true" aria-controls="collapse4" data-translate="OTC_direct_faq_5">
                                 What are the operating hours for OTC Direct?
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
@@ -338,7 +338,7 @@ get_header('otc');
                     </div>
                     <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                         <div class="panel-body px-3 mb-4">
-                            <p>The platform is available to use 24/7/365, with the exception to short scheduled system
+                            <p data-translate="OTC_direct_faq_5_1">The platform is available to use 24/7/365, with the exception to short scheduled system
                                 maintenances which we will notify you about in advance.</p>
                         </div>
                     </div>
