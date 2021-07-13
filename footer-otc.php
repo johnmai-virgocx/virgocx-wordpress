@@ -145,12 +145,12 @@
 													</ul>
 											</div>
 									</div>
-									<div class="col-lg-5 col-md-12">
-											<div class="newsletter">
-													<span data-translate="footer_Stay_in_Touch"></span>
-													<?= do_shortcode('[contact-form-7 id="79" title="Footer newsletter"]') ?>
-											</div>
-									</div>
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="newsletter">
+                                        <span data-translate="footer_Stay_in_Touch"></span>
+                                        <?= do_shortcode('[contact-form-7 id="79" title="Footer newsletter"]') ?>
+                                    </div>
+                                </div>
 							</div>
 					</div>
 					<div class="copyright">
@@ -169,7 +169,13 @@
 		border: 1px solid #B59964 !important;
 		color: #fff;
 	}
+	 .ios{
+         color: var(--VirgoCX-gold);
+		background-color: white;
+         background-image: url(/wp-content/themes/virgocx/img/footer/ios_white.png);
+	}
 	.app-download a:hover.ios{
+        color: var(--VirgoCX-gold);
 		background-image: url(/wp-content/themes/virgocx/img/footer/ios_white.png);
 	}
 	.app-download a:hover.play {

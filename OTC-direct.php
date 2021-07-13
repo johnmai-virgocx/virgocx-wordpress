@@ -512,6 +512,11 @@ get_header('otc');
             padding-bottom: 100px;
         }
 
+        .how-area h3,
+        .how-area p,
+        .how-area li, {
+            color: #05004d;
+        }
         .signup-area h2 {
             text-align: center;
             font-size: 36px;

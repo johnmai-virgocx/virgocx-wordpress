@@ -17,7 +17,7 @@ get_header('otc');
                             <h1>
                                 <span data-translate="OTC_landing_banner">
                                     24/7 Institutional Liquidity
-                                    for Digital Assets
+                                    for Cryptocurrencies
                                 </span>
                             </h1>
                             <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless execution of large block transactions over $30,000 CAD</p>
@@ -385,30 +385,88 @@ get_header('otc');
             </div>
         </div>
     </section>
+<!--    <section class="press-area">-->
+<!--        <div class="container custom-container">-->
+<!--            <div class="row justify-content-center">-->
+<!---->
+<!--                <h2>Press& Partners</h2>-->
+<!--            </div>-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-2 col-md-2 col-4 text-center"><img-->
+<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners//MNP.png"" alt="images not found">-->
+<!--                </div>-->
+<!--                <div class="col-lg-2 col-md-2 col-4 text-center"><img-->
+<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/partners/chainalysis.png" alt="images not found">-->
+<!--                </div>-->
+<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
+<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/Fireblocks.png" alt="images not found">-->
+<!--                </div>-->
+<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
+<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/Coindesk.png" alt="images not found">-->
+<!--                </div>-->
+<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
+<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/Blockgeeks.png" alt="images not found">-->
+<!--                </div>-->
+<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
+<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/BLA_Lawyrs.png" alt="images not found">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
     <section class="press-area">
         <div class="container custom-container">
-            <div class="row justify-content-center">
+<!--            <h2><span data-translate="frontpage_Press_Partners"/></h2>-->
+                        <div class="row justify-content-center">
 
-                <h2>Press& Partners</h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-2 col-md-2 col-4 text-center"><img
-                            src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners//MNP.png"" alt="images not found">
+                            <h2>Press& Partners</h2>
+                        </div>
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
+                    <div class="press-img mnp">
+                        <a href="https://www.mnp.ca/en">
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/MNP.png" class="img-fluid"
+                                 alt="images not found"/>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 text-center"><img
-                            src="<?= get_template_directory_uri() ?>/img/partners/chainalysis.png" alt="images not found">
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
+                    <div class="press-img">
+                        <a href=" https://www.chainalysis.com/ ">
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/chainalysis.png"
+                                 alt="images not found"/>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 text-center "><img
-                            src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Fireblocks.png" alt="images not found">
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
+                    <div class="press-img">
+                        <a href="https://finance.yahoo.com/news/canada-adds-virgocx-emerging-institutional-133500985.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNhLw&guce_referrer_sig=AQAAAJHseEHRCW60KtOKnZVZ8UWtQ0Gie5I97czRbx5WzpWqAxBcy7nNsZqnb6A75IqtFy_ElObvo7I7Ev9wNmI9znmxvpNWC9Td0svysMaywS7WaxYZb4E-bJ6MqfYhvJ19NXYnTHUTo10nIKtWZmH7fZV9d7_a5vFFFS9dIqyWLQ1z">
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/yahoo.png" alt="images not found"/>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 text-center "><img
-                            src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Coindesk.png" alt="images not found">
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
+                    <div class="press-img">
+                        <a href="https://www.coindesk.com/canadian-exchange-virgocx-taps-ledger-vault-for-custody-insurance-support">
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/coindesk.png"
+                                 alt="images not found"/>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 text-center "><img
-                            src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Blockgeeks.png" alt="images not found">
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
+                    <div class="press-img">
+                        <a href="https://blockgeeks.com/community-partners/virgocx/">
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/blockgeeks.png"
+                                 alt="images not found"/>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-4 text-center "><img
-                            src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/BLA_Lawyrs.png" alt="images not found">
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6 ">
+                    <div class="press-img">
+                        <a href="https://www.blakes.com/">
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/blakes.png" alt="images not found"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

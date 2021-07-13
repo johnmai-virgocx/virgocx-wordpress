@@ -225,11 +225,11 @@
             var li = $("div.mm-dropdown > ul > li.input-option");
             var default_text = `Select`;
             var ul = $("div.mm-dropdown > ul");
-           
+
             ul.hide();
             li.show();
             var isShow = false;
-            
+
 
             // Animation
             main.click(function () {
@@ -440,10 +440,10 @@
             currentLang = 'en',
             langPageIndicator =0,
              languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
@@ -557,6 +557,20 @@
             }
         });
 
+        //OTC lang switcher
+        $(".lang-dropdown").on("click", function () {
+            var language = $(this).val().toLowerCase();
+            if (dictionary.hasOwnProperty(language)) {
+                var url = window.location.href;
+                if(url.indexOf('/'+currentLang+'-')<0){
+                    setLang(dictionary[language]);
+                }
+                redirection(url,language,true);
+                currentLang = language;
+
+            }
+        });
+
         // set switcher to currentLang
         function loadLangSwitcher() {
             $("#lang").val(currentLang);
@@ -638,6 +652,16 @@
         };
         checkAffiliateSessionId();
 // affilicat sesstion detector
+
+// otc header hover event
+        $(".dropdown-toggle-otc").hover(function(){
+            $(this).find("div.dropdown-menu").css("display", "block");
+            $(this).find("img").css("transform", "rotate( -180deg )");
+        }, function(){
+
+            $(this).find("div.dropdown-menu").css("display", "none");
+            $(this).find("img").css("transform", "rotate( 0deg )");
+        });
 // **************************************************************************************
 // **************************************************************************************
 

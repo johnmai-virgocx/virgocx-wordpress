@@ -141,7 +141,7 @@ get_header('otc');
                 <div class="row custom-container">
 
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set Up.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Join Our.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <img class="number-left"
@@ -149,7 +149,7 @@ get_header('otc');
                              alt="flags" width="100%"/>
                         <div class="how-text">
                             <h3>
-                                Set Up
+                                Join our Communication Channels
                             </h3>
                             <p>
                                 Upon onboarding, our OTC managers will provide you with your account information to log
@@ -167,7 +167,7 @@ get_header('otc');
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Deposit Funds.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Deposit Funds.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <img class="number-right"
@@ -200,7 +200,7 @@ get_header('otc');
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Trade.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Trade.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
@@ -225,7 +225,7 @@ get_header('otc');
             <div class="how-container">
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Settlement.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Settlement.png"
                              alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
@@ -517,6 +517,14 @@ get_header('otc');
             padding-bottom: 100px;
         }
 
+        .how-text h3,
+        .how-text p,
+        .how-text li, {
+            color: #05004d;
+        }
+
+
+
         .signup-area h2 {
             text-align: center;
             font-size: 36px;
@@ -711,6 +719,21 @@ get_header('otc');
         .OTC-header {
             width: 70%;
             margin: auto;
+        }
+
+        ul {
+            margin-left: 1em;
+            /*list-style-position: outside;*/
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #080449;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 

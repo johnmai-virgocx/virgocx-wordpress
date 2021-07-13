@@ -9788,6 +9788,33 @@ a.text-dark:focus, a.text-dark:hover {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: "Matter-Regular";
+	src: url("/wp-content/themes/virgocx/fonts/Matter-Regular.otf");
+	src: url("/wp-content/themes/virgocx/fonts/Matter-Regular.otf?#iefix") format("embedded-opentype"), url("/wp-content/themes/virgocx/fonts/Matter-Regular.otf") format("otf"), url("/wp-content/themes/virgocx/fonts/Matter-Regular.otf") format("truetype"), url("/wp-content/themes/virgocx/fonts/Matter-Regular.svg#MatterRegular") format("svg");
+	/* src: url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf");
+	src: url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf") format("otf"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf") format("truetype"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.svg#AvenirNextBold") format("svg"); */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Matter-Medium";
+	src: url("/wp-content/themes/virgocx/fonts/Matter-Medium.otf");
+	src: url("/wp-content/themes/virgocx/fonts/Matter-Medium.otf?#iefix") format("embedded-opentype"), url("/wp-content/themes/virgocx/fonts/Matter-Medium.otf") format("otf"), url("/wp-content/themes/virgocx/fonts/Matter-Medium.otf") format("truetype"), url("/wp-content/themes/virgocx/fonts/Matter-Medium.svg#MatterMedium") format("svg");
+	/* src: url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf");
+	src: url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf") format("otf"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf") format("truetype"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.svg#AvenirNextBold") format("svg"); */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Matter-Bold";
+	src: url("/wp-content/themes/virgocx/fonts/Matter-Bold.otf");
+	src: url("/wp-content/themes/virgocx/fonts/Matter-Bold.otf?#iefix") format("embedded-opentype"), url("/wp-content/themes/virgocx/fonts/Matter-Bold.otf") format("otf"), url("/wp-content/themes/virgocx/fonts/Matter-Bold.otf") format("truetype"), url("/wp-content/themes/virgocx/fonts/Matter-Bold.svg#MatterBold") format("svg");
+	/* src: url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf");
+	src: url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf") format("otf"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.otf") format("truetype"), url("/wordpress/wp-content/themes/virgocx/fonts/AvenirNext-Bold.svg#AvenirNextBold") format("svg"); */
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
 	line-height: 1.6;
@@ -12439,9 +12466,8 @@ form.normal input[type="submit"] {
 }
 .input-underlined  input,
 .input-filled  input {
-	border: none;
-	border-bottom: 0.125rem solid var(--VirgoCX-purple-contrast);
-	background:var(--VirgoCX-purple);
+	border: 1px solid transparent;
+	border-radius: 100px;
 	width: 100%;
 	height: 2rem;
 	font-size: 1.0625rem;
@@ -12466,7 +12492,7 @@ form.normal input[type="submit"] {
 .input-underlined  img,
 .input-filled  img {
 	position: absolute;
-	left: 0;
+	right: 0;
 	top: 34px;
 	fill: var(--VirgoCX-purple-contrast);
 	width: 18px;
@@ -12484,18 +12510,21 @@ input::placeholder {
 	left: 40px;
 }
 .navbar-nav-otc{
+	font-family: "Matter-Bold";
 	position: relative;
 }
 
+
+
 .navbar-nav-otc .earn-btn {
-	background: var(--VirgoCX-blue);
+	/*background: var(--VirgoCX-blue);*/
 	color: white;
 	border-radius: 50px;
 	border: 1px solid var(--VirgoCX-gold);
 	padding: 2px 14px !important;
 	display: block;
 	max-width: 120px;
-	margin-top: 15px;
+    margin: 0 0 0 auto;
 }
 .navbar-nav-otc .dropdown-left-img{
 	position: absolute;
@@ -12505,17 +12534,17 @@ input::placeholder {
 }
 
 .navbar-nav-otc .nav-link {
-	background: var(--VirgoCX-blue);
+	/*background: var(--VirgoCX-blue);*/
 	color: white;
 	border-bottom: 1px solid white;
 	padding: 2px 14px !important;
 	display: block;
-	max-width: 120px;
+	/*max-width: 120px;*/
 	margin-top: 15px;
 }
 
 
-
+.dropdown-toggle-otc .dropdown-item,
 .navbar-nav-otc .dropdown-item {
 	display: block;
 	width: 100%;
@@ -12539,11 +12568,13 @@ input::placeholder {
 
 	content: none;
 }
+
+.dropdown-toggle-otc .dropdown-menu,
 .navbar-nav-otc .dropdown-menu{
 	background-color: #1E1A5F;
 	border-bottom: 0;
 	padding: 0;
-	margin-left: 15px;
+	margin: 10px 0 0 15px;
 	box-shadow: none;
 }
 
@@ -12583,20 +12614,74 @@ input::placeholder {
 	cursor: pointer;
 }
 
-#primary-menu > li:nth-child(2):after {
-	top: -25px;
-	right: -90px;
-	position: relative;
-	display: inline-block;
-	content: "";
-	border-top: .3em solid;
-	border-right: .3em solid transparent;
-	border-bottom: 0;
-	border-left: .3em solid transparent;
+.header-area-otc .menu {
+	clear: both;
+	margin-right: 20px;
+	transition: max-height .2s ease-out;
+}
+
+.header-area-otc .menu li{
+text-align: right;
+	color: white;
+}
+.header-area-otc .menu .item:hover{
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+
+.header-area-otc .menu  .item{
+	max-width: 150px;
+	margin-right: 0;
+	margin-left: auto;
+	flex-wrap: nowrap;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+	.header-area-otc li {
+		float: left;
+		 margin: 10px;
+		 margin-top: 20px;
+	}
+	.header-area-otc .menu {
+		clear: none;
+		float: right;
+		 margin-right: 20px;
+		max-height: none;
+	}
 
 }
-#primary-menu li:nth-child(n):hover >  ul{
-	position: absolute;
-	display: block;
+@media (max-width: 48em) {
+
+
+    .dropdown-toggle-otc .dropdown-menu{
+        position: relative;
+        width: 100%;
+    }
+
+}
+.footer-area-otc{
+	font-family: "Matter-Bold";
+}
+
+.footer-area-otc .input-group{
+	display: inline-block;
+	width: 70%;
+	float: left;
+}
+.footer-area-otc p{
+	top: 20px;
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	float: right;
+}
+
+.footer-area-otc .footer_Stay_in_Touch{
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
