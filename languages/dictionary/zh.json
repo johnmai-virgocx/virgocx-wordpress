@@ -84,7 +84,7 @@
 	"footer_col2_Buy_SNX":"购买 Synthetix (SNX)",
 	"footer_col2_Buy_KNC":"购买 Kyber Network (KNC)",
 	"footer_col2_Buy_BAT":"购买 Basic Attention Token (BAT)",
-	"footer_col2_Buy_CMP":"购买 Compound (CMP)",
+	"footer_col2_Buy_COMP":"购买 Compound (COMP)",
 	
 	
 	"footer_col3": "产品",
@@ -427,6 +427,6 @@
 	"Basic Attention Token":"Basic Attention Token",
 	"BAT":"BAT",
 	"Compound":"Compound",
-	"CMP":"CMP"
+	"COMP":"COMP"
 
 }

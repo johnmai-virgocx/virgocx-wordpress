@@ -82,7 +82,11 @@ get_header();
 							<p data-translate="Sell_header3_desc"></p>
 						</div>
 						<div class="step-header">
+						  <?php if(strlen($args['name']) > 10) : ?>
+							<h2><span data-translate="Sell_header4_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><span data-translate="Sell_header4_2"></h2>
+						  <?php else : ?>	
 							<h2><span data-translate="Sell_header4_1"></span><span data-translate="<?= $args['name'] ?>"></span><span data-translate="Sell_header4_2"></h2>
+						  <?php endif; ?>
 							<p><span data-translate="Sell_header4_desc1"></span><span data-translate="<?= $args['ticker'] ?>"></span> <span data-translate="Sell_header4_desc2"> </p>
 						</div>
 					</div>

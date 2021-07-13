@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Buy CMP page
+ * Template Name: Buy COMP page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -9,7 +9,7 @@
 
 $args = [
 	'name' => 'Compound',
-	'ticker' => 'CMP',
+	'ticker' => 'COMP',
 ];
 get_template_part('template-parts/buy', 'coin', $args);
 ?>

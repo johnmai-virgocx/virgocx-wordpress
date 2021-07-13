@@ -84,7 +84,7 @@
 	"footer_col2_Buy_SNX":"Buy Synthetix (SNX)",
 	"footer_col2_Buy_KNC":"Buy Kyber Network (KNC)",
 	"footer_col2_Buy_BAT":"Buy Basic Attention Token (BAT)",
-	"footer_col2_Buy_CMP":"Buy Compound (CMP)",
+	"footer_col2_Buy_COMP":"Buy Compound (COMP)",
 	
 
 
@@ -422,6 +422,6 @@
 	"Basic Attention Token":"Basic Attention Token",
 	"BAT":"BAT",
 	"Compound":"Compound",
-	"CMP":"CMP"
+	"COMP":"COMP"
 
 }
