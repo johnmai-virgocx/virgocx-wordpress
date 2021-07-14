@@ -81,7 +81,7 @@
             <div class="container custom-container">
                 <nav class="navbar navbar-expand-lg">
                     <a href="/" class="navbar-brand"><img
-                                src="<?= get_template_directory_uri() ?>/img/virgocx_logo_gold.png" height="36"
+                                src="<?= get_template_directory_uri() ?>/img/otc/VirgoOTC_logo_full.svg" height="36"
                                 alt="images not found"/></a>
                     <button
                             class="hamburger hamburger--squeeze navbar-toggler"
@@ -106,7 +106,7 @@
                             </li>
                             <li class="dropdown-toggle-otc">
                                 <div class="item">
-                                    otc<img class="arrow-down" src="http://localhost:8888/wordpress/wp-content/themes/virgocx/img/arrowdd.svg" alt="images not found">
+                                    otc<img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found">
                                 </div>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a href="/en-referral-friend" class="dropdown-item"

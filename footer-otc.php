@@ -148,7 +148,7 @@
                                 <div class="col-lg-5 col-md-12">
                                     <div class="newsletter">
                                         <span data-translate="footer_Stay_in_Touch"></span>
-                                        <?= do_shortcode('[contact-form-7 id="79" title="Footer newsletter"]') ?>
+                                        <?= do_shortcode('[contact-form-7 id="134" title="Footer newletter otc"]') ?>
                                     </div>
                                 </div>
 							</div>
@@ -169,14 +169,14 @@
 		border: 1px solid #B59964 !important;
 		color: #fff;
 	}
-	 .ios{
-         color: var(--VirgoCX-gold);
+    .app-download .ios{
+         color: #B59964;
 		background-color: white;
-         background-image: url(/wp-content/themes/virgocx/img/footer/ios_white.png);
+         background-image: url(/wp-content/themes/virgocx/img/footer/ios_gold.svg);
 	}
 	.app-download a:hover.ios{
-        color: var(--VirgoCX-gold);
-		background-image: url(/wp-content/themes/virgocx/img/footer/ios_white.png);
+        color: white;
+		background-image: url(/wp-content/themes/virgocx/img/footer/ios_white.png)!important;
 	}
 	.app-download a:hover.play {
 		background-image: url(/wp-content/themes/virgocx/img/footer/play_white.png);

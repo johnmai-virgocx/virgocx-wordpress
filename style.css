@@ -12459,50 +12459,7 @@ form.normal input[type="submit"] {
 }
 
 
-/* Sign up input style*/
 
-.input-underlined{
-	width: 100%;
-}
-.input-underlined  input,
-.input-filled  input {
-	border: 1px solid transparent;
-	border-radius: 100px;
-	width: 100%;
-	height: 2rem;
-	font-size: 1.0625rem;
-	padding-left: 1.5rem;
-	line-height: 147.6%;
-	padding-top: 0.825rem;
-	padding-bottom: 0.5rem;
-}
-
-
-
-.input-underlined  .input-label,
-.input-filled  .input-label {
-	position: absolute;
-	left: 30px;
-	line-height: 147.6%;
-	color: var(--VirgoCX-purple-contrast);
-	border-color: var(--VirgoCX-purple-contrast);
-	transition: top .2s;
-}
-
-.input-underlined  img,
-.input-filled  img {
-	position: absolute;
-	right: 0;
-	top: 34px;
-	fill: var(--VirgoCX-purple-contrast);
-	width: 18px;
-}
-
-
-input::placeholder {
-	color: white;
-	left: 70px!important;
-}
 
 .terms label{
 	position: absolute;
@@ -12520,7 +12477,7 @@ input::placeholder {
 	/*background: var(--VirgoCX-blue);*/
 	color: white;
 	border-radius: 50px;
-	border: 1px solid var(--VirgoCX-gold);
+	border: 1px solid var(--VirgoCX-gold) !important;
 	padding: 2px 14px !important;
 	display: block;
 	max-width: 120px;
@@ -12665,23 +12622,60 @@ text-align: right;
 	font-family: "Matter-Bold";
 }
 
-.footer-area-otc .input-group{
-	display: inline-block;
-	width: 70%;
-	float: left;
+/* Sign up input style*/
+
+.input-underlined{
+	width: 100%;
 }
-.footer-area-otc p{
-	top: 20px;
-	position: relative;
-	display: inline-block;
-	width: 30%;
-	float: right;
+.input-underlined  input,
+.input-filled  input {
+	border: none;
+	border-bottom: 0.125rem solid var(--VirgoCX-purple-contrast);
+	background:var(--VirgoCX-purple);
+	width: 100%;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 1.5rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
 }
 
-.footer-area-otc .footer_Stay_in_Touch{
-	color: #ffffff;
-	font-weight: 600;
-	margin-bottom: 20px;
-	font-size: 20px;
+
+
+.input-underlined  .input-label,
+.input-filled  .input-label {
+	position: absolute;
+	left: 30px;
+	line-height: 147.6%;
+	color: var(--VirgoCX-purple-contrast);
+	border-color: var(--VirgoCX-purple-contrast);
+	transition: top .2s;
+}
+
+.input-underlined  img,
+.input-filled  img {
+	position: absolute;
+	left: 0;
+	top: 34px;
+	fill: var(--VirgoCX-purple-contrast);
+}
+
+
+input::placeholder {
+	color: white;
+	left: 70px!important;
+}
+#checkbox{
+	position: absolute;
+	left: 20px;
+	top: 4px;
+}
+
+#checkbox lable{
+	position: absolute;
+	top: 0;
+	width: 80%;
+	left: 0;
 }
 /*# sourceMappingURL=style.css.map */

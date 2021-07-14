@@ -19,6 +19,7 @@ get_header('otc');
                                     24/7 Institutional Liquidity
                                     for Cryptocurrencies
                                 </span>
+
                             </h1>
                             <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless execution of large block transactions over $30,000 CAD</p>
 
