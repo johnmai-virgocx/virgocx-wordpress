@@ -213,6 +213,7 @@
         }
 
         function fetchPrices() {
+            // fetch('/wordpress/wp-content/themes/virgocx/marketList.json')
             fetch('/market/list')
                 .then(res => res.json())
                 .then(data => handleConversion(data))
@@ -223,17 +224,38 @@
             var main = $("div.mm-dropdown .selected-option");
             var li = $("div.mm-dropdown > ul > li.input-option");
             var default_text = `Select`;
+            var ul = $("div.mm-dropdown > ul");
+           
+            ul.hide();
+            li.show();
+            var isShow = false;
+            
 
             // Animation
             main.click(function () {
                 main.html(default_text);
-                li.toggle("fast");
+                // ul.toggle("fast");
+                // li.toggle("fast");
+                if(isShow==true){
+                    ul.hide();
+                    isShow=false;
+                }else{
+                    ul.show();
+                    isShow=true;
+                }
             });
 
             // Insert Data
             li.click(function () {
                 // hide
-                li.toggle("fast");
+                // li.toggle("fast");
+                if(isShow==true){
+                    ul.hide();
+                    isShow=false;
+                }else{
+                    ul.show();
+                    isShow=false;
+                }
                 var livalue = $(this).data("value");
                 var lihtml = $(this).html();
                 main.html(lihtml);
@@ -297,8 +319,10 @@
                 'link/cad': '/page#/advancedTrade/60',
                 'crv/cad': '/page#/advancedTrade/61',
                 'aave/cad': '/page#/advancedTrade/62',
-                'snx/cad': '/page#/advancedTrade/63',
-                'mkr/cad': '/page#/advancedTrade/64',
+                'snx/cad': '/page#/advancedTrade/64',
+                'knc/cad': '/page#/advancedTrade/65',
+                'bat/cad': '/page#/advancedTrade/66',
+                'comp/cad': '/page#/advancedTrade/67',
             }
 
             let index = 1;
@@ -325,7 +349,7 @@
                                         </div>
                                         <div class="pg-text">
                                             <div class="d-flex justify-content-between">
-                                              <h5>${price.fullName}</h5>
+                                              
                                               <h5>${price.symbol}</h5>
                                             </div>
                                             <p>
@@ -353,7 +377,7 @@
                                         </div>
                                         <div class="pg-text">
                                             <div class="d-flex justify-content-between">
-                                              <h5>${price.fullName}</h5>
+                                              
                                               <h5>${price.symbol}</h5>
                                             </div>
                                             <p>
@@ -387,7 +411,7 @@
         }
 
         function fetchLivePrices() {
-            // fetch('/wordpress/wp-content/themes/virgocx/indexPage.json')
+            // fetch('/wordpress/wp-content/themes/virgocx/carouseldata.json')
             fetch('/indexPage')
                 .then(res => res.json())
                 .then(data => handleLivePrices(data))
@@ -533,20 +557,6 @@
             }
         });
 
-        //OTC lang switcher
-        $(".lang-dropdown").on("click", function () {
-            var language = $(this).val().toLowerCase();
-            if (dictionary.hasOwnProperty(language)) {
-                var url = window.location.href;
-                if(url.indexOf('/'+currentLang+'-')<0){
-                    setLang(dictionary[language]);
-                }
-                redirection(url,language,true);
-                currentLang = language;
-
-            }
-        });
-
         // set switcher to currentLang
         function loadLangSwitcher() {
             $("#lang").val(currentLang);
@@ -628,9 +638,6 @@
         };
         checkAffiliateSessionId();
 // affilicat sesstion detector
-
-
-
 // **************************************************************************************
 // **************************************************************************************
 

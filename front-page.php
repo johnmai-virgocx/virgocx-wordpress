@@ -51,6 +51,48 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 			
 	}
 
+    .mm-dropdown{
+        position:relative;
+        height:100%;
+    }
+
+    #crypto-options{
+        height:286px;
+        overflow-y:scroll;
+        position:absolute;
+        
+        
+        
+        
+
+    }
+
+    
+
+    /* ::-webkit-scrollbar-button{
+        display:none;
+    } */
+    ::-webkit-scrollbar {
+		  width: 2px;
+	}
+    ::-webkit-scrollbar-track{
+        border-radius: 0.5px;
+        box-shadow: inset 0 0 10px rgb(0,0,0,0);
+        height:50px;
+    }
+
+
+    ::-webkit-scrollbar-thumb{
+        border-radius:0.5px;
+        background-color: rgb(0,0,0,0.25);
+    }
+    /* ::-webkit-scrollbar{
+            width: 12px;
+        } */
+
+    
+    
+
     .hero-area-wrapper {
         background-size: contain;
     }
@@ -501,7 +543,7 @@ if ($totalNumber === 1): ?>
                                                placeholder="Enter Quantity" data-translate="frontpage_Quantity"/>
                                         <!-- Use This! #just fix width+height IMG  -->
                                         <div class="mm-dropdown">
-                                            <div class="conversion-selectioin d-flex">
+                                            <div class="conversion-selectioin d-flex" style="width:112px">
                                                 <div id="crypto-selected" class="selected-option" data-value="BTC">
                                                     <img src="<?= get_template_directory_uri() ?>/img/BTC.png"/> BTC
                                                 </div>
