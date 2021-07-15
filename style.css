@@ -10869,6 +10869,10 @@ form input[type="submit"]:hover {
 
 .newsletter button img {
 	width: 70px;
+	/*added for otc*/
+	position: relative;
+	top: 20px;
+	right: 25px;
 }
 
 .footer-bt {
@@ -12659,11 +12663,12 @@ text-align: right;
 	left: 0;
 	top: 34px;
 	fill: var(--VirgoCX-purple-contrast);
+	width: 20px;
 }
 
 
 input::placeholder {
-	color: white;
+	color: var(--VirgoCX-gold);
 	left: 70px!important;
 }
 #checkbox{

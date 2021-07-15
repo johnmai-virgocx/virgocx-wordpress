@@ -71,7 +71,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/ETH Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/ETH Icon.svg"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -89,7 +89,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/EOS Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/EOS Icon.svg"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -178,7 +178,7 @@ get_header('otc');
                                     <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
-                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/PAXG Icon.png"
+                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/PAXG Icon.svg"
                                                      alt="images not found">
                                             </div>
                                             <div class="pg-text">
@@ -195,7 +195,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/Uni Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/UNI Icon.svg"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -231,7 +231,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDT Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDT Icon.svg"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -249,7 +249,7 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/XLM Icon.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/XLM Icon.svg"
                                                         alt="images not found"
                                                 >
                                             </div>
@@ -751,9 +751,9 @@ get_header('otc');
             max-width: 100vw;
         }
         .banner-img-2{
-            max-width: 100vw;
+            max-width: 90vw;
             position: absolute;
-            left: 0;
+            /*left: 0;*/
             top: -50px;
         }
 
@@ -761,7 +761,7 @@ get_header('otc');
             position: relative;
             z-index: 888888;
             padding-top: 8rem;
-            padding-bottom: 8rem;
+            /*padding-bottom: 4rem;*/
             background-color: var(--VirgoCX-blue);
             font-size: 1.4rem;
             overflow: hidden;
@@ -874,7 +874,7 @@ get_header('otc');
         }
         @media screen and (min-width: 900px) {
             .banner-area{
-                min-height: 600px;
+                min-height: 900px;
             }
 
             .why-content > * {

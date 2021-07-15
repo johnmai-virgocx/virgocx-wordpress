@@ -106,7 +106,7 @@
                             </li>
                             <li class="dropdown-toggle-otc">
                                 <div class="item">
-                                    otc<img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found">
+                                    OTC<img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg" alt="images not found">
                                 </div>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a href="/en-referral-friend" class="dropdown-item"
@@ -156,7 +156,7 @@
                                    data-translate="header_full">
                                     English
                                 </a>
-                                <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/arrowdd.svg"
+                                <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="lang">
                                     <option value="en" id="en" class="dropdown-item lang-dropdown"
@@ -175,7 +175,7 @@
                                    data-translate="my_account">
                                     My Account
                                 </a>
-                                <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/arrowdd.svg"
+                                <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <option href="/en-referral-friend" class="dropdown-item"
