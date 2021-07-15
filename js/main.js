@@ -236,6 +236,7 @@
                 main.html(default_text);
                 // ul.toggle("fast");
                 // li.toggle("fast");
+                ul.addClass("dropd");
                 if(isShow==true){
                     ul.hide();
                     isShow=false;
