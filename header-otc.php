@@ -181,7 +181,7 @@
                                     <option href="/en-referral-friend" class="dropdown-item"
                                             data-translate="header_Login">login
                                     </option>
-                                    <option href="/en-referral-otc" class="dropdown-item"
+                                    <option  class="dropdown-item scroll-to-sign-up"
                                             data-translate="header_Register">Sign Up
                                     </option>
                                 </div>

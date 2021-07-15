@@ -28,7 +28,7 @@ get_header('otc');
                             <p class="tag-line gold" data-translate="Buy_header1_desc">
                                 We perform large trades using best execution through our tailored service for
                                 institutions and individuals.</p>
-                            <a class="round-btn">
+                            <a class="round-btn scroll-to-sign-up">
                                 Get started
                             </a>
                         </div>
@@ -791,11 +791,10 @@ get_header('otc');
             });
 
             function scroll_to_container(index) {
-                // Make the container visible
                 console.log(index);
-                console.log('.tabs .custom-container:nth-of-type(' + (index + 1) + ')');
+                console.log('.tabs .how-container:nth-of-type(' + (index + 1) + ')');
                 $('html, body').animate({
-                    scrollTop: $('.tabs .custom-container:nth-of-type(' + (index + 1) + ')').offset().top
+                    scrollTop: $('.tabs .how-container:nth-of-type(' + (index + 1) + ')').offset().top
                 }, 800);
             }
         })(jQuery);

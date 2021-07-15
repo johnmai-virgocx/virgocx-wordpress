@@ -666,6 +666,11 @@
 // **************************************************************************************
 
 
+        $('.scroll-to-sign-up').on('click', function () {
+            $('html, body').animate({
+                scrollTop: $('.signup-area').offset().top
+            }, 800);
+        });
 
 
 

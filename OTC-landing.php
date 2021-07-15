@@ -23,7 +23,7 @@ get_header('otc');
                             </h1>
                             <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless execution of large block transactions over $30,000 CAD</p>
 
-                            <a class="round-btn">
+                            <a class="round-btn scroll-to-sign-up">
                                 Get started
                             </a>
                     </div>
@@ -515,7 +515,7 @@ get_header('otc');
                                             Our seamless workflow allows our institution clients to be able to receive
                                             best execution and flexible settlements post-trade.
                                         </p>
-                                        <a class="round-btn-light">
+                                        <a class="round-btn-light" href="../en-otc-direct/">
                                             learn more
                                         </a>
                                     </div>
@@ -545,7 +545,7 @@ get_header('otc');
                                             business. From trading like Bitcoin, Ethereum,
                                             and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                         </p>
-                                        <a class="round-btn-light">learn more
+                                        <a class="round-btn-light scroll-to-sign-up">learn more
                                         </a>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -1223,9 +1223,6 @@ get_header('otc');
                 $('.tabs-vertical nav a').on('click', function () {
                     show_container_vertical($(this).index());
                 });
-                $('.tabs-vertical nav .tab-dot').on('click', function () {
-                    show_container_vertical($(this).index());
-                });
 
                 show_container_vertical(0);
 
@@ -1245,6 +1242,17 @@ get_header('otc');
                     show_container($(this).index());
                 });
 
+                $('.tabs nav a').on('click', function () {
+                    scroll_to_container($(this).index());
+                });
+                function scroll_to_container(index) {
+                    // Make the container visible
+                    console.log(index);
+                    console.log('.tabs .custom-container:nth-of-type(' + (index + 1) + ')');
+                    $('html, body').animate({
+                        scrollTop: $('.tabs .custom-container:nth-of-type(' + (index + 1) + ')').offset().top
+                    }, 800);
+                }
                 show_container(0);
 
                 function show_container(index) {
