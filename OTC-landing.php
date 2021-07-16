@@ -605,12 +605,17 @@ get_header('otc');
 
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
-                        <div class="">
+                        <div class="why-img">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png" alt="images not found"/>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
+
                     </div>
                     <div class="col-lg-6 col-md-12">
+                        <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
                         <p data-translate="OTC_landing_banner4_col2-1">We eliminate slippage on larger trades. Save up to 2% compared to trading on other
                             exchanges.</p>
                     </div>
@@ -620,9 +625,9 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.png" alt="images not found"/>
                         </div>
-                        <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
+                        <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
                         <p data-translate="OTC_landing_banner4_col2-2">We don’t charge anything on top. What you see is what you get.</p>
                     </div>
                 </div>
@@ -631,9 +636,9 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.png" alt="images not found"/>
                         </div>
-                        <h3  data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
+                        <h3  data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
                         <p  data-translate="OTC_landing_banner4_col2-3">Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC,
                             ETH, USDT, and more.</p>
                     </div>
@@ -641,9 +646,10 @@ get_header('otc');
                 <div class="row d-flex justify-content-between">
                     <div class="col-lg-6 col-md-12 why-text">
                         <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.png" alt="images not found"/>
-                        <h3  data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
+
                     </div>
                     <div class="col-lg-6 col-md-12">
+                        <h3  data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
                         <p  data-translate="OTC_landing_banner4_col2-4">We have unique market access via digital assets, to provide a competitive pricing for other
                             foreign currencies.</p>
                     </div>
@@ -653,9 +659,9 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.png" alt="images not found"/>
                         </div>
-                        <h3 data-translate="OTC_landing_banner4_col1-5">Personalized Services</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
+                        <h3 data-translate="OTC_landing_banner4_col1-5">Personalized Services</h3>
                         <p  data-translate="OTC_landing_banner4_col2-5">Our OTC account managers are available 24/7 to facilitate every request for your business or
                             trading needs. You will also have access to industry insights on the cryptocurrency
                             markets.</p>
@@ -666,9 +672,9 @@ get_header('otc');
                         <div class="">
                             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.png" alt="images not found"/>
                         </div>
-                        <h3  data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
+                        <h3  data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
                         <p  data-translate="OTC_landing_banner4_col2-6">We provide a same day, no limit settlement for your USD and CAD trades. This also applies to
                             your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
                     </div>
@@ -848,6 +854,17 @@ get_header('otc');
         }
 
 
+        .why-text{
+            position: absolute;
+        }
+
+        /*.why-img span:nth-child(2){*/
+        /*    height: 50px;*/
+        /*    width: 0.5px;*/
+        /*    border: 2px solid var(--VirgoCX-gold);*/
+        /*}*/
+
+        .why-area h3,
         .why-area p{
             width: 85%;
             right: 0;

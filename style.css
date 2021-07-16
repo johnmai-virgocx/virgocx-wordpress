@@ -12416,15 +12416,15 @@ form.normal input[type="submit"] {
 }
 .round-btn{
 	margin-top: 15px;
-	width: 150px;
+	width: 160px;
 	display: block;
 	text-decoration: none;
-	padding: 5px 10px;
+	padding: 2px 15px;
 	cursor: pointer;
 	color: #ffffff!important;
-	font-size: 16px;
+	font-size: 23px;
 	font-weight: 500;
-	border: 1.5px solid white!important;
+	border: 2px solid white!important;
 	text-align: center;
 	border-radius: 50px;
 	background-color: #05004D;
@@ -12434,21 +12434,21 @@ form.normal input[type="submit"] {
 
 .round-btn:active{
 	color: #05004D;!important;
-	border: 1.5px solid white!important;
+	border: 2px solid white!important;
 	background-color: white;
 }
 
 
 .round-btn-light{
 	margin-top: 15px;
-	width: 150px;
+	width: 160px;
 	display: block;
 	text-decoration: none;
-	padding: 5px 10px;
+	padding: 2px 15px;
 	color: #05004D;
-	font-size: 16px;
+	font-size: 23px;
 	font-weight: 500;
-	border: 1.5px solid #05004D;
+	border: 2px solid #05004D;
 	text-align: center;
 	border-radius: 50px;
 	background-color: white;
@@ -12675,7 +12675,10 @@ text-align: right;
 	width: 20px;
 }
 
-
+.input-underlined input::placeholder {
+	color: var(--VirgoCX-grey);
+	left: 70px!important;
+}
 input::placeholder {
 	color: var(--VirgoCX-gold);
 	left: 70px!important;
