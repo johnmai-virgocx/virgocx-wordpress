@@ -120,6 +120,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--VirgoCX-blue: #05004d;
 	--VirgoCX-purple: #080449;
 	--VirgoCX-gold: #c7ba9a;
+	--VirgoCX-grey: rgba(5, 0, 77, 0.5);
 	--breakpoint-xs:0;
 	--breakpoint-sm:576px;
 	--breakpoint-md:768px;
@@ -9943,7 +9944,7 @@ input[type="number"] {
 .hamburger-inner::after {
 	width: 36px;
 	height: 3px;
-	background-color: #7965e6;
+	background-color: white;
 	border-radius: 2px;
 	position: absolute;
 	transition-property: transform;
@@ -10868,10 +10869,10 @@ form input[type="submit"]:hover {
 }
 
 .newsletter button img {
-	width: 70px;
+	width: 30px;
 	/*added for otc*/
 	position: relative;
-	top: 20px;
+	top: 16px;
 	right: 25px;
 }
 
@@ -12414,16 +12415,16 @@ form.normal input[type="submit"] {
 	width: 100%;
 }
 .round-btn{
-	width: 200px;
+	margin-top: 15px;
+	width: 150px;
 	display: block;
 	text-decoration: none;
-	padding: 3px 10px;
+	padding: 5px 10px;
 	cursor: pointer;
 	color: #ffffff!important;
 	font-size: 16px;
 	font-weight: 500;
 	border: 1.5px solid white!important;
-	width: 120px;
 	text-align: center;
 	border-radius: 50px;
 	background-color: #05004D;
@@ -12431,17 +12432,23 @@ form.normal input[type="submit"] {
 	-webkit-transition: 0.3s all ease;
 }
 
+.round-btn:active{
+	color: #05004D;!important;
+	border: 1.5px solid white!important;
+	background-color: white;
+}
+
 
 .round-btn-light{
-	width: 200px;
+	margin-top: 15px;
+	width: 150px;
 	display: block;
 	text-decoration: none;
-	padding: 3px 10px;
+	padding: 5px 10px;
 	color: #05004D;
 	font-size: 16px;
 	font-weight: 500;
 	border: 1.5px solid #05004D;
-	width: 120px;
 	text-align: center;
 	border-radius: 50px;
 	background-color: white;
@@ -12581,10 +12588,12 @@ form.normal input[type="submit"] {
 	transition: max-height .2s ease-out;
 }
 
-.header-area-otc .menu li{
+.header-area-otc .menu li,
+.header-area-otc .menu li a{
 text-align: right;
 	color: white;
 }
+
 .header-area-otc .menu .item:hover{
 	border-bottom: 1px solid white;
 	cursor: pointer;
@@ -12682,5 +12691,77 @@ input::placeholder {
 	top: 0;
 	width: 80%;
 	left: 0;
+}
+.terms {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.terms input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.terms:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.terms input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.terms input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.terms .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.flipped {
+	transform: rotate(180deg);
+}
+a{
+	cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

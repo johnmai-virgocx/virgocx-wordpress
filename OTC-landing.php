@@ -386,35 +386,6 @@ get_header('otc');
             </div>
         </div>
     </section>
-<!--    <section class="press-area">-->
-<!--        <div class="container custom-container">-->
-<!--            <div class="row justify-content-center">-->
-<!---->
-<!--                <h2>Press& Partners</h2>-->
-<!--            </div>-->
-<!--            <div class="row justify-content-center">-->
-<!--                <div class="col-lg-2 col-md-2 col-4 text-center"><img-->
-<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners//MNP.png"" alt="images not found">-->
-<!--                </div>-->
-<!--                <div class="col-lg-2 col-md-2 col-4 text-center"><img-->
-<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/partners/chainalysis.png" alt="images not found">-->
-<!--                </div>-->
-<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
-<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/Fireblocks.png" alt="images not found">-->
-<!--                </div>-->
-<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
-<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/Coindesk.png" alt="images not found">-->
-<!--                </div>-->
-<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
-<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/Blockgeeks.png" alt="images not found">-->
-<!--                </div>-->
-<!--                <div class="col-lg-2 col-md-2 col-4 text-center "><img-->
-<!--                            src="--><?//= get_template_directory_uri() ?><!--/img/Landing_Page/Press_ Partners/BLA_Lawyrs.png" alt="images not found">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
     <section class="press-area">
         <div class="container custom-container">
 <!--            <h2><span data-translate="frontpage_Press_Partners"/></h2>-->
@@ -622,7 +593,7 @@ get_header('otc');
         </div>
         <div class="background-img">
             <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy.png" alt="images not found">
-            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy 2.png" alt="images not found">
+            <img class="arrow-right-img" src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy 2.png" alt="images not found">
         </div>
     </section>
     <section class="why-area">
@@ -797,6 +768,18 @@ get_header('otc');
             top: 0;
         }
 
+
+
+        @media screen and (max-width: 900px) {
+            .client-area .background-img img:nth-child(2) {
+                display: none;
+            }
+
+            .arrow-right-img{
+                display: none;
+            }
+        }
+
         .client-text{
             padding-bottom: 60px;
         }
@@ -952,6 +935,8 @@ get_header('otc');
             cursor: pointer;
             -webkit-appearance: none;
             -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
             appearance: none;
             display: block;
             width: 100%;
@@ -1038,14 +1023,15 @@ get_header('otc');
             text-align: start;
             width: 100%;
             cursor: pointer;
+            font-size: 20px;
         }
 
         .tab-dot {
             border-radius: 50%;
             margin: 5px 0 5px 20px;
             text-align: end;
-            width: 10px;
-            height: 10px;
+            width: 6px;
+            height: 6px;
             cursor: pointer;
             background-color: rgba(239, 237, 239, 0.5);
         }
@@ -1187,6 +1173,10 @@ get_header('otc');
             background: linear-gradient(#ebe3d1,#c7ba9a);
         }
 
+        .scroll-to-sign-u{
+            z-index: 888899;
+        }
+
     </style>
 
     <script type="text/javascript">
@@ -1265,6 +1255,7 @@ get_header('otc');
                     $('.tabs-horizontal nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
                 }
             });
+
 
         })(jQuery);
     </script>

@@ -51,7 +51,7 @@ get_header('otc');
                     <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.png"
                          alt="flags"/>
                 </div>
-                <h5>24/7</h5>
+                <h4>24/7</h4>
                 <p>OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
 
                 </p>
@@ -65,7 +65,7 @@ get_header('otc');
                     <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.png"
                          alt="flags"/>
                 </div>
-                <h5>Best Execution</h5>
+                <h4>Best Execution</h4>
                 <p>We aggregate liquidity through a multitude of different providers in order to provide you with the
                     <span class="blue">best price</span> at that point in time.
 
@@ -82,7 +82,7 @@ get_header('otc');
                          alt="flags"/>
                 </div>
 
-                <h5>Rapid Settlement</h5>
+                <h4>Rapid Settlement</h4>
                 <p>
                     We offer conditional same-day settlement for our client trades.
                 </p>
@@ -98,11 +98,11 @@ get_header('otc');
 
         <div class="tabs">
             <nav class="tab-switch row">
-                <a>1. Onboard</a>
-                <a>2. Set Up</a>
-                <a>3. Deposit</a>
-                <a>4. Trade</a>
-                <a>5. Settle</a>
+                <a>1. Onboard</a
+                ><a>2. Set Up</a
+                ><a>3. Deposit</a
+                ><a>4. Trade</a
+                ><a>5. Settle</a>
             </nav>
 
             <div class="how-container">
@@ -390,7 +390,7 @@ get_header('otc');
     </section>
     <style>
         section {
-            padding: 150px 0 300px 0;
+            padding: 150px 0 50px 0;
         }
 
         .banner-area {
@@ -406,6 +406,17 @@ get_header('otc');
             color: white;
         }
 
+        @media screen and (max-width: 900px) {
+            .banner-area{
+                height: 1000px;
+            }
+            .banner-area .OTC-header img {
+                position: absolute;
+                width: 100vw;
+                left: -60px;
+            }
+        }
+
         .why-area {
             background-color: #F8F8F8;
         }
@@ -419,6 +430,8 @@ get_header('otc');
         }
 
         .why-img img {
+            height: 150px;
+            width: auto;
             position: relative;
         }
 
@@ -427,10 +440,10 @@ get_header('otc');
             padding: 30px 30px 0 30px;
         }
 
-        .why-container h5 {
+        .why-container h4 {
             color: #c7ba9a;
             font-weight: bold;
-            padding-bottom: 30px;
+            padding-bottom: 0px;
         }
 
         .tab-switch {
@@ -450,11 +463,11 @@ get_header('otc');
         }
 
         .custom-container h3 {
-            padding-bottom: 30px;
+            padding-bottom: 0px;
         }
 
         .custom-container .img-container img {
-            width: 80%!important;
+            width: 80% !important;
             top: -90px;
             max-width: 100vw;
         }
@@ -479,12 +492,13 @@ get_header('otc');
             .how-container {
                 min-height: 700px;
             }
+
             .why-container {
                 padding: 30px 30px 0 30px;
             }
 
             .tab-switch {
-                display: block;
+                display: flex;
                 width: 80%;
                 margin: auto;
                 justify-content: space-around;
@@ -517,14 +531,10 @@ get_header('otc');
         .faq {
             background-color: #F8F8F8;
             padding: 150px 0 300px 0;
-            background-image: url(/wp-content/themes/virgocx/img/bg2.svg);
+            background-image: url(/wp-content/themes/virgocx/img/Landing_Page/Why Trade with Us/Background Desktop.png);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
-        }
-
-        .how-area{
-            padding-bottom: 0;
         }
 
         .how-area h2,
@@ -672,12 +682,13 @@ get_header('otc');
             vertical-align: middle;
             margin: 50px 100px 0 100px;
         }
-        .how-text h3{
-            margin-left: 30px;
+
+        .how-text h3 {
+            margin-left: 100px;
         }
 
         @media screen and (min-width: 900px) {
-            .title-right h3{
+            .title-right h3 {
                 width: 55%;
                 height: auto;
                 position: absolute;
@@ -685,7 +696,8 @@ get_header('otc');
                 top: 30px;
             }
 
-            .title-left{max-width: 1200px;
+            .title-left {
+                max-width: 1200px;
                 margin: 0px auto;
                 padding: 0px 15px;
             }
@@ -716,12 +728,12 @@ get_header('otc');
         }
 
         @media screen and (max-width: 900px) {
-            .how-text{
+            .how-text {
                 padding: 0;
                 margin: 0;
             }
 
-            .how-text h3{
+            .how-text h3 {
                 margin-left: 80px;
             }
 
@@ -781,6 +793,9 @@ get_header('otc');
             width: 1em;
             margin-left: -1em;
         }
+        .flipped {
+            transform: rotate(180deg);
+        }
     </style>
 
     <script type="text/javascript">
@@ -797,6 +812,10 @@ get_header('otc');
                     scrollTop: $('.tabs .how-container:nth-of-type(' + (index + 1) + ')').offset().top
                 }, 800);
             }
+            // faq triangle toggle
+           $('.panel-title').click( function () {
+               $(this).children().children().toggleClass('flipped')
+            });
         })(jQuery);
     </script>
 <?php

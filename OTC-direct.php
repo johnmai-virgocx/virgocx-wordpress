@@ -46,7 +46,7 @@ get_header('otc');
                     <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.png"
                          alt="flags"/>
                 </div>
-                <h5 data-translate="OTC_direct_24_7">24/7</h5>
+                <h4 data-translate="OTC_direct_24_7">24/7</h4>
                 <p data-translate="OTC_direct_banner2_col1">OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
 
                 </p>
@@ -60,7 +60,7 @@ get_header('otc');
                     <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.png"
                          alt="flags"/>
                 </div>
-                <h5 data-translate="OTC_direct_banner2_col2">Best Execution</h5>
+                <h4 data-translate="OTC_direct_banner2_col2">Best Execution</h4>
                 <p data-translate="OTC_direct_banner2_col2_2">We aggregate liquidity through a multitude of different providers in order to provide you with the
                     <span class="blue">best price</span> at that point in time.
 
@@ -77,7 +77,7 @@ get_header('otc');
                          alt="flags"/>
                 </div>
 
-                <h5 data-translate="OTC_direct_banner2_col3">Rapid Settlement</h5>
+                <h4 data-translate="OTC_direct_banner2_col3">Rapid Settlement</h4>
                 <p  data-translate="OTC_direct_banner2_col3_1">
                     We offer conditional same-day settlement for our client trades.
                 </p>
@@ -380,7 +380,7 @@ get_header('otc');
     </section>
     <style>
         section {
-            padding: 150px 0 300px 0;
+            padding: 150px 0 50px 0;
         }
 
         .banner-area {
@@ -395,7 +395,16 @@ get_header('otc');
         .banner-area h1 {
             color: white;
         }
-
+        @media screen and (max-width: 900px) {
+            .banner-area{
+                height: 800px;
+            }
+            .banner-area .OTC-header img {
+                position: absolute;
+                width: 100vw;
+                left: -60px;
+            }
+        }
         .why-area {
             background-color: #F8F8F8;
         }
@@ -417,10 +426,10 @@ get_header('otc');
             padding: 30px 30px 0 30px;
         }
 
-        .why-container h5 {
+        .why-container h4 {
             color: #c7ba9a;
             font-weight: bold;
-            padding-bottom: 30px;
+            padding-bottom: 0px;
         }
 
         .tab-switch {
@@ -440,7 +449,7 @@ get_header('otc');
         }
 
         .custom-container h3 {
-            padding-bottom: 30px;
+            padding-bottom: 0px;
         }
 
         .custom-container .img-container img {
@@ -474,7 +483,7 @@ get_header('otc');
             }
 
             .tab-switch {
-                display: block;
+                display: flex;
                 width: 80%;
                 margin: auto;
                 justify-content: space-around;
@@ -663,7 +672,7 @@ get_header('otc');
             margin: 50px 100px 0 100px;
         }
         .how-text h3{
-            margin-left: 30px;
+            margin-left: 100px;
         }
 
         @media screen and (min-width: 900px) {
@@ -771,6 +780,10 @@ get_header('otc');
             width: 1em;
             margin-left: -1em;
         }
+
+        .flipped {
+            transform: rotate(180deg);
+        }
     </style>
 
     <script type="text/javascript">
@@ -788,6 +801,11 @@ get_header('otc');
                     scrollTop: $('.tabs .how-container:nth-of-type(' + (index + 1) + ')').offset().top
                 }, 800);
             }
+
+            // faq triangle toggle
+            $('.panel-title').click( function () {
+                $(this).children().children().toggleClass('flipped')
+            });
         })(jQuery);
     </script>
 <?php

@@ -100,35 +100,37 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu">
                             <li>
-                                <div class="item">
+                                <a class="item" href="/page#/advancedTrade/24">
                                     Retail Platform
-                                </div>
+                                </a>
                             </li>
                             <li class="dropdown-toggle-otc">
-                                <div class="item">
-                                    OTC<img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg" alt="images not found">
-                                </div>
+                                <a class="item" href="/en-otc-direct/">
+                                    OTC<img class="arrow-down"
+                                            src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
+                                            alt="images not found">
+                                </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a href="/en-referral-friend" class="dropdown-item"
-                                       data-translate="header_Refer_Friend"></a>
-                                    <a href="/en-referral-otc" class="dropdown-item"
-                                       data-translate="header_OTC_Refer"></a>
+                                    <a href="/en-otc-direct/" class="dropdown-item"
+                                       data-translate="header_OTC_Direct"></a>
+                                    <a href="/en-otc-chat-broker/" class="dropdown-item"
+                                       data-translate="header_OTC_Chat_Broker"></a>
                                 </div>
                             </li>
                             <li>
-                                <div class="item">
+                                <a class="item" href="https://learn.virgocx.ca/">
                                     Learn
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="item">
+                                <a class="item" href="https://virgocx.ca/en-about-virgocx/">
                                     About
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="item">
+                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us">
                                     Support
-                                </div>
+                                </a>
                             </li>
                         </ul>
 
@@ -181,7 +183,7 @@
                                     <option href="/en-referral-friend" class="dropdown-item"
                                             data-translate="header_Login">login
                                     </option>
-                                    <option  class="dropdown-item scroll-to-sign-up"
+                                    <option class="dropdown-item scroll-to-sign-up"
                                             data-translate="header_Register">Sign Up
                                     </option>
                                 </div>
