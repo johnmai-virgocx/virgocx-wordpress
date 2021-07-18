@@ -1,5 +1,208 @@
 (function ($) {
     $(document).ready(function () {
+
+// **************************************************************************************
+// **************************************************************************************
+// langSwitcher
+
+        // Some variables for later
+        var dictionary = {},
+            currentLang = 'en',
+            langPageIndicator =0,
+            languagePair = {
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+            };
+
+
+        // Checking lang on page change
+        function checkSessionLang() {
+            var lang = sessionStorage.getItem('lang');
+            if (lang){
+                currentLang = lang;
+            }else{
+                var browerLang = navigator.language || navigator.userLanguage;
+                if(browerLang !=null){
+                    // switch between zh and en
+                    currentLang = browerLang.indexOf('en')>=0?'en':browerLang.indexOf('zh')>=0?'zh':'en';
+                }else {
+                    currentLang = 'en';
+                }
+                sessionStorage.setItem('lang', currentLang);
+                $("#lang").val(currentLang);
+            }
+
+
+
+
+            // none-onload action
+            let langLoader = async function () {
+                var url = window.location.href;
+                const promises = Object.keys(languagePair).map(async function (key) {
+                    var langParam = '/' + key + '-';
+                    if (url.indexOf(langParam) > -1) {
+                        if(key != currentLang){
+                            // redirection(url, currentLang);
+                            redirection(url, key,false);
+                        }
+                    }
+                })
+                const result = await Promise.all(promises);
+            }
+            langLoader();
+
+
+        }
+        checkSessionLang();
+
+        // Object literal behaving as multi-dictionary
+        function loadLangJson() {
+            let fileLoader = async function () {
+                const promises = Object.keys(languagePair).map(async function (key) {
+                    await $.getJSON(languagePair[key], function (data) {
+                        dictionary[key] = data;
+                    });
+                });
+                const result = await Promise.all(promises);
+                const menuAttrUpdate = await menuUpdate();
+
+                // Set initial language to browser default language
+                setLang(dictionary[currentLang]);
+            }
+            fileLoader();
+        };
+        loadLangJson();
+
+
+
+
+        // Function for swapping dictionaries
+        function setLang(dictionary) {
+            $("[data-translate]").each(function(){
+                if($(this).is( "input" )){
+                    $(this).attr('placeholder',dictionary[$(this).data("translate")])
+                } else if($(this).is( ".popper-trigger" )){
+                    $(this).attr('data-content',dictionary[$(this).data("translate")])
+                }else{
+                    $(this).text(dictionary[$(this).data("translate")])
+                }
+            })
+
+
+            // Contact form update
+            $("input").each(function(){
+                if(this.placeholder.indexOf('data translate')>= 0){
+                    //check if data-translate attribute added
+                    if(this.hasAttribute("data-translate")){
+                        $(this).attr('placeholder',dictionary[$(this).data("translate")])
+                    }else{
+                        var string = this.placeholder;
+                        const  key = string.substring(15,string.length);
+                        $(this).attr("placeholder", dictionary[key]);
+                        this.setAttribute("data-translate", key);
+                    }
+
+
+
+                }else{
+                    if(this.value === 'Get Started'||this.value === '一键开启'){
+                        $(this).attr('value',dictionary['frontpage_Started'])
+                    }
+                }
+            })
+        }
+
+        // Swap languages when menu changes
+        $("#lang").on("change", function () {
+            var language = $(this).val().toLowerCase();
+            if (dictionary.hasOwnProperty(language)) {
+                var url = window.location.href;
+                if(url.indexOf('/'+currentLang+'-')<0){
+                    setLang(dictionary[language]);
+                }
+                redirection(url,language,true);
+                currentLang = language;
+            }
+        });
+
+        //OTC lang switcher
+        $(".lang-dropdown").on("click", function () {
+            var language = $(this).val().toLowerCase();
+            if (dictionary.hasOwnProperty(language)) {
+                var url = window.location.href;
+                if(url.indexOf('/'+currentLang+'-')<0){
+                    setLang(dictionary[language]);
+                }
+                redirection(url,language,true);
+                currentLang = language;
+
+            }
+        });
+
+        // set switcher to currentLang
+        function loadLangSwitcher() {
+            $("#lang").val(currentLang);
+        };
+
+        loadLangSwitcher();
+
+        //lang redirect
+        async function redirection(url,language,fromSwitcher) {
+            if (language == '' || language == null){
+                language = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
+                currentLang = language;
+            }else{
+                sessionStorage.setItem('lang', language);
+                currentLang = language;
+            }
+            const promises = Object.keys(languagePair).map(async function (key) {
+                var langParam = '/' + key + '-';
+                if (url.indexOf(langParam) > -1) {
+                    langPageIndicator = 1;
+                    if(fromSwitcher){
+                        window.location = url.replace(langParam, '/' + language + '-');
+                    }
+                }
+            })
+            const result = await Promise.all(promises);
+
+            if (langPageIndicator == 0 &&  window.location.href !== url){
+                window.location.href = url;
+            }
+        }
+
+        // force hard coded href goes to right lang page
+        $('a').click(function(event) {
+            // avoid data-toggle and data-slide button
+            if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0 &&
+                [false, null, 'undefined',undefined].indexOf( this.attributes['data-slide'])>=0){
+                event.preventDefault();
+                const url =$(this).attr('href');
+                redirection(url,'',true);
+                return false; // for good measure
+            }
+        });
+
+
+
+        // replace footer data tag
+        async function menuUpdate(){
+            const headerPromises = $('.page_item a').each(function(i, obj) {
+                var key = $( obj ).text();
+                $( obj ).attr("data-translate",key);
+            });
+
+            const footerPromises = $('.menu-item a').each(function(i, obj) {
+                var key = $( obj ).text();
+                $( obj ).attr("data-translate",key);
+            });
+
+            const header = await Promise.all(headerPromises);
+            const footer = await Promise.all(footerPromises);
+        }
+// langSwitcher ends
         // Scroll to Top
         jQuery('.scrolltotop').click(function () {
             jQuery('html').animate({'scrollTop': '0px'}, 800);
@@ -431,208 +634,6 @@
             //jQuery('#myModal2').modal('show'); //this is the bootstrap modal popup id
         }, false);
 
-// **************************************************************************************
-// **************************************************************************************
-// langSwitcher
-
-        // Some variables for later
-        var dictionary = {},
-            currentLang = 'en',
-            langPageIndicator =0,
-             languagePair = {
-                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
-            };
-
-
-        // Checking lang on page change
-        function checkSessionLang() {
-            var lang = sessionStorage.getItem('lang');
-            if (lang){
-                currentLang = lang;
-            }else{
-                var browerLang = navigator.language || navigator.userLanguage;
-                if(browerLang !=null){
-                    // switch between zh and en
-                    currentLang = browerLang.indexOf('en')>=0?'en':browerLang.indexOf('zh')>=0?'zh':'en';
-                }else {
-                    currentLang = 'en';
-                }
-                sessionStorage.setItem('lang', currentLang);
-                $("#lang").val(currentLang);
-            }
-
-
-
-
-            // none-onload action
-            let langLoader = async function () {
-                var url = window.location.href;
-                const promises = Object.keys(languagePair).map(async function (key) {
-                    var langParam = '/' + key + '-';
-                    if (url.indexOf(langParam) > -1) {
-                        if(key != currentLang){
-                            // redirection(url, currentLang);
-                            redirection(url, key,false);
-                        }
-                    }
-                })
-                const result = await Promise.all(promises);
-            }
-            langLoader();
-
-
-        }
-        checkSessionLang();
-
-        // Object literal behaving as multi-dictionary
-        function loadLangJson() {
-            let fileLoader = async function () {
-                const promises = Object.keys(languagePair).map(async function (key) {
-                    await $.getJSON(languagePair[key], function (data) {
-                        dictionary[key] = data;
-                    });
-                });
-                const result = await Promise.all(promises);
-                const menuAttrUpdate = await menuUpdate();
-
-                // Set initial language to browser default language
-                setLang(dictionary[currentLang]);
-            }
-            fileLoader();
-        };
-        loadLangJson();
-
-
-
-
-        // Function for swapping dictionaries
-        function setLang(dictionary) {
-            $("[data-translate]").each(function(){
-                if($(this).is( "input" )){
-                    $(this).attr('placeholder',dictionary[$(this).data("translate")])
-                } else if($(this).is( ".popper-trigger" )){
-                    $(this).attr('data-content',dictionary[$(this).data("translate")])
-                }else{
-                    $(this).text(dictionary[$(this).data("translate")])
-                }
-            })
-
-
-            // Contact form update
-            $("input").each(function(){
-                if(this.placeholder.indexOf('data translate')>= 0){
-                    //check if data-translate attribute added
-                    if(this.hasAttribute("data-translate")){
-                        $(this).attr('placeholder',dictionary[$(this).data("translate")])
-                    }else{
-                        var string = this.placeholder;
-                        const  key = string.substring(15,string.length);
-                        $(this).attr("placeholder", dictionary[key]);
-                        this.setAttribute("data-translate", key);
-                    }
-
-
-
-                }else{
-                    if(this.value === 'Get Started'||this.value === '一键开启'){
-                        $(this).attr('value',dictionary['frontpage_Started'])
-                    }
-                }
-            })
-        }
-
-        // Swap languages when menu changes
-        $("#lang").on("change", function () {
-            var language = $(this).val().toLowerCase();
-            if (dictionary.hasOwnProperty(language)) {
-                var url = window.location.href;
-                if(url.indexOf('/'+currentLang+'-')<0){
-                    setLang(dictionary[language]);
-                }
-                redirection(url,language,true);
-                currentLang = language;
-            }
-        });
-
-        //OTC lang switcher
-        $(".lang-dropdown").on("click", function () {
-            var language = $(this).val().toLowerCase();
-            if (dictionary.hasOwnProperty(language)) {
-                var url = window.location.href;
-                if(url.indexOf('/'+currentLang+'-')<0){
-                    setLang(dictionary[language]);
-                }
-                redirection(url,language,true);
-                currentLang = language;
-
-            }
-        });
-
-        // set switcher to currentLang
-        function loadLangSwitcher() {
-            $("#lang").val(currentLang);
-        };
-
-        loadLangSwitcher();
-
-        //lang redirect
-        async function redirection(url,language,fromSwitcher) {
-            if (language == '' || language == null){
-                language = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
-                currentLang = language;
-            }else{
-                sessionStorage.setItem('lang', language);
-                currentLang = language;
-            }
-            const promises = Object.keys(languagePair).map(async function (key) {
-                var langParam = '/' + key + '-';
-                if (url.indexOf(langParam) > -1) {
-                    langPageIndicator = 1;
-                    if(fromSwitcher){
-                        window.location = url.replace(langParam, '/' + language + '-');
-                    }
-                }
-            })
-            const result = await Promise.all(promises);
-
-            if (langPageIndicator == 0 &&  window.location.href !== url){
-                window.location.href = url;
-            }
-        }
-
-        // force hard coded href goes to right lang page
-        $('a').click(function(event) {
-            // avoid data-toggle and data-slide button
-            if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0 &&
-                [false, null, 'undefined',undefined].indexOf( this.attributes['data-slide'])>=0){
-                event.preventDefault();
-                const url =$(this).attr('href');
-                redirection(url,'',true);
-                return false; // for good measure
-            }
-        });
-
-
-
-        // replace footer data tag
-        async function menuUpdate(){
-            const headerPromises = $('.page_item a').each(function(i, obj) {
-               var key = $( obj ).text();
-                $( obj ).attr("data-translate",key);
-            });
-
-            const footerPromises = $('.menu-item a').each(function(i, obj) {
-                var key = $( obj ).text();
-                $( obj ).attr("data-translate",key);
-            });
-
-            const header = await Promise.all(headerPromises);
-            const footer = await Promise.all(footerPromises);
-        }
-// langSwitcher ends
 
 
 // affilicat sesstion detector start

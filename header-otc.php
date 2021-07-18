@@ -105,16 +105,16 @@
                                 </a>
                             </li>
                             <li class="dropdown-toggle-otc">
-                                <a class="item" href="/en-otc-direct/">
+                                <a class="item" href="/en-otc-landing/">
                                     OTC<img class="arrow-down"
                                             src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                             alt="images not found">
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-menu dropdown-otc" aria-labelledby="dropdownMenuLink">
                                     <a href="/en-otc-direct/" class="dropdown-item"
-                                       data-translate="header_OTC_Direct"></a>
+                                       data-translate="header_OTC_Direct">OTC Direct</a>
                                     <a href="/en-otc-chat-broker/" class="dropdown-item"
-                                       data-translate="header_OTC_Chat_Broker"></a>
+                                       data-translate="header_OTC_Chat_Broker">OTC Chat Broker</a>
                                 </div>
                             </li>
                             <li>
@@ -149,7 +149,7 @@
                         </div>
 
                         <div class="right_side_btn_otc y-2 my-lg-0">
-                            <div class="navbar-nav-otc nav-item mr-auto">
+                            <div class="navbar-nav-otc nav-item">
                                 <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                      alt="images not found"/>
                                 <a class="nav-link dropdown-toggle" href="/en-referral" role="button"
@@ -167,7 +167,7 @@
                                             data-translate="header_CH"></option>
                                 </div>
                             </div>
-                            <div class="navbar-nav-otc nav-item mr-auto">
+                            <div class="navbar-nav-otc nav-item">
                                 <img class="dropdown-left-img"
                                      src="<?= get_template_directory_uri() ?>/img/Sign Up Today/First Name Icon.png"
                                      alt="images not found"/>

@@ -179,6 +179,7 @@
                                         data-translate="footer_Make_In_Canada"></span></span>
         </div>
     </div>
+
 </footer>
 </div><!-- #page -->
 
@@ -226,15 +227,21 @@
             flex-direction: row;
         }
     }
+    .terms{
+        height: 70px;
+    }
+    #checkbox{
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+   .terms-text{
+        position: absolute;
+        top: 0;
+        left: 40px;
+    }
 </style>
 <script>
-    (function ($) {
-        $(document.querySelector('#checkbox')).click( function () {
-            alert('test');
-            // cb = $(this);
-            // cb.val(cb.prop('checked'));
-        });
-    })(jQuery);
 </script>
 </body>
 </html>

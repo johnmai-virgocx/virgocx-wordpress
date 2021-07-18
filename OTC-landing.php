@@ -13,24 +13,29 @@ get_header('otc');
         <div class="OTC-header">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-lg-6 col-md-12">
-                            <h1>
+                    <div class="col-lg-6 col-md-12 pt-5">
+                        <h1>
                                 <span data-translate="OTC_landing_banner">
                                     24/7 Institutional Liquidity
                                     for Cryptocurrencies
                                 </span>
 
-                            </h1>
-                            <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless execution of large block transactions over $30,000 CAD</p>
+                        </h1>
+                        <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless
+                            execution of large block transactions over $30,000 CAD</p>
 
-                            <a class="round-btn scroll-to-sign-up">
-                                Get started
-                            </a>
+                        <a class="round-btn scroll-to-sign-up">
+                            Get started
+                        </a>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
-                        <img class="banner-img-1" src="<?= get_template_directory_uri() ?>/img/Landing_Page/Banner/Background_Photo.png" alt="flags"/>
-                        <img class="banner-img-2" src="<?= get_template_directory_uri() ?>/img/Landing_Page/Banner/Banner_Illustration.png" alt="flags"/>
+                        <img class="banner-img-1"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Banner/Background_Photo.png"
+                             alt="flags"/>
+                        <img class="banner-img-2"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Banner/Banner_Illustration.png"
+                             alt="flags"/>
                     </div>
                 </div>
             </div>
@@ -43,13 +48,13 @@ get_header('otc');
                     <a>Cryptocurrency</a>
                     <a>Fiat Currency</a>
                 </nav>
-                <div class="row">
+                <div class="row carousel-background">
                     <div class="container">
                         <div class="owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                      style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -67,7 +72,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -85,7 +90,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -103,7 +108,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -121,7 +126,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -139,7 +144,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -157,7 +162,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -175,7 +180,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/PAXG Icon.svg"
@@ -191,7 +196,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -209,7 +214,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -227,7 +232,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -245,7 +250,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -270,9 +275,8 @@ get_header('otc');
                     <div class="container">
                         <div class="owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                     style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                <div class="owl-stage">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -290,7 +294,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/255px-Flag_of_Australia_(converted) 1.png"
@@ -306,7 +310,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -324,7 +328,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -342,7 +346,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -360,7 +364,7 @@ get_header('otc');
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="owl-item cloned" style="width: 235px; margin-right: 10px;">
+                                    <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
@@ -388,11 +392,9 @@ get_header('otc');
     </section>
     <section class="press-area">
         <div class="container custom-container">
-<!--            <h2><span data-translate="frontpage_Press_Partners"/></h2>-->
-                        <div class="row justify-content-center">
-
-                            <h2>Press& Partners</h2>
-                        </div>
+            <div class="row justify-content-center">
+                <h2>Press & Partners</h2>
+            </div>
             <div class="row">
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img mnp">
@@ -411,9 +413,10 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
-                    <div class="press-img">
+                    <div class="press-img middle">
                         <a href="https://finance.yahoo.com/news/canada-adds-virgocx-emerging-institutional-133500985.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNhLw&guce_referrer_sig=AQAAAJHseEHRCW60KtOKnZVZ8UWtQ0Gie5I97czRbx5WzpWqAxBcy7nNsZqnb6A75IqtFy_ElObvo7I7Ev9wNmI9znmxvpNWC9Td0svysMaywS7WaxYZb4E-bJ6MqfYhvJ19NXYnTHUTo10nIKtWZmH7fZV9d7_a5vFFFS9dIqyWLQ1z">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/yahoo.png" alt="images not found"/>
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/yahoo.png"
+                                 alt="images not found"/>
                         </a>
                     </div>
                 </div>
@@ -434,9 +437,10 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6 ">
-                    <div class="press-img">
+                    <div class="press-img middle">
                         <a href="https://www.blakes.com/">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/blakes.png" alt="images not found"/>
+                            <img src="<?= get_template_directory_uri() ?>/img/partners/blakes.png"
+                                 alt="images not found"/>
                         </a>
                     </div>
                 </div>
@@ -454,76 +458,82 @@ get_header('otc');
                 </div>
                 <div class="col-lg-6 col-md-12 product-text">
                     <p data-translate="OTC_landing_banner_2desc">
-                        VirgoCX OTC offers direct market access for cryptocurrencies with optimal price execution. We bridge the gap between traditional financial services
-                        and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto and fiat currencies to fill large orders at a desired market price.
+                        VirgoCX OTC offers direct market access for cryptocurrencies with <span class="blue">optimal price execution</span>
+                        . We bridge the gap between traditional financial services
+                        and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto
+                        and fiat currencies to fill large orders at a <span class="blue">desired market price.</span>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="container pt-5">
+        <div class="container pt-5 custom-container">
             <div class="row d-flex justify-content-around">
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-12">
                     <div class="who-text">
-                        <h2 data-translate="Our_Product">Our_Product</h2>
+                        <h2 data-translate="Our_Product">Our Product</h2>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-12">
+                <div class="col-lg-9 col-md-12">
                     <div class="tabs">
-                        <div class="tab-2">
-                            <label for="tab2-3" data-translate="OTC_landing_banner2_tag1">OTC Direct</label>
-                            <input id="tab2-3" name="tabs-two" type="radio" checked="checked">
-                            <div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <h3 data-translate="OTC_landing_banner2_tag1_desc_p1">
-                                            Access deep liquidity anytime<span data-translate="OTC_landing_banner2_tag1_desc_p2" class="gold">
+                        <div class="product-tabs-horizontal">
+                            <nav class="row">
+                                <a data-translate="OTC_landing_banner2_tag1">OTC Direct</a>
+                                <a data-translate="OTC_landing_banner2_tag2">OTC Chat Broker</a>
+                            </nav>
+                            <div class="row">
+                                <div class="container visible">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 pt-3">
+                                            <h3 data-translate="OTC_landing_banner2_tag1_desc_p1">
+                                                Access deep liquidity anytime<span
+                                                        data-translate="OTC_landing_banner2_tag1_desc_p2" class="gold">
                                             electronically.
                                         </span>
-                                        </h3>
-                                        <p data-translate="OTC_landing_banner2_tag1_desc2"> 
-                                            By being connected to Virgo OTC Direct, our clients are able to execute
-                                            large block trades instantaneously.
-                                            Our seamless workflow allows our institution clients to be able to receive
-                                            best execution and flexible settlements post-trade.
-                                        </p>
-                                        <a class="round-btn-light" href="../en-otc-direct/">
-                                            learn more
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <img
-                                                src="<?= get_template_directory_uri() ?>/img/Landing_Page/OurProducts/OTC_Dirct_Illustration.png"
-                                                alt="images not found"
-                                        >
+                                            </h3>
+                                            <p data-translate="OTC_landing_banner2_tag1_desc2">
+                                                By being connected to Virgo OTC Direct, our clients are able to execute
+                                                large block trades instantaneously.
+                                                Our seamless workflow allows our institution clients to be able to <span
+                                                        class="blue">receive
+                                            best execution and flexible settlements post-trade.</span>
+                                            </p>
+                                            <a class="round-btn-light" href="../en-otc-direct/">
+                                                learn more
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <img
+                                                    src="<?= get_template_directory_uri() ?>/img/Landing_Page/OurProducts/OTC_Dirct_Illustration.png"
+                                                    alt="images not found"
+                                            >
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tab-2">
-                            <label for="tab2-4" data-translate="OTC_landing_banner2_tag2">OTC Chat Broker</label>
-                            <input id="tab2-4" name="tabs-two" type="radio">
-                            <div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <h3  data-translate="OTC_landing_banner2_tag2_desc_p1">
-                                            Personalized service for executing<span  data-translate="OTC_landing_banner2_tag1_desc_p2" class="gold">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 pt-3">
+                                            <h3 data-translate="OTC_landing_banner2_tag2_desc_p1">
+                                                Personalized service for executing<span
+                                                        data-translate="OTC_landing_banner2_tag1_desc_p2" class="gold">
                                             large block transactions.
                                         </span>
-                                        </h3>
+                                            </h3>
 
-                                        <p data-translate="OTC_landing_banner2_tag2_desc2">
-                                            Our OTC trade team will facilitate any trade requests you will have for your
-                                            business. From trading like Bitcoin, Ethereum,
-                                            and Litecoin, to hedging out risk by trading back into Tether (USDT).
-                                        </p>
-                                        <a class="round-btn-light scroll-to-sign-up">learn more
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <img
-                                                src="<?= get_template_directory_uri() ?>/img/Landing_Page/OurProducts/OTC_Chat_Broker.png"
-                                                alt="images not found"
-                                        >
+                                            <p data-translate="OTC_landing_banner2_tag2_desc2">
+                                                Our OTC trade team will facilitate <span
+                                                        class="blue">any trade requests</span> you will have for your
+                                                business. From trading like Bitcoin, Ethereum,
+                                                and Litecoin, to hedging out risk by trading back into Tether (USDT).
+                                            </p>
+                                            <a class="round-btn-light scroll-to-sign-up">learn more
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <img
+                                                    src="<?= get_template_directory_uri() ?>/img/Landing_Page/OurProducts/OTC_Chat_Broker.png"
+                                                    alt="images not found"
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -533,14 +543,13 @@ get_header('otc');
             </div>
         </div>
     </section>
-
     <section class="client-area">
         <div class="container custom-container">
             <div class="row">
-                    <div class="client-text">
-                        <h2 data-translate="Our_client">Our_Client</h2>
-                    </div>
+                <div class="client-text">
+                    <h2 data-translate="Our_client">Our_Client</h2>
                 </div>
+            </div>
             <div class="row d-flex justify-content-around">
                 <div class="tabs-vertical row d-flex justify-content-around">
                     <div class="col-lg-6 col-md-12">
@@ -592,8 +601,11 @@ get_header('otc');
             </div>
         </div>
         <div class="background-img">
-            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy.png" alt="images not found">
-            <img class="arrow-right-img" src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy 2.png" alt="images not found">
+            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy.png"
+                 alt="images not found">
+            <img class="arrow-right-img"
+                 src="<?= get_template_directory_uri() ?>/img/Landing_Page/Our Clients/Background Element copy 2.png"
+                 alt="images not found">
         </div>
     </section>
     <section class="why-area">
@@ -604,78 +616,89 @@ get_header('otc');
             <div class="why-content">
 
                 <div class="row d-flex justify-content-between">
+                    <div class="why-img">
+                        <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png"
+                             alt="images not found"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="col-lg-6 col-md-12 why-text">
-                        <div class="why-img">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png" alt="images not found"/>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
+                        <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
-                        <p data-translate="OTC_landing_banner4_col2-1">We eliminate slippage on larger trades. Save up to 2% compared to trading on other
+                        <p data-translate="OTC_landing_banner4_col2-1">We eliminate slippage on larger trades. <span
+                                    class="gold">Save up to 2% </span> compared to trading on other
                             exchanges.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <div class="col-lg-6 col-md-12 why-text">
-                        <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.png" alt="images not found"/>
-                        </div>
+                    <img class="why-text"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.png"
+                         alt="images not found"/>
+
+                    <div class="col-lg-6 col-md-12 ">
+                        <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
-                        <p data-translate="OTC_landing_banner4_col2-2">We don’t charge anything on top. What you see is what you get.</p>
+                        <p data-translate="OTC_landing_banner4_col2-2">We <span
+                                    class="gold">don’t charge anything </span>on top. What you see is what you get.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <div class="col-lg-6 col-md-12 why-text">
-                        <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.png" alt="images not found"/>
-                        </div>
+                    <img class="why-text"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.png"
+                         alt="images not found"/>
+                    <div class="col-lg-6 col-md-12 ">
+                        <h3 data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <h3  data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
-                        <p  data-translate="OTC_landing_banner4_col2-3">Our liquidity pools allow us to provide one of the best prices in Canada for trading BTC,
+                        <p data-translate="OTC_landing_banner4_col2-3">Our liquidity pools allow us to provide<span
+                                    class="gold"> one of the best prices </span>in Canada for trading BTC,
                             ETH, USDT, and more.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <div class="col-lg-6 col-md-12 why-text">
-                        <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.png" alt="images not found"/>
-
+                    <img class="why-text"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.png"
+                         alt="images not found"/>
+                    <div class="col-lg-6 col-md-12">
+                        <h3 data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <h3  data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
-                        <p  data-translate="OTC_landing_banner4_col2-4">We have unique market access via digital assets, to provide a competitive pricing for other
+                        <p data-translate="OTC_landing_banner4_col2-4">We have unique market access via digital assets,
+                            to provide a<span class="gold"> competitive pricing </span>for other
                             foreign currencies.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <div class="col-lg-6 col-md-12 why-text">
-                        <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.png" alt="images not found"/>
-                        </div>
-                    </div>
+                    <img class="why-text"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.png"
+                         alt="images not found"/>
+
                     <div class="col-lg-6 col-md-12">
                         <h3 data-translate="OTC_landing_banner4_col1-5">Personalized Services</h3>
-                        <p  data-translate="OTC_landing_banner4_col2-5">Our OTC account managers are available 24/7 to facilitate every request for your business or
-                            trading needs. You will also have access to industry insights on the cryptocurrency
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p data-translate="OTC_landing_banner4_col2-5">Our OTC account managers are available <span
+                                    class="gold">24/7 </span>to facilitate every request for your business or
+                            trading needs. You will also have access to <span class="gold">industry insights </span>on
+                            the cryptocurrency
                             markets.</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <div class="col-lg-6 col-md-12 why-text">
-                        <div class="">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.png" alt="images not found"/>
-                        </div>
+                    <img class="why-text"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.png"
+                         alt="images not found"/>
+
+                    <div class="col-lg-6 col-md-12 ">
+                        <h3 data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <h3  data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
-                        <p  data-translate="OTC_landing_banner4_col2-6">We provide a same day, no limit settlement for your USD and CAD trades. This also applies to
+                        <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same day, no limit settlement </span>for
+                            your USD and CAD trades. This also applies to
                             your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
                     </div>
                 </div>
@@ -683,6 +706,13 @@ get_header('otc');
         </div>
     </section>
     <section class="signup-area">
+        <div class="background-img">
+            <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 2.svg"
+                 alt="images not found">
+            <img
+                 src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 1.svg"
+                 alt="images not found">
+        </div>
         <div class="container custom-container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-md-12">
@@ -701,25 +731,11 @@ get_header('otc');
     </section>
 
     <style type="text/css">
+        h3 {
+            font-family: "Matter-Medium";
+        }
 
-        /*:root {*/
-        /*    --color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);*/
-        /*    --color-ink-low-contrast: rgba(60, 60, 67, 0.3);*/
-        /*    --color-ink-medium-contrast: rgba(19, 19, 21, 0.6);*/
-        /*    --color-interaction: #1e4bd1;*/
-        /*    --color-interaction-minus-two: rgba(73, 133, 224, 0.12);*/
-        /*    --color-danger: #b50706;*/
-        /*    --VirgoCX-purple-contrast: #eff1f2;*/
-        /*    --color-ink-high-contrast: #121212;*/
-        /*    --VirgoCX-purple-contrast-light: #ffffff;*/
-        /*    --VirgoCX-blue: #05004d;*/
-        /*    --VirgoCX-purple: #080449;*/
-        /*    --VirgoCX-gold: #c7ba9a;*/
-
-
-        /*}*/
-
-        .banner-img-1{
+        .banner-img-1 {
             position: absolute;
             left: -200px;
             top: -250px;
@@ -727,9 +743,11 @@ get_header('otc');
             z-index: -1;
             max-width: 100vw;
         }
-        .banner-img-2{
+
+        .banner-img-2 {
             max-width: 90vw;
             position: absolute;
+            z-index: -1;
             /*left: 0;*/
             top: -50px;
         }
@@ -745,8 +763,17 @@ get_header('otc');
             min-height: 700px;
         }
 
-        .banner-area h1{
+        .banner-area h1 {
             color: white;
+        }
+
+        .banner-area p {
+            white-space: nowrap;
+        }
+
+        .banner-area .round-btn {
+            z-index: 9999999;
+            position: absolute;
         }
 
         .carousel-area {
@@ -762,6 +789,7 @@ get_header('otc');
             position: relative;
             min-height: 600px;
         }
+
         .client-area .background-img img:nth-child(1) {
             position: absolute;
             right: 0px;
@@ -775,46 +803,65 @@ get_header('otc');
         }
 
 
-
         @media screen and (max-width: 900px) {
             .client-area .background-img img:nth-child(2) {
                 display: none;
             }
 
-            .arrow-right-img{
+            .arrow-right-img {
                 display: none;
             }
         }
 
-        .client-text{
+        .client-text {
             padding-bottom: 60px;
         }
 
-        .signup-area,
+
         .press-area {
             padding: 40px 0px 60px;
             color: white;
             background: #080449;
         }
 
-        .signup-area h2{
+        .press-area h2{
+            color: var(--VirgoCX-gold);
+        }
+
+        .press-img mnp img{
+            width: 90px;
+        }
+        .press-img middle img{
+            width: 130px;
+        }
+        .press-img middle img{
+            width: 130px;
+        }
+        .signup-area {
+            padding: 40px 0px 60px;
+            color: white;
+            background: var(--VirgoCX-signup-blue);
+        }
+
+        .signup-area h2 {
             text-align: center;
         }
-        .signup-area .round-btn{
+
+        .signup-area .round-btn {
             margin: auto;
         }
 
 
         .product-area {
-            padding: 40px 0px 60px;
+            padding: 80px 0px 60px;
             color: var(--VirgoCX-blue);
             background: white;
         }
 
-        .why-area{
+        .why-area {
             padding: 40px 0px 60px;
             color: var(--VirgoCX-blue);
-            background-image: url(/wp-content/themes/virgocx/img/Landing_Page/Why Trade with Us/Background Desktop.png);
+            background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -854,7 +901,7 @@ get_header('otc');
         }
 
 
-        .why-text{
+        .why-text {
             position: absolute;
         }
 
@@ -865,16 +912,21 @@ get_header('otc');
         /*}*/
 
         .why-area h3,
-        .why-area p{
+        .why-area p {
             width: 85%;
             right: 0;
             position: relative;
             top: 0;
             margin-left: 45px;
         }
+
+        .why-area p {
+            color: var(--VirgoCX-grey);
+        }
+
         @media screen and (min-width: 900px) {
-            .banner-area{
-                min-height: 900px;
+            .banner-area {
+                min-height: 600px;
             }
 
             .why-content > * {
@@ -885,10 +937,7 @@ get_header('otc');
                 top: 50%;
                 position: absolute;
             }
-
-
         }
-
 
         .product-text h2 {
             color: #c7ba9a;
@@ -912,9 +961,10 @@ get_header('otc');
         }
 
         @media screen and (max-width: 900px) {
-            .client-text{
+            .client-text {
                 width: 100%;
             }
+
             .client-text h2 {
                 text-align: center;
             }
@@ -1102,11 +1152,23 @@ get_header('otc');
             padding-bottom: 0px;
         }
 
+        .carousel-background {
+            background-color: var(--VirgoCX-gold);
+        }
+
+        .product-tabs-horizontal,
         .tabs-horizontal {
             position: relative;
             width: 100%;
         }
 
+        @media screen and (min-width: 900px) {
+            .product-tabs-horizontal h3:nth-child(1) {
+                white-space: nowrap;
+            }
+        }
+
+        .product-tabs-horizontal nav,
         .tabs-horizontal nav {
             display: flex;
             flex-wrap: wrap;
@@ -1115,6 +1177,7 @@ get_header('otc');
             width: 100%;
         }
 
+        .product-tabs-horizontal nav a,
         .tabs-horizontal nav a {
             font-size: 1.5em;
             color: white !important;
@@ -1125,6 +1188,13 @@ get_header('otc');
             cursor: pointer;
         }
 
+        .product-tabs-horizontal nav a,
+        .product-tabs-horizontal h3 {
+            color: var(--VirgoCX-blue) !important;
+        }
+
+        .product-tabs-horizontal nav a:hover,
+        .product-tabs-horizontal nav a.selected,
         .tabs-horizontal nav a:hover,
         .tabs-horizontal nav a.selected {
             border-bottom: 3px solid #c7ba9a;
@@ -1132,6 +1202,7 @@ get_header('otc');
             font-weight: bold;
         }
 
+        .product-tabs-horizontal .container,
         .tabs-horizontal .container {
             left: 150px;
             color: white;
@@ -1139,17 +1210,24 @@ get_header('otc');
             transition: opacity 0.1s linear 0s;
         }
 
+        .product-tabs-horizontal .container.visible,
         .tabs-horizontal .container.visible {
             width: 100%;
             display: block;
         }
 
+        .product-tabs-horizontal .container p,
         .tabs-horizontal .container p {
             padding-bottom: 2px;
         }
 
+        .product-tabs-horizontal .container p:last-of-type,
         .tabs-horizontal .container p:last-of-type {
             padding-bottom: 0px;
+        }
+
+        .product-area p {
+            color: var(--VirgoCX-grey);
         }
 
         .carousel-area nav {
@@ -1170,8 +1248,6 @@ get_header('otc');
             width: 200px;
             height: 50px;
             color: white;
-            /*opacity: 0.1;*/
-            /*background-color: beige;*/
         }
 
         .pg-text {
@@ -1179,7 +1255,7 @@ get_header('otc');
         }
 
 
-        .press-area img{
+        .press-area img {
             width: 150px;
             max-height: 100%;
             max-width: 100%;
@@ -1187,11 +1263,15 @@ get_header('otc');
         }
 
         .owl-carousel.owl-drag .owl-item {
-            background: linear-gradient(#ebe3d1,#c7ba9a);
+            background: linear-gradient(#ebe3d1, #c7ba9a);
         }
 
-        .scroll-to-sign-u{
+        .scroll-to-sign-u {
             z-index: 888899;
+        }
+
+        .selected {
+            font-weight: bold;
         }
 
     </style>
@@ -1201,30 +1281,29 @@ get_header('otc');
             $(document).ready(function () {
                 $('[data-toggle="popover"]').popover()
                 var owl = $('.owl-carousel');
-                if(screen.width>900){
+                if (screen.width > 900) {
                     owl.owlCarousel({
                         items: 6,
                         loop: true,
                         margin: 10,
                         autoplay: true,
-                        autoplayTimeout: 1000,
+                        autoplayTimeout: 1500,
                         pagination: false,
                         dots: false,
                         autoplayHoverPause: true
                     });
-                }else{
+                } else {
                     owl.owlCarousel({
                         items: 3,
                         loop: true,
                         margin: 10,
                         autoplay: true,
-                        autoplayTimeout: 1000,
+                        autoplayTimeout: 1500,
                         pagination: false,
                         dots: false,
                         autoplayHoverPause: true
                     });
                 }
-
 
 
                 $('.tabs-vertical nav a').on('click', function () {
@@ -1246,12 +1325,16 @@ get_header('otc');
                 }
 
                 $('.tabs-horizontal nav a').on('click', function () {
-                    show_container($(this).index());
+                    show_container('.tabs-horizontal', $(this).index());
+                });
+                $('.product-tabs-horizontal nav a').on('click', function () {
+                    show_container('.product-tabs-horizontal', $(this).index());
                 });
 
                 $('.tabs nav a').on('click', function () {
                     scroll_to_container($(this).index());
                 });
+
                 function scroll_to_container(index) {
                     // Make the container visible
                     console.log(index);
@@ -1260,16 +1343,18 @@ get_header('otc');
                         scrollTop: $('.tabs .custom-container:nth-of-type(' + (index + 1) + ')').offset().top
                     }, 800);
                 }
-                show_container(0);
 
-                function show_container(index) {
+                show_container('.tabs-horizontal', 0);
+                show_container('.product-tabs-horizontal', 0);
+
+                function show_container(name, index) {
                     // Make the container visible
-                    $('.tabs-horizontal .container.visible').removeClass('visible');
-                    $('.tabs-horizontal .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
+                    $(name + ' .container.visible').removeClass('visible');
+                    $(name + ' .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
 
                     // Set the tab to selected
-                    $('.tabs-horizontal nav a.selected').removeClass('selected');
-                    $('.tabs-horizontal nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+                    $(name + ' nav a.selected').removeClass('selected');
+                    $(name + ' nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
                 }
             });
 

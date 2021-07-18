@@ -13,7 +13,7 @@ get_header('otc');
         <div class="OTC-header">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12 pt-5">
                         <div class="row">
                             <h1 data-translate="OTC_direct_h">
                                 <span data-translate="OTC_header1_1">
@@ -43,11 +43,12 @@ get_header('otc');
         <div class="row custom-container">
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.svg"
                          alt="flags"/>
                 </div>
                 <h4 data-translate="OTC_direct_24_7">24/7</h4>
-                <p data-translate="OTC_direct_banner2_col1">OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
+                <p data-translate="OTC_direct_banner2_col1">OTC Direct allows you to trade around the clock without
+                    having to work with the OTC account managers.
 
                 </p>
                 <p data-translate="OTC_direct_banner2_col1_2">
@@ -57,11 +58,12 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.svg"
                          alt="flags"/>
                 </div>
                 <h4 data-translate="OTC_direct_banner2_col2">Best Execution</h4>
-                <p data-translate="OTC_direct_banner2_col2_2">We aggregate liquidity through a multitude of different providers in order to provide you with the
+                <p data-translate="OTC_direct_banner2_col2_2">We aggregate liquidity through a multitude of different
+                    providers in order to provide you with the
                     <span class="blue">best price</span> at that point in time.
 
                 </p>
@@ -73,15 +75,15 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid Settlemment.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid Settlemment.svg"
                          alt="flags"/>
                 </div>
 
                 <h4 data-translate="OTC_direct_banner2_col3">Rapid Settlement</h4>
-                <p  data-translate="OTC_direct_banner2_col3_1">
+                <p data-translate="OTC_direct_banner2_col3_1">
                     We offer conditional same-day settlement for our client trades.
                 </p>
-                <p  data-translate="OTC_direct_banner2_col3_2">
+                <p data-translate="OTC_direct_banner2_col3_2">
                     By having close relationships with our partner banks, our settlement speeds for fiat to
                     cryptocurrency is<span class="blue">one of the most competitive</span> in Canada.
                 </p>
@@ -93,7 +95,7 @@ get_header('otc');
 
         <div class="tabs">
             <nav class="tab-switch row">
-                <a>1. Onboard</a>
+                <a class="selected">1. Onboard</a>
                 <a>2. Set Up</a>
                 <a>3. Deposit</a>
                 <a>4. Trade</a>
@@ -101,30 +103,32 @@ get_header('otc');
             </nav>
 
             <div class="how-container">
-
                 <div class="how-text title-right">
-                    <img class="number-right"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
-                         alt="flags" width="100%"/>
-                    <img class="number-right-mobile"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.png"
-                         alt="flags" width="100%"/>
-                    <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC
-
+                    <h3 >Onboard with VirgoCX OTC
+                        <img class="number-right"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
+                             alt="flags" width="100%"/>
+                        <img class="number-right-mobile"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.png"
+                             alt="flags" width="100%"/>
                     </h3>
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Onboard.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Onboard.svg" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <p  data-translate="OTC_direct_how_1_1">
+                            <p data-translate="OTC_direct_how_1_1">
                                 Contact our OTC account managers to get started as an individual or as a corporate
                                 entity.
                             <ul>
-                                <li data-translate="OTC_direct_how_1_2">All onboarding information will be securely stored.</li>
-                                <li data-translate="OTC_direct_how_1_3">Account registration will typically take less than one day.</li>
+                                <li data-translate="OTC_direct_how_1_2">All onboarding information will be securely
+                                    stored.
+                                </li>
+                                <li data-translate="OTC_direct_how_1_3">Account registration will typically take less
+                                    than one day.
+                                </li>
                             </ul>
 
 
@@ -140,14 +144,14 @@ get_header('otc');
                         <img class="number-left"
                              src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.2.png"
                              alt="flags" width="100%"/>
-                        <h3  data-translate="OTC_direct_how_t2">
+                        <h3 data-translate="OTC_direct_how_t2">
                             Set Up
                         </h3>
                     </div>
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set Up.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Set Up.svg" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
@@ -155,7 +159,9 @@ get_header('otc');
                                 Upon onboarding, our OTC managers will provide you with your account information to log
                                 onto OTC Direct.
                             <ul>
-                                <li data-translate="OTC_direct_how_2_2">You will be provided login credentials for your OTC Direct account.</li>
+                                <li data-translate="OTC_direct_how_2_2">You will be provided login credentials for your
+                                    OTC Direct account.
+                                </li>
                                 <li data-translate="OTC_direct_how_2_3">Login credentials are secure.</li>
                             </ul>
                             </p>
@@ -165,29 +171,32 @@ get_header('otc');
             </div>
             <div class="how-container">
                 <div class="how-text title-right">
-                    <img class="number-right"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
-                         alt="flags" width="100%"/>
-                    <img class="number-right-mobile"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.png"
-                         alt="flags" width="100%"/>
-
-                    <h3  data-translate="OTC_direct_how_t3">
+                    <h3>
                         Deposit Funds
+                        <img class="number-right"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
+                             alt="flags" width="100%"/>
+                        <img class="number-right-mobile"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.png"
+                             alt="flags" width="100%"/>
                     </h3>
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Deposit Funds.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Deposit Funds.svg"
+                             alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <p data-translate="OTC_direct_how_3_1">Once you have onboarded, you will be able to deposit fiat and digital assets at any time.
+                            <p data-translate="OTC_direct_how_3_1">Once you have onboarded, you will be able to deposit
+                                fiat and digital assets at any time.
                             <ul>
-                                <li data-translate="OTC_direct_how_3_2">Wires will be processed and handled by our partner bank the moment it has been
+                                <li data-translate="OTC_direct_how_3_2">Wires will be processed and handled by our
+                                    partner bank the moment it has been
                                     sent.
                                 </li>
-                                <li  data-translate="OTC_direct_how_3_3">Digital assets require several confirmations on the blockchain before we can credit
+                                <li data-translate="OTC_direct_how_3_3">Digital assets require several confirmations on
+                                    the blockchain before we can credit
                                     your account.
                                 </li>
                             </ul>
@@ -199,29 +208,33 @@ get_header('otc');
             </div>
             <div class="how-container">
                 <div class="trapezoid"></div>
-<div class="title-left">
-    <div class="how-text">
+                <div class="title-left">
+                    <div class="how-text">
 
-        <img class="number-left"
-             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.4.png"
-             alt="flags" width="100%"/>
-        <h3  data-translate="OTC_direct_how_t4">
-            Trade
-        </h3>
-    </div>
-</div>
+                        <img class="number-left"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.4.png"
+                             alt="flags" width="100%"/>
+                        <h3 data-translate="OTC_direct_how_t4">
+                            Trade
+                        </h3>
+                    </div>
+                </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Trade.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Trade.svg" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <p data-translate="OTC_direct_how_4_1">Execute transactions for the best price using OTC Direct.
+                            <p data-translate="OTC_direct_how_4_1">Execute transactions for the best price using OTC
+                                Direct.
                             <ul>
-                                <li  data-translate="OTC_direct_how_4_2">You will be able to trade directly on our platform 24/7 (excluding scheduled
+                                <li data-translate="OTC_direct_how_4_2">You will be able to trade directly on our
+                                    platform 24/7 (excluding scheduled
                                     maintenance times)
                                 </li>
-                                <li  data-translate="OTC_direct_how_4_3">Access large liquidity limit orders and RFQ orders on our platform.</li>
+                                <li data-translate="OTC_direct_how_4_3">Access large liquidity limit orders and RFQ
+                                    orders on our platform.
+                                </li>
                             </ul>
                             </p>
                         </div>
@@ -229,32 +242,33 @@ get_header('otc');
                 </div>
             </div>
             <div class="how-container">
-
                 <div class="how-text title-right">
-                    <img class="number-right"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png"
-                         alt="flags" width="100%"/>
-                    <img class="number-right-mobile"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.png"
-                         alt="flags" width="100%"/>
-                    <h3  data-translate="OTC_direct_how_t5">
-                        Settlement
+                    <h3>
+                        Settlement<img class="number-right"
+                                       src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png"
+                                       alt="flags" width="100%"/>
+                        <img class="number-right-mobile"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.png"
+                             alt="flags" width="100%"/>
                     </h3>
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Settlement.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Settlement.svg"
                              alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <p data-translate="OTC_direct_how_5_1">Once you have updated the banking / wallet address information, you will be able to
+                            <p data-translate="OTC_direct_how_5_1">Once you have updated the banking / wallet address
+                                information, you will be able to
                                 withdraw funds.
                             <ul>
-                                <li data-translate="OTC_direct_how_5_2">We have long standing relationships with our partner banks to provide you with rapid
+                                <li data-translate="OTC_direct_how_5_2">We have long standing relationships with our
+                                    partner banks to provide you with rapid
                                     settlement.
                                 </li>
-                                <li data-translate="OTC_direct_how_5_3">Digital assets will be settled immediately upon confirmation of the trade details.
+                                <li data-translate="OTC_direct_how_5_3">Digital assets will be settled immediately upon
+                                    confirmation of the trade details.
                                 </li>
                             </ul>
                             </p>
@@ -266,13 +280,13 @@ get_header('otc');
     </section>
     <section class="faq" aria-label="Question Accordions">
         <div class="custom-container">
-            <h2 data-translate="OTC_direct_faq">Frequently Asked Questions </h2>
+            <h2>Frequently Asked Questions </h2>
             <div class="panel-group" id="faq" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse0" aria-expanded="true" aria-controls="collapse0"  data-translate="OTC_direct_faq_1">
+                                 href="#collapse0" aria-expanded="true" aria-controls="collapse0">
                                 What if I’m already onboarded?
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
@@ -281,7 +295,7 @@ get_header('otc');
                     </div>
                     <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_direct_faq_1_1">We can offer a fast track enrollment on OTC if you have already onboarded on the retail
+                            <p>We can offer a fast track enrollment on OTC if you have already onboarded on the retail
                                 platform.</p>
                         </div>
                     </div>
@@ -291,7 +305,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse1" aria-expanded="true" aria-controls="collapse1"  data-translate="OTC_direct_faq_2">
+                                 href="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                 What type of order types do you have on OTC Direct?
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
@@ -301,7 +315,7 @@ get_header('otc');
                     </div>
                     <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_direct_faq_2_1">We currently support Request for Quote (RFQ) and Limit Orders.</p>
+                            <p>We currently support Request for Quote (RFQ) and Limit Orders.</p>
                         </div>
                     </div>
                 </div>
@@ -310,7 +324,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse2" aria-expanded="true" aria-controls="collapse2"  data-translate="OTC_direct_faq_3">
+                                 href="#collapse2" aria-expanded="true" aria-controls="collapse2">
                                 How fast is the settlement?
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
@@ -318,7 +332,7 @@ get_header('otc');
                     </div>
                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                         <div class="panel-body px-3 mb-4">
-                            <p  data-translate="OTC_direct_faq_3_1">We typically settle fiat and digital currencies within one business day. </p>
+                            <p>We typically settle fiat and digital currencies within one business day. </p>
                         </div>
                     </div>
                 </div>
@@ -327,7 +341,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse3" aria-expanded="true" aria-controls="collapse3"  data-translate="OTC_direct_faq_4">
+                                 href="#collapse3" aria-expanded="true" aria-controls="collapse3">
                                 What is the minimum amount for settlement on OTC Direct?
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
@@ -336,7 +350,7 @@ get_header('otc');
                     </div>
                     <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_direct_faq_4_1">The minimum amount to begin settlement is 30,000 CAD or equivalent.</p>
+                            <p>The minimum amount to begin settlement is 30,000 CAD or equivalent.</p>
                         </div>
                     </div>
                 </div>
@@ -344,7 +358,7 @@ get_header('otc');
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
-                                 href="#collapse4" aria-expanded="true" aria-controls="collapse4" data-translate="OTC_direct_faq_5">
+                                 href="#collapse4" aria-expanded="true" aria-controls="collapse4">
                                 What are the operating hours for OTC Direct?
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
@@ -352,7 +366,7 @@ get_header('otc');
                     </div>
                     <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_direct_faq_5_1">The platform is available to use 24/7/365, with the exception to short scheduled system
+                            <p>The platform is available to use 24/7/365, with the exception to short scheduled system
                                 maintenances which we will notify you about in advance.</p>
                         </div>
                     </div>
@@ -395,16 +409,19 @@ get_header('otc');
         .banner-area h1 {
             color: white;
         }
+
         @media screen and (max-width: 900px) {
-            .banner-area{
+            .banner-area {
                 height: 800px;
             }
+
             .banner-area .OTC-header img {
                 position: absolute;
                 width: 100vw;
                 left: -60px;
             }
         }
+
         .why-area {
             background-color: #F8F8F8;
         }
@@ -418,6 +435,8 @@ get_header('otc');
         }
 
         .why-img img {
+            height: 150px;
+            width: auto;
             position: relative;
         }
 
@@ -453,7 +472,7 @@ get_header('otc');
         }
 
         .custom-container .img-container img {
-            width: 80%!important;
+            width: 80% !important;
             top: -90px;
             max-width: 100vw;
         }
@@ -478,6 +497,7 @@ get_header('otc');
             .how-container {
                 min-height: 700px;
             }
+
             .why-container {
                 padding: 30px 30px 0 30px;
             }
@@ -504,7 +524,7 @@ get_header('otc');
             }
 
             .trapezoid {
-                height: 487px;
+                height: 587px;
             }
         }
 
@@ -516,13 +536,13 @@ get_header('otc');
         .faq {
             background-color: #F8F8F8;
             padding: 150px 0 300px 0;
-            background-image: url(/wp-content/themes/virgocx/img/bg2.svg);
+            background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
         }
 
-        .how-area{
+        .how-area {
             padding-bottom: 0;
         }
 
@@ -572,7 +592,8 @@ get_header('otc');
             text-align: center;
             padding: 40px 0px 60px;
             color: white !important;
-            background: #080449;
+            background: var(--VirgoCX-signup-blue);
+            /*background: #080449;*/
         }
 
         /*tabs*/
@@ -671,12 +692,13 @@ get_header('otc');
             vertical-align: middle;
             margin: 50px 100px 0 100px;
         }
-        .how-text h3{
+
+        .how-text h3 {
             margin-left: 100px;
         }
 
         @media screen and (min-width: 900px) {
-            .title-right h3{
+            .title-right h3 {
                 width: 55%;
                 height: auto;
                 position: absolute;
@@ -684,9 +706,10 @@ get_header('otc');
                 top: 30px;
             }
 
-            .title-left{max-width: 1200px;
+            .title-left {
+                max-width: 1200px;
                 margin: 0px auto;
-                padding: 0px 15px;
+                padding: 100px 15px 0 15px
             }
         }
 
@@ -695,7 +718,7 @@ get_header('otc');
         }
 
         .number-left {
-            width: 150px;
+            width: 200px;
             height: auto;
             position: absolute;
             left: -50px;
@@ -703,11 +726,11 @@ get_header('otc');
         }
 
         .number-right {
-            width: 150px;
+            width: 200px;
             height: auto;
             position: absolute;
-            right: 100px;
-            top: -30px;
+            left: 300px;
+            top: -70px;
         }
 
         .number-right-mobile {
@@ -715,12 +738,12 @@ get_header('otc');
         }
 
         @media screen and (max-width: 900px) {
-            .how-text{
+            .how-text {
                 padding: 0;
                 margin: 0;
             }
 
-            .how-text h3{
+            .how-text h3 {
                 margin-left: 80px;
             }
 
@@ -766,13 +789,13 @@ get_header('otc');
             margin: auto;
         }
 
-        ul {
+        .how-area ul {
             margin-left: 1em;
             /*list-style-position: outside;*/
             list-style: none;
         }
 
-        ul li::before {
+        .how-area ul li::before {
             content: "\2022";
             color: #080449;
             font-weight: bold;
@@ -803,7 +826,7 @@ get_header('otc');
             }
 
             // faq triangle toggle
-            $('.panel-title').click( function () {
+            $('.panel-title').click(function () {
                 $(this).children().children().toggleClass('flipped')
             });
         })(jQuery);

@@ -13,7 +13,7 @@ get_header('otc');
         <div class="OTC-header">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12 pt-5">
                         <div class="row">
                             <h1>
                                 <span data-translate="OTC_header1_1">
@@ -48,13 +48,12 @@ get_header('otc');
         <div class="row custom-container">
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/24_7 illustration.svg"
                          alt="flags"/>
                 </div>
                 <h4>24/7</h4>
-                <p>OTC Direct allows you to trade around the clock without having to work with the OTC account managers.
-
-                </p>
+                <p>OTC Direct allows you to trade around the clock without having to work with the OTC account
+                    managers.</p>
                 <p>
                     With optimized uptime on our platform, OTC Direct can provide your team with a <span class="blue">seamless trading
                     experience</span> for your larger orders.
@@ -62,13 +61,12 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Best Execution.svg"
                          alt="flags"/>
                 </div>
                 <h4>Best Execution</h4>
                 <p>We aggregate liquidity through a multitude of different providers in order to provide you with the
                     <span class="blue">best price</span> at that point in time.
-
                 </p>
                 <p>
 
@@ -78,7 +76,7 @@ get_header('otc');
             </div>
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid Settlemment.png"
+                    <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Rapid Settlemment.svg"
                          alt="flags"/>
                 </div>
 
@@ -98,7 +96,7 @@ get_header('otc');
 
         <div class="tabs">
             <nav class="tab-switch row">
-                <a>1. Onboard</a
+                <a class="selected">1. Onboard</a
                 ><a>2. Set Up</a
                 ><a>3. Deposit</a
                 ><a>4. Trade</a
@@ -106,22 +104,20 @@ get_header('otc');
             </nav>
 
             <div class="how-container">
-
                 <div class="how-text title-right">
-
-                    <img class="number-right"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
-                         alt="flags" width="100%"/>
-                    <img class="number-right-mobile"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.png"
-                         alt="flags" width="100%"/>
                     <h3>Onboard with VirgoCX OTC
+                        <img class="number-right"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
+                             alt="flags" width="100%"/>
+                        <img class="number-right-mobile"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.png"
+                             alt="flags" width="100%"/>
 
                     </h3>
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Onboard.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Onboard.svg" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
@@ -153,7 +149,7 @@ get_header('otc');
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Join Our.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Join Our.svg"
                              alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
@@ -172,21 +168,20 @@ get_header('otc');
             </div>
             <div class="how-container">
                 <div class="how-text title-right">
-                    <img class="number-right"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
-                         alt="flags" width="100%"/>
-                    <img class="number-right-mobile"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.png"
-                         alt="flags" width="100%"/>
-
                     <h3>
                         Deposit Funds
+                        <img class="number-right"
+                                          src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
+                                          alt="flags" width="100%"/>
+                        <img class="number-right-mobile"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.png"
+                             alt="flags" width="100%"/>
                     </h3>
                 </div>
 
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Deposit Funds.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Deposit Funds.svg"
                              alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
@@ -223,7 +218,7 @@ get_header('otc');
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Trade.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Trade.svg" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
@@ -241,19 +236,19 @@ get_header('otc');
             </div>
             <div class="how-container">
                 <div class="how-text title-right">
-                    <img class="number-right"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png"
-                         alt="flags" width="100%"/>
-                    <img class="number-right-mobile"
-                         src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.png"
-                         alt="flags" width="100%"/>
+
                     <h3>
-                        Settlement
+                        Settlement<img class="number-right"
+                                       src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png"
+                                       alt="flags" width="100%"/>
+                        <img class="number-right-mobile"
+                             src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.png"
+                             alt="flags" width="100%"/>
                     </h3>
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Settlement.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Settlement.svg"
                              alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
@@ -407,9 +402,10 @@ get_header('otc');
         }
 
         @media screen and (max-width: 900px) {
-            .banner-area{
+            .banner-area {
                 height: 1000px;
             }
+
             .banner-area .OTC-header img {
                 position: absolute;
                 width: 100vw;
@@ -519,7 +515,7 @@ get_header('otc');
             }
 
             .trapezoid {
-                height: 487px;
+                height: 587px;
             }
         }
 
@@ -531,7 +527,7 @@ get_header('otc');
         .faq {
             background-color: #F8F8F8;
             padding: 150px 0 300px 0;
-            background-image: url(/wp-content/themes/virgocx/img/Landing_Page/Why Trade with Us/Background Desktop.png);
+            background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -583,7 +579,8 @@ get_header('otc');
             text-align: center;
             padding: 40px 0px 60px;
             color: white !important;
-            background: #080449;
+            background:  var(--VirgoCX-signup-blue);
+            /*background: #080449;*/
         }
 
         /*tabs*/
@@ -699,7 +696,7 @@ get_header('otc');
             .title-left {
                 max-width: 1200px;
                 margin: 0px auto;
-                padding: 0px 15px;
+                padding: 100px 15px 0 15px
             }
         }
 
@@ -708,7 +705,7 @@ get_header('otc');
         }
 
         .number-left {
-            width: 150px;
+            width: 200px;
             height: auto;
             position: absolute;
             left: -50px;
@@ -716,11 +713,11 @@ get_header('otc');
         }
 
         .number-right {
-            width: 150px;
+            width: 200px;
             height: auto;
             position: absolute;
             right: 100px;
-            top: -30px;
+            top: -70px;
         }
 
         .number-right-mobile {
@@ -755,9 +752,7 @@ get_header('otc');
                 top: -70px;
 
             }
-
         }
-
 
         .signup-area,
         .press-area {
@@ -779,13 +774,13 @@ get_header('otc');
             margin: auto;
         }
 
-        ul {
+        .how-area ul {
             margin-left: 1em;
             /*list-style-position: outside;*/
             list-style: none;
         }
 
-        ul li::before {
+        .how-area ul li::before {
             content: "\2022";
             color: #080449;
             font-weight: bold;
@@ -793,6 +788,7 @@ get_header('otc');
             width: 1em;
             margin-left: -1em;
         }
+
         .flipped {
             transform: rotate(180deg);
         }
@@ -812,9 +808,10 @@ get_header('otc');
                     scrollTop: $('.tabs .how-container:nth-of-type(' + (index + 1) + ')').offset().top
                 }, 800);
             }
+
             // faq triangle toggle
-           $('.panel-title').click( function () {
-               $(this).children().children().toggleClass('flipped')
+            $('.panel-title').click(function () {
+                $(this).children().children().toggleClass('flipped')
             });
         })(jQuery);
     </script>

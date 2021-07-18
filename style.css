@@ -118,6 +118,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--color-ink-high-contrast: #121212;
 	--VirgoCX-purple-contrast-light: #ffffff;
 	--VirgoCX-blue: #05004d;
+	--VirgoCX-signup-blue: #110B60;
 	--VirgoCX-purple: #080449;
 	--VirgoCX-gold: #c7ba9a;
 	--VirgoCX-grey: rgba(5, 0, 77, 0.5);
@@ -9944,6 +9945,18 @@ input[type="number"] {
 .hamburger-inner::after {
 	width: 36px;
 	height: 3px;
+	background-color: #7965e6;
+	border-radius: 2px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+.header-area-otc .hamburger-inner,
+.header-area-otc .hamburger-inner::before,
+.header-area-otc .hamburger-inner::after {
+	width: 36px;
+	height: 3px;
 	background-color: white;
 	border-radius: 2px;
 	position: absolute;
@@ -9951,7 +9964,6 @@ input[type="number"] {
 	transition-duration: 0.15s;
 	transition-timing-function: ease;
 }
-
 .hamburger-inner::before,
 .hamburger-inner::after {
 	content: "";
@@ -10872,8 +10884,8 @@ form input[type="submit"]:hover {
 	width: 30px;
 	/*added for otc*/
 	position: relative;
-	top: 16px;
-	right: 25px;
+	top: 17px;
+	right: 22px;
 }
 
 .footer-bt {
@@ -12432,6 +12444,10 @@ form.normal input[type="submit"] {
 	-webkit-transition: 0.3s all ease;
 }
 
+.signup-area .round-btn{
+	background-color: var(--VirgoCX-signup-blue);
+}
+
 .round-btn:active{
 	color: #05004D;!important;
 	border: 2px solid white!important;
@@ -12445,7 +12461,7 @@ form.normal input[type="submit"] {
 	display: block;
 	text-decoration: none;
 	padding: 2px 15px;
-	color: #05004D;
+	color: #05004D!important;
 	font-size: 23px;
 	font-weight: 500;
 	border: 2px solid #05004D;
@@ -12468,21 +12484,10 @@ form.normal input[type="submit"] {
 .blue{
 	color: var(--VirgoCX-blue);
 }
-
-
-
-
-.terms label{
-	position: absolute;
-	top: 0;
-	left: 40px;
-}
 .navbar-nav-otc{
 	font-family: "Matter-Bold";
 	position: relative;
 }
-
-
 
 .navbar-nav-otc .earn-btn {
 	/*background: var(--VirgoCX-blue);*/
@@ -12495,18 +12500,19 @@ form.normal input[type="submit"] {
     margin: 0 0 0 auto;
 }
 .navbar-nav-otc .dropdown-left-img{
-	position: absolute;
-	top: 20px;
+	position: relative;
+	display: inline-block;
 	left: 20px;
 	width: 15px;
 }
 
 .navbar-nav-otc .nav-link {
 	/*background: var(--VirgoCX-blue);*/
+	width: auto;
 	color: white;
 	border-bottom: 1px solid white;
 	padding: 2px 14px !important;
-	display: block;
+	display: inline-block;
 	/*max-width: 120px;*/
 	margin-top: 15px;
 }
@@ -12526,9 +12532,9 @@ form.normal input[type="submit"] {
 }
 
 .navbar-nav-otc .arrow-down{
-	position: absolute;
+	position: relative;
 	right: 5px;
-	top: 25px;
+	/*top: 25px;*/
 	left: auto;
 }
 
@@ -12544,6 +12550,12 @@ form.normal input[type="submit"] {
 	padding: 0;
 	margin: 10px 0 0 15px;
 	box-shadow: none;
+	top: 80% ;
+	text-align: left;
+}
+
+.dropdown-otc{
+	top: 60% !important;
 }
 
 .right_side_btn_otc {
@@ -12592,6 +12604,10 @@ form.normal input[type="submit"] {
 .header-area-otc .menu li a{
 text-align: right;
 	color: white;
+}
+
+.dropdown-toggle-otc .dropdown-menu a{
+	text-align: left!important;
 }
 
 .header-area-otc .menu .item:hover{
@@ -12644,7 +12660,7 @@ text-align: right;
 .input-filled  input {
 	border: none;
 	border-bottom: 0.125rem solid var(--VirgoCX-purple-contrast);
-	background:var(--VirgoCX-purple);
+	background:transparent;
 	width: 100%;
 	height: 2rem;
 	font-size: 1.0625rem;
@@ -12676,95 +12692,47 @@ text-align: right;
 }
 
 .input-underlined input::placeholder {
-	color: var(--VirgoCX-grey);
-	left: 70px!important;
+	color: rgba(255, 255, 255, 0.5);
+	left: 85px!important;
 }
+
 input::placeholder {
 	color: var(--VirgoCX-gold);
-	left: 70px!important;
-}
-#checkbox{
-	position: absolute;
-	left: 20px;
-	top: 4px;
+	left: 85px!important;
 }
 
-#checkbox lable{
-	position: absolute;
-	top: 0;
-	width: 80%;
-	left: 0;
-}
-.terms {
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.terms input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.terms:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.terms input:checked ~ .checkmark {
-	background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-/* Show the checkmark when checked */
-.terms input:checked ~ .checkmark:after {
-	display: block;
-}
-
-/* Style the checkmark/indicator */
-.terms .checkmark:after {
-	left: 9px;
-	top: 5px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
 .flipped {
 	transform: rotate(180deg);
 }
 a{
 	cursor: pointer;
+}
+.signup-area .background-img{
+	width: 100%;
+	height: 1px;
+	position: absolute;
+}
+.signup-area .background-img img:nth-child(1){
+	position: absolute;
+	left: 0;
+	bottom: -579px
+}
+
+.signup-area .background-img img:nth-child(2){
+	position: absolute;
+	right: 0;
+	top: -45px;
+}
+
+@media (max-width: 900px) {
+	.signup-area .background-img img:nth-child(1){
+		width: 70%;
+	}
+
+	.signup-area .background-img img:nth-child(2){
+		width: 50%;
+	}
+
+
 }
 /*# sourceMappingURL=style.css.map */
