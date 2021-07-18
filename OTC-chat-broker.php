@@ -367,6 +367,13 @@ get_header('otc');
         </div>
     </section>
     <section class="signup-area">
+        <div class="background-img">
+            <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 2.svg"
+                 alt="images not found">
+            <img
+                    src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 1.svg"
+                    alt="images not found">
+        </div>
         <div class="container custom-container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-md-12">
