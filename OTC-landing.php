@@ -407,7 +407,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img">
                         <a href=" https://www.chainalysis.com/ ">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/chainalysis.svg"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Chainalysis.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -423,7 +423,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img">
                         <a href="https://www.coindesk.com/canadian-exchange-virgocx-taps-ledger-vault-for-custody-insurance-support">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/coindesk.svg"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Coindesk.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -431,7 +431,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img">
                         <a href="https://blockgeeks.com/community-partners/virgocx/">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/blockgeeks.svg"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Blockgeeks.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -859,7 +859,7 @@ get_header('otc');
         .why-area {
             padding: 40px 0px 200px;
             color: var(--VirgoCX-blue);
-            background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
+            background-image: url(/wp-content/themes/virgocx/img/bg3_mobile.svg);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -938,7 +938,7 @@ get_header('otc');
             }
 
             .why-area {
-                background-image: url(/wp-content/themes/virgocx/img/bg3_mobile.svg);
+                background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
             }
         }
 

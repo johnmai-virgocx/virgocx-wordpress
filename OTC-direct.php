@@ -493,6 +493,7 @@ get_header('otc');
             color: #05004D;
             border-bottom: 3px solid #c7ba9a;
             cursor: pointer;
+            font-family: "Matter-Bold";
         }
 
         .custom-container h3 {
