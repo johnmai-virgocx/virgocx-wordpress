@@ -107,14 +107,14 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC
+                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC</h3>
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
                                      alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.svg"
                                      alt="flags" width="100%"/>
-                            </h3>
+                            
                         </div>
                     </div>
                 </div>
