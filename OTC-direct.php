@@ -107,7 +107,7 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3>Onboard with VirgoCX OTC
+                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
                                      alt="flags" width="100%"/>
@@ -181,15 +181,15 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3>
-                                Deposit Funds
+                            <h3 data-translate="OTC_direct_how_t3">
+                                Deposit Funds</h3>
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
                                      alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.svg"
                                      alt="flags" width="100%"/>
-                            </h3>
+                            
                         </div>
                     </div>
                 </div>
@@ -262,14 +262,14 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3>
-                                Settlement<img class="number-right"
+                            <h3 data-translate="OTC_direct_how_t5">
+                                Settlement</h3><img class="number-right"
                                                src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png"
                                                alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.svg"
                                      alt="flags" width="100%"/>
-                            </h3>
+                            
                         </div>
                     </div>
                 </div>
@@ -301,14 +301,14 @@ get_header('otc');
     </section>
     <section class="faq" aria-label="Question Accordions">
         <div class="custom-container">
-            <h2>Frequently Asked Questions </h2>
+            <h2 data-translate="OTC_direct_faq">Frequently Asked Questions </h2>
             <div class="panel-group" id="faq" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
                                  href="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                                What if I’m already onboarded?
+                                <span data-translate="OTC_direct_faq_1">What if I’m already onboarded?</span>
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
@@ -316,7 +316,7 @@ get_header('otc');
                     </div>
                     <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body px-3 mb-4">
-                            <p>We can offer a fast track enrollment on OTC if you have already onboarded on the retail
+                            <p data-translate="OTC_direct_faq_1_1">We can offer a fast track enrollment on OTC if you have already onboarded on the retail
                                 platform.</p>
                         </div>
                     </div>
@@ -327,7 +327,7 @@ get_header('otc');
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
                                  href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                What type of order types do you have on OTC Direct?
+                                <span data-translate="OTC_direct_faq_2">What type of order types do you have on OTC Direct?</span>
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
 
@@ -336,7 +336,7 @@ get_header('otc');
                     </div>
                     <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
                         <div class="panel-body px-3 mb-4">
-                            <p>We currently support Request for Quote (RFQ) and Limit Orders.</p>
+                            <p  data-translate="OTC_direct_faq_2_1">We currently support Request for Quote (RFQ) and Limit Orders.</p>
                         </div>
                     </div>
                 </div>
@@ -346,14 +346,14 @@ get_header('otc');
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
                                  href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                How fast is the settlement?
+                                <span data-translate="OTC_direct_faq_3">How fast is the settlement?</span>
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
                         </h3>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                         <div class="panel-body px-3 mb-4">
-                            <p>We typically settle fiat and digital currencies within one business day. </p>
+                            <p data-translate="OTC_direct_faq_3_1">We typically settle fiat and digital currencies within one business day. </p>
                         </div>
                     </div>
                 </div>
@@ -363,7 +363,7 @@ get_header('otc');
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
                                  href="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                                What is the minimum amount for settlement on OTC Direct?
+                                <span data-translate="OTC_direct_faq_4">What is the minimum amount for settlement on OTC Direct?</span>
 
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
@@ -371,7 +371,7 @@ get_header('otc');
                     </div>
                     <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                         <div class="panel-body px-3 mb-4">
-                            <p>The minimum amount to begin settlement is 30,000 CAD or equivalent.</p>
+                            <p data-translate="OTC_direct_faq_4_1">The minimum amount to begin settlement is 30,000 CAD or equivalent.</p>
                         </div>
                     </div>
                 </div>
@@ -380,14 +380,14 @@ get_header('otc');
                         <h3 class="panel-title">
                             <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq"
                                  href="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                                What are the operating hours for OTC Direct?
+                                <span data-translate="OTC_direct_faq_5">What are the operating hours for OTC Direct?</span>
                                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found"/>
                             </div>
                         </h3>
                     </div>
                     <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                         <div class="panel-body px-3 mb-4">
-                            <p>The platform is available to use 24/7/365, with the exception to short scheduled system
+                            <p data-translate="OTC_direct_faq_5_1">The platform is available to use 24/7/365, with the exception to short scheduled system
                                 maintenances which we will notify you about in advance.</p>
                         </div>
                     </div>

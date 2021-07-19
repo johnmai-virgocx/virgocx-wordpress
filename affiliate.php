@@ -38,6 +38,11 @@ get_header();
             width: 1em;
             margin-left: -1em;
         }
+ 
+        .col-lg-10 ul{
+            list-style:initial;
+        }
+
 
         .Affiliate-Sec2-ul
         li {
@@ -152,8 +157,18 @@ get_header();
                     </div>
                     <div class="col-lg-10">
                         <h5>Sit back and earn passive income</h5>
-                        <p>You can track the performance of each affiliate link you share. You will earn a 0.08%
-                            commission on all trading amounts made by users who signed up using your link.</p>
+                        <p>We help you monetize your traffic! You can earn the following bonuses: </p>
+                          <ul>
+                           <li>$10 for every user that gets verified on our platform,</li> 
+
+                           <li>$20 when they make their first fiat deposit of $100+ CAD, </li>
+
+                           <li>plus, a 0.08% commission share on all trading amounts they make!</li>  
+                        </ul> 
+                           <p>There’s no cap to what you earn. You’re just a few clicks away from this lifetime earning opportunity - it's quick, easy, and rewarding! </p>
+                           
+                           <p>You can track the performance of each affiliate link you share. </p>
+                           <p>We are open to negotiations. Offers may vary depending on business scale.</p>
                     </div>
                 </div>
             </div>
