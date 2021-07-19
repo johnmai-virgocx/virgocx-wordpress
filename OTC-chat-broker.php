@@ -113,7 +113,7 @@ get_header('otc');
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
                                      alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
-                                     src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.png"
+                                     src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.svg"
                                      alt="flags" width="100%"/>
                             </h3>
                         </div>
@@ -147,7 +147,7 @@ get_header('otc');
                          alt="flags" width="100%"/>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <h3 data-translate="OTC_direct_how_t2">
+                            <h3 data-translate="">
                                 Join our Communication Channels
                             </h3>
                         </div>
@@ -183,7 +183,7 @@ get_header('otc');
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
                                      alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
-                                     src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.png"
+                                     src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.svg"
                                      alt="flags" width="100%"/>
                             </h3>
                         </div>
@@ -231,7 +231,7 @@ get_header('otc');
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/OTC_Direct/Desktop/Trade.svg" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Trade.png" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
@@ -257,7 +257,7 @@ get_header('otc');
                                                src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.5.png"
                                                alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
-                                     src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.png"
+                                     src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.5.svg"
                                      alt="flags" width="100%"/>
                             </h3>
                         </div>
@@ -382,6 +382,13 @@ get_header('otc');
             </div>
 
         </div>
+        <div class="background-img">
+            <img src="<?= get_template_directory_uri() ?>/img/bg3.svg"
+                 alt="images not found">
+            <img class="mobile"
+                 src="<?= get_template_directory_uri() ?>/img/bg3_mobile.svg"
+                 alt="images not found">
+        </div>
     </section>
     <section class="signup-area">
         <div class="background-img">
@@ -409,7 +416,7 @@ get_header('otc');
     </section>
     <style>
         section {
-            padding: 150px 0 50px 0;
+            padding: 50px 0 50px 0;
         }
 
         .banner-area {
@@ -427,6 +434,7 @@ get_header('otc');
 
         @media screen and (max-width: 900px) {
             .banner-area {
+                padding-top: 4rem;
                 height: 1000px;
             }
 
@@ -442,7 +450,7 @@ get_header('otc');
         }
 
         .why-img {
-            height: 200px;
+            height: 150px;
             justify-content: center;
             display: flex;
             position: relative;
@@ -450,14 +458,14 @@ get_header('otc');
         }
 
         .why-img img {
-            height: 150px;
+            height: 130px;
             width: auto;
             position: relative;
         }
 
 
         .why-container {
-            padding: 30px 30px 0 30px;
+            padding: 70px 30px 0 30px;
         }
 
         .why-container h4 {
@@ -477,7 +485,6 @@ get_header('otc');
 
         .tab-switch a:hover,
         .tab-switch a.selected {
-            font-weight: bold;
             color: #05004D;
             border-bottom: 3px solid #c7ba9a;
             cursor: pointer;
@@ -489,23 +496,26 @@ get_header('otc');
         }
 
         .custom-container .img-container img {
-            width: 80% !important;
+            width: 60% ;
             top: -90px;
             max-width: 100vw;
+            margin: 20px;
         }
 
         .trapezoid {
+            top: 70px;
             z-index: -1;
             position: absolute;
             width: 100vw;
-            height: 687px;
+            height: 700px;
             border-top: 65px solid transparent;
             border-bottom: 30px solid transparent;
             border-right: 100vw solid #F8F8F8;
         }
 
         .how-container {
-            padding-top: 100px;
+            position: relative;
+            padding-top: 140px;
             min-height: 500px;
             width: 100vw;
         }
@@ -550,37 +560,85 @@ get_header('otc');
             justify-content: center;
         }
 
-        .faq {
-            background-color: #F8F8F8;
-            padding: 200px 0 300px 0;
-            background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: bottom;
+
+        .faq .background-img .mobile{
+            display: block;
+            width: 100%;
+            padding-top: 20px;
+        }
+        .faq .background-img img{
+            display: none;
+            width: 100%;
+            padding-top: 100px;
+            /*background-image: url(/wp-content/themes/virgocx/img/bg3.svg);*/
         }
 
-
-        .how-area {
-            padding-bottom: 0;
-        }
-
-        .how-area h2,
         .why-area h2,
         .faq h2 {
             text-align: center;
             font-size: 36px;
             font-weight: bold;
             color: #05004d;
-            padding-bottom: 100px;
+            padding-bottom: 50px;
         }
+
+
+        .how-area h2{
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #05004d;
+            padding-bottom: 0px;
+        }
+
+        .faq {
+            background-color: #F8F8F8;
+            padding: 50px 0 0px 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        @media screen and (min-width: 900px) {
+            .faq {
+                padding: 200px 0 0px 0;
+            }
+            .how-area h2,
+            .why-area h2,
+            .faq h2 {
+                padding-bottom: 100px;
+            }
+
+            .faq .background-img img{
+                display: block;
+                /*background-image: url(/wp-content/themes/virgocx/img/bg3.svg);*/
+            }
+
+            .faq .background-img .mobile{
+                display: none;
+            }
+
+            .how-area h2,
+            .why-area h2,
+            .faq h2 {
+                text-align: center;
+                font-size: 36px;
+                font-weight: bold;
+                color: #05004d;
+                padding-bottom: 100px;
+            }
+        }
+
+        .how-area {
+            padding-bottom: 0;
+        }
+
 
 
         .signup-area h2 {
             text-align: center;
             font-size: 36px;
-            font-weight: bold;
             color: white;
-            padding-bottom: 100px;
         }
 
         .faq .panel-default > .panel-heading {
@@ -750,11 +808,8 @@ get_header('otc');
                 margin: 0;
             }
 
-            .how-text h3 {
-                margin-left: 80px;
-            }
-
             .number-left {
+                width: 150px;
                 left: 0px;
                 top: -70px;
             }
@@ -768,7 +823,7 @@ get_header('otc');
                 width: 150px;
                 height: auto;
                 position: absolute;
-                left: 0px;
+                left: -15px;
                 top: -70px;
 
             }
@@ -826,10 +881,9 @@ get_header('otc');
             });
 
             function scroll_to_container(index) {
-                console.log(index);
-                console.log('.tabs .how-container:nth-of-type(' + (index + 1) + ')');
                 $('html, body').animate({
-                    scrollTop: $('.tabs .how-container:nth-of-type(' + (index + 1) + ')').offset().top
+                    scrollTop: $('.tabs .how-conta' +
+                        'iner:nth-of-type(' + (index + 1) + ')').offset().top
                 }, 800);
             }
 

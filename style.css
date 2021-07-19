@@ -10730,7 +10730,7 @@ form input[type="submit"]:hover {
 }
 
 .footer-area-otc {
-	padding: 16px 0px;
+	padding: 50px 0px;
 	/* border-bottom: 1px solid #9484eb; */
 	background: #05004d;
 }
@@ -12452,11 +12452,12 @@ form.normal input[type="submit"] {
 	background: var(--VirgoCX-signup-blue);
 }
 .signup-area .round-btn{
-	background-color: transparent;
+	white-space: nowrap;
+	background-color: inherit;
 }
 
 .round-btn:active{
-	color: #05004D;!important;
+	color: #05004D!important;
 	border: 2px solid white!important;
 	background-color: white;
 }
@@ -12492,19 +12493,18 @@ form.normal input[type="submit"] {
 	color: var(--VirgoCX-blue);
 }
 .navbar-nav-otc{
-	font-family: "Matter-Bold";
+	font-family: "Matter-Regular";
 	position: relative;
 }
 
 .navbar-nav-otc .earn-btn {
-	/*background: var(--VirgoCX-blue);*/
 	color: white;
 	border-radius: 50px;
 	border: 1px solid var(--VirgoCX-gold) !important;
 	padding: 2px 14px !important;
 	display: block;
 	max-width: 120px;
-    margin: 0 0 0 auto;
+    margin: 0 20px 0 15px;
 }
 
 .navbar-nav-otc .dropdown-left-img{
@@ -12670,6 +12670,7 @@ text-align: right;
 }
 .input-underlined  input,
 .input-filled  input {
+	color: white;
 	border: none;
 	border-bottom: 0.125rem solid var(--VirgoCX-purple-contrast);
 	background:transparent;

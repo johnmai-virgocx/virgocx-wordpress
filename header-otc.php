@@ -135,7 +135,7 @@
                             </li>
                         </ul>
 
-                        <div class="navbar-nav-otc dropdown-toggle-otc nav-item">
+                        <div class="navbar-nav-otc dropdown-toggle-otc nav-item earn-btn-container">
                             <a class="nav-link earn-btn dropdown-toggle" href="/en-referral" role="button"
                                id="dropdownMenuLink"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -149,7 +149,7 @@
                             </div>
                         </div>
 
-                        <div class="right_side_btn_otc y-2 my-lg-0">
+                        <div class="right_side_btn_otc">
                             <div class="navbar-nav-otc nav-item">
                                 <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                      alt="images not found"/>

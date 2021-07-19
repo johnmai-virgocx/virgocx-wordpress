@@ -192,15 +192,15 @@
         color: #fff;
     }
 
-    .app-download .ios {
+    .app-download a:hover .ios {
         color: #B59964;
         background-color: white;
         background-image: url(/wp-content/themes/virgocx/img/footer/ios_gold.svg);
     }
 
-    .app-download a:hover.ios {
+    .app-download .ios {
         color: white;
-        background-image: url(/wp-content/themes/virgocx/img/footer/ios_white.png) !important;
+        background-image: url(/wp-content/themes/virgocx/img/footer/IOS_white.png) !important;
     }
 
     .app-download a:hover.play {

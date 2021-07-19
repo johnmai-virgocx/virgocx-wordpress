@@ -448,7 +448,7 @@ get_header('otc');
         </div>
     </section>
     <section class="product-area">
-        <div class="container custom-container">
+        <div class="container pb-5 custom-container">
             <div class="row d-flex justify-content-around">
 
                 <div class="col-lg-6 col-md-12 product-text">
@@ -497,7 +497,7 @@ get_header('otc');
                                                         class="blue">receive
                                             best execution and flexible settlements post-trade.</span>
                                             </p>
-                                            <a class="round-btn-light" href="../en-otc-direct/">
+                                            <a class="round-btn-light mt-5" href="../en-otc-direct/">
                                                 learn more
                                             </a>
                                         </div>
@@ -525,10 +525,10 @@ get_header('otc');
                                                 business. From trading like Bitcoin, Ethereum,
                                                 and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                             </p>
-                                            <a class="round-btn-light scroll-to-sign-up">learn more
+                                            <a class="round-btn-light scroll-to-sign-up mt-5">learn more
                                             </a>
                                         </div>
-                                        <div class="col-lg-6 col-md-12">
+                                        <div class="col-lg-6 col-md-12 mt-5">
                                             <img
                                                     src="<?= get_template_directory_uri() ?>/img/Landing_Page/OurProducts/OTC_Chat_Broker.png"
                                                     alt="images not found"
@@ -704,6 +704,13 @@ get_header('otc');
                 </div>
             </div>
         </div>
+        <div class="background-img">
+            <img src="<?= get_template_directory_uri() ?>/img/bg3.svg"
+                 alt="images not found">
+            <img class="mobile"
+                 src="<?= get_template_directory_uri() ?>/img/bg3_mobile.svg"
+                 alt="images not found">
+        </div>
     </section>
     <section class="signup-area">
         <div class="background-img">
@@ -748,8 +755,7 @@ get_header('otc');
             max-width: 90vw;
             position: absolute;
             z-index: -1;
-            /*left: 0;*/
-            top: -50px;
+            top: 0px;
         }
 
         .banner-area {
@@ -765,9 +771,13 @@ get_header('otc');
         .banner-area h1 {
             color: white;
         }
-
-        .banner-area p {
-            white-space: nowrap;
+        @media screen and (min-width: 900px) {
+            .banner-img-2 {
+                top: -50px;
+            }
+            .banner-area p {
+                white-space: nowrap;
+            }
         }
 
         .banner-area .round-btn {
@@ -807,12 +817,21 @@ get_header('otc');
 
 
         @media screen and (max-width: 900px) {
+            .carousel-area {
+                padding: 0px 0px 60px;
+                color: white;
+                background: var(--VirgoCX-blue);
+            }
             .client-area .background-img img:nth-child(2) {
                 display: none;
             }
 
             .arrow-right-img {
                 display: none;
+            }
+
+            .product-area .container:nth-child(1){
+                padding-bottom: 0px!important;
             }
         }
 
@@ -856,10 +875,12 @@ get_header('otc');
             background: white;
         }
 
+
+
         .why-area {
-            padding: 40px 0px 200px;
+            padding: 40px 0px 0px;
             color: var(--VirgoCX-blue);
-            background-image: url(/wp-content/themes/virgocx/img/bg3_mobile.svg);
+            /*background-image: url(/wp-content/themes/virgocx/img/bg3_mobile.svg);*/
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -887,7 +908,7 @@ get_header('otc');
             color: var(--VirgoCX-blue);
             font-weight: 600;
             font-size: 36px;
-            text-align: left;
+            text-align: center;
         }
 
         .why-text > * {
@@ -921,6 +942,17 @@ get_header('otc');
         .why-area p {
             color: var(--VirgoCX-grey);
         }
+        .why-area .background-img .mobile{
+            display: block;
+            width: 100%;
+            padding-top: 0px;
+        }
+        .why-area .background-img img{
+            display: none;
+            width: 100%;
+            padding-top: 100px;
+            /*background-image: url(/wp-content/themes/virgocx/img/bg3.svg);*/
+        }
 
         @media screen and (min-width: 900px) {
             .banner-area {
@@ -933,12 +965,17 @@ get_header('otc');
             }
 
             .who-text h2 {
+                text-align: left;
                 top: 100px;
                 position: relative;
             }
 
-            .why-area {
-                background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
+            .why-area .background-img img{
+                /*background-image: url(/wp-content/themes/virgocx/img/bg3.svg);*/
+                display: block;
+            }
+            .why-area .background-img .mobile{
+                display: none;
             }
         }
 
@@ -1206,7 +1243,7 @@ get_header('otc');
         .tabs-horizontal nav a.selected {
             border-bottom: 3px solid #c7ba9a;
             color: white;
-            font-weight: bold;
+            font-family: "Matter-Bold";
         }
 
         .product-tabs-horizontal .container,

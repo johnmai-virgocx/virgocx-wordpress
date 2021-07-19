@@ -676,7 +676,9 @@
 
         // header triangle toggle
         $('.dropdown-toggle').click( function () {
-            $(this).next().toggleClass('flipped')
+            if(!$(this).className.indexOf('earn-btn')>=0){
+                $(this).next().toggleClass('flipped')
+            }
         });
 
     });
