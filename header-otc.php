@@ -106,7 +106,8 @@
                             </li>
                             <li class="dropdown-toggle-otc">
                                 <a class="item" href="/en-otc-landing/">
-                                    OTC<img class="arrow-down"
+                                    OTC
+                                    <img class="arrow-down ml-1"
                                             src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                             alt="images not found">
                                 </a>

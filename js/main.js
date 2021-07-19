@@ -676,9 +676,7 @@
 
         // header triangle toggle
         $('.dropdown-toggle').click( function () {
-            console.log($(this).next())
             $(this).next().toggleClass('flipped')
-            // $(this).next().css("transform", "rotate( -180deg )");
         });
 
     });

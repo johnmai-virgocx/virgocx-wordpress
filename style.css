@@ -12444,8 +12444,15 @@ form.normal input[type="submit"] {
 	-webkit-transition: 0.3s all ease;
 }
 
+
+.signup-area {
+	text-align: center;
+	padding: 40px 0px 60px;
+	color: white !important;
+	background: var(--VirgoCX-signup-blue);
+}
 .signup-area .round-btn{
-	background-color: var(--VirgoCX-signup-blue);
+	background-color: transparent;
 }
 
 .round-btn:active{
@@ -12499,11 +12506,16 @@ form.normal input[type="submit"] {
 	max-width: 120px;
     margin: 0 0 0 auto;
 }
+
 .navbar-nav-otc .dropdown-left-img{
 	position: relative;
 	display: inline-block;
 	left: 20px;
 	width: 15px;
+}
+
+.navbar-nav-otc:nth-child(1) .dropdown-left-img{
+	width: 20px;
 }
 
 .navbar-nav-otc .nav-link {
@@ -12548,7 +12560,7 @@ form.normal input[type="submit"] {
 	background-color: #1E1A5F;
 	border-bottom: 0;
 	padding: 0;
-	margin: 10px 0 0 15px;
+	margin: 10px 0 0 0px;
 	box-shadow: none;
 	top: 80% ;
 	text-align: left;
@@ -12727,9 +12739,11 @@ a{
 @media (max-width: 900px) {
 	.signup-area .background-img img:nth-child(1){
 		width: 70%;
+		opacity: 0.5;
 	}
 
 	.signup-area .background-img img:nth-child(2){
+		opacity: 0.5;
 		width: 50%;
 	}
 

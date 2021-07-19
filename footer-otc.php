@@ -240,6 +240,10 @@
         top: 0;
         left: 40px;
     }
+
+    .terms-text:hover {
+        border-bottom: 1px solid white;
+    }
 </style>
 <script>
 </script>

@@ -399,7 +399,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img mnp">
                         <a href="https://www.mnp.ca/en">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/MNP.png" class="img-fluid"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/MNP.svg" class="img-fluid"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -407,7 +407,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img">
                         <a href=" https://www.chainalysis.com/ ">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/chainalysis.png"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/chainalysis.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -423,7 +423,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img">
                         <a href="https://www.coindesk.com/canadian-exchange-virgocx-taps-ledger-vault-for-custody-insurance-support">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/coindesk.png"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/coindesk.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -431,7 +431,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img">
                         <a href="https://blockgeeks.com/community-partners/virgocx/">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/blockgeeks.png"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/blockgeeks.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -439,7 +439,7 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6 ">
                     <div class="press-img middle">
                         <a href="https://www.blakes.com/">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/blakes.png"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Blakes.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -468,12 +468,12 @@ get_header('otc');
         </div>
         <div class="container pt-5 custom-container">
             <div class="row d-flex justify-content-around">
-                <div class="col-lg-3 col-md-12">
+                <div class="col-lg-2 col-md-12">
                     <div class="who-text">
                         <h2 data-translate="Our_Product">Our Product</h2>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-12">
+                <div class="col-lg-10 col-md-12">
                     <div class="tabs">
                         <div class="product-tabs-horizontal">
                             <nav class="row">
@@ -755,10 +755,9 @@ get_header('otc');
         .banner-area {
             position: relative;
             z-index: 888888;
-            padding-top: 8rem;
-            /*padding-bottom: 4rem;*/
+            padding-top: 4rem;
             background-color: var(--VirgoCX-blue);
-            font-size: 1.4rem;
+            font-size: 1rem;
             overflow: hidden;
             min-height: 700px;
         }
@@ -780,6 +779,10 @@ get_header('otc');
             padding: 140px 0px 60px;
             color: white;
             background: var(--VirgoCX-blue);
+        }
+
+        .carousel-area span{
+            font-size: 0.9rem;
         }
 
         .client-area {
@@ -814,7 +817,7 @@ get_header('otc');
         }
 
         .client-text {
-            padding-bottom: 60px;
+            padding: 0 15px 60px 15px;
         }
 
 
@@ -828,19 +831,14 @@ get_header('otc');
             color: var(--VirgoCX-gold);
         }
 
-        .press-img mnp img{
-            width: 90px;
+        .mnp a img{
+            width: 90px!important;
         }
-        .press-img middle img{
+        .middle a img{
             width: 130px;
         }
-        .press-img middle img{
+         .middle a img{
             width: 130px;
-        }
-        .signup-area {
-            padding: 40px 0px 60px;
-            color: white;
-            background: var(--VirgoCX-signup-blue);
         }
 
         .signup-area h2 {
@@ -859,7 +857,7 @@ get_header('otc');
         }
 
         .why-area {
-            padding: 40px 0px 60px;
+            padding: 40px 0px 200px;
             color: var(--VirgoCX-blue);
             background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
             background-size: 100%;
@@ -889,7 +887,7 @@ get_header('otc');
             color: var(--VirgoCX-blue);
             font-weight: 600;
             font-size: 36px;
-            text-align: center;
+            text-align: left;
         }
 
         .why-text > * {
@@ -926,6 +924,7 @@ get_header('otc');
 
         @media screen and (min-width: 900px) {
             .banner-area {
+                padding-top: 8rem;
                 min-height: 600px;
             }
 
@@ -934,8 +933,12 @@ get_header('otc');
             }
 
             .who-text h2 {
-                top: 50%;
-                position: absolute;
+                top: 100px;
+                position: relative;
+            }
+
+            .why-area {
+                background-image: url(/wp-content/themes/virgocx/img/bg3_mobile.svg);
             }
         }
 
@@ -983,6 +986,10 @@ get_header('otc');
             flex-wrap: wrap;
             margin: 0;
             overflow: hidden;
+        }
+
+        .tabs .container h3{
+            padding-top: 2rem!important;
         }
 
         .tabs [class^="tab"] label,
@@ -1163,7 +1170,7 @@ get_header('otc');
         }
 
         @media screen and (min-width: 900px) {
-            .product-tabs-horizontal h3:nth-child(1) {
+            .product-tabs-horizontal .row .container:nth-child(1) h3{
                 white-space: nowrap;
             }
         }
@@ -1179,7 +1186,7 @@ get_header('otc');
 
         .product-tabs-horizontal nav a,
         .tabs-horizontal nav a {
-            font-size: 1.5em;
+            font-size: 19px;
             color: white !important;
             border-bottom: 1px solid rgba(239, 237, 239, 0.5);
             padding: 5px 0 5px 20px;
