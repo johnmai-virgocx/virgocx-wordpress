@@ -744,8 +744,8 @@ get_header('otc');
 
         .banner-img-1 {
             position: absolute;
-            left: -200px;
-            top: -250px;
+            left: 0px;
+            top: 30px;
             width: 150%;
             z-index: -1;
             max-width: 100vw;
@@ -755,7 +755,7 @@ get_header('otc');
             max-width: 90vw;
             position: absolute;
             z-index: -1;
-            top: 0px;
+            top: 30px;
         }
 
         .banner-area {
@@ -771,7 +771,14 @@ get_header('otc');
         .banner-area h1 {
             color: white;
         }
+        .banner-area p{
+            font-weight: bold;
+        }
         @media screen and (min-width: 900px) {
+            .banner-img-1 {
+                left: -200px;
+                top: -250px;
+            }
             .banner-img-2 {
                 top: -50px;
             }

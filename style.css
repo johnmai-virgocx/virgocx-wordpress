@@ -10880,7 +10880,7 @@ form input[type="submit"]:hover {
 	background: transparent;
 }
 
-.newsletter button img {
+.footer-area-otc .newsletter button img {
 	width: 30px;
 	/*added for otc*/
 	position: relative;
@@ -12490,6 +12490,7 @@ form.normal input[type="submit"] {
 }
 
 .blue{
+	font-family: "Matter-Bold";
 	color: var(--VirgoCX-blue);
 }
 .navbar-nav-otc{
