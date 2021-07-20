@@ -57,14 +57,19 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     }
 
     #crypto-options{
-        height:286px;
+        /* height:286px; */
         overflow-y:scroll;
-        position:absolute;
+        /* position:absolute; */
         
         
         
         
 
+    }
+
+
+    .dropd{
+        height:286px;
     }
 
     

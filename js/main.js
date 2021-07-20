@@ -439,6 +439,7 @@
                 main.html(default_text);
                 // ul.toggle("fast");
                 // li.toggle("fast");
+                ul.addClass("dropd");
                 if(isShow==true){
                     ul.hide();
                     isShow=false;
@@ -524,8 +525,8 @@
                 'aave/cad': '/page#/advancedTrade/62',
                 'snx/cad': '/page#/advancedTrade/64',
                 'knc/cad': '/page#/advancedTrade/65',
-                'bat/cad': '/page#/advancedTrade/66',
-                'comp/cad': '/page#/advancedTrade/67',
+                'comp/cad': '/page#/advancedTrade/66',
+                'bat/cad': '/page#/advancedTrade/67',
             }
 
             let index = 1;
