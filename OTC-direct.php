@@ -85,7 +85,7 @@ get_header('otc');
                 </p>
                 <p data-translate="OTC_direct_banner2_col3_2">
                     By having close relationships with our partner banks, our settlement speeds for fiat to
-                    cryptocurrency is<span class="blue"> one of the most competitive</span> in Canada.
+                    cryptocurrency is <span class="blue">one of the most competitive</span> in Canada.
                 </p>
             </div>
         </div>
@@ -438,7 +438,7 @@ get_header('otc');
             padding-top: 8rem;
             padding-bottom: 8rem;
             background-color: #05004D;
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
 
         .banner-area h1 {
@@ -448,7 +448,7 @@ get_header('otc');
         @media screen and (max-width: 900px) {
             .banner-area {
                 padding-top: 0rem;
-                height: 800px;
+                height: 700px;
             }
 
             .banner-area .OTC-header img {
