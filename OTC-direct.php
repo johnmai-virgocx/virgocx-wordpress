@@ -85,7 +85,7 @@ get_header('otc');
                 </p>
                 <p data-translate="OTC_direct_banner2_col3_2">
                     By having close relationships with our partner banks, our settlement speeds for fiat to
-                    cryptocurrency is<span class="blue">one of the most competitive</span> in Canada.
+                    cryptocurrency is<span class="blue"> one of the most competitive</span> in Canada.
                 </p>
             </div>
         </div>
