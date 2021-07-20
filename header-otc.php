@@ -156,16 +156,16 @@
                                 <a class="nav-link dropdown-toggle" href="/en-referral" role="button"
                                    id="dropdownMenuLinkEN"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                   data-translate="header_full">
+                                   data-translate="OTC_header_full">
                                     English
                                 </a>
                                 <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="lang">
                                     <option value="en" id="en" class="dropdown-item lang-dropdown"
-                                            data-translate="header_ENG"></option>
+                                            data-translate="OTC_header_ENG"></option>
                                     <option value="zh" id="zh" class="dropdown-item lang-dropdown"
-                                            data-translate="header_CH"></option>
+                                            data-translate="OTC_header_CH"></option>
                                 </div>
                             </div>
                             <div class="navbar-nav-otc nav-item">

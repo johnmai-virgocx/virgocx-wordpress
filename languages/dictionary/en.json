@@ -56,7 +56,10 @@
 	"header_Register": "Register ",
 	"header_ENG": "Eng",
 	"header_CH": "中文",
-	"header_full":"English",
+	"header_full":"中文",
+	"OTC_header_ENG": "English",
+	"OTC_header_CH": "中文",
+	"OTC_header_full":"English",
 
 	"footer_col1": "VirgoCX",
 	"footer_col1_Home": "Home",
