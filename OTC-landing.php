@@ -527,7 +527,7 @@ get_header('otc');
                                                 business. From trading like Bitcoin, Ethereum,
                                                 and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                             </p>
-                                            <a class="round-btn-light scroll-to-sign-up mt-5">learn more
+                                            <a class="round-btn-light mt-5" href="../en-otc-chat-broker/">learn more
                                             </a>
                                         </div>
                                         <div class="col-lg-6 col-md-12 mt-5">
@@ -823,7 +823,7 @@ get_header('otc');
         }
 
         .carousel-area {
-            padding: 140px 0px 60px;
+            padding: 140px 0px 40px;
             color: white;
             background: var(--VirgoCX-blue);
         }
@@ -885,6 +885,7 @@ get_header('otc');
             padding: 40px 0px 60px;
             color: white;
             background: #080449;
+            opacity: 0.9;
         }
 
         .press-area h2 {
@@ -1421,7 +1422,7 @@ get_header('otc');
                     });
                 } else {
                     owl.owlCarousel({
-                        items: 3,
+                        items: 2,
                         loop: true,
                         margin: 10,
                         autoplay: true,

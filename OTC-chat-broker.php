@@ -107,14 +107,14 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC
+                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC</h3>
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
                                      alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.1.svg"
                                      alt="flags" width="100%"/>
-                            </h3>
+
                         </div>
                     </div>
                 </div>
@@ -177,13 +177,13 @@ get_header('otc');
                         <div class="how-text title-right">
                             <h3 data-translate="OTC_chat_how_3">
                                 Deposit Funds
+                            </h3>
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.3.png"
                                      alt="flags" width="100%"/>
                                 <img class="number-right-mobile"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Mobile/No.3.svg"
                                      alt="flags" width="100%"/>
-                            </h3>
                         </div>
                     </div>
                 </div>
@@ -440,23 +440,29 @@ get_header('otc');
             padding-top: 8rem;
             padding-bottom: 8rem;
             background-color: #05004D;
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
 
         .banner-area h1 {
+            width: 83%;
             color: white;
         }
 
         @media screen and (max-width: 900px) {
             .banner-area {
                 padding-top: 4rem;
-                height: 1000px;
+                height: 900px;
             }
 
             .banner-area .OTC-header img {
                 position: absolute;
                 width: 100vw;
-                left: -60px;
+                top:20px;
+                left: -20px;
+            }
+
+            .banner-area h1 {
+                width: 100%;
             }
         }
 
@@ -843,7 +849,9 @@ get_header('otc');
 
             }
 
+
         }
+
 
         .press-area {
             padding: 40px 0px 60px;
@@ -860,10 +868,16 @@ get_header('otc');
         }
 
         .OTC-header {
-            width: 70%;
+            width: 90%;
             margin: auto;
         }
 
+        @media screen and (min-width: 900px) {
+            .OTC-header P{
+                width: 85%;
+            }
+
+        }
         .how-area ul {
             margin-left: 1em;
             /*list-style-position: outside;*/
