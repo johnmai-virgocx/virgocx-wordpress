@@ -100,12 +100,12 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu">
                             <li>
-                                <a class="item" href="/page#/advancedTrade/24">
+                                <a class="item" href="/page#/advancedTrade/24" data-translate="OTC_home">
                                     Retail Platform
                                 </a>
                             </li>
                             <li class="dropdown-toggle-otc">
-                                <a class="item" href="/en-otc-landing/">
+                                <a class="item" href="/en-otc-landing/" data-translate="footer_col3_OTC">
                                     OTC
                                     <img class="arrow-down ml-1"
                                             src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
@@ -113,23 +113,23 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-otc" aria-labelledby="dropdownMenuLink">
                                     <a href="/en-otc-direct/" class="dropdown-item"
-                                       data-translate="header_OTC_Direct">OTC Direct</a>
+                                        data-translate="OTC_landing_banner2_tag1">OTC Direct</a>
                                     <a href="/en-otc-chat-broker/" class="dropdown-item"
-                                       data-translate="header_OTC_Chat_Broker">OTC Chat Broker</a>
+                                        data-translate="OTC_landing_banner2_tag2">OTC Chat Broker</a>
                                 </div>
                             </li>
                             <li>
-                                <a class="item" href="https://learn.virgocx.ca/">
+                                <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn">
                                     Learn
                                 </a>
                             </li>
                             <li>
-                                <a class="item" href="https://virgocx.ca/en-about-virgocx/">
+                                <a class="item" href="https://virgocx.ca/en-about-virgocx/" data-translate="header_About">
                                     About
                                 </a>
                             </li>
                             <li>
-                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us">
+                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us"data-translate="header_Support">
                                     Support
                                 </a>
                             </li>

@@ -28,7 +28,7 @@ get_header('otc');
                             <p class="tag-line gold" data-translate="OTC_chat_header_desc">
                                 We perform large trades using best execution through our tailored service for
                                 institutions and individuals.</p>
-                            <a class="round-btn scroll-to-sign-up">
+                            <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                                 Get started
                             </a>
                         </div>
@@ -95,11 +95,11 @@ get_header('otc');
 
         <div class="tabs">
             <nav class="tab-switch row">
-                <a class="selected">1. Onboard</a>
-                <a>2. Set Up</a>
-                <a>3. Deposit</a>
-                <a>4. Trade</a>
-                <a>5. Settle</a>
+                <a class="selected"  data-translate="OTC_direct_how1">1. Onboard</a>
+                <a data-translate="OTC_chat_how2">2. Set Up</a>
+                <a data-translate="OTC_direct_how3">3. Deposit</a>
+                <a data-translate="OTC_direct_how4">4. Trade</a>
+                <a data-translate="OTC_direct_how5">5. Settle</a>
             </nav>
 
             <div class="how-container">
@@ -417,7 +417,7 @@ get_header('otc');
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="">
-                        <h2 data-translate="Our_Product">Sign Up Today</h2>
+                        <h2 data-translate="OTC_Signup">Sign Up Today</h2>
                     </div>
                     <div class="how-content">
                         <div class="how-item">

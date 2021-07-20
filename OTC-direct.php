@@ -23,7 +23,7 @@ get_header('otc');
                                     OTC Direct
                                 </span>
                             </h1>
-                            <a class="round-btn scroll-to-sign-up">
+                            <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                                 Get started
                             </a>
                         </div>
@@ -39,7 +39,7 @@ get_header('otc');
         </div>
     </section>
     <section class="why-area">
-        <h2>Why Use OTC Direct? </h2>
+        <h2 data-translate="OTC_direct_why">Why Use OTC Direct? </h2>
         <div class="row custom-container">
             <div class="why-container col-lg-4 col-md-12">
                 <div class="why-img">
@@ -95,11 +95,11 @@ get_header('otc');
 
         <div class="tabs">
             <nav class="tab-switch row">
-                <a class="selected">1. Onboard</a>
-                <a>2. Set Up</a>
-                <a>3. Deposit</a>
-                <a>4. Trade</a>
-                <a>5. Settle</a>
+                <a class="selected" data-translate="OTC_direct_how1">1. Onboard</a>
+                <a data-translate="OTC_direct_how2">2. Set Up</a>
+                <a data-translate="OTC_direct_how3">3. Deposit</a>
+                <a data-translate="OTC_direct_how4">4. Trade</a>
+                <a data-translate="OTC_direct_how5">5. Settle</a>
             </nav>
 
             <div class="how-container">
@@ -415,7 +415,7 @@ get_header('otc');
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="">
-                        <h2 data-translate="Our_Product">Sign Up Today</h2>
+                        <h2 data-translate="OTC_Signup">Sign Up Today</h2>
                     </div>
                     <div class="how-content">
                         <div class="how-item">

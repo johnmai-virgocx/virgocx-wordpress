@@ -144,7 +144,7 @@ get_header();
                              alt="images not found">
                     </div>
                     <div class="col-lg-10">
-                        <h5>Share your affiliate link </h5>
+                        <h5>Share Your Affiliate Link </h5>
                         <p>Share your affiliate link on social media and other channels. The more you share, the more you
                             earn! Only the sky's the limit!</p>
                     </div>
@@ -156,16 +156,16 @@ get_header();
                              alt="images not found">
                     </div>
                     <div class="col-lg-10">
-                        <h5>Sit back and earn passive income</h5>
+                        <h5>Sit Back and Earn Passive Income</h5>
                         <p>We help you monetize your traffic! You can earn the following bonuses:</p>
                             <ul>
                              
 
-                             <li>$10 for every user that gets verified on our platform,	</li> 
+                             <li><b>$10 for every user that gets verified on our platform,</b>	</li> 
 
-                             <li>$20 when they make their first fiat deposit of $100+ CAD, </li> 
+                             <li><b>$20 when they make their first fiat deposit of $100+ CAD,</b> </li> 
 
-                             <li>plus, a 0.08% commission share on all trading amounts they make!</li>   
+                             <li><b>Plus, a 0.08% commission share on all trading amounts they make!</b></li>   
 
                             
                             </ul>

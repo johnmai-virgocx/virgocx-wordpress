@@ -24,7 +24,7 @@ get_header('otc');
                         <p class="tag-line gold" data-translate="OTC_landing_banner_desc">Dedicated for seamless
                             execution of large block transactions over $30,000 CAD</p>
 
-                        <a class="round-btn scroll-to-sign-up">
+                        <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                             Get started
                         </a>
                     </div>
@@ -45,8 +45,8 @@ get_header('otc');
         <div class="container custom-container">
             <div class="tabs-horizontal">
                 <nav class="row">
-                    <a>Cryptocurrency</a>
-                    <a>Fiat Currency</a>
+                    <a data-translate="OTC_landing_cypto">Cryptocurrency</a>
+                    <a data-translate="OTC_landing_fiat">Fiat Currency</a>
                 </nav>
                 <div class="row carousel-background">
                     <div class="container">
@@ -497,7 +497,7 @@ get_header('otc');
                                                         class="blue">receive
                                             best execution and flexible settlements post-trade.</span>
                                             </p>
-                                            <a class="round-btn-light mt-5" href="../en-otc-direct/">
+                                            <a class="round-btn-light mt-5" href="../en-otc-direct/" data-translate="OTC_learn">
                                                 learn more
                                             </a>
                                         </div>
@@ -724,7 +724,7 @@ get_header('otc');
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="">
-                        <h2 data-translate="Our_Product">Sign Up Today</h2>
+                        <h2 data-translate="OTC_Signup">Sign Up Today</h2>
                     </div>
                     <div class="how-content">
                         <div class="how-item">
