@@ -35,7 +35,7 @@ get_header('otc');
                     </div>
 
                     <div class="col-lg-6 col-md-12">
-                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Banner Picture.png"
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Banner Picture.svg"
                              alt="flags"
                              width="100%"/>
                     </div>
@@ -229,7 +229,7 @@ get_header('otc');
                 </div>
                 <div class="row custom-container">
                     <div class="col-lg-4 col-sm-12 right img-container">
-                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Trade.png" alt="flags"/>
+                        <img src="<?= get_template_directory_uri() ?>/img/Chat Broker/Desktop/Trade.svg" alt="flags"/>
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">

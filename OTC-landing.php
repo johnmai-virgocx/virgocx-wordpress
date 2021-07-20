@@ -619,7 +619,7 @@ get_header('otc');
                 <div class="row d-flex justify-content-between">
                     <!--                    <div class="why-img">-->
                     <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.svg"
                          alt="images not found"/>
                     <!--                    </div>-->
                     <div class="col-lg-6 col-md-12">
@@ -633,7 +633,7 @@ get_header('otc');
                 </div>
                 <div class="row d-flex justify-content-between">
                     <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.png"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.svg"
                          alt="images not found"/>
 
                     <div class="col-lg-6 col-md-12 ">
@@ -646,7 +646,7 @@ get_header('otc');
                 </div>
                 <div class="row d-flex justify-content-between">
                     <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.png"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.svg"
                          alt="images not found"/>
                     <div class="col-lg-6 col-md-12 ">
                         <h3 data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
@@ -659,7 +659,7 @@ get_header('otc');
                 </div>
                 <div class="row d-flex justify-content-between">
                     <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.png"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.svg"
                          alt="images not found"/>
                     <div class="col-lg-6 col-md-12">
                         <h3 data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
@@ -672,7 +672,7 @@ get_header('otc');
                 </div>
                 <div class="row d-flex justify-content-between">
                     <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.png"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.svg"
                          alt="images not found"/>
 
                     <div class="col-lg-6 col-md-12">
@@ -688,7 +688,7 @@ get_header('otc');
                 </div>
                 <div class="row d-flex justify-content-between">
                     <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.png"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.svg"
                          alt="images not found"/>
 
                     <div class="col-lg-6 col-md-12 ">
