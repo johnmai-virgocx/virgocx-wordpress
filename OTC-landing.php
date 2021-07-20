@@ -498,7 +498,8 @@ get_header('otc');
                                                         class="blue">receive
                                             best execution and flexible settlements post-trade.</span>
                                             </p>
-                                            <a class="round-btn-light mt-5" href="../en-otc-direct/" data-translate="OTC_learn">
+                                            <a class="round-btn-light mt-5" href="../en-otc-direct/"
+                                               data-translate="OTC_learn">
                                                 learn more
                                             </a>
                                         </div>
@@ -617,11 +618,15 @@ get_header('otc');
             <div class="why-content">
 
                 <div class="row d-flex justify-content-between">
-                    <!--                    <div class="why-img">-->
-                    <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.svg"
-                         alt="images not found"/>
-                    <!--                    </div>-->
+                    <div class="why-img">
+                        <img class="why-text"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.svg"
+                             alt="images not found"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="col-lg-6 col-md-12">
                         <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
                     </div>
@@ -632,10 +637,16 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.svg"
-                         alt="images not found"/>
+                    <div class="why-img">
+                        <img class="why-text"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Zero Icon.svg"
+                             alt="images not found"/>
 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="col-lg-6 col-md-12 ">
                         <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
                     </div>
@@ -645,9 +656,15 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.svg"
-                         alt="images not found"/>
+                    <div class="why-img">
+                        <img class="why-text"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Best Icon.svg"
+                             alt="images not found"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="col-lg-6 col-md-12 ">
                         <h3 data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
                     </div>
@@ -658,9 +675,15 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.svg"
-                         alt="images not found"/>
+                    <div class="why-img">
+                        <img class="why-text"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Access Icon.svg"
+                             alt="images not found"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="col-lg-6 col-md-12">
                         <h3 data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
                     </div>
@@ -671,10 +694,16 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
-                    <img class="why-text"
-                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.svg"
-                         alt="images not found"/>
+                    <div class="why-img">
+                        <img class="why-text"
+                             src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Personalized Icon.svg"
+                             alt="images not found"/>
 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="col-lg-6 col-md-12">
                         <h3 data-translate="OTC_landing_banner4_col1-5">Personalized Services</h3>
                     </div>
@@ -690,17 +719,16 @@ get_header('otc');
                     <img class="why-text"
                          src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.svg"
                          alt="images not found"/>
-
-                    <div class="col-lg-6 col-md-12 ">
-                        <h3 data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same day, no limit settlement </span>for
-                            your USD and CAD trades. This also applies to
-                            your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
-                    </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <h3 data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same day, no limit settlement </span>for
+                        your USD and CAD trades. This also applies to
+                        your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
                 </div>
             </div>
+        </div>
         </div>
         <div class="background-img">
             <img src="<?= get_template_directory_uri() ?>/img/bg3.svg"
@@ -939,11 +967,38 @@ get_header('otc');
             position: absolute;
         }
 
-        /*.why-img span:nth-child(2){*/
-        /*    height: 50px;*/
-        /*    width: 0.5px;*/
-        /*    border: 2px solid var(--VirgoCX-gold);*/
-        /*}*/
+        .why-img {
+            position: relative;
+        }
+
+        .why-img span:nth-child(n) {
+            width: 1px;
+            height: 15px;
+            border: 1px solid #C7BA9A;
+            position: absolute;
+            margin: auto;
+            left: 20px;
+            top: 50px;
+        }
+
+        .why-img span:nth-child(2) {
+            top: 50px;
+        }
+
+        .why-img span:nth-child(3) {
+
+            top: 80px;
+        }
+
+        .why-img span:nth-child(4) {
+            display: block;
+            top: 110px;
+        }
+
+        .why-img span:nth-child(5) {
+            display: block;
+            top: 140px;
+        }
 
         .why-area h3,
         .why-area p {
@@ -993,6 +1048,15 @@ get_header('otc');
             }
 
             .why-area .background-img .mobile {
+                display: none;
+            }
+
+
+            .why-img span:nth-child(4) {
+                display: none;
+            }
+
+            .why-img span:nth-child(5) {
                 display: none;
             }
         }
