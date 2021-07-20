@@ -56,6 +56,7 @@
 	"header_Register": "注册 ",
 	"header_ENG": "英语",
 	"header_CH": "中文",
+	"header_full":"英语",
 
 	"footer_col1": "VirgoCX",
 	"footer_col1_Home": "首页",
@@ -200,6 +201,7 @@
 	"OTC_landing_banner4_col2-6":"我们通常为您的美元和加元交易提供当天无限额结算。 这也适用于您的比特币、以太坊、USDT 和任何其他加密货币结算。",
 	"OTC_Signup":"立即注册",
 	"OTC_Signcheck":"我准备交易超过3万加币以上的加密货币",
+	"my_account":"我的账户",
 	
 	"OTC_direct_h":"使用OTC Direct即刻完成大额交易",
 	"OTC_direct_24_7":"全天候不间断服务",

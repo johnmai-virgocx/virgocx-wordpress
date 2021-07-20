@@ -56,6 +56,7 @@
 	"header_Register": "Register ",
 	"header_ENG": "Eng",
 	"header_CH": "中文",
+	"header_full":"English",
 
 	"footer_col1": "VirgoCX",
 	"footer_col1_Home": "Home",
@@ -169,6 +170,7 @@
 	"OTC_landing_banner2_tag1":"OTC Direct",
 	"OTC_Signup":"Sign Up Today",
 	"OTC_Signcheck":"I am looking to transact $30,000 CAD or more in digital assets",
+	"my_account":"My Account",
 	
 	
 	"OTC_home":"Home",
