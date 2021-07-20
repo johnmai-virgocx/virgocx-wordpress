@@ -82,10 +82,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span>Ethereum</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">ETH</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -100,10 +100,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span data-translate="EOS">EOS</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">EOS</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -118,10 +118,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span>Dogecoin</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">DOGE</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -136,10 +136,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span>DAI</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">DAI</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -154,7 +154,7 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span>Bitcoin_Cash</span>
                                                 </div>
                                                 <div class="row">
                                                     <span class="bold">BTC</span>
@@ -172,10 +172,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span>Litecoin</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">LTC</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -188,10 +188,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Ethereum</span>
+                                                    <span>Paxgold</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">ETH</span>
+                                                    <span class="bold">PAXG</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -206,10 +206,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Tether</span>
+                                                    <span>Uniswap</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">USDT</span>
+                                                    <span class="bold">UNI</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -224,10 +224,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin Cash</span>
+                                                    <span>USDC</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BCH</span>
+                                                    <span class="bold">USDC</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -242,10 +242,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Doge</span>
+                                                    <span>USDT</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">DOGE</span>
+                                                    <span class="bold">USDT</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -260,10 +260,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Litecoin</span>
+                                                    <span>Stellar</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">LTC</span>
+                                                    <span class="bold">XLM</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -280,16 +280,16 @@ get_header('otc');
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/AUD.png"
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/255px-Flag_of_Australia_(converted) 1.png"
                                                         alt="images not found"
                                                 >
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin</span>
+                                                    <span>Australian Dollar</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">AUD</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -297,15 +297,15 @@ get_header('otc');
                                     <div class="owl-item ">
                                         <a href="/page#/advancedTrade/25" class="pg-top">
                                             <div class="carousel-img">
-                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/255px-Flag_of_Australia_(converted) 1.png"
+                                                <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/Flag_of_Europe 1.png"
                                                      alt="images not found">
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Ethereum</span>
+                                                    <span>Euro</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">ETH</span>
+                                                    <span class="bold">EUR</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -320,10 +320,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Tether</span>
+                                                    <span>Canadian Dollar</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">USDT</span>
+                                                    <span class="bold">CAD</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -338,10 +338,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin Cash</span>
+                                                    <span>New Zealand Dollar</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BCH</span>
+                                                    <span class="bold">NZD</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -356,10 +356,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Doge</span>
+                                                    <span>Pound Sterling</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">DOGE</span>
+                                                    <span class="bold">GBP</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -374,10 +374,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Litecoin</span>
+                                                    <span>US Dollar</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">LTC</span>
+                                                    <span class="bold">USD</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -399,7 +399,8 @@ get_header('otc');
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="press-img mnp">
                         <a href="https://www.mnp.ca/en">
-                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/MNP.svg" class="img-fluid"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/MNP.svg"
+                                 class="img-fluid"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -413,9 +414,9 @@ get_header('otc');
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
-                    <div class="press-img middle">
+                    <div class="press-img fireblocks">
                         <a href="https://finance.yahoo.com/news/canada-adds-virgocx-emerging-institutional-133500985.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNhLw&guce_referrer_sig=AQAAAJHseEHRCW60KtOKnZVZ8UWtQ0Gie5I97czRbx5WzpWqAxBcy7nNsZqnb6A75IqtFy_ElObvo7I7Ev9wNmI9znmxvpNWC9Td0svysMaywS7WaxYZb4E-bJ6MqfYhvJ19NXYnTHUTo10nIKtWZmH7fZV9d7_a5vFFFS9dIqyWLQ1z">
-                            <img src="<?= get_template_directory_uri() ?>/img/partners/yahoo.png"
+                            <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Press_ Partners/Fireblocks.svg"
                                  alt="images not found"/>
                         </a>
                     </div>
@@ -616,15 +617,12 @@ get_header('otc');
             <div class="why-content">
 
                 <div class="row d-flex justify-content-between">
-                    <div class="why-img">
-                        <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png"
-                             alt="images not found"/>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="col-lg-6 col-md-12 why-text">
+                    <!--                    <div class="why-img">-->
+                    <img class="why-text"
+                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Save Icon.png"
+                         alt="images not found"/>
+                    <!--                    </div>-->
+                    <div class="col-lg-6 col-md-12">
                         <h3 data-translate="OTC_landing_banner4_col1-1">Save on Execution Costs</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -717,8 +715,8 @@ get_header('otc');
             <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 2.svg"
                  alt="images not found">
             <img
-                 src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 1.svg"
-                 alt="images not found">
+                    src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 1.svg"
+                    alt="images not found">
         </div>
         <div class="container custom-container">
             <div class="row d-flex justify-content-center">
@@ -771,17 +769,21 @@ get_header('otc');
         .banner-area h1 {
             color: white;
         }
-        .banner-area p{
+
+        .banner-area p {
             font-weight: bold;
         }
+
         @media screen and (min-width: 900px) {
             .banner-img-1 {
                 left: -200px;
                 top: -250px;
             }
+
             .banner-img-2 {
                 top: -50px;
             }
+
             .banner-area p {
                 white-space: nowrap;
             }
@@ -798,8 +800,11 @@ get_header('otc');
             background: var(--VirgoCX-blue);
         }
 
-        .carousel-area span{
+        .carousel-area span {
             font-size: 0.9rem;
+            vertical-align: middle;
+            /*line-height: 15px;*/
+            white-space: pre-line;
         }
 
         .client-area {
@@ -829,6 +834,7 @@ get_header('otc');
                 color: white;
                 background: var(--VirgoCX-blue);
             }
+
             .client-area .background-img img:nth-child(2) {
                 display: none;
             }
@@ -837,8 +843,8 @@ get_header('otc');
                 display: none;
             }
 
-            .product-area .container:nth-child(1){
-                padding-bottom: 0px!important;
+            .product-area .container:nth-child(1) {
+                padding-bottom: 0px !important;
             }
         }
 
@@ -853,17 +859,20 @@ get_header('otc');
             background: #080449;
         }
 
-        .press-area h2{
+        .press-area h2 {
             color: var(--VirgoCX-gold);
         }
 
-        .mnp a img{
-            width: 90px!important;
+        .mnp a img {
+            width: 90px !important;
         }
-        .middle a img{
+
+        .middle a img {
             width: 130px;
         }
-         .middle a img{
+
+        .fireblocks a img {
+            margin-top: 10px;
             width: 130px;
         }
 
@@ -883,7 +892,6 @@ get_header('otc');
         }
 
 
-
         .why-area {
             padding: 40px 0px 0px;
             color: var(--VirgoCX-blue);
@@ -894,7 +902,7 @@ get_header('otc');
         }
 
         .why-area img {
-            margin-right: 5px;
+            margin: 0 5px;
         }
 
         .who-text {
@@ -949,12 +957,14 @@ get_header('otc');
         .why-area p {
             color: var(--VirgoCX-grey);
         }
-        .why-area .background-img .mobile{
+
+        .why-area .background-img .mobile {
             display: block;
             width: 100%;
             padding-top: 0px;
         }
-        .why-area .background-img img{
+
+        .why-area .background-img img {
             display: none;
             width: 100%;
             padding-top: 100px;
@@ -977,11 +987,12 @@ get_header('otc');
                 position: relative;
             }
 
-            .why-area .background-img img{
+            .why-area .background-img img {
                 /*background-image: url(/wp-content/themes/virgocx/img/bg3.svg);*/
                 display: block;
             }
-            .why-area .background-img .mobile{
+
+            .why-area .background-img .mobile {
                 display: none;
             }
         }
@@ -1032,8 +1043,8 @@ get_header('otc');
             overflow: hidden;
         }
 
-        .tabs .container h3{
-            padding-top: 2rem!important;
+        .tabs .container h3 {
+            padding-top: 2rem !important;
         }
 
         .tabs [class^="tab"] label,
@@ -1118,6 +1129,7 @@ get_header('otc');
             margin: 0px 20px;
             position: relative;
             width: 100%;
+            z-index: 2;
         }
 
         .tabs-vertical nav {
@@ -1214,7 +1226,7 @@ get_header('otc');
         }
 
         @media screen and (min-width: 900px) {
-            .product-tabs-horizontal .row .container:nth-child(1) h3{
+            .product-tabs-horizontal .row .container:nth-child(1) h3 {
                 white-space: nowrap;
             }
         }
