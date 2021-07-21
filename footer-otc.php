@@ -92,7 +92,7 @@
                         <ul id="social-links">
                             <li>
                                 <a href="https://twitter.com/Virgocx"><img
-                                            src="<?= get_template_directory_uri() ?>/img/otc/twitter.svg"
+                                            src="<?= get_template_directory_uri() ?>/img/twitter.png"
                                             alt="images not found"/> <span data-translate="footer_col6_Twitter"></span></a>
                             </li>
                             <li>
@@ -103,22 +103,22 @@
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/virgocxofficial"><img
-                                            src="<?= get_template_directory_uri() ?>/img/otc/facebook.svg"
+                                            src="<?= get_template_directory_uri() ?>/img/facebook.png"
                                             alt="images not found"/> <span data-translate="footer_col6_Facebook"></span></a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/virgocx/"><img
-                                            src="<?= get_template_directory_uri() ?>/img/otc/linkedin.svg"
+                                            src="<?= get_template_directory_uri() ?>/img/linkin.png"
                                             alt="images not found"/> <span data-translate="footer_col6_LinkedIn"></span></a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ"><img
-                                            src="<?= get_template_directory_uri() ?>/img/otc/youtube.svg"
+                                            src="<?= get_template_directory_uri() ?>/img/youtube.png"
                                             alt="images not found"/> <span data-translate="footer_col6_YouTube"></span></a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/virgocx_official/"><img
-                                            src="<?= get_template_directory_uri() ?>/img/otc/instagram.png"
+                                            src="<?= get_template_directory_uri() ?>/img/instagram.png"
                                             alt="images not found"/> <span
                                             data-translate="footer_col6_Instagram"></span></a>
                             </li>
