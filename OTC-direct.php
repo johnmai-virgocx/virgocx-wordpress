@@ -428,6 +428,9 @@ get_header('otc');
         </div>
     </section>
     <style>
+        h1,h2,h3,h4,h5,p,span{
+            font-family: "Matter-Regular";
+        }
         section {
             padding: 50px 0 50px 0;
         }
@@ -448,7 +451,7 @@ get_header('otc');
         @media screen and (max-width: 900px) {
             .banner-area {
                 padding-top: 0rem;
-                height: 700px;
+                height: 760px;
             }
 
             .banner-area .OTC-header img {

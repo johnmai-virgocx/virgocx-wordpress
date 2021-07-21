@@ -12710,7 +12710,7 @@ text-align: right;
 	left: 85px!important;
 }
 
-input::placeholder {
+.footer-area-otc input::placeholder {
 	color: var(--VirgoCX-gold);
 	left: 85px!important;
 }

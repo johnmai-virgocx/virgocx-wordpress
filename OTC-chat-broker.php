@@ -430,6 +430,10 @@ get_header('otc');
         </div>
     </section>
     <style>
+
+        h1,h2,h3,h4,h5,p,span{
+            font-family: "Matter-Regular";
+        }
         section {
             padding: 50px 0 50px 0;
         }

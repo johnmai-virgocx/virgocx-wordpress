@@ -764,6 +764,10 @@ get_header('otc');
     </section>
 
     <style type="text/css">
+
+        h1,h2,h3,h4,h5,p,span{
+            font-family: "Matter-Regular";
+        }
         h3 {
             font-family: "Matter-Medium";
         }
@@ -1411,7 +1415,7 @@ get_header('otc');
                 var owl = $('.owl-carousel');
                 if (screen.width > 900) {
                     owl.owlCarousel({
-                        items: 6,
+                        items: 5,
                         loop: true,
                         margin: 10,
                         autoplay: true,
