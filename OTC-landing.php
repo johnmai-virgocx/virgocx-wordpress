@@ -154,10 +154,10 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Bitcoin_Cash</span>
+                                                    <span>Bitcoin Cash</span>
                                                 </div>
                                                 <div class="row">
-                                                    <span class="bold">BTC</span>
+                                                    <span class="bold">BCH</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -188,7 +188,7 @@ get_header('otc');
                                             </div>
                                             <div class="pg-text">
                                                 <div class="row">
-                                                    <span>Paxgold</span>
+                                                    <span>Pax Gold</span>
                                                 </div>
                                                 <div class="row">
                                                     <span class="bold">PAXG</span>
