@@ -100,13 +100,13 @@
 																	<a href="https://www.facebook.com/virgocxofficial" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/facebook.png" alt="images not found" /> <span data-translate="footer_col6_Facebook"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.linkedin.com/company/virgocx/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/in.png" alt="images not found" /> <span data-translate="footer_col6_LinkedIn"></span></a>
+																	<a href="https://www.linkedin.com/company/virgocx/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/linkin.png" alt="images not found" /> <span data-translate="footer_col6_LinkedIn"></span></a>
 															</li>
 															<li>
 																	<a href="https://www.youtube.com/channel/UCxrH4dmNzxqBnuwD9_DnjTQ" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/youtube.png" alt="images not found" /> <span data-translate="footer_col6_YouTube"></span></a>
 															</li>
 															<li>
-																	<a href="https://www.instagram.com/virgocx_official/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/instra.png" alt="images not found" /> <span data-translate="footer_col6_Instagram"></span></a>
+																	<a href="https://www.instagram.com/virgocx_official/" target="_blank"><img src="<?= get_template_directory_uri() ?>/img/instagram.png" alt="images not found" /> <span data-translate="footer_col6_Instagram"></span></a>
 															</li>
 													</ul>
 											</div>
