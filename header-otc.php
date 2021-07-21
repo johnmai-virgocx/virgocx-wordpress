@@ -100,7 +100,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu">
                             <li>
-                                <a class="item" href="/en-otc-landing/" data-translate="OTC_home">
+                                <a class="item" href="/" data-translate="OTC_home">
                                     Retail Platform
                                 </a>
                             </li>
