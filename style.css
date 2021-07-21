@@ -12490,7 +12490,7 @@ form.normal input[type="submit"] {
 }
 
 .blue{
-	font-family: "Matter-Bold";
+	font-family: "Matter-Bold" !important;
 	color: var(--VirgoCX-blue);
 }
 .navbar-nav-otc{
