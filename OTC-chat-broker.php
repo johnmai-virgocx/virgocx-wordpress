@@ -431,8 +431,15 @@ get_header('otc');
     </section>
     <style>
 
-        h1,h2,h3,h4,h5,a,p,span{
+
+        h1,h2{
+            font-family: "Matter-Bold";
+        }
+        h4,h5,a,p,span{
             font-family: "Matter-Regular";
+        }
+        h3 {
+            font-family: "Matter-Medium";
         }
         section {
             padding: 50px 0 50px 0;

@@ -765,7 +765,10 @@ get_header('otc');
 
     <style type="text/css">
 
-        h1,h2,h3,h4,h5,a,p,span{
+        h1,h2{
+            font-family: "Matter-Bold";
+        }
+        h4,h5,a,p,span{
             font-family: "Matter-Regular";
         }
         h3 {
