@@ -527,7 +527,7 @@ get_header('otc');
                                                 business. From trading like Bitcoin, Ethereum,
                                                 and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                             </p>
-                                            <a class="round-btn-light mt-5" href="../en-otc-chat-broker/">learn more
+                                            <a class="round-btn-light mt-5" href="../en-otc-chat-broker/" data-translate="OTC_learn">learn more
                                             </a>
                                         </div>
                                         <div class="col-lg-6 col-md-12 mt-5">
