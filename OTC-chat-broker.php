@@ -431,7 +431,7 @@ get_header('otc');
     </section>
     <style>
 
-        h1,h2,h3,h4,h5,p,span{
+        h1,h2,h3,h4,h5,a,p,span{
             font-family: "Matter-Regular";
         }
         section {

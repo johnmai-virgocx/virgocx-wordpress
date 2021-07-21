@@ -12428,13 +12428,13 @@ form.normal input[type="submit"] {
 }
 .round-btn{
 	margin-top: 15px;
-	width: 160px;
+	width: 208px;
 	display: block;
 	text-decoration: none;
-	padding: 2px 15px;
+	padding: 6px 15px;
 	cursor: pointer;
 	color: #ffffff!important;
-	font-size: 23px;
+	font-size: 18px;
 	font-weight: 500;
 	border: 2px solid white!important;
 	text-align: center;
@@ -12468,9 +12468,9 @@ form.normal input[type="submit"] {
 	width: 160px;
 	display: block;
 	text-decoration: none;
-	padding: 2px 15px;
+	padding: 10px 15px;
 	color: #05004D!important;
-	font-size: 23px;
+	font-size: 18px;
 	font-weight: 500;
 	border: 2px solid #05004D;
 	text-align: center;
@@ -12749,6 +12749,19 @@ a{
 		width: 50%;
 	}
 
+
+}
+
+.header-area-otc h1,
+.header-area-otc h2,
+.header-area-otc h3,
+.header-area-otc h4,
+.header-area-otc h5,
+.header-area-otc h6,
+.header-area-otc p,
+.header-area-otc span,
+.header-area-otc a,
+{
 
 }
 /*# sourceMappingURL=style.css.map */
