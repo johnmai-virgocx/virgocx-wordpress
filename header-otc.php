@@ -80,7 +80,7 @@
         <header class="header-area-otc">
             <div class="container custom-container">
                 <nav class="navbar navbar-expand-lg">
-                    <a href="/" class="navbar-brand"><img
+                    <a href="/en-otc-landing/" class="navbar-brand"><img
                                 src="<?= get_template_directory_uri() ?>/img/otc/VirgoOTC_logo_full.svg" height="36"
                                 alt="images not found"/></a>
                     <button
@@ -100,7 +100,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu">
                             <li>
-                                <a class="item" href="/page#/advancedTrade/24" data-translate="OTC_home">
+                                <a class="item" href="/" data-translate="OTC_home">
                                     Retail Platform
                                 </a>
                             </li>
