@@ -227,15 +227,15 @@
             flex-direction: row;
         }
     }
-    .terms{
+
+    .terms {
         height: 70px;
     }
-    #checkbox{
-        position: absolute;
-        top: 5px;
-        left: 15px;
-    }
-   .terms-text{
+
+
+
+
+    .terms-text {
         position: absolute;
         top: 0;
         left: 40px;
@@ -243,6 +243,27 @@
 
     .terms-text:hover {
         border-bottom: 1px solid white;
+    }
+
+    label {
+        width: 100%;
+    }
+
+    .signup-otc-checkbox{
+        position: absolute;
+        width: 90vw;
+        left: 3%;
+    }
+    #checkbox {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+    }
+    @media screen and (min-width: 900px) {
+        label {
+            white-space: nowrap;
+        }
     }
 </style>
 <script>
