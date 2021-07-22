@@ -1072,6 +1072,10 @@ get_header('otc');
             margin-bottom: 26px;
         }
 
+        .product-area h3{
+            font-family: "Matter-Medium" !important;
+        }
+
         .product-text p {
             font-weight: 400;
             font-size: 16px;
