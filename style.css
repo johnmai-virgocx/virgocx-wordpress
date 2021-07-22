@@ -12457,6 +12457,11 @@ form.normal input[type="submit"] {
 	background-color: inherit;
 }
 
+.how-item label p{
+	text-align: left;
+	margin-left: 50px;
+}
+
 .round-btn:active{
 	color: #05004D!important;
 	border: 2px solid white!important;
@@ -12760,7 +12765,7 @@ a{
 .header-area-otc h6,
 .header-area-otc p,
 .header-area-otc span,
-.header-area-otc a,
+.header-area-otc a
 {
 
 }

@@ -186,10 +186,13 @@
 <?php wp_footer(); ?>
 
 <style type="text/css">
-    h1,h2,h1> span, h2>span,h3 ,h4，h5,{
+    .footer-area-otc h5{
         font-family: "Matter-Bold"!important;
     }
-    a,p,a>span,span{
+    .footer-area-otc a,
+    .footer-area-otc p,
+    .footer-area-otc a>span,
+    .footer-area-otc span{
         font-family: "Matter-Regular"!important;
     }
     #otc-body .app-download a:hover {
