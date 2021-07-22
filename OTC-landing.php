@@ -1073,8 +1073,7 @@ get_header('otc');
         }
 
         .product-text p {
-            color: var(--VirgoCX-blue);
-            font-weight: 600;
+            font-weight: 400;
             font-size: 16px;
             margin-bottom: 26px;
         }
