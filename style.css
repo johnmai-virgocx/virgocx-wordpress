@@ -12621,7 +12621,7 @@ form.normal input[type="submit"] {
 
 .header-area-otc .menu li,
 .header-area-otc .menu li a{
-text-align: right;
+text-align: left;
 	color: white;
 }
 
