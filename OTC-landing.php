@@ -688,7 +688,7 @@ get_header('otc');
                         <h3 data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p data-translate="OTC_landing_banner4_col2-4">We have unique market access via digital assets,
+                        <p data-translate="OTC_landing_banner4_col2-4">We have unique market access via cryptocurrencies,
                             to provide a<span class="gold"> competitive pricing </span>for other
                             foreign currencies.</p>
                     </div>
