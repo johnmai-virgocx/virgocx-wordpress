@@ -123,7 +123,7 @@ get_header();
         <div class="container">
             <div class="rmain-wrapper">
                 <div class="section-title row">
-                    <h2>How it Works</h2>
+                    <h2>How It Works</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-1">
@@ -196,7 +196,7 @@ get_header();
                     </div>
                     <div class="col-lg-6 ">
                         <ul class="Affiliate-Sec2-ul">
-                            <li>Social media influencers with at least 2,000+ followers on social platforms.</li>
+                            <li>Social media influencers with at least 2,000+ followers on social platforms</li>
                             <li>Industry media platform/website</li>
                             <li>Crypto communities with a minimum of 500 members</li>
                             <li>Blockchain industry opinion leaders</li>
