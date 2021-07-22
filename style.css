@@ -12619,9 +12619,15 @@ form.normal input[type="submit"] {
 	transition: max-height .2s ease-out;
 }
 
+@media (max-width: 900px) {
+	.header-area-otc .menu {
+		margin: 20px 20px 0 30px;
+	}
+}
+
 .header-area-otc .menu li,
 .header-area-otc .menu li a{
-text-align: left;
+	text-align: left;
 	color: white;
 }
 
