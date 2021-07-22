@@ -226,13 +226,13 @@
         content: none;
     }
 
-    @media screen and (max-width: 576px) {
+    /*@media screen and (max-width: 576px) {*/
 
-        #social-links {
-            display: flex;
-            flex-direction: row;
-        }
-    }
+    /*    #social-links {*/
+    /*        display: flex;*/
+    /*        flex-direction: row;*/
+    /*    }*/
+    /*}*/
 
     .terms {
         height: 70px;
