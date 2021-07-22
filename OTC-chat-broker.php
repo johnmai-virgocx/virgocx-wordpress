@@ -436,6 +436,9 @@ get_header('otc');
         nav>a,p,span{
             font-family: "Matter-Regular"!important;
         }
+        .banner-area p {
+            font-weight: bold;
+        }
 
 
         section {
