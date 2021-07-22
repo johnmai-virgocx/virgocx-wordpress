@@ -459,8 +459,8 @@ get_header('otc');
                 </div>
                 <div class="col-lg-6 col-md-12 product-text">
                     <p data-translate="OTC_landing_banner_2desc">
-                        VirgoCX OTC offers direct market access for cryptocurrencies with <span class="blue">optimal price execution</span>
-                        . We bridge the gap between traditional financial services
+                        VirgoCX OTC offers direct market access for cryptocurrencies with <span class="blue">optimal price execution.</span>
+                         We bridge the gap between traditional financial services
                         and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto
                         and fiat currencies to fill large orders at a <span class="blue">desired market price.</span>
                     </p>
