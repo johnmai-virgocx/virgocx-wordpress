@@ -764,14 +764,11 @@ get_header('otc');
     </section>
 
     <style type="text/css">
-        h1,h2,h1> span, h2>span,h4{
+        h1,h2,h1> span, h2>span,h3 ,h4{
             font-family: "Matter-Bold"!important;
         }
         h5,p,span{
             font-family: "Matter-Regular"!important;
-        }
-        h3 {
-            font-family: "Matter-Medium"!important;
         }
 
         .banner-img-1 {
