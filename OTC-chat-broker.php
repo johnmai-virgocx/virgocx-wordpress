@@ -430,7 +430,7 @@ get_header('otc');
         </div>
     </section>
     <style>
-        h1,h2,h1> span, h2>span,h3 ,h4, {
+        h1,h2,h1> span, h2>span,h3 ,h4 {
             font-family: "Matter-Bold"!important;
         }
         a,p,span{
