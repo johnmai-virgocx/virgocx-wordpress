@@ -105,7 +105,7 @@
                                 </a>
                             </li>
                             <li class="dropdown-toggle-otc">
-                                <a class="item" href="/en-otc-landing/" data-translate="footer_col3_OTC">
+                                <a class="item" href="/en-otc/" data-translate="footer_col3_OTC">
                                     OTC
                                     <img class="arrow-down ml-1"
                                             src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
@@ -114,7 +114,7 @@
                                 <div class="dropdown-menu dropdown-otc" aria-labelledby="dropdownMenuLink">
                                     <a href="/en-otc-direct/" class="dropdown-item"
                                         data-translate="OTC_landing_banner2_tag1">OTC Direct</a>
-                                    <a href="/en-otc-chat-broker/" class="dropdown-item"
+                                    <a href="/en-otc-chatbroker/" class="dropdown-item"
                                         data-translate="OTC_landing_banner2_tag2">OTC Chat Broker</a>
                                 </div>
                             </li>
