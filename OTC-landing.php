@@ -1322,10 +1322,15 @@ get_header('otc');
             cursor: pointer;
         }
 
-        .product-tabs-horizontal nav a,
+        .product-tabs-horizontal nav a{
+            color: var(--VirgoCX-grey) !important;
+            border-bottom: 1px solid rgba(30, 26, 95, 0.2);
+
+        }
         .product-tabs-horizontal h3 {
             color: var(--VirgoCX-blue) !important;
         }
+
 
         .product-tabs-horizontal nav a:hover,
         .product-tabs-horizontal nav a.selected,
@@ -1334,6 +1339,11 @@ get_header('otc');
             border-bottom: 3px solid #c7ba9a;
             color: white;
             font-family: "Matter-Bold";
+        }
+
+        .product-tabs-horizontal nav a:hover,
+        .product-tabs-horizontal nav a.selected{
+            color: var(--VirgoCX-blue) !important;
         }
 
         .product-tabs-horizontal .container,
