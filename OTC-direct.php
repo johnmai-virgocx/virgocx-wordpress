@@ -428,10 +428,10 @@ get_header('otc');
         </div>
     </section>
     <style>
-        h1,h2,h1> span, h2>span,h3 ,h4,nav>a{
+        h1,h2,h1> span, h2>span,h3 ,h4{
             font-family: "Matter-Bold"!important;
         }
-        p,span{
+        nav>a,p,span{
             font-family: "Matter-Regular"!important;
         }
         section {
@@ -507,7 +507,7 @@ get_header('otc');
             color: #05004D;
             border-bottom: 3px solid #c7ba9a;
             cursor: pointer;
-            font-family: "Matter-Bold";
+            font-family: "Matter-Bold"!important;;
         }
 
         .custom-container h3 {

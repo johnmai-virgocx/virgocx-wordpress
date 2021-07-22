@@ -12757,16 +12757,7 @@ a{
 
 }
 
-.header-area-otc h1,
-.header-area-otc h2,
-.header-area-otc h3,
-.header-area-otc h4,
-.header-area-otc h5,
-.header-area-otc h6,
-.header-area-otc p,
-.header-area-otc span,
-.header-area-otc a
-{
-
+.selected{
+	font-family: "Matter-Bold" !important;
 }
 /*# sourceMappingURL=style.css.map */
