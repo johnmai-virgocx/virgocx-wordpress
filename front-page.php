@@ -77,17 +77,17 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     /* ::-webkit-scrollbar-button{
         display:none;
     } */
-    ::-webkit-scrollbar {
+    #crypto-options::-webkit-scrollbar {
 		  width: 2px;
 	}
-    ::-webkit-scrollbar-track{
+    #crypto-options::-webkit-scrollbar-track{
         border-radius: 0.5px;
         box-shadow: inset 0 0 10px rgb(0,0,0,0);
         height:50px;
     }
 
 
-    ::-webkit-scrollbar-thumb{
+    #crypto-options::-webkit-scrollbar-thumb{
         border-radius:0.5px;
         background-color: rgb(0,0,0,0.25);
     }
