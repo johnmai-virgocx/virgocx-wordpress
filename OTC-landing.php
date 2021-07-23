@@ -55,7 +55,7 @@ get_header('otc');
                                 <div class="owl-stage"
                                      style="transform: translate3d(-1715px, 0px, 0px); transition: all 0.25s ease 0s; width: 5880px;">
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BTC Icon.png"
@@ -73,7 +73,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/ETH Icon.svg"
@@ -91,7 +91,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/EOS Icon.svg"
@@ -109,7 +109,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/Doge Icon.png"
@@ -127,7 +127,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/DAI Icon.png"
@@ -145,7 +145,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/BCH Icon.png"
@@ -163,7 +163,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/LTC Icon.png"
@@ -181,7 +181,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/PAXG Icon.svg"
                                                      alt="images not found">
@@ -197,7 +197,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/UNI Icon.svg"
@@ -215,7 +215,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDC Icon.png"
@@ -233,7 +233,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDT Icon.svg"
@@ -251,7 +251,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/XLM Icon.svg"
@@ -277,7 +277,7 @@ get_header('otc');
                             <div class="owl-stage-outer">
                                 <div class="owl-stage">
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/255px-Flag_of_Australia_(converted) 1.png"
@@ -295,7 +295,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/Flag_of_Europe 1.png"
                                                      alt="images not found">
@@ -311,7 +311,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_Canada_(Pantone) 2.png"
@@ -329,7 +329,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_New_Zealand 1.png"
@@ -347,7 +347,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_the_United_Kingdom 1.png"
@@ -365,7 +365,7 @@ get_header('otc');
                                         </a>
                                     </div>
                                     <div class="owl-item ">
-                                        <a href="/page#/advancedTrade/25" class="pg-top">
+                                        <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Fiat Currency Icon/1200px-Flag_of_the_United_States 1.png"
