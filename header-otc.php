@@ -105,7 +105,7 @@
                                 </a>
                             </li>
                             <li class="dropdown-toggle-otc">
-                                <a class="item" href="/en-otc/" data-translate="footer_col3_OTC">
+                                <a class="item" href="/en-otc/" data-translate="OTC">
                                     OTC
                                     <img class="arrow-down ml-1"
                                             src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
@@ -139,13 +139,13 @@
                             <a class="nav-link earn-btn dropdown-toggle" href="/en-referral" role="button"
                                id="dropdownMenuLink"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                               data-translate="header_Earn">
+                               data-translate="Earn $30+">
 
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a href="/en-referral-friend" class="dropdown-item"
-                                   data-translate="header_Refer_Friend"></a>
-                                <a href="/en-referral-otc" class="dropdown-item" data-translate="header_OTC_Refer"></a>
+                                   data-translate="Refer a Friend"></a>
+                                <a href="/en-referral-otc" class="dropdown-item" data-translate="OTC Referral "></a>
                             </div>
                         </div>
 
@@ -182,10 +182,10 @@
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <option href="/en-referral-friend" class="dropdown-item"
-                                            data-translate="header_Login">login
+                                            data-translate="Log In">login
                                     </option>
                                     <option class="dropdown-item scroll-to-sign-up"
-                                            data-translate="header_Register">Sign Up
+                                            data-translate="Register">Sign Up
                                     </option>
                                 </div>
                             </div>

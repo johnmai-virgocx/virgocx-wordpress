@@ -101,23 +101,23 @@
 											);
 											?>
                                         <div class="navbar-nav nav-item mr-auto">
-                                            <a class="nav-link earn-btn dropdown-toggle"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-translate="header_Earn">
+                                            <a class="nav-link earn-btn dropdown-toggle"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-translate="Earn $30+">
 
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a href="/en-referral-friend" class="dropdown-item"  data-translate="header_Refer_Friend"></a>
-                                                <a href="/en-referral-otc" class="dropdown-item"  data-translate="header_OTC_Refer"></a>
+                                                <a href="/en-referral-friend" class="dropdown-item"  data-translate="Refer a Friend"></a>
+                                                <a href="/en-referral-otc" class="dropdown-item"  data-translate="OTC Referral "></a>
                                             </div>
                                         </div>
 
 											<div class="right_side_btn y-2 my-lg-0">
-													<a href="/page#/login" class="login nav-link"  data-translate="header_Login">
+													<a href="/page#/login" class="login nav-link"  data-translate="Log In">
 														
 													</a>
-													<a track="nav-signup-click" class="singup" href="/page#/register" class="regular-button w-button" data-translate="header_Register"></a>
+													<a track="nav-signup-click" class="singup" href="/page#/register" class="regular-button w-button" data-translate="Register"></a>
 													<div class="header_select">
 															<select  id="lang">
-                                                                <option value="en" id="en"  data-translate="header_ENG"></option>
+                                                                <option value="en" id="en"  data-translate="Eng"></option>
                                                                 <option value="zh" id="zh"  data-translate="header_CH"></option>
 															</select>
 													</div>
