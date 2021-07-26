@@ -677,7 +677,7 @@
 
         // header triangle toggle
         $('.dropdown-toggle').click( function () {
-            if(!$(this)[0].className.indexOf('earn-btn')>=0){
+            if($(this)[0].className.indexOf('earn-btn')<0){
                 $(this).next().toggleClass('flipped')
             }
         });
