@@ -153,7 +153,8 @@
                             <div class="navbar-nav-otc nav-item">
                                 <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                      alt="images not found"/>
-                                <a class="nav-link dropdown-toggle" href="/en-referral" role="button"
+                                <a class="nav-link dropdown-toggle"
+                                   href="javascript: void(0)"
                                    id="dropdownMenuLinkEN"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                    data-translate="OTC_header_full">
@@ -172,10 +173,11 @@
                                 <img class="dropdown-left-img"
                                      src="<?= get_template_directory_uri() ?>/img/Sign Up Today/First Name Icon.png"
                                      alt="images not found"/>
-                                <a class="nav-link dropdown-toggle" href="/en-referral" role="button"
+                                <a class="nav-link dropdown-toggle"
                                    id="dropdownMenuLink"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                   data-translate="my_account">
+                                   data-translate="my_account"
+                                   href="javascript: void(0)">
                                     My Account
                                 </a>
                                 <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
