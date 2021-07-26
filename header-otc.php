@@ -154,7 +154,6 @@
                                 <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                      alt="images not found"/>
                                 <a class="nav-link dropdown-toggle"
-                                   data-toggle="dropdown"
                                    href="#"
                                    id="dropdownMenuLinkEN"
                                    data-translate="OTC_header_full">
@@ -163,10 +162,10 @@
                                 <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkEN" id="lang">
-                                    <div value="en" id="en" class="dropdown-item lang-dropdown"
-                                            data-translate="OTC_header_ENG"></div>
-                                    <div value="zh" id="zh" class="dropdown-item lang-dropdown"
-                                            data-translate="OTC_header_CH"></div>
+                                    <a value="en" id="en" class="dropdown-item lang-dropdown"
+                                            data-translate="OTC_header_ENG"></>
+                                    <a value="zh" id="zh" class="dropdown-item lang-dropdown"
+                                            data-translate="OTC_header_CH"></a>
                                 </div>
                             </div>
                             <div class="navbar-nav-otc nav-item">
@@ -175,7 +174,6 @@
                                      alt="images not found"/>
                                 <a class="nav-link dropdown-toggle"
                                    id="dropdownMenuLink"
-                                   data-toggle="dropdown"
                                    href="#">
                                     <span data-translate="my_account">My Account</span>
 
@@ -183,12 +181,12 @@
                                 <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <div href="/en-referral-friend" class="dropdown-item"
+                                    <a href="/page#/login" class="dropdown-item"
                                             data-translate="Log In">login
-                                    </div>
-                                    <div class="dropdown-item scroll-to-sign-up"
+                                    </a>
+                                    <a class="dropdown-item scroll-to-sign-up"
                                             data-translate="Register">Sign Up
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

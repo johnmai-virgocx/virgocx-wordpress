@@ -12601,6 +12601,10 @@ form.normal input[type="submit"] {
 	-moz-transition: 0.3s all ease;
 }
 
+.right_side_btn_otc .dropdown-menu a{
+	margin-left: 0px;
+}
+
 #primary-menu ul {
 	display: none;
 	z-index: 9999999;
@@ -12765,5 +12769,11 @@ a{
 
 .selected{
 	font-family: "Matter-Bold" !important;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 /*# sourceMappingURL=style.css.map */

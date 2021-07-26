@@ -10,10 +10,10 @@
             currentLang = 'en',
             langPageIndicator =0,
             languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
@@ -129,7 +129,9 @@
 
         //OTC lang switcher
         $(".lang-dropdown").on("click", function () {
-            var language = $(this).val().toLowerCase();
+            // console.log($(this).val())
+            // console.log($(this)[0].getAttribute('value'))
+            var language = $(this)[0].getAttribute('value').toLowerCase();
             if (dictionary.hasOwnProperty(language)) {
                 var url = window.location.href;
                 if(url.indexOf('/'+currentLang+'-')<0){
@@ -679,6 +681,7 @@
         $('.dropdown-toggle').click( function () {
             if($(this)[0].className.indexOf('earn-btn')<0){
                 $(this).next().toggleClass('flipped');
+                $(this).siblings('.dropdown-menu').toggleClass('show');
 
             }
         });
