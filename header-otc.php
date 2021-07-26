@@ -101,15 +101,15 @@
                         <ul class="menu">
                             <li>
                                 <a class="item" href="/" data-translate="OTC_home">
-                                    Retail Platform
+                                    Trade
                                 </a>
                             </li>
                             <li class="dropdown-toggle-otc">
-                                <a class="item" href="/en-otc/" data-translate="OTC">
-                                    OTC
+                                <a class="item" href="/en-otc/" >
+                                    <span data-translate="OTC">OTC</span>
                                     <img class="arrow-down ml-1"
-                                            src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
-                                            alt="images not found">
+                                         src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
+                                         alt="images not found">
                                 </a>
                                 <div class="dropdown-menu dropdown-otc" aria-labelledby="dropdownMenuLink">
                                     <a href="/en-otc-direct/" class="dropdown-item"
