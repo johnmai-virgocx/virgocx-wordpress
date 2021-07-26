@@ -156,7 +156,6 @@
                                 <a class="nav-link dropdown-toggle"
                                    href="javascript: void(0)"
                                    id="dropdownMenuLinkEN"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                    data-translate="OTC_header_full">
                                     English
                                 </a>
@@ -175,7 +174,6 @@
                                      alt="images not found"/>
                                 <a class="nav-link dropdown-toggle"
                                    id="dropdownMenuLink"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                    data-translate="my_account"
                                    href="javascript: void(0)">
                                     My Account
