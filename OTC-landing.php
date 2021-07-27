@@ -1429,6 +1429,7 @@ get_header('otc');
             .client-text h2,
             .why-title h2,
             .signup-area h2,
+            .product-area h2,
             .press-area h2 {
                 font-size: 32px;
             }
