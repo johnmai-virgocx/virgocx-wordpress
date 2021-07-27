@@ -911,6 +911,16 @@ get_header('otc');
         .mt100{
             margin-top: 100px!important;
         }
+
+        @media screen and (max-width: 900px) {
+            .who-text h2,
+            .faq h2,
+            .why-area h2,
+            .signup-area h2,
+            .how-area h2 {
+                font-size: 32px;
+            }
+        }
     </style>
 
     <script type="text/javascript">

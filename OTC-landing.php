@@ -460,7 +460,7 @@ get_header('otc');
                 <div class="col-lg-6 col-md-12 product-text">
                     <p data-translate="OTC_landing_banner_2desc">
                         VirgoCX OTC offers direct market access for cryptocurrencies with <span class="blue">optimal price execution.</span>
-                         We bridge the gap between traditional financial services
+                        We bridge the gap between traditional financial services
                         and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto
                         and fiat currencies to fill large orders at a <span class="blue">desired market price.</span>
                     </p>
@@ -527,7 +527,8 @@ get_header('otc');
                                                 business. From trading like Bitcoin, Ethereum,
                                                 and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                             </p>
-                                            <a class="round-btn-light mt-5" href="../en-otc-chatbroker/" data-translate="OTC_learn">learn more
+                                            <a class="round-btn-light mt-5" href="../en-otc-chatbroker/"
+                                               data-translate="OTC_learn">learn more
                                             </a>
                                         </div>
                                         <div class="col-lg-6 col-md-12 mt-5">
@@ -688,7 +689,8 @@ get_header('otc');
                         <h3 data-translate="OTC_landing_banner4_col1-4">Access to Foreign Currencies</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p data-translate="OTC_landing_banner4_col2-4">We have unique market access via cryptocurrencies,
+                        <p data-translate="OTC_landing_banner4_col2-4">We have unique market access via
+                            cryptocurrencies,
                             to provide a<span class="gold"> competitive pricing </span>for other
                             foreign currencies.</p>
                     </div>
@@ -719,16 +721,16 @@ get_header('otc');
                     <img class="why-text"
                          src="<?= get_template_directory_uri() ?>/img/Landing_Page/Why Trade with Us/Rapid Icon.svg"
                          alt="images not found"/>
-                <div class="col-lg-6 col-md-12 ">
-                    <h3 data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same day, no limit settlement </span>for
-                        your USD and CAD trades. This also applies to
-                        your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+                    <div class="col-lg-6 col-md-12 ">
+                        <h3 data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same day, no limit settlement </span>for
+                            your USD and CAD trades. This also applies to
+                            your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="background-img">
             <img src="<?= get_template_directory_uri() ?>/img/bg3.svg"
@@ -764,11 +766,12 @@ get_header('otc');
     </section>
 
     <style type="text/css">
-        h1,h2,h1> span, h2>span,h3 ,h4{
-            font-family: "Matter-Bold"!important;
+        h1, h2, h1 > span, h2 > span, h3, h4 {
+            font-family: "Matter-Bold" !important;
         }
-        nav>a,p,span{
-            font-family: "Matter-Regular"!important;
+
+        nav > a, p, span {
+            font-family: "Matter-Regular" !important;
         }
 
         .banner-img-1 {
@@ -1073,7 +1076,7 @@ get_header('otc');
             margin-bottom: 26px;
         }
 
-        .product-area h3{
+        .product-area h3 {
             font-family: "Matter-Medium" !important;
         }
 
@@ -1323,11 +1326,12 @@ get_header('otc');
             cursor: pointer;
         }
 
-        .product-tabs-horizontal nav a{
+        .product-tabs-horizontal nav a {
             color: var(--VirgoCX-grey) !important;
             border-bottom: 1px solid rgba(30, 26, 95, 0.2);
 
         }
+
         .product-tabs-horizontal h3 {
             color: var(--VirgoCX-blue) !important;
         }
@@ -1343,7 +1347,7 @@ get_header('otc');
         }
 
         .product-tabs-horizontal nav a:hover,
-        .product-tabs-horizontal nav a.selected{
+        .product-tabs-horizontal nav a.selected {
             color: var(--VirgoCX-blue) !important;
         }
 
@@ -1419,6 +1423,16 @@ get_header('otc');
             font-weight: bold;
         }
 
+
+        @media screen and (max-width: 900px) {
+            .who-text h2,
+            .client-text h2,
+            .why-title h2,
+            .signup-area h2,
+            .press-area h2 {
+                font-size: 32px;
+            }
+        }
     </style>
 
     <script type="text/javascript">
