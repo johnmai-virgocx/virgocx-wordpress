@@ -909,6 +909,7 @@ get_header('otc');
         }
 
         .signup-area h2 {
+            font-size: 36px;
             text-align: center;
         }
 
