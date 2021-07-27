@@ -12536,7 +12536,9 @@ form.normal input[type="submit"] {
 	margin-top: 15px;
 }
 
-
+.right_side_btn_otc .nav-item{
+	display: inline-block;
+}
 .dropdown-toggle-otc .dropdown-item,
 .navbar-nav-otc .dropdown-item {
 	display: block;
@@ -12578,7 +12580,7 @@ form.normal input[type="submit"] {
 }
 
 .right_side_btn_otc {
-	display: flex;
+	/*display: flex;*/
 	position: relative;
 	width: auto;
 	right: 0;
