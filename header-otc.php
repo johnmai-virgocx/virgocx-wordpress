@@ -149,7 +149,7 @@
                             </div>
                         </div>
 
-                        <div class="right_side_btn_otc">
+                        <div class="right-side-btn-otc">
                             <div class="navbar-nav-otc nav-item">
                                 <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg"
                                      alt="images not found"/>
