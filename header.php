@@ -90,16 +90,35 @@
 									</button>
 
 									<div class="collapse navbar-collapse" id="navbarSupportedContent">
-											<?php
-											wp_nav_menu(
-												array(
-													'menu' => 'menu-1',
-													'theme_location' => 'menu-1',
-													'menu_id'        => 'primary-menu',
-													'menu_class'        => 'navbar-nav',
-												)
-											);
-											?>
+<!--											--><?php
+//											wp_nav_menu(
+//												array(
+//													'menu' => 'menu-1',
+//													'theme_location' => 'menu-1',
+//													'menu_id'        => 'primary-menu',
+//													'menu_class'        => 'navbar-nav',
+//												)
+//											);
+//											?>
+                                        <ul class="menu navbar-nav">
+                                            <li>
+                                                <a class="item" href="/" data-translate="OTC_home"></a>
+                                            </li>
+                                            <li class="dropdown-toggle-otc">
+                                                <a class="item" href="/en-otc/" >
+                                                    <span data-translate="OTC"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn"></a>
+                                            </li>
+                                            <li>
+                                                <a class="item" href="https://virgocx.ca/en-about-virgocx/" data-translate="header_About"></a>
+                                            </li>
+                                            <li>
+                                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us"data-translate="header_Support"></a>
+                                            </li>
+                                        </ul>
                                         <div class="navbar-nav nav-item mr-auto">
                                             <a class="nav-link earn-btn dropdown-toggle"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-translate="Earn $30+">
 

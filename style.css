@@ -12618,14 +12618,39 @@ form.normal input[type="submit"] {
 .dropdown-menu option:hover{
 	cursor: pointer;
 }
-
+.header-area . menu,
 .header-area-otc .menu {
 	clear: both;
 	margin-right: 20px;
 	transition: max-height .2s ease-out;
 }
 
+
+
+.header-area .menu li,
+.header-area .menu li a{
+	position: relative;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0;
+	margin: 0 3px;
+	color: #66617f;
+	text-align: left;
+	border-bottom: 1px solid transparent;
+	transition: .3s all ease;
+	-webkit-transition: .3s all ease;
+}
 @media (max-width: 900px) {
+
+
+	.header-area .menu li,
+	.header-area .menu li a{
+		position: relative;
+		display: block;
+		margin: 0 3px;
+	}
+	.header-area .menu,
 	.header-area-otc .menu {
 		margin: 20px 20px 0 30px;
 	}

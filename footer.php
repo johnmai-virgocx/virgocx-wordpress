@@ -167,9 +167,16 @@
 	@media screen and (max-width: 576px) {
 
 		#social-links {
-			/*display: flex;*/
-			flex-direction: row;
+            width: 150px;
+            /* display: flex; */
+            flex-direction: row;
+            margin: 0 0 0 39%;
 		}
+
+        #social-links li a{
+            text-align: left!important;
+        }
+
 	}
 </style>
 </body>
