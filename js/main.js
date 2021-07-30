@@ -10,10 +10,10 @@
             currentLang = 'en',
             langPageIndicator =0,
             languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
@@ -529,6 +529,8 @@
                 'knc/cad': '/page#/advancedTrade/65',
                 'comp/cad': '/page#/advancedTrade/66',
                 'bat/cad': '/page#/advancedTrade/67',
+                'ada/cad': '/page#/advancedTrade/68',
+                'dot/cad': '/page#/advancedTrade/69',
             }
 
             let index = 1;

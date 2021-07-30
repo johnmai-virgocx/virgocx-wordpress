@@ -567,6 +567,10 @@
 	"Basic Attention Token":"Basic Attention Token",
 	"BAT":"BAT",
 	"Compound":"Compound",
-	"COMP":"COMP"
+	"COMP":"COMP",
+	"Polkadot":"Polkadot",
+	"DOT":"DOT",
+	"Cardano":"Cardano",
+	"ADA":"ADA"
 
 }
