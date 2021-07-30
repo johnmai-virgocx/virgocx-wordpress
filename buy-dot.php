@@ -8,7 +8,7 @@
  */
 
 $args = [
-	'name' => 'Polkadot ',
+	'name' => 'Polkadot',
 	'ticker' => 'DOT',
 ];
 get_template_part('template-parts/buy', 'coin', $args);
