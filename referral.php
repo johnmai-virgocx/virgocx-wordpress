@@ -82,7 +82,7 @@ Xtra Small Screen - Small Mobile
 										<p>VirgoCX offer a lucrative referral program for anyone that is able to introduce individual or corporate clients to our desk. We offer a one-time $200 CAD reward on the first trade in addition to 0.2% of the notional value of every subsequent trade. </p>
 									</div>
 									<div class="rmain-ro-work">
-										<h3>How it Works</h3>
+										<h3>How It Works</h3>
 										<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
 												<span></span>
 												What is OTC ?
