@@ -39,7 +39,7 @@
 	"frontpage_header4_1": "OTC 场外交易为超过30,000 CAD交易",
 	"frontpage_header4_2": "保驾护航",
 	"frontpage_header4_desc_1": "通过提供大量的加密货币和稳定币交易，优越的流动资金池全方位满足机构级买家和卖家的需求，避免价格滑点，VirgoCX 拥有专业的 OTC 客户经理，为您提供一体化的个性服务。",
-	"frontpage_header4_desc_2": "点击下面了解更多信息。",
+	
 	"frontpage_header4_tag1": "联系客户经理",
 	"frontpage_header4_tag2": "更多详情",
 	"frontpage_header5": "购买&出售加密货币",
@@ -524,7 +524,7 @@
 	"Fees_$10000":"10000",
 	"Fees_Unlimited":"无限制",
 	"Fees_Up to 24 hours":"最长至24小时",
-	"Fees_(typically Within 45 minutes)":"(通常45分钟内)",
+	"Fees_(typically within 45 minutes)":"(通常45分钟内)",
 	"Fees_Instantaneous":"即时",
 	"Fees_Immediate":"即时",
 	"Fees_All Cryptocurrency":"全部加密货币",

@@ -83,7 +83,7 @@ Xtra Small Screen - Small Mobile
 									</div>
 									<div class="rmain-ro-work">
 										<h3>How It Works</h3>
-										<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
+										<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and are traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
 												<span></span>
 												What is OTC ?
 										</div>
@@ -191,7 +191,7 @@ Xtra Small Screen - Small Mobile
 															<img src="<?= get_template_directory_uri() ?>/img/referral_link_2.png" alt="images not found">
 														</div>
 														<div class="rmain2-link-one-para">
-															<p>Click on Invite on the left navigation bar</p>
+															<p>Click on "Invite" on the left navigation bar</p>
 														</div>
 													</div>
 												</div>
@@ -203,7 +203,7 @@ Xtra Small Screen - Small Mobile
 															<img src="<?= get_template_directory_uri() ?>/img/referral_link_3.png" alt="images not found">
 														</div>
 														<div class="rmain2-link-one-para">
-															<p>Find your unique referral link</p>
+															<p>Voilà! It's your unique referral link.</p>
 														</div>
 													</div>
 												</div>

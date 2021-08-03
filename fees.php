@@ -430,8 +430,8 @@ get_header();
                         let rowContent = `
 			<tr>
 					<th class="col-3" scope="row">
-						<img src="${_virgocx_theme_url}/img/all_crypto_coin.png" width="40" alt="All cryptocurrency" />
-						All Cryptocurrency
+						<img src="${_virgocx_theme_url}/img/all_crypto_coin.png" width="40" alt="All Cryptocurrencies" />
+						All Cryptocurrencies
 					</th>
 		`
 
@@ -543,9 +543,9 @@ get_header();
                         const tableWrapper = document.createElement('div');
                         tableWrapper.classList.add('fee-table-wrapper');
                         titleTranslate = 'Fees_header6';
-                        if (title === "Fund US Dollars") {
+                        if (title === "Deposit US Dollars") {
                             titleTranslate = 'Fees_header3';
-                        } else if (title === "Withdrawal US Dollars") {
+                        } else if (title === "Withdraw US Dollars") {
                             titleTranslate = 'Fees_header4';
                         }
                         const rowContent = entries.reduce(function (acc, entry) {
@@ -571,32 +571,32 @@ get_header();
 
                             // let processingTime = entry.processingTime;
                             // if (entry.transferWay === 'Wire Transfer') {
-                            //     processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
+                            //     processingTime = 'Up to 24 hours<br />(typically within 45 minutes)<sup>1,2</sup>';
                             // } else if (entry.transferWay === 'Interac e-Transfer') {
-                            //     if (title === "Fund Canadian Dollars") {
+                            //     if (title === "Deposit Canadian Dollars") {
                             //         titleTranslate = 'Fees_header1';
                             //         processingTime = 'Instantaneous<sup>1,2</sup>';
-                            //     } else if (title === "Withdrawal Canadian Dollars") {
+                            //     } else if (title === "Withdraw Canadian Dollars") {
                             //         titleTranslate = 'Fees_header2';
-                            //         processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                            //         processingTime = '(typically within 45 minutes)<sup>1,2</sup>';
                             //     } else {
-                            //         processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
+                            //         processingTime = '(typically within 45 minutes)<sup>1,2</sup>';
                             //     }
                             // }
                             let processingTime1 = '';
                             let processingTime2 = '';
                             if (entry.transferWay === 'Wire Transfer') {
                                 processingTime1 = 'Up to 24 hours'
-                                processingTime2 = '(typically Within 45 minutes)';
+                                processingTime2 = '(typically within 45 minutes)';
                             } else if (entry.transferWay === 'Interac e-Transfer') {
-                                if (title === "Fund Canadian Dollars") {
+                                if (title === "Deposit Canadian Dollars") {
                                     titleTranslate = 'Fees_header1';
                                     processingTime2 = 'Instantaneous';
-                                } else if (title === "Withdrawal Canadian Dollars") {
+                                } else if (title === "Withdraw Canadian Dollars") {
                                     titleTranslate = 'Fees_header2';
-                                    processingTime2 = '(typically Within 45 minutes)';
+                                    processingTime2 = '(typically within 45 minutes)';
                                 } else {
-                                    processingTime2 = '(typically Within 45 minutes)';
+                                    processingTime2 = '(typically within 45 minutes)';
                                 }
                             }
 
@@ -662,26 +662,26 @@ get_header();
 
                         // Handle deposit candadian dollars
                         if (data.data.fundCanadianDollars) {
-                            container.append(renderFeesPerEntryTable(data.data.fundCanadianDollars, 'Fund Canadian Dollars'));
+                            container.append(renderFeesPerEntryTable(data.data.fundCanadianDollars, 'Deposit Canadian Dollars'));
                         }
 
                         if (data.data.withdrawalCanadianDollars) {
-                            container.append(renderFeesPerEntryTable(data.data.withdrawalCanadianDollars, 'Withdrawal Canadian Dollars'));
+                            container.append(renderFeesPerEntryTable(data.data.withdrawalCanadianDollars, 'Withdraw Canadian Dollars'));
                         }
 
                         // Handle deposit candadian dollars
                         if (data.data.fundUsDollars) {
-                            container.append(renderFeesPerEntryTable(data.data.fundUsDollars, 'Fund US Dollars'));
+                            container.append(renderFeesPerEntryTable(data.data.fundUsDollars, 'Deposit US Dollars'));
                         }
 
                         if (data.data.withdrawalUsDollars) {
-                            container.append(renderFeesPerEntryTable(data.data.withdrawalUsDollars, 'Withdrawal US Dollars'));
+                            container.append(renderFeesPerEntryTable(data.data.withdrawalUsDollars, 'Withdraw US Dollars'));
                         }
 
                         const fundCryptocurrency = [
                             {
                                 logo: `${_virgocx_theme_url}/img/all_crypto_coin.png`,
-                                transferWay: 'All Cryptocurrency',
+                                transferWay: 'All Cryptocurrencies',
                                 fee: 0,
                                 minFee: 0,
                                 minimum: 'N/A',
@@ -692,7 +692,7 @@ get_header();
                         container.append(renderFundCryptoTable(fundCryptocurrency, 'Deposit Cryptocurrency'));
 
                         if (data.data.withdrawalCryptocurrency) {
-                            container.append(renderCryptoPerEntryTable(data.data.withdrawalCryptocurrency, 'Withdrawal Cryptocurrency'));
+                            container.append(renderCryptoPerEntryTable(data.data.withdrawalCryptocurrency, 'Withdraw Cryptocurrency'));
                         }
 
                         container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));

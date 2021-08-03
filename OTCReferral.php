@@ -35,7 +35,7 @@ get_header();
                                 <div class="rmain-ro-work">
                                     <h3 data-translate="ReferOTC_header1"></h3>
                                     <div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="ReferOTC_What_is_OTC_desc"
-                                         data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and is traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
+                                         data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and are traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
                                         <span></span>
 										<div data-translate="ReferOTC_What_is_OTC" style="width: 6.25rem; display: inline;"></div>
                                     </div>
