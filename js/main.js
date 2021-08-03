@@ -110,6 +110,12 @@
                     if(this.value === 'Get Started'||this.value === '一键开启'){
                         $(this).attr('value',dictionary['frontpage_Started'])
                     }
+                    // for email input
+                    if(this.classList.contains('emailTranslate')){
+                        $(this).attr("placeholder", dictionary['frontpage_Email_Address']);
+                    }
+
+
                 }
             })
         }
