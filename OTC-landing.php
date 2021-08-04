@@ -725,7 +725,7 @@ get_header('otc');
                         <h3 data-translate="OTC_landing_banner4_col1-6">Rapid Settlement</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same day, no limit settlement </span>for
+                        <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same-day, no-limit settlement </span>for
                             your USD and CAD trades. This also applies to
                             your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
                     </div>
