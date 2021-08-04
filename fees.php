@@ -700,8 +700,8 @@ get_header();
                         loadLangJson();
                     }
 
-                //  fetch('https://wordpress.virgocx.org/transferFee/getList')
-                    fetch('https://virgocx.ca/transferFee/getList')
+                //  fetch('https://wordpress.virgocx.org/transferFee/getList')//testvirgocx
+                    fetch('https://virgocx.ca/transferFee/getList')//production virgocx
                         .then(res => res.json())
                         .then(data => handleFees(data));
                 });
