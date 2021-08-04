@@ -112,7 +112,7 @@
                         //											?>
                         <ul class="menu navbar-nav">
                             <li>
-                                <a class="item" href="https://www.virgocx.ca/#/advancedTrade/24"
+                                <a class="item" href="/page#/advancedTrade/24"
                                    data-translate="header_Market"></a>
                             </li>
                             <li class="dropdown-toggle-otc">
@@ -124,7 +124,7 @@
                                 <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn"></a>
                             </li>
                             <li>
-                                <a class="item" href="https://virgocx.ca/en-about-virgocx/"
+                                <a class="item" href="/en-about-virgocx/"
                                    data-translate="header_About"></a>
                             </li>
                             <li>
