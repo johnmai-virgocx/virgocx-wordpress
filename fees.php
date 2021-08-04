@@ -700,7 +700,7 @@ get_header();
                         loadLangJson();
                     }
 
-// fetch('/transferFee/getList')
+                //  fetch('https://wordpress.virgocx.org/transferFee/getList')
                     fetch('https://virgocx.ca/transferFee/getList')
                         .then(res => res.json())
                         .then(data => handleFees(data));
