@@ -167,6 +167,7 @@
                                        data-translate="header_CH"></a>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>

@@ -10,10 +10,10 @@
             currentLang = 'en',
             langPageIndicator =0,
             languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
@@ -103,9 +103,6 @@
                         $(this).attr("placeholder", dictionary[key]);
                         this.setAttribute("data-translate", key);
                     }
-
-
-
                 }else{
                     if(this.value === 'Get Started'||this.value === '一键开启'){
                         $(this).attr('value',dictionary['frontpage_Started'])
@@ -135,17 +132,15 @@
 
         //OTC lang switcher
         $(".lang-dropdown").on("click", function () {
-            // console.log($(this).val())
-            // console.log($(this)[0].getAttribute('value'))
             var language = $(this)[0].getAttribute('value').toLowerCase();
             if (dictionary.hasOwnProperty(language)) {
                 var url = window.location.href;
-                if(url.indexOf('/'+currentLang+'-')<0){
+                if(url && (url.indexOf('/'+currentLang+'-')<0)){
                     setLang(dictionary[language]);
                 }
+                $(dropdownMenuLinkEN).click();
                 redirection(url,language,true);
                 currentLang = language;
-
             }
         });
 
@@ -167,7 +162,7 @@
             }
             const promises = Object.keys(languagePair).map(async function (key) {
                 var langParam = '/' + key + '-';
-                if (url.indexOf(langParam) > -1) {
+                if (url && (url.indexOf(langParam) > -1)) {
                     langPageIndicator = 1;
                     if(fromSwitcher){
                         window.location = url.replace(langParam, '/' + language + '-');
@@ -176,7 +171,7 @@
             })
             const result = await Promise.all(promises);
 
-            if (langPageIndicator == 0 &&  window.location.href !== url){
+            if (url && langPageIndicator == 0 &&  window.location.href !== url){
                 window.location.href = url;
             }
         }
