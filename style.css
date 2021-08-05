@@ -11821,6 +11821,13 @@ form .rmain-ro-button {
 	margin-top: 80px;
 }
 
+.rmain2-background {
+	background-color: #E2FAF7;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+
 .rmain2-para p {
 	font-size: 14px;
 }
@@ -11856,7 +11863,12 @@ form .rmain-ro-button {
 	width: 60px;
 	margin-bottom: 15px;
 }
-
+.rmain2-link-one-para h2 {
+	font-size: 14px;
+	margin-top:6px;
+	color: #66617F;
+	/* color: #7D7899; */
+}
 .rmain2-link-one-para p {
 	font-size: 14px;
 	margin-bottom: 0;
@@ -11865,6 +11877,10 @@ form .rmain-ro-button {
 
 .rmain2-link-two {
 	background-color: #D7F8F4;
+	padding-bottom: 10px;
+}
+.rmain2-link-three {
+	background-color: #FFFFFF;
 	padding-bottom: 10px;
 }
 
@@ -12014,6 +12030,26 @@ form .rmain-ro-button {
 @media screen and (max-width: 992px) {
 	.rmain {
 		margin-top: 50px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.rmain2-link-three {
+		background-color: #FFFFFF;
+		padding-bottom: 10px;
+		height: 388px;
+	}
+}
+@media screen and (max-width: 992px) and (min-width:768px)  {
+	.rmain2-link-three {
+		background-color: #FFFFFF;
+		padding-bottom: 10px;
+		height: 555px;
+	}
+}
+@media screen and (max-width: 768px){
+	.rmain2-link-three {
+		background-color: #FFFFFF;
+		padding-bottom: 10px;
 	}
 }
 
