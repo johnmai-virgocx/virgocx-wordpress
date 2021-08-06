@@ -515,7 +515,7 @@
 	"Fees_$3000":"$3000",
 
 	"Security_head1":"Safe Trading Begins with Best-in-Class Secure Systems",
-	"Security_head2":" It is our highest priority to protect your assets and privacy. As a result, we deploy all efforts to secure our systems to create a safe trading environment for you.",
+	"Security_head2":"It is our highest priority to protect your assets and privacy. As a result, we deploy all efforts to secure our systems to create a safe trading environment for you.",
 	"Security_title1":"Account and Information Security",
 	"Security_title2":"Assets Security",
 	"Security_title3":"Insurance",
@@ -523,11 +523,11 @@
 	"Security_title5":"Audits",
 	"Security_title6":"System Security",
 	"Security_txt1_1":"We implement comprehensive account security measures to safeguard your account. We are compliant with PIPEDA (privacy act in Canada for protection of personal information) and don't sell your data and will never share it unless required by law.",
-	"Security_txt1_2":"-We have partnered with an industry-leading cloud provider and your data is stored on servers in Canada.",
+	"Security_txt1_2":"We have partnered with an industry-leading cloud provider and your data is stored on servers in Canada.",
 	"Security_txt2":"We enforce institutional-grade control on all transactions. All your fiat assets are held within our trusted banking partner in Canada. Your money is safe, accessible, and you have total control.",
 	"Security_txt3":"We have 1 million CAD crime insurance coverage for crypto under our custody. The policy protects against crimes such as theft, damages. You can trade with peace of mind.",
 	"Security_txt4_1":"We are FINTRAC registered and compliant with applicable regulations to ensure the integrity of our platform.",
-	"Security_txt4_2":"We take a proactive approach towards compliance with all applicable laws and regulations. We are in the process of seeking licensing from the Canadian Securities Administrators in all provinces and territories across Canada.",
+	"Security_txt4_2":"We take a proactive approach towards compliance with all applicable laws and regulations. ",
 	"Security_txt5":"We promote the safe custody and storage of cryptocurrency for our customers. We engage trusted third parties to conduct routine audits such as proof of reserve audit and we monitor for suspicious activities.",
 	"Security_txt6":"We take multiple layers of security measures and stringent cybersecurity policies to protect our website and database.",
 

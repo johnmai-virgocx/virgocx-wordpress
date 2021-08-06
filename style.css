@@ -11828,7 +11828,7 @@ form .rmain-ro-button {
 .rmain2-background {
 	background-color: #E2FAF7;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 	margin-bottom: 50px;
 }
 
@@ -11885,7 +11885,13 @@ form .rmain-ro-button {
 }
 .rmain2-link-three {
 	background-color: #FFFFFF;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
+	margin-top:30px;
+}
+.rmain2-link-four {
+	background-color: #FFFFFF;
+	padding-bottom: 30px;
+	margin-top:30px;
 }
 
 /*-- rmain2 end --*/
@@ -12036,24 +12042,31 @@ form .rmain-ro-button {
 		margin-top: 50px;
 	}
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px){
 	.rmain2-link-three {
 		background-color: #FFFFFF;
-		padding-bottom: 10px;
-		height: 388px;
+		padding-bottom: 0;
+		height: 375px;
+		margin-top: 20px;
+	}
+	.rmain2-link-four {
+		background-color: #FFFFFF;
+		padding-bottom: 0;
+		height: 310px;
+		margin-top: 40px;
 	}
 }
 @media screen and (max-width: 992px) and (min-width:768px)  {
 	.rmain2-link-three {
 		background-color: #FFFFFF;
 		padding-bottom: 10px;
-		height: 555px;
+		height: 535px;
 	}
-}
-@media screen and (max-width: 768px){
-	.rmain2-link-three {
+	.rmain2-link-four {
 		background-color: #FFFFFF;
 		padding-bottom: 10px;
+		height: 395px;
+		margin-top: 38px;
 	}
 }
 
