@@ -81,7 +81,7 @@
 
     <div class="header-wrapper">
         <header class="header-area">
-            <div class="container custom-container">
+            <div class="custom-container">
                 <nav class="navbar navbar-expand-lg">
                     <a href="/" class="navbar-brand"><img src="<?= get_template_directory_uri() ?>/img/logo.png"
                                                           height="36" alt="images not found"/></a>
