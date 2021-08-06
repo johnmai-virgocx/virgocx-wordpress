@@ -87,13 +87,31 @@ get_header();
 
         .hero-area-wrapper{
             background-image: none;
+            padding-left: 40px;
         }
 
-        @media (min-width: 1200px){
+        @media (max-width: 1200px){
+            .hero-area-wrapper{
+                padding-left:40px;
+                padding-right:40px;
+            }
+        }
+        @media screen and (max-width: 660px) {
+            .hero-area-wrapper{
+                padding-left:15px;
+                padding-right:15px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .section{
+                padding-left:15px;
+            }
+        }
+        /* @media (min-width: 1200px){
             .affiliate-container{
                 max-width: 70%!important;
             }
-        }
+        } */
 
 
     </style>
