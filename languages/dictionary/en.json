@@ -572,7 +572,11 @@
 	"Polkadot":"Polkadot",
 	"DOT":"DOT",
 	"Cardano":"Cardano",
-	"ADA":"ADA"
+	"ADA":"ADA",
+	"Polygon":"Polygon",
+	"MATIC":"MATIC",
+	"Filecoin":"Filecoin",
+	"FIL":"FIL"
 
 
 }
