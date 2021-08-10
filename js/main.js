@@ -531,9 +531,9 @@
                 'comp/cad': '/page#/advancedTrade/66',
                 'bat/cad': '/page#/advancedTrade/67',
                 'ada/cad': '/page#/advancedTrade/68',
-                'dot/cad': '/page#/advancedTrade/69',
-                'matic/cad': '/page#/advancedTrade/70',
-                'fil/cad': '/page#/advancedTrade/71',
+                'dot/cad': '/page#/advancedTrade/69',                
+                'fil/cad': '/page#/advancedTrade/70',
+                'matic/cad': '/page#/advancedTrade/71',
             }
 
             let index = 1;
