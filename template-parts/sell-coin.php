@@ -66,11 +66,11 @@ get_header();
 				</div>
 
 				<div class="row">
-					<div class="col-lg-7 col-md-12">
+					<div class="col-lg-6 col-md-12">
 						<img src="<?= get_template_directory_uri() ?>/img/app_display.png" alt="images not found" width="100%"/>
 					</div>
 
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-5 col-md-12">
 						<?php get_template_part('template-parts/app', 'qr'); ?>
 					</div>
 				</div>
