@@ -60,7 +60,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <h2 style="margin:10px 0 20px 0; font-size:16px;" data-translate="Security_title1"></h2>
+                                                        <h2 style="margin:20px 0 25px 0; font-size:18px;" data-translate="Security_title1"></h2>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt1_1"></p>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt1_2"></p>
                                                     </div>
@@ -75,7 +75,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <h2 style="margin:10px 0 20px 0; font-size:16px;" data-translate="Security_title2"></h2>
+                                                        <h2 style="margin:20px 0 25px 0; font-size:18px;" data-translate="Security_title2"></h2>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt2"></p>
                                                     </div>
                                                 </div>
@@ -89,7 +89,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <h2 style="margin:10px 0 20px 0; font-size:16px;" data-translate="Security_title3"></h2>
+                                                        <h2 style="margin:20px 0 25px 0; font-size:18px;" data-translate="Security_title3"></h2>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt3"></p>
                                                     </div>
                                                 </div>
@@ -106,7 +106,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <h2 style="margin:10px 0 20px 0; font-size:16px;" data-translate="Security_title4"></h2>
+                                                        <h2 style="margin:20px 0 25px 0; font-size:18px;" data-translate="Security_title4"></h2>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt4_1"></p>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt4_2"></p>
                                                     </div>
@@ -121,7 +121,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <h2 style="margin:10px 0 20px 0; font-size:16px;" data-translate="Security_title5"></h2>
+                                                        <h2 style="margin:20px 0 25px 0; font-size:18px;" data-translate="Security_title5"></h2>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt5"></p>
                                                     </div>
                                                 </div>
@@ -135,7 +135,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <h2 style="margin:10px 0 20px 0; font-size:16px;" data-translate="Security_title6"></h2>
+                                                        <h2 style="margin:20px 0 25px 0; font-size:18px;" data-translate="Security_title6"></h2>
                                                         <p style="color:#666666; margin:0px 20px;" data-translate="Security_txt6"></p>
                                                     </div>
                                                 </div>
