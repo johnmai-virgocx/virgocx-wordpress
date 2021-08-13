@@ -114,6 +114,12 @@
                             <li>
                                 <a class="item" href="https://virgocx.ca/page#/advancedTrade/24"
                                    data-translate="header_Market"></a>
+                                   <!-- production virgocx -->              
+                                   
+                                   
+                                <!-- <a class="item" href="https://wordpress.virgocx.org/page#/advancedTrade/24"
+                                data-translate="header_Market"></a> -->
+                                <!-- testvirgocx -->   
                             </li>
                             <li class="dropdown-toggle-otc">
                                 <a class="item" href="/en-otc/">
