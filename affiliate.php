@@ -12,6 +12,16 @@ get_header();
 ?>
 
     <style type="text/css">
+        .fx-header{
+            padding:0;
+        }
+
+        @media screen and (max-width:660px) {
+            .fx-header{
+                padding:0 20px;
+            }
+            
+        }
 
         .hero-area {
             padding: 6rem 0 2rem 0;
@@ -119,23 +129,22 @@ get_header();
     <!--langSwitcher Example-->
     <!-- <span data-translate="hello"></span> -->
 
-    <div id="page1" class="hero-area-wrapper">
-        <div class="hero-area">
-            <div class="container custom-container affiliate-container">
-                <div class="row">
-                    <div class="col-lg-6 hero-content" style="padding: 0">
-                        <h2>Become a VirgoCX Affiliate </h2>
-                        <p class="banner-subtext">Grow with us, maximize your earnings.</p>
+    <div class="fx-header">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-5 col-md-12">
+                    <div class="row mb-4">
+                        <h2 style="padding:60px 8px 20px 0px;">Become a VirgoCX Affiliate</h2>
+                        <p>Grow with us, maximize your earnings.</p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="<?= get_template_directory_uri() ?>/img/affiliate/affiliate-banner.png"
-                             alt="images not found" style="width: 100%;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				</div>
 
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center">
+                    <img src="<?= get_template_directory_uri() ?>/img/affiliate/affiliate-banner.png" alt="images not found" width="100%" style="max-width:447px"/>
+                </div>
+			</div>
+		</div>
+	</div>
     <!-- rmain area start -->
     <div class="section">
         <div class="container affiliate-container">
