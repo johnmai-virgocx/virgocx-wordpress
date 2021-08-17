@@ -33,7 +33,7 @@ get_header();
 				<div class="row justify-content-between">
 					<div class="col-lg-5 col-md-12">
 						<div class="row">
-							<?php if(strlen($args['name']) > 10) : ?>
+							<?php if(strlen($args['name']) > 12 ) : ?>
 								<h1><span data-translate="Sell_header1_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
 							<?php else : ?>
 								<h1><span data-translate="Sell_header1_1"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
@@ -82,7 +82,7 @@ get_header();
 							<p data-translate="Sell_header3_desc"></p>
 						</div>
 						<div class="step-header">
-						  <?php if(strlen($args['name']) > 10 || $args['name']=="Basic Attention Token") : ?>
+						  <?php if(strlen($args['name']) > 12 || $args['name']=="Basic Attention Token") : ?>
 							<h2><span data-translate="Sell_header4_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header4_2"></h2>
 						  <?php else : ?>	
 							<h2><span data-translate="Sell_header4_1"></span><span data-translate="<?= $args['name'] ?>"></span><span data-translate="Sell_header4_2"></h2>
