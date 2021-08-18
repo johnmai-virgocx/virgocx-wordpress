@@ -12,12 +12,6 @@ get_header();
 ?>
 
     <style type="text/css">
-        .fx-header{
-            padding:0;
-        }
-
-        
-
         .hero-area {
             padding: 6rem 0 2rem 0;
         }
@@ -47,7 +41,6 @@ get_header();
         .col-lg-10 ul{
             list-style:initial;
         }
-
 
         .Affiliate-Sec2-ul
         li {
@@ -108,11 +101,7 @@ get_header();
             }
 
             .fx-header{
-                padding:0 20px;
-            }
-
-            .section-title h2{
-             padding:0 10px;
+                padding:48px 20px;
             }
 
             .col-lg-10{
@@ -122,19 +111,7 @@ get_header();
             .col-lg-10 ul{
             padding: 0 18px;    
             }
-
         }
-        @media screen and (max-width: 576px) {
-            .section{
-                padding-left:15px;
-            }
-        }
-        /* @media (min-width: 1200px){
-            .affiliate-container{
-                max-width: 70%!important;
-            }
-        } */
-
 
     </style>
 
@@ -199,13 +176,11 @@ get_header();
                         <p>We help you monetize your traffic! You can earn the following bonuses:</p>
                             <ul>
 
-
                              <li><b>$10 for every user that gets verified on our platform,</b>	</li>
 
                              <li><b>$20 when they make their first fiat deposit of $100+ CAD,</b> </li>
 
                              <li><b>Plus, a 0.08% commission share on all trading amounts they make!</b></li>
-
 
                             </ul>
                              </br><p>There’s no cap to what you earn. You’re just a few clicks away from this lifetime earning opportunity - it's quick, easy, and rewarding!
@@ -234,7 +209,7 @@ get_header();
                              alt="images not found">
                     </div>
                     <div class="col-lg-6 ">
-                        <ul class="Affiliate-Sec2-ul">
+                        <ul class="Affiliate-Sec2-ul" style="padding-left:15px">
                             <li>Social media influencers with at least 2,000+ followers on social platforms</li>
                             <li>Industry media platform/website</li>
                             <li>Crypto communities with a minimum of 500 members</li>
