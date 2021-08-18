@@ -16,12 +16,7 @@ get_header();
             padding:0;
         }
 
-        @media screen and (max-width:660px) {
-            .fx-header{
-                padding:0 20px;
-            }
-            
-        }
+        
 
         .hero-area {
             padding: 6rem 0 2rem 0;
@@ -111,6 +106,23 @@ get_header();
                 padding-left:15px;
                 padding-right:15px;
             }
+
+            .fx-header{
+                padding:0 20px;
+            }
+
+            .section-title h2{
+             padding:0 10px;
+            }
+
+            .col-lg-10{
+            padding:0 10px;
+            }
+            
+            .col-lg-10 ul{
+            padding: 0 18px;    
+            }
+
         }
         @media screen and (max-width: 576px) {
             .section{
