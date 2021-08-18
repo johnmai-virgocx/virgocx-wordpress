@@ -565,7 +565,7 @@
                 'fil/cad': 'https://virgocx.ca/page#/advancedTrade/70',
                 'matic/cad': 'https://virgocx.ca/page#/advancedTrade/71',
                 'enj/cad': 'https://virgocx.ca/page#/advancedTrade/72',
-                'mana/cad': 'https://virgocx.ca/page#/advancedTrade/713',
+                'mana/cad': 'https://virgocx.ca/page#/advancedTrade/73',
             }//production
 
             let index = 1;
