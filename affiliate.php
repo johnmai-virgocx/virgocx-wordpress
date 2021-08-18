@@ -100,6 +100,12 @@ get_header();
                 padding-right:15px;
             }
 
+            .section-title-text{
+                padding-left:8px;
+            }
+
+            
+
             .fx-header{
                 padding:48px 20px;
             }
@@ -139,7 +145,7 @@ get_header();
         <div class="container affiliate-container">
             <div class="rmain-wrapper">
                 <div class="section-title row">
-                    <h2>How It Works</h2>
+                    <h2 class="section-title-text">How It Works</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-1">
@@ -209,7 +215,7 @@ get_header();
                              alt="images not found">
                     </div>
                     <div class="col-lg-6 ">
-                        <ul class="Affiliate-Sec2-ul" style="padding-left:15px">
+                        <ul class="Affiliate-Sec2-ul" style="padding-left:18px">
                             <li>Social media influencers with at least 2,000+ followers on social platforms</li>
                             <li>Industry media platform/website</li>
                             <li>Crypto communities with a minimum of 500 members</li>
