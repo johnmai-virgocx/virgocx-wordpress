@@ -1080,10 +1080,18 @@ pre code {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
-	.col-md-4 {
+	.carousel-item .col-md-4 {
 		-ms-flex: 0 0 33.333333%;
 		flex: 0 0 33.333333%;
 		max-width: 33.333333%;
+		padding-left:10px;
+	}
+
+	.col-md-4{
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width:33.333333%;
+
 	}
 	.col-md-5 {
 		-ms-flex: 0 0 41.666667%;
@@ -1221,6 +1229,14 @@ pre code {
 	.offset-md-11 {
 		margin-left: 91.666667%;
 	}
+
+	.carousel-inner .carousel-item > div:nth-child(2){
+        display:block;
+	}
+
+	.carousel-inner .carousel-item > div:nth-child(3){
+        display:block;
+	}
 }
 
 @media (min-width: 992px) {
@@ -1257,6 +1273,14 @@ pre code {
 		flex: 0 0 33.333333%;
 		max-width: 33.333333%;
 	}
+
+    .carousel-item .col-lg-3 {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding-left:10px;
+	}
+
 	.col-lg-5 {
 		-ms-flex: 0 0 41.666667%;
 		flex: 0 0 41.666667%;
@@ -1393,7 +1417,23 @@ pre code {
 	.offset-lg-11 {
 		margin-left: 91.666667%;
 	}
+
+	.carousel-control-next{
+		right: -50px!important;
+        top: -50px!important;
+        opacity: 1!important;
+	}
+
+	.carousel-control-prev{
+		left: -50px!important;
+        top: -50px!important;
+        opacity: 1!important;
+	}
+
 }
+
+
+
 
 @media (min-width: 1200px) {
 	.col-xl {
@@ -1564,6 +1604,17 @@ pre code {
 	}
 	.offset-xl-11 {
 		margin-left: 91.666667%;
+	}
+	.carousel-control-next{
+		right: -100px!important;
+        top: -100px!important;
+        opacity: 1!important;
+	}
+
+	.carousel-control-prev{
+		left: -100px!important;
+        top: -100px!important;
+        opacity: 1!important;
 	}
 }
 
@@ -10301,6 +10352,8 @@ select::-ms-expand {
 	display: block;
 }
 
+
+
 .blue-gradient-btn,
 .buy-amount form input[type="submit"] {
 	width: 150px;
@@ -11275,6 +11328,10 @@ Small Screen - Mobile
 	.buy-amount span {
 		padding-top: 10px;
 	}
+    .span-buy-now{
+		padding-top: 0px!important;
+	}
+
 	.buy-amount form input[type="submit"] {
 		margin: 10px 0px 20px;
 		width: 100%;
@@ -11461,6 +11518,11 @@ Xtra Small Screen - Small Mobile
 	.buy-amount span {
 		padding-top: 10px;
 	}
+
+	.span-buy-now{
+		padding-top: 0px!important;
+	}
+
 	.buy-amount form input[type="submit"] {
 		margin: 10px 0px 20px;
 		width: 100%;

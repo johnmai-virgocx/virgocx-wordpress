@@ -585,7 +585,7 @@ if ($totalNumber === 1): ?>
                                     </div>
 
                                     <a href="/page#/login" class="col-lg-2 blue-gradient-btn">
-										<span data-translate="frontpage_Buy_Now"/> 
+										<span class="span-buy-now"data-translate="frontpage_Buy_Now"/> 
 									</a>
                                 </form>
                             </div>
