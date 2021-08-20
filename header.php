@@ -75,8 +75,15 @@
 <div id="page" class="site">
     <!--
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'virgocx'); ?></a>
--->
+--> <style>
+        .navbar-brand{
+            width: 145px
+        }
 
+        .menu{
+            width: 275px;
+        }
+    </style>
     <!-- header-area start -->
 
     <div class="header-wrapper">
