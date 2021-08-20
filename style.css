@@ -12801,7 +12801,7 @@ form.normal input[type="submit"] {
 .dropdown-menu option:hover{
 	cursor: pointer;
 }
-.header-area . menu,
+.header-area .menu,
 .header-area-otc .menu {
 	clear: both;
 	margin-right: 20px;
