@@ -80,9 +80,14 @@
             width: 145px
         }
 
-        .menu{
-            width: 350px;
+
+        @media (min-width: 1200px) {
+            .menu{
+                width: 350px;
+            }
         }
+
+
     </style>
     <!-- header-area start -->
 
