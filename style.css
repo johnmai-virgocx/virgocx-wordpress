@@ -12689,7 +12689,7 @@ form.normal input[type="submit"] {
 	width: 100%;
 	clear: both;
 	font-weight: 400;
-	color: white;
+	color: white!important;
 	text-align: inherit;
 	white-space: nowrap;
 	background-color: #1E1A5F;
@@ -12844,7 +12844,7 @@ form.normal input[type="submit"] {
 .header-area-otc .menu li,
 .header-area-otc .menu li a{
 	text-align: left;
-	color: white;
+	color: white!important;
 }
 
 .dropdown-toggle-otc .dropdown-menu a{
@@ -12874,7 +12874,7 @@ form.normal input[type="submit"] {
 	.header-area-otc .menu {
 		clear: none;
 		float: right;
-		 margin-right: 20px;
+		 margin-right: 0px;
 		max-height: none;
 	}
 
