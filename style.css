@@ -10879,6 +10879,10 @@ form input[type="submit"]:hover {
 	color: #7965e6;
 }
 
+#otc-body{
+	overflow-x: hidden;
+}
+
 .app-download .text {
 	padding-left: 1rem;
 }
