@@ -595,6 +595,8 @@
 	"NFT_TokenID": "Token ID",
 	"NFT_Blockchain": "Blockchain",
 
+	"NFT_SeeTrends": "See Recent Trends",
+	"NFT_SeeAnalytics": "See Analytics",
 	"NFT_Market": "VirgoCX NFT Market",
 	"NFT_BuyItNow": "Buy It Now",
 	"NFT_Price": "Price: Low to High",

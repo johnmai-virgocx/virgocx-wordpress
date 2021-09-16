@@ -611,6 +611,8 @@
 	"NFT_TokenID": "代币ID",
 	"NFT_Blockchain": "区块链",
 
+	"NFT_SeeTrends": "查看最近趋势",
+	"NFT_SeeAnalytics": "查看相关数据",
 	"NFT_Market": "VirgoCX NFT 市场",
 	"NFT_BuyItNow": "即刻购买",
 	"NFT_Price": "价格：低到高",

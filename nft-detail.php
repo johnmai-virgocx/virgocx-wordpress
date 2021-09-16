@@ -21,8 +21,8 @@ get_header();
         <?php echo $detail["target_blockchain_value"]; ?> <?php echo $detail["target_blockchain"]; ?> </p>
 
       <div class="link">
-        <a href="#">See Recent Trends</a>
-        <a href="#">See Analytics</a>
+        <a href="#" data-translate="NFT_SeeTrends">See Recent Trends</a>
+        <a href="#" data-translate="NFT_SeeAnalytics">See Analytics</a>
       </div>
       <p class="desc"><?php echo $detail["description"]; ?></p>
 
