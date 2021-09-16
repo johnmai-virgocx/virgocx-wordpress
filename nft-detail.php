@@ -21,28 +21,28 @@ get_header();
         <?php echo $detail["target_blockchain_value"]; ?> <?php echo $detail["target_blockchain"]; ?> </p>
 
       <div class="link">
-        <a href="#">See Recent Trends </a>
+        <a href="#">See Recent Trends</a>
         <a href="#">See Analytics</a>
       </div>
       <p class="desc"><?php echo $detail["description"]; ?></p>
 
       <div class="action">
-        <button class="buy">Buy with VirgoCX</button>
-        <button class="sell">View on Opensea</button>
+        <button class="buy" data-translate="NFT_Buy">Buy with VirgoCX</button>
+        <button class="sell" data-translate="NFT_Opensea">View on Opensea</button>
       </div>
     </div>
   </div>
   <div class="table">
-    <div class="header">Details</div>
+    <div class="header" data-translate="NFT_Details">Details</div>
 
-    <div class="stats">Stats</div>
+    <div class="stats" data-translate="NFT_Stats">Stats</div>
     <div class="stats-value"><?php echo $detail["stats"]; ?></div>
-    <div class="stats">Contract Address</div>
+    <div class="stats" data-translate="NFT_ContractAddress">Contract Address</div>
     <div class="stats-value"><?php echo $detail["contract_address"]; ?></div>
     <div class="stats-wrap">
-      <div class="stats">Token ID</div>
+      <div class="stats" data-translate="NFT_TokenID">Token ID</div>
       <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
-      <div class="stats">Blockchain</div>
+      <div class="stats" data-translate="NFT_Blockchain">Blockchain</div>
       <div class="stats-value"><?php echo $detail["blockchain_value"]; ?></div>
     </div>
   </div>

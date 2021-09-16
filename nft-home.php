@@ -15,17 +15,22 @@ get_header();
   <div class="banner-container">
     <div class="content">
       <div class="title">
-        <span>FIND</span>, <span>TRADE</span>, and <span>COLLECT</span> valuable NFTs with our Brokerage Service.
+        <span data-translate="NFT_Find">FIND</span>
+        <div class="text" data-translate="NFT_Comma">,</div> 
+        <span data-translate="NFT_Trade">TRADE</span>
+        <div class="text" data-translate="NFT_And">, and </div> 
+        <span data-translate="NFT_Collect">COLLECT</span>
+        <div class="text" data-translate="NFT_Valuable">valuable NFTs with our Brokerage Service.</div> 
       </div>
       <div class="action">
-        <button class="buy">Buy an NFT</button>
-        <button class="sell">Sell your NFT</button>
+        <button class="buy" data-translate="NFT_BuyNFT">Buy an NFT</button>
+        <button class="sell" data-translate="NFT_SellNFT">Sell your NFT</button>
       </div>
     </div>
   </div>
 
   <div class="slider-container">
-    <h3>Trending on VirgoCX</h3>
+    <h3 data-translate="NFT_TrendingNFT">Trending on VirgoCX</h3>
 
     <section class="carousel-area">
       <div class="container custom-container">
@@ -63,28 +68,29 @@ get_header();
     </section>
 
     <div class="action">
-      <button class="view-more">View More</button>
+      <button class="view-more" data-translate="NFT_ViewMore">View More</button>
     </div>
   </div>
 
   <div class="middle-block">
     <div class="left">
-      The VirgoCX NFT Brokerage helps our clients <span>find and trade high value art pieces & collectables.</span>
+      <div class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients </div>
+      <span data-translate="NFT_note2">find and trade high value art pieces & collectables.</span>
     </div>
     <div class="right">
-      <span>We navigate the markets to find rare and upcoming NFTs. Our insider reports provides actionable insights for
+      <span data-translate="NFT_note3">We navigate the markets to find rare and upcoming NFTs. Our insider reports provides actionable insights for
         our clients to make purchasing decisions. </span>
     </div>
   </div>
 
 
   <section class="how-area">
-    <h2 data-translate="OTC_direct_how">How It Works?</h2>
+    <h2 data-translate="NFT_HowItWorks">How It Works?</h2>
 
     <div class="tabs">
       <nav class="tab-switch row">
-        <a class="selected" data-translate="OTC_direct_how1">Buying an NFT</a>
-        <a data-translate="OTC_chat_how2">Selling your NFT </a>
+        <a class="selected" data-translate="NFT_BuyingNFT">Buying an NFT</a>
+        <a data-translate="NFT_SellingNFT">Selling your NFT </a>
       </nav>
       <div class="how-container">
         <div class="row custom-container">
@@ -97,12 +103,10 @@ get_header();
             <p>4.</p>
           </div>
           <div class="content-box">
-            <p>We will alert you of potential mints for new NFTs or existing notable NFTs through our exclusive “Virgo
-              Choice” newsletter or our VirgoCX NFT Inventory.</p>
-            <p>Load your VirgoCX account with the funds required to purchase the NFT.</p>
-            <p>Contact our account managers to book your trade and allow us to begin the sourcing process.</p>
-            <p>We deduct the balance from your account and send the NFT to your Wallet after the transaction has been
-              completed. </p>
+            <p data-translate="NFT_BuyNote1"></p>
+            <p data-translate="NFT_BuyNote2"></p>
+            <p data-translate="NFT_BuyNote3"></p>
+            <p data-translate="NFT_BuyNote4"></p>
           </div>
         </div>
       </div>
@@ -115,32 +119,30 @@ get_header();
             <p>2.</p>
             <p>3.</p>
             <p>4.</p>
-            <p>5.</p>
           </div>
           <div class="content-box" style="height: 468px">
-            <p>Contact one of our account managers after Onboarding with VirgoCX.</p>
-            <p>Our curator will examine the NFT to determine eligibility and value.</p>
-            <p>Once determined, our account manager will provide you with an offer.</p>
-            <p>Upon approval of the offer, we will take custody of your NFT. </p>
-            <p>Funds will be sent depending on your preferred currency. </p>
+            <p data-translate="NFT_SellNote1"></p>
+            <p data-translate="NFT_SellNote2"></p>
+            <p data-translate="NFT_SellNote3"></p>
+            <p data-translate="NFT_SellNote4"></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="getstart-btn">Get Started</div>
+    <div class="getstart-btn" data-translate="NFT_GetStarted">Get Started</div>
   </section>
 
 
   <section class="faq" aria-label="Question Accordions">
     <div class="custom-container">
-      <h2 data-translate="OTC_chat_faq">Frequently Asked Questions </h2>
+      <h2 data-translate="NFT_FAQ">Frequently Asked Questions </h2>
       <div class="panel-group" id="faq" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
           <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
             <h3 class="panel-title">
               <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse0"
                 aria-expanded="true" aria-controls="collapse0">
-                <span data-translate="OTC_chat_faq1">What are NFTs (Non Fungible Tokens)</span>
+                <span data-translate="NFT_Q1">What are NFTs (Non Fungible Tokens)</span>
 
                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
               </div>
@@ -148,11 +150,7 @@ get_header();
           </div>
           <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
             <div class="panel-body px-3 mb-4">
-              <p data-translate="OTC_chat_faq1_1">A non-fungible token is a unit of data stored on a digital ledger,
-                called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable. NFTs
-                can be used to represent items such as photos, videos, audio, and other types of digital files. People
-                collect these tokens as a way to have a 1 of 1 digital good.
-              </p>
+              <p data-translate="NFT_A1"></p>
             </div>
           </div>
         </div>
@@ -162,7 +160,7 @@ get_header();
             <h3 class="panel-title">
               <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse1"
                 aria-expanded="true" aria-controls="collapse1">
-                <span data-translate="OTC_chat_faq2">How do I buy the NFT and where do I store it?</span>
+                <span data-translate="NFT_Q2">How do I buy the NFT and where do I store it?</span>
 
                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
 
@@ -171,9 +169,7 @@ get_header();
           </div>
           <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
             <div class="panel-body px-3 mb-4">
-              <p data-translate="OTC_chat_faq2_1">Once you have purchased an NFT from our Brokerage Service, you will be
-                able to receive it directly to your Web3 enabled wallet (Metamask, Walletconnect, Trust Wallet, etc) or
-                you can have it stored to your associated VirgoCX account.</p>
+              <p data-translate="NFT_A2"></p>
             </div>
           </div>
         </div>
@@ -183,16 +179,16 @@ get_header();
             <h3 class="panel-title">
               <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse2"
                 aria-expanded="true" aria-controls="collapse2">
-                <span data-translate="OTC_chat_faq3">Can I sell an NFT that I bought?</span>
+                <span data-translate="NFT_Q3">Can I sell an NFT that I bought?</span>
                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
               </div>
             </h3>
           </div>
           <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
             <div class="panel-body px-3 mb-4">
-              <p data-translate="OTC_chat_faq3_1">Whether it was an NFT you bought from our NFT Brokerage Service or
-                whether you had minted and purchased it yourself -- our NFT Brokerage will be able to match your NFT
-                with a potential buyer. Click here to learn more.</p>
+              <p data-translate="NFT_A3_1"></p>
+              <p data-translate="NFT_A3_2"></p>
+              <p data-translate="NFT_A3_3"></p>
             </div>
           </div>
         </div>
@@ -202,7 +198,7 @@ get_header();
             <h3 class="panel-title">
               <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse3"
                 aria-expanded="true" aria-controls="collapse3">
-                <span data-translate="OTC_chat_faq4">How do I get started?</span>
+                <span data-translate="NFT_Q4">How do I get started?</span>
 
                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
               </div>
@@ -210,9 +206,8 @@ get_header();
           </div>
           <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
             <div class="panel-body px-3 mb-4">
-              <p data-translate="OTC_chat_faq4_1">Currently, our service is only available to existing OTC &
-                Institutional Clients for high value NFT pieces. If you would like to register, click here to get
-                started. </p>
+              <p data-translate="NFT_A4_1"></p>
+              <p data-translate="NFT_A4_2"></p>
             </div>
           </div>
         </div>
@@ -221,15 +216,14 @@ get_header();
             <h3 class="panel-title">
               <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse4"
                 aria-expanded="true" aria-controls="collapse4">
-                <span data-translate="OTC_chat_faq5">Why would i buy from you and not on OpenSea?</span>
+                <span data-translate="NFT_Q5">Why would i buy from you and not on OpenSea?</span>
                 <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
               </div>
             </h3>
           </div>
           <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
             <div class="panel-body px-3 mb-4">
-              <p data-translate="OTC_chat_faq5_1">We save fees, we find good quality items for you, analytics, as well
-                as consultancy for it.</p>
+              <p data-translate="NFT_A5"></p>
             </div>
           </div>
         </div>
@@ -252,7 +246,7 @@ get_header();
       <div class="row d-flex justify-content-center">
         <div class="col-lg-6 col-md-12">
           <div class="">
-            <h2 data-translate="OTC_Signup">Sign Up Today</h2>
+            <h2 data-translate="NFT_SignUp">Sign Up Today</h2>
           </div>
           <div class="how-content">
             <div class="how-item">
@@ -282,30 +276,32 @@ get_header();
 }
 
 .banner-container .title {
-
-
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
   /* or 117% */
-
   color: #05004D;
 }
 
 .banner-container .title span {
-
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
   /* or 117% */
-
   text-transform: uppercase;
-
   /* OTC Glold */
-
   color: #C7BA9A;
+}
+.banner-container .title .text {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  /* or 117% */
+  color: #05004D;
 }
 
 .banner-container .action {
@@ -384,22 +380,29 @@ get_header();
 }
 
 .middle-block .left {
-
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
   width: 600px;
-
   /* FFFFFF */
-
   color: #FFFFFF;
 }
 
 .middle-block .left span {
   /* OTC Glold */
-
   color: #C7BA9A;
+}
+
+.middle-block .left .text {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  width: 600px;
+  /* FFFFFF */
+  color: #FFFFFF;
 }
 
 .middle-block .right {

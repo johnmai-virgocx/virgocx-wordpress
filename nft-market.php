@@ -14,14 +14,14 @@ get_header();
 <div class="nft-market-container">
   <div class="banner-container">
     <div class="content">
-      <div class="title">
+      <div class="title" data-translate="NFT_Market">
         VirgoCX NFT Market
       </div>
     </div>
   </div>
 
   <div class="search-header-container">
-    <h3>Buy It Now</h3>
+    <h3 data-translate="NFT_BuyItNow">Buy It Now</h3>
   </div>
 
   <ul class="search-list-container">
@@ -39,12 +39,12 @@ get_header();
   </ul>
 
   <div class="catact-container">
-    <p class="content">Can’t find what your are looking for?</p>
-    <div class="contact-btn">Contact Us</div>
+    <p class="content" data-translate="NFT_CantFind">Can’t find what your are looking for?</p>
+    <div class="contact-btn" data-translate="NFT_ContactUs">Contact Us</div>
   </div>
 
   <div class="slider-container">
-    <h3>Trending Collections</h3>
+    <h3 data-translate="NFT_Trending">Trending Collections</h3>
 
     <section class="carousel-area">
       <div class="container custom-container">
