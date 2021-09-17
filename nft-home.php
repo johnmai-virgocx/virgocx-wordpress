@@ -1633,4 +1633,4 @@ get_header('otc');
     </script>
 
 <?php
-get_footer();
+get_footer('otc');

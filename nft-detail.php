@@ -415,4 +415,4 @@ get_header('otc');
 
 
 <?php
-get_footer();
+get_footer('otc');
