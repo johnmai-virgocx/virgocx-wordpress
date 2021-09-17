@@ -10,7 +10,7 @@
 // 关联数组
 $rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where id = 1', ARRAY_A);
 $detail = $rows[0];
-get_header();
+get_header('otc');
 ?>
 <div class="nft-detail-container">
   <div class="content-container">

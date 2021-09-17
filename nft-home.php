@@ -9,7 +9,7 @@
  */
 
 $rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where show_home = 1', ARRAY_A);
-get_header();
+get_header('otc');
 ?>
     <div class="nft-home-container">
         <div class="banner-container">

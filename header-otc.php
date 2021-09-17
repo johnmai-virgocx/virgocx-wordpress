@@ -96,7 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container custom-container">
                 <nav class="navbar navbar-expand-lg">
                     <a href="/en-otc/" class="navbar-brand"><img
-                                src="<?= get_template_directory_uri() ?>/img/otc/VirgoOTC_logo_full.svg" height="36"
+                                src="<?= get_template_directory_uri() ?>/img/otc/VirgoNFT_logo.svg" height="36"
                                 alt="images not found"/></a>
                     <button
                             class="hamburger hamburger--squeeze navbar-toggler"

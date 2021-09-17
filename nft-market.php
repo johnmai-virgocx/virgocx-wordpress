@@ -58,7 +58,7 @@ if (!empty($_REQUEST['sort'])) {
   $total = count($all_rows);
   $pageTotal = ceil($total / 6);
 }
-get_header();
+get_header('otc');
 ?>
 <div class="nft-market-container">
   <div class="banner-container">
