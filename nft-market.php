@@ -401,7 +401,7 @@ get_header('otc');
 }
 
 .slider-container .owl-item {
-  width: 380px;
+  width: 380px !important;
   height: 531px;
   /* margin: 20px; */
   box-sizing: border-box;
@@ -1030,6 +1030,11 @@ get_header('otc');
     font-weight: bold;
   }
 }
+
+.nft-market-container .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #05004D;
+}
 </style>
 <script>
 (function($) {
@@ -1040,7 +1045,7 @@ get_header('otc');
       owl.owlCarousel({
         items: 3,
         loop: true,
-        margin: 10,
+        margin: 56,
         autoplay: false,
         autoplayTimeout: 1500,
         pagination: true,
