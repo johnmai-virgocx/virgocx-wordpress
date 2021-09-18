@@ -14,7 +14,7 @@ get_header('otc');
 ?>
 <div class="nft-detail-container">
   <div class="content-container">
-    <img class="image" src="<?= get_template_directory_uri() ?><?php echo $detail["thumbnail"]; ?>" alt="">
+    <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
     <div class="content">
       <p class="title"><?php echo $detail["title"]; ?></p>
       <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?> ≈

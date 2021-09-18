@@ -53,7 +53,7 @@ get_header('otc');
 
                       <a class="pg-top">
 
-                        <img src="<?= get_template_directory_uri() ?><?php echo $row["thumbnail"]; ?>" alt="">
+                        <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["title"]; ?></p>
@@ -266,7 +266,7 @@ get_header('otc');
           </div>
           <div class="how-content">
             <div class="how-item">
-              <?= do_shortcode('[contact-form-7 id="70" title="OTC-signup"]') ?>
+              <?= do_shortcode('[contact-form-7 id="70" title="NFT-signup"]') ?>
 
             </div>
           </div>
