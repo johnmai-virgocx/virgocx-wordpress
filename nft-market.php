@@ -134,7 +134,7 @@ get_header('otc');
 
                       <a class="pg-top">
 
-                        <img src="<?= get_template_directory_uri() ?>/img/nft-card-demo.jpg" alt="">
+                        <img src="<?= get_template_directory_uri() ?><?php echo $row["thumbnail"]; ?>" alt="">
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["title"]; ?></p>

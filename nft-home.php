@@ -53,7 +53,7 @@ get_header('otc');
 
                       <a class="pg-top">
 
-                        <img src="<?= get_template_directory_uri() ?>/img/nft-card-demo.jpg" alt="">
+                        <img src="<?= get_template_directory_uri() ?><?php echo $row["thumbnail"]; ?>" alt="">
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["title"]; ?></p>
@@ -1507,6 +1507,14 @@ get_header('otc');
 .nft-home-container .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #05004D;
+}
+
+.checkbox-list {
+  text-align: left;
+}
+
+.checkbox-list .checkbox-title {
+  padding-left: 10px;
 }
 </style>
 
