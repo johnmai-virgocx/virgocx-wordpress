@@ -8,7 +8,7 @@
  * @package Virgocx
  */
 
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where show_home = 1', ARRAY_A);
+$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_virgocx = 1', ARRAY_A);
 get_header('otc');
 ?>
 <div class="nft-home-container">

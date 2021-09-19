@@ -57,7 +57,10 @@ if (!empty($_REQUEST['sort'])) {
   $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article" . $sql, ARRAY_A);
   $total = count($all_rows);
   $pageTotal = ceil($total / 6);
+
 }
+
+$trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
 get_header('otc');
 ?>
 <div class="nft-market-container">
@@ -128,7 +131,7 @@ get_header('otc');
               <div class="owl-carousel owl-theme owl-loaded owl-drag">
                 <div class="owl-stage-outer">
                   <div class="owl-stage">
-                    <?php foreach ($rows as $row) { ?>
+                    <?php foreach ($trendingRows as $row) { ?>
                     <div class="owl-item ">
 
 
