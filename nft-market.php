@@ -137,9 +137,6 @@ get_header('otc');
                         <img src="<?= get_template_directory_uri() ?><?php echo $row["thumbnail"]; ?>" alt="">
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
-                          <p class="desc"><?php echo $row["title"]; ?></p>
-                          <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> ≈
-                            <?php echo $row["target_blockchain_value"]; ?> <?php echo $row["target_blockchain"]; ?> </p>
                         </div>
                       </a>
                     </div>
@@ -159,435 +156,439 @@ get_header('otc');
 </div>
 
 <style type="text/css">
-.nft-market-container {
-  background: #F5F5F5;
-  overflow: hidden;
-}
+@media screen and (min-width: 900px) {
 
-.banner-container {
-  padding: 0 100px;
-  height: 381px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #05004D;
+  .nft-market-container {
+    background: #F5F5F5;
+    overflow: hidden;
+  }
 
-}
+  .banner-container {
+    padding: 0 100px;
+    height: 381px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #05004D;
 
-.banner-container .content {
-  width: 655px;
+  }
 
-}
+  .banner-container .content {
+    width: 655px;
 
-.banner-container .title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  /* identical to box height */
+  }
 
+  .banner-container .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
 
-  color: #FFFFFF;
-}
 
-.banner-container img {}
+    color: #FFFFFF;
+  }
 
-.banner-container .title span {
+  .banner-container img {}
 
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  /* or 117% */
-
-  text-transform: uppercase;
-
-  /* OTC Glold */
+  .banner-container .title span {
 
-  color: #C7BA9A;
-}
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    /* or 117% */
+
+    text-transform: uppercase;
 
-.banner-container .action {
-  margin-top: 60px;
-}
+    /* OTC Glold */
 
-.banner-container .action .buy {
-  width: 200px;
-  height: 50px;
-  background: #05004D;
-  border-radius: 25px;
-
+    color: #C7BA9A;
+  }
 
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
+  .banner-container .action {
+    margin-top: 60px;
+  }
 
-  text-align: center;
-
-  /* FFFFFF */
+  .banner-container .action .buy {
+    width: 200px;
+    height: 50px;
+    background: #05004D;
+    border-radius: 25px;
 
-  color: #FFFFFF;
-}
 
-.banner-container .action .sell {
-  width: 200px;
-  height: 50px;
-  border: 2px solid #05004D;
-  background-color: #fff;
-  box-sizing: border-box;
-  border-radius: 25px;
-  margin-left: 44px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
 
+    text-align: center;
 
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
+    /* FFFFFF */
 
-  /* VirgoOTC Blue */
+    color: #FFFFFF;
+  }
 
-  color: #05004D;
-}
+  .banner-container .action .sell {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #05004D;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-left: 44px;
 
-.search-header-container {}
 
-.search-header-container h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
 
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 50px;
-  margin: 80px auto;
-  /* or 139% */
-
-  text-align: center;
-  width: 100%;
-
-  color: #1E1A5F;
-}
-
-.search-list-container {
-  list-style: none;
-  width: 1305px;
-  margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-}
+    /* VirgoOTC Blue */
 
-.search-list-container li {
-  width: 380px;
-  height: 531px;
-  margin: 20px;
-  box-sizing: border-box;
-  overflow: hidden;
-  background: #FFFFFF;
-  border-radius: 0px 0px 20px 20px;
-}
+    color: #05004D;
+  }
 
-.search-list-container li img {
-  width: 380px;
-  height: 380px;
-  display: block;
-}
+  .search-header-container {}
 
-.search-list-container li .content .title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  margin-top: 18px;
-  line-height: 29px;
-  /* identical to box height */
+  .search-header-container h3 {
 
-  text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 80px auto;
+    /* or 139% */
+
+    text-align: center;
+    width: 100%;
+
+    color: #1E1A5F;
+  }
+
+  .search-list-container {
+    list-style: none;
+    width: 1305px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  /* VirgoOTC Blue */
+  .search-list-container li {
+    width: 380px;
+    height: 531px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+  }
 
-  color: #05004D;
-}
+  .search-list-container li img {
+    width: 380px;
+    height: 380px;
+    display: block;
+  }
 
-.search-list-container li .content .desc {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-
-  /* VirgoOTC Blue */
-
-  color: #05004D;
-}
-
-.search-list-container li .content .value {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-
-  text-align: center;
-
-  /* OTC Glold */
-
-  color: #C7BA9A;
-}
-
-.catact-container {}
-
-.catact-container .content {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-
-  text-align: center;
-
-  /* VirgoOTC Blue */
-
-  color: #05004D;
-}
-
-.catact-container .contact-btn {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-
-  width: 200px;
-  height: 50px;
-  line-height: 46px;
-  margin: 20px auto;
+  .search-list-container li .content .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 18px;
+    line-height: 29px;
+    /* identical to box height */
 
-  /* VirgoOTC Blue */
+    text-align: center;
 
-  border: 2px solid #05004D;
-  box-sizing: border-box;
-  border-radius: 25px;
+    /* VirgoOTC Blue */
 
-  /* VirgoOTC Blue */
+    color: #05004D;
+  }
+
+  .search-list-container li .content .desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* VirgoOTC Blue */
+
+    color: #05004D;
+  }
+
+  .search-list-container li .content .value {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* OTC Glold */
+
+    color: #C7BA9A;
+  }
+
+  .catact-container {}
+
+  .catact-container .content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* VirgoOTC Blue */
+
+    color: #05004D;
+  }
+
+  .catact-container .contact-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    width: 200px;
+    height: 50px;
+    line-height: 46px;
+    margin: 20px auto;
 
-  color: #05004D;
+    /* VirgoOTC Blue */
+
+    border: 2px solid #05004D;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    /* VirgoOTC Blue */
 
-}
+    color: #05004D;
 
+  }
 
-.slider-container {}
+
+  .slider-container {}
+
+  .slider-container .container {
+    max-width: calc(428px * 3);
+  }
+
+  .slider-container h3 {
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 80px auto;
+    /* or 139% */
 
-.slider-container .container {
-  max-width: calc(428px * 3);
-}
-
-.slider-container h3 {
+    text-align: center;
+    width: 100%;
 
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 50px;
-  margin: 80px auto;
-  /* or 139% */
+    color: #1E1A5F;
+  }
 
-  text-align: center;
-  width: 100%;
+  .slider-container .owl-item a {
+    display: block;
+  }
+
+  .slider-container .owl-item {
+    width: 380px !important;
+    height: 480px;
+    /* margin: 20px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #0D0763;
+  }
+
+  .slider-container .owl-item a img {
+    width: 380px;
+    height: 380px;
+    display: block;
+  }
 
-  color: #1E1A5F;
-}
-
-.slider-container .owl-item a {
-  display: block;
-}
-
-.slider-container .owl-item {
-  width: 380px !important;
-  height: 531px;
-  /* margin: 20px; */
-  box-sizing: border-box;
-  overflow: hidden;
-  background: #FFFFFF;
-  border-radius: 0px 0px 20px 20px;
-}
-
-.slider-container .owl-item a img {
-  width: 380px;
-  height: 380px;
-  display: block;
-}
-
-.slider-container .owl-item a .content .title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  margin-top: 18px;
-  line-height: 29px;
-  /* identical to box height */
-
-  text-align: center;
-
-  /* VirgoOTC Blue */
-
-  color: #05004D;
-}
-
-.slider-container .owl-item a .content .desc {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-
-  /* VirgoOTC Blue */
-
-  color: #05004D;
-}
-
-.slider-container .owl-item .content .value {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-
-  text-align: center;
-
-  /* OTC Glold */
-
-  color: #C7BA9A;
-}
-
-.owl-stage {
-
-  height: 600px;
-  overflow: hidden;
-}
-
-.action {
-  width: 100%;
-  text-align: center;
-}
-
-.view-more {
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-
-  width: 200px;
-  height: 50px;
-  line-height: 46px;
-  margin: 20px auto;
-
-  /* VirgoOTC Blue */
-
-  border: 2px solid #05004D;
-  box-sizing: border-box;
-  border-radius: 25px;
-
-  /* VirgoOTC Blue */
-
-  color: #05004D;
-}
-
-.search-filter-container {
-  width: 1260px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.search-input-box {
-  display: inline-block;
-  width: 622px;
-  height: 80px;
-
-  /* FFFFFF */
-
-  background: #FFFFFF;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.search-input-box input {
-
-  height: 80px;
-  width: 90%;
-  padding: 0 20px;
-  font-size: 24px;
-  border: none;
-  outline: none;
-}
-
-.search-input-box img:hover {
-  cursor: pointer;
-}
-
-.sort {
-  border: 1px solid #C7BA9A;
-  box-sizing: border-box;
-  border-radius: 20px;
-  padding: 10px 16px;
-  display: inline-block;
-}
-
-.sort:hover {
-  cursor: pointer;
-}
-
-.sort span {
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-
-  text-align: center;
-
-  /* OTC Glold */
-
-  color: #C7BA9A;
-}
-
-.sort img {}
-
-.page-list {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-right: 250px;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.page-list li {
-  margin: 10px;
-  color: #999;
-  font-size: 18px;
-}
-
-.page-list li:hover {
-  cursor: pointer;
-}
-
-.page-list li.active {
-
-  color: #05004D;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.page-list .left {
-  color: #05004D;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.page-list .right {
-  color: #05004D;
-  font-size: 18px;
-  font-weight: bold;
+  .slider-container .owl-item a .content .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 18px;
+    line-height: 50px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* VirgoOTC Blue */
+
+    color: #fff;
+  }
+
+  .slider-container .owl-item a .content .desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* VirgoOTC Blue */
+
+    color: #05004D;
+  }
+
+  .slider-container .owl-item .content .value {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* OTC Glold */
+
+    color: #C7BA9A;
+  }
+
+  .owl-stage {
+
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .action {
+    width: 100%;
+    text-align: center;
+  }
+
+  .view-more {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    width: 200px;
+    height: 50px;
+    line-height: 46px;
+    margin: 20px auto;
+
+    /* VirgoOTC Blue */
+
+    border: 2px solid #05004D;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    /* VirgoOTC Blue */
+
+    color: #05004D;
+  }
+
+  .search-filter-container {
+    width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .search-input-box {
+    display: inline-block;
+    width: 622px;
+    height: 80px;
+
+    /* FFFFFF */
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .search-input-box input {
+
+    height: 80px;
+    width: 90%;
+    padding: 0 20px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+  }
+
+  .search-input-box img:hover {
+    cursor: pointer;
+  }
+
+  .sort {
+    border: 1px solid #C7BA9A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 16px;
+    display: inline-block;
+  }
+
+  .sort:hover {
+    cursor: pointer;
+  }
+
+  .sort span {
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* OTC Glold */
+
+    color: #C7BA9A;
+  }
+
+  .sort img {}
+
+  .page-list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 250px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-list li {
+    margin: 10px;
+    color: #999;
+    font-size: 18px;
+  }
+
+  .page-list li:hover {
+    cursor: pointer;
+  }
+
+  .page-list li.active {
+
+    color: #05004D;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .page-list .left {
+    color: #05004D;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .page-list .right {
+    color: #05004D;
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -838,11 +839,11 @@ get_header('otc');
 
   .slider-container .owl-item {
     width: 380px;
-    height: 531px;
+    height: 480px;
     /* margin: 20px; */
     box-sizing: border-box;
     overflow: hidden;
-    background: #FFFFFF;
+    background: #05004D;
     border-radius: 0px 0px 20px 20px;
   }
 
@@ -857,14 +858,14 @@ get_header('otc');
     font-weight: bold;
     font-size: 24px;
     margin-top: 18px;
-    line-height: 29px;
+    line-height: 50px;
     /* identical to box height */
 
     text-align: center;
 
     /* VirgoOTC Blue */
 
-    color: #05004D;
+    color: #fff;
   }
 
   .slider-container .owl-item a .content .desc {
