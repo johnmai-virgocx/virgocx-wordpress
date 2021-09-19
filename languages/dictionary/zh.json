@@ -673,7 +673,9 @@
 	"NFT_SellingAnNFT": "出售NFT",
 	"NFT_BuyingAnNFT": "购买NFT",
 	"NFT_Launching": "上线我的个人收藏",
-	"NFT_Submit": "提交"
+	"NFT_Submit": "提交",
+	"NFT_Price_lowToHigh":"价格：低到高",
+	"NFT_ListedDate":"上架时间：新到旧"
 	
 
 }

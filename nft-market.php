@@ -83,11 +83,11 @@ get_header('otc');
       <img id="searchBtn" src="<?= get_template_directory_uri() ?>/img/nft/search_btn.svg" alt="">
     </div>
     <div class="sort" id="upSort">
-      <span>Price: Low to High</span>
+      <span data-translate="NFT_Price_lowToHigh">Price: Low to High</span>
       <img src="<?= get_template_directory_uri() ?>/img/nft/arror_up.svg" alt="">
     </div>
     <div class="sort" id="downSort">
-      <span>Listed date: Newest to Oldest </span>
+      <span data-translate="NFT_ListedDate">Listed date: Newest to Oldest </span>
       <img src="<?= get_template_directory_uri() ?>/img/nft/arrow_down.svg" alt="">
     </div>
   </div>

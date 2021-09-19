@@ -657,7 +657,9 @@
 	"NFT_SellingAnNFT": "Selling an NFT",
 	"NFT_BuyingAnNFT": "Buying an NFT",
 	"NFT_Launching": "Launching my own collection",
-	"NFT_Submit": "Submit"
+	"NFT_Submit": "Submit",
+	"NFT_Price_lowToHigh":"Price: Low to High",
+	"NFT_ListedDate":"Listed date: Newest to Oldest"
 
 
 }
