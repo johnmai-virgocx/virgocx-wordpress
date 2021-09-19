@@ -26,7 +26,7 @@ get_header('otc');
         <a href="<?php echo !empty($detail["analytics_link"]) ? $detail["analytics_link"] : ''; ?>"><img class="icon" style="margin-right: 5px;" data-translate="NFT_SeeAnalytics" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt="">See
           Analytics</a>
       </div>
-      <p class="desc"><?php echo $detail["description"]; ?></p>
+      <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
       <div class="action">
         <a data-translate="NFT_Buy" href="<?php echo !empty($detail["buy_link"]) ? $detail["buy_link"] : ''; ?>" class="buy">Buy with VirgoCX</a>

@@ -49,11 +49,10 @@ get_header('otc');
                   <div class="owl-stage">
                     <?php foreach ($rows as $row) { ?>
                     <div class="owl-item ">
-
-
-                      <a class="pg-top">
-
-                        <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                      <a class="pg-top" href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
+                          <div class="img-container">
+                              <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                          </div>
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["title"]; ?></p>
@@ -802,11 +801,22 @@ get_header('otc');
   border-radius: 0px 0px 20px 20px;
 }
 
-.slider-container .owl-item a img {
+.slider-container .owl-item a .img-container {
   width: 380px;
   height: 380px;
-  display: block;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container .owl-item a .img-container img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    position: relative;
+    text-align: center;
+    display: block;
 }
 
 .slider-container .owl-item a .content .title {
