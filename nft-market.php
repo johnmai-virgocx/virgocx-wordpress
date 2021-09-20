@@ -115,9 +115,9 @@ get_header('otc');
     <li class="right" data-id="<?php echo $page < $pageTotal ? $page + 1 : $page; ?>">></li>
   </ul>
 
-  <div class="catact-container">
+  <div class="contact-container">
     <p class="content" data-translate="NFT_CantFind">Can’t find what your are looking for?</p>
-    <div class="contact-btn" data-translate="NFT_ContactUs">Contact Us</div>
+    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-nft-home#contact-form'" type="button">Contact Us</button>
   </div>
 
   <div class="slider-container">
@@ -336,9 +336,11 @@ get_header('otc');
     color: #C7BA9A;
   }
 
-  .catact-container {}
+  .contact-container {
+      text-align: center;
+  }
 
-  .catact-container .content {
+  .contact-container .content {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -352,7 +354,7 @@ get_header('otc');
     color: #05004D;
   }
 
-  .catact-container .contact-btn {
+  .contact-container .contact-btn {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -774,9 +776,11 @@ get_header('otc');
     color: #C7BA9A;
   }
 
-  .catact-container {}
+  .contact-container {
+      text-align: center;
+  }
 
-  .catact-container .content {
+  .contact-container .content {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -790,7 +794,7 @@ get_header('otc');
     color: #05004D;
   }
 
-  .catact-container .contact-btn {
+  .contact-container .contact-btn {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
