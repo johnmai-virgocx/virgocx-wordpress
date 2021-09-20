@@ -675,7 +675,13 @@
 	"NFT_Launching": "上线我的个人收藏",
 	"NFT_Submit": "提交",
 	"NFT_Price_lowToHigh":"价格：低到高",
-	"NFT_ListedDate":"上架时间：新到旧"
+	"NFT_ListedDate":"上架时间：新到旧",
+	"NFT_FormEmail":"电子邮箱*",
+	"NFT_FormPhone":"联系电话*",
+	"NFT_FormCheckTitle":"我感兴趣的是：",
+	"NFT_FormCheck1":"出售NFT",
+	"NFT_FormCheck2":"购买NFT",
+	"NFT_FormCheck3":"上线我的个人收藏"
 	
 
 }

@@ -659,7 +659,14 @@
 	"NFT_Launching": "Launching my own collection",
 	"NFT_Submit": "Submit",
 	"NFT_Price_lowToHigh":"Price: Low to High",
-	"NFT_ListedDate":"Listed date: Newest to Oldest"
+	"NFT_ListedDate":"Listed date: Newest to Oldest",
+	"NFT_FormEmail":"E-mail*",
+	"NFT_FormPhone":"Phone*",
+	"NFT_FormCheckTitle":"I’m interested in ",
+	"NFT_FormCheck1":"Selling an NFT",
+	"NFT_FormCheck2":"Buying an NFT",
+	"NFT_FormCheck3":"Launching my own collection"
+
 
 
 }
