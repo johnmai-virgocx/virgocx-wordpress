@@ -95,23 +95,24 @@ get_header('otc');
   <ul class="search-list-container">
     <?php foreach ($rows as $row) { ?>
     <li>
-      <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-      <div class="content">
-        <p class="title"><?php echo $row["title"]; ?></p>
-        <p class="desc"><?php echo $row["title"]; ?></p>
-        <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> ≈
-          <?php echo $row["target_blockchain_value"]; ?> <?php echo $row["target_blockchain"]; ?> </p>
-      </div>
+        <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
+          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+          <div class="content">
+            <p class="title"><?php echo $row["title"]; ?></p>
+            <p class="desc"><?php echo $row["title"]; ?></p>
+            <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> ≈
+              <?php echo $row["target_blockchain_value"]; ?> <?php echo $row["target_blockchain"]; ?> </p>
+          </div>
+        </a>
     </li>
     <?php } ?>
   </ul>
 
   <ul class="page-list" id="page-list">
-    <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>">
-      < </li>
+    <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>"> < </li>
         <?php for ($i = 1; $i <= $pageTotal; $i++) { ?>
-    <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
-    <?php } ?>
+            <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
+        <?php } ?>
     <li class="right" data-id="<?php echo $page < $pageTotal ? $page + 1 : $page; ?>">></li>
   </ul>
 
@@ -135,7 +136,7 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                      <a class="pg-top">
+                      <a class="pg-top" href="<?php echo !empty($row["view_link"]) ? $row["view_link"] : ''; ?>">
 
                         <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         <div class="content">
