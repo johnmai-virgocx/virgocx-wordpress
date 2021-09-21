@@ -118,7 +118,7 @@ get_header('otc');
 
   <div class="contact-container">
     <p class="content" data-translate="NFT_CantFind">Can’t find what your are looking for?</p>
-    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-nft-home#contact-form'"
+    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-otc-nft-brokerage#contact-form'"
       type="button">Contact Us</button>
   </div>
 
