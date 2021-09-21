@@ -14,52 +14,33 @@ if (!empty($_REQUEST['current_page'])) {
   $page = $_REQUEST['current_page'];
 }
 
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-
-$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0', ARRAY_A);
-$total = count($all_rows);
-$pageTotal = ceil($total / $pageSize);
+//$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
+//
+//$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0', ARRAY_A);
+//$total = count($all_rows);
+//$pageTotal = ceil($total / $pageSize);
 $keyword = '';
 $sort = '';
 
-$sql = '';
+$sql = 'where trending_collections = 0';
 
 if (!empty($_REQUEST['keyword'])) {
   $keyword = $_REQUEST['keyword'];
-  $sql = " where title like'%" . $keyword . "%'";
-  // $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article where title like'%" . $keyword . "%'" . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-
-  // $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article where title like'%" . $keyword . "%'", ARRAY_A);
-  // $total = count($all_rows);
-  // $pageTotal = ceil($total / 6);
+  $sql = " where trending_collections = 0 AND  title like'%" . $keyword . "%'";
 }
 if (!empty($_REQUEST['sort'])) {
   $sort = $_REQUEST['sort'];
   if ($sort === 'up') {
     $sql .= " order by blockchain_value ";
-    // $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article order by blockchain_value " . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-
-    // $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article order by blockchain_value", ARRAY_A);
-
-    // $total = count($all_rows);
-    // $pageTotal = ceil($total / 6);
   }
   if ($sort === 'down') {
     $sql .= " order by id desc ";
-    // $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article order by id desc " . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-
-    // $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article order by id desc", ARRAY_A);
-    // $total = count($all_rows);
-    // $pageTotal = ceil($total / 6);
   }
-
-  $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-
-  $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article" . $sql, ARRAY_A);
-  $total = count($all_rows);
-  $pageTotal = ceil($total / 6);
 }
-
+$rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
+$all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql, ARRAY_A);
+$total = count($all_rows);
+$pageTotal = ceil($total / $pageSize);
 $trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
 get_header('otc');
 ?>
@@ -111,7 +92,7 @@ get_header('otc');
     <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>">
       < </li>
         <?php for ($i = 1; $i <= $pageTotal; $i++) { ?>
-    <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
+    <li data-id="<?php echo $i; ?>" class="num <?php echo $_REQUEST['current_page'] == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
     <?php } ?>
     <li class="right" data-id="<?php echo $page < $pageTotal ? $page + 1 : $page; ?>">></li>
   </ul>
