@@ -594,7 +594,7 @@ get_header();
                                     processingTime2 = 'Instantaneous';
                                 } else if (title === "Withdraw Canadian Dollars") {
                                     titleTranslate = 'Fees_header2';
-                                    processingTime2 = '(typically within 45 minutes)';
+                                    processingTime2 = 'Instantaneous';
                                 } else {
                                     processingTime2 = '(typically within 45 minutes)';
                                 }
