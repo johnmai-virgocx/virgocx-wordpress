@@ -134,19 +134,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                             </li>
                             <li>
-                                <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn">
-
-                                </a>
+                                <a class="item gold" href="https://virgocx.ca/en-otc-nft-brokerage/" data-translate="header_Learn">NFT</a>
                             </li>
                             <li>
-                                <a class="item" href="https://virgocx.ca/en-about-virgocx/" data-translate="header_About">
-
-                                </a>
+                                <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn"></a>
                             </li>
                             <li>
-                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us"data-translate="header_Support">
-
-                                </a>
+                                <a class="item" href="https://virgocx.ca/en-about-virgocx/" data-translate="header_About"></a>
+                            </li>
+                            <li>
+                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us"data-translate="header_Support"></a>
                             </li>
                         </ul>
 
