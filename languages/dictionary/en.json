@@ -619,6 +619,10 @@
 	"NFT_note1": "The VirgoCX NFT Brokerage helps our clients ",
 	"NFT_note2": "find and trade high value art pieces & collectables.",
 	"NFT_note3": "We navigate the markets to find rare and upcoming NFTs. Our Insider Reports provide actionable analytics for our clients to make informed decisions about the market.",
+	"NFT_ModalTitle_1":"We would like to know more about your NFT.",
+	"NFT_ModalTitle_2":"I would like to :",
+	"NFT_ModalOption_1":"Sell an NFT from existing collection",
+	"NFT_ModalOption_2":"Deploy my own collection",
 	
 	"NFT_HowItWorks": "How It Works",
 	"NFT_BuyingNFT": "Buying an NFT",

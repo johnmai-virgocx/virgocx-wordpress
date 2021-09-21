@@ -634,6 +634,10 @@
 	"NFT_note1": "VirgoCX NFT 经纪帮助我们的客户",
 	"NFT_note2": "寻找和交易高价值的艺术品和收藏品。",
 	"NFT_note3": "我们在市场中寻找稀有和即将推出的 NFT 产品。我们的内幕报告为客户提供可操作的分析，以做出相应于市场的明智决策。",
+	"NFT_ModalTitle_1":"请告诉我们更多关于您的NFT的信息。",
+	"NFT_ModalTitle_2":"我想要：",
+	"NFT_ModalOption_1":"卖出已经上架的NFT商品",
+	"NFT_ModalOption_2":"上架新的NFT系列",
 	
 	"NFT_HowItWorks": "如何运作",
 	"NFT_BuyingNFT": "购买NFT",

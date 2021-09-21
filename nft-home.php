@@ -42,13 +42,15 @@ get_header('otc');
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         </div>
         <div class="modal-body">
-          <p>We would like to know more about your NFT. </p>
-          <p>I would like to :</p>
+          <p data-translate="NFT_ModalTitle_1">We would like to know more about your NFT. </p>
+          <p data-translate="NFT_ModalTitle_2">I would like to :</p>
           <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUREZGVEhVTlE5NzJSMVRSSUE2RkNWREE0Sy4u')">
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUREZGVEhVTlE5NzJSMVRSSUE2RkNWREE0Sy4u')" 
+            data-translate="NFT_ModalOption_1">
             Sell an NFT from existing collection</p>
           <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUMEI0Mjk2UUU0R05KRVpJSjVHWUVVOUZZRy4u')">
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUMEI0Mjk2UUU0R05KRVpJSjVHWUVVOUZZRy4u')" 
+            data-translate="NFT_ModalOption_2">
             Deploy my own collection</p>
         </div>
       </div><!-- /.modal-content -->
