@@ -18,7 +18,7 @@ $rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_coll
 
 $all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0', ARRAY_A);
 $total = count($all_rows);
-$pageTotal = ceil($total / 6);
+$pageTotal = ceil($total / $pageSize);
 $keyword = '';
 $sort = '';
 
@@ -40,6 +40,7 @@ if (!empty($_REQUEST['sort'])) {
     // $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article order by blockchain_value " . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 
     // $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article order by blockchain_value", ARRAY_A);
+
     // $total = count($all_rows);
     // $pageTotal = ceil($total / 6);
   }
@@ -1190,7 +1191,6 @@ get_header('otc');
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
   $('#page-list').click(function(event) {
-    console.log(event)
     if (event.target.dataset && event.target.dataset.id) {
       let query = window.location.search
       if (query.includes('?')) {
