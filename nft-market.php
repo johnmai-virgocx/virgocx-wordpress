@@ -1021,6 +1021,9 @@ get_header('otc');
   }
 }
 
+#upSort img{
+    vertical-align: sub;
+}
 .nft-market-container .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #05004D;
