@@ -92,7 +92,7 @@ get_header('otc');
     <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>">
       < </li>
         <?php for ($i = 1; $i <= $pageTotal; $i++) { ?>
-    <li data-id="<?php echo $i; ?>" class="num <?php echo $_REQUEST['current_page'] == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
+    <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
     <?php } ?>
     <li class="right" data-id="<?php echo $page < $pageTotal ? $page + 1 : $page; ?>">></li>
   </ul>
