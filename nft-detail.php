@@ -14,7 +14,9 @@ get_header('otc');
 ?>
 <div class="nft-detail-container">
   <div class="content-container">
-    <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
+      <div class="image-container">
+          <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
+      </div>
     <div class="content">
       <p class="title"><?php echo $detail["title"]; ?></p>
       <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?></p>
@@ -61,10 +63,18 @@ get_header('otc');
     display: flex;
     margin: 20px auto;
   }
+  .nft-detail-container .content-container .image-container {
+      width: 400px;
+      height: 400px;
+  }
 
-  .nft-detail-container .content-container .image {
-    width: 400px;
-    height: 400px;
+  .nft-detail-container .content-container .image-container .image{
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      position: relative;
+      text-align: center;
+      display: block;
   }
 
   .nft-detail-container .content-container .content {
@@ -237,12 +247,21 @@ get_header('otc');
       text-align: center;
     }
 
-    .nft-detail-container .content-container .image {
+    .nft-detail-container .content-container .image-container {
       width: 320px;
       height: 320px;
       text-align: center;
       margin: 0 auto;
     }
+
+      .nft-detail-container .content-container .image-container .image{
+          width: 100%;
+          height: auto;
+          max-height: 100%;
+          position: relative;
+          text-align: center;
+          display: block;
+      }
 
     .nft-detail-container .content-container .content {
       height: auto;
