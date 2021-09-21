@@ -20,10 +20,14 @@ get_header('otc');
       <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?></p>
 
       <div class="link">
-        <a href="<?php echo !empty($detail["recent_link"]) ? $detail["recent_link"] : ''; ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
-          Recent Trends </span></a>
-        <a href="<?php echo !empty($detail["analytics_link"]) ? $detail["analytics_link"] : ''; ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
-          Analytics</span></a>
+            <?php if(!empty($detail["recent_link"])): ?>
+                <a href="<?php echo  $detail["recent_link"] ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                  Recent Trends </span></a>
+            <?php endif; ?>
+            <?php if(!empty($detail["analytics_link"])): ?>
+                <a href="<?php echo $detail["analytics_link"] ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                      Analytics</span></a>
+            <?php endif; ?>
       </div>
       <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
