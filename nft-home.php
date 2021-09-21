@@ -107,8 +107,8 @@ get_header('otc');
 
   <div class="middle-block">
     <div class="left">
-      <div class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients <span data-translate="NFT_note2">find and trade high value art pieces & collectables.</span></div>
-      
+      <span class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients </span>
+        <span class="gold" data-translate="NFT_note2">find and trade high value art pieces & collectables.</span>
     </div>
     <div class="right">
       <span data-translate="NFT_note3">We navigate the markets to find rare and upcoming NFTs. Our insider reports
@@ -436,11 +436,6 @@ get_header('otc');
   width: 600px;
   /* FFFFFF */
   color: #FFFFFF;
-}
-
-.middle-block .left span {
-  /* OTC Glold */
-  color: #C7BA9A;
 }
 
 .middle-block .right {
