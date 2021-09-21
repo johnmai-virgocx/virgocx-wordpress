@@ -99,8 +99,7 @@ get_header('otc');
         <div class="content">
           <p class="title"><?php echo $row["title"]; ?></p>
           <p class="desc"><?php echo $row["title"]; ?></p>
-          <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> ≈
-            <?php echo $row["target_blockchain_value"]; ?> <?php echo $row["target_blockchain"]; ?> </p>
+          <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> </p>
         </div>
       </a>
     </li>

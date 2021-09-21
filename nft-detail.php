@@ -17,8 +17,7 @@ get_header('otc');
     <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
     <div class="content">
       <p class="title"><?php echo $detail["title"]; ?></p>
-      <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?> ≈
-        <?php echo $detail["target_blockchain_value"]; ?> <?php echo $detail["target_blockchain"]; ?> </p>
+      <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?></p>
 
       <div class="link">
         <a href="<?php echo !empty($detail["recent_link"]) ? $detail["recent_link"] : ''; ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
