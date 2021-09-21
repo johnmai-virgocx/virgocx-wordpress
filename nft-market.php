@@ -14,9 +14,9 @@ if (!empty($_REQUEST['current_page'])) {
   $page = $_REQUEST['current_page'];
 }
 
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
+$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 
-$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article', ARRAY_A);
+$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0', ARRAY_A);
 $total = count($all_rows);
 $pageTotal = ceil($total / 6);
 $keyword = '';
@@ -381,9 +381,7 @@ get_header('otc');
   }
 
 
-  .slider-container {
-    display: none;
-  }
+  .slider-container {}
 
   .slider-container .container {
     max-width: calc(428px * 3);
@@ -615,7 +613,6 @@ get_header('otc');
     justify-content: space-evenly;
     background: #05004D;
     flex-direction: column;
-
   }
 
   .banner-container .content {
@@ -823,9 +820,7 @@ get_header('otc');
   }
 
 
-  .slider-container {
-    display: none;
-  }
+  .slider-container {}
 
   .slider-container .container {
     max-width: calc(428px * 3);
