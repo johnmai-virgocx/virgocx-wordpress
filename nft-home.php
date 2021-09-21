@@ -107,8 +107,8 @@ get_header('otc');
 
   <div class="middle-block">
     <div class="left">
-      <div class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients</div>
-      <span data-translate="NFT_note2">find and trade high value art pieces & collectables.</span>
+      <div class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients <span data-translate="NFT_note2">find and trade high value art pieces & collectables.</span></div>
+      
     </div>
     <div class="right">
       <span data-translate="NFT_note3">We navigate the markets to find rare and upcoming NFTs. Our insider reports
