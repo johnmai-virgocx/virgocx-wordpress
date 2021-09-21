@@ -23,13 +23,40 @@ get_header('otc');
         <span data-translate="NFT_Valuable">valuable NFTs with our Brokerage Service.</span>
       </div>
       <div class="action">
-        <button class="buy" data-translate="NFT_BuyNFT">Buy an NFT</button>
-        <button class="sell" data-translate="NFT_SellNFT">Sell your NFT</button>
+        <button class="buy" data-translate="NFT_BuyNFT"
+          onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUOUsxWkg1MFhCTTVVQVE0UFNSRzlUVUxNRy4u')">Buy
+          an NFT</button>
+        <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
+          NFT</button>
       </div>
     </div>
 
     <img class="banner-image" src="<?= get_template_directory_uri() ?>/img/nft/Banner_Desktop.svg" alt="">
   </div>
+
+  <!-- 模态框（Modal） -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>We would like to know more about your NFT. </p>
+          <p>I would like to :</p>
+          <p
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUREZGVEhVTlE5NzJSMVRSSUE2RkNWREE0Sy4u')">
+            Sell an NFT from existing collection</p>
+          <p
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUMEI0Mjk2UUU0R05KRVpJSjVHWUVVOUZZRy4u')">
+            Deploy my own collection</p>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
+
+
+
 
   <div class="slider-container">
     <h3 data-translate="NFT_TrendingNFT">Trending on VirgoCX</h3>
@@ -50,9 +77,9 @@ get_header('otc');
                     <?php foreach ($rows as $row) { ?>
                     <div class="owl-item ">
                       <a class="pg-top" href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
-                          <div class="img-container">
-                              <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-                          </div>
+                        <div class="img-container">
+                          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                        </div>
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["title"]; ?></p>
@@ -810,13 +837,13 @@ get_header('otc');
   align-items: center;
 }
 
-.slider-container .owl-item a .img-container img{
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    position: relative;
-    text-align: center;
-    display: block;
+.slider-container .owl-item a .img-container img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  position: relative;
+  text-align: center;
+  display: block;
 }
 
 .slider-container .owl-item a .content .title {
@@ -921,6 +948,70 @@ get_header('otc');
 
 .owl-prev:hover {
   color: #05004D !important;
+}
+
+.modal {
+  padding-top: 20vh;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.modal-content {
+  width: 685px;
+}
+
+.modal-dialog {
+
+  width: 685px;
+  max-width: 685px;
+}
+
+.modal-body p:nth-child(1) {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* VirgoOTC Blue */
+
+  color: #05004D;
+}
+
+.modal-body p:nth-child(2) {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 60px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* VirgoOTC Blue */
+
+  color: #05004D;
+}
+
+.modal-body p:nth-child(3),
+.modal-body p:nth-child(4) {
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* OTC Glold */
+
+  color: #C7BA9A;
+}
+
+.modal-body p:nth-child(3):hover,
+.modal-body p:nth-child(4):hover {
+  cursor: pointer;
+}
+
+.modal-header {
+  border-bottom: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -1512,6 +1603,67 @@ get_header('otc');
   .panel-group {
     padding: 10px;
   }
+
+  .modal {
+    padding-top: 0;
+  }
+
+  .modal-body {
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  .modal-content {
+    width: 340px;
+  }
+
+  .modal-dialog {
+
+    width: 340px;
+    max-width: 340px;
+    margin-top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .modal-body p:nth-child(1) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    /* VirgoOTC Blue */
+
+    color: #05004D;
+  }
+
+  .modal-body p:nth-child(2) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 60px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* VirgoOTC Blue */
+
+    color: #05004D;
+  }
+
+  .modal-body p:nth-child(3),
+  .modal-body p:nth-child(4) {
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* OTC Glold */
+
+    color: #C7BA9A;
+  }
+
+  .modal-header {
+    border-bottom: none;
+  }
 }
 
 .nft-home-container .owl-theme .owl-dots .owl-dot.active span,
@@ -1527,8 +1679,8 @@ get_header('otc');
   padding-left: 10px;
 }
 
-.checkbox-list .wpcf7-list-item-label{
-    margin-left: 10px;
+.checkbox-list .wpcf7-list-item-label {
+  margin-left: 10px;
 }
 </style>
 

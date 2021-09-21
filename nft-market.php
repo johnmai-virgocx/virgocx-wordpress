@@ -14,9 +14,9 @@ if (!empty($_REQUEST['current_page'])) {
   $page = $_REQUEST['current_page'];
 }
 
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
+$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 
-$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article', ARRAY_A);
+$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0', ARRAY_A);
 $total = count($all_rows);
 $pageTotal = ceil($total / 6);
 $keyword = '';
@@ -57,7 +57,6 @@ if (!empty($_REQUEST['sort'])) {
   $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article" . $sql, ARRAY_A);
   $total = count($all_rows);
   $pageTotal = ceil($total / 6);
-
 }
 
 $trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
@@ -95,30 +94,32 @@ get_header('otc');
   <ul class="search-list-container">
     <?php foreach ($rows as $row) { ?>
     <li>
-        <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
-          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-          <div class="content">
-            <p class="title"><?php echo $row["title"]; ?></p>
-            <p class="desc"><?php echo $row["title"]; ?></p>
-            <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> ≈
-              <?php echo $row["target_blockchain_value"]; ?> <?php echo $row["target_blockchain"]; ?> </p>
-          </div>
-        </a>
+      <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
+        <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+        <div class="content">
+          <p class="title"><?php echo $row["title"]; ?></p>
+          <p class="desc"><?php echo $row["title"]; ?></p>
+          <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> ≈
+            <?php echo $row["target_blockchain_value"]; ?> <?php echo $row["target_blockchain"]; ?> </p>
+        </div>
+      </a>
     </li>
     <?php } ?>
   </ul>
 
   <ul class="page-list" id="page-list">
-    <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>"> < </li>
+    <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>">
+      < </li>
         <?php for ($i = 1; $i <= $pageTotal; $i++) { ?>
-            <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
-        <?php } ?>
+    <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
+    <?php } ?>
     <li class="right" data-id="<?php echo $page < $pageTotal ? $page + 1 : $page; ?>">></li>
   </ul>
 
   <div class="contact-container">
     <p class="content" data-translate="NFT_CantFind">Can’t find what your are looking for?</p>
-    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-nft-home#contact-form'" type="button">Contact Us</button>
+    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-nft-home#contact-form'"
+      type="button">Contact Us</button>
   </div>
 
   <div class="slider-container">
@@ -338,7 +339,7 @@ get_header('otc');
   }
 
   .contact-container {
-      text-align: center;
+    text-align: center;
   }
 
   .contact-container .content {
@@ -612,7 +613,6 @@ get_header('otc');
     justify-content: space-evenly;
     background: #05004D;
     flex-direction: column;
-
   }
 
   .banner-container .content {
@@ -778,7 +778,7 @@ get_header('otc');
   }
 
   .contact-container {
-      text-align: center;
+    text-align: center;
   }
 
   .contact-container .content {
