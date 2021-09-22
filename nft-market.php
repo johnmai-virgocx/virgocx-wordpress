@@ -11,7 +11,7 @@
 $pageSize = 6;
 $page = 1;
 if (!empty($_REQUEST['current_page'])) {
-  $page = $_REQUEST['current_page'];
+  $page = intval($_REQUEST['current_page']);
 }
 
 //$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
@@ -99,8 +99,8 @@ get_header('otc');
 
   <div class="contact-container">
     <p class="content" data-translate="NFT_CantFind">Can’t find what your are looking for?</p>
-    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-otc-nft-brokerage#contact-form'"
-      type="button">Contact Us</button>
+    <button class="contact-btn" data-translate="NFT_ContactUs"
+      onclick="location.href='../en-otc-nft-brokerage#contact-form'" type="button">Contact Us</button>
   </div>
 
   <div class="slider-container">
@@ -1021,9 +1021,10 @@ get_header('otc');
   }
 }
 
-#upSort img{
-    vertical-align: sub;
+#upSort img {
+  vertical-align: sub;
 }
+
 .nft-market-container .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #05004D;
