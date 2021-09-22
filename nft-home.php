@@ -162,7 +162,7 @@ get_header('otc');
             <p>3.</p>
             <p>4.</p>
           </div>
-          <div class="content-box" style="height: 468px">
+          <div class="content-box">
             <p data-translate="NFT_SellNote1"></p>
             <p data-translate="NFT_SellNote2"></p>
             <p data-translate="NFT_SellNote3"></p>
