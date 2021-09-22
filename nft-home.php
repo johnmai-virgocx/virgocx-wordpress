@@ -250,7 +250,7 @@ get_header('otc');
           <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
             <div class="panel-body px-3 mb-4">
               <p data-translate="NFT_A4_1"></p>
-              <a data-translate="NFT_A4_2" href="#contact-form"></a>
+              <a data-translate="NFT_A4_2" href="#contact-form" class="faq_gold"></a>
             </div>
           </div>
         </div>
@@ -305,6 +305,11 @@ get_header('otc');
 
 <style type="text/css">
 .nft-home-container {}
+
+.faq_gold{
+  cursor: pointer;
+  color: #C7BA9A;
+}
 
 .banner-container {
   padding: 0 50px;
