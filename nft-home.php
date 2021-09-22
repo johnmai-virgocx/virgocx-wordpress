@@ -1050,15 +1050,8 @@ get_header('otc');
 
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 32px!important;
     line-height: 38px;
-    /* or 117% */
-
-    text-transform: uppercase;
-
-    /* OTC Glold */
-
-    color: #C7BA9A;
   }
 
   .banner-container .action {
