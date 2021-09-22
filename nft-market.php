@@ -1239,7 +1239,7 @@ get_header('otc');
 
   $('#upSort').click(function(event) {
       $(this).addClass('active');
-      $('#age-list').removeClass('active');
+      $('#page-list').removeClass('active');
     let query = window.location.search
     if (query.includes('?')) {
       query = query.slice(1)
