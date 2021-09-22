@@ -12993,7 +12993,7 @@ select {
 	appearance: none;
 }
 
-.nft{
+#nft{
 	color: var(--VirgoCX-gold)!important;
 	font-weight: bold;
 }

@@ -134,7 +134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                             </li>
                             <li>
-                                <a class="item nft" href="/en-otc-nft-brokerage/" >NFT</a>
+                                <a class="item" id="nft" href="/en-otc-nft-brokerage/" >NFT</a>
                             </li>
                             <li>
                                 <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn"></a>
