@@ -79,16 +79,15 @@ get_header('otc');
                 <div class="owl-stage-outer">
                   <div class="owl-stage">
                     <?php foreach ($rows as $row) { ?>
-                    <div class="owl-item ">
+                    <div class="owl-item card">
                       <a class="pg-top" href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
                         <div class="img-container">
                           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         </div>
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
-                          <p class="desc"><?php echo $row["title"]; ?></p>
-                          <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?>
-                            </p>
+                          <p class="desc"><?php echo $row["description"]; ?></p>
+                          <p class="value">View Profile</p>
                         </div>
                       </a>
                     </div>
@@ -891,7 +890,7 @@ get_header('otc');
 
 .owl-stage {
 
-  /* height: 600px; */
+   height: 600px;
   overflow: hidden;
 }
 
@@ -1675,6 +1674,23 @@ get_header('otc');
 
 .checkbox-list .wpcf7-list-item-label {
   margin-left: 10px;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 0px 0px 20px 20px;
+}
+.card:hover{
+    /*background: #f2f2f2;*/
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px #E4E3DB;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+.owl-item{
+    margin:36px;
 }
 </style>
 

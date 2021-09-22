@@ -86,7 +86,7 @@ get_header('otc');
         <img src="<?php echo $row["thumbnail"]; ?>" alt="">
         <div class="content">
           <p class="title"><?php echo $row["title"]; ?></p>
-          <p class="desc"><?php echo $row["title"]; ?></p>
+          <p class="desc"><?php echo $row["author"]; ?></p>
           <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> </p>
         </div>
       </a>
