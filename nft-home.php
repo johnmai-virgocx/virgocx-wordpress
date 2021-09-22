@@ -20,6 +20,8 @@ get_header('otc');
         <span class="gold" data-translate="NFT_Trade">TRADE</span>
         <span data-translate="NFT_And">, and </span>
         <span class="gold" data-translate="NFT_Collect">COLLECT</span>
+        <span data-translate="NFT_Collect_zh"></span>
+        <span class= "gold" data-translate="NFT_Collect_zh2"></span>
         <span data-translate="NFT_Valuable">valuable NFTs with our Brokerage Service.</span>
       </div>
       <div class="action">
