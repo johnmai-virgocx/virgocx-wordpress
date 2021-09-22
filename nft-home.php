@@ -642,11 +642,9 @@ get_header('otc');
     max-width: 100vw;
     position: absolute;
   }
-
-
-  .trapezoid {
-    height: 587px;
-  }
+    .owl-item{
+        margin:36px;
+    }
 }
 
 .faq .background-img .mobile {
@@ -935,20 +933,25 @@ get_header('otc');
 
 .owl-prev {
   position: absolute;
-  left: -5px;
+  left: -50px;
+    box-shadow: none;
 }
 
 .owl-next {
   position: absolute;
-  right: -10px;
+  right: -50px;
+    box-shadow: none;
 }
 
 .owl-next:hover {
   color: #05004D !important;
+    box-shadow: 0px 4px 4px rgb(171 168 168 / 25%)!important;
+
 }
 
 .owl-prev:hover {
   color: #05004D !important;
+    box-shadow: 0px 4px 4px rgb(171 168 168 / 25%)!important;
 }
 
 .modal {
@@ -1576,6 +1579,14 @@ get_header('otc');
     left: -5px;
   }
 
+    .owl-prev img{
+      margin: -8px 0 0 -3px;
+  }
+
+    .owl-next img{
+        margin: -8px 0 0 -3px;
+    }
+
   .owl-next {
     position: absolute;
     right: -10px;
@@ -1689,9 +1700,7 @@ get_header('otc');
 body{
     background-color: #F5F5F5;
 }
-.owl-item{
-    margin:36px;
-}
+
 </style>
 
 <script type="text/javascript">
@@ -1730,6 +1739,7 @@ body{
         pagination: true,
         nav: true,
         dots: true,
+          navText : ["<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_left.png' alt=''>","<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_right.png' alt=''>"],
         autoplayHoverPause: true
       });
     } else {
