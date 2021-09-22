@@ -1539,7 +1539,7 @@ get_header('otc');
     text-align: center;
     width: 200px;
     height: 50px;
-    line-height: 46px;
+    /*line-height: 46px;*/
     margin: 20px auto;
     padding: 12px 15px;
     /* VirgoOTC Blue */
