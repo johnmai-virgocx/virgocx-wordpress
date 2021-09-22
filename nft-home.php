@@ -930,7 +930,13 @@ get_header('otc');
   background: #FFFFFF !important;
   box-shadow: 0px 4px 4px rgba(171, 168, 168, 0.25);
 }
+.owl-prev img{
+    margin: -8px 0 0 -3px;
+}
 
+.owl-next img{
+    margin: -8px 0 0 2px;
+}
 .owl-prev {
   position: absolute;
   left: -50px;
