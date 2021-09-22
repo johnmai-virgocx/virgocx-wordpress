@@ -132,7 +132,7 @@ get_header('otc');
         <div class="row custom-container">
           <div class="icon-box">
 
-            <img class="image" style="height: 348px"
+            <img class="image" style="width: 65px"
               src="<?= get_template_directory_uri() ?>/img/nft/How_it_works_buying_an_NFT.svg" alt="">
           </div>
           <div class="num-box">
@@ -152,7 +152,7 @@ get_header('otc');
       <div class="how-container" style="display: none;">
         <div class="row custom-container">
           <div class="icon-box">
-            <img class="image" style="height: 424px"
+            <img class="image" style="width: 65px"
               src="<?= get_template_directory_uri() ?>/img/nft/How_it_works_Selling_your_NFT.svg" alt="">
 
           </div>
