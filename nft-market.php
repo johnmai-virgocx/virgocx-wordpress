@@ -704,7 +704,7 @@ get_header('otc');
   .search-list-container li {
     width: 320px;
     height: 463px;
-    margin: 20px;
+    margin: 20px 40px;
     box-sizing: border-box;
     overflow: hidden;
     background: #FFFFFF;
