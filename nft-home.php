@@ -1049,7 +1049,6 @@ get_header('otc');
   }
 
   .banner-container .title span {
-
     font-style: normal;
     font-weight: bold;
     font-size: 32px!important;
@@ -1613,10 +1612,10 @@ get_header('otc');
   }
 
   .modal-dialog {
-
+    margin: auto;
     width: 340px;
     max-width: 340px;
-    margin-top: 50%;
+    margin-top: 50%!important;
     transform: translateY(-50%);
   }
 
