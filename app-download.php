@@ -27,7 +27,7 @@ get_header();
 															<div id="stores" class="app-store">
 																	<a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048"><img class="app_store_download" data-value="app_store" src="<?= get_template_directory_uri() ?>/img/app_buttons/app_store.png" alt="images not found" /></a>
 																	<a href="https://play.google.com/store/apps/details?id=ca.virgocx.exchange"><img class="play_store_download" data-value="play_store" src="<?= get_template_directory_uri() ?>/img/app_buttons/play_store.png" alt="images not found" /></a>
-																	<a href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/07/23/25e6dedf49d6432dadc350414eea2128.apk"><img class="android_download" data-value="android" src="<?= get_template_directory_uri() ?>/img/app_buttons/android.png" alt="images not found" /></a>
+																	<a href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/09/10/c77346df6b7f41af834c6ebb594621ea.apk"><img class="android_download" data-value="android" src="<?= get_template_directory_uri() ?>/img/app_buttons/android.png" alt="images not found" /></a>
 															</div>
 
 															<img id="app_qr_image" src="<?= get_template_directory_uri() ?>/img/qr_codes/app_store.png" alt="images not found" /></a>

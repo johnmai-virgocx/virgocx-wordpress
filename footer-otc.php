@@ -153,7 +153,7 @@
                             </li>
                             <li class="app-download">
                                 <a class="android"
-                                   href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/07/23/25e6dedf49d6432dadc350414eea2128.apk"
+                                   href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/09/10/c77346df6b7f41af834c6ebb594621ea.apk"
                                    target="_blank">
                                     <div class="text">
                                         <span data-translate="footer_App_Android1"></span>
