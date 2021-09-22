@@ -51,7 +51,7 @@ get_header('otc');
       <div class="stats" data-translate="NFT_TokenID">Token ID</div>
       <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
       <div class="stats" data-translate="NFT_Blockchain">Blockchain</div>
-      <div class="stats-value"><?php echo $detail["blockchain_value"]; ?></div>
+      <div class="stats-value"><?php echo $detail["blockchain"]; ?></div>
     </div>
   </div>
 </div>

@@ -23,11 +23,12 @@ if (!empty($_REQUEST['current_page'])) {
 $keyword = '';
 $sort = '';
 
-$sql = 'where trending_collections = 0';
+$sql = 'where marketing = 1 
+AND trending_collections = 0';
 
 if (!empty($_REQUEST['keyword'])) {
   $keyword = $_REQUEST['keyword'];
-  $sql = " where trending_collections = 0 AND  title like'%" . $keyword . "%'";
+  $sql = " where marketing = 1 AND trending_collections = 0 AND  title like'%" . $keyword . "%'";
 }
 if (!empty($_REQUEST['sort'])) {
   $sort = $_REQUEST['sort'];
@@ -70,11 +71,11 @@ get_header('otc');
       <img id="searchBtn" src="<?= get_template_directory_uri() ?>/img/nft/search_btn.svg" alt="">
     </div>
     <div class="sort" id="upSort">
-      <span data-translate="NFT_Price_lowToHigh">Price: Low to High</span>
+      <span data-translate="NFT_Price_lowToHigh">Price:</span>
       <img src="<?= get_template_directory_uri() ?>/img/nft/arror_up.svg" alt="">
     </div>
     <div class="sort" id="downSort">
-      <span data-translate="NFT_ListedDate">Listed date: Newest to Oldest </span>
+      <span data-translate="NFT_ListedDate">Listed date:  </span>
       <img src="<?= get_template_directory_uri() ?>/img/nft/arrow_down.svg" alt="">
     </div>
   </div>
