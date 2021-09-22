@@ -11,7 +11,7 @@
 $pageSize = 6;
 $currentPage = 1;
 if (!empty($_REQUEST['current_page'])) {
-    $currentPage = $_REQUEST['current_page'];
+  $currentPage = $_REQUEST['current_page'];
 }
 
 
@@ -42,6 +42,11 @@ $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit 
 $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql, ARRAY_A);
 $total = count($all_rows);
 $pageTotal = ceil($total / $pageSize);
+
+if ($currentPage > $pageTotal) {
+  $currentPage  = 1;
+  $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
+}
 $trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
 get_header('otc');
 ?>
