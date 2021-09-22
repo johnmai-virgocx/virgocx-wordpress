@@ -23,19 +23,19 @@ get_header('otc');
 
       <div class="link">
             <?php if(!empty($detail["recent_link"])): ?>
-                <a href="<?php echo  $detail["recent_link"] ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                <a href="<?php echo  $detail["recent_link"] ?>" target="_blank"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
                   Recent Trends </span></a>
             <?php endif; ?>
             <?php if(!empty($detail["analytics_link"])): ?>
-                <a href="<?php echo $detail["analytics_link"] ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                <a href="<?php echo $detail["analytics_link"] ?>" target="_blank"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
                       Analytics</span></a>
             <?php endif; ?>
       </div>
       <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
       <div class="action">
-        <a data-translate="NFT_Buy" href="../en-otc-nft-brokerage/?#contact-form" class="buy">Buy with VirgoCX</a>
-        <a data-translate="NFT_Opensea" href="<?php echo !empty($detail["view_link"]) ? $detail["view_link"] : ''; ?>" class="sell">View on
+        <a data-translate="NFT_Buy" href="../en-otc-nft-brokerage/?#contact-form" class="buy" target="_blank">Buy with VirgoCX</a>
+        <a data-translate="NFT_Opensea" href="<?php echo !empty($detail["view_link"]) ? $detail["view_link"] : ''; ?>" class="sell" target="_blank">View on
           Opensea</a>
       </div>
     </div>
@@ -57,6 +57,12 @@ get_header('otc');
 </div>
 
 <style type="text/css">
+    h1,h2,h1> span, h2>span,h3 ,h4{
+        font-family: "Matter-Bold"!important;
+    }
+    nav>a,p,span,div{
+        font-family: "Matter-Regular"!important;
+    }
   .nft-detail-container {
     background: #fff;
     overflow: hidden;

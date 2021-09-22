@@ -82,8 +82,11 @@ get_header('otc');
   <ul class="search-list-container">
     <?php foreach ($rows as $row) { ?>
     <li>
-      <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
-        <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+      <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>" target="_blank">
+          <div class="img-container">
+
+              <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+          </div>
         <div class="content">
           <p class="title"><?php echo $row["title"]; ?></p>
           <p class="desc"><?php echo $row["author"]; ?></p>
@@ -124,9 +127,11 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                      <a class="pg-top" href="<?php echo !empty($row["view_link"]) ? $row["view_link"] : ''; ?>">
+                      <a class="pg-top" href="<?php echo !empty($row["view_link"]) ? $row["view_link"] : ''; ?>" target="_blank">
+                          <div class="img-container">
+                              <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                          </div>
 
-                        <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                         </div>
@@ -148,6 +153,12 @@ get_header('otc');
 </div>
 
 <style type="text/css">
+    h1,h2,h1> span, h2>span,h3 ,h4{
+        font-family: "Matter-Bold"!important;
+    }
+    nav>a,p,span,div{
+        font-family: "Matter-Regular"!important;
+    }
 @media screen and (min-width: 900px) {
 
   .nft-market-container {
@@ -278,11 +289,25 @@ get_header('otc');
     border-radius: 0px 0px 20px 20px;
   }
 
-  .search-list-container li img {
-    width: 380px;
-    height: 380px;
-    display: block;
+  .img-container {
+      width: 380px;
+      height: 380px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
+
+     .img-container img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        display: block;
+    }
 
   .search-list-container li .content .title {
     font-style: normal;
@@ -306,6 +331,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 20px;
+      margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -354,8 +383,7 @@ get_header('otc');
     height: 50px;
     line-height: 46px;
     margin: 20px auto;
-
-    /* VirgoOTC Blue */
+      background-color: transparent;
 
     border: 2px solid #05004D;
     box-sizing: border-box;
@@ -404,11 +432,11 @@ get_header('otc');
     background-color: #0D0763;
   }
 
-  .slider-container .owl-item a img {
-    width: 380px;
-    height: 380px;
-    display: block;
-  }
+  /*.slider-container .owl-item a img {*/
+  /*  width: 380px;*/
+  /*  height: 380px;*/
+  /*  display: block;*/
+  /*}*/
 
   .slider-container .owl-item a .content .title {
     font-style: normal;
@@ -432,6 +460,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 20px;
+      margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -521,6 +553,8 @@ get_header('otc');
   }
 
   .sort {
+      /* OTC Glold */
+      color: #C7BA9A;
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
     border-radius: 20px;
@@ -538,10 +572,12 @@ get_header('otc');
     /* identical to box height */
 
     text-align: center;
+  }
 
-    /* OTC Glold */
-
-    color: #C7BA9A;
+  .sort active{
+      /* OTC Glold */
+      color: white;
+      background-color: #C7BA9A;
   }
 
   .sort img {}
@@ -718,8 +754,11 @@ get_header('otc');
   }
 
   .search-list-container li img {
-    width: 320px;
-    height: 320px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      border-radius: 10px;
+      max-height: 100%;
     display: block;
   }
 
@@ -745,6 +784,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 20px;
+      margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -783,6 +826,7 @@ get_header('otc');
   }
 
   .contact-container .contact-btn {
+
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -793,9 +837,7 @@ get_header('otc');
     height: 50px;
     line-height: 46px;
     margin: 20px auto;
-
-    /* VirgoOTC Blue */
-
+      background-color: transparent;
     border: 2px solid #05004D;
     box-sizing: border-box;
     border-radius: 25px;
@@ -870,6 +912,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 20px;
+      margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -1035,6 +1081,55 @@ get_header('otc');
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #05004D;
 }
+
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 160px;
+    left: 0;
+    z-index: 1;
+    color: #05004D;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.owl-prev,
+.owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 4px rgba(171, 168, 168, 0.25);
+}
+.owl-prev img{
+    margin: -8px 0 0 -3px;
+}
+
+.owl-next img{
+    margin: -8px 0 0 2px;
+}
+.owl-prev {
+    position: absolute;
+    left: -30px;
+    box-shadow: none;
+}
+
+.owl-next {
+    position: absolute;
+    right: -30px;
+    box-shadow: none;
+}
+
+.owl-next:hover {
+    color: #05004D !important;
+    box-shadow: 0px 4px 4px rgb(171 168 168 / 25%)!important;
+
+}
+
+.owl-prev:hover {
+    color: #05004D !important;
+    box-shadow: 0px 4px 4px rgb(171 168 168 / 25%)!important;
+}
 </style>
 <script>
 (function($) {
@@ -1049,7 +1144,9 @@ get_header('otc');
         autoplay: false,
         autoplayTimeout: 1500,
         pagination: true,
-        dots: true,
+          nav: true,
+          dots: true,
+          navText : ["<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_left.png' alt=''>","<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_right.png' alt=''>"],
         autoplayHoverPause: true
       });
     } else {
@@ -1141,6 +1238,8 @@ get_header('otc');
   })
 
   $('#upSort').click(function(event) {
+      $(this).addClass('active');
+      $('#age-list').removeClass('active');
     let query = window.location.search
     if (query.includes('?')) {
       query = query.slice(1)
@@ -1182,6 +1281,9 @@ get_header('otc');
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
   $('#page-list').click(function(event) {
+
+      $(this).addClass('active');
+      $('#upSort').removeClass('active');
     if (event.target.dataset && event.target.dataset.id) {
       let query = window.location.search
       if (query.includes('?')) {

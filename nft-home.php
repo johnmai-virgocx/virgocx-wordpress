@@ -26,7 +26,7 @@ get_header('otc');
       </div>
       <div class="action">
         <button class="buy" data-translate="NFT_BuyNFT"
-          onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUOUsxWkg1MFhCTTVVQVE0UFNSRzlUVUxNRy4u')">Buy
+          onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUOUsxWkg1MFhCTTVVQVE0UFNSRzlUVUxNRy4u','_blank').focus();">Buy
           an NFT</button>
         <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
           NFT</button>
@@ -47,11 +47,11 @@ get_header('otc');
           <p data-translate="NFT_ModalTitle_1">We would like to know more about your NFT. </p>
           <p data-translate="NFT_ModalTitle_2">I would like to :</p>
           <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUREZGVEhVTlE5NzJSMVRSSUE2RkNWREE0Sy4u')" 
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUREZGVEhVTlE5NzJSMVRSSUE2RkNWREE0Sy4u','_blank').focus();"
             data-translate="NFT_ModalOption_1">
             Sell an NFT from existing collection</p>
           <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUMEI0Mjk2UUU0R05KRVpJSjVHWUVVOUZZRy4u')" 
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUMEI0Mjk2UUU0R05KRVpJSjVHWUVVOUZZRy4u','_blank').focus();"
             data-translate="NFT_ModalOption_2">
             Deploy my own collection</p>
         </div>
@@ -80,14 +80,14 @@ get_header('otc');
                   <div class="owl-stage">
                     <?php foreach ($rows as $row) { ?>
                     <div class="owl-item card">
-                      <a class="pg-top" href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>">
+                      <a class="pg-top" >
                         <div class="img-container">
                           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         </div>
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["description"]; ?></p>
-                          <p class="value">View Profile</p>
+                          <p class="value"  onclick="window.open('<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>','_blank').focus();">  View Profile</p>
                         </div>
                       </a>
                     </div>
@@ -104,7 +104,7 @@ get_header('otc');
     </section>
 
     <div class="action">
-      <a class="view-more round-btn-light" data-translate="NFT_ViewMore" href="../en-otc-nft-market/">View More</a>
+      <a class="view-more round-btn-light" data-translate="NFT_ViewMore" href="../en-otc-nft-market/"target="_blank">View More</a>
     </div>
   </div>
 
@@ -303,6 +303,12 @@ get_header('otc');
 </div>
 
 <style type="text/css">
+    h1,h2,h1> span, h2>span,h3 ,h4{
+        font-family: "Matter-Bold"!important;
+    }
+    nav>a,p,span,div{
+        font-family: "Matter-Regular"!important;
+    }
 .nft-home-container {}
 
 .faq_gold{
@@ -325,8 +331,9 @@ get_header('otc');
 .banner-container .banner-image {}
 
 .banner-container .title {
+    font-family: "Matter"!important;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 56px;
   /* or 117% */
@@ -373,7 +380,7 @@ get_header('otc');
   width: 200px;
   height: 50px;
   border: 2px solid #05004D;
-  background-color: #fff;
+  background-color: transparent;
   box-sizing: border-box;
   border-radius: 25px;
   margin-left: 44px;
@@ -638,9 +645,11 @@ get_header('otc');
   }
 
   .custom-container .img-container img {
-    width: 100%;
-    max-width: 100vw;
-    position: absolute;
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   max-height: 100%;
+   position: absolute;
   }
     .owl-item{
         margin:36px;
@@ -837,9 +846,11 @@ get_header('otc');
 }
 
 .slider-container .owl-item a .img-container img {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
   position: relative;
   text-align: center;
   display: block;
@@ -865,10 +876,14 @@ get_header('otc');
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   text-align: center;
-
+    max-height: 35px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
   /* VirgoOTC Blue */
-
   color: #05004D;
 }
 
@@ -893,6 +908,9 @@ get_header('otc');
 }
 
 .action {
+    font-family: "Matter"!important;
+    font-style: normal;
+    font-weight: 500;
   width: 100%;
   text-align: center;
 }
@@ -906,7 +924,7 @@ get_header('otc');
   text-align: center;
 
   width: 200px;
-  /*height: 50px;*/
+    background-color: transparent;
   margin: 20px auto;
   color: #05004D;
 }
@@ -939,13 +957,13 @@ get_header('otc');
 }
 .owl-prev {
   position: absolute;
-  left: -50px;
+  left: -30px;
     box-shadow: none;
 }
 
 .owl-next {
   position: absolute;
-  right: -50px;
+  right: -30px;
     box-shadow: none;
 }
 
@@ -1499,7 +1517,10 @@ get_header('otc');
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-left: 20px;
+      margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -1542,7 +1563,7 @@ get_header('otc');
     /*line-height: 46px;*/
     margin: 20px auto;
     padding: 12px 15px;
-    /* VirgoOTC Blue */
+      background-color: transparent;
 
     border: 2px solid #05004D;
     box-sizing: border-box;
