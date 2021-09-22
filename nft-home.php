@@ -161,7 +161,6 @@ get_header('otc');
             <p>2.</p>
             <p>3.</p>
             <p>4.</p>
-            <p>5.</p>
           </div>
           <div class="content-box" style="height: 468px">
             <p data-translate="NFT_SellNote1"></p>
@@ -230,7 +229,6 @@ get_header('otc');
           <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
             <div class="panel-body px-3 mb-4">
               <p data-translate="NFT_A3_1"></p>
-              <p data-translate="NFT_A3_2"></p>
               <p data-translate="NFT_A3_3"></p>
             </div>
           </div>
