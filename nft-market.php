@@ -9,10 +9,11 @@
  */
 // 关联数组
 $pageSize = 6;
-$page = 1;
+$currentPage = 1;
 if (!empty($_REQUEST['current_page'])) {
-  $page = $_REQUEST['current_page'];
+    $currentPage = $_REQUEST['current_page'];
 }
+
 
 //$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 //
@@ -37,7 +38,7 @@ if (!empty($_REQUEST['sort'])) {
     $sql .= " order by id desc ";
   }
 }
-$rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
+$rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql, ARRAY_A);
 $total = count($all_rows);
 $pageTotal = ceil($total / $pageSize);
@@ -89,18 +90,18 @@ get_header('otc');
   </ul>
 
   <ul class="page-list" id="page-list">
-    <li class="left" data-id="<?php echo $page > 1 ? $page - 1 : 1; ?>">
+    <li class="left" data-id="<?php echo $currentPage > 1 ? $currentPage - 1 : 1; ?>">
       < </li>
         <?php for ($i = 1; $i <= $pageTotal; $i++) { ?>
-    <li data-id="<?php echo $i; ?>" class="num <?php echo $page == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
+    <li data-id="<?php echo $i; ?>" class="num <?php echo $currentPage == $i ? 'active' : ''; ?>"><?php echo $i; ?></li>
     <?php } ?>
-    <li class="right" data-id="<?php echo $page < $pageTotal ? $page + 1 : $page; ?>">></li>
+    <li class="right" data-id="<?php echo $currentPage < $pageTotal ? $currentPage + 1 : $currentPage; ?>">></li>
   </ul>
 
   <div class="contact-container">
     <p class="content" data-translate="NFT_CantFind">Can’t find what your are looking for?</p>
-    <button class="contact-btn" data-translate="NFT_ContactUs" onclick="location.href='../en-otc-nft-brokerage#contact-form'"
-      type="button">Contact Us</button>
+    <button class="contact-btn" data-translate="NFT_ContactUs"
+      onclick="location.href='../en-otc-nft-brokerage#contact-form'" type="button">Contact Us</button>
   </div>
 
   <div class="slider-container">
@@ -1021,9 +1022,10 @@ get_header('otc');
   }
 }
 
-#upSort img{
-    vertical-align: sub;
+#upSort img {
+  vertical-align: sub;
 }
+
 .nft-market-container .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #05004D;
