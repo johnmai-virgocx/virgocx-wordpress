@@ -10,9 +10,14 @@
 // 关联数组
 $pageSize = 6;
 $currentPage = 1;
+$sortType = '';
 if (!empty($_REQUEST['current_page'])) {
   $currentPage = $_REQUEST['current_page'];
 }
+if (!empty($_REQUEST['sort'])) {
+  $sortType = $_REQUEST['sort'];
+}
+
 
 
 //$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
@@ -70,12 +75,12 @@ get_header('otc');
       <input id="keyword" type="text" value="<?php echo $keyword ?>" class="search-input" placeholder="Search for NFTs">
       <img id="searchBtn" src="<?= get_template_directory_uri() ?>/img/nft/search_btn.svg" alt="">
     </div>
-    <div class="sort" id="upSort">
+    <div class="sort <?php echo $sortType == 'up' ? 'active' : '' ?>" id="upSort">
       <span data-translate="NFT_Price_lowToHigh">Price:</span>
       <img src="<?= get_template_directory_uri() ?>/img/nft/arror_up.svg" alt="">
     </div>
-    <div class="sort" id="downSort">
-      <span data-translate="NFT_ListedDate">Listed date:  </span>
+    <div class="sort <?php echo $sortType == 'down' ? 'active' : '' ?>" id="downSort">
+      <span data-translate="NFT_ListedDate">Listed date: </span>
       <img src="<?= get_template_directory_uri() ?>/img/nft/arrow_down.svg" alt="">
     </div>
   </div>
@@ -84,10 +89,10 @@ get_header('otc');
     <?php foreach ($rows as $row) { ?>
     <li>
       <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>" target="_blank">
-          <div class="img-container">
+        <div class="img-container">
 
-              <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-          </div>
+          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+        </div>
         <div class="content">
           <p class="title"><?php echo $row["title"]; ?></p>
           <p class="desc"><?php echo $row["author"]; ?></p>
@@ -128,10 +133,11 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                      <a class="pg-top" href="<?php echo !empty($row["view_link"]) ? $row["view_link"] : ''; ?>" target="_blank">
-                          <div class="img-container">
-                              <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-                          </div>
+                      <a class="pg-top" href="<?php echo !empty($row["view_link"]) ? $row["view_link"] : ''; ?>"
+                        target="_blank">
+                        <div class="img-container">
+                          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                        </div>
 
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
@@ -154,12 +160,22 @@ get_header('otc');
 </div>
 
 <style type="text/css">
-    h1,h2,h1> span, h2>span,h3 ,h4{
-        font-family: "Matter-Bold"!important;
-    }
-    nav>a,p,span,div{
-        font-family: "Matter-Regular"!important;
-    }
+h1,
+h2,
+h1>span,
+h2>span,
+h3,
+h4 {
+  font-family: "Matter-Bold" !important;
+}
+
+nav>a,
+p,
+span,
+div {
+  font-family: "Matter-Regular" !important;
+}
+
 @media screen and (min-width: 900px) {
 
   .nft-market-container {
@@ -291,24 +307,24 @@ get_header('otc');
   }
 
   .img-container {
-      width: 380px;
-      height: 380px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    width: 380px;
+    height: 380px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-     .img-container img {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 10px;
-        position: relative;
-        text-align: center;
-        display: block;
-    }
+  .img-container img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    display: block;
+  }
 
   .search-list-container li .content .title {
     font-style: normal;
@@ -332,10 +348,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin-left: 20px;
-      margin-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -384,7 +400,7 @@ get_header('otc');
     height: 50px;
     line-height: 46px;
     margin: 20px auto;
-      background-color: transparent;
+    background-color: transparent;
 
     border: 2px solid #05004D;
     box-sizing: border-box;
@@ -461,10 +477,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin-left: 20px;
-      margin-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -523,7 +539,7 @@ get_header('otc');
     width: 1260px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -554,8 +570,8 @@ get_header('otc');
   }
 
   .sort {
-      /* OTC Glold */
-      color: #C7BA9A;
+    /* OTC Glold */
+    color: #C7BA9A;
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
     border-radius: 20px;
@@ -575,10 +591,14 @@ get_header('otc');
     text-align: center;
   }
 
-  .sort active{
-      /* OTC Glold */
-      color: white;
-      background-color: #C7BA9A;
+  .sort.active {
+    /* OTC Glold */
+    color: white;
+    background-color: #C7BA9A;
+  }
+
+  .sort.active img {
+    filter: brightness(2);
   }
 
   .sort img {}
@@ -755,11 +775,11 @@ get_header('otc');
   }
 
   .search-list-container li img {
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      border-radius: 10px;
-      max-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    max-height: 100%;
     display: block;
   }
 
@@ -785,10 +805,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin-left: 20px;
-      margin-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -838,7 +858,7 @@ get_header('otc');
     height: 50px;
     line-height: 46px;
     margin: 20px auto;
-      background-color: transparent;
+    background-color: transparent;
     border: 2px solid #05004D;
     box-sizing: border-box;
     border-radius: 25px;
@@ -913,10 +933,10 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
 
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin-left: 20px;
-      margin-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
@@ -1084,52 +1104,54 @@ get_header('otc');
 }
 
 .owl-nav {
-    position: absolute;
-    width: 100%;
-    top: 160px;
-    left: 0;
-    z-index: 1;
-    color: #05004D;
-    font-size: 28px;
-    font-weight: bolder;
+  position: absolute;
+  width: 100%;
+  top: 160px;
+  left: 0;
+  z-index: 1;
+  color: #05004D;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
 .owl-prev,
 .owl-next {
-    width: 40px;
-    height: 40px;
-    border-radius: 50% !important;
-    background: #FFFFFF !important;
-    box-shadow: 0px 4px 4px rgba(171, 168, 168, 0.25);
-}
-.owl-prev img{
-    margin: -8px 0 0 -3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 4px rgba(171, 168, 168, 0.25);
 }
 
-.owl-next img{
-    margin: -8px 0 0 2px;
+.owl-prev img {
+  margin: -8px 0 0 -3px;
 }
+
+.owl-next img {
+  margin: -8px 0 0 2px;
+}
+
 .owl-prev {
-    position: absolute;
-    left: -30px;
-    box-shadow: none;
+  position: absolute;
+  left: -30px;
+  box-shadow: none;
 }
 
 .owl-next {
-    position: absolute;
-    right: -30px;
-    box-shadow: none;
+  position: absolute;
+  right: -30px;
+  box-shadow: none;
 }
 
 .owl-next:hover {
-    color: #05004D !important;
-    box-shadow: 0px 4px 4px rgb(171 168 168 / 25%)!important;
+  color: #05004D !important;
+  box-shadow: 0px 4px 4px rgb(171 168 168 / 25%) !important;
 
 }
 
 .owl-prev:hover {
-    color: #05004D !important;
-    box-shadow: 0px 4px 4px rgb(171 168 168 / 25%)!important;
+  color: #05004D !important;
+  box-shadow: 0px 4px 4px rgb(171 168 168 / 25%) !important;
 }
 </style>
 <script>
@@ -1145,9 +1167,11 @@ get_header('otc');
         autoplay: false,
         autoplayTimeout: 1500,
         pagination: true,
-          nav: true,
-          dots: true,
-          navText : ["<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_left.png' alt=''>","<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_right.png' alt=''>"],
+        nav: true,
+        dots: true,
+        navText: ["<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_left.png' alt=''>",
+          "<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_right.png' alt=''>"
+        ],
         autoplayHoverPause: true
       });
     } else {
@@ -1239,8 +1263,8 @@ get_header('otc');
   })
 
   $('#upSort').click(function(event) {
-      $(this).addClass('active');
-      $('#page-list').removeClass('active');
+    $(this).addClass('active');
+    $('#page-list').removeClass('active');
     let query = window.location.search
     if (query.includes('?')) {
       query = query.slice(1)
@@ -1283,8 +1307,8 @@ get_header('otc');
   })
   $('#page-list').click(function(event) {
 
-      $(this).addClass('active');
-      $('#upSort').removeClass('active');
+    $(this).addClass('active');
+    $('#upSort').removeClass('active');
     if (event.target.dataset && event.target.dataset.id) {
       let query = window.location.search
       if (query.includes('?')) {
