@@ -10,8 +10,10 @@
 // 关联数组
 $pageSize = 6;
 $currentPage = 1;
-$sortType = '';
-$sortValue = '';
+$sortType = 'date';
+$sortValue = 'up';
+$sortPriceValue = 'up';
+$sortDateValue = 'down';
 if (!empty($_REQUEST['current_page'])) {
   $currentPage = $_REQUEST['current_page'];
 }
@@ -20,6 +22,12 @@ if (!empty($_REQUEST['sortType'])) {
 }
 if (!empty($_REQUEST['sortValue'])) {
   $sortValue = $_REQUEST['sortValue'];
+}
+if (!empty($_REQUEST['sortPriceValue'])) {
+    $sortPriceValue = $_REQUEST['sortPriceValue'];
+}
+if (!empty($_REQUEST['sortDateValue'])) {
+    $sortDateValue = $_REQUEST['sortDateValue'];
 }
 
 
@@ -90,14 +98,12 @@ get_header('otc');
       <div class="sort-container">
           <div class="sort <?php echo $sortType == 'price' ? 'active' : '' ?>" id="priceSort">
               <span data-translate="NFT_Price_lowToHigh">Price:</span>
-              <img
-                      src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
+              <img src="<?= get_template_directory_uri() ?><?php echo $sortPriceValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
                       alt="">
           </div>
           <div class="sort <?php echo $sortType == 'date' ? 'active' : '' ?>" id="dateSort">
               <span data-translate="NFT_ListedDate">Listed date: </span>
-              <img
-                      src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
+              <img src="<?= get_template_directory_uri() ?><?php echo $sortDateValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
                       alt="">
           </div>
       </div>
@@ -600,7 +606,7 @@ div {
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
     border-radius: 50px;
-    padding: 10px 16px;
+    padding: 4px 28px;
     display: inline-block;
   }
 
@@ -610,7 +616,7 @@ div {
 
   .sort span {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 28px;
     /* identical to box height */
 
     text-align: center;
@@ -1319,28 +1325,8 @@ div {
     if (query.includes('?')) {
       query = query.slice(1)
     }
-    let queryList = query.split('&')
-    let res = []
-      console.log(queryList);
-    queryList.forEach(item => {
-      if (!item.includes('sortType=price') && !item.includes('sortType=date') && !item.includes(
-          'sortValue=down') && !item.includes(
-          'sortValue=up')) {
-        res.push(item);
-      }
-    });
-    if (query.includes('sortType=price') && query.includes('sortValue=up')) {
-      res.push('sortType=price')
-      res.push('sortValue=down')
-    }else{
-        res.push('sortType=price')
-        res.push('sortValue=up')
-    }
-    // if (!query.includes('sortType=price')) {
-    //   res.push('sortType=price')
-    //   res.push('sortValue=up')
-    // }
-    window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
+    let queryList = query.split('&');
+      toggleDatePrice(query, 'price');
   })
 
   $('#dateSort').click(function(event) {
@@ -1353,29 +1339,31 @@ div {
       query = query.slice(1)
     }
     let queryList = query.split('&')
-    let res = []
-
-      console.log(queryList);
-    queryList.forEach(item => {
-      if (!item.includes('sortType=date') && !item.includes('sortType=price') && !item.includes(
-          'sortValue=down') && !item.includes(
-          'sortValue=up')) {
-        res.push(item);
-      }
-    });
-    if (query.includes('sortType=date') && query.includes('sortValue=up')) {
-      res.push('sortType=date')
-      res.push('sortValue=down')
-    }else{
-        res.push('sortType=date')
-        res.push('sortValue=up')
-    }
-    // if (!query.includes('sortType=date')) {
-    //   res.push('sortType=date')
-    //   res.push('sortValue=up')
-    // }
-    window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
+      toggleDatePrice(query, 'date');
   })
+    function toggleDatePrice  (query, type){
+        res = [];
+        res.push('sortType='+type);
+      if(type=='date'){
+          if(query.includes('sortValue=up')){
+              res.push('sortValue=down');
+              res.push('sortDateValue=down');
+          }else{
+              res.push('sortValue=up');
+              res.push('sortDateValue=up');
+          };
+      }else{
+          if(query.includes('sortValue=up')){
+              res.push('sortValue=down');
+              res.push('sortPriceValue=down');
+          }else{
+              res.push('sortValue=up');
+              res.push('sortPriceValue=up');
+          };
+      }
+
+        window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
+    }
   $('#page-list').click(function(event) {
     if (event.target.dataset && event.target.dataset.id) {
       let query = window.location.search
