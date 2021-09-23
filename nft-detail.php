@@ -23,19 +23,24 @@ get_header('otc');
 
       <div class="link">
             <?php if(!empty($detail["recent_link"])): ?>
-                <a href="<?php echo  $detail["recent_link"] ?>" target="_blank"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
                   Recent Trends </span></a>
             <?php endif; ?>
             <?php if(!empty($detail["analytics_link"])): ?>
-                <a href="<?php echo $detail["analytics_link"] ?>" target="_blank"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                <a onclick="window.open('<?php echo $detail["analytics_link"] ?>','_blank').focus();"
+                ><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
                       Analytics</span></a>
             <?php endif; ?>
       </div>
       <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
       <div class="action">
-        <a data-translate="NFT_Buy" href="../en-otc-nft-brokerage/?#contact-form" class="buy" target="_blank">Buy with VirgoCX</a>
-        <a data-translate="NFT_Opensea" href="<?php echo !empty($detail["view_link"]) ? $detail["view_link"] : ''; ?>" class="sell" target="_blank">View on
+        <a data-translate="NFT_Buy" class="buy" onclick="window.open('../en-otc-nft-brokerage/?#contact-form','_blank').focus();">Buy with VirgoCX</a>
+        <a data-translate="NFT_Opensea"
+          <?php if(!empty($detail["view_link"])): ?>
+              onclick="window.open('<?php echo $detail["view_link"] ?>','_blank').focus();"
+          <?php endif; ?>
+            class="sell">View on
           Opensea</a>
       </div>
     </div>

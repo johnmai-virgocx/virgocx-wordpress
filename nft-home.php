@@ -87,7 +87,12 @@ get_header('otc');
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc"><?php echo $row["description"]; ?></p>
-                          <p class="value"  onclick="window.open('<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>','_blank').focus();">  View Profile</p>
+                            <p class="value" <?php if(!empty($row["detail_link"])): ?>
+                                onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();"
+                            <?php endif; ?>>View Profile
+
+                            </p>
+
                         </div>
                       </a>
                     </div>
@@ -104,7 +109,7 @@ get_header('otc');
     </section>
 
     <div class="action">
-      <a class="view-more round-btn-light" data-translate="NFT_ViewMore" href="../en-otc-nft-market/"target="_blank">View More</a>
+      <a class="view-more round-btn-light" data-translate="NFT_ViewMore"  onclick="window.open('../en-otc-nft-market/','_blank').focus();">View More</a>
     </div>
   </div>
 

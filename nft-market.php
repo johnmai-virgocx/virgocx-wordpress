@@ -88,7 +88,10 @@ get_header('otc');
   <ul class="search-list-container">
     <?php foreach ($rows as $row) { ?>
     <li>
-      <a href="<?php echo !empty($row["detail_link"]) ? $row["detail_link"] : ''; ?>" target="_blank">
+
+        <a <?php if(!empty($row["detail_link"])): ?>
+            onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();"
+        <?php endif; ?>>
         <div class="img-container">
 
           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
@@ -133,8 +136,9 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                      <a class="pg-top" href="<?php echo !empty($row["view_link"]) ? $row["view_link"] : ''; ?>"
-                        target="_blank">
+                    <a class="pg-top" <?php if(!empty($row["view_link"])): ?>
+                        onclick="window.open('<?php echo $row["view_link"] ?>','_blank').focus();"
+                    <?php endif; ?>>
                         <div class="img-container">
                           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         </div>
@@ -574,7 +578,7 @@ div {
     color: #C7BA9A;
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 10px 16px;
     display: inline-block;
   }
@@ -1039,7 +1043,7 @@ div {
   .sort {
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 10px 4px;
     display: inline-block;
   }
