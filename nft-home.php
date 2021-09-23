@@ -832,9 +832,9 @@ get_header('otc');
 }
 
 .slider-container .owl-item {
-  width: 380px;
+  width: 380px!important;
   height: 531px;
-  /* margin: 20px; */
+   margin: 20px!important;
   box-sizing: border-box;
   overflow: hidden;
   background: #FFFFFF;
