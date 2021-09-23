@@ -86,7 +86,7 @@ get_header('otc');
                         </div>
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
-                          <p class="desc"><?php echo $row["description"]; ?></p>
+                          <p class="desc" data-translate="<?php echo $row["description"]; ?>"></p>
                             <p class="value" <?php if(!empty($row["detail_link"])): ?>
                                 onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();"
                             <?php endif; ?>>View Profile
@@ -336,7 +336,7 @@ get_header('otc');
 .banner-container .banner-image {}
 
 .banner-container .title {
-    font-family: "Matter"!important;
+    font-family: "Matter-Regular"!important;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -913,7 +913,7 @@ get_header('otc');
 }
 
 .action {
-    font-family: "Matter"!important;
+    font-family: "Matter-Regular"!important;
     font-style: normal;
     font-weight: 500;
   width: 100%;

@@ -87,18 +87,21 @@ get_header('otc');
       <input id="keyword" type="text" value="<?php echo $keyword ?>" class="search-input" placeholder="Search for NFTs">
       <img id="searchBtn" src="<?= get_template_directory_uri() ?>/img/nft/search_btn.svg" alt="">
     </div>
-    <div class="sort <?php echo $sortType == 'price' ? 'active' : '' ?>" id="priceSort">
-      <span data-translate="NFT_Price_lowToHigh">Price:</span>
-      <img
-        src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
-        alt="">
-    </div>
-    <div class="sort <?php echo $sortType == 'date' ? 'active' : '' ?>" id="dateSort">
-      <span data-translate="NFT_ListedDate">Listed date: </span>
-      <img
-        src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
-        alt="">
-    </div>
+      <div class="sort-container">
+          <div class="sort <?php echo $sortType == 'price' ? 'active' : '' ?>" id="priceSort">
+              <span data-translate="NFT_Price_lowToHigh">Price:</span>
+              <img
+                      src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
+                      alt="">
+          </div>
+          <div class="sort <?php echo $sortType == 'date' ? 'active' : '' ?>" id="dateSort">
+              <span data-translate="NFT_ListedDate">Listed date: </span>
+              <img
+                      src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
+                      alt="">
+          </div>
+      </div>
+
   </div>
 
   <ul class="search-list-container">
@@ -312,6 +315,7 @@ div {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
+      justify-content: space-between;
   }
 
   .search-list-container li {
@@ -586,9 +590,12 @@ div {
   .search-input-box img:hover {
     cursor: pointer;
   }
+  .sort-container{
 
+  }
   .sort {
     /* OTC Glold */
+      margin-left: 30px;
     color: #C7BA9A;
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
@@ -780,6 +787,7 @@ div {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
+      justify-content: space-between;
   }
 
   .search-list-container li {
@@ -815,6 +823,28 @@ div {
 
     color: #05004D;
   }
+
+    .img-container {
+        width: 320px;
+        height: 320px;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-container img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        display: block;
+    }
 
   .search-list-container li .content .desc {
     font-style: normal;
@@ -1058,7 +1088,7 @@ div {
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
     border-radius: 50px;
-    padding: 10px 4px;
+    padding: 0px 13px;
     display: inline-block;
   }
 
@@ -1281,14 +1311,17 @@ div {
   })
 
   $('#priceSort').click(function(event) {
-    $(this).addClass('active');
-    $('#page-list').removeClass('active');
+      if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+      }
+      $('#dateSort').removeClass('active');
     let query = window.location.search
     if (query.includes('?')) {
       query = query.slice(1)
     }
     let queryList = query.split('&')
     let res = []
+      console.log(queryList);
     queryList.forEach(item => {
       if (!item.includes('sortType=price') && !item.includes('sortType=date') && !item.includes(
           'sortValue=down') && !item.includes(
@@ -1299,23 +1332,30 @@ div {
     if (query.includes('sortType=price') && query.includes('sortValue=up')) {
       res.push('sortType=price')
       res.push('sortValue=down')
+    }else{
+        res.push('sortType=price')
+        res.push('sortValue=up')
     }
-    if (!query.includes('sortType=price')) {
-      res.push('sortType=price')
-      res.push('sortValue=up')
-    }
+    // if (!query.includes('sortType=price')) {
+    //   res.push('sortType=price')
+    //   res.push('sortValue=up')
+    // }
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
 
   $('#dateSort').click(function(event) {
-    $(this).addClass('active');
-    $('#page-list').removeClass('active');
+      if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+      }
+    $('#priceSort').removeClass('active');
     let query = window.location.search
     if (query.includes('?')) {
       query = query.slice(1)
     }
     let queryList = query.split('&')
     let res = []
+
+      console.log(queryList);
     queryList.forEach(item => {
       if (!item.includes('sortType=date') && !item.includes('sortType=price') && !item.includes(
           'sortValue=down') && !item.includes(
@@ -1326,18 +1366,17 @@ div {
     if (query.includes('sortType=date') && query.includes('sortValue=up')) {
       res.push('sortType=date')
       res.push('sortValue=down')
+    }else{
+        res.push('sortType=date')
+        res.push('sortValue=up')
     }
-    if (!query.includes('sortType=date')) {
-      res.push('sortType=date')
-      res.push('sortValue=up')
-    }
+    // if (!query.includes('sortType=date')) {
+    //   res.push('sortType=date')
+    //   res.push('sortValue=up')
+    // }
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
   $('#page-list').click(function(event) {
-
-    $(this).addClass('active');
-    $('#priceSort').removeClass('active');
-    $('#dateSort').removeClass('active');
     if (event.target.dataset && event.target.dataset.id) {
       let query = window.location.search
       if (query.includes('?')) {
