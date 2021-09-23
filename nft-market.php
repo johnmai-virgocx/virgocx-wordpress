@@ -1215,13 +1215,13 @@ div {
 
 .owl-prev {
   position: absolute;
-  left: -30px;
+  left: -50px;
   box-shadow: none;
 }
 
 .owl-next {
   position: absolute;
-  right: -30px;
+  right: -20px;
   box-shadow: none;
 }
 
