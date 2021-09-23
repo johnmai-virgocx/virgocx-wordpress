@@ -446,7 +446,7 @@ div {
   .slider-container {}
 
   .slider-container .container {
-    max-width: calc(428px * 3);
+    max-width: calc(428px * 3 );
   }
 
   .slider-container h3 {
@@ -471,7 +471,7 @@ div {
   .slider-container .owl-item {
     width: 380px !important;
     height: 480px;
-    /* margin: 20px; */
+     margin: 20px!important;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 0px 0px 20px 20px;
@@ -607,6 +607,11 @@ div {
     border-radius: 50px;
     padding: 4px 28px;
     display: inline-block;
+      line-height: 36px;
+      margin: auto;
+      min-width: 110px;
+      min-height: 47px;
+      text-align: center
   }
 
   .sort:hover {
@@ -783,7 +788,7 @@ div {
   .search-list-container {
     list-style: none;
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     display: flex;
     flex-wrap: wrap;
       justify-content: left;
@@ -1090,9 +1095,19 @@ div {
     border-radius: 50px;
     padding: 6px 15px;
     display: inline-block;
-      line-height: 11px;
+      line-height: 33px;
       margin: auto;
+      min-width: 110px;
+      min-height: 47px;
+      text-align: center
   }
+
+  #priceSort{
+      margin-left: 0;
+  }
+    #dateSort{
+        margin-right: 0;
+    }
 
   .sort span {
     font-size: 18px;
@@ -1108,6 +1123,7 @@ div {
     .sort-container{
         display: flex;
         justify-content: center;
+        margin: 0px 30px;
     }
 
   .page-list {
@@ -1227,7 +1243,7 @@ div {
       owl.owlCarousel({
         items: 3,
         loop: true,
-        margin: 56,
+          margin: 10,
         autoplay: false,
         autoplayTimeout: 1500,
         pagination: true,
