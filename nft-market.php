@@ -622,15 +622,6 @@ div {
     text-align: center;
   }
 
-  .sort.active {
-    /* OTC Glold */
-    color: white;
-    background-color: #C7BA9A;
-  }
-
-  .sort.active img {
-    filter: brightness(2);
-  }
 
   .sort img {}
 
@@ -1091,6 +1082,7 @@ div {
   }
 
   .sort {
+      color: #C7BA9A;
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
     border-radius: 50px;
@@ -1101,13 +1093,7 @@ div {
   .sort span {
     font-size: 12px;
     line-height: 17px;
-    /* identical to box height */
-
     text-align: center;
-
-    /* OTC Glold */
-
-    color: #C7BA9A;
   }
 
   .sort img {
@@ -1148,6 +1134,15 @@ div {
   }
 }
 
+.sort.active {
+    /* OTC Glold */
+    color: white!important;
+    background-color: #C7BA9A;
+}
+
+.sort.active img {
+    filter: brightness(2);
+}
 #upSort img {
   vertical-align: sub;
 }
