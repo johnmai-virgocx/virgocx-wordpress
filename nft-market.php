@@ -10,12 +10,24 @@
 // 关联数组
 $pageSize = 6;
 $currentPage = 1;
-$sortType = '';
+$sortTypePrice = '';
+$sortTypeDate = '';
+$sortPriceValue = '';
+$sortDateValue = '';
 if (!empty($_REQUEST['current_page'])) {
   $currentPage = $_REQUEST['current_page'];
 }
-if (!empty($_REQUEST['sort'])) {
-  $sortType = $_REQUEST['sort'];
+if (!empty($_REQUEST['sortTypePrice'])) {
+  $sortTypePrice = $_REQUEST['sortTypePrice'];
+}
+if (!empty($_REQUEST['sortTypeDate'])) {
+  $sortTypeDate = $_REQUEST['sortTypeDate'];
+}
+if (!empty($_REQUEST['sortPriceValue'])) {
+  $sortPriceValue = $_REQUEST['sortPriceValue'];
+}
+if (!empty($_REQUEST['sortDateValue'])) {
+  $sortDateValue = $_REQUEST['sortDateValue'];
 }
 
 
@@ -26,7 +38,6 @@ if (!empty($_REQUEST['sort'])) {
 //$total = count($all_rows);
 //$pageTotal = ceil($total / $pageSize);
 $keyword = '';
-$sort = '';
 
 $sql = 'where marketing = 1 
 AND trending_collections = 0';
@@ -35,13 +46,35 @@ if (!empty($_REQUEST['keyword'])) {
   $keyword = $_REQUEST['keyword'];
   $sql = " where marketing = 1 AND trending_collections = 0 AND  title like'%" . $keyword . "%'";
 }
-if (!empty($_REQUEST['sort'])) {
-  $sort = $_REQUEST['sort'];
-  if ($sort === 'up') {
+if ((!empty($_REQUEST['sortTypePrice']) && !empty($_REQUEST['sortPriceValue'])) || !empty($_REQUEST['sortTypeDate']) && !empty($_REQUEST['sortDateValue'])) {
+  $sortTypePrice = $_REQUEST['sortTypePrice'];
+  if ($sortTypePrice == 'price') {
     $sql .= " order by blockchain_value ";
-  }
-  if ($sort === 'down') {
-    $sql .= " order by id desc ";
+    if ($sortPriceValue == 'up') {
+      $sql .= " ";
+    }
+    if ($sortPriceValue == 'down') {
+      $sql .= " desc ";
+    }
+    if ($sortTypeDate == 'date') {
+      $sql .= " , id ";
+      if ($sortDateValue == 'up') {
+        $sql .= " ";
+      }
+      if ($sortDateValue == 'down') {
+        $sql .= " desc ";
+      }
+    }
+  } else {
+    if ($sortTypeDate == 'date') {
+      $sql .= " order by id ";
+      if ($sortDateValue == 'up') {
+        $sql .= " ";
+      }
+      if ($sortDateValue == 'down') {
+        $sql .= " desc ";
+      }
+    }
   }
 }
 $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
@@ -75,13 +108,17 @@ get_header('otc');
       <input id="keyword" type="text" value="<?php echo $keyword ?>" class="search-input" placeholder="Search for NFTs">
       <img id="searchBtn" src="<?= get_template_directory_uri() ?>/img/nft/search_btn.svg" alt="">
     </div>
-    <div class="sort <?php echo $sortType == 'up' ? 'active' : '' ?>" id="upSort">
+    <div class="sort <?php echo $sortTypePrice == 'price' ? 'active' : '' ?>" id="priceSort">
       <span data-translate="NFT_Price_lowToHigh">Price:</span>
-      <img src="<?= get_template_directory_uri() ?>/img/nft/arror_up.svg" alt="">
+      <img
+        src="<?= get_template_directory_uri() ?><?php echo $sortPriceValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
+        alt="">
     </div>
-    <div class="sort <?php echo $sortType == 'down' ? 'active' : '' ?>" id="downSort">
+    <div class="sort <?php echo $sortTypeDate == 'date' ? 'active' : '' ?>" id="dateSort">
       <span data-translate="NFT_ListedDate">Listed date: </span>
-      <img src="<?= get_template_directory_uri() ?>/img/nft/arrow_down.svg" alt="">
+      <img
+        src="<?= get_template_directory_uri() ?><?php echo $sortDateValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
+        alt="">
     </div>
   </div>
 
@@ -89,9 +126,8 @@ get_header('otc');
     <?php foreach ($rows as $row) { ?>
     <li>
 
-        <a <?php if(!empty($row["detail_link"])): ?>
-            onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();"
-        <?php endif; ?>>
+      <a <?php if (!empty($row["detail_link"])) : ?>
+        onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();" <?php endif; ?>>
         <div class="img-container">
 
           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
@@ -136,9 +172,8 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                    <a class="pg-top" <?php if(!empty($row["view_link"])): ?>
-                        onclick="window.open('<?php echo $row["view_link"] ?>','_blank').focus();"
-                    <?php endif; ?>>
+                      <a class="pg-top" <?php if (!empty($row["view_link"])) : ?>
+                        onclick="window.open('<?php echo $row["view_link"] ?>','_blank').focus();" <?php endif; ?>>
                         <div class="img-container">
                           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         </div>
@@ -1266,7 +1301,7 @@ div {
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
 
-  $('#upSort').click(function(event) {
+  $('#priceSort').click(function(event) {
     $(this).addClass('active');
     $('#page-list').removeClass('active');
     let query = window.location.search
@@ -1276,20 +1311,25 @@ div {
     let queryList = query.split('&')
     let res = []
     queryList.forEach(item => {
-      if (item.includes('sort=')) {
-        res.push('sort=up')
-      } else {
-
+      if (!item.includes('sortTypePrice=price') && !item.includes('sortPriceValue=down') && !item.includes(
+          'sortPriceValue=up')) {
         res.push(item);
       }
     });
-    if (!query.includes('sort=')) {
-      res.push('sort=up')
+    if (query.includes('sortTypePrice=price') && query.includes('sortPriceValue=up')) {
+      res.push('sortTypePrice=price')
+      res.push('sortPriceValue=down')
+    }
+    if (!query.includes('sortTypePrice=price') && !query.includes('sortPriceValue=up')) {
+      res.push('sortTypePrice=price')
+      res.push('sortPriceValue=up')
     }
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
 
-  $('#downSort').click(function(event) {
+  $('#dateSort').click(function(event) {
+    $(this).addClass('active');
+    $('#page-list').removeClass('active');
     let query = window.location.search
     if (query.includes('?')) {
       query = query.slice(1)
@@ -1297,22 +1337,26 @@ div {
     let queryList = query.split('&')
     let res = []
     queryList.forEach(item => {
-      if (item.includes('sort=')) {
-        res.push('sort=down')
-      } else {
-
+      if (!item.includes('sortTypeDate=date') && !item.includes('sortDateValue=down') && !item.includes(
+          'sortDateValue=up')) {
         res.push(item);
       }
     });
-    if (!query.includes('sort=')) {
-      res.push('sort=down')
+    if (query.includes('sortTypeDate=date') && query.includes('sortDateValue=up')) {
+      res.push('sortTypeDate=date')
+      res.push('sortDateValue=down')
+    }
+    if (!query.includes('sortTypeDate=date') && !query.includes('sortDateValue=up')) {
+      res.push('sortTypeDate=date')
+      res.push('sortDateValue=up')
     }
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
   $('#page-list').click(function(event) {
 
     $(this).addClass('active');
-    $('#upSort').removeClass('active');
+    $('#priceSort').removeClass('active');
+    $('#dateSort').removeClass('active');
     if (event.target.dataset && event.target.dataset.id) {
       let query = window.location.search
       if (query.includes('?')) {
