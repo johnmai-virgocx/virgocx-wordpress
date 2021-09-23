@@ -346,8 +346,8 @@ div {
   }
 
   .img-container img {
-    width: auto;
-    height: auto;
+    width: auto!important;
+    height: auto!important;
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
@@ -840,8 +840,8 @@ div {
     }
 
     .img-container img {
-        width: auto;
-        height: auto;
+        width: auto!important;
+        height: auto!important;
         max-width: 100%;
         max-height: 100%;
         border-radius: 10px;
