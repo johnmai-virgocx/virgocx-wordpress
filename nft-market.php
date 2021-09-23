@@ -98,12 +98,14 @@ get_header('otc');
       <div class="sort-container">
           <div class="sort <?php echo $sortType == 'price' ? 'active' : '' ?>" id="priceSort">
               <span data-translate="NFT_Price_lowToHigh">Price:</span>
-              <img src="<?= get_template_directory_uri() ?><?php echo $sortPriceValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
+              <img  class="<?php echo $sortPriceValue == 'up' ? 'up' : 'down' ?>"
+                      src="<?= get_template_directory_uri() ?><?php echo $sortPriceValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
                       alt="">
           </div>
           <div class="sort <?php echo $sortType == 'date' ? 'active' : '' ?>" id="dateSort">
               <span data-translate="NFT_ListedDate">Listed date: </span>
-              <img src="<?= get_template_directory_uri() ?><?php echo $sortDateValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
+              <img class="<?php echo $sortDateValue == 'up' ? 'up' : 'down' ?>"
+                   src="<?= get_template_directory_uri() ?><?php echo $sortDateValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
                       alt="">
           </div>
       </div>
@@ -321,7 +323,7 @@ div {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: left;
   }
 
   .search-list-container li {
@@ -472,9 +474,8 @@ div {
     /* margin: 20px; */
     box-sizing: border-box;
     overflow: hidden;
-    background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
-    background-color: #0D0763;
+    background-color: white;
   }
 
   /*.slider-container .owl-item a img {*/
@@ -495,7 +496,7 @@ div {
 
     /* VirgoOTC Blue */
 
-    color: #fff;
+    color: #05004D;
   }
 
   .slider-container .owl-item a .content .desc {
@@ -596,9 +597,7 @@ div {
   .search-input-box img:hover {
     cursor: pointer;
   }
-  .sort-container{
 
-  }
   .sort {
     /* OTC Glold */
       margin-left: 30px;
@@ -622,8 +621,11 @@ div {
     text-align: center;
   }
 
+    .sort-container{
+        margin-right: 40px;
+    }
 
-  .sort img {}
+
 
   .page-list {
     display: flex;
@@ -784,7 +786,7 @@ div {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: left;
   }
 
   .search-list-container li {
@@ -946,7 +948,7 @@ div {
     /* margin: 20px; */
     box-sizing: border-box;
     overflow: hidden;
-    background: #05004D;
+    background: white;
     border-radius: 0px 0px 20px 20px;
   }
 
@@ -968,7 +970,7 @@ div {
 
     /* VirgoOTC Blue */
 
-    color: #fff;
+    color: #05004D;
   }
 
   .slider-container .owl-item a .content .desc {
@@ -1086,13 +1088,15 @@ div {
     border: 1px solid #C7BA9A;
     box-sizing: border-box;
     border-radius: 50px;
-    padding: 0px 13px;
+    padding: 6px 15px;
     display: inline-block;
+      line-height: 11px;
+      margin: auto;
   }
 
   .sort span {
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 26px;
     text-align: center;
   }
 
@@ -1100,6 +1104,11 @@ div {
     width: 20px;
     height: 20px;
   }
+
+    .sort-container{
+        display: flex;
+        justify-content: center;
+    }
 
   .page-list {
     display: flex;
@@ -1139,10 +1148,16 @@ div {
     color: white!important;
     background-color: #C7BA9A;
 }
-
+.sort img {
+    margin-left:4px;
+}
+.sort .up {
+    margin-top:-3px ;
+}
 .sort.active img {
     filter: brightness(2);
 }
+
 #upSort img {
   vertical-align: sub;
 }
