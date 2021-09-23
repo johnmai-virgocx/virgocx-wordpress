@@ -336,7 +336,7 @@ get_header('otc');
 .banner-container .banner-image {}
 
 .banner-container .title {
-    font-family: "Matter-Regular"!important;
+    font-family: "Matter-Bold"!important;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -344,8 +344,12 @@ get_header('otc');
   /* or 117% */
   color: #05004D;
 }
+    .banner-container .title span{
 
-.banner-container .title .gold {
+        font-family: "Matter-Bold"!important;
+    }
+
+    .banner-container .title .gold {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
