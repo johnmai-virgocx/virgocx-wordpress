@@ -14,26 +14,33 @@ get_header('otc');
 ?>
 <div class="nft-detail-container">
   <div class="content-container">
-    <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
+      <div class="image-container">
+          <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
+      </div>
     <div class="content">
       <p class="title"><?php echo $detail["title"]; ?></p>
       <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?></p>
 
       <div class="link">
             <?php if(!empty($detail["recent_link"])): ?>
-                <a href="<?php echo  $detail["recent_link"] ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
                   Recent Trends </span></a>
             <?php endif; ?>
             <?php if(!empty($detail["analytics_link"])): ?>
-                <a href="<?php echo $detail["analytics_link"] ?>"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                <a onclick="window.open('<?php echo $detail["analytics_link"] ?>','_blank').focus();"
+                ><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
                       Analytics</span></a>
             <?php endif; ?>
       </div>
       <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
       <div class="action">
-        <a data-translate="NFT_Buy" href="../en-otc-nft-brokerage#contact-form" class="buy">Buy with VirgoCX</a>
-        <a data-translate="NFT_Opensea" href="<?php echo !empty($detail["view_link"]) ? $detail["view_link"] : ''; ?>" class="sell">View on
+        <a data-translate="NFT_Buy" class="buy" onclick="window.open('../en-otc-nft-brokerage/?#contact-form','_blank').focus();">Buy with VirgoCX</a>
+        <a data-translate="NFT_Opensea"
+          <?php if(!empty($detail["view_link"])): ?>
+              onclick="window.open('<?php echo $detail["view_link"] ?>','_blank').focus();"
+          <?php endif; ?>
+            class="sell">View on
           Opensea</a>
       </div>
     </div>
@@ -49,12 +56,18 @@ get_header('otc');
       <div class="stats" data-translate="NFT_TokenID">Token ID</div>
       <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
       <div class="stats" data-translate="NFT_Blockchain">Blockchain</div>
-      <div class="stats-value"><?php echo $detail["blockchain_value"]; ?></div>
+      <div class="stats-value"><?php echo $detail["blockchain"]; ?></div>
     </div>
   </div>
 </div>
 
 <style type="text/css">
+    h1,h2,h1> span, h2>span,h3 ,h4{
+        font-family: "Matter-Bold"!important;
+    }
+    nav>a,p,span,div{
+        font-family: "Matter-Regular"!important;
+    }
   .nft-detail-container {
     background: #fff;
     overflow: hidden;
@@ -65,10 +78,18 @@ get_header('otc');
     display: flex;
     margin: 20px auto;
   }
+  .nft-detail-container .content-container .image-container {
+      width: 400px;
+      height: 400px;
+  }
 
-  .nft-detail-container .content-container .image {
-    width: 400px;
-    height: 400px;
+  .nft-detail-container .content-container .image-container .image{
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      position: relative;
+      text-align: center;
+      display: block;
   }
 
   .nft-detail-container .content-container .content {
@@ -241,12 +262,21 @@ get_header('otc');
       text-align: center;
     }
 
-    .nft-detail-container .content-container .image {
+    .nft-detail-container .content-container .image-container {
       width: 320px;
       height: 320px;
       text-align: center;
       margin: 0 auto;
     }
+
+      .nft-detail-container .content-container .image-container .image{
+          width: 100%;
+          height: auto;
+          max-height: 100%;
+          position: relative;
+          text-align: center;
+          display: block;
+      }
 
     .nft-detail-container .content-container .content {
       height: auto;
