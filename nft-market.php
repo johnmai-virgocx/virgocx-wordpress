@@ -10,24 +10,16 @@
 // 关联数组
 $pageSize = 6;
 $currentPage = 1;
-$sortTypePrice = '';
-$sortTypeDate = '';
-$sortPriceValue = '';
-$sortDateValue = '';
+$sortType = '';
+$sortValue = '';
 if (!empty($_REQUEST['current_page'])) {
   $currentPage = $_REQUEST['current_page'];
 }
-if (!empty($_REQUEST['sortTypePrice'])) {
-  $sortTypePrice = $_REQUEST['sortTypePrice'];
+if (!empty($_REQUEST['sortType'])) {
+  $sortType = $_REQUEST['sortType'];
 }
-if (!empty($_REQUEST['sortTypeDate'])) {
-  $sortTypeDate = $_REQUEST['sortTypeDate'];
-}
-if (!empty($_REQUEST['sortPriceValue'])) {
-  $sortPriceValue = $_REQUEST['sortPriceValue'];
-}
-if (!empty($_REQUEST['sortDateValue'])) {
-  $sortDateValue = $_REQUEST['sortDateValue'];
+if (!empty($_REQUEST['sortValue'])) {
+  $sortValue = $_REQUEST['sortValue'];
 }
 
 
@@ -46,35 +38,22 @@ if (!empty($_REQUEST['keyword'])) {
   $keyword = $_REQUEST['keyword'];
   $sql = " where marketing = 1 AND trending_collections = 0 AND  title like'%" . $keyword . "%'";
 }
-if ((!empty($_REQUEST['sortTypePrice']) && !empty($_REQUEST['sortPriceValue'])) || !empty($_REQUEST['sortTypeDate']) && !empty($_REQUEST['sortDateValue'])) {
-  $sortTypePrice = $_REQUEST['sortTypePrice'];
-  if ($sortTypePrice == 'price') {
+if (!empty($_REQUEST['sortType'])) {
+  $sortType = $_REQUEST['sortType'];
+  if ($sortType == 'price') {
     $sql .= " order by blockchain_value ";
-    if ($sortPriceValue == 'up') {
-      $sql .= " ";
-    }
-    if ($sortPriceValue == 'down') {
-      $sql .= " desc ";
-    }
-    if ($sortTypeDate == 'date') {
-      $sql .= " , id ";
-      if ($sortDateValue == 'up') {
-        $sql .= " ";
-      }
-      if ($sortDateValue == 'down') {
-        $sql .= " desc ";
-      }
-    }
-  } else {
-    if ($sortTypeDate == 'date') {
-      $sql .= " order by id ";
-      if ($sortDateValue == 'up') {
-        $sql .= " ";
-      }
-      if ($sortDateValue == 'down') {
-        $sql .= " desc ";
-      }
-    }
+  }
+  if ($sortType == 'date') {
+    $sql .= " order by id  ";
+  }
+}
+if (!empty($_REQUEST['sortValue'])) {
+  $sortValue = $_REQUEST['sortValue'];
+  if ($sortValue == 'up') {
+    $sql .= " ";
+  }
+  if ($sortValue == 'down') {
+    $sql .= " desc ";
   }
 }
 $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
@@ -108,16 +87,16 @@ get_header('otc');
       <input id="keyword" type="text" value="<?php echo $keyword ?>" class="search-input" placeholder="Search for NFTs">
       <img id="searchBtn" src="<?= get_template_directory_uri() ?>/img/nft/search_btn.svg" alt="">
     </div>
-    <div class="sort <?php echo $sortTypePrice == 'price' ? 'active' : '' ?>" id="priceSort">
+    <div class="sort <?php echo $sortType == 'price' ? 'active' : '' ?>" id="priceSort">
       <span data-translate="NFT_Price_lowToHigh">Price:</span>
       <img
-        src="<?= get_template_directory_uri() ?><?php echo $sortPriceValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
+        src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'up' ? '/img/nft/arror_up.svg' : '/img/nft/arrow_down.svg' ?>"
         alt="">
     </div>
-    <div class="sort <?php echo $sortTypeDate == 'date' ? 'active' : '' ?>" id="dateSort">
+    <div class="sort <?php echo $sortType == 'date' ? 'active' : '' ?>" id="dateSort">
       <span data-translate="NFT_ListedDate">Listed date: </span>
       <img
-        src="<?= get_template_directory_uri() ?><?php echo $sortDateValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
+        src="<?= get_template_directory_uri() ?><?php echo $sortValue == 'down' ? '/img/nft/arrow_down.svg' : '/img/nft/arror_up.svg' ?>"
         alt="">
     </div>
   </div>
@@ -1311,18 +1290,19 @@ div {
     let queryList = query.split('&')
     let res = []
     queryList.forEach(item => {
-      if (!item.includes('sortTypePrice=price') && !item.includes('sortPriceValue=down') && !item.includes(
-          'sortPriceValue=up')) {
+      if (!item.includes('sortType=price') && !item.includes('sortType=date') && !item.includes(
+          'sortValue=down') && !item.includes(
+          'sortValue=up')) {
         res.push(item);
       }
     });
-    if (query.includes('sortTypePrice=price') && query.includes('sortPriceValue=up')) {
-      res.push('sortTypePrice=price')
-      res.push('sortPriceValue=down')
+    if (query.includes('sortType=price') && query.includes('sortValue=up')) {
+      res.push('sortType=price')
+      res.push('sortValue=down')
     }
-    if (!query.includes('sortTypePrice=price') && !query.includes('sortPriceValue=up')) {
-      res.push('sortTypePrice=price')
-      res.push('sortPriceValue=up')
+    if (!query.includes('sortType=price')) {
+      res.push('sortType=price')
+      res.push('sortValue=up')
     }
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
@@ -1337,18 +1317,19 @@ div {
     let queryList = query.split('&')
     let res = []
     queryList.forEach(item => {
-      if (!item.includes('sortTypeDate=date') && !item.includes('sortDateValue=down') && !item.includes(
-          'sortDateValue=up')) {
+      if (!item.includes('sortType=date') && !item.includes('sortType=price') && !item.includes(
+          'sortValue=down') && !item.includes(
+          'sortValue=up')) {
         res.push(item);
       }
     });
-    if (query.includes('sortTypeDate=date') && query.includes('sortDateValue=up')) {
-      res.push('sortTypeDate=date')
-      res.push('sortDateValue=down')
+    if (query.includes('sortType=date') && query.includes('sortValue=up')) {
+      res.push('sortType=date')
+      res.push('sortValue=down')
     }
-    if (!query.includes('sortTypeDate=date') && !query.includes('sortDateValue=up')) {
-      res.push('sortTypeDate=date')
-      res.push('sortDateValue=up')
+    if (!query.includes('sortType=date')) {
+      res.push('sortType=date')
+      res.push('sortValue=up')
     }
     window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
   })
