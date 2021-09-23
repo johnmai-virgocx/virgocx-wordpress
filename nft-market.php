@@ -470,7 +470,7 @@ div {
 
   .slider-container .owl-item {
     width: 380px !important;
-    height: 480px;
+    height: 450px;
      margin: 20px!important;
     box-sizing: border-box;
     overflow: hidden;
@@ -613,7 +613,9 @@ div {
       min-height: 47px;
       text-align: center
   }
-
+    #dateSort{
+        margin-left: 22px;
+    }
   .sort:hover {
     cursor: pointer;
   }
@@ -949,7 +951,7 @@ div {
 
   .slider-container .owl-item {
     width: 380px;
-    height: 480px;
+    height: 450px;
     /* margin: 20px; */
     box-sizing: border-box;
     overflow: hidden;
@@ -967,7 +969,7 @@ div {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    margin-top: 18px;
+    margin-top: 10px;
     line-height: 50px;
     /* identical to box height */
 
