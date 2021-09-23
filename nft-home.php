@@ -89,7 +89,7 @@ get_header('otc');
                           <p class="desc"><?php echo $row["description"]; ?></p>
                             <p class="value" <?php if(!empty($row["detail_link"])): ?>
                                 onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();"
-                            <?php endif; ?>>View Profile
+                            <?php endif; ?>> <span data-translate="NFT_ViewProfile">View Profile</span>
 
                             </p>
 
