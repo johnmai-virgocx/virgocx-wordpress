@@ -80,14 +80,14 @@ get_header('otc');
                   <div class="owl-stage">
                     <?php foreach ($rows as $row) { ?>
                     <div class="owl-item card">
-                      <a class="pg-top" >
+                      <a class="pg-top" href="<?php echo $row["detail_link"] ?>" target ="_blank">
                         <div class="img-container">
                           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         </div>
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc" data-translate="<?php echo $row["description"]; ?>"></p>
-                            <p class="value" href="<?php echo $row["detail_link"] ?>" target ="_blank"> <span data-translate="NFT_ViewProfile">View Profile</span></p>
+                            <p class="value" > <span data-translate="NFT_ViewProfile">View Profile</span></p>
 
                         </div>
                       </a>

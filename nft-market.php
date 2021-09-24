@@ -1012,12 +1012,14 @@ div {
     color: #C7BA9A;
   }
 
-  .owl-stage {
+    .owl-stage {
 
-    height: 600px;
-    overflow: hidden;
-  }
-
+        height: 530px;
+        overflow: hidden;
+    }
+    .carousel-area{
+        margin-bottom: 80px;
+    }
   .action {
     width: 100%;
     text-align: center;
