@@ -456,6 +456,10 @@ get_header('otc');
   color: #FFFFFF;
 }
 
+.middle-block .left span{
+    font-family: "Matter-Bold"!important;
+}
+
 .middle-block .right {
   /* border: 2px solid #C7BA9A; */
   box-sizing: border-box;
