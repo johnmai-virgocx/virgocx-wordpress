@@ -271,6 +271,7 @@ get_header('otc');
       .nft-detail-container .content-container .image-container .image{
           width: auto;
           height: auto;
+          max-width: 100%;
           max-height: 100%;
           position: relative;
           text-align: center;
