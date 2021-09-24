@@ -1213,7 +1213,7 @@ div {
 
 .owl-prev {
   position: absolute;
-  left: -50px;
+  left: -25px;
   box-shadow: none;
 }
 
