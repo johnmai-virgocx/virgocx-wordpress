@@ -10,10 +10,10 @@
             currentLang = 'en',
             langPageIndicator =0,
             languagePair = {
-                "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
-                "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
-                // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
-                // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
+                // "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                // "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
             };
 
 
@@ -45,7 +45,7 @@
                     if (url.indexOf(langParam) > -1) {
                         if(key != currentLang){
                             // redirection(url, currentLang);
-                            redirection(url, key,false);
+                            redirection(url, key,false,false);
                         }
                     }
                 })
@@ -125,7 +125,7 @@
                 if(url.indexOf('/'+currentLang+'-')<0){
                     setLang(dictionary[language]);
                 }
-                redirection(url,language,true);
+                redirection(url,language,true,false);
                 currentLang = language;
             }
         });
@@ -139,7 +139,7 @@
                     setLang(dictionary[language]);
                 }
                 $(dropdownMenuLinkEN).click();
-                redirection(url,language,true);
+                redirection(url,language,true,false);
                 currentLang = language;
             }
         });
@@ -152,7 +152,8 @@
         loadLangSwitcher();
 
         //lang redirect
-        async function redirection(url,language,fromSwitcher) {
+        async function redirection(url,language,fromSwitcher, newTab) {
+
             if (language == '' || language == null){
                 language = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
                 currentLang = language;
@@ -165,14 +166,23 @@
                 if (url && (url.indexOf(langParam) > -1)) {
                     langPageIndicator = 1;
                     if(fromSwitcher){
-                        window.location = url.replace(langParam, '/' + language + '-');
+                        if(newTab){
+                            window.open (url.replace(langParam, '/' + language + '-'),'_blank').focus();
+                        }else{
+                            window.open (url.replace(langParam, '/' + language + '-'));
+                        }
                     }
                 }
             })
             const result = await Promise.all(promises);
 
             if (url && langPageIndicator == 0 &&  window.location.href !== url){
-                window.location.href = url;
+
+                if(newTab){
+                    window.open (url,'_blank').focus();
+                }else{
+                    window.location.href = url;
+                }
             }
         }
 
@@ -183,11 +193,27 @@
                 [false, null, 'undefined',undefined].indexOf( this.attributes['data-slide'])>=0){
                 event.preventDefault();
                 const url =$(this).attr('href');
-                redirection(url,'',true);
+                const  newTab = $(this).attr('target') == '_blank';
+                redirection(url,'',true,newTab);
                 return false; // for good measure
             }
         });
 
+
+        $('button').click(function(event) {
+            if($(this).attr('href') != undefined){
+                var url = $(this).attr('href');
+                const  newTab = $(this).attr('target') == '_blank';
+                redirection(url,'',true, newTab);
+            }
+        })
+        $('p').click(function(event) {
+            if($(this).attr('href') != undefined){
+                var url = $(this).attr('href');
+                const  newTab = $(this).attr('target') == '_blank';
+                redirection(url,'',true, newTab);
+            }
+        })
 
 
         // replace footer data tag
