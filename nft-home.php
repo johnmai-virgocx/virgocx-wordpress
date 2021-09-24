@@ -1528,12 +1528,15 @@ get_header('otc');
     line-height: 19px;
     text-align: center;
       text-overflow: ellipsis;
-      white-space: nowrap;
       margin-left: 20px;
       margin-right: 20px;
     /* VirgoOTC Blue */
 
     color: #05004D;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
   }
 
   .slider-container .owl-item .content .value {
