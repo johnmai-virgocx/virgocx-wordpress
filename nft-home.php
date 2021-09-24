@@ -105,7 +105,7 @@ get_header('otc');
     </section>
 
     <div class="action">
-      <a class="view-more round-btn-light" data-translate="NFT_ViewMore"  onclick="window.open('../en-otc-nft-market/','_blank').focus();">View More</a>
+      <a class="view-more round-btn-light" data-translate="NFT_ViewMore"  href="../en-otc-nft-market/" target ="_blank">View More</a>
     </div>
   </div>
 

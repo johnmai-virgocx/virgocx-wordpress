@@ -35,7 +35,7 @@ get_header('otc');
       <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
       <div class="action">
-        <a data-translate="NFT_Buy" class="buy" onclick="window.open('../en-otc-nft-brokerage/?#contact-form','_blank').focus();">Buy with VirgoCX</a>
+        <a data-translate="NFT_Buy" class="buy" href="../en-otc-nft-brokerage/?#contact-form" target ="_blank">Buy with VirgoCX</a>
         <a data-translate="NFT_Opensea" href="<?php echo $row["view_link"] ?>" target ="_blank" class="sell">View on
           Opensea</a>
       </div>

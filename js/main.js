@@ -169,7 +169,7 @@
                         if(newTab){
                             window.open (url.replace(langParam, '/' + language + '-'),'_blank').focus();
                         }else{
-                            window.open (url.replace(langParam, '/' + language + '-'));
+                            window.location.href = url.replace(langParam, '/' + language + '-');
                         }
                     }
                 }
@@ -177,7 +177,6 @@
             const result = await Promise.all(promises);
 
             if (url && langPageIndicator == 0 &&  window.location.href !== url){
-
                 if(newTab){
                     window.open (url,'_blank').focus();
                 }else{
