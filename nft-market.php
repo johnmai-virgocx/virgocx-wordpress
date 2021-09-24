@@ -531,10 +531,12 @@ div {
 
   .owl-stage {
 
-    height: 600px;
+    height: 530px;
     overflow: hidden;
   }
-
+    .carousel-area{
+        margin-bottom: 80px;
+    }
   .action {
     width: 100%;
     text-align: center;
