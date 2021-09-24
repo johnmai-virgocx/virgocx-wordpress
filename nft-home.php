@@ -25,9 +25,9 @@ get_header('otc');
         <span data-translate="NFT_Valuable">valuable NFTs with our Brokerage Service.</span>
       </div>
       <div class="action">
-        <button class="buy" data-translate="NFT_BuyNFT"
-          onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUOUsxWkg1MFhCTTVVQVE0UFNSRzlUVUxNRy4u','_blank').focus();">Buy
-          an NFT</button>
+          <button class="buy" data-translate="NFT_BuyNFT"
+                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUOUsxWkg1MFhCTTVVQVE0UFNSRzlUVUxNRy4u" target ="_blank">Buy
+              an NFT</button>
         <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
           NFT</button>
       </div>
@@ -87,11 +87,7 @@ get_header('otc');
                         <div class="content">
                           <p class="title"><?php echo $row["title"]; ?></p>
                           <p class="desc" data-translate="<?php echo $row["description"]; ?>"></p>
-                            <p class="value" <?php if(!empty($row["detail_link"])): ?>
-                                onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();"
-                            <?php endif; ?>> <span data-translate="NFT_ViewProfile">View Profile</span>
-
-                            </p>
+                            <p class="value" href="<?php echo $row["detail_link"] ?>" target ="_blank"> <span data-translate="NFT_ViewProfile">View Profile</span></p>
 
                         </div>
                       </a>

@@ -116,8 +116,7 @@ get_header('otc');
     <?php foreach ($rows as $row) { ?>
     <li>
 
-      <a <?php if (!empty($row["detail_link"])) : ?>
-        onclick="window.open('<?php echo $row["detail_link"] ?>','_blank').focus();" <?php endif; ?>>
+      <a href="<?php echo $row["detail_link"] ?>" target ="_blank">
         <div class="img-container">
 
           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
@@ -162,8 +161,7 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                      <a class="pg-top" <?php if (!empty($row["view_link"])) : ?>
-                        onclick="window.open('<?php echo $row["view_link"] ?>','_blank').focus();" <?php endif; ?>>
+                      <a class="pg-top" href="<?php echo $row["view_link"] ?>" target ="_blank">
                         <div class="img-container">
                           <img src="<?php echo $row["thumbnail"]; ?>" alt="">
                         </div>
