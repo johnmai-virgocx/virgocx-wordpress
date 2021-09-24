@@ -142,7 +142,7 @@ get_header('otc');
     background: #05004D;
     border-radius: 25px;
     padding: 10px;
-
+      border: 2px solid #05004D;
 
     font-style: normal;
     font-weight: 500;
@@ -330,7 +330,7 @@ get_header('otc');
       height: 50px;
       background: #05004D;
       border-radius: 25px;
-
+        border: 2px solid #05004D;
 
       font-style: normal;
       font-weight: 500;
