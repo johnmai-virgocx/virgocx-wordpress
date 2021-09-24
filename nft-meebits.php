@@ -23,12 +23,12 @@ get_header('otc');
 
       <div class="link">
             <?php if(!empty($detail["recent_link"])): ?>
-                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
                   Recent Trends </span></a>
             <?php endif; ?>
             <?php if(!empty($detail["analytics_link"])): ?>
                 <a onclick="window.open('<?php echo $detail["analytics_link"] ?>','_blank').focus();"
-                ><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                ><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
                       Analytics</span></a>
             <?php endif; ?>
       </div>
@@ -36,9 +36,7 @@ get_header('otc');
 
       <div class="action">
         <a data-translate="NFT_Buy" class="buy" href="../en-otc-nft-brokerage/?#contact-form" target ="_blank">Buy with VirgoCX</a>
-        <a data-translate="NFT_Opensea" class="sell" onclick="window.open('<?php echo $detail["view_link"] ?>','_blank').focus();"
-                >View on
-          Opensea</a>
+        
       </div>
     </div>
   </div>
@@ -88,6 +86,7 @@ get_header('otc');
       position: relative;
       text-align: center;
       display: block;
+      margin: auto;
   }
 
   .nft-detail-container .content-container .content {
@@ -142,7 +141,7 @@ get_header('otc');
     background: #05004D;
     border-radius: 25px;
     padding: 10px;
-
+      border: 2px solid #05004D;
 
     font-style: normal;
     font-weight: 500;
@@ -269,12 +268,14 @@ get_header('otc');
     }
 
       .nft-detail-container .content-container .image-container .image{
-          width: 100%;
+          width: auto;
           height: auto;
+          max-width: 100%;
           max-height: 100%;
           position: relative;
           text-align: center;
           display: block;
+          margin: auto;
       }
 
     .nft-detail-container .content-container .content {
@@ -328,7 +329,7 @@ get_header('otc');
       height: 50px;
       background: #05004D;
       border-radius: 25px;
-
+        border: 2px solid #05004D;
 
       font-style: normal;
       font-weight: 500;
