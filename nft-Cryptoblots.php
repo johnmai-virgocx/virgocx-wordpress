@@ -35,12 +35,8 @@ get_header('otc');
       <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
 
       <div class="action">
-        <a data-translate="NFT_Buy" class="buy" onclick="window.open('../en-otc-nft-brokerage/?#contact-form','_blank').focus();">Buy with VirgoCX</a>
-        <a data-translate="NFT_Opensea"
-          <?php if(!empty($detail["view_link"])): ?>
-              onclick="window.open('<?php echo $detail["view_link"] ?>','_blank').focus();"
-          <?php endif; ?>
-            class="sell">View on
+        <a data-translate="NFT_Buy" class="buy" href="../en-otc-nft-brokerage/?#contact-form" target ="_blank">Buy with VirgoCX</a>
+        <a data-translate="NFT_Opensea" href="<?php echo $row["view_link"] ?>" target ="_blank" class="sell">View on
           Opensea</a>
       </div>
     </div>
@@ -84,9 +80,10 @@ get_header('otc');
   }
 
   .nft-detail-container .content-container .image-container .image{
-      width: 100%;
+      width: auto;
       height: auto;
       max-height: 100%;
+      max-width: 100%;
       position: relative;
       text-align: center;
       display: block;
