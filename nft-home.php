@@ -879,19 +879,22 @@ get_header('otc');
 }
 
 .slider-container .owl-item a .content .desc {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
     text-overflow: ellipsis;
-    white-space: nowrap;
-  text-align: center;
-    max-height: 35px;
+    /* white-space: nowrap; */
+    text-align: center;
+    /* max-height: 35px; */
     overflow: hidden;
     margin-left: 20px;
     margin-right: 20px;
-  /* VirgoOTC Blue */
-  color: #05004D;
+    color: #05004D;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .slider-container .owl-item .content .value {
