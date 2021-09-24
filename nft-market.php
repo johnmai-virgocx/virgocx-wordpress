@@ -40,7 +40,7 @@ if (!empty($_REQUEST['sortDateValue'])) {
 $keyword = '';
 
 $sql = 'where marketing = 1 
-AND trending_collections = 0';
+AND trending_collections = 0 order by id DESC';
 
 if (!empty($_REQUEST['keyword'])) {
   $keyword = $_REQUEST['keyword'];
@@ -49,10 +49,12 @@ if (!empty($_REQUEST['keyword'])) {
 if (!empty($_REQUEST['sortType'])) {
   $sortType = $_REQUEST['sortType'];
   if ($sortType == 'price') {
-    $sql .= " order by blockchain_value ";
+    $sql = "where marketing = 1 
+    AND trending_collections = 0 order by blockchain_value ";
   }
   if ($sortType == 'date') {
-    $sql .= " order by id  ";
+    $sql = "where marketing = 1 
+    AND trending_collections = 0 order by id  ";
   }
 }
 if (!empty($_REQUEST['sortValue'])) {
