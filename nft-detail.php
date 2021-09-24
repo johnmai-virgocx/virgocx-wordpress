@@ -23,12 +23,12 @@ get_header('otc');
 
       <div class="link">
             <?php if(!empty($detail["recent_link"])): ?>
-                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
                   Recent Trends </span></a>
             <?php endif; ?>
             <?php if(!empty($detail["analytics_link"])): ?>
                 <a onclick="window.open('<?php echo $detail["analytics_link"] ?>','_blank').focus();"
-                ><img class="icon" style="margin-right: 5px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                ><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
                       Analytics</span></a>
             <?php endif; ?>
       </div>
