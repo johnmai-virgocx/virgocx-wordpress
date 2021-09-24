@@ -92,6 +92,7 @@ get_header('otc');
   .nft-detail-container .content-container .content {
     height: 400px;
     margin-left: 70px;
+      max-width: 700px;
   }
 
   .nft-detail-container .content-container .title {
