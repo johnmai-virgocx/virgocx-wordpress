@@ -14,6 +14,10 @@ $sortType = 'date';
 $sortValue = 'up';
 $sortPriceValue = 'up';
 $sortDateValue = 'down';
+$keyword = '';
+$sql = 'where marketing = 1 
+AND trending_collections = 0';
+
 if (!empty($_REQUEST['current_page'])) {
   $currentPage = $_REQUEST['current_page'];
 }
@@ -29,33 +33,20 @@ if (!empty($_REQUEST['sortPriceValue'])) {
 if (!empty($_REQUEST['sortDateValue'])) {
     $sortDateValue = $_REQUEST['sortDateValue'];
 }
-
-
-
-//$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0 limit ' . ($page - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-//
-//$all_rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 0', ARRAY_A);
-//$total = count($all_rows);
-//$pageTotal = ceil($total / $pageSize);
-$keyword = '';
-
-$sql = 'where marketing = 1 
-AND trending_collections = 0 order by id DESC';
-
 if (!empty($_REQUEST['keyword'])) {
-  $keyword = $_REQUEST['keyword'];
-  $sql = " where marketing = 1 AND trending_collections = 0 AND  title like'%" . $keyword . "%'";
+    $keyword = $_REQUEST['keyword'];
+    $sql .= " AND  title like'%" . $keyword . "%'";
 }
 if (!empty($_REQUEST['sortType'])) {
   $sortType = $_REQUEST['sortType'];
   if ($sortType == 'price') {
-    $sql = "where marketing = 1 
-    AND trending_collections = 0 order by blockchain_value ";
+    $sql .= " order by blockchain_value ";
   }
   if ($sortType == 'date') {
-    $sql = "where marketing = 1 
-    AND trending_collections = 0 order by id  ";
+    $sql .= " order by id  ";
   }
+}else{
+    $sql .= " order by id";
 }
 if (!empty($_REQUEST['sortValue'])) {
   $sortValue = $_REQUEST['sortValue'];
@@ -65,7 +56,10 @@ if (!empty($_REQUEST['sortValue'])) {
   if ($sortValue == 'down') {
     $sql .= " desc ";
   }
+}else{
+    $sql .= " desc ";
 }
+echo $sql;
 $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql, ARRAY_A);
 $total = count($all_rows);
@@ -1338,7 +1332,6 @@ div {
       if (item.includes('keyword=')) {
         res.push('keyword=' + keyword)
       } else {
-
         res.push(item);
       }
     });
@@ -1392,6 +1385,9 @@ div {
               res.push('sortValue=up');
               res.push('sortPriceValue=up');
           };
+      }
+      if(query.includes('keyword=')){
+          res.push(query.slice(query.indexOf('keyword=')))
       }
 
         window.location.href = window.location.origin + window.location.pathname + '?' + res.join('&')
