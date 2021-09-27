@@ -201,7 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <a href="/page#/login" class="dropdown-item"
                                             data-translate="Log In">login
                                     </a>
-                                    <a class="dropdown-item scroll-to-sign-up"
+                                    <a class="dropdown-item"  href="../en-otc-nft-brokerage/?#contact-form"
                                             data-translate="Register">Sign Up
                                     </a>
                                 </div>
