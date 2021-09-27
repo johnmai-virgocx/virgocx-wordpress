@@ -96,7 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container custom-container">
                 <nav class="navbar navbar-expand-lg">
                   <?php if(strpos($_SERVER['REQUEST_URI'],'nft') !== false): ?>
-                      <a href="/en-otc/" class="navbar-brand"><img
+                      <a href="/en-otc-nft-brokerage/" class="navbar-brand"><img
                                   src="<?= get_template_directory_uri() ?>/img/otc/VirgoNFT_logo.svg" height="36"
                                   alt="images not found"/></a>
                   <?php else : ?>
