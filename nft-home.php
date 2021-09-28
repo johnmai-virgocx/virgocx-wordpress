@@ -467,7 +467,7 @@ get_header('otc');
   padding: 20px 10px 36px;
   width: 475px;
   min-height: 134px;
-  background: url("<?= get_template_directory_uri() ?>/img/nft/border.svg");
+  background: url("<?= get_template_directory_uri() ?>/img/nft/border.svg") no-repeat;
 
 
   font-style: normal;
