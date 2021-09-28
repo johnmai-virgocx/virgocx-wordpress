@@ -310,7 +310,9 @@ get_header('otc');
     nav>a,p,span,div{
         font-family: "Matter-Regular"!important;
     }
-.nft-home-container {}
+.nft-home-container {
+  background-color:#F5F5F5;
+}
 
 .faq_gold{
   cursor: pointer;
