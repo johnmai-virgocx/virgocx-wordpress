@@ -636,6 +636,9 @@ get_header('otc');
   color: #05004D;
 
 }
+.how-area .getstart-btn:hover{
+  cursor:pointer;
+}
 
 @media screen and (min-width: 900px) {
   .how-container {
