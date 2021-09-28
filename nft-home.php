@@ -250,7 +250,7 @@ get_header('otc');
           <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
             <div class="panel-body px-3 mb-4">
               <p data-translate="NFT_A4_1"></p>
-              <a data-translate="NFT_A4_2" href="#contact-form" class="faq_gold"></a>
+              <div data-translate="NFT_A4_2"  class="faq_gold scroll-to-sign-up"></div>
             </div>
           </div>
         </div>
