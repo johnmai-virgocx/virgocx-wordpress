@@ -59,7 +59,6 @@ if (!empty($_REQUEST['sortValue'])) {
 }else{
     $sql .= " desc ";
 }
-echo $sql;
 $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 $all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql, ARRAY_A);
 $total = count($all_rows);
