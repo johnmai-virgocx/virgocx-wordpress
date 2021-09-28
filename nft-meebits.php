@@ -82,7 +82,9 @@ get_header('otc');
       width: 400px;
       height: 400px;
   }
-
+    .stats-wrap{
+        margin: 0;
+    }
   .nft-detail-container .content-container .image-container .image{
       width: auto;
       height: auto;
@@ -246,21 +248,6 @@ get_header('otc');
     color: #84839C;
     padding-left: 33px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 959px) {
-    #blockchain{
-    padding-left:15px!important;
-    padding-right:0px!important;
-    }
-  }
-
-  @media screen and (min-width: 880px){
-
-    #token-block{
-    padding-left:15px!important;
-    padding-right:0px!important;
-  }
-  }  
 
 
   @media screen and (max-width: 900px) {
