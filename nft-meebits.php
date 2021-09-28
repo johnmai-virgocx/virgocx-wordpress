@@ -47,11 +47,16 @@ get_header('otc');
     <div class="stats-value"><?php echo $detail["stats"]; ?></div>
     <div class="stats" data-translate="NFT_ContractAddress">Contract Address</div>
     <div class="stats-value"><?php echo $detail["contract_address"]; ?></div>
-    <div class="stats-wrap">
-      <div class="stats" data-translate="NFT_TokenID">Token ID</div>
-      <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
-      <div class="stats" data-translate="NFT_Blockchain">Blockchain</div>
-      <div class="stats-value"><?php echo $detail["blockchain"]; ?></div>
+    <div class="stats-wrap row">
+        <div class="col-lg-6 col-sm-12" style="padding:0 ">
+            <div class="stats" data-translate="NFT_TokenID">Token ID</div>
+            <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
+
+        </div>
+        <div class="col-lg-6 col-sm-12" style="padding:0">
+            <div class="stats " data-translate="NFT_Blockchain">Blockchain</div>
+            <div class="stats-value "  style="border-left:2px solid #F5F5F5;"><?php echo $detail["blockchain"]; ?></div>
+        </div>
     </div>
   </div>
 </div>
