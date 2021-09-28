@@ -1207,7 +1207,7 @@ get_header('otc');
     color: #FFFFFF;
   }
 
-  .middle-block .left span {
+  .middle-block .left .gold {
     /* OTC Glold */
 
     color: #C7BA9A;

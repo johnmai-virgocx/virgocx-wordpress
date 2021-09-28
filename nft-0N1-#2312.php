@@ -48,12 +48,12 @@ get_header('otc');
     <div class="stats" data-translate="NFT_ContractAddress">Contract Address</div>
     <div class="stats-value"><?php echo $detail["contract_address"]; ?></div>
     <div class="stats-wrap row">
-        <div class="col-lg-6 col-sm-12" style="padding:0 ">
+        <div class="col-lg-6 col-sm-12" style="padding:0 " id="token-block">
             <div class="stats" data-translate="NFT_TokenID">Token ID</div>
             <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
 
         </div>
-        <div class="col-lg-6 col-sm-12" style="padding:0">
+        <div class="col-lg-6 col-sm-12" style="padding:0" id="blockchain">
             <div class="stats " data-translate="NFT_Blockchain">Blockchain</div>
             <div class="stats-value "  style="border-left:2px solid #F5F5F5;"><?php echo $detail["blockchain"]; ?></div>
         </div>
@@ -247,8 +247,24 @@ get_header('otc');
     padding-left: 33px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    #blockchain{
+    padding-left:15px!important;
+    padding-right:0px!important;
+    }
+  }
+
+  @media screen and (min-width: 880px){
+
+    #token-block{
+    padding-left:15px!important;
+    padding-right:0px!important;
+  }
+  }  
+
 
   @media screen and (max-width: 900px) {
+    
 
     .nft-detail-container {
       background: #fff;
