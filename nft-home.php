@@ -749,8 +749,8 @@ get_header('otc');
 }
 
 .how-area {
-  padding-bottom: 0;
-  margin: 50px auto;
+    padding: 50px 0;
+    background-color: #FFFFFF;
 }
 
 .how-area h2 {
@@ -1395,8 +1395,8 @@ get_header('otc');
   }
 
   .how-area {
-    padding-bottom: 0;
-    margin: 50px auto;
+      padding: 50px 0;
+      background-color: #FFFFFF;
   }
 
   .how-area h2 {
