@@ -10,162 +10,350 @@
 get_header();
 ?>
 
-<style type="text/css">
-#fees-content .hero-area-wrapper {
-	padding: 0 0 3rem 0;
-	background-color: #f8f7fe;
-	color: #66617f;
-	background-image: url(/wp-content/themes/virgocx/img/bg.png);
-	background-position: right;
-	background-repeat: inherit;
-	height: 400px;
-}
+    <style type="text/css">
+        #fees-content .hero-area-wrapper {
+            padding: 0 0 3rem 0;
+            background-color: #f8f7fe;
+            color: #66617f;
+            background-image: url(/wp-content/themes/virgocx/img/bg.png);
+            background-position: right;
+            background-repeat: inherit;
+            height: 400px;
+        }
 
-#fees-content .hero-area {
-	position: relative;
-}
+        #fees-content .hero-area {
+            position: relative;
+        }
 
-#fees-content .hero-box {
-	padding: 40px 0 40px 0;
-}
+        #fees-content .hero-box {
+            padding: 40px 0 40px 0;
+        }
 
-#fees-content .hero-box img {
-	height: 85px;
-}
+        #fees-content .hero-box img {
+            height: 85px;
+        }
 
-#fees-content tbody {
-	font-size: 0.8rem;
-}
+        #fees-content tbody {
+            font-size: 0.8rem;
+        }
 
-#fees-content .coin-col {
-	font-size: 0.8rem;
-	padding-left: 1rem;
-}
+        #fees-content .coin-col {
+            font-size: 0.8rem;
+            padding-left: 1rem;
+        }
 
-#fees-content .fee-content {
-	color: rgb(0, 206, 171);
-}
+        #fees-content .fee-content {
+            color: rgb(0, 206, 171);
+        }
 
-#fees-content .foot-note {
-	font-size: 0.8rem;
-}
+        #fees-content .foot-note {
+            font-size: 0.8rem;
+        }
 
-@media screen and (max-width: 992px) {
-	.hero-feature-item {
-		margin-top: 1rem;
-	}
+        @media screen and (max-width: 992px) {
+            .hero-feature-item {
+                margin-top: 1rem;
+            }
 
-	#fees-primary {
-		padding-top: 20rem;
-	}
-}
+            #fees-primary {
+                padding-top: 20rem;
+            }
+        }
 
-/*
-====================================
-Small Screen - Tablate
-====================================
-*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-}
+        /*
+        ====================================
+        Small Screen - Tablate
+        ====================================
+        */
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+        }
 
-@media screen and (max-width: 768px) {
-	#fees-primary {
-		padding-top: 40rem;
-	}
-}
+        @media screen and (max-width: 768px) {
+            #fees-primary {
+                padding-top: 40rem;
+            }
+        }
 
-/*
-====================================
-Xtra Small Screen - Small Mobile
-====================================
-*/
+        /*
+        ====================================
+        Xtra Small Screen - Small Mobile
+        ====================================
+        */
 
-@media screen and (max-width: 576px) {
-	#fees-primary {
-		padding-top: 40rem;
-	}
-}
-</style>
-</style>
-<div id="fees-content">
-	<div class="hero-area-wrapper">
-		<div class="custom-container hero-area">
-			<div class="hero-space">
-			</div>
-			<div class="hero-box">
-				<div class="container">
-					<div class="row justify-content-md-center">
-							<div class="fees-header">
-								<h2>Fees</h2>
-								<p>Enjoy low fees with full transparency from VirgoCX.</p>
-							</div>
-					</div>
+        @media screen and (max-width: 576px) {
+            #fees-primary {
+                padding-top: 40rem;
+            }
+        }
+    </style>
+    </style>
+    <div id="fees-content">
+        <div class="hero-area-wrapper">
+            <div class="custom-container hero-area">
+                <div class="hero-space">
+                </div>
+                <div class="hero-box">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="fees-header">
+                                <h2 data-translate="Fees_title1"></h2>
+                                <p data-translate="Fees_title1_desc"></p>
+                            </div>
+                        </div>
 
-					<div class="row align-items-center">
-						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
-							<div class="hero-feature-item" href="#personalinformation">
-								<img src="<?= get_template_directory_uri() ?>/img/fees_zero_fees.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Zero Trading Fee</h5>
-							</div>
-						</div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                                <div class="hero-feature-item" href="#personalinformation">
+                                    <img src="<?= get_template_directory_uri() ?>/img/fees_zero_fees.png"
+                                         class="img-fluid" alt="Personal information is secure" width="150"/>
+                                    <h5 data-translate="Fees_title1_tag1"></h5>
+                                </div>
+                            </div>
 
-						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
-							<div class="hero-feature-item" href="#fund">
-								<img src="<?= get_template_directory_uri() ?>/img/fees_impeccable_security.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Impeccable Security</h5>
-							</div>
-						</div>
+                            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                                <div class="hero-feature-item" href="#fund">
+                                    <img src="<?= get_template_directory_uri() ?>/img/fees_impeccable_security.png"
+                                         class="img-fluid" alt="Personal information is secure" width="150"/>
+                                    <h5 data-translate="Fees_title1_tag2"></h5>
+                                </div>
+                            </div>
 
-						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
-							<div class="hero-feature-item" href="#system">
-								<img src="<?= get_template_directory_uri() ?>/img/fees_fiat_payment.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Efficient Fiat Payment</h5>
-							</div>
-						</div>
+                            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                                <div class="hero-feature-item" href="#system">
+                                    <img src="<?= get_template_directory_uri() ?>/img/fees_fiat_payment.png"
+                                         class="img-fluid" alt="Personal information is secure" width="150"/>
+                                    <h5 data-translate="Fees_title1_tag3"></h5>
+                                </div>
+                            </div>
 
-						<div class="col-lg-3 col-md-6 d-flex justify-content-center">
-							<div class="hero-feature-item" href="#system">
-								<img src="<?= get_template_directory_uri() ?>/img/fees_regulated.png" class="img-fluid" alt="Personal information is secure" width="150" />
-								<h5>Fully Regulated Service</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                                <div class="hero-feature-item" href="#system">
+                                    <img src="<?= get_template_directory_uri() ?>/img/fees_regulated.png"
+                                         class="img-fluid" alt="Personal information is secure" width="150"/>
+                                    <h5 data-translate="Fees_title1_tag4"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<main id="fees-primary" class="site-main background-grey">
-		<div class="custom-container">
-			<div id="fees-tables">
-			</div><!-- end of custom container -->
+        <main id="fees-primary" class="site-main background-grey">
+            <div class="custom-container">
+                <div id="fees-tables">
+                </div><!-- end of custom container -->
 
-			<p class="foot-note"><sup>1</sup>Processing time refers to the amount of time needed by VirgoCX staff to process your transaction. Fiat currency transactions may be further delayed by banks and/or Interac for reasons beyond VirgoCX’s control. Wire transfer requests submitted after our wire transfer cut-off time or on a weekend will be processed on the next working day. Furthermore, wire transfer transactions requested on US/Canada statutory or banking holidays will be processed on the next working day. Cryptocurrency networks may become congested and during such times of congestion, transactions may require significantly longer times to settle. Further delays may result from VirgoCX internal reviews or other reasons as stated within our <a href="https://www.virgocx.ca/termsOofService.html">Terms of Service</a>.</p>
-			<p class="foot-note"><sup>2</sup>Please see our <a href="https://virgocx.zendesk.com/hc/en-us/articles/360052293232-Fiat-Rejection-Fees">Other Fees</a> page for fiat currency rejection fees</p>
+                <p class="foot-note">
+                    <sup>1</sup>
+                    <span data-translate="Fees_note1_1"></span>
+                    <a href="https://virgocx.ca/termsOofService.html" data-translate="Fees_note1_2">
+                    </a>
+                    <span data-translate="Fees_note1_3"></span>
+                </p>
+                <p class="foot-note">
+                    <sup>2</sup>
+                    <span data-translate="Fees_note2_1"></span>
+                    <a href="https://virgocx.zendesk.com/hc/en-us/articles/360052293232-Fiat-Rejection-Fees"
+                       data-translate="Fees_note2_2"></a>
+                    <span data-translate="Fees_note2_3"></span>
+                </p>
 
-			<p class="foot-note"><sup>3</sup>Transaction/gas fees will be charged by the respective networks. Fees charged by VirgoCX will cover all network transaction/gas fees for outbound (withdrawal) transactions. Please be aware that various cryptocurrency networks may become congested from time to time and will cause delays beyond VirgoCX’s control.</p>
-		</div>
-	</main><!-- #main -->
+                <p class="foot-note">
+                    <sup>3</sup>
+                    <span data-translate="Fees_note3"></span>
+                </p>
+            </div>
+        </main><!-- #main -->
 
-	<script type="text/javascript">
+        <script type="text/javascript">
+            (function ($) {
+                $(document).ready(function () {
+                    // **************************************************************************************
+                    // **************************************************************************************
+                    // langSwitcher
 
-function renderTradingFee(tradingFee, title) {
-	const tableWrapper = document.createElement('div');
-	tableWrapper.classList.add('fee-table-wrapper');
+                    // Some variables for later
+                    var titleTranslate;
+                    var dictionary = {},
+                        currentLang = 'en',
+                        langPageIndicator = 0,
+                        languagePair = {
+                            "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
+                            "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                        };
 
-	const theContent = `
-				<h4>${title}</h4>
+
+                    // Checking lang on page change
+                    function checkSessionLang() {
+                        var lang = sessionStorage.getItem('lang');
+                        if (lang) {
+                            currentLang = lang;
+                        } else {
+                            sessionStorage.setItem('lang', 'en');
+                            currentLang = 'en';
+                        }
+                        // none-onload action
+                        let langLoader = async function () {
+                            var url = window.location.href;
+                            const promises = Object.keys(languagePair).map(async function (key) {
+                                var langParam = '/' + key + '-';
+                                if (url.indexOf(langParam) > -1) {
+                                    if (key != currentLang) {
+                                        redirection(url, currentLang);
+                                    }
+                                }
+                            })
+                            const result = await Promise.all(promises);
+                        }
+                        langLoader();
+
+
+                    }
+
+                    checkSessionLang();
+
+                    // Object literal behaving as multi-dictionary
+                    function loadLangJson() {
+                        let fileLoader = async function () {
+                            const promises = Object.keys(languagePair).map(async function (key) {
+                                await $.getJSON(languagePair[key], function (data) {
+                                    dictionary[key] = data;
+                                });
+                            });
+                            const result = await Promise.all(promises);
+                            const menuAttrUpdate = await menuUpdate();
+
+                            // Set initial language to English
+                            setLang(dictionary[currentLang]);
+                        }
+                        fileLoader();
+                    }
+
+                    loadLangJson();
+
+
+                    // Function for swapping dictionaries
+                    function setLang(dictionary) {
+                        $("[data-translate]").each(function () {
+                            if ($(this).is("input")) {
+                                $(this).attr('placeholder', dictionary[$(this).data("translate")])
+                            } else if ($(this).is(".popper-trigger")) {
+                                $(this).attr('data-content', dictionary[$(this).data("translate")])
+                            } else {
+                                $(this).text(dictionary[$(this).data("translate")])
+                            }
+                        })
+
+                        // Contact form update
+                        $("input").each(function () {
+                            if (this.placeholder.indexOf('data translate') >= 0) {
+                                //check if data-translate attribute added
+                                if (this.hasAttribute("data-translate")) {
+                                    $(this).attr('placeholder', dictionary[$(this).data("translate")])
+                                } else {
+                                    var string = this.placeholder;
+                                    const key = string.substring(15, string.length);
+                                    $(this).attr("placeholder", dictionary[key]);
+                                    this.setAttribute("data-translate", key);
+                                }
+                            }
+                        })
+
+
+                    };
+
+                    // Swap languages when menu changes
+                    $("#lang").on("change", function () {
+                        var language = $(this).val().toLowerCase();
+                        if (dictionary.hasOwnProperty(language)) {
+                            var url = window.location.href;
+                            redirection(url, language);
+                            currentLang = language;
+                            setLang(dictionary[language]);
+                        }
+                    });
+
+                    // set switcher to currentLang
+                    function loadLangSwitcher() {
+                        $("#lang").val(currentLang);
+                    }
+
+                    loadLangSwitcher();
+
+                    //lang switcher redirect
+                    async function redirection(url, language) {
+                        if (language == '' || language == null) {
+                            language = sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'en';
+                        } else {
+                            sessionStorage.setItem('lang', language);
+                        }
+                        const promises = Object.keys(languagePair).map(async function (key) {
+                            var langParam = '/' + key + '-';
+                            if (url.indexOf(langParam) > -1) {
+                                langPageIndicator = 1;
+                                window.location = url.replace(langParam, '/' + language + '-');
+                            }
+                        })
+                        const result = await Promise.all(promises);
+
+                        if (langPageIndicator == 0 && window.location.href !== url) {
+                            window.location.href = url;
+                        }
+                    }
+
+                    // force hard coded href goes to right lang page
+                    $('a').click(function(event) {
+                        if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0){
+                            event.preventDefault();
+                            const url =$(this).attr('href');
+                            redirection(url,'');
+                            return false; // for good measure
+                        }
+                    });
+                    // replace footer data tag
+                    async function menuUpdate() {
+                        const headerPromises = $('.page_item a').each(function (i, obj) {
+                            var key = $(obj).text();
+                            $(obj).attr("data-translate", key);
+                        });
+
+                        const footerPromises = $('.menu-item a').each(function (i, obj) {
+                            var key = $(obj).text();
+                            $(obj).attr("data-translate", key);
+                        });
+
+                        const header = await Promise.all(headerPromises);
+                        const footer = await Promise.all(footerPromises);
+                    }
+
+                    // langSwitcher ends
+                    // **************************************************************************************
+                    // **************************************************************************************
+
+
+                    function renderTradingFee(tradingFee, title) {
+                        const tableWrapper = document.createElement('div');
+                        tableWrapper.classList.add('fee-table-wrapper');
+                        titleTranslate ='Fees_header7';
+                        let tradingFeeMaker1 = tradingFee.maker;
+                        if(tradingFee.maker === '0'){
+                            tradingFeeMaker1 = 'Free';
+                        }
+
+                        const theContent = `
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 						</thead>
 							<tr>
-								<th scope="row">
-									<img src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
-									Commission
+								<th scope="row" >
+									<img style="display:inline" src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
+                                    <div style="display:inline" data-translate="Fees_Commission">Commission</div>
 								</th>
 								<td>
-									<span>${tradingFee.maker === '0' ? 'Free' : tradingFee.maker}</span>
+                                    <div data-translate="Fees_${tradingFeeMaker1}">${tradingFeeMaker1}</div>
 								</td>
 								<td>
 								</td>
@@ -176,15 +364,17 @@ function renderTradingFee(tradingFee, title) {
 				</div>
 	`
 
-	tableWrapper.innerHTML = theContent;
-	return tableWrapper;
-}
-function renderCryptoPerEntryTable(data, title) {
-	const tableWrapper = document.createElement('div');
-	tableWrapper.classList.add('fee-table-wrapper');
+                        tableWrapper.innerHTML = theContent;
+                        return tableWrapper;
+                    }
 
-	const rowContent = data.fee.reduce(function(acc, entry) {
-		acc += `
+                    function renderCryptoPerEntryTable(data, title) {
+                        const tableWrapper = document.createElement('div');
+                        tableWrapper.classList.add('fee-table-wrapper');
+                        titleTranslate = 'Fees_header6';
+
+                        const rowContent = data.fee.reduce(function (acc, entry) {
+                            acc += `
 				<tr>
 					<th scope="row" class="d-flex">
 						<img src="${entry.image}" height="40" width="40" alt="entry.coinName" />
@@ -201,24 +391,25 @@ function renderCryptoPerEntryTable(data, title) {
 						${entry.minQty} ${entry.coinName}
 					</td>
 					<td>
-						Immediate<sup>1,3</sup>
+	                    <div style="display:inline" data-translate="Fees_Immediate">Immediate</div>
+                        <sup>1,3</sup>
 					</td>
 				</tr>
 		`;
 
-		return acc;
-	}, '');
+                            return acc;
+                        }, '');
 
-	const theContent = `
-				<h4>${title}</h4>
+                        const theContent = `
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fee</th>
-								<th scope="col">Minimum</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Minimum">Minimum</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -228,32 +419,33 @@ function renderCryptoPerEntryTable(data, title) {
 				</div>
 	`
 
-	tableWrapper.innerHTML = theContent;
-	return tableWrapper;
-}
-function renderFeesBundle(data, title) {
-	const tableWrapper = document.createElement('div');
-	tableWrapper.classList.add('fee-table-wrapper');
+                        tableWrapper.innerHTML = theContent;
+                        return tableWrapper;
+                    }
 
-	let rowContent = `
+                    function renderFeesBundle(data, title) {
+                        const tableWrapper = document.createElement('div');
+                        tableWrapper.classList.add('fee-table-wrapper');
+
+                        let rowContent = `
 			<tr>
 					<th class="col-3" scope="row">
-						<img src="${_virgocx_theme_url}/img/all_crypto_coin.png" width="40" alt="All cryptocurrency" />
-						All Cryptocurrency
+						<img src="${_virgocx_theme_url}/img/all_crypto_coin.png" width="40" alt="All Cryptocurrencies" />
+						All Cryptocurrencies
 					</th>
 		`
 
-	const cellContent = data.fee.reduce(function(acc, entry) {
-		acc += `
+                        const cellContent = data.fee.reduce(function (acc, entry) {
+                            acc += `
 			<div class="crypto-fee">
 				<img src="${entry.image}" width="40" alt="${entry.fee}" />
 				${entry.fee}
 			</div>
 		`;
 
-		return acc;
-	}, '');
-	rowContent += `
+                            return acc;
+                        }, '');
+                        rowContent += `
 		<td class="col-6">
 			<div class="crypto-fee-wrapper">
 				${cellContent}
@@ -265,15 +457,15 @@ function renderFeesBundle(data, title) {
 	</tr>
 		`;
 
-	const theContent = `
+                        const theContent = `
 				<h4>${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fee</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -283,55 +475,57 @@ function renderFeesBundle(data, title) {
 				</div>
 	`
 
-	tableWrapper.innerHTML = theContent;
-	return tableWrapper;
-}
+                        tableWrapper.innerHTML = theContent;
+                        return tableWrapper;
+                    }
 
-function renderFundCryptoTable(entries, title) {
-	const tableWrapper = document.createElement('div');
-	tableWrapper.classList.add('fee-table-wrapper');
+                    function renderFundCryptoTable(entries, title) {
+                        const tableWrapper = document.createElement('div');
+                        tableWrapper.classList.add('fee-table-wrapper');
+                        titleTranslate = 'Fees_header5';
+                        const rowContent = entries.reduce(function (acc, entry) {
+                            let maximum = entry.maximum;
+                            if (typeof maximum !== 'string') {
+                                maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
+                            }
 
-	const rowContent = entries.reduce(function(acc, entry) {
-		let maximum = entry.maximum;
-		if (typeof maximum !== 'string') {
-			maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
-		}
+                            let feeContent = 'Free';
+                            if (entry.fee !== 0) {
+                                feeContent = `${entry.fee * 100}%`;
+                                if (entry.minFee !== 0) {
+                                    feeContent += `<br />($${entry.minFee} Minimum)`;
+                                }
+                            }
 
-		let feeContent = 'Free';
-		if (entry.fee !== 0) {
-			feeContent = `${entry.fee * 100}%`;
-			if (entry.minFee !== 0) {
-				feeContent += `<br />($${entry.minFee} Minimum)`;
-			}
-		}
-
-		acc += `
+                            acc += `
 				<tr>
 					<th scope="row">
-						<img src="${entry.logo}" width="40" alt="${entry.transferWay}" />
-						${entry.transferWay}
+						<img style="display:inline" src="${entry.logo}" width="40" alt="${entry.transferWay}" />
+                        <div style="display:inline" data-translate="Fees_${entry.transferWay}">${entry.transferWay}</div>
 					</th>
 					<td class="fee-content">
-						${feeContent}<sup>3</sup>
+	                    <div style="display:inline" data-translate="Fees_${feeContent}">${feeContent}</div>
+                        <sup>3</sup>
 					</td>
 					<td>
-						Immediate<sup>1,3</sup>
+	                    <div style="display:inline" data-translate="Fees_Immediate">Immediate</div>
+                        <sup>1,3</sup>
 					</td>
 				</tr>
 		`;
 
-		return acc;
-	}, '');
+                            return acc;
+                        }, '');
 
-	const theContent = `
-				<h4>${title}</h4>
+                        const theContent = `
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fee</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -341,69 +535,109 @@ function renderFundCryptoTable(entries, title) {
 				</div>
 	`
 
-	tableWrapper.innerHTML = theContent;
-	return tableWrapper;
-}
-function renderFeesPerEntryTable(entries, title) {
-	const tableWrapper = document.createElement('div');
-	tableWrapper.classList.add('fee-table-wrapper');
+                        tableWrapper.innerHTML = theContent;
+                        return tableWrapper;
+                    }
 
-	const rowContent = entries.reduce(function(acc, entry) {
-		let maximum = entry.maximum;
-		if (typeof maximum !== 'string') {
-			maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
-		}
+                    function renderFeesPerEntryTable(entries, title) {
+                        const tableWrapper = document.createElement('div');
+                        tableWrapper.classList.add('fee-table-wrapper');
+                        titleTranslate = 'Fees_header6';
+                        if (title === "Deposit US Dollars") {
+                            titleTranslate = 'Fees_header3';
+                        } else if (title === "Withdraw US Dollars") {
+                            titleTranslate = 'Fees_header4';
+                        }
+                        const rowContent = entries.reduce(function (acc, entry) {
+                            let maximum = entry.maximum;
+                            let minimum = entry.minimum;
+                            if (typeof maximum !== 'string') {
+                                maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
+                            }
 
-		let feeContent = 'Free';
-		if (entry.fee !== 0) {
-			feeContent = `${entry.fee * 100}%`;
-			if (entry.minFee !== 0) {
-				feeContent += `<br />($${entry.minFee} Minimum)`;
-			}
-		}
+                            if (typeof entry.minimum !== 'string') {
+                                minimum = minimum === 0 ? "-" : '$' + entry.minimum
+                            }
 
-		let processingTime = entry.processingTime;
-		if (entry.transferWay === 'Wire Transfer') {
-			processingTime = 'Up to 24 hours<br />(typically Within 45 minutes)<sup>1,2</sup>';
-		} else if (entry.transferWay === 'Interac e-Transfer') {
-			processingTime = '(typically Within 45 minutes)<sup>1,2</sup>';
-		}
 
-		acc += `
-				<tr>
+                            let feeContent1 = 'Free';
+                            let feeContent2 = '';
+                            if (entry.fee !== 0) {
+                                feeContent1 = `${entry.fee * 100}%`;
+                                if (entry.minFee !== 0) {
+                                    feeContent2 = `($${entry.minFee} Minimum)`;
+                                }
+                            }
+
+                            // let processingTime = entry.processingTime;
+                            // if (entry.transferWay === 'Wire Transfer') {
+                            //     processingTime = 'Up to 24 hours<br />(typically within 45 minutes)<sup>1,2</sup>';
+                            // } else if (entry.transferWay === 'Interac e-Transfer') {
+                            //     if (title === "Deposit Canadian Dollars") {
+                            //         titleTranslate = 'Fees_header1';
+                            //         processingTime = 'Instantaneous<sup>1,2</sup>';
+                            //     } else if (title === "Withdraw Canadian Dollars") {
+                            //         titleTranslate = 'Fees_header2';
+                            //         processingTime = '(typically within 45 minutes)<sup>1,2</sup>';
+                            //     } else {
+                            //         processingTime = '(typically within 45 minutes)<sup>1,2</sup>';
+                            //     }
+                            // }
+                            let processingTime1 = '';
+                            let processingTime2 = '';
+                            if (entry.transferWay === 'Wire Transfer') {
+                                processingTime1 = 'Up to 24 hours'
+                                processingTime2 = '(typically within 45 minutes)';
+                            } else if (entry.transferWay === 'Interac e-Transfer') {
+                                if (title === "Deposit Canadian Dollars") {
+                                    titleTranslate = 'Fees_header1';
+                                    processingTime2 = 'Instantaneous';
+                                } else if (title === "Withdraw Canadian Dollars") {
+                                    titleTranslate = 'Fees_header2';
+                                    processingTime2 = 'Instantaneous';
+                                } else {
+                                    processingTime2 = '(typically within 45 minutes)';
+                                }
+                            }
+
+                            acc += `
+                <tr>
 					<th scope="row">
-						<img src="${entry.logo}" width="40" alt="${entry.transferWay}" />
-						${entry.transferWay}
+                        <img style="display:inline" src="${entry.logo}" width="40" alt="${entry.transferWay}"/>
+                        <div style="display:inline" data-translate="Fees_${entry.transferWay}">${entry.transferWay}</div>
 					</th>
 					<td class="fee-content">
-						${feeContent}
+	                    <div data-translate="Fees_${feeContent1}">${feeContent1}</div>
+	                    <div data-translate="Fees_${feeContent2}">${feeContent2}</div>
 					</td>
 					<td>
-						${typeof entry.minimum === 'string' ? entry.minimum : '$' + entry.minimum}
+	                    <div data-translate="Fees_${minimum}">${minimum}</div>
+					</td>
+					<td >
+	                    <div data-translate="Fees_${maximum}">${maximum}</div>
 					</td>
 					<td>
-						${maximum}
-					</td>
-					<td>
-						${processingTime}
+	                    <div data-translate="Fees_${processingTime1}">${processingTime1}</div>
+	                    <div style="display:inline" data-translate="Fees_${processingTime2}">${processingTime2}</div>
+                        <sup style="display:inline">1,2</sup>
 					</td>
 				</tr>
 		`;
 
-		return acc;
-	}, '');
+                            return acc;
+                        }, '');
 
-	const theContent = `
-				<h4>${title}</h4>
+                        const theContent = `
+				<h4 data-translate="${titleTranslate}">${title}</h4>
 				<div class="table-responsive">
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col"></th>
-								<th scope="col">Fee</th>
-								<th scope="col">Minimum</th>
-								<th scope="col">Maximum</th>
-								<th scope="col">Processing Time</th>
+								<th scope="col" data-translate="Fees_Fee">Fee</th>
+								<th scope="col" data-translate="Fees_Minimum">Minimum</th>
+								<th scope="col" data-translate="Fees_Maximum">Minimum</th>
+								<th scope="col" data-translate="Fees_Processing_Time">Processing Time</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -413,74 +647,78 @@ function renderFeesPerEntryTable(entries, title) {
 				</div>
 	`
 
-	tableWrapper.innerHTML = theContent;
-	return tableWrapper;
-}
+                        tableWrapper.innerHTML = theContent;
+                        return tableWrapper;
+                    }
 
-function handleFees(data) {
-	console.log('handle fee data', data);
-	if (!data.success) {
-		return;
-	}
+                    function handleFees(data) {
+                        // console.log('handle fee data', data);
+                        if (!data.success) {
+                            return;
+                        }
 
-	const container = document.getElementById('fees-tables');
-	console.log('container', container);
+                        const container = document.getElementById('fees-tables');
+                        // console.log('container', container);
 
-	// Handle deposit candadian dollars
-	if (data.data.fundCanadianDollars) {
-		container.append(renderFeesPerEntryTable(data.data.fundCanadianDollars, 'Fund Canadian Dollars'));
-	}
+                        // Handle deposit candadian dollars
+                        if (data.data.fundCanadianDollars) {
+                            container.append(renderFeesPerEntryTable(data.data.fundCanadianDollars, 'Deposit Canadian Dollars'));
+                        }
 
-	if (data.data.withdrawalCanadianDollars) {
-		container.append(renderFeesPerEntryTable(data.data.withdrawalCanadianDollars, 'Withdrawal Canadian Dollars'));
-	}
+                        if (data.data.withdrawalCanadianDollars) {
+                            container.append(renderFeesPerEntryTable(data.data.withdrawalCanadianDollars, 'Withdraw Canadian Dollars'));
+                        }
 
-	// Handle deposit candadian dollars
-	if (data.data.fundUsDollars) {
-		container.append(renderFeesPerEntryTable(data.data.fundUsDollars, 'Fund US Dollars'));
-	}
+                        // Handle deposit candadian dollars
+                        if (data.data.fundUsDollars) {
+                            container.append(renderFeesPerEntryTable(data.data.fundUsDollars, 'Deposit US Dollars'));
+                        }
 
-	if (data.data.withdrawalUsDollars) {
-		container.append(renderFeesPerEntryTable(data.data.withdrawalUsDollars, 'Withdrawal US Dollars'));
-	}
+                        if (data.data.withdrawalUsDollars) {
+                            container.append(renderFeesPerEntryTable(data.data.withdrawalUsDollars, 'Withdraw US Dollars'));
+                        }
 
-	const fundCryptocurrency = [
-	{
-		logo: `${_virgocx_theme_url}/img/all_crypto_coin.png`,
-		transferWay: 'All Cryptocurrency',
-		fee: 0,
-		minFee: 0,
-		minimum: 'N/A',
-		maximum: 'N/A',
-		processingTime: 'N/A',
-	}
-	];
-	container.append(renderFundCryptoTable(fundCryptocurrency, 'Deposit Cryptocurrency'));
+                        const fundCryptocurrency = [
+                            {
+                                logo: `${_virgocx_theme_url}/img/all_crypto_coin.png`,
+                                transferWay: 'All Cryptocurrencies',
+                                fee: 0,
+                                minFee: 0,
+                                minimum: 'N/A',
+                                maximum: 'N/A',
+                                processingTime: 'N/A',
+                            }
+                        ];
+                        container.append(renderFundCryptoTable(fundCryptocurrency, 'Deposit Cryptocurrency'));
 
-	if (data.data.withdrawalCryptocurrency) {
-		container.append(renderCryptoPerEntryTable(data.data.withdrawalCryptocurrency, 'Withdrawal Cryptocurrency'));
-	}
+                        if (data.data.withdrawalCryptocurrency) {
+                            container.append(renderCryptoPerEntryTable(data.data.withdrawalCryptocurrency, 'Withdraw Cryptocurrency'));
+                        }
 
-	container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
-}
+                        container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
 
-//fetch('/transferFee/getList')
-fetch('https://virgocx.ca/transferFee/getList')
-	.then(res => res.json())
-	.then(data => handleFees(data));
+                        loadLangJson();
+                    }
 
-	</script>
+                //  fetch('https://wordpress.virgocx.org/transferFee/getList')//testvirgocx
+                    // fetch('/wordpress/wp-content/themes/virgocx/feesData.json')
+                    fetch('https://virgocx.ca/transferFee/getList')//production virgocx  
+                        .then(res => res.json())
+                        .then(data => handleFees(data));
+                });
+            })(jQuery);
+        </script>
 
-	<section class="getStart-area">
-			<div class="container custom-container">
-					<h3>Buy and Sell Cryptocurrency Today</h3>
-					<div class="getStart-content get-started-content">
-							<span>Email Address</span>
-							<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
-					</div>
-			</div>
-	</section>
+        <section class="getStart-area">
+            <div class="container custom-container">
+                <h3 data-translate="Fees_title2"></h3>
+                <div class="getStart-content get-started-content">
+                    <span data-translate="Fees_Email"></span>
+                    <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+                </div>
+            </div>
+        </section>
 
-</div>
+    </div>
 <?php
 get_footer();

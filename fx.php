@@ -16,10 +16,14 @@ get_header();
 				<div class="row justify-content-between">
 					<div class="col-lg-6 col-md-12">
 						<div class="row">
-							<h2>The Best Foreign Exchange<br/>
-								Rates for your Money
+							<h2 >
+								<span data-translate="ForeignExchange_header1_1"></span>
+								<br/>
+								<span data-translate="ForeignExchange_header1_2"></span>
+								
+								
 							</h2>
-							<p class="tag-line">A cheap and fast way for institutions and individuals to convert money. Up to 5x cheaper than banks.</p>
+							<p class="tag-line"  data-translate="ForeignExchange_header1_desc"></p>
 						</div>
 
 						<div class="row">
@@ -27,10 +31,10 @@ get_header();
 										<?= do_shortcode('[contact-form-7 id="77" title="Fx"]') ?>
 
 										<div class="fx-contact-info">
-													<p><span>Email: </span><a href="mailto:fx@virgocx.ca">fx@virgocx.ca</a>
-													<span>Phone: </span><a href="tel:+1 (416) 483-1835">+1 (416) 483-1835</a>
+													<p><span data-translate="ForeignExchange_email"></span><a href="mailto:fx@virgocx.ca">fx@virgocx.ca</a>
+													<span data-translate="ForeignExchange_phone"></span><a href="tel:+1 (416) 483-1835">+1 (416) 483-1835</a>
 													</p>
-												<p>$20,000 CAD or equivalent minimum.</p>
+												<p data-translate="ForeignExchange_minMoney"></p>
 										</div>
 									</div>
 						</div>
@@ -39,8 +43,10 @@ get_header();
 
 					<div class="col-lg-5 col-md-12">
 						<img src="<?= get_template_directory_uri() ?>/img/fx_flags.png" alt="flags" width="100%"/>
-						<div class="fintrac-regulated font-class-6">
-							<img src="<?= get_template_directory_uri() ?>/img/canada2x.png" alt="canada flag" width="20" />FINTRAC Regulated MSB # M19955733
+						<div class="fintrac-regulated font-class-6" >
+							<img src="<?= get_template_directory_uri() ?>/img/canada2x.png" alt="canada flag" width="20" />
+							<span data-translate="ForeignExchange_regulated"></span>
+							
 						</div>
 					</div>
 				</div>
@@ -49,7 +55,7 @@ get_header();
 
         <div id="core-values" class="container-wrapper">
 					<div class="container">
-						<h2>Our Core Values</h2>
+						<h2 data-translate="ForeignExchange_header2"></h2>
 
 						<div class="row">
 							<div class="col-lg-4 col-md-12">
@@ -59,39 +65,34 @@ get_header();
 							<div id="core-values-right" class="col-lg-8 col-md-12">
 								<div class="row mb-4">
 									<div class="col-lg-6">
-										<img class="full-regul-ed-service-kwjGAF" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-full-regulated-service-CD199AC3-E22E-448F-8B0D-11429A998FC43x.png" />
-										<h3>Fully Regulated Service</h3>
-										<div class="we-are-fully-complia-kwjGAF font-class-1">
-											We are fully compliant with FINTRAC (Financial Transactions and Reports Analysis Centre of Canada) rules
-											and regulations.
+										<img class="full-regul-ed-service-kwjGAF" style="height:40px;margin-top:1.3px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-full-regulated-service-CD199AC3-E22E-448F-8B0D-11429A998FC43x.png" />
+										<h3 data-translate="ForeignExchange_header2_tag1"></h3>
+										<div class="we-are-fully-complia-kwjGAF font-class-1" data-translate="ForeignExchange_header2_tag1_desc">
+											
 										</div>
 									</div>
 
 									<div class="col-lg-6">
-										<img class="expert-knowledge-xMazAW" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-expert-knowledge-C4935AFB-96EC-4251-A75E-C54DFA41E3A13x.png" />
-										<h3>Expert Knowledge</h3>
-										<div class="we-offer-unparallell-xMazAW font-class-1">
-											We offer unparallelled market insights to help you ignore market noises and remove blind spots.
+										<img class="expert-knowledge-xMazAW" style="height:40px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-expert-knowledge-C4935AFB-96EC-4251-A75E-C54DFA41E3A13x.png" />
+										<h3 data-translate="ForeignExchange_header2_tag2"></h3>
+										<div class="we-offer-unparallell-xMazAW font-class-1" data-translate="ForeignExchange_header2_tag2_desc">
 										</div>
 									</div>
 								</div><!-- row -->
 
 								<div class="row">
 									<div class="col-lg-6">
-										<img class="x247-AKAqTd" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-247-586DA73B-E1DC-43BE-A4AA-27D655AC9B183x.png" />
-										<h3>24/7 Multi-Language Support</h3>
-										<div class="our-customer-support-AKAqTd font-class-1">
-											Our multilingual staff are available 24/7 across the globe.
+										<img class="x247-AKAqTd" style="height:40px;margin-top:1.3px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-247-586DA73B-E1DC-43BE-A4AA-27D655AC9B183x.png" />
+										<h3 data-translate="ForeignExchange_header2_tag3"></h3>
+										<div class="our-customer-support-AKAqTd font-class-1" data-translate="ForeignExchange_header2_tag3_desc">
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="u7f16u7ec4-8-zxfmYr">
-											<img class="excellent-service-txb9EP" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-excellent-service-5E11B475-34F7-449F-9401-B56B542A49B43x.png" />
-											<h3>Excellent Service</h3>
+											<img class="excellent-service-txb9EP" style="height:40px" src="<?= get_template_directory_uri() ?>/img/fx/06-fx-excellent-service-5E11B475-34F7-449F-9401-B56B542A49B43x.png" />
+											<h3 data-translate="ForeignExchange_header2_tag4"></h3>
 										</div>
-										<div class="our-strong-relations-zxfmYr font-class-1">
-											Our strong relationships with reputable payment partners make deposits and withdrawals fast and
-											effortless.
+										<div class="our-strong-relations-zxfmYr font-class-1" data-translate="ForeignExchange_header2_tag4_desc">
 										</div>
 									</div>
 								</div>
@@ -105,22 +106,18 @@ get_header();
 						<div class="row">
 
 							<div class="col-lg-6 col-md-12">
-								<h2>Three Simple Steps to Secure Better Rates</h2>
+								<h2 data-translate="ForeignExchange_header3"></h2>
 
-								<h3>Obtain a Quote</h3>
-								<div class="dial-us-at-1-416-YV2LRl font-class-1">
-									Dial us at +1 (416) 583-1835 to obtain a no-obligation exchange rate quote.
+								<h3 data-translate="ForeignExchange_header3_tag1"></h3>
+								<div class="dial-us-at-1-416-YV2LRl font-class-1" data-translate="ForeignExchange_header3_tag1_desc">
 								</div>
 
-								<h3>Secure Your Rate</h3>
-								<div class="once-you-lock-in-you-YV2LRl font-class-1">
-									Once you lock in your spot exchange rate, you will receive a trade confirmation before you initiate your
-									funds transfer.
+								<h3 data-translate="ForeignExchange_header3_tag2"></h3>
+								<div class="once-you-lock-in-you-YV2LRl font-class-1" data-translate="ForeignExchange_header3_tag2_desc">
 								</div>
 
-								<h3>Initiate Your Transfer</h3>
-								<div class="send-your-funds-via-YV2LRl font-class-1">
-									Send your funds via wire or bank transfer. Converted funds are transferred to your bank account.
+								<h3 data-translate="ForeignExchange_header3_tag3"></h3>
+								<div class="send-your-funds-via-YV2LRl font-class-1" data-translate="ForeignExchange_header3_tag3_desc">
 								</div>
 							</div><!-- End of col -->
 
@@ -136,15 +133,19 @@ get_header();
 
         <div id="fx-learn-more" class="container-wrapper">
 					<div class="container">
-						<h2>Want to Learn More?</h2>
+						<h2 data-translate="ForeignExchange_header4"></h2>
 						<div class="mb-4">
-							<span class="span1-jkl2Dx">Reach out to the VirgoCX FX Desk </span>
-							<span class="span2-jkl2Dx">(<a href="mailto:fx@virgocx.ca">fx@virgocx.ca</a> or <a href="tel:+1 (416) 583-1835)">+1 (416) 583-1835</a>) </span>
-							<span class="span3-jkl2Dx">to explore more and to set up your trading account.</span>
+							<span class="span1-jkl2Dx" data-translate="ForeignExchange_header4_desc1"></span>
+							<span class="span2-jkl2Dx" >
+								<a href="mailto:fx@virgocx.ca">fx@virgocx.ca</a> 
+								<span data-translate="ForeignExchange_or"></span>							
+								<a href="tel:+1 (416) 583-1835)">+1 (416) 583-1835</a> 
+							</span>
+							<span class="span3-jkl2Dx" data-translate="ForeignExchange_header4_desc2"></span>
 						</div>
 
 						<div class="u7f16u7ec4-17-oM9t79">
-							<a href="/en-contact-us" class="btn blue-gradient-btn">Reach Out Now</a>
+							<a href="/en-contact" class="btn blue-gradient-btn" data-translate="ForeignExchange_header4_btn"></a>
 						</div>
 					</div>
         </div><!-- fx learn more -->

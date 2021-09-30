@@ -1,0 +1,390 @@
+/*!
+Theme Name: Virgocx
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: virgocx
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Virgocx is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+// Import variables and mixins.
+//@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+//@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+//@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+//@import "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+//@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+//@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+//@import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+//@import "utilities/alignments";
+
+
+/* Import CSS
+--------------------------------------------- */
+@use './master';
+
+@import "css/bootstrap";
+@import "css/owl.carousel";
+@import "css/owl.theme.default";
+@import "css/main";
+@import "css/responsive";
+@import "css/scrollpage";
+@import "css/smartbanner.min";
+
+body {
+	color: $defaultTextColour;
+	font-family: AvenirNextRegular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: AvenirNextBold;
+}
+
+.background-grey {
+	background-color: $backgroundGrey !important;
+}
+
+.announcement-banner {
+	background-color: $brandPurple;
+	font-size: 1.1rem;
+	padding: 0.3rem;
+	font-weight: 900;
+}
+
+.announcement-banner img {
+	margin-right: 0.6rem;
+}
+
+.announcement-banner a {
+	color: #fff;
+}
+
+.hero-space {
+	height: 50px;
+}
+
+.hero-box {
+	color: $textGrey;
+	bottom: -80px !important;
+}
+
+.hero-box h2 {
+	font-size: 2.5rem;
+	margin-bottom: 5rem;
+}
+
+.hero-feature-item {
+	text-align: center;
+	color: $textGrey;
+}
+
+.hero-feature-item h5 {
+	margin-top: 1rem;
+}
+
+// The form
+form.normal textarea,
+form.normal input {
+	background-color: #f2f2f7;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 16px;
+}
+
+form.normal input[type="submit"] {
+	background: linear-gradient(180deg, #56a6d4 0%, #7173e2 98%);
+	color: #fff;
+	padding: 0;
+}
+
+// Fees
+.hero-box .fees-header {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.hero-box .fees-header h2 {
+	margin-bottom: 1rem;
+}
+
+.hero-box .fees-header p {
+	font-size: 1.25rem;
+}
+
+.page-template-fees .hero-box .hero-feature-item img {
+	width: 100px;
+}
+
+#fees-primary {
+	padding: 2rem 0;
+	padding-top: 10rem;
+}
+
+.fee-table-wrapper {
+	background-color: #fff;
+	box-shadow: 0px 5px 10px 0px rgba(213, 213, 213, 0.5);
+	border-radius: 10px;
+	padding: 1.5rem;
+	margin: 1rem 0;
+	margin-bottom: 4rem;
+}
+
+.fee-table-wrapper h4 {
+	color: $textGrey;
+}
+
+.fee-table-wrapper .table thead th {
+	border-top: 3px solid #dee2e6;
+	border-bottom: none;
+}
+
+.fee-table-wrapper .table th,
+.fee-table-wrapper .table td {
+	color: $textGrey;
+}
+
+.crypto-fee-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.crypto-fee {
+	flex: 1 0 30%;
+	margin: 5px;
+}
+
+/* fx */
+#fx {
+	color: $textGrey;
+}
+
+.fx-header {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-bottom: 3rem;
+	background-color: #f8f7fe;
+}
+
+.fx-header h2 {
+}
+
+.fx-header .tag-line {
+	font-size: 1.2rem;
+}
+
+.fx-header input {
+	margin: 1rem;
+}
+
+.fx-header .fx-contact-info {
+	margin-top: 1rem;
+}
+
+.fx-header .fx-contact-info p {
+	margin-bottom: 0.5rem;
+}
+
+.bold-font {
+	font-family: AvenirNextBold;
+}
+
+.container-wrapper {
+	padding: 5rem 0;
+	margin-top: 3rem;
+}
+
+.grecaptcha-badge {
+	opacity: 0;
+}
+
+#fp-download-apps #app_qr_image {
+	width: 150px;
+	height: 150px;
+}
+
+#app_qr_image {
+	margin-top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The buy/sell pages */
+@media screen and (max-width: 992px) {
+
+	#buy-coin .buy-coin-header .get-started-content {
+		margin-bottom: 1rem;
+	}
+
+	#buy-steps .fingertips-item {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	#app_qr_image {
+		margin-top: 0;
+	}
+
+	#buy-coin .buy-coin-header {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#buy-coin .buy-coin-header .get-started-content .hero-signup p {
+		display: inherit !important;
+	}
+}
+
+
+
+.dropdown-menu {
+	left: auto !important;
+	top: 85%;
+	display: none;
+	position: absolute;
+	color: #d8d8d8;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 0px 5px rgba(121, 101, 230, 20%);
+	border: 0;
+	padding: 12px 16px;
+	z-index: 888889;
+}
+
+.dropdown-menu a {
+	color: #66617f;
+	cursor: pointer;
+}
+
+
+.dropdown-menu a:hover {
+	color: #7965E6;
+}
+
+.dropdown-menu a:active{
+	background-color: transparent;
+}
+
+
+.rmain-ro-block a, .rmain2-link a{
+	color: #7965E6;
+}
+.rmain-ro-block a:hover {
+	cursor: pointer;
+}
+
+.bottom{
+	padding: 100px 0 180px;
+	background-image: url(/wp-content/themes/virgocx/img/bg2.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.button-center{
+	left: calc(50% - 75px);
+}
+
+.rmain2-link p, .rmain-ro-block p{
+	margin-top: 15px;
+}
+
+.rmain2-link h3{
+	margin-top: 25px;
+}
+.rmain-ro-block h3{
+	margin-bottom: 35px;
+}
+
+.rmain2-right{
+	width: 100%;
+}

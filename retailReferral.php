@@ -20,9 +20,12 @@ get_header();
         <div id="page1" class="hero-area-wrapper">
             <div class="container">
                 <div class="hero-content" style="text-align: center;">
-                    <h2>VirgoCX Referral Program</h2>
-                    <p>Introduce your friend to VirgoCX and you both earn $30 CAD!
-                        <br> More Referral, More Money!</p>
+                    <h2 data-translate="Refer_title"></h2>
+                    <p >
+						<span data-translate="Refer_title_desc1"></span>
+                        <br> 
+						<span data-translate="Refer_title_desc2"></span>
+					</p>
                 </div>
             </div>
         </div>
@@ -36,10 +39,10 @@ get_header();
                         <div class="rmain2-right">
 
                             <div class="rmain-ro-work">
-                                <h3>How it Works</h3>
+                                <h3 data-translate="Refer_header1"></h3>
                             </div>
                             <div class="rmain2-link">
-                                <h3>1. To Find Your Referral Link</h3>
+                                <h3 data-translate="Refer_header1_tag1"></h3>
                                 <div class="rmain2-link-block">
                                     <div class="row">
 
@@ -51,20 +54,20 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <p>Log into your VirgoCX account</p>
+                                                        <p  data-translate="Refer_header1_tag1_desc1"></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-4">
-                                            <div class="rmain2-link-one rmain2-link-two text-center">
+                                            <div class="rmain2-link-one rmain2-link-two text-center" style="padding-bottom:30px">
                                                 <div href="#">
                                                     <div class="rmain2-link-one-img">
                                                         <img src="<?= get_template_directory_uri() ?>/img/referral_link_2.png"
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <p>Click on Invite on the left navigation bar</p>
+                                                        <p data-translate="Refer_header1_tag1_desc2"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -77,7 +80,7 @@ get_header();
                                                              alt="images not found">
                                                     </div>
                                                     <div class="rmain2-link-one-para">
-                                                        <p>Find your unique referral link</p>
+                                                        <p data-translate="Refer_header1_tag1_desc3"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,28 +90,33 @@ get_header();
                             </div>
 
                             <div class="rmain2-link">
-                                <h3>2. Share Your Referral Link</h3>
-                                <p>Simply copy your referral link to your friends. </p>
+                                <h3 data-translate="Refer_header1_tag2"></h3>
+                                <p data-translate="Refer_header1_tag2_desc"></p>
                             </div>
                             <div class="rmain2-link">
-                                <h3>3. Earn Money</h3>
-                                <p>Step1: Refer a friend and you will each receive a $10 CAD. No deposit required！
+                                <h3 data-translate="Refer_header1_tag3"></h3>
+                                <p>
+									<span data-translate="Refer_header1_tag3_desc1"></span>
                                     <br>
-
-                                    Step2: When your referee signs up and makes their first fiat deposit of $100 CAD or
-                                    more, you both get an extra $20 CAD.
+									<span data-translate="Refer_header1_tag3_desc2"></span>
                                     <br>
-                                    Please see <a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811">Terms and Conditions</a> for
-                                    more details. </p>
+									<span data-translate="Refer_header1_tag3_desc3_1"></span>
+                                    <a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811" data-translate="Refer_header1_tag3_desc3_2">
+										Terms and Conditions
+									</a> 
+									<span data-translate="Refer_header1_tag3_desc3_3"></span>
+									</p>
                             </div>
 
                             <div class="rmain-ro-block" style="margin-top: 70px">
-                                <h3>Ready to Earn Money? </h3>
+                                <h3 data-translate="Refer_header2"></h3>
 
                             </div>
                             <a href="https://virgocx.ca/page#/login"
-                               class="col-lg-2 blue-gradient-btn button-center">Get Your
-                                Referral Link</a>
+                               class="col-lg-2 blue-gradient-btn button-center" 
+							   data-translate="Refer_header2_btn">
+							   
+							   </a>
                         </div>
                     </div>
                 </div>

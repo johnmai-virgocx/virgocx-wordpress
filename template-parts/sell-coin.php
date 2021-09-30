@@ -9,14 +9,36 @@
 get_header();
 ?>
 
+<style type="text/css">
+	#homepage-GetStarted {
+		width: 195px;
+		margin-left: 6px;
+		background: #7965e6;
+		color: #fff;
+		border-radius: 5px;
+		border: none;
+		padding: 12px 12px;
+		margin-bottom: 10px;
+		transition: 0.4s all ease;
+		-webkit-transition: 0.4s all ease;
+		-moz-transition: 0.4s all ease;
+	}
+	
+	
+</style>
+
 	<div id="buy-coin">
 		<div class="buy-coin-header">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-5 col-md-12">
 						<div class="row">
-							<h1>How to Sell <?= $args['name'] ?><br /> in Canada</h1>
-							<p class="tag-line">VirgoCX is making cryptocurrencies available to Canadians everywhere.</p>
+							<?php if(strlen($args['name']) > 12 ) : ?>
+								<h1><span data-translate="Sell_header1_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+							<?php else : ?>
+								<h1><span data-translate="Sell_header1_1"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+							<?php endif; ?>
+							<p class="tag-line" data-translate="Sell_header1_desc"></p>
 
 							<div class="hero-signup get-started-content">
 								<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
@@ -35,17 +57,20 @@ get_header();
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<h2>1. Register an Account </h2>
-						<p>Sign up via our Website or our Mobile App. You can scan the QR code or <a href="https://virgocx.ca/page#/register">click here</a> to get started.</p>
+						<h2 data-translate="Sell_header2"></h2>
+						<p>
+							<span data-translate="Sell_header2_desc1"></span>
+						<a href="https://virgocx.ca/page#/register" data-translate="Sell_header2_desc2"></a> 
+						<span data-translate="Sell_header2_desc3"></span></p>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-lg-7 col-md-12">
+					<div class="col-lg-6 col-md-12">
 						<img src="<?= get_template_directory_uri() ?>/img/app_display.png" alt="images not found" width="100%"/>
 					</div>
 
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-5 col-md-12">
 						<?php get_template_part('template-parts/app', 'qr'); ?>
 					</div>
 				</div>
@@ -53,12 +78,16 @@ get_header();
 				<div id="step-2" class="row">
 					<div class="col-lg-5 col-md-12">
 						<div class="step-header">
-							<h2>2. Get Verified</h2>
-							<p>Provide some basic information and get verified quickly.</p>
+							<h2 data-translate="Sell_header3"></h2>
+							<p data-translate="Sell_header3_desc"></p>
 						</div>
 						<div class="step-header">
-							<h2>3. Sell Your <?= $args['name'] ?> Right Away</h2>
-							<p>Sell your <?= $args['ticker'] ?> immediately through the VirgoCX trading platform by setting a limit order or a market order. Withdraw via INTERAC e-transfer and receive your money in minutes.</p>
+						  <?php if(strlen($args['name']) > 12 || $args['name']=="Basic Attention Token") : ?>
+							<h2><span data-translate="Sell_header4_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header4_2"></h2>
+						  <?php else : ?>	
+							<h2><span data-translate="Sell_header4_1"></span><span data-translate="<?= $args['name'] ?>"></span><span data-translate="Sell_header4_2"></h2>
+						  <?php endif; ?>
+							<p><span data-translate="Sell_header4_desc1"></span><span data-translate="<?= $args['ticker'] ?>"></span> <span data-translate="Sell_header4_desc2"> </p>
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12">
@@ -68,7 +97,7 @@ get_header();
 
 				<div class="row">
 					<div class="col-lg-12">
-						<h2>Why VirgoCX?</h2>
+						<h2 data-translate="Sell_header5">Why VirgoCX?</h2>
 					</div>
 				</div>
 
@@ -84,8 +113,8 @@ get_header();
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/compliant_and_regulated.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3>Compliant and Regulated</h3>
-								<p>VirgoCX is a registered MSB under FINTRAC. VirgoCX engages trusted third parties to conduct routine audits.</p>
+								<h3 data-translate="Sell_header5_tag1"></h3>
+								<p data-translate="Sell_header5_tag1_desc"></p>
 							</div>
 						</div>
 					</div>
@@ -96,8 +125,8 @@ get_header();
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/safe_and_secure.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3>Safe and Secure</h3>
-								<p>Your information is secured on our servers and your crypto assets are protected by Ledger Vault technology and our comprehensive cybersecurity program.</p>
+								<h3 data-translate="Sell_header5_tag2"></h3>
+								<p data-translate="Sell_header5_tag2_desc"></p>
 							</div>
 						</div>
 					</div>
@@ -108,8 +137,8 @@ get_header();
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/low_fees.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3>Low Fees</h3>
-								<p>ZERO trading fee and deposit fee.</p>
+								<h3 data-translate="Sell_header5_tag3"></h3>
+								<p data-translate="Sell_header5_tag3_desc"></p>
 							</div>
 						</div>
 					</div>
@@ -122,8 +151,8 @@ get_header();
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/best_price.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3>Best Pricing in Canada</h3>
-								<p>The best buy & sell price supported by superior liquidity.</p>
+								<h3 data-translate="Sell_header5_tag4"></h3>
+								<p data-translate="Sell_header5_tag4_desc"></p>
 							</div>
 						</div>
 					</div>
@@ -134,8 +163,8 @@ get_header();
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/easy_and_convenient.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3>Easy and Convenient</h3>
-								<p>Fund your account with INTERAC e-Transfer & Wire Transfer.</p>
+								<h3 data-translate="Sell_header5_tag5"></h3>
+								<p data-translate="Sell_header5_tag5_desc"></p>
 							</div>
 						</div>
 					</div>
@@ -146,8 +175,8 @@ get_header();
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/247_support.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3>24/7 Customer Support </h3>
-								<p>Live chat with our support team for quick answers.</p>
+								<h3 data-translate="Sell_header5_tag6"></h3>
+								<p data-translate="Sell_header5_tag6_desc"></p>
 							</div>
 						</div>
 					</div>
@@ -157,9 +186,9 @@ get_header();
 
 		<section class="getStart-area">
 			<div class="container custom-container">
-				<h3>Buy and Sell Cryptocurrency Today</h3>
+				<h3 data-translate="Sell_header6"></h3>
 				<div class="getStart-content get-started-content">
-										<span>Email Address</span>
+										<span data-translate="Sell_email"></span>
 										<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
 				</div>
 			</div>

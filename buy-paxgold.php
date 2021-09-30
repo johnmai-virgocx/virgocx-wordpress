@@ -8,7 +8,7 @@
  */
 
 $args = [
-	'name' => 'PAX Gold',
+	'name' => 'PAX_Gold',
 	'ticker' => 'Paxgold',
 ];
 get_template_part('template-parts/buy', 'coin', $args);
