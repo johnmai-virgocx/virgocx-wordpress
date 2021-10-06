@@ -198,9 +198,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <img class="arrow-down" src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
                                      alt="images not found"/>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a href="/page#/login" class="dropdown-item"
+
+                                    <?php if(strpos($_SERVER['REQUEST_URI'],'nft') !== false): ?>
+                                        <a href="/page#/login" class="dropdown-item"
                                             data-translate="Log In">login
-                                    </a>                                   
+                                        </a>
+                                    <?php else : ?>
+                                        <a href="https://otc.virgocx.ca/" class="dropdown-item"
+                                            data-translate="Log In">login
+                                        </a>
+                                    <?php endif; ?>
+
                                     <?php if(strpos($_SERVER['REQUEST_URI'],'nft') !== false): ?>
                                         <a class="dropdown-item"  href="../en-otc-nft-brokerage/?#contact-form"
                                             data-translate="Register">Sign Up
