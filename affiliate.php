@@ -185,9 +185,6 @@ get_header();
                              <li><b>$10 for every user that gets verified on our platform,</b>	</li>
 
                              <li><b>$20 when they make their first fiat deposit of $100+ CAD,</b> </li>
-
-                             <li><b>Plus, a 0.08% commission share on all trading amounts they make!</b></li>
-
                             </ul>
                              </br><p>There’s no cap to what you earn. You’re just a few clicks away from this lifetime earning opportunity - it's quick, easy, and rewarding!
 
