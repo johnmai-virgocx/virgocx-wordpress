@@ -585,6 +585,10 @@
 	"ATOM":"ATOM",
 	"Solana":"Solana",
 	"SOL":"SOL",
+	"SHIB":"SHIB",
+	"Shiba Inu":"Shiba Inu",
+	"AXS":"AXS",
+	"Axie Infinity":"Axie Infinity",
 
 	"NFT_header":"NFT",
 	"NFT_Buy": "Buy with VirgoCX",

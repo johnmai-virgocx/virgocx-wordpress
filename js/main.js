@@ -563,6 +563,8 @@
             //     'mana/cad': '/page#/advancedTrade/73',
             //     'atom/cad': '/page#/advancedTrade/74',
             //     'sol/cad': '/page#/advancedTrade/75',
+            //     'axs/cad': '/page#/advancedTrade/76',
+            //     'shib/cad': '/page#/advancedTrade/77',
             // }//testvirgocx
 
             const tradingMapping = {
@@ -595,6 +597,8 @@
                 'mana/cad': 'https://virgocx.ca/page#/advancedTrade/73',
                 'atom/cad': 'https://virgocx.ca/page#/advancedTrade/74',
                 'sol/cad': 'https://virgocx.ca/page#/advancedTrade/75',
+                'axs/cad': 'https://virgocx.ca/page#/advancedTrade/76',
+                'shib/cad': 'https://virgocx.ca/page#/advancedTrade/77',
             }//production
 
             let index = 1;
