@@ -27,6 +27,7 @@ get_header('otc');
                         <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                             Get started
                         </a>
+                        <p class="emailUs" data-translate="OTC_email_us">Or email us: <span>otc@virgocx.ca</span></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
@@ -766,6 +767,20 @@ get_header('otc');
     </section>
 
     <style type="text/css">
+        .emailUs{
+            z-index:9999;
+            color:white;
+            font-weight:400;
+            font-family:"Matter-Regular";
+            font-size:16px;
+            margin-top:80px;
+        }
+        .emailUs span{
+            color:#C7BA9A;
+        }
+
+
+
         h1, h2, h1 > span, h2 > span, h3, h4 {
             font-family: "Matter-Bold" !important;
         }
