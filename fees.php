@@ -332,41 +332,41 @@ get_header();
                     // **************************************************************************************
 
 
-                    function renderTradingFee(tradingFee, title) {
-                        const tableWrapper = document.createElement('div');
-                        tableWrapper.classList.add('fee-table-wrapper');
-                        titleTranslate ='Fees_header7';
-                        let tradingFeeMaker1 = tradingFee.maker;
-                        if(tradingFee.maker === '0'){
-                            tradingFeeMaker1 = 'Free';
-                        }
+    //                 function renderTradingFee(tradingFee, title) {
+    //                     const tableWrapper = document.createElement('div');
+    //                     tableWrapper.classList.add('fee-table-wrapper');
+    //                     titleTranslate ='Fees_header7';
+    //                     let tradingFeeMaker1 = tradingFee.maker;
+    //                     if(tradingFee.maker === '0'){
+    //                         tradingFeeMaker1 = 'Free';
+    //                     }
 
-                        const theContent = `
-				<h4 data-translate="${titleTranslate}">${title}</h4>
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-						</thead>
-							<tr>
-								<th scope="row" >
-									<img style="display:inline" src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
-                                    <div style="display:inline" data-translate="Fees_Commission">Commission</div>
-								</th>
-								<td>
-                                    <div data-translate="Fees_${tradingFeeMaker1}">${tradingFeeMaker1}</div>
-								</td>
-								<td>
-								</td>
-							</tr>
-						<tbody>
-						</tbody>
-					</table>
-				</div>
-	`
+    //                     const theContent = `
+	// 			<h4 data-translate="${titleTranslate}">${title}</h4>
+	// 			<div class="table-responsive">
+	// 				<table class="table">
+	// 					<thead>
+	// 					</thead>
+	// 						<tr>
+	// 							<th scope="row" >
+	// 								<img style="display:inline" src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
+    //                                 <div style="display:inline" data-translate="Fees_Commission">Commission</div>
+	// 							</th>
+	// 							<td>
+    //                                 <div data-translate="Fees_${tradingFeeMaker1}">${tradingFeeMaker1}</div>
+	// 							</td>
+	// 							<td>
+	// 							</td>
+	// 						</tr>
+	// 					<tbody>
+	// 					</tbody>
+	// 				</table>
+	// 			</div>
+	// `
 
-                        tableWrapper.innerHTML = theContent;
-                        return tableWrapper;
-                    }
+    //                     tableWrapper.innerHTML = theContent;
+    //                     return tableWrapper;
+    //                 }
 
                     function renderCryptoPerEntryTable(data, title) {
                         const tableWrapper = document.createElement('div');

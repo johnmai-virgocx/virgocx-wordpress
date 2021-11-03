@@ -65,8 +65,8 @@ get_header('otc');
                 </div>
                 <h4 data-translate="OTC_direct_banner2_col2">Best Execution</h4>
                 <p data-translate="OTC_direct_banner2_col2_2">We aggregate liquidity through a multitude of different
-                    providers in order to provide you with the
-                    <span class="blue">best price</span> at that point in time.
+                    providers in order to provide you with 
+                    <span class="blue">competitive pricing.</span>
 
                 </p>
                 <p data-translate="OTC_direct_banner2_col2_3">
@@ -243,8 +243,8 @@ get_header('otc');
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <p data-translate="OTC_direct_how_4_1">Execute transactions for the best price using OTC
-                                Direct.
+                            <p data-translate="OTC_direct_how_4_1">Execute transactions for some of the best prices using OTC Direct. 
+
                             <ul>
                                 <li data-translate="OTC_direct_how_4_2">You will be able to trade directly on our
                                     platform 24/7 (excluding scheduled

@@ -66,8 +66,8 @@ get_header('otc');
                          alt="flags"/>
                 </div>
                 <h4 data-translate="OTC_chat_best">Best Execution</h4>
-                <p data-translate="OTC_chat_why_2">We aggregate liquidity through a multitude of different providers in order to provide you with the
-                    <span class="blue">best price</span> at that point in time.
+                <p data-translate="OTC_chat_why_2">We aggregate liquidity through a multitude of different providers in order to provide you with 
+                    <span class="blue">competitive pricing.</span>
                 </p>
                 <p data-translate="OTC_chat_why_2_1">
 
