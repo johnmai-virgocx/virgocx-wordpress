@@ -650,7 +650,7 @@ get_header('otc');
                         <span></span>
                     </div>
                     <div class="col-lg-6 col-md-12 ">
-                        <h3 data-translate="OTC_landing_banner4_col1-2">Zero Trading Fees</h3>
+                        <h3 data-translate="OTC_landing_banner4_col1-2">Low-cost trading</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <p data-translate="OTC_landing_banner4_col2-2">We <span
@@ -668,7 +668,7 @@ get_header('otc');
                         <span></span>
                     </div>
                     <div class="col-lg-6 col-md-12 ">
-                        <h3 data-translate="OTC_landing_banner4_col1-3">Best Pricing in Canada</h3>
+                        <h3 data-translate="OTC_landing_banner4_col1-3">Competitive Pricing</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <p data-translate="OTC_landing_banner4_col2-3">Our liquidity pools allow us to provide<span
