@@ -695,7 +695,7 @@ get_header();
                             container.append(renderCryptoPerEntryTable(data.data.withdrawalCryptocurrency, 'Withdraw Cryptocurrency'));
                         }
 
-                        container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
+                        // container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
 
                         loadLangJson();
                     }
