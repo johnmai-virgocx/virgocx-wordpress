@@ -26,7 +26,7 @@ get_header('otc');
       </div>
       <div class="action">
           <button class="buy" data-translate="NFT_BuyNFT"
-                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUOUsxWkg1MFhCTTVVQVE0UFNSRzlUVUxNRy4u" target ="_blank">Buy
+                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlUM1RXQ1RHM0o2VTZKWFM1QVZKNjJENTY2Vi4u" target ="_blank">Buy
               an NFT</button>
         <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
           NFT</button>
@@ -47,11 +47,11 @@ get_header('otc');
           <p data-translate="NFT_ModalTitle_1">We would like to know more about your NFT. </p>
           <p data-translate="NFT_ModalTitle_2">I would like to :</p>
           <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUREZGVEhVTlE5NzJSMVRSSUE2RkNWREE0Sy4u','_blank').focus();"
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlUM1VVWkJHTkIzUE1OVk1NMTlNV0paS0s3Qi4u','_blank').focus();"
             data-translate="NFT_ModalOption_1">
             Sell an NFT from existing collection</p>
           <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr3630pdCL95AhPslXfIR9odUMEI0Mjk2UUU0R05KRVpJSjVHWUVVOUZZRy4u','_blank').focus();"
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlURUNGR0FQWVUxSkM4UjJYTTk0RVNWSkNJSC4u','_blank').focus();"
             data-translate="NFT_ModalOption_2">
             Deploy my own collection</p>
         </div>
