@@ -101,7 +101,8 @@ get_header();
 									<span data-translate="Refer_header1_tag3_desc2"></span>
                                     <br>
 									<span data-translate="Refer_header1_tag3_desc3_1"></span>
-                                    <a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811" data-translate="Refer_header1_tag3_desc3_2">
+                                    <!-- <a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811" data-translate="Refer_header1_tag3_desc3_2"> -->
+                                    <a href="https://virgocx.zendesk.com/hc/en-us/articles/4410453976468-Black-Friday-Deals-2-Double-Referral-Program-and-ZERO-Fiat-Withdrawal-Fee-" data-translate="Refer_header1_tag3_desc3_2">
 										Terms and Conditions
 									</a> 
 									<span data-translate="Refer_header1_tag3_desc3_3"></span>
