@@ -95,7 +95,7 @@ get_header();
                                 <div class="rmain-ro-block">
                                     <p>
 										<span data-translate="ReferOTC_More_Detail_1"></span>
-										<a href="https://virgocx.zendesk.com/hc/en-us/articles/360056653811" data-translate="ReferOTC_More_Detail_2">
+										<a href="https://virgocx.zendesk.com/hc/en-us/articles/4410453976468-Black-Friday-Deals-2-Double-Referral-Program-and-ZERO-Fiat-Withdrawal-Fee-" data-translate="ReferOTC_More_Detail_2">
 										</a>
 										<span data-translate="ReferOTC_More_Detail_3"></span></p>
                                 </div>

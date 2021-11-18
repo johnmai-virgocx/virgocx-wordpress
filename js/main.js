@@ -704,6 +704,7 @@
 
         function fetchLivePrices() {
             // fetch('/wordpress/wp-content/themes/virgocx/carouseldata.json')
+            // fetch('https://virgocx.ca/indexPage')
             fetch('/indexPage')
                 .then(res => res.json())
                 .then(data => handleLivePrices(data))
