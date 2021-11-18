@@ -457,7 +457,7 @@ get_header();
 						</div>
 					</th>
 					<td class="fee-content">
-						${entry.fee === 0 ? 'Free' : entry.fee} ${entry.coinName}
+						${entry.fee === 0 ? '0' : entry.fee} ${entry.coinName}
 					</td>
 					<td>
 						${entry.minQty} ${entry.coinName}
