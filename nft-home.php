@@ -78,7 +78,7 @@ get_header('otc');
               <div class="owl-carousel owl-theme owl-loaded owl-drag">
                 <div class="owl-stage-outer">
                   <div class="owl-stage">
-                    <?php foreach ($rows as $row) { ?>
+                    <?php foreach (array_reverse($rows) as $row) { ?>
                     <div class="owl-item card">
                       <a class="pg-top" href="<?php echo $row["detail_link"] ?>" target ="_blank">
                         <div class="img-container">

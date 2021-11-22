@@ -8,7 +8,7 @@
  * @package Virgocx
  */
 // 关联数组
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where id = 14', ARRAY_A);
+$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where id = 12', ARRAY_A);
 $detail = $rows[0];
 get_header('otc');
 ?>
