@@ -26,7 +26,9 @@ get_header('otc');
                             <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                                 Get started
                             </a>
+                            
                         </div>
+                        <p class="emailUs" data-translate="OTC_email_us">Or email us: <span>otc@virgocx.ca</span></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
@@ -63,8 +65,8 @@ get_header('otc');
                 </div>
                 <h4 data-translate="OTC_direct_banner2_col2">Best Execution</h4>
                 <p data-translate="OTC_direct_banner2_col2_2">We aggregate liquidity through a multitude of different
-                    providers in order to provide you with the
-                    <span class="blue">best price</span> at that point in time.
+                    providers in order to provide you with 
+                    <span class="blue">competitive pricing.</span>
 
                 </p>
                 <p data-translate="OTC_direct_banner2_col2_3">
@@ -241,8 +243,8 @@ get_header('otc');
                     </div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
-                            <p data-translate="OTC_direct_how_4_1">Execute transactions for the best price using OTC
-                                Direct.
+                            <p data-translate="OTC_direct_how_4_1">Execute transactions for some of the best prices using OTC Direct. 
+
                             <ul>
                                 <li data-translate="OTC_direct_how_4_2">You will be able to trade directly on our
                                     platform 24/7 (excluding scheduled
@@ -428,6 +430,18 @@ get_header('otc');
         </div>
     </section>
     <style>
+        .emailUs{
+            z-index:9999;
+            color:white;
+            font-weight:400;
+            font-family:"Matter-Regular";
+            font-size:16px;
+            margin-left:-10px;
+        }
+        .emailUs span{
+            color:#C7BA9A;
+        }
+
         h1,h2,h1> span, h2>span,h3 ,h4{
             font-family: "Matter-Bold"!important;
         }

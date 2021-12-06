@@ -612,6 +612,16 @@
             //     'mana/cad': '/page#/advancedTrade/73',
             //     'atom/cad': '/page#/advancedTrade/74',
             //     'sol/cad': '/page#/advancedTrade/75',
+            //     'shib/cad': '/page#/advancedTrade/76',
+            //     'axs/cad': '/page#/advancedTrade/77',
+            //     'avax/cad': '/page#/advancedTrade/79',
+            //     'etc/cad': '/page#/advancedTrade/81',
+            //     'grt/cad': '/page#/advancedTrade/82',
+            //     'chz/cad': '/page#/advancedTrade/83',
+            //     'sushi/cad': '/page#/advancedTrade/84',
+            //     'amp/cad': '/page#/advancedTrade/85',
+            //     'ksm/cad': '/page#/advancedTrade/86',
+            //     'lrc/cad': '/page#/advancedTrade/87',
             // }//testvirgocx
 
             const tradingMapping = {
@@ -644,6 +654,16 @@
                 'mana/cad': 'https://virgocx.ca/page#/advancedTrade/73',
                 'atom/cad': 'https://virgocx.ca/page#/advancedTrade/74',
                 'sol/cad': 'https://virgocx.ca/page#/advancedTrade/75',
+                'shib/cad': 'https://virgocx.ca/page#/advancedTrade/76',
+                'axs/cad': 'https://virgocx.ca/page#/advancedTrade/77',
+                'avax/cad': 'https://virgocx.ca/page#/advancedTrade/79',
+                'etc/cad': 'https://virgocx.ca/page#/advancedTrade/81',
+                'grt/cad': 'https://virgocx.ca/page#/advancedTrade/82',
+                'chz/cad': 'https://virgocx.ca/page#/advancedTrade/83',
+                'sushi/cad': 'https://virgocx.ca/page#/advancedTrade/84',
+                'amp/cad': 'https://virgocx.ca/page#/advancedTrade/85',
+                'ksm/cad': 'https://virgocx.ca/page#/advancedTrade/86',
+                'lrc/cad': 'https://virgocx.ca/page#/advancedTrade/87',
             }//production
 
             let index = 1;
@@ -733,6 +753,7 @@
 
         function fetchLivePrices() {
             // fetch('/wordpress/wp-content/themes/virgocx/carouseldata.json')
+            // fetch('https://virgocx.ca/indexPage')
             fetch('/indexPage')
                 .then(res => res.json())
                 .then(data => handleLivePrices(data))

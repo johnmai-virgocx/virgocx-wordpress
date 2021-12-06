@@ -20,6 +20,13 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5BQZZQZ');</script>
     <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+
+        var hasoffers_domain = "https://go.virgocx.ca";
+
+    </script>
+
+    <script type="text/javascript" src="https://media.go2app.org/assets/js/dl.js"></script>
 
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">

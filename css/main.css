@@ -973,7 +973,7 @@ form input[type="submit"]:hover {
 #myCarousel {
   width: 100%;
   margin: 0px auto;
-  padding: 26px 0;
+  padding: 0 0 26px 0;
   border-bottom: 1px solid #c3c3c3; }
 
 .bcl-item {

@@ -730,7 +730,7 @@ if ($totalNumber === 1): ?>
                                         class="play_store_download" data-value="play_store"
                                         src="<?= get_template_directory_uri() ?>/img/app_buttons/play_store.png"
                                         alt="images not found"/></a>
-                            <a href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/09/10/c77346df6b7f41af834c6ebb594621ea.apk"><img
+                            <a href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/11/07/eae76c4f3c4145f6b9681f44aa5c92e9.apk"><img
                                         class="android_download" data-value="android"
                                         src="<?= get_template_directory_uri() ?>/img/app_buttons/android.png"
                                         alt="images not found"/></a>

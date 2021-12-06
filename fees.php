@@ -169,38 +169,51 @@ get_header();
         <script type="text/javascript">
             (function ($) {
                 $(document).ready(function () {
-                    // **************************************************************************************
-                    // **************************************************************************************
-                    // langSwitcher
+// **************************************************************************************
+// **************************************************************************************
+// langSwitcher
 
                     // Some variables for later
-                    var titleTranslate;
                     var dictionary = {},
                         currentLang = 'en',
-                        langPageIndicator = 0,
+                        langPageIndicator =0,
                         languagePair = {
                             "en": "/wp-content/themes/virgocx/languages/dictionary/en.json",
                             "zh": "/wp-content/themes/virgocx/languages/dictionary/zh.json"
+                            // "en": "/wordpress/wp-content/themes/virgocx/languages/dictionary/en.json", //local
+                            // "zh": "/wordpress/wp-content/themes/virgocx/languages/dictionary/zh.json" //local
                         };
 
 
                     // Checking lang on page change
                     function checkSessionLang() {
                         var lang = sessionStorage.getItem('lang');
-                        if (lang) {
+                        if (lang){
                             currentLang = lang;
-                        } else {
-                            sessionStorage.setItem('lang', 'en');
-                            currentLang = 'en';
+                        }else{
+                            var browerLang = navigator.language || navigator.userLanguage;
+                            if(browerLang !=null){
+                                // switch between zh and en
+                                currentLang = browerLang.indexOf('en')>=0?'en':browerLang.indexOf('zh')>=0?'zh':'en';
+                            }else {
+                                currentLang = 'en';
+                            }
+                            sessionStorage.setItem('lang', currentLang);
+                            $("#lang").val(currentLang);
                         }
+
+
+
+
                         // none-onload action
                         let langLoader = async function () {
                             var url = window.location.href;
                             const promises = Object.keys(languagePair).map(async function (key) {
                                 var langParam = '/' + key + '-';
                                 if (url.indexOf(langParam) > -1) {
-                                    if (key != currentLang) {
-                                        redirection(url, currentLang);
+                                    if(key != currentLang){
+                                        // redirection(url, currentLang);
+                                        redirection(url, key,false,false);
                                     }
                                 }
                             })
@@ -210,7 +223,6 @@ get_header();
 
 
                     }
-
                     checkSessionLang();
 
                     // Object literal behaving as multi-dictionary
@@ -224,149 +236,209 @@ get_header();
                             const result = await Promise.all(promises);
                             const menuAttrUpdate = await menuUpdate();
 
-                            // Set initial language to English
+                            // Set initial language to browser default language
                             setLang(dictionary[currentLang]);
                         }
                         fileLoader();
-                    }
-
+                    };
                     loadLangJson();
+
+
 
 
                     // Function for swapping dictionaries
                     function setLang(dictionary) {
-                        $("[data-translate]").each(function () {
-                            if ($(this).is("input")) {
-                                $(this).attr('placeholder', dictionary[$(this).data("translate")])
-                            } else if ($(this).is(".popper-trigger")) {
-                                $(this).attr('data-content', dictionary[$(this).data("translate")])
-                            } else {
+                        $("[data-translate]").each(function(){
+                            if($(this).is( "input" )){
+                                $(this).attr('placeholder',dictionary[$(this).data("translate")])
+                            } else if($(this).is( ".popper-trigger" )){
+                                $(this).attr('data-content',dictionary[$(this).data("translate")])
+                            }else{
                                 $(this).text(dictionary[$(this).data("translate")])
                             }
                         })
 
+
                         // Contact form update
-                        $("input").each(function () {
-                            if (this.placeholder.indexOf('data translate') >= 0) {
+                        $("input").each(function(){
+                            if(this.placeholder.indexOf('data translate')>= 0){
                                 //check if data-translate attribute added
-                                if (this.hasAttribute("data-translate")) {
-                                    $(this).attr('placeholder', dictionary[$(this).data("translate")])
-                                } else {
+                                if(this.hasAttribute("data-translate")){
+                                    $(this).attr('placeholder',dictionary[$(this).data("translate")])
+                                }else{
                                     var string = this.placeholder;
-                                    const key = string.substring(15, string.length);
+                                    const  key = string.substring(15,string.length);
                                     $(this).attr("placeholder", dictionary[key]);
                                     this.setAttribute("data-translate", key);
                                 }
+                            }else{
+                                if(this.value === 'Get Started'||this.value === '一键开启'){
+                                    $(this).attr('value',dictionary['frontpage_Started'])
+                                }
+                                // for email input
+                                if(this.classList.contains('emailTranslate')){
+                                    $(this).attr("placeholder", dictionary['frontpage_Email_Address']);
+                                }
+
+
                             }
                         })
-
-
-                    };
+                    }
 
                     // Swap languages when menu changes
                     $("#lang").on("change", function () {
                         var language = $(this).val().toLowerCase();
                         if (dictionary.hasOwnProperty(language)) {
                             var url = window.location.href;
-                            redirection(url, language);
+                            if(url.indexOf('/'+currentLang+'-')<0){
+                                setLang(dictionary[language]);
+                            }
+                            redirection(url,language,true,false);
                             currentLang = language;
-                            setLang(dictionary[language]);
+                        }
+                    });
+
+                    //OTC lang switcher
+                    $(".lang-dropdown").on("click", function () {
+                        var language = $(this)[0].getAttribute('value').toLowerCase();
+                        if (dictionary.hasOwnProperty(language)) {
+                            var url = window.location.href;
+                            if(url && (url.indexOf('/'+currentLang+'-')<0)){
+                                setLang(dictionary[language]);
+                            }
+                            $(dropdownMenuLinkEN).click();
+                            redirection(url,language,true,false);
+                            currentLang = language;
                         }
                     });
 
                     // set switcher to currentLang
                     function loadLangSwitcher() {
                         $("#lang").val(currentLang);
-                    }
+                    };
 
                     loadLangSwitcher();
 
-                    //lang switcher redirect
-                    async function redirection(url, language) {
-                        if (language == '' || language == null) {
-                            language = sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'en';
-                        } else {
+                    //lang redirect
+                    async function redirection(url,language,fromSwitcher, newTab) {
+
+                        if (language == '' || language == null){
+                            language = sessionStorage.getItem('lang')?sessionStorage.getItem('lang'): 'en';
+                            currentLang = language;
+                        }else{
                             sessionStorage.setItem('lang', language);
+                            currentLang = language;
                         }
                         const promises = Object.keys(languagePair).map(async function (key) {
                             var langParam = '/' + key + '-';
-                            if (url.indexOf(langParam) > -1) {
+                            if (url && (url.indexOf(langParam) > -1)) {
                                 langPageIndicator = 1;
-                                window.location = url.replace(langParam, '/' + language + '-');
+                                if(fromSwitcher){
+                                    if(newTab){
+                                        window.open (url.replace(langParam, '/' + language + '-'),'_blank').focus();
+                                    }else{
+                                        window.location.href = url.replace(langParam, '/' + language + '-');
+                                    }
+                                }
                             }
                         })
                         const result = await Promise.all(promises);
 
-                        if (langPageIndicator == 0 && window.location.href !== url) {
-                            window.location.href = url;
+                        if (url && langPageIndicator == 0 &&  window.location.href !== url){
+                            if(newTab){
+                                window.open (url,'_blank').focus();
+                            }else{
+                                window.location.href = url;
+                            }
                         }
                     }
 
                     // force hard coded href goes to right lang page
                     $('a').click(function(event) {
-                        if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0){
+                        // avoid data-toggle and data-slide button
+                        if([false, null, 'undefined',undefined].indexOf( this.attributes['data-toggle'])>=0 &&
+                            [false, null, 'undefined',undefined].indexOf( this.attributes['data-slide'])>=0){
                             event.preventDefault();
                             const url =$(this).attr('href');
-                            redirection(url,'');
+                            const  newTab = $(this).attr('target') == '_blank';
+                            redirection(url,'',true,newTab);
                             return false; // for good measure
                         }
                     });
+
+
+                    $('button').click(function(event) {
+                        if($(this).attr('href') != undefined){
+                            var url = $(this).attr('href');
+                            const  newTab = $(this).attr('target') == '_blank';
+                            redirection(url,'',true, newTab);
+                        }
+                    })
+                    $('p').click(function(event) {
+                        if($(this).attr('href') != undefined){
+                            var url = $(this).attr('href');
+                            const  newTab = $(this).attr('target') == '_blank';
+                            redirection(url,'',true, newTab);
+                        }
+                    })
+
+
                     // replace footer data tag
-                    async function menuUpdate() {
-                        const headerPromises = $('.page_item a').each(function (i, obj) {
-                            var key = $(obj).text();
-                            $(obj).attr("data-translate", key);
+                    async function menuUpdate(){
+                        const headerPromises = $('.page_item a').each(function(i, obj) {
+                            var key = $( obj ).text();
+                            $( obj ).attr("data-translate",key);
                         });
 
-                        const footerPromises = $('.menu-item a').each(function (i, obj) {
-                            var key = $(obj).text();
-                            $(obj).attr("data-translate", key);
+                        const footerPromises = $('.menu-item a').each(function(i, obj) {
+                            var key = $( obj ).text();
+                            $( obj ).attr("data-translate",key);
                         });
 
                         const header = await Promise.all(headerPromises);
                         const footer = await Promise.all(footerPromises);
                     }
 
-                    // langSwitcher ends
-                    // **************************************************************************************
-                    // **************************************************************************************
+// langSwitcher ends
+// **************************************************************************************
+// **************************************************************************************
 
 
-                    function renderTradingFee(tradingFee, title) {
-                        const tableWrapper = document.createElement('div');
-                        tableWrapper.classList.add('fee-table-wrapper');
-                        titleTranslate ='Fees_header7';
-                        let tradingFeeMaker1 = tradingFee.maker;
-                        if(tradingFee.maker === '0'){
-                            tradingFeeMaker1 = 'Free';
-                        }
+    //                 function renderTradingFee(tradingFee, title) {
+    //                     const tableWrapper = document.createElement('div');
+    //                     tableWrapper.classList.add('fee-table-wrapper');
+    //                     titleTranslate ='Fees_header7';
+    //                     let tradingFeeMaker1 = tradingFee.maker;
+    //                     if(tradingFee.maker === '0'){
+    //                         tradingFeeMaker1 = 'Free';
+    //                     }
 
-                        const theContent = `
-				<h4 data-translate="${titleTranslate}">${title}</h4>
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-						</thead>
-							<tr>
-								<th scope="row" >
-									<img style="display:inline" src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
-                                    <div style="display:inline" data-translate="Fees_Commission">Commission</div>
-								</th>
-								<td>
-                                    <div data-translate="Fees_${tradingFeeMaker1}">${tradingFeeMaker1}</div>
-								</td>
-								<td>
-								</td>
-							</tr>
-						<tbody>
-						</tbody>
-					</table>
-				</div>
-	`
+    //                     const theContent = `
+	// 			<h4 data-translate="${titleTranslate}">${title}</h4>
+	// 			<div class="table-responsive">
+	// 				<table class="table">
+	// 					<thead>
+	// 					</thead>
+	// 						<tr>
+	// 							<th scope="row" >
+	// 								<img style="display:inline" src="${_virgocx_theme_url}/img/fees_commission.png" width="40" alt="commissions" />
+    //                                 <div style="display:inline" data-translate="Fees_Commission">Commission</div>
+	// 							</th>
+	// 							<td>
+    //                                 <div data-translate="Fees_${tradingFeeMaker1}">${tradingFeeMaker1}</div>
+	// 							</td>
+	// 							<td>
+	// 							</td>
+	// 						</tr>
+	// 					<tbody>
+	// 					</tbody>
+	// 				</table>
+	// 			</div>
+	// `
 
-                        tableWrapper.innerHTML = theContent;
-                        return tableWrapper;
-                    }
+    //                     tableWrapper.innerHTML = theContent;
+    //                     return tableWrapper;
+    //                 }
 
                     function renderCryptoPerEntryTable(data, title) {
                         const tableWrapper = document.createElement('div');
@@ -385,7 +457,7 @@ get_header();
 						</div>
 					</th>
 					<td class="fee-content">
-						${entry.fee === 0 ? 'Free' : entry.fee} ${entry.coinName}
+						${entry.fee === 0 ? '0' : entry.fee} ${entry.coinName}
 					</td>
 					<td>
 						${entry.minQty} ${entry.coinName}
@@ -695,7 +767,7 @@ get_header();
                             container.append(renderCryptoPerEntryTable(data.data.withdrawalCryptocurrency, 'Withdraw Cryptocurrency'));
                         }
 
-                        container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
+                        // container.append(renderTradingFee(data.data.tradingFee, 'Trading Fee'));
 
                         loadLangJson();
                     }
