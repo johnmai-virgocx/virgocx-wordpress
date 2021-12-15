@@ -742,7 +742,7 @@
             var url = window.location.href;
             if(url.indexOf('affiliate_id')>=0 && url.indexOf('offer_id')>=0 ){
                 var affIdIndexStartingPoint = url.indexOf('&affiliate_id')+14;
-                var affIdIndexEnds = url.length;
+                var affIdIndexEnds = affIdIndexStartingPoint+4;
                 var offerIdIndexStartingPoint = url.indexOf('offer_id')+9;
                 var offerIdIndexEnds = url.indexOf('&affiliate_id');
                 var offerId = url.slice(offerIdIndexStartingPoint,offerIdIndexEnds);
