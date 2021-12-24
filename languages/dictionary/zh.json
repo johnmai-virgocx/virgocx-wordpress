@@ -651,6 +651,7 @@
 	"NFT_CantFind": "找不到心仪品牌？",
 	"NFT_ContactUs": "联系我们",
 	"NFT_Trending": "系列收藏",
+	"NFT_Follow":"关注我们：",
 	
 	"NFT_Find": "",
 	"NFT_Comma": "使用我们的经纪服务",
@@ -684,6 +685,18 @@
 	"NFT_SellNote2": "我们的策展人将检查 NFT 以确定其资格和价值。",
 	"NFT_SellNote3": "一旦确定，我们的客户经理将为您提供报价。",
 	"NFT_SellNote4": "在报价获得批准后，我们​​将收取您的 NFT，并将资金发送到您的银行账户。",
+
+	
+	"NFT_OurCommissionFee": "费率标准",
+	"NFT_NoGasFees":"无转账手续费",
+	"NFT_GasFees":"转账手续费",
+	"NFT_CommissionDes1":"价值超过5ETH的交易",
+	"NFT_CommissionDes2":"价值超过1ETH的交易",
+	"NFT_CommissionDes3":"价值低于1ETH的交易",
+	"NFT_Commission1":"包含所有从我们市场购买NFT的费用",
+	"NFT_Commission2":"包含所有向我们出售NFT的费用",
+	"NFT_ContactInfo":"请联系我们获取更多信息",
+
 
 	"NFT_GetStarted": "开始操作",
 	"NFT_FAQ": "常见问题",

@@ -635,6 +635,7 @@
 	"NFT_CantFind": "Can’t find what you are looking for?",
 	"NFT_ContactUs": "Contact Us",
 	"NFT_Trending": "Trending Collections",
+	"NFT_Follow":"Follow Us Today：",
 	
 	"NFT_Find": "Find",
 	"NFT_Comma": ",",
@@ -667,6 +668,17 @@
 	"NFT_SellNote3": "Once determined, our account manager will provide you with an offer.",
 	"NFT_SellNote4": "Upon approval of the offer, we will take possession of your NFT in exchange for funds to be sent to your bank account.",
 	
+	
+	"NFT_OurCommissionFee": "Our Commission Fee",
+	"NFT_NoGasFees":"No Gas Fees",
+	"NFT_GasFees":"Gas Fees",
+	"NFT_CommissionDes1":"for all transactions over 5 Eth",
+	"NFT_CommissionDes2":"for all transactions over 1 Eth",
+	"NFT_CommissionDes3":"for all transactions under 1 Eth",
+	"NFT_Commission1":"All inclusive pricing to buy from our marketplace",
+	"NFT_Commission2":"All inclusive pricing to sell to us directly",
+	"NFT_ContactInfo":"Contact us for more information",
+
 	"NFT_GetStarted": "Get Started",
 	"NFT_FAQ": "FAQ",
 	"NFT_Q1": "What are NFTs (Non Fungible Tokens)？",

@@ -31,6 +31,11 @@ get_header('otc');
         <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
           NFT</button>
       </div>
+      <div class="follow">
+        <span  class="followUs"  data-translate="NFT_Follow">Follow Us Today：</span>
+        <a href="https://twitter.com/VirgoNFT"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-twitter.png" alt=""></a>
+        <a href="https://medium.com/@VirgoCX_NFT"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-mail.png" alt=""></a>
+      </div>
     </div>
 
     <img class="banner-image" src="<?= get_template_directory_uri() ?>/img/nft/Banner_Desktop.svg" alt="">
@@ -175,6 +180,55 @@ get_header('otc');
     </div>
     <div class="getstart-btn scroll-to-sign-up" data-translate="NFT_GetStarted">Get Started</div>
   </section>
+
+
+  <div class="middle-block-commission">
+    <div class="background-img">
+      <img src="<?= get_template_directory_uri() ?>/img/nft/bg-left.png" alt="images not found">
+      <img src="<?= get_template_directory_uri() ?>/img/nft/bg-right.png" alt="images not found">
+    </div>
+    <div class="commission-title" data-translate="NFT_OurCommissionFee">Our Commission Fee</div>
+    <div class="commission-container">
+      <div class="commission-fee">
+        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo1.png" alt="">
+        <div class="commission-percentage">2%</div>
+        <div class="commission-plus">+</div>
+        <div class="commission-gas-fee" data-translate="NFT_NoGasFees">No Gas Fees</div>
+        <div class="commission-gas-for" data-translate="NFT_CommissionDes1">for all transactions over 5 Eth</div>
+      </div>
+      <div class="commission-fee">
+        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo2.png" alt="">
+        <div class="commission-percentage">2%</div>
+        <div class="commission-plus">+</div>
+        <div class="commission-gas-fee" data-translate="NFT_GasFees">Gas Fees</div>
+        <div class="commission-gas-for" data-translate="NFT_CommissionDes2">for all transactions over 1 Eth</div>
+      </div>
+      <div class="commission-fee">
+        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo3.png" alt="">
+        <div class="commission-percentage">5%</div>
+        <div class="commission-plus">+</div>
+        <div class="commission-gas-fee" data-translate="NFT_GasFees">Gas Fees</div>
+        <div class="commission-gas-for" data-translate="NFT_CommissionDes3">for all transactions under 1 Eth</div>
+      </div>
+    </div>
+    <div class="commission-container">
+      <div class="commission-container-left">
+        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/star.png" alt="">
+        <span data-translate="NFT_Commission1" >All inclusive pricing to buy from our marketplace</span>
+      </div>
+      <div class="commission-container-left">
+        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/star.png" alt="">
+        <span data-translate="NFT_Commission2">All inclusive pricing to sell to us directly</span>
+      </div>
+    </div>
+    <div class="contact-info" data-translate="NFT_ContactInfo">
+      Contact us for more information
+    </div>
+
+    <div class="contact-btn scroll-to-sign-up" data-translate="NFT_ContactUs"></div>
+    
+  </div>
+
 
 
   <section class="faq" aria-label="Question Accordions">
@@ -403,6 +457,25 @@ get_header('otc');
 
   color: #05004D;
 }
+.banner-container .follow{
+  width: 263px;
+  height: 19px;
+  margin-top: 60px;
+
+}
+.banner-container .followUs{
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+.banner-container .socialicon{
+  margin-right:18px;
+}
 
 .slider-container {
   position: relative;
@@ -448,6 +521,7 @@ get_header('otc');
   justify-content: space-around;
 }
 
+
 .middle-block .left {
   font-style: normal;
   font-weight: bold;
@@ -483,6 +557,160 @@ get_header('otc');
   /* FFFFFF */
 
   color: #FFFFFF;
+}
+
+.middle-block-commission {
+  width: 100%;
+  background: #05004D;
+  padding-bottom:67px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+.middle-block-commission .background-img{
+  width: 100%;
+  height: 1px;
+  position: absolute;
+}
+
+.middle-block-commission .background-img img:nth-child(1){
+  width:214px;
+  height:370px;
+  position: absolute;
+  left: 0;
+  bottom: -371px
+}
+
+.middle-block-commission .background-img img:nth-child(2){
+  width:278px;
+  height:557px;
+  position: absolute;
+  right: 0;
+  top: -329px
+}
+
+.middle-block-commission .commission-title{
+
+  padding-top:65px;
+  padding-bottom:32px;
+  width:100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #C7BA9A;
+}
+
+.middle-block-commission .commission-container {
+  padding-top:32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-block-commission .commission-fee{
+  margin-left:26px;
+  margin-right:26px;
+  width: 288px;
+  height: 283px;
+  text-align: center;
+
+  border: 1px solid #C7BA9A;
+  box-sizing: border-box;
+  border-radius: 24px;
+
+}
+.middle-block-commission .commission-logo{
+  margin-top:-23px;
+}
+.middle-block-commission .commission-percentage{
+
+  margin-top:22px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 50px;
+  color: #C7BA9A;
+}
+
+.middle-block-commission .commission-plus{
+  margin-top:19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  color: #C7BA9A;
+}
+
+.middle-block-commission .commission-gas-fee{
+  margin-top:2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #C7BA9A;
+}
+.middle-block-commission .commission-gas-for{
+  margin-top:20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.middle-block-commission .commission-staricon{
+  margin-top:-10px;
+  margin-right:20px;
+}
+.middle-block-commission .commission-container-left{
+  margin-right:56px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.middle-block-commission .contact-info{
+  margin-top:64px;
+  width: 100%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+}
+
+.middle-block-commission .contact-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  line-height: 46px;
+  margin: 20px auto;
+
+  border: 2px solid #C7BA9A;
+  box-sizing: border-box;
+  border-radius: 25px;
+
+  color: #C7BA9A;
+
+}
+.middle-block-commission .contact-btn:hover{
+  cursor:pointer;
 }
 
 .works-container {}
@@ -1107,6 +1335,12 @@ get_header('otc');
     justify-content: space-around;
   }
 
+
+  .banner-container .follow{
+    width: 100%;
+    margin-top:26px;
+  }
+
   .banner-container .action .buy {
     width: 160px;
     height: 50px;
@@ -1240,7 +1474,52 @@ get_header('otc');
 
     color: #FFFFFF;
   }
+  .middle-block-commission {
+    width: 100%;
+    height: auto;
+    background: #05004D;
+    padding-bottom:67px;
+    display: block;
+    align-items: center;
 
+  }
+  .middle-block-commission .background-img {
+    display:none;
+  }
+  .middle-block-commission .commission-container {
+    padding-top:0px;
+    width: 100%;
+    display: block;
+  }
+  .middle-block-commission .commission-fee{
+    margin: 0 auto;
+    margin-top:64px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+
+    /* OTC Glold */
+    color: #C7BA9A;
+  }
+
+  .middle-block-commission .commission-logo{
+    margin-top:-47px;
+  }
+  .middle-block-commission .commission-percentage{
+    margin-top:2px;
+  }
+  .middle-block-commission .commission-container-left{
+    width:323px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .middle-block-commission .commission-staricon{
+    margin: 0 auto;
+    margin-top:40px;
+    display:block;
+  }
   .works-container {}
 
   .works-container h3 {
