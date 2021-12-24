@@ -213,11 +213,11 @@ get_header('otc');
     </div>
     <div class="commission-container">
       <div class="commission-container-left">
-        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/star.png" alt="">
+        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/staricon.png" alt="">
         <span data-translate="NFT_Commission1" >All inclusive pricing to buy from our marketplace</span>
       </div>
       <div class="commission-container-left">
-        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/star.png" alt="">
+        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/staricon.png" alt="">
         <span data-translate="NFT_Commission2">All inclusive pricing to sell to us directly</span>
       </div>
     </div>
