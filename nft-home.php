@@ -33,8 +33,8 @@ get_header('otc');
       </div>
       <div class="follow">
         <span  class="followUs"  data-translate="NFT_Follow">Follow Us Today：</span>
-        <a href="https://twitter.com/VirgoNFT"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-twitter.png" alt=""></a>
-        <a href="https://medium.com/@VirgoCX_NFT"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-mail.png" alt=""></a>
+        <a href="https://twitter.com/VirgoNFT" target="_blank"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-twitter.png" alt=""></a>
+        <a href="https://medium.com/@VirgoCX_NFT" target="_blank"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-mail.png" alt=""></a>
       </div>
     </div>
 
@@ -668,7 +668,8 @@ get_header('otc');
   margin-right:20px;
 }
 .middle-block-commission .commission-container-left{
-  margin-right:56px;
+  margin-right:32px;
+  margin-left:32px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
