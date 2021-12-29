@@ -745,7 +745,7 @@ if ($totalNumber === 1): ?>
             </div>
             <div class="col-lg-7 col-md-12">
                 <div class="fingertips-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/app_display.png" alt="images not found"/>
+                    <img src="<?= get_template_directory_uri() ?>/img/app_display_new.png" alt="images not found"/>
                 </div>
             </div>
         </div>

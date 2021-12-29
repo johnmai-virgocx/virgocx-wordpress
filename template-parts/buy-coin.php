@@ -69,7 +69,7 @@ get_header();
 
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
-						<img src="<?= get_template_directory_uri() ?>/img/app_display.png" alt="images not found" width="100%"/>
+						<img src="<?= get_template_directory_uri() ?>/img/app_display_new.png" alt="images not found" width="100%"/>
 					</div>
 
 					<div class="col-lg-5 col-md-12">
@@ -99,7 +99,7 @@ get_header();
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-12">
-						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_coin_step.png" alt="images not found" width="100%"/>
+						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_coin_step_new.png" alt="images not found" width="100%"/>
 					</div>
 				</div><!-- end of row -->
 
