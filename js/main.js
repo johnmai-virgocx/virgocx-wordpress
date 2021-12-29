@@ -622,6 +622,11 @@
             //     'amp/cad': '/page#/advancedTrade/85',
             //     'ksm/cad': '/page#/advancedTrade/86',
             //     'lrc/cad': '/page#/advancedTrade/87',
+            //     'gala/cad': '/page#/advancedTrade/88',
+            //     'qnt/cad': '/page#/advancedTrade/89',
+            //     'omg/cad': '/page#/advancedTrade/90',
+            //     'mkr/cad': '/page#/advancedTrade/63',
+            //     'ust/cad': '/page#/advancedTrade/91',
             // }//testvirgocx
 
             const tradingMapping = {
@@ -664,6 +669,11 @@
                 'amp/cad': 'https://virgocx.ca/page#/advancedTrade/85',
                 'ksm/cad': 'https://virgocx.ca/page#/advancedTrade/86',
                 'lrc/cad': 'https://virgocx.ca/page#/advancedTrade/87',
+                'gala/cad': 'https://virgocx.ca/page#/advancedTrade/88',
+                'qnt/cad': 'https://virgocx.ca/page#/advancedTrade/89',
+                'mkr/cad': 'https://virgocx.ca/page#/advancedTrade/63',
+                'omg/cad': 'https://virgocx.ca/page#/advancedTrade/90',
+                'ust/cad': 'https://virgocx.ca/page#/advancedTrade/91',
             }//production
 
             let index = 1;
@@ -781,7 +791,7 @@
             var url = window.location.href;
             if(url.indexOf('affiliate_id')>=0 && url.indexOf('offer_id')>=0 ){
                 var affIdIndexStartingPoint = url.indexOf('&affiliate_id')+14;
-                var affIdIndexEnds = url.length;
+                var affIdIndexEnds = affIdIndexStartingPoint+4;
                 var offerIdIndexStartingPoint = url.indexOf('offer_id')+9;
                 var offerIdIndexEnds = url.indexOf('&affiliate_id');
                 var offerId = url.slice(offerIdIndexStartingPoint,offerIdIndexEnds);
