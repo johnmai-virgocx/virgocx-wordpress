@@ -15,9 +15,19 @@ $sortValue = 'up';
 $sortPriceValue = 'up';
 $sortDateValue = 'down';
 $keyword = '';
-$sql = 'where marketing = 1 
-AND trending_collections = 0';
 
+//获取整个数组
+$response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList'));
+$array=$response_data->data->nftList;
+$all_rows=array();
+foreach ($array as $elem){
+  if ($elem->trendingVirgocx == 1){
+    $all_rows[] = $elem;
+  }
+}
+// echo("<script>console.log('response_data: " . json_encode($all_rows) . "');</script>");
+
+//查看是否排序/搜索
 if (!empty($_REQUEST['current_page'])) {
   $currentPage = $_REQUEST['current_page'];
 }
@@ -35,40 +45,62 @@ if (!empty($_REQUEST['sortDateValue'])) {
 }
 if (!empty($_REQUEST['keyword'])) {
     $keyword = $_REQUEST['keyword'];
-    $sql .= " AND  title like'%" . $keyword . "%'";
+    // $sql .= " AND  title like'%" . $keyword . "%'";
+    $tmp=array_filter($all_rows, function($el) use ($keyword) {
+      return ( str_contains(strtolower($el->title), strtolower($keyword)) );
+    });
+    $all_rows=array_values($tmp);
 }
 if (!empty($_REQUEST['sortType'])) {
   $sortType = $_REQUEST['sortType'];
   if ($sortType == 'price') {
-    $sql .= " order by blockchain_value ";
+    usort($all_rows, function($a, $b) { 
+      return $a->blockChainValue > $b->blockChainValue ?1 : -1; 
+    }); 
   }
   if ($sortType == 'date') {
-    $sql .= " order by id  ";
+    usort($all_rows, function($a, $b) { 
+      return $a->id > $b->id ?1 : -1; 
+    }); 
   }
 }else{
-    $sql .= " order by id";
+  usort($all_rows, function($a, $b) { 
+    return $a->id > $b->id ? 1 : -1; 
+  }); 
 }
 if (!empty($_REQUEST['sortValue'])) {
   $sortValue = $_REQUEST['sortValue'];
   if ($sortValue == 'up') {
-    $sql .= " ";
+    ;
   }
   if ($sortValue == 'down') {
-    $sql .= " desc ";
+    $all_rows=array_reverse($all_rows);
   }
 }else{
-    $sql .= " desc ";
+  $all_rows=array_reverse($all_rows);
 }
-$rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
-$all_rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql, ARRAY_A);
+
+//分页，获取当前页面内容->$rows
 $total = count($all_rows);
 $pageTotal = ceil($total / $pageSize);
-
 if ($currentPage > $pageTotal) {
   $currentPage  = 1;
-  $rows = $wpdb->get_results("SELECT * FROM wp_virgocx_article " . $sql . " limit " . ($currentPage - 1) * $pageSize . ',' . $pageSize, ARRAY_A);
 }
-$trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
+
+$rows=array();
+for($i = 0; $i <$total-($currentPage - 1) * $pageSize &&$i <$pageSize; $i++) {
+  array_push($rows,$all_rows[($currentPage - 1) * $pageSize+$i]);
+}
+
+
+//下面的trending
+$trendingRows=array();
+foreach ($array as $rkey => $array){
+  if ($array->trendingVirgocx == 0){
+    $trendingRows[] = $array;
+  }
+}
+// $trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
 get_header('otc');
 ?>
 <div class="nft-market-container">
@@ -111,15 +143,15 @@ get_header('otc');
     <?php foreach ($rows as $row) { ?>
     <li>
 
-      <a href="<?php echo $row["detail_link"] ?>" target ="_blank">
+      <a href="<?php echo $row->detailLink ?>" target ="_blank">
         <div class="img-container">
 
-          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+          <img src="<?php echo $row->thumbnail; ?>" alt="">
         </div>
         <div class="content">
-          <p class="title"><?php echo $row["title"]; ?></p>
-          <p class="desc"><?php echo $row["author"]; ?></p>
-          <p class="value"><?php echo $row["blockchain_value"]; ?> <?php echo $row["blockchain"]; ?> </p>
+          <p class="title"><?php echo $row->title; ?></p>
+          <p class="desc"><?php echo $row->author; ?></p>
+          <p class="value"><?php echo $row->blockChainValue; ?> <?php echo $row->blockChain; ?> </p>
         </div>
       </a>
     </li>
@@ -156,13 +188,13 @@ get_header('otc');
                     <div class="owl-item ">
 
 
-                      <a class="pg-top" href="<?php echo $row["view_link"] ?>" target ="_blank">
+                      <a class="pg-top" href="<?php echo $row->viewLink ?>" target ="_blank">
                         <div class="img-container">
-                          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                          <img src="<?php echo $row->thumbnail; ?>" alt="">
                         </div>
 
                         <div class="content">
-                          <p class="title"><?php echo $row["title"]; ?></p>
+                          <p class="title"><?php echo $row->title; ?></p>
                         </div>
                       </a>
                     </div>

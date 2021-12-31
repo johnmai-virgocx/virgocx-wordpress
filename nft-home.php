@@ -8,9 +8,26 @@
  * @package Virgocx
  */
 
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_virgocx = 1', ARRAY_A);
+$response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList'));
+$array=$response_data->data->nftList;
+$rows=array();
+foreach ($array as $rkey => $array){
+  if ($array->trendingVirgocx == 1){
+    $rows[] = $array;
+  }
+}
+// echo("<script>console.log('response_data: " . json_encode($rows1) . "');</script>");
+// foreach (array_reverse($rows1) as $row){
+      // echo $row->detailLink . "\n";
+      // echo $row->thumbnail; 
+//   echo $row->title;
+// }
+
+// $rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_virgocx = 1', ARRAY_A);
+// echo("<script>console.log('php: " . json_encode($rows) . "');</script>");
 get_header('otc');
 ?>
+
 <div class="nft-home-container">
   <div class="banner-container">
     <div class="content">
@@ -85,13 +102,13 @@ get_header('otc');
                   <div class="owl-stage">
                     <?php foreach (array_reverse($rows) as $row) { ?>
                     <div class="owl-item card">
-                      <a class="pg-top" href="<?php echo $row["detail_link"] ?>" target ="_blank">
+                      <a class="pg-top" href="<?php echo $row->detailLink ?>" target ="_blank">
                         <div class="img-container">
-                          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
+                          <img src="<?php echo $row->thumbnail; ?>" alt="">
                         </div>
                         <div class="content">
-                          <p class="title"><?php echo $row["title"]; ?></p>
-                          <p class="desc" data-translate="<?php echo $row["description"]; ?>"></p>
+                          <p class="title"><?php echo $row->title; ?></p>
+                          <p class="desc" data-translate="<?php echo $row->description; ?>"></p>
                             <p class="value" > <span data-translate="NFT_ViewProfile">View Profile</span></p>
 
                         </div>
