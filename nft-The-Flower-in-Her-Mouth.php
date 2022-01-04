@@ -12,7 +12,7 @@ $response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nf
 $array=$response_data->data->nftList;
 $rows=array();
 foreach ($array as $rkey => $array){
-  if ($array->id == 11){
+  if ($array->id == 12){
     $rows[] = $array;
   }
 }
