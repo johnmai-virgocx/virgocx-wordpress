@@ -47,7 +47,7 @@ if (!empty($_REQUEST['keyword'])) {
     $keyword = $_REQUEST['keyword'];
     $tmp=array();
     foreach ($all_rows as $elem1){
-      if (strpos(strtolower($elem1->title), strtolower($keyword)) ){
+      if (strpos(strtolower(" ".$elem1->title), strtolower($keyword)) ){
         $tmp[] = $elem1;
       }
     }
