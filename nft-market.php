@@ -45,11 +45,13 @@ if (!empty($_REQUEST['sortDateValue'])) {
 }
 if (!empty($_REQUEST['keyword'])) {
     $keyword = $_REQUEST['keyword'];
-    // $sql .= " AND  title like'%" . $keyword . "%'";
-    $tmp=array_filter($all_rows, function($el) use ($keyword) {
-      return ( str_contains(strtolower($el->title), strtolower($keyword)) );
-    });
-    $all_rows=array_values($tmp);
+    $tmp=array();
+    foreach ($all_rows as $elem1){
+      if (str_contains(strtolower($elem1->title), strtolower($keyword)) ){
+        $tmp[] = $elem1;
+      }
+    }
+    $all_rows=$tmp;
 }
 if (!empty($_REQUEST['sortType'])) {
   $sortType = $_REQUEST['sortType'];
@@ -100,7 +102,6 @@ foreach ($array as $rkey => $array){
     $trendingRows[] = $array;
   }
 }
-// $trendingRows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_collections = 1', ARRAY_A);
 get_header('otc');
 ?>
 <div class="nft-market-container">
