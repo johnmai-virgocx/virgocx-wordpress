@@ -237,24 +237,6 @@ get_header('otc');
                                         <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
-                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDT Icon.svg"
-                                                        alt="images not found"
-                                                >
-                                            </div>
-                                            <div class="pg-text">
-                                                <div class="row">
-                                                    <span>USDT</span>
-                                                </div>
-                                                <div class="row">
-                                                    <span class="bold">USDT</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="owl-item ">
-                                        <a class="pg-top">
-                                            <div class="carousel-img">
-                                                <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/XLM Icon.svg"
                                                         alt="images not found"
                                                 >
@@ -525,7 +507,7 @@ get_header('otc');
                                             <p data-translate="OTC_landing_banner2_tag2_desc2">
                                                 Our OTC trade team will facilitate <span
                                                         class="blue">any trade requests</span> you will have for your
-                                                business. From trading like Bitcoin, Ethereum,
+                                                business. From trading Bitcoin, Ethereum,
                                                 and Litecoin, to hedging out risk by trading back into Tether (USDT).
                                             </p>
                                             <a class="round-btn-light mt-5" href="../en-otc-chatbroker/"

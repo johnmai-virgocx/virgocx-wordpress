@@ -135,9 +135,9 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     }
 
     .sliding-vertical span {
-        animation: topToBottom 10.5s linear infinite 0s;
-        -ms-animation: topToBottom 10.5s linear infinite 0s;
-        -webkit-animation: topToBottom 10.5s linear infinite 0s;
+        animation: topToBottom 8s linear infinite 0s;
+        -ms-animation: topToBottom 8s linear infinite 0s;
+        -webkit-animation: topToBottom 8s linear infinite 0s;
         opacity: 0;
         overflow: hidden;
         position: absolute;
@@ -157,11 +157,6 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
         -webkit-animation-delay: 5s;
     }
 
-    .sliding-vertical span:nth-child(4) {
-        animation-delay: 7.5s;
-        -ms-animation-delay: 7.5s;
-        -webkit-animation-delay: 7.5s;
-    }
 
     /*topToBottom Animation*/
     @-moz-keyframes topToBottom {
@@ -497,7 +492,7 @@ if ($totalNumber === 1): ?>
                                     <div class="sliding-vertical ">
 										<span data-translate="frontpage_Bitcoin">Bitcoin</span>
 										<span data-translate="frontpage_Ethereum">Ethereum</span>
-										<span data-translate="frontpage_USDT">USDT</span>
+										<!-- <span data-translate="frontpage_USDT">USDT</span> -->
 										<span data-translate="frontpage_Cryptocurrency">Cryptocurrency</span>
                                     </div>
                                 </div>
