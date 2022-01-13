@@ -237,6 +237,24 @@ get_header('otc');
                                         <a class="pg-top">
                                             <div class="carousel-img">
                                                 <img
+                                                        src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/USDT Icon.svg"
+                                                        alt="images not found"
+                                                >
+                                            </div>
+                                            <div class="pg-text">
+                                                <div class="row">
+                                                    <span>USDT</span>
+                                                </div>
+                                                <div class="row">
+                                                    <span class="bold">USDT</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="owl-item ">
+                                        <a class="pg-top">
+                                            <div class="carousel-img">
+                                                <img
                                                         src="<?= get_template_directory_uri() ?>/img/Landing_Page/Cryptocurrency Icon/XLM Icon.svg"
                                                         alt="images not found"
                                                 >
@@ -710,7 +728,7 @@ get_header('otc');
                     <div class="col-lg-6 col-md-12">
                         <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same-day, no-limit settlement </span>for
                             your USD and CAD trades. This also applies to
-                            your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+                            your Bitcoin, Ethereum, and any other cryptocurrency.</p>
                     </div>
                 </div>
             </div>

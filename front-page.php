@@ -596,10 +596,10 @@ if ($totalNumber === 1): ?>
                                  height="24"/>
                             <span class="fint">FINTRAC Regulated MSB # M19955733</span>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                        <span>Assets Protected by <img src="<?= get_template_directory_uri() ?>/img/ledger.svg"
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <span>Assets Protected by <img src="/img/ledger.svg"
                                                        alt="images not found" class="img-fluid"/></span>
-                        </div>
+                        </div> -->
                     </div>
                     <!--
                                                 </div>
@@ -755,23 +755,23 @@ if ($totalNumber === 1): ?>
             </p>
         </div>
         <div class="row align-items-center">
-			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a class="col-md-4">
+			<a href="/en-security" class="col-md-4">
+            <!-- <a  class="col-md-4"> -->
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/personal_secure.gif"
                          alt="images not found"/>
                     <p><span data-translate="frontpage_header3_tag1"/></p>
                 </div>
             </a>
-			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a class="col-md-4">
+			<a href="/en-security" class="col-md-4">
+            <!-- <a class="col-md-4"> -->
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/fund_secure.gif" alt="images not found"/>
                     <p><span data-translate="frontpage_header3_tag2"/></p>
                 </div>
             </a>
-			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a class="col-md-4">
+			<a href="/en-security" class="col-md-4">
+            <!-- <a class="col-md-4"> -->
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/system_secure.gif"
                          alt="images not found"/>
