@@ -542,8 +542,8 @@ if ($totalNumber === 1): ?>
                                         <input id="base-input" type="number" name="youammout"
                                                placeholder="Enter Quantity" data-translate="frontpage_Quantity"/>
                                         <!-- Use This! #just fix width+height IMG  -->
-                                        <div class="mm-dropdown">
-                                            <div class="conversion-selectioin d-flex" style="width:112px">
+                                        <div class="mm-dropdown" style="width:130px">
+                                            <div class="conversion-selectioin d-flex" style="width:130px">
                                                 <div id="crypto-selected" class="selected-option" data-value="BTC">
                                                     <img src="<?= get_template_directory_uri() ?>/img/BTC.png"/> BTC
                                                 </div>
@@ -563,7 +563,7 @@ if ($totalNumber === 1): ?>
                                         <input id="quote-input" type="number" name="amount"
                                                placeholder="Enter Total Amount" data-translate="frontpage_Amount"/>
                                         <!-- Use This! #just fix width+height IMG  -->
-                                        <div class="mm-dropdown2">
+                                        <div class="mm-dropdown2" style="width:130px">
                                             <div class="conversion-selectioin d-flex">
                                                 <div id="fiat-selected" class="selected-option" data-value="BTC">
                                                     <img src="<?= get_template_directory_uri() ?>/img/cad.svg"/>
