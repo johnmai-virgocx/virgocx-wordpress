@@ -647,7 +647,6 @@
                 'zrx/cad': 'https://virgocx.ca/page#/advancedTrade/100',
                 'dydx/cad': 'https://virgocx.ca/page#/advancedTrade/101',
                 'storj/cad': 'https://virgocx.ca/page#/advancedTrade/102',
-
             }//production
 
             let index = 1;
