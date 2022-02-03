@@ -95,7 +95,7 @@
 
 	"footer_col3": "Products",
 	"Trade": "Trade",
-	"OTC": "OTC",
+	"OTC": "Wealth",
 	"Foreign Exchange": "Foreign Exchange ",
 	"footer_col4": "Resources",
 	"Prices": "Prices",
@@ -356,6 +356,33 @@
 	"ForeignExchange_header4_desc2": ") to explore more and to set up your trading account.",
 	"ForeignExchange_or": "or",
 	"ForeignExchange_header4_btn": "Reach Out Now",
+
+	
+	"Buy_header1_desc_otc": "VirgoCX Wealth provides competitive rates for USDT transactions over $30,000.",
+	"Buy_header2_desc1_otc": "Contact our OTC account managers to get registered through personal assistance.",
+	"Buy_header3_otc": "2. Set Up Virtually",
+	"Buy_header3_desc_otc": "Enjoy trading through OTC Direct or through Chat Broker.",
+	"Buy_header4_1_otc": "3. Fund and Buy ",
+	"Buy_header4_desc1_otc": "Fund your account through wire transfer. Once your account is funded, you will be able to buy ",
+	"Buy_header4_desc2_otc": ".",
+	"Buy_header5_otc": "Why VirgoCX Wealth?",
+	"Buy_header5_tag3_otc": "Low Fees",
+	"Buy_header5_tag5_desc_otc": "Fund your account through wire transfer to our banks in Canada and the United States.",
+	"Buy_header5_tag6_otc": "Personalized Service",
+	"Buy_header5_tag6_desc_otc": "Our staff are available 24/7 to facilitate any request for your business or trading needs.",
+
+	"Sell_header1_desc_otc": "VirgoCX Wealth provides competitive rates for USDT transactions over $30,000.",
+	"Sell_header2_desc1_otc": "Contact our OTC account managers to get registered through personal assistance.",
+	"Sell_header3_otc": "2. Set Up Virtually",
+	"Sell_header3_desc_otc": "Enjoy trading through OTC Direct or through Chat Broker.",
+	"Sell_header4_1_otc": "3. Fund and Buy ",
+	"Sell_header4_desc1_otc": "Fund your account through wire transfer. Once your account is funded, you will be able to buy ",
+	"Sell_header4_desc2_otc": ".",
+	"Sell_header5_otc": "Why VirgoCX Wealth?",
+	"Sell_header5_tag3_otc": "Low Fees",
+	"Sell_header5_tag5_desc_otc": "Fund your account through wire transfer to our banks in Canada and the United States.",
+	"Sell_header5_tag6_otc": "Personalized Service",
+	"Sell_header5_tag6_desc_otc": "Our staff are available 24/7 to facilitate any request for your business or trading needs.",
 
 	"Buy_header1_1": "How to Buy ",
 	"Buy_header1_2": " in Canada",
@@ -757,6 +784,6 @@
 	"NFT_12":"Hashmasks is a living digital art collectible created by over 70 artists globally. It is a collection of 16,384 unique digital portraits. Brought to you by Suum Cuique Labs from Zug, Switzerland.By holding the artwork, you accumulate the NCT token on a daily basis, which allows you to choose a name for your portrait on the Ethereum blockchain. This is your opportunity to be among the first to participate in one of the largest collaborative NFT art projects in existence.",
 	"NFT_11":"Art Blocks Curated is an Ethereum-based NFT project that generates original digital artwork pieces on the blockchain via an algorithm. It is the most strictly curated offering in the Art Blocks product suite. Submissions are made by individual artists or collaborations and approved by the curation board before they go live. These highly innovative releases by renowned artists reflect astounding beauty and innovation both artistically and technically."
 
-
+	
 
 }
