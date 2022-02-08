@@ -34,11 +34,15 @@ get_header('otc');
 					<div class="col-lg-5 col-md-12">
 						<div class="row">
 							<?php if(strlen($args['name']) > 12 && $args['name']!=="Axie Infinity" ) : ?>	
-								<h1><span data-translate="Sell_header1_1"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+								<h1><span data-translate="Sell_header1_1_otc"></span><br /><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2_otc"></span></h1>
 							<?php else : ?>
-								<h1><span data-translate="Sell_header1_1"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2"></span></h1>
+								<h1><span data-translate="Sell_header1_1_otc"></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Sell_header1_2_otc"></span></h1>
 							<?php endif; ?>
-							<p class="tag-line" data-translate="Sell_header1_desc_otc"></p>
+							<p class="tag-line">
+								<span data-translate="Sell_header1_1_desc_otc"></span>
+								<span data-translate="<?= $args['ticker'] ?>"></span>
+								<span data-translate="Sell_header1_2_desc_otc"></span>
+							</p>
 
 							<div class="hero-signup get-started-content">
 								<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
@@ -57,7 +61,7 @@ get_header('otc');
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<h2 data-translate="Sell_header2"></h2>
+						<h2 data-translate="Sell_header2_otc"></h2>
 						<p>
 							<span class="span-gold" data-translate="Sell_header2_desc1_otc"></span></p>
 					</div>
@@ -65,7 +69,7 @@ get_header('otc');
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
 						<h2 data-translate="Sell_header3_otc"></h2>
-						<p class="span-gold" data-translate="Sell_header3_desc"></p>
+						<p class="span-gold" data-translate="Sell_header3_desc_otc"></p>
 					</div>
 					<div class="bg-img">
 						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_coin_step_otc.png" alt="images not found" width="100%"/>
@@ -100,8 +104,8 @@ get_header('otc');
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/otc_icons/compliant_and_regulated.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3 data-translate="Sell_header5_tag1"></h3>
-								<p data-translate="Sell_header5_tag1_desc"></p>
+								<h3 data-translate="Sell_header5_tag1_otc"></h3>
+								<p data-translate="Sell_header5_tag1_desc_otc"></p>
 							</div>
 						</div>
 					</div>
@@ -112,8 +116,8 @@ get_header('otc');
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/otc_icons/safe_and_secure.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3 data-translate="Sell_header5_tag2"></h3>
-								<p data-translate="Sell_header5_tag2_desc"></p>
+								<h3 data-translate="Sell_header5_tag2_otc"></h3>
+								<p data-translate="Sell_header5_tag2_desc_otc"></p>
 							</div>
 						</div>
 					</div>
@@ -125,7 +129,7 @@ get_header('otc');
 							</div>
 							<div class="rmain2-link-one-para">
 								<h3 data-translate="Sell_header5_tag3_otc"></h3>
-								<p data-translate="Sell_header5_tag3_desc"></p>
+								<p data-translate="Sell_header5_tag3_desc_otc"></p>
 							</div>
 						</div>
 					</div>
@@ -138,8 +142,8 @@ get_header('otc');
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/otc_icons/best_price.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3 data-translate="Sell_header5_tag4"></h3>
-								<p data-translate="Sell_header5_tag4_desc"></p>
+								<h3 data-translate="Sell_header5_tag4_otc"></h3>
+								<p data-translate="Sell_header5_tag4_desc_otc"></p>
 							</div>
 						</div>
 					</div>
@@ -150,7 +154,7 @@ get_header('otc');
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/otc_icons/easy_and_convenient.png" alt="images not found">
 							</div>
 							<div class="rmain2-link-one-para">
-								<h3 data-translate="Sell_header5_tag5"></h3>
+								<h3 data-translate="Sell_header5_tag5_otc"></h3>
 								<p data-translate="Sell_header5_tag5_desc_otc"></p>
 							</div>
 						</div>
@@ -173,9 +177,9 @@ get_header('otc');
 
 		<section class="getStart-area">
 			<div class="container custom-container">
-				<h3 data-translate="Sell_header6"></h3>
+				<h3 data-translate="Sell_header6_otc"></h3>
 				<div class="getStart-content get-started-content">
-										<span data-translate="Sell_email"></span>
+										<!-- <span data-translate="Sell_email"></span> -->
 										<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
 				</div>
 			</div>
@@ -254,13 +258,13 @@ get_header('otc');
 	color: #C7BA9A;
 }
 .hero-signup input[type=submit]{
-    background: #C7BA9A;
+    background: #C7BA9A !important;
 }
 .getStart-content form input[type=submit]{
 	background: #C7BA9A;
 }
-.span-gold{
-	color: #C7BA9A;
+.getStart-area{
+	background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
 }
 @media screen and (min-width: 900px) {
 	.bg-img{
@@ -270,10 +274,20 @@ get_header('otc');
 		width:403px;
 		height:271px;
 	}
+	.span-gold{
+		width:650px;
+		word-wrap: normal;
+		color: #C7BA9A;
+	}
 }
 @media screen and (max-width: 900px) {
 	.bg-img{
 		width:100%;
+	}
+	.span-gold{
+		width:100%;
+		word-wrap: normal;
+		color: #C7BA9A;
 	}
 }
 </style>
