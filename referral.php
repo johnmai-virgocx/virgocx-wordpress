@@ -83,7 +83,7 @@ Xtra Small Screen - Small Mobile
 									</div>
 									<div class="rmain-ro-work">
 										<h3>How It Works</h3>
-										<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello" data-content="Trades with a nominal value of $30,000 CAD and over are taken off our retail platform and are traded at the VirgoCX OTC desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
+										<div class="popper-trigger" data-placement="bottom" data-toggle="popover" data-translate="hello" data-content="Trades with a nominal value of $30,000 and over are taken off our retail platform and are traded at the VirgoCX Wealth desk. Trades are processed like this to reduce price volatility and slippage at the benefit of our clients.">
 												<span></span>
 												What is OTC ?
 										</div>
@@ -108,7 +108,7 @@ Xtra Small Screen - Small Mobile
 													</div>
 													<div class="rmrob-one-content">
 														<p>Make the Introduction</p>
-														<p>Our OTC account manager will reply immediately and help your referral get set up.</p>
+														<p>Our Wealth account manager will reply immediately and help your referral get set up.</p>
 													</div>
 												</div>
 											</div>
