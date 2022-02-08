@@ -574,8 +574,8 @@ $sortDateValue = 'down';
 $keyword = '';
 
 //获取整个数组
-$response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList')); //testvirgocx
-// $response_data = json_decode(file_get_contents('https://virgocx.ca/Nft/getList')); //production virgocx
+// $response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList')); //testvirgocx
+$response_data = json_decode(file_get_contents('https://virgocx.ca/Nft/getList')); //production virgocx
 $array=$response_data->data->nftList;
 $all_rows=array();
 foreach ($array as $elem){
