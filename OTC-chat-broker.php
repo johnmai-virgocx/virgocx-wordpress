@@ -302,7 +302,7 @@ get_header('otc');
                     </div>
                     <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_chat_faq1_1">We can offer a fast track enrollment on OTC if you have already onboarded on the retail
+                            <p data-translate="OTC_chat_faq1_1">We can offer a fast track enrollment with Chat Broker if you have already onboarded on the retail
                                 platform.</p>
                         </div>
                     </div>
