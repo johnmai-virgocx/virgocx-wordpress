@@ -253,7 +253,7 @@ get_header('otc');
                                 <li data-translate="OTC_direct_how_4_3">Access large liquidity limit orders and RFQ
                                     orders on our platform.
                                 </li>
-                                <li >Connect with our API for automated trading strategy. 
+                                <li data-translate="OTC_direct_how_4_4">Connect with our API for automated trading strategy. 
                                 </li>
                             </ul>
                             </p>
