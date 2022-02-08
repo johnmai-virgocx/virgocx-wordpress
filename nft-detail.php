@@ -401,8 +401,8 @@ $pos = strpos($actual_uri, "?id=")+4;
 $nft_id= base64_decode(substr($actual_uri,$pos));
 
 // 关联数组
-// $response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList')); //testvirgocx
-$response_data = json_decode(file_get_contents('https://virgocx.ca/Nft/getList')); //production virgocx
+$response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList')); //testvirgocx
+// $response_data = json_decode(file_get_contents('https://virgocx.ca/Nft/getList')); //production virgocx
 $array=$response_data->data->nftList;
 $rows=array();
 foreach ($array as $rkey => $array){
