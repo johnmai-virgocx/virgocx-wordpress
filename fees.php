@@ -558,7 +558,7 @@ get_header();
                         const rowContent = entries.reduce(function (acc, entry) {
                             let maximum = entry.maximum;
                             if (typeof maximum !== 'string') {
-                                maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
+                                maximum = maximum >= 999999 ? 'Unlimited' : '$' + entry.maximum;
                             }
 
                             let feeContent = 'Free';
@@ -624,7 +624,7 @@ get_header();
                             let maximum = entry.maximum;
                             let minimum = entry.minimum;
                             if (typeof maximum !== 'string') {
-                                maximum = maximum === 99999 ? 'Unlimited' : '$' + entry.maximum;
+                                maximum = maximum >= 999999 ? 'Unlimited' : '$' + entry.maximum;
                             }
 
                             if (typeof entry.minimum !== 'string') {

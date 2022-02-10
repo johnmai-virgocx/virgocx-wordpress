@@ -135,9 +135,9 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
     }
 
     .sliding-vertical span {
-        animation: topToBottom 10.5s linear infinite 0s;
-        -ms-animation: topToBottom 10.5s linear infinite 0s;
-        -webkit-animation: topToBottom 10.5s linear infinite 0s;
+        animation: topToBottom 8s linear infinite 0s;
+        -ms-animation: topToBottom 8s linear infinite 0s;
+        -webkit-animation: topToBottom 8s linear infinite 0s;
         opacity: 0;
         overflow: hidden;
         position: absolute;
@@ -157,11 +157,6 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
         -webkit-animation-delay: 5s;
     }
 
-    .sliding-vertical span:nth-child(4) {
-        animation-delay: 7.5s;
-        -ms-animation-delay: 7.5s;
-        -webkit-animation-delay: 7.5s;
-    }
 
     /*topToBottom Animation*/
     @-moz-keyframes topToBottom {
@@ -497,7 +492,7 @@ if ($totalNumber === 1): ?>
                                     <div class="sliding-vertical ">
 										<span data-translate="frontpage_Bitcoin">Bitcoin</span>
 										<span data-translate="frontpage_Ethereum">Ethereum</span>
-										<span data-translate="frontpage_USDT">USDT</span>
+										<!-- <span data-translate="frontpage_USDT">USDT</span> -->
 										<span data-translate="frontpage_Cryptocurrency">Cryptocurrency</span>
                                     </div>
                                 </div>
@@ -547,8 +542,8 @@ if ($totalNumber === 1): ?>
                                         <input id="base-input" type="number" name="youammout"
                                                placeholder="Enter Quantity" data-translate="frontpage_Quantity"/>
                                         <!-- Use This! #just fix width+height IMG  -->
-                                        <div class="mm-dropdown">
-                                            <div class="conversion-selectioin d-flex" style="width:112px">
+                                        <div class="mm-dropdown" style="width:130px">
+                                            <div class="conversion-selectioin d-flex" style="width:130px">
                                                 <div id="crypto-selected" class="selected-option" data-value="BTC">
                                                     <img src="<?= get_template_directory_uri() ?>/img/BTC.png"/> BTC
                                                 </div>
@@ -568,7 +563,7 @@ if ($totalNumber === 1): ?>
                                         <input id="quote-input" type="number" name="amount"
                                                placeholder="Enter Total Amount" data-translate="frontpage_Amount"/>
                                         <!-- Use This! #just fix width+height IMG  -->
-                                        <div class="mm-dropdown2">
+                                        <div class="mm-dropdown2" style="width:130px">
                                             <div class="conversion-selectioin d-flex">
                                                 <div id="fiat-selected" class="selected-option" data-value="BTC">
                                                     <img src="<?= get_template_directory_uri() ?>/img/cad.svg"/>
@@ -601,10 +596,10 @@ if ($totalNumber === 1): ?>
                                  height="24"/>
                             <span class="fint">FINTRAC Regulated MSB # M19955733</span>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                        <span>Assets Protected by <img src="<?= get_template_directory_uri() ?>/img/ledger.svg"
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <span>Assets Protected by <img src="/img/ledger.svg"
                                                        alt="images not found" class="img-fluid"/></span>
-                        </div>
+                        </div> -->
                     </div>
                     <!--
                                                 </div>
@@ -730,7 +725,7 @@ if ($totalNumber === 1): ?>
                                         class="play_store_download" data-value="play_store"
                                         src="<?= get_template_directory_uri() ?>/img/app_buttons/play_store.png"
                                         alt="images not found"/></a>
-                            <a href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/11/07/eae76c4f3c4145f6b9681f44aa5c92e9.apk"><img
+                            <a href="https://virgocx.s3.ca-central-1.amazonaws.com/prod/2021/12/30/861643257275474bbae73bc7a7cabe12.apk"><img
                                         class="android_download" data-value="android"
                                         src="<?= get_template_directory_uri() ?>/img/app_buttons/android.png"
                                         alt="images not found"/></a>
@@ -745,7 +740,7 @@ if ($totalNumber === 1): ?>
             </div>
             <div class="col-lg-7 col-md-12">
                 <div class="fingertips-img">
-                    <img src="<?= get_template_directory_uri() ?>/img/app_display.png" alt="images not found"/>
+                    <img src="<?= get_template_directory_uri() ?>/img/app_display_new.png" alt="images not found"/>
                 </div>
             </div>
         </div>
@@ -760,23 +755,23 @@ if ($totalNumber === 1): ?>
             </p>
         </div>
         <div class="row align-items-center">
-			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a class="col-md-4">
+			<a href="/en-security" class="col-md-4">
+            <!-- <a  class="col-md-4"> -->
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/personal_secure.gif"
                          alt="images not found"/>
                     <p><span data-translate="frontpage_header3_tag1"/></p>
                 </div>
             </a>
-			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a class="col-md-4">
+			<a href="/en-security" class="col-md-4">
+            <!-- <a class="col-md-4"> -->
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/fund_secure.gif" alt="images not found"/>
                     <p><span data-translate="frontpage_header3_tag2"/></p>
                 </div>
             </a>
-			<!-- <a href="/en-security" class="col-md-4"> -->
-            <a class="col-md-4">
+			<a href="/en-security" class="col-md-4">
+            <!-- <a class="col-md-4"> -->
                 <div class="security-item">
                     <img src="<?= get_template_directory_uri() ?>/img/homepage/system_secure.gif"
                          alt="images not found"/>

@@ -1,238 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1429.634" height="176.416" viewBox="0 0 1429.634 176.416">
-  <defs>
-    <clipPath id="clip-path">
-      <path id="Clip_2" data-name="Clip 2" d="M0,0H21.746V29.994H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-2">
-      <path id="Clip_2-2" data-name="Clip 2" d="M0,0H12.886V17.774H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-3">
-      <path id="Clip_2-3" data-name="Clip 2" d="M0,0H10.47V14.442H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-4">
-      <path id="Clip_2-4" data-name="Clip 2" d="M0,0H17.719V24.44H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-5">
-      <path id="Clip_2-5" data-name="Clip 2" d="M0,0H15.3V21.107H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-7">
-      <path id="Clip_2-7" data-name="Clip 2" d="M0,0H16.079V14.752H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-    <clipPath id="clip-path-9">
-      <path id="Clip_2-9" data-name="Clip 2" d="M0,0H13.679V12.55H0Z" transform="translate(0 0)" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="bg2" transform="translate(0.635 0.153)" opacity="0.3">
-    <g id="编组_15" data-name="编组 15" transform="translate(1100 110.142)">
-      <path id="Stroke_13" data-name="Stroke 13" d="M22.553,29.936a15.741,15.741,0,1,1,7.383-21A15.74,15.74,0,0,1,22.553,29.936Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.156"/>
-      <g id="编组" transform="translate(18.573 4.431) rotate(45)">
-        <path id="Fill_1" data-name="Fill 1" d="M0,10.012l5.867-1.84V0Z" transform="translate(0.024 0)" fill="#7965e6"/>
-        <path id="Fill_2" data-name="Fill 2" d="M0,8.172l5.867,1.84L0,0Z" transform="translate(5.891 0)" fill="#7965e6"/>
-        <path id="Fill_3" data-name="Fill 3" d="M5.891,8.917V3.236L0,0Z" transform="translate(0 10.85)" fill="#7965e6"/>
-        <path id="Fill_4" data-name="Fill 4" d="M0,3.236V8.917L5.867,0Z" transform="translate(5.891 10.85)" fill="#7965e6"/>
-        <path id="Fill_5" data-name="Fill 5" d="M0,2.748,5.867,5.611V0Z" transform="translate(0 7.265)" fill="#7965e6"/>
-        <path id="Fill_6" data-name="Fill 6" d="M0,5.611,5.867,2.748,0,0Z" transform="translate(5.891 7.265)" fill="#7965e6"/>
-      </g>
-    </g>
-    <g id="编组_15备份_2" data-name="编组 15备份 2" transform="translate(0 85.068)">
-      <path id="Stroke_13-2" data-name="Stroke 13" d="M28.191,37.42A19.676,19.676,0,1,1,37.42,11.17,19.675,19.675,0,0,1,28.191,37.42Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.156"/>
-      <g id="编组-2" data-name="编组" transform="translate(23.216 5.538) rotate(45)">
-        <path id="Fill_1-2" data-name="Fill 1" d="M0,12.515l7.334-2.3V0Z" transform="translate(0.03 0)" fill="#7965e6"/>
-        <path id="Fill_2-2" data-name="Fill 2" d="M0,10.216l7.334,2.3L0,0Z" transform="translate(7.363 0)" fill="#7965e6"/>
-        <path id="Fill_3-2" data-name="Fill 3" d="M7.363,11.147v-7.1L0,0Z" transform="translate(0 13.563)" fill="#7965e6"/>
-        <path id="Fill_4-2" data-name="Fill 4" d="M0,4.045v7.1L7.334,0Z" transform="translate(7.363 13.563)" fill="#7965e6"/>
-        <path id="Fill_5-2" data-name="Fill 5" d="M0,3.434,7.334,7.013V0Z" transform="translate(0 9.081)" fill="#7965e6"/>
-        <path id="Fill_6-2" data-name="Fill 6" d="M0,7.013,7.334,3.434,0,0Z" transform="translate(7.363 9.081)" fill="#7965e6"/>
-      </g>
-    </g>
-    <g id="编组_15备份" data-name="编组 15备份" transform="translate(1319.892 137.737) rotate(-49)">
-      <path id="Stroke_13-3" data-name="Stroke 13" d="M13.743,18.242a9.592,9.592,0,1,1,4.5-12.8A9.592,9.592,0,0,1,13.743,18.242Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.156"/>
-      <g id="编组-3" data-name="编组" transform="translate(11.318 2.7) rotate(45)">
-        <path id="Fill_1-3" data-name="Fill 1" d="M0,6.1,3.575,4.98V0Z" transform="translate(0.014 0)" fill="#7965e6"/>
-        <path id="Fill_2-3" data-name="Fill 2" d="M0,4.98,3.575,6.1,0,0Z" transform="translate(3.59 0)" fill="#7965e6"/>
-        <path id="Fill_3-3" data-name="Fill 3" d="M3.59,5.434V1.972L0,0Z" transform="translate(0 6.612)" fill="#7965e6"/>
-        <path id="Fill_4-3" data-name="Fill 4" d="M0,1.972V5.434L3.575,0Z" transform="translate(3.59 6.612)" fill="#7965e6"/>
-        <path id="Fill_5-3" data-name="Fill 5" d="M0,1.674,3.575,3.419V0Z" transform="translate(0 4.427)" fill="#7965e6"/>
-        <path id="Fill_6-3" data-name="Fill 6" d="M0,3.419,3.575,1.674,0,0Z" transform="translate(3.59 4.427)" fill="#7965e6"/>
-      </g>
-    </g>
-    <g id="编组_16" data-name="编组 16" transform="translate(1100 50.5)">
-      <path id="Fill_45" data-name="Fill 45" d="M17.873,31.5A15.816,15.816,0,1,1,31.5,13.76,15.817,15.817,0,0,1,17.873,31.5" transform="translate(0)" fill="#7965e6"/>
-      <path id="Fill_47" data-name="Fill 47" d="M0,11.013,2,9.658A6.969,6.969,0,0,1,.82,6.035l1.65-.424A6.375,6.375,0,0,0,3.55,9.042c.953,1.408,2.41,1.808,3.54,1.043,1.091-.738,1.24-1.967.842-3.837C7.355,3.689,7.422,1.824,9.146.656a3.925,3.925,0,0,1,5.217.833l2-1.357L17.2,1.361l-1.922,1.3A6.412,6.412,0,0,1,16.327,5.71l-1.644.39a5.786,5.786,0,0,0-1.018-2.954c-1.033-1.527-2.334-1.483-3.127-.947-1.03.7-1.05,1.781-.6,3.987.549,2.607.217,4.335-1.548,5.53a4.164,4.164,0,0,1-5.489-.849l-2.062,1.4Z" transform="translate(7.215 9.603)" fill="#fff"/>
-    </g>
-    <g id="编组_16备份" data-name="编组 16备份" transform="translate(279 117)">
-      <path id="Fill_45-2" data-name="Fill 45" d="M17.873,31.5A15.816,15.816,0,1,1,31.5,13.76,15.817,15.817,0,0,1,17.873,31.5" transform="translate(0)" fill="#7965e6"/>
-      <path id="Fill_47-2" data-name="Fill 47" d="M0,11.013,2,9.658A6.969,6.969,0,0,1,.82,6.035l1.65-.424A6.375,6.375,0,0,0,3.55,9.042c.953,1.408,2.41,1.808,3.54,1.043,1.091-.738,1.24-1.967.842-3.837C7.355,3.689,7.422,1.824,9.146.656a3.925,3.925,0,0,1,5.217.833l2-1.357L17.2,1.361l-1.922,1.3A6.412,6.412,0,0,1,16.327,5.71l-1.644.39a5.786,5.786,0,0,0-1.018-2.954c-1.033-1.527-2.334-1.483-3.127-.947-1.03.7-1.05,1.781-.6,3.987.549,2.607.217,4.335-1.548,5.53a4.164,4.164,0,0,1-5.489-.849l-2.062,1.4Z" transform="translate(7.215 9.603)" fill="#fff"/>
-    </g>
-    <g id="编组_17" data-name="编组 17" transform="translate(1192 36.5)">
-      <path id="Stroke_25" data-name="Stroke 25" d="M47.232,9.916A26.543,26.543,0,1,1,9.915,5.855,26.541,26.541,0,0,1,47.232,9.916Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.114"/>
-      <g id="编组-4" data-name="编组" transform="matrix(0.454, -0.891, 0.891, 0.454, 8.123, 29.972)">
-        <path id="Clip_2-10" data-name="Clip 2" d="M0,0H21.746V29.994H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-5" data-name="编组" clip-path="url(#clip-path)">
-          <path id="Fill_1-4" data-name="Fill 1" d="M8.6,30H5.73V25.329H.167l.168-3H2.361c.029,0,.058,0,.087,0A1.115,1.115,0,0,0,3.541,21V8.5c0-.71-.391-1-1.35-1H0v-3H5.732V0H8.6V4.5h1.854V0h2.866V4.5c1.951.227,6.532,1.122,6.912,4.5a4.53,4.53,0,0,1-2.36,4.833,6.131,6.131,0,0,1,2,1.02,4.6,4.6,0,0,1,1.878,3.813c0,4.486-2.536,6.666-7.753,6.666h-.675v4.663H10.451V25.33H8.6v4.664Zm0-13.83v6h3.2c2.937,0,4.555-1.242,4.555-3.5,0-2.051-2.923-2.5-4.049-2.5Zm0-8.5v5.5h3.71a2.814,2.814,0,0,0,2.529-3c0-1.658-1.418-2.5-4.214-2.5Z" transform="translate(0 0)" fill="#7965e6"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_17备份_2" data-name="编组 17备份 2" transform="matrix(0.259, 0.966, -0.966, 0.259, 255.536, 37.876)">
-      <path id="Stroke_25-2" data-name="Stroke 25" d="M27.989,5.876A15.729,15.729,0,1,1,5.875,3.47,15.728,15.728,0,0,1,27.989,5.876Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.114"/>
-      <g id="编组-6" data-name="编组" transform="matrix(0.454, -0.891, 0.891, 0.454, 4.813, 17.761)">
-        <path id="Clip_2-11" data-name="Clip 2" d="M0,0H12.886V17.774H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-7" data-name="编组" clip-path="url(#clip-path-2)">
-          <path id="Fill_1-5" data-name="Fill 1" d="M5.094,17.775H3.4V15.009H.1l.1-1.777H1.4l.055,0a.629.629,0,0,0,.128-.013.66.66,0,0,0,.516-.778V5.036c0-.421-.232-.592-.8-.592H0V2.666H3.4V0h1.7V2.666h1.1V0h1.7V2.666c1.156.135,3.871.667,4.1,2.667a2.683,2.683,0,0,1-1.4,2.864h0a3.1,3.1,0,0,1,2.292,2.864c0,2.658-1.5,3.95-4.595,3.95h-.4v2.763h-1.7V15.01h-1.1v2.764Zm0-8.2v3.555h1.9c1.741,0,2.7-.736,2.7-2.073,0-1.216-1.732-1.482-2.4-1.482Zm0-5.036V7.8h2.2a1.667,1.667,0,0,0,1.5-1.777c0-.984-.84-1.482-2.5-1.482Z" transform="translate(0 0)" fill="#7965e6"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_17备份_5" data-name="编组 17备份 5" transform="matrix(0.259, 0.966, -0.966, 0.259, 513.854, 77.808)">
-      <path id="Stroke_25-3" data-name="Stroke 25" d="M22.741,4.774A12.78,12.78,0,1,1,4.774,2.819,12.779,12.779,0,0,1,22.741,4.774Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.114"/>
-      <g id="编组-8" data-name="编组" transform="matrix(0.454, -0.891, 0.891, 0.454, 3.911, 14.431)">
-        <path id="Clip_2-12" data-name="Clip 2" d="M0,0H10.47V14.442H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-9" data-name="编组" clip-path="url(#clip-path-3)">
-          <path id="Fill_1-6" data-name="Fill 1" d="M4.139,14.442H2.759V12.2H.08l.082-1.444h.975l.042,0a.537.537,0,0,0,.526-.644V4.091c0-.341-.188-.481-.65-.481H0V2.166H2.759V0H4.14V2.166h.892V0H6.412V2.166c.939.109,3.145.541,3.328,2.166A2.183,2.183,0,0,1,8.6,6.66a2.5,2.5,0,0,1,1.866,2.327c0,2.16-1.221,3.209-3.733,3.209H6.412V14.44H5.032V12.2H4.139v2.246Zm0-6.659v2.888H5.682c1.414,0,2.193-.6,2.193-1.685,0-.987-1.407-1.2-1.949-1.2Zm0-4.092V6.339H5.926A1.354,1.354,0,0,0,7.143,4.894c0-.8-.683-1.2-2.029-1.2Z" transform="translate(0 0)" fill="#7965e6"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_17备份_3" data-name="编组 17备份 3" transform="matrix(0.259, 0.966, -0.966, 0.259, 60.021, 8.771)">
-      <path id="Stroke_25-4" data-name="Stroke 25" d="M38.485,8.08A21.627,21.627,0,1,1,8.079,4.771,21.626,21.626,0,0,1,38.485,8.08Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.114"/>
-      <g id="编组-10" data-name="编组" transform="matrix(0.454, -0.891, 0.891, 0.454, 6.618, 24.421)">
-        <path id="Clip_2-13" data-name="Clip 2" d="M0,0H17.719V24.44H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-11" data-name="编组" clip-path="url(#clip-path-4)">
-          <path id="Fill_1-7" data-name="Fill 1" d="M7,24.441H4.669v-3.8H.136l.138-2.444h1.65l.069,0a.955.955,0,0,0,.183-.018.911.911,0,0,0,.71-1.071V6.925c0-.579-.319-.815-1.1-.815H0V3.666H4.67V0H7.006V3.666h1.51V0h2.335V3.666c1.59.185,5.323.915,5.632,3.667a3.689,3.689,0,0,1-1.922,3.938,4.2,4.2,0,0,1,3.158,3.937c0,3.655-2.067,5.432-6.318,5.432h-.55v3.8H8.516v-3.8H7v3.8Zm0-11.269v4.888h2.61c2.393,0,3.712-1.013,3.712-2.851,0-1.671-2.382-2.037-3.3-2.037Zm0-6.925v4.481h3.022a2.292,2.292,0,0,0,2.061-2.443c0-1.352-1.155-2.038-3.434-2.038Z" transform="translate(0 0)" fill="#7965e6"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_17备份" data-name="编组 17备份" transform="translate(999.615 93.275) rotate(73)">
-      <path id="Stroke_25-5" data-name="Stroke 25" d="M33.237,6.978A18.678,18.678,0,1,1,6.977,4.12,18.677,18.677,0,0,1,33.237,6.978Z" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-12" data-name="编组" transform="matrix(0.454, -0.891, 0.891, 0.454, 5.716, 21.091)">
-        <path id="Clip_2-14" data-name="Clip 2" d="M0,0H15.3V21.107H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-13" data-name="编组" clip-path="url(#clip-path-5)">
-          <path id="Fill_1-8" data-name="Fill 1" d="M6.049,21.108H4.033V17.824H.118l.119-2.111H1.661l.059,0a.8.8,0,0,0,.158-.016.784.784,0,0,0,.613-.924V5.981c0-.5-.275-.7-.949-.7H0V3.166H4.034V0H6.051V3.166h1.3V0H9.372V3.166c1.373.159,4.6.789,4.864,3.166a3.187,3.187,0,0,1-1.661,3.4,3.637,3.637,0,0,1,2.727,3.4c0,3.156-1.785,4.691-5.457,4.691H9.372v3.281H7.354V17.824H6.049v3.282Zm0-9.733V15.6H8.3c2.067,0,3.2-.874,3.2-2.462,0-1.443-2.057-1.759-2.849-1.759Zm0-5.981v3.87h2.61a1.981,1.981,0,0,0,1.78-2.11c0-1.168-1-1.76-2.965-1.76Z" transform="translate(0 0)" fill="#fff"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_17备份_4" data-name="编组 17备份 4" transform="translate(1303 129.615) rotate(73)">
-      <path id="Stroke_25-6" data-name="Stroke 25" d="M33.237,6.978A18.678,18.678,0,1,1,6.977,4.12,18.677,18.677,0,0,1,33.237,6.978Z" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-14" data-name="编组" transform="matrix(0.454, -0.891, 0.891, 0.454, 5.716, 21.091)">
-        <path id="Clip_2-15" data-name="Clip 2" d="M0,0H15.3V21.107H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-15" data-name="编组" clip-path="url(#clip-path-5)">
-          <path id="Fill_1-9" data-name="Fill 1" d="M6.049,21.108H4.033V17.824H.118l.119-2.111H1.661l.059,0a.8.8,0,0,0,.158-.016.784.784,0,0,0,.613-.924V5.981c0-.5-.275-.7-.949-.7H0V3.166H4.034V0H6.051V3.166h1.3V0H9.372V3.166c1.373.159,4.6.789,4.864,3.166a3.187,3.187,0,0,1-1.661,3.4,3.637,3.637,0,0,1,2.727,3.4c0,3.156-1.785,4.691-5.457,4.691H9.372v3.281H7.354V17.824H6.049v3.282Zm0-9.733V15.6H8.3c2.067,0,3.2-.874,3.2-2.462,0-1.443-2.057-1.759-2.849-1.759Zm0-5.981v3.87h2.61a1.981,1.981,0,0,0,1.78-2.11c0-1.168-1-1.76-2.965-1.76Z" transform="translate(0 0)" fill="#fff"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_16-2" data-name="编组 16" transform="translate(145 61.068)">
-      <path id="Fill_45-3" data-name="Fill 45" d="M17.873,31.5A15.816,15.816,0,1,1,31.5,13.76,15.817,15.817,0,0,1,17.873,31.5" transform="translate(0)" fill="#7965e6"/>
-      <path id="Fill_47-3" data-name="Fill 47" d="M0,11.013,2,9.658A6.969,6.969,0,0,1,.82,6.035l1.65-.424A6.375,6.375,0,0,0,3.55,9.042c.953,1.408,2.41,1.808,3.54,1.043,1.091-.738,1.24-1.967.842-3.837C7.355,3.689,7.422,1.824,9.146.656a3.925,3.925,0,0,1,5.217.833l2-1.357L17.2,1.361l-1.922,1.3A6.412,6.412,0,0,1,16.327,5.71l-1.644.39a5.786,5.786,0,0,0-1.018-2.954c-1.033-1.527-2.334-1.483-3.127-.947-1.03.7-1.05,1.781-.6,3.987.549,2.607.217,4.335-1.548,5.53a4.164,4.164,0,0,1-5.489-.849l-2.062,1.4Z" transform="translate(7.215 9.603)" fill="#fff"/>
-    </g>
-    <g id="编组_16备份_4" data-name="编组 16备份 4" transform="translate(608.39 107.5)">
-      <path id="Fill_45-4" data-name="Fill 45" d="M17.873,31.5A15.816,15.816,0,1,1,31.5,13.76,15.817,15.817,0,0,1,17.873,31.5" transform="translate(0)" fill="#7965e6"/>
-      <path id="Fill_47-4" data-name="Fill 47" d="M0,11.013,2,9.658A6.969,6.969,0,0,1,.82,6.035l1.65-.424A6.375,6.375,0,0,0,3.55,9.042c.953,1.408,2.41,1.808,3.54,1.043,1.091-.738,1.24-1.967.842-3.837C7.355,3.689,7.422,1.824,9.146.656a3.925,3.925,0,0,1,5.217.833l2-1.357L17.2,1.361l-1.922,1.3A6.412,6.412,0,0,1,16.327,5.71l-1.644.39a5.786,5.786,0,0,0-1.018-2.954c-1.033-1.527-2.334-1.483-3.127-.947-1.03.7-1.05,1.781-.6,3.987.549,2.607.217,4.335-1.548,5.53a4.164,4.164,0,0,1-5.489-.849l-2.062,1.4Z" transform="translate(7.215 9.603)" fill="#fff"/>
-    </g>
-    <g id="编组_16备份_2" data-name="编组 16备份 2" transform="translate(557.463 134.328) rotate(-49)">
-      <path id="Fill_45-5" data-name="Fill 45" d="M17.873,31.5A15.816,15.816,0,1,1,31.5,13.76,15.817,15.817,0,0,1,17.873,31.5" transform="translate(0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.114"/>
-      <path id="Fill_47-5" data-name="Fill 47" d="M0,11.013,2,9.658A6.969,6.969,0,0,1,.82,6.035l1.65-.424A6.375,6.375,0,0,0,3.55,9.042c.953,1.408,2.41,1.808,3.54,1.043,1.091-.738,1.24-1.967.842-3.837C7.355,3.689,7.422,1.824,9.146.656a3.925,3.925,0,0,1,5.217.833l2-1.357L17.2,1.361l-1.922,1.3A6.412,6.412,0,0,1,16.327,5.71l-1.644.39a5.786,5.786,0,0,0-1.018-2.954c-1.033-1.527-2.334-1.483-3.127-.947-1.03.7-1.05,1.781-.6,3.987.549,2.607.217,4.335-1.548,5.53a4.164,4.164,0,0,1-5.489-.849l-2.062,1.4Z" transform="translate(7.215 9.603)" fill="#7965e6"/>
-    </g>
-    <g id="编组_16备份_3" data-name="编组 16备份 3" transform="translate(1153.444 110.061) rotate(-49)">
-      <path id="Fill_45-6" data-name="Fill 45" d="M17.873,31.5A15.816,15.816,0,1,1,31.5,13.76,15.817,15.817,0,0,1,17.873,31.5" transform="translate(0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.114"/>
-      <path id="Fill_47-6" data-name="Fill 47" d="M0,11.013,2,9.658A6.969,6.969,0,0,1,.82,6.035l1.65-.424A6.375,6.375,0,0,0,3.55,9.042c.953,1.408,2.41,1.808,3.54,1.043,1.091-.738,1.24-1.967.842-3.837C7.355,3.689,7.422,1.824,9.146.656a3.925,3.925,0,0,1,5.217.833l2-1.357L17.2,1.361l-1.922,1.3A6.412,6.412,0,0,1,16.327,5.71l-1.644.39a5.786,5.786,0,0,0-1.018-2.954c-1.033-1.527-2.334-1.483-3.127-.947-1.03.7-1.05,1.781-.6,3.987.549,2.607.217,4.335-1.548,5.53a4.164,4.164,0,0,1-5.489-.849l-2.062,1.4Z" transform="translate(7.215 9.603)" fill="#7965e6"/>
-    </g>
-    <g id="编组_18" data-name="编组 18" transform="translate(80.5 93.068)">
-      <path id="Fill_41" data-name="Fill 41" d="M3.362,25.565a15.816,15.816,0,1,1,22.2,2.705,15.818,15.818,0,0,1-22.2-2.705" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-16" data-name="编组" transform="matrix(0.438, -0.899, 0.899, 0.438, 3.234, 16.899)">
-        <path id="Fill_1-10" data-name="Fill 1" d="M0,10.946,6.414,8.935V0Z" transform="translate(0.026 0)" fill="#fff"/>
-        <path id="Fill_2-4" data-name="Fill 2" d="M0,8.935l6.415,2.011L0,0Z" transform="translate(6.44 0)" fill="#fff"/>
-        <path id="Fill_3-4" data-name="Fill 3" d="M6.44,9.749V3.538L0,0Z" transform="translate(0 11.862)" fill="#fff"/>
-        <path id="Fill_4-4" data-name="Fill 4" d="M0,3.538V9.749L6.415,0Z" transform="translate(6.44 11.862)" fill="#fff"/>
-        <path id="Fill_5-4" data-name="Fill 5" d="M0,3l6.415,3.13V0Z" transform="translate(0 7.942)" fill="#fff"/>
-        <path id="Fill_6-4" data-name="Fill 6" d="M0,6.134,6.415,3,0,0Z" transform="translate(6.44 7.942)" fill="#fff"/>
-      </g>
-    </g>
-    <g id="编组_18备份" data-name="编组 18备份" transform="translate(225.556 89.068)">
-      <path id="Fill_41-2" data-name="Fill 41" d="M3.362,25.565a15.816,15.816,0,1,1,22.2,2.705,15.818,15.818,0,0,1-22.2-2.705" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-17" data-name="编组" transform="matrix(0.438, -0.899, 0.899, 0.438, 3.234, 16.899)">
-        <path id="Fill_1-11" data-name="Fill 1" d="M0,10.946,6.414,8.935V0Z" transform="translate(0.026 0)" fill="#fff"/>
-        <path id="Fill_2-5" data-name="Fill 2" d="M0,8.935l6.415,2.011L0,0Z" transform="translate(6.44 0)" fill="#fff"/>
-        <path id="Fill_3-5" data-name="Fill 3" d="M6.44,9.749V3.538L0,0Z" transform="translate(0 11.862)" fill="#fff"/>
-        <path id="Fill_4-5" data-name="Fill 4" d="M0,3.538V9.749L6.415,0Z" transform="translate(6.44 11.862)" fill="#fff"/>
-        <path id="Fill_5-5" data-name="Fill 5" d="M0,3l6.415,3.13V0Z" transform="translate(0 7.942)" fill="#fff"/>
-        <path id="Fill_6-5" data-name="Fill 6" d="M0,6.134,6.415,3,0,0Z" transform="translate(6.44 7.942)" fill="#fff"/>
-      </g>
-    </g>
-    <g id="编组_18备份_2" data-name="编组 18备份 2" transform="matrix(-0.174, 0.985, -0.985, -0.174, 478.535, 123.771)">
-      <path id="Fill_41-3" data-name="Fill 41" d="M3.362,25.565a15.816,15.816,0,1,1,22.2,2.705,15.818,15.818,0,0,1-22.2-2.705" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-18" data-name="编组" transform="matrix(0.438, -0.899, 0.899, 0.438, 3.234, 16.899)">
-        <path id="Fill_1-12" data-name="Fill 1" d="M0,10.946,6.414,8.935V0Z" transform="translate(0.026 0)" fill="#fff"/>
-        <path id="Fill_2-6" data-name="Fill 2" d="M0,8.935l6.415,2.011L0,0Z" transform="translate(6.44 0)" fill="#fff"/>
-        <path id="Fill_3-6" data-name="Fill 3" d="M6.44,9.749V3.538L0,0Z" transform="translate(0 11.862)" fill="#fff"/>
-        <path id="Fill_4-6" data-name="Fill 4" d="M0,3.538V9.749L6.415,0Z" transform="translate(6.44 11.862)" fill="#fff"/>
-        <path id="Fill_5-6" data-name="Fill 5" d="M0,3l6.415,3.13V0Z" transform="translate(0 7.942)" fill="#fff"/>
-        <path id="Fill_6-6" data-name="Fill 6" d="M0,6.134,6.415,3,0,0Z" transform="translate(6.44 7.942)" fill="#fff"/>
-      </g>
-    </g>
-    <g id="编组_18备份_3" data-name="编组 18备份 3" transform="translate(839.787 96.706) rotate(25)">
-      <path id="Fill_41-4" data-name="Fill 41" d="M2.049,15.579a9.638,9.638,0,1,1,13.53,1.649,9.639,9.639,0,0,1-13.53-1.649" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-19" data-name="编组" transform="matrix(0.438, -0.899, 0.899, 0.438, 1.971, 10.298)">
-        <path id="Fill_1-13" data-name="Fill 1" d="M0,6.67,3.909,5.445V0Z" transform="translate(0.016 0)" fill="#fff"/>
-        <path id="Fill_2-7" data-name="Fill 2" d="M0,5.445,3.909,6.67,0,0Z" transform="translate(3.924 0)" fill="#fff"/>
-        <path id="Fill_3-7" data-name="Fill 3" d="M3.924,5.941V2.156L0,0Z" transform="translate(0 7.228)" fill="#fff"/>
-        <path id="Fill_4-7" data-name="Fill 4" d="M0,2.156V5.941L3.909,0Z" transform="translate(3.924 7.228)" fill="#fff"/>
-        <path id="Fill_5-7" data-name="Fill 5" d="M0,1.83,3.909,3.738V0Z" transform="translate(0 4.84)" fill="#fff"/>
-        <path id="Fill_6-7" data-name="Fill 6" d="M0,3.738,3.909,1.83,0,0Z" transform="translate(3.924 4.84)" fill="#fff"/>
-      </g>
-    </g>
-    <path id="Stroke_61" data-name="Stroke 61" d="M0,14H10.37V0H0Z" transform="translate(67.074 65)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.351"/>
-    <path id="Stroke_61备份_3" data-name="Stroke 61备份 3" d="M0,12.5H9.259V0H0Z" transform="translate(314.5 72.5)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.351"/>
-    <path id="Fill_37" data-name="Fill 37" d="M1.488,11.314a7,7,0,1,1,9.826,1.2,7,7,0,0,1-9.826-1.2" transform="translate(198 70.068)" fill="#7965e6"/>
-    <path id="Fill_37备份_6" data-name="Fill 37备份 6" d="M1.488,11.314a7,7,0,1,1,9.826,1.2,7,7,0,0,1-9.826-1.2" transform="translate(499.98 121.068)" fill="#7965e6"/>
-    <path id="Fill_37备份_8" data-name="Fill 37备份 8" d="M1.382,10.506a6.5,6.5,0,1,1,9.124,1.113,6.5,6.5,0,0,1-9.124-1.113" transform="translate(711.318 139.75)" fill="#7965e6"/>
-    <path id="Fill_37备份_4" data-name="Fill 37备份 4" d="M1.116,8.485a5.25,5.25,0,1,1,7.37.9,5.249,5.249,0,0,1-7.37-.9" transform="translate(336.5 129.5)" fill="#7965e6"/>
-    <path id="Fill_37备份_3" data-name="Fill 37备份 3" d="M1.488,11.314a7,7,0,1,1,9.826,1.2,7,7,0,0,1-9.826-1.2" transform="translate(33 129.75)" fill="#7965e6"/>
-    <path id="Fill_37备份_5" data-name="Fill 37备份 5" d="M1.913,14.546a9,9,0,1,1,12.633,1.541A9,9,0,0,1,1.913,14.546" transform="translate(1411 122.5)" fill="#7965e6"/>
-    <path id="Fill_37备份_7" data-name="Fill 37备份 7" d="M1.222,9.293a5.75,5.75,0,1,1,8.071.985,5.748,5.748,0,0,1-8.071-.985" transform="translate(1399.5 48.5)" fill="#7965e6"/>
-    <g id="编组_19" data-name="编组 19" transform="translate(1303 9)">
-      <path id="Stroke_19" data-name="Stroke 19" d="M26.6,4.363a15.726,15.726,0,1,1-22.233.49A15.724,15.724,0,0,1,26.6,4.363Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="0.743"/>
-      <g id="编组-20" data-name="编组" transform="matrix(0.309, -0.951, 0.951, 0.309, 5.931, 21.422)">
-        <path id="Clip_2-16" data-name="Clip 2" d="M0,0H16.079V14.752H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-21" data-name="编组" clip-path="url(#clip-path-7)">
-          <path id="Fill_1-14" data-name="Fill 1" d="M9.664,14.752H6.444V8.471C2.71,8.3,0,7.562,0,6.711s2.71-1.59,6.444-1.759V3H1.922V0H14.185V3H9.664V4.955c3.717.17,6.415.909,6.415,1.757S13.381,8.3,9.664,8.469v6.282ZM6.44,5.347c-2.979.137-5.059.625-5.059,1.187S3.462,7.586,6.44,7.721l.191.008c.209.01.414.015.588.019h.017l.167,0h.048l.14,0h.895l.141,0h.051l.18,0h.006c.151,0,.277-.007.4-.012H9.28l.176-.007h.022l.186-.008c2.962-.137,5.03-.624,5.03-1.185s-2.07-1.049-5.033-1.183v1.81c-.533.029-1.08.043-1.625.043-.529,0-1.066-.014-1.6-.041Z" transform="translate(0 0)" fill="#7965e6"/>
-        </g>
-      </g>
-    </g>
-    <g id="编组_19备份" data-name="编组 19备份" transform="translate(182 120.75)">
-      <path id="Stroke_19-2" data-name="Stroke 19" d="M26.6,4.363a15.726,15.726,0,1,1-22.233.49A15.724,15.724,0,0,1,26.6,4.363Z" transform="translate(0 0)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="0.743"/>
-      <g id="编组-22" data-name="编组" transform="matrix(0.309, -0.951, 0.951, 0.309, 5.931, 21.422)">
-        <path id="Clip_2-17" data-name="Clip 2" d="M0,0H16.079V14.752H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-23" data-name="编组" clip-path="url(#clip-path-7)">
-          <path id="Fill_1-15" data-name="Fill 1" d="M9.664,14.752H6.444V8.471C2.71,8.3,0,7.562,0,6.711s2.71-1.59,6.444-1.759V3H1.922V0H14.185V3H9.664V4.955c3.717.17,6.415.909,6.415,1.757S13.381,8.3,9.664,8.469v6.282ZM6.44,5.347c-2.979.137-5.059.625-5.059,1.187S3.462,7.586,6.44,7.721l.191.008c.209.01.414.015.588.019h.017l.167,0h.048l.14,0h.895l.141,0h.051l.18,0h.006c.151,0,.277-.007.4-.012H9.28l.176-.007h.022l.186-.008c2.962-.137,5.03-.624,5.03-1.185s-2.07-1.049-5.033-1.183v1.81c-.533.029-1.08.043-1.625.043-.529,0-1.066-.014-1.6-.041Z" transform="translate(0 0)" fill="#7965e6"/>
-        </g>
-      </g>
-    </g>
-    <path id="Fill_37-2" data-name="Fill 37" d="M1.488,11.314a7,7,0,1,1,9.826,1.2,7,7,0,0,1-9.826-1.2" transform="translate(1146.722 46)" fill="#7965e6"/>
-    <path id="Fill_37备份_2" data-name="Fill 37备份 2" d="M.957,7.273a4.5,4.5,0,1,1,6.317.771A4.5,4.5,0,0,1,.957,7.273" transform="translate(1040.5 88.775)" fill="#7965e6"/>
-    <path id="Fill_37备份" data-name="Fill 37备份" d="M.957,7.273a4.5,4.5,0,1,1,6.317.771A4.5,4.5,0,0,1,.957,7.273" transform="translate(1388.5 85.91)" fill="#7965e6"/>
-    <g id="编组_18-2" data-name="编组 18" transform="translate(1271 55)">
-      <path id="Fill_41-5" data-name="Fill 41" d="M3.362,25.565a15.816,15.816,0,1,1,22.2,2.705,15.818,15.818,0,0,1-22.2-2.705" transform="translate(0 0)" fill="#7965e6"/>
-      <g id="编组-24" data-name="编组" transform="matrix(0.438, -0.899, 0.899, 0.438, 3.234, 16.899)">
-        <path id="Fill_1-16" data-name="Fill 1" d="M0,10.946,6.414,8.935V0Z" transform="translate(0.026 0)" fill="#fff"/>
-        <path id="Fill_2-8" data-name="Fill 2" d="M0,8.935l6.415,2.011L0,0Z" transform="translate(6.44 0)" fill="#fff"/>
-        <path id="Fill_3-8" data-name="Fill 3" d="M6.44,9.749V3.538L0,0Z" transform="translate(0 11.862)" fill="#fff"/>
-        <path id="Fill_4-8" data-name="Fill 4" d="M0,3.538V9.749L6.415,0Z" transform="translate(6.44 11.862)" fill="#fff"/>
-        <path id="Fill_5-8" data-name="Fill 5" d="M0,3l6.415,3.13V0Z" transform="translate(0 7.942)" fill="#fff"/>
-        <path id="Fill_6-8" data-name="Fill 6" d="M0,6.134,6.415,3,0,0Z" transform="translate(6.44 7.942)" fill="#fff"/>
-      </g>
-    </g>
-    <path id="Stroke_61-2" data-name="Stroke 61" d="M0,13.5H14.444V0H0Z" transform="translate(1074 47)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.351"/>
-    <path id="Stroke_61备份_4" data-name="Stroke 61备份 4" d="M0,13.5H14.444V0H0Z" transform="translate(878 126)" fill="none" stroke="#7965e6" stroke-miterlimit="10" stroke-width="1.351"/>
-    <path id="Stroke_61备份" data-name="Stroke 61备份" d="M0,19.5H14.444V0H0Z" transform="translate(1211.778 117)" fill="#7965e6"/>
-    <path id="Stroke_61备份_5" data-name="Stroke 61备份 5" d="M0,13.5H10V0H0Z" transform="translate(776 125.865)" fill="#7965e6"/>
-    <path id="Stroke_61备份_2" data-name="Stroke 61备份 2" d="M0,19.5H14.444V0H0Z" transform="translate(383 110.142)" fill="#7965e6"/>
-    <g id="编组-25" data-name="编组" transform="translate(1179.5)">
-      <path id="Fill_34" data-name="Fill 34" d="M23.834,11.917A11.917,11.917,0,1,1,11.917,0,11.916,11.916,0,0,1,23.834,11.917" transform="translate(0.787 0.217)" fill="#7965e6"/>
-      <path id="Stroke_36" data-name="Stroke 36" d="M23.834,11.917A11.917,11.917,0,1,1,11.917,0,11.916,11.916,0,0,1,23.834,11.917Z" transform="translate(0.787 0.217)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.74"/>
-      <g id="编组-26" data-name="编组" transform="matrix(0.899, -0.438, 0.438, 0.899, 3.942, 10.084)">
-        <path id="Clip_2-18" data-name="Clip 2" d="M0,0H13.679V12.55H0Z" transform="translate(0 0)" fill="none"/>
-        <g id="编组-27" data-name="编组" clip-path="url(#clip-path-9)">
-          <path id="Fill_1-17" data-name="Fill 1" d="M8.222,12.55H5.482V7.206C2.306,7.063,0,6.433,0,5.71s2.305-1.353,5.482-1.5V2.548H1.634V0H12.067V2.548H8.222V4.215c3.162.144,5.458.773,5.458,1.495S11.384,7.06,8.222,7.2v5.344Zm-2.743-8c-2.533.116-4.3.532-4.3,1.01s1.769.9,4.3,1.01l.163.007c.171.007.345.012.5.016h.016l.142,0h.04l.12,0h.76l.121,0h.044l.152,0h.006c.114,0,.227-.005.337-.01h.016l.149-.006h.019l.158-.007C10.741,6.452,12.5,6.038,12.5,5.56S10.74,4.668,8.219,4.553v1.54c-.462.025-.927.037-1.381.037-.439,0-.9-.012-1.359-.035Z" transform="translate(0 0)" fill="#fff"/>
-        </g>
-      </g>
-    </g>
-  </g>
+<svg width="1424" height="181" viewBox="0 0 1424 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1117.55 143.857C1109.72 147.617 1100.31 144.312 1096.55 136.474C1092.79 128.636 1096.1 119.235 1103.94 115.473C1111.77 111.713 1121.18 115.018 1124.94 122.856C1128.7 130.694 1125.39 140.096 1117.55 143.857Z" stroke="#7965E6" stroke-width="1.156"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1106.51 125.448L1111.96 128.295L1117.74 122.517L1106.51 125.448Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1111.96 128.295L1114.81 133.745L1117.74 122.516L1111.96 128.295Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1103.76 136.494L1107.78 132.477L1105.9 126.023L1103.76 136.494Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1107.78 132.477L1103.76 136.494L1114.21 134.337L1107.78 132.477Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1106.49 125.431L1108.62 131.604L1112.58 127.637L1106.49 125.431Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1108.63 131.621L1114.81 133.745L1112.6 127.653L1108.63 131.621Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.1911 126.42C19.3948 131.121 7.64152 126.989 2.9408 117.192C-1.75992 107.395 2.37146 95.6423 12.1688 90.9406C21.9661 86.2399 33.7194 90.3723 38.4201 100.17C43.1208 109.967 38.9885 121.719 29.1911 126.42Z" stroke="#7965E6" stroke-width="1.156"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3874 103.409L22.1989 106.968L29.4224 99.7449L15.3874 103.409Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.199 106.968L25.7591 113.78L29.4225 99.7449L22.199 106.968Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9505 117.217L16.972 112.195L14.6259 104.128L11.9505 117.217Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.972 112.195L11.9505 117.217L25.0185 114.521L16.972 112.195Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3664 103.388L18.0218 111.104L22.981 106.145L15.3664 103.388Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.0423 111.125L25.759 113.78L23.0015 106.166L18.0423 111.125Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1337.68 143.111C1336.27 148.218 1330.99 151.221 1325.89 149.817C1320.78 148.413 1317.77 143.134 1319.18 138.026C1320.58 132.918 1325.86 129.915 1330.97 131.319C1336.08 132.723 1339.08 138.002 1337.68 143.111Z" stroke="#7965E6" stroke-width="1.156"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1324.79 140.829L1328.28 139.462L1327.94 134.494L1324.79 140.829Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1328.28 139.462L1331.93 140.331L1327.94 134.494L1328.28 139.462Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1328.78 146.51L1328.53 143.057L1324.82 141.34L1328.78 146.51Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1328.53 143.057L1328.78 146.51L1331.96 140.84L1328.53 143.057Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1324.78 140.83L1328.47 142.322L1328.23 138.911L1324.78 140.83Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1328.48 142.321L1331.93 140.331L1328.24 138.91L1328.48 142.321Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1112.87 85.7773C1104.21 86.9119 1096.27 80.811 1095.14 72.1502C1094 63.4894 1100.1 55.5488 1108.76 54.4143C1117.42 53.2783 1125.36 59.3792 1126.5 68.0386C1127.63 76.7008 1121.53 84.6414 1112.87 85.7773Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1102.22 74.8946L1104.22 73.5392C1103.46 72.3758 1103.01 70.9449 1103.04 69.916L1104.69 69.492C1104.69 70.5265 1105.01 71.8133 1105.77 72.9232C1106.72 74.3307 1108.18 74.7313 1109.31 73.9658C1110.4 73.2277 1110.55 71.9985 1110.15 70.1286C1109.57 67.57 1109.64 65.7056 1111.36 64.5367C1113.01 63.4228 1115.05 63.7465 1116.58 65.3695L1118.58 64.0127L1119.41 65.2419L1117.49 66.5438C1118.26 67.7593 1118.49 68.7869 1118.54 69.5908L1116.9 69.9804C1116.85 69.4029 1116.74 68.2944 1115.88 67.0267C1114.85 65.4998 1113.55 65.5437 1112.75 66.0801C1111.72 66.7784 1111.7 67.8609 1112.16 70.0669C1112.71 72.6735 1112.38 74.4021 1110.61 75.597C1109.05 76.6561 1106.84 76.5601 1105.12 74.7478L1103.06 76.143L1102.22 74.8946Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M291.873 152.277C283.214 153.412 275.27 147.311 274.136 138.65C273.001 129.99 279.101 122.049 287.763 120.914C296.422 119.778 304.364 125.879 305.5 134.539C306.635 143.201 300.534 151.141 291.873 152.277Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M281.215 141.395L283.217 140.039C282.458 138.876 282.01 137.445 282.036 136.416L283.686 135.992C283.693 137.027 284.014 138.313 284.766 139.423C285.719 140.831 287.176 141.231 288.305 140.466C289.396 139.728 289.546 138.499 289.148 136.629C288.57 134.07 288.637 132.206 290.362 131.037C292.007 129.923 294.048 130.247 295.579 131.87L297.582 130.513L298.413 131.742L296.491 133.044C297.256 134.259 297.489 135.287 297.542 136.091L295.899 136.481C295.855 135.903 295.74 134.794 294.881 133.527C293.848 132 292.547 132.044 291.754 132.58C290.724 133.279 290.705 134.361 291.159 136.567C291.708 139.174 291.376 140.902 289.611 142.097C288.046 143.156 285.841 143.06 284.122 141.248L282.06 142.643L281.215 141.395Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1234.23 50.694C1243.42 62.1191 1241.6 78.8275 1230.17 88.0097C1218.74 97.1945 1202.04 95.374 1192.85 83.9488C1183.67 72.5223 1185.49 55.8153 1196.91 46.6331C1208.34 37.4496 1225.05 39.2674 1234.23 50.694Z" stroke="#7965E6" stroke-width="1.114"/>
+<mask id="mask0_0_222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1195" y="51" width="37" height="34">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1195.12 70.7498L1204.99 51.3741L1231.72 64.9912L1221.85 84.3669L1195.12 70.7498Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_222)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1220.23 70.2968L1218.77 73.151L1213.43 70.4276L1215.11 67.1232C1215.5 66.3715 1217.25 63.6665 1219.18 64.6503C1221.11 65.6341 1221.61 67.5902 1220.23 70.2948L1220.23 70.2968ZM1205.86 66.5692L1206.78 64.7653C1207.39 63.5626 1208.84 61.0861 1210.92 62.1455C1212.31 62.7432 1212.99 64.3417 1212.44 65.7607L1210.76 69.0659L1205.86 66.5692ZM1215.56 61.1071C1215.53 59.1221 1214.23 57.3824 1212.32 56.8096C1209.5 55.7486 1206.77 58.5261 1205.18 60.9258L1201.17 58.8833L1199.87 61.4374L1203.88 63.48L1203.03 65.1316L1199.03 63.089L1197.72 65.6426L1201.73 67.6852L1199.13 72.7923L1201.8 74.154L1202.8 72.2019C1203.26 71.3005 1203.71 71.1504 1204.3 71.4531L1215.44 77.127C1216.03 77.2918 1216.38 77.9065 1216.21 78.4998C1216.19 78.5998 1216.14 78.6954 1216.09 78.7837L1215.17 80.5876L1217.77 82.0997L1220.29 77.1428L1224.45 79.261L1225.75 76.7076L1221.59 74.5901L1222.44 72.9377L1226.59 75.0552L1227.89 72.5011L1223.74 70.3836L1224.04 69.7823C1226.72 64.5248 1225.04 61.5869 1221.62 59.8473C1218.21 58.1077 1215.56 61.1083 1215.56 61.1083L1215.56 61.1071Z" fill="#7965E6"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M252.104 70.211C246.973 77.2199 237.13 78.7421 230.121 73.6098C223.112 68.478 221.591 58.6357 226.722 51.6267C231.855 44.6183 241.697 43.0964 248.705 48.2278C255.714 53.3599 257.236 63.2018 252.104 70.211Z" stroke="#7965E6" stroke-width="1.114"/>
+<mask id="mask1_0_222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="230" y="50" width="18" height="21">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M234.626 50.9009L247.23 53.5801L243.535 70.9661L230.93 68.2868L234.626 50.9009Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_0_222)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M238.735 65.2018L236.879 64.8071L237.618 61.3299L239.767 61.7869C240.256 61.8908 242.073 62.4787 241.806 63.7349C241.539 64.991 240.496 65.5761 238.737 65.2021L238.735 65.2018ZM238.665 56.4036L239.838 56.6531C240.621 56.8194 242.261 57.2688 241.973 58.6214C241.845 59.5138 241.034 60.1448 240.137 60.0484L237.987 59.5913L238.665 56.4036ZM243.28 61.1201C244.412 60.8015 245.207 59.785 245.243 58.6092C245.417 56.829 243.409 55.6954 241.791 55.1497L242.345 52.5418L240.684 52.1886L240.129 54.7965L239.055 54.5681L239.609 51.9602L237.948 51.6071L237.394 54.215L234.071 53.5088L233.702 55.2474L234.972 55.5173C235.558 55.642 235.713 55.8766 235.631 56.263L234.091 63.5073C234.088 63.8722 233.789 64.1652 233.424 64.1618C233.363 64.1613 233.302 64.1521 233.243 64.1346L232.069 63.8852L231.602 65.603L234.827 66.2884L234.252 68.9929L235.913 69.346L236.487 66.6424L237.562 66.8709L236.988 69.5745L238.649 69.9276L239.224 67.2241L239.615 67.3073C243.035 68.0343 244.459 66.6196 244.931 64.3985C245.403 62.1775 243.279 61.1195 243.279 61.1195L243.28 61.1201Z" fill="#7965E6"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M510.128 104.789C505.959 110.483 497.962 111.72 492.268 107.55C486.572 103.38 485.337 95.3836 489.506 89.6888C493.676 83.9945 501.672 82.7579 507.367 86.9272C513.061 91.097 514.298 99.0936 510.128 104.789Z" stroke="#7965E6" stroke-width="1.114"/>
+<mask id="mask2_0_222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="492" y="89" width="15" height="17">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M495.927 89.099L506.169 91.2759L503.166 105.402L492.925 103.225L495.927 89.099Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_0_222)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M499.266 100.718L497.758 100.398L498.358 97.5726L500.105 97.9439C500.502 98.0283 501.979 98.506 501.762 99.5266C501.545 100.547 500.697 101.023 499.267 100.719L499.266 100.718ZM499.209 93.57L500.162 93.7726C500.798 93.9078 502.13 94.2729 501.897 95.3719C501.793 96.097 501.134 96.6097 500.406 96.5313L498.658 96.16L499.209 93.57ZM502.958 97.4021C503.879 97.1433 504.524 96.3174 504.554 95.362C504.695 93.9156 503.064 92.9945 501.749 92.5511L502.199 90.4322L500.849 90.1453L500.399 92.2642L499.526 92.0786L499.976 89.9597L498.627 89.6728L498.176 91.7917L495.477 91.2179L495.176 92.6305L496.208 92.8498C496.685 92.9511 496.811 93.1418 496.744 93.4557L495.493 99.3417C495.49 99.6382 495.247 99.8763 494.951 99.8735C494.901 99.8731 494.851 99.8656 494.804 99.8514L493.85 99.6487L493.47 101.044L496.09 101.601L495.623 103.799L496.973 104.086L497.44 101.889L498.313 102.075L497.846 104.271L499.196 104.558L499.663 102.362L499.981 102.429C502.76 103.02 503.917 101.87 504.3 100.066C504.684 98.2612 502.958 97.4016 502.958 97.4016L502.958 97.4021Z" fill="#7965E6"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.1772 51.8145C50.1217 61.4519 36.588 63.5448 26.9514 56.4879C17.3127 49.4317 15.2222 35.8985 22.2777 26.2611C29.3346 16.6246 42.8672 14.5319 52.5035 21.5877C62.1411 28.6443 64.2338 42.1769 57.1772 51.8145Z" stroke="#7965E6" stroke-width="1.114"/>
+<mask id="mask3_0_222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="28" y="25" width="23" height="28">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M33.1445 25.2631L50.4761 28.947L45.3948 52.8527L28.0632 49.1687L33.1445 25.2631Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_0_222)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.7955 44.9268L36.2424 44.3841L37.2587 39.603L40.2145 40.2313C40.8868 40.3742 43.3853 41.1826 43.0182 42.9098C42.6511 44.637 41.2166 45.4414 38.7973 44.9272L38.7955 44.9268ZM38.6984 32.8293L40.3121 33.1723C41.3878 33.401 43.6425 34.0189 43.2472 35.8787C43.0718 37.1059 41.9558 37.9734 40.7233 37.8409L37.7668 37.2124L38.6984 32.8293ZM45.0437 39.3145C46.6009 38.8764 47.6939 37.4788 47.7438 35.862C47.983 33.4142 45.2223 31.8555 42.9969 31.1051L43.7591 27.5193L41.4745 27.0336L40.7123 30.6195L39.2349 30.3055L39.9971 26.7196L37.7129 26.2341L36.9507 29.82L32.3823 28.8489L31.8742 31.2395L33.6204 31.6107C34.4267 31.782 34.6397 32.1047 34.5268 32.636L32.4096 42.5969C32.405 43.0986 31.9944 43.5016 31.4927 43.4969C31.4081 43.4961 31.3241 43.4835 31.2432 43.4594L29.6295 43.1165L28.9869 45.4784L33.4208 46.4209L32.6304 50.1396L34.9145 50.625L35.7046 46.9077L37.1827 47.2219L36.3926 50.9392L38.6772 51.4248L39.4674 47.7075L40.0053 47.8218C44.7081 48.8215 46.6652 46.8763 47.3143 43.8223C47.9635 40.7684 45.0425 39.3136 45.0425 39.3136L45.0437 39.3145Z" fill="#7965E6"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M997.659 130.879C991.86 139.409 980.242 141.624 971.712 135.823C963.18 130.023 960.968 118.406 966.767 109.875C972.568 101.345 984.185 99.1309 992.714 104.93C1001.25 110.73 1003.46 122.348 997.659 130.879Z" fill="#7965E6"/>
+<mask id="mask4_0_222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="972" y="108" width="20" height="25">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M976.116 108.686L991.187 111.343L987.521 132.13L972.451 129.473L976.116 108.686Z" fill="white"/>
+</mask>
+<g mask="url(#mask4_0_222)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M981.587 125.488L979.367 125.096L980.1 120.939L982.67 121.392C983.254 121.495 985.435 122.118 985.17 123.62C984.906 125.121 983.692 125.859 981.588 125.488L981.587 125.488ZM981.138 115.049L982.541 115.297C983.477 115.462 985.441 115.927 985.156 117.544C985.042 118.609 984.105 119.391 983.037 119.314L980.466 118.86L981.138 115.049ZM986.81 120.455C988.141 120.03 989.042 118.791 989.037 117.394C989.169 115.274 986.74 114.012 984.796 113.432L985.346 110.314L983.359 109.963L982.81 113.081L981.525 112.855L982.075 109.737L980.089 109.387L979.539 112.505L975.567 111.804L975.2 113.883L976.718 114.15C977.42 114.274 977.613 114.546 977.532 115.008L976.005 123.669C976.016 124.102 975.673 124.463 975.24 124.474C975.167 124.476 975.094 124.467 975.024 124.449L973.621 124.202L973.137 126.26L976.993 126.939L976.422 130.173L978.409 130.523L978.978 127.291L980.264 127.517L979.694 130.75L981.68 131.1L982.25 127.868L982.718 127.95C986.807 128.671 988.438 126.933 988.906 124.278C989.374 121.622 986.809 120.455 986.809 120.455L986.81 120.455Z" fill="white"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1301.04 167.218C1295.25 175.749 1283.63 177.963 1275.1 172.163C1266.57 166.363 1264.35 154.745 1270.15 146.214C1275.95 137.684 1287.57 135.47 1296.1 141.27C1304.63 147.07 1306.84 158.687 1301.04 167.218Z" fill="#7965E6"/>
+<mask id="mask5_0_222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1275" y="145" width="20" height="24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1279.5 145.026L1294.57 147.683L1290.91 168.469L1275.84 165.812L1279.5 145.026Z" fill="white"/>
+</mask>
+<g mask="url(#mask5_0_222)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1284.97 161.827L1282.75 161.436L1283.48 157.278L1286.05 157.732C1286.64 157.835 1288.82 158.457 1288.56 159.959C1288.29 161.461 1287.08 162.198 1284.97 161.827L1284.97 161.827ZM1284.52 151.389L1285.93 151.636C1286.86 151.801 1288.83 152.266 1288.54 153.884C1288.43 154.948 1287.49 155.73 1286.42 155.653L1283.85 155.2L1284.52 151.389ZM1290.2 156.795C1291.53 156.37 1292.43 155.131 1292.42 153.734C1292.55 151.614 1290.12 150.351 1288.18 149.771L1288.73 146.653L1286.74 146.303L1286.19 149.421L1284.91 149.194L1285.46 146.076L1283.47 145.726L1282.92 148.844L1278.95 148.143L1278.59 150.222L1280.1 150.49C1280.8 150.613 1281 150.886 1280.92 151.347L1279.39 160.009C1279.4 160.442 1279.06 160.802 1278.63 160.813C1278.55 160.815 1278.48 160.807 1278.41 160.788L1277.01 160.541L1276.52 162.599L1280.38 163.279L1279.81 166.512L1281.79 166.862L1282.36 163.63L1283.65 163.857L1283.08 167.089L1285.07 167.439L1285.64 164.207L1286.1 164.289C1290.19 165.01 1291.82 163.273 1292.29 160.617C1292.76 157.962 1290.19 156.794 1290.19 156.794L1290.2 156.795Z" fill="white"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M157.873 96.3455C149.214 97.4801 141.27 91.3793 140.136 82.7185C139.001 74.0576 145.101 66.1171 153.763 64.9825C162.422 63.8466 170.364 69.9474 171.5 78.6069C172.635 87.269 166.534 95.2096 157.873 96.3455Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M147.215 85.4628L149.217 84.1074C148.458 82.944 148.01 81.5131 148.036 80.4842L149.686 80.0603C149.693 81.0947 150.014 82.3815 150.766 83.4914C151.719 84.899 153.176 85.2996 154.305 84.534C155.396 83.796 155.546 82.5667 155.148 80.6968C154.57 78.1382 154.637 76.2738 156.362 75.105C158.007 73.991 160.048 74.3148 161.579 75.9377L163.582 74.5809L164.413 75.8101L162.491 77.1121C163.256 78.3276 163.489 79.3551 163.542 80.1591L161.899 80.5487C161.855 79.9711 161.74 78.8626 160.881 77.595C159.848 76.068 158.547 76.112 157.754 76.6484C156.724 77.3467 156.705 78.4291 157.159 80.6351C157.708 83.2417 157.376 84.9703 155.611 86.1652C154.046 87.2243 151.841 87.1283 150.122 85.316L148.06 86.7113L147.215 85.4628Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M621.263 142.777C612.603 143.912 604.66 137.811 603.525 129.15C602.391 120.49 608.49 112.549 617.153 111.414C625.812 110.278 633.754 116.379 634.89 125.039C636.024 133.701 629.924 141.641 621.263 142.777Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M610.605 131.895L612.607 130.539C611.848 129.376 611.399 127.945 611.425 126.916L613.076 126.492C613.083 127.527 613.404 128.813 614.155 129.923C615.109 131.331 616.566 131.731 617.695 130.966C618.786 130.228 618.935 128.999 618.537 127.129C617.96 124.57 618.027 122.706 619.751 121.537C621.396 120.423 623.438 120.747 624.969 122.37L626.972 121.013L627.803 122.242L625.881 123.544C626.645 124.759 626.878 125.787 626.932 126.591L625.288 126.981C625.245 126.403 625.129 125.294 624.27 124.027C623.237 122.5 621.937 122.544 621.144 123.08C620.114 123.779 620.094 124.861 620.549 127.067C621.097 129.674 620.765 131.402 619.001 132.597C617.436 133.656 615.231 133.56 613.512 131.748L611.45 133.143L610.605 131.895Z" fill="white"/>
+<path d="M587.962 145.283C583.137 152.563 573.321 154.555 566.04 149.729C558.76 144.903 556.768 135.091 561.595 127.809C566.419 120.528 576.234 118.537 583.514 123.361C590.796 128.187 592.786 138.001 587.962 145.283" stroke="#7965E6" stroke-width="1.114"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M572.756 146.187L573.046 143.787C571.671 143.596 570.296 142.996 569.537 142.301L570.3 140.778C571.085 141.451 572.267 142.053 573.598 142.214C575.285 142.418 576.544 141.581 576.707 140.226C576.865 138.919 576.035 138 574.363 137.073C572.053 135.831 570.69 134.557 570.94 132.488C571.178 130.516 572.762 129.188 574.991 129.097L575.281 126.695L576.754 126.874L576.476 129.179C577.894 129.4 578.823 129.898 579.465 130.385L578.681 131.881C578.216 131.535 577.304 130.895 575.784 130.711C573.953 130.489 573.133 131.5 573.018 132.45C572.869 133.686 573.673 134.41 575.636 135.515C577.963 136.811 579.05 138.195 578.794 140.311C578.567 142.187 577.048 143.788 574.552 143.896L574.253 146.368L572.756 146.187Z" fill="#7965E6"/>
+<path d="M1183.94 121.016C1179.12 128.295 1169.3 130.288 1162.02 125.462C1154.74 120.636 1152.75 110.824 1157.58 103.542C1162.4 96.2612 1172.21 94.2698 1179.5 99.0936C1186.78 103.92 1188.77 113.734 1183.94 121.016" stroke="#7965E6" stroke-width="1.114"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1168.74 121.92L1169.03 119.52C1167.65 119.329 1166.28 118.729 1165.52 118.034L1166.28 116.51C1167.07 117.184 1168.25 117.786 1169.58 117.947C1171.27 118.15 1172.53 117.314 1172.69 115.959C1172.85 114.652 1172.02 113.733 1170.34 112.806C1168.03 111.564 1166.67 110.29 1166.92 108.221C1167.16 106.249 1168.74 104.921 1170.97 104.83L1171.26 102.428L1172.74 102.607L1172.46 104.912C1173.88 105.133 1174.8 105.631 1175.45 106.118L1174.66 107.614C1174.2 107.268 1173.29 106.628 1171.76 106.444C1169.93 106.222 1169.11 107.233 1169 108.183C1168.85 109.419 1169.65 110.143 1171.62 111.248C1173.94 112.544 1175.03 113.928 1174.78 116.044C1174.55 117.92 1173.03 119.521 1170.53 119.629L1170.23 122.101L1168.74 121.92Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M78.8618 122.412C73.4785 115.532 74.6898 105.592 81.5686 100.208C88.4459 94.8257 98.3867 96.0357 103.771 102.914C109.155 109.793 107.943 119.734 101.065 125.117C94.1859 130.501 84.2465 129.291 78.8618 122.412Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5834 118.52L89.5876 111.874L81.5572 107.957L88.5834 118.52Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M89.5875 111.874L94.207 106.99L81.5571 107.957L89.5875 111.874Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100.981 117.431L95.3983 114.708L89.3954 118.945L100.981 117.431Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M95.3984 114.708L100.981 117.431L95.0305 107.392L95.3984 114.708Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M88.5721 118.544L94.1975 114.15L88.6843 111.461L88.5721 118.544Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M94.2085 114.128L94.207 106.99L88.6953 111.439L94.2085 114.128Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M223.917 118.412C218.534 111.532 219.745 101.592 226.624 96.2076C233.501 90.8257 243.442 92.0357 248.827 98.9144C254.21 105.793 252.999 115.734 246.12 121.117C239.241 126.501 229.302 125.291 223.917 118.412Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M233.639 114.52L234.643 107.874L226.613 103.957L233.639 114.52Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M234.643 107.874L239.263 102.99L226.613 103.957L234.643 107.874Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M246.036 113.431L240.454 110.708L234.451 114.945L246.036 113.431Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M240.454 110.708L246.036 113.431L240.086 103.392L240.454 110.708Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M233.628 114.544L239.253 110.15L233.74 107.461L233.628 114.544Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M239.264 110.128L239.263 102.99L233.751 107.439L239.264 110.128Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M447.774 126.421C455.485 122.314 465.063 125.233 469.171 132.942C473.277 140.65 470.359 150.229 462.65 154.338C454.941 158.445 445.362 155.526 441.255 147.817C437.148 140.108 440.065 130.529 447.774 126.421Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M449.919 136.671L456.29 138.814L461.542 131.585L449.919 136.671Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M456.29 138.814L460.297 144.211L461.542 131.585L456.29 138.814Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M448.839 149.069L452.49 144.044L449.359 137.396L448.839 149.069Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M452.49 144.044L448.839 149.069L459.759 144.952L452.49 144.044Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M449.898 136.655L453.247 142.958L456.853 137.996L449.898 136.655Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M453.268 142.973L460.297 144.211L456.873 138.01L453.268 142.973Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M830.06 115.469C828.858 110.283 832.087 105.106 837.273 103.903C842.457 102.702 847.636 105.93 848.838 111.116C850.04 116.302 846.81 121.48 841.625 122.681C836.44 123.883 831.262 120.655 830.06 115.469Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M836.431 115.824L838.697 112.411L835.271 108.18L836.431 115.824Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M838.697 112.411L842.506 110.904L835.271 108.18L838.697 112.411Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M843.558 118.415L841.177 115.473L836.77 116.267L843.558 118.415Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M841.176 115.473L843.558 118.415L842.857 111.338L841.176 115.473Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M836.419 115.834L840.657 114.856L838.304 111.951L836.419 115.834Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M840.669 114.846L842.506 110.904L838.316 111.941L840.669 114.846Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62.0741 82.7783H72.4445V68.7783H66.4324H62.0741V82.7783Z" stroke="#7965E6" stroke-width="1.351"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M309.5 88.7783H318.759V76.2783H313.391H309.5V88.7783Z" stroke="#7965E6" stroke-width="1.351"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M194.488 85.1602C192.105 82.1164 192.642 77.7171 195.686 75.3353C198.729 72.9512 203.129 73.4881 205.512 76.5319C207.895 79.5756 207.358 83.9749 204.314 86.3591C201.27 88.7409 196.871 88.2051 194.488 85.1602Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M496.468 136.16C494.085 133.116 494.622 128.717 497.665 126.335C500.709 123.951 505.108 124.488 507.491 127.532C509.874 130.576 509.337 134.975 506.294 137.359C503.25 139.741 498.851 139.205 496.468 136.16Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M707.7 154.034C705.487 151.207 705.986 147.122 708.812 144.911C711.638 142.697 715.723 143.195 717.936 146.022C720.149 148.848 719.65 152.933 716.824 155.147C713.998 157.359 709.913 156.861 707.7 154.034Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M332.616 141.763C330.829 139.481 331.232 136.181 333.515 134.395C335.797 132.607 339.097 133.009 340.884 135.292C342.671 137.575 342.269 140.874 339.986 142.663C337.703 144.449 334.404 144.047 332.616 141.763Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.4882 144.842C27.1052 141.798 27.6422 137.399 30.6859 135.017C33.7297 132.633 38.129 133.17 40.512 136.214C42.895 139.257 42.358 143.657 39.3142 146.041C36.2705 148.423 31.8712 147.887 29.4882 144.842Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1407.91 140.824C1404.85 136.911 1405.54 131.255 1409.45 128.192C1413.37 125.127 1419.02 125.818 1422.09 129.731C1425.15 133.644 1424.46 139.301 1420.55 142.366C1416.63 145.428 1410.98 144.739 1407.91 140.824Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1395.72 61.5716C1393.76 59.0714 1394.21 55.4577 1396.71 53.5012C1399.21 51.5428 1402.82 51.9839 1404.78 54.4841C1406.73 56.9843 1406.29 60.598 1403.79 62.5564C1401.29 64.513 1397.68 64.0728 1395.72 61.5716Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1143.21 61.0919C1140.83 58.0482 1141.36 53.6489 1144.41 51.267C1147.45 48.8829 1151.85 49.4199 1154.23 52.4637C1156.62 55.5074 1156.08 59.9067 1153.04 62.2908C1149.99 64.6727 1145.59 64.1368 1143.21 61.0919Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1036.46 99.8266C1034.92 97.8699 1035.27 95.0418 1037.23 93.5106C1039.18 91.9779 1042.01 92.3231 1043.54 94.2798C1045.08 96.2365 1044.73 99.0646 1042.77 100.597C1040.82 102.128 1037.99 101.784 1036.46 99.8266Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1384.46 96.9618C1382.92 95.0052 1383.27 92.177 1385.23 90.6458C1387.18 89.1132 1390.01 89.4584 1391.54 91.4151C1393.08 93.3718 1392.73 96.1999 1390.77 97.7326C1388.82 99.2638 1385.99 98.9193 1384.46 96.9618Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1269.36 84.3436C1263.98 77.4635 1265.19 67.5241 1272.07 62.1394C1278.95 56.7574 1288.89 57.9675 1294.27 64.8462C1299.65 71.7249 1298.44 81.6657 1291.56 87.049C1284.69 92.4324 1274.75 91.2223 1269.36 84.3436Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1279.08 80.452L1280.09 73.8055L1272.06 69.8888L1279.08 80.452Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1280.09 73.8056L1284.71 68.9218L1272.06 69.8889L1280.09 73.8056Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1291.48 79.3625L1285.9 76.6397L1279.9 80.877L1291.48 79.3625Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1285.9 76.6397L1291.48 79.3624L1285.53 69.3234L1285.9 76.6397Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1279.07 80.4753L1284.7 76.0822L1279.18 73.3932L1279.07 80.4753Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1284.71 76.0593L1284.71 68.9218L1279.2 73.3704L1284.71 76.0593Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1069 64.2782H1083.44V50.7782H1075.07H1069V64.2782Z" stroke="#7965E6" stroke-width="1.351"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M873 143.278H887.444V129.778H879.07H873V143.278Z" stroke="#7965E6" stroke-width="1.351"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1206.78 140.278H1221.22V120.778H1206.78V140.278Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M771 143.143H781V129.643H771V143.143Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M378 133.421H392.444V113.921H378V133.421Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M185.439 132.645C190.629 138.227 190.314 146.845 184.731 152.035C179.149 157.224 170.531 156.91 165.341 151.327C160.152 145.744 160.466 137.127 166.049 131.937C171.632 126.747 180.249 127.062 185.439 132.645ZM173.186 146.263L177.388 150.783L181.263 147.181C184.385 144.279 184.279 139.838 181.349 136.686C178.419 133.535 174.028 133.137 170.905 136.039L167.031 139.641L171.174 144.098L169.665 145.5L171.678 147.665L173.186 146.263ZM173.109 142.299L171.023 140.054L172.74 138.458C174.529 136.796 177.022 137.059 178.872 139.049C180.721 141.038 180.773 143.513 178.984 145.175L177.267 146.772L175.121 144.463L177.279 142.458L175.266 140.293L173.109 142.299Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1226.88 12.4898C1230.03 19.4286 1227.01 27.5034 1220.07 30.6581C1213.13 33.8128 1205.06 30.7856 1201.9 23.8468C1198.75 16.9081 1201.77 8.83328 1208.71 5.67855C1215.65 2.52383 1223.73 5.55106 1226.88 12.4898ZM1210.95 21.5273L1213.5 27.1458L1218.32 24.9563C1222.2 23.1918 1223.5 18.9458 1221.72 15.0286C1219.94 11.1115 1215.9 9.3432 1212.02 11.1076L1207.2 13.2972L1209.72 18.8367L1207.85 19.689L1209.07 22.3796L1210.95 21.5273ZM1212.13 17.7429L1210.86 14.9533L1212.99 13.9829C1215.22 12.9723 1217.5 14.0117 1218.62 16.4848C1219.75 18.9578 1219.01 21.321 1216.79 22.3316L1214.65 23.302L1213.35 20.4333L1216.03 19.2142L1214.81 16.5236L1212.13 17.7429Z" fill="#7965E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1338.58 23.5685C1343.94 30.2402 1342.88 39.997 1336.21 45.3589C1329.54 50.7224 1319.78 49.6594 1314.42 42.9876C1309.06 36.3151 1310.12 26.559 1316.79 21.1971C1323.46 15.8344 1333.22 16.8959 1338.58 23.5685Z" stroke="#7965E6" stroke-width="1.114"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1322.8 36.8336L1326.63 42.8579L1331.77 39.5913C1335.91 36.9589 1336.71 31.8945 1334.04 27.6945C1331.37 23.4945 1326.47 22.1103 1322.33 24.7428L1317.19 28.0094L1320.97 33.9488L1318.96 35.2204L1320.8 38.1052L1322.8 36.8336ZM1323.57 32.2728L1321.66 29.2573L1323.97 27.7863C1326.38 26.2546 1329.19 27.082 1330.89 29.7554C1332.59 32.4288 1332.12 35.2801 1329.71 36.8118L1327.39 38.2828L1325.42 35.1816L1328.33 33.3338L1326.48 30.425L1323.57 32.2728Z" fill="#7965E6"/>
+</g>
 </svg>

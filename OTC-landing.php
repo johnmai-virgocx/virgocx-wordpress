@@ -27,7 +27,7 @@ get_header('otc');
                         <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                             Get started
                         </a>
-                        <p class="emailUs" data-translate="OTC_email_us">Or email us: <span>otc@virgocx.ca</span></p>
+                        <p class="emailUs" data-translate="OTC_email_us">Ask for a demo: <span>otc@virgocx.ca</span></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
@@ -455,12 +455,12 @@ get_header('otc');
 
                 <div class="col-lg-6 col-md-12 product-text">
                     <h2 data-translate="OTC_landing_banner_2">
-                        VirgoCX OTC is A Full Service Trade Desk for Large Block Transactions.
+                        VirgoCX Wealth is A Full Service Trade Desk for Large Block Transactions.
                     </h2>
                 </div>
                 <div class="col-lg-6 col-md-12 product-text">
                     <p data-translate="OTC_landing_banner_2desc">
-                        VirgoCX OTC offers direct market access for cryptocurrencies with <span class="blue">optimal price execution.</span>
+                        VirgoCX Wealth offers direct market access for cryptocurrencies with <span class="blue">optimal price execution.</span>
                         We bridge the gap between traditional financial services
                         and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto
                         and fiat currencies to fill large orders at a <span class="blue">desired market price.</span>
@@ -480,7 +480,7 @@ get_header('otc');
                         <div class="product-tabs-horizontal">
                             <nav class="row">
                                 <a data-translate="OTC_landing_banner2_tag1">OTC Direct</a>
-                                <a data-translate="OTC_landing_banner2_tag2">OTC Chat Broker</a>
+                                <a data-translate="OTC_landing_banner2_tag2">Chat Broker</a>
                             </nav>
                             <div class="row">
                                 <div class="container visible">
@@ -493,9 +493,9 @@ get_header('otc');
                                         </span>
                                             </h3>
                                             <p data-translate="OTC_landing_banner2_tag1_desc2">
-                                                By being connected to Virgo OTC Direct, our clients are able to execute
+                                                By being connected to OTC Direct, our clients are able to execute
                                                 large block trades instantaneously.
-                                                Our seamless workflow allows our institution clients to be able to <span
+                                                Our seamless workflow allows our institutional and high-net-worth clients to be able to <span
                                                         class="blue">receive
                                             best execution and flexible settlements post-trade.</span>
                                             </p>
@@ -523,10 +523,7 @@ get_header('otc');
                                             </h3>
 
                                             <p data-translate="OTC_landing_banner2_tag2_desc2">
-                                                Our OTC trade team will facilitate <span
-                                                        class="blue">any trade requests</span> you will have for your
-                                                business. From trading like Bitcoin, Ethereum,
-                                                and Litecoin, to hedging out risk by trading back into Tether (USDT).
+                                                VirgoCX Wealth allows you to trade across 40+ cryptocurrencies through our proprietary trading platform including Tether (USDT), Bitcoin, Ethereum, and more.  
                                             </p>
                                             <a class="round-btn-light mt-5" href="../en-otc-chatbroker/"
                                                data-translate="OTC_learn">learn more
@@ -563,9 +560,11 @@ get_header('otc');
                                 <span class="tab-dot"></span>
                                 <span class="tab-dot"></span>
                                 <span class="tab-dot"></span>
+                                <span class="tab-dot"></span>
                             </nav>
                             <nav>
                                 <a data-translate="Institutions">Institutions</a>
+                                <a data-translate="Investment_Funds">Investment Funds</a>
                                 <a data-translate="Trading_Firms">Trading Firms</a>
                                 <a data-translate="Miners">Miners</a>
                                 <a data-translate="Individual">High Net Worth Individuals</a>
@@ -581,6 +580,10 @@ get_header('otc');
                                 our flexible settlements allow our clients to be able to access funds from our tier 1
                                 banks when they need it.</p>
                         </div>
+                        <div class="container" data-translate="OTC_landing_banner3_5">
+                            <p>Our global liquidity providers enable us to provide competitive rates with minimal margin 
+                                for high volume trades making us the right fit for PE and VC funds.</p>
+                        </div>
                         <div class="container" data-translate="OTC_landing_banner3_2">
                             <p>Proprietary Trading Firms find utility within our OTC desk by being able to hedge risk
                                 efficiently by utilizing our highly liquid digital assets
@@ -589,7 +592,7 @@ get_header('otc');
                                 strategies.</p>
                         </div>
                         <div class="container" data-translate="OTC_landing_banner3_3">
-                            <p>Cryptocurrency Mining Firms optimize their working capital by utilizing VirgoCX OTC. We
+                            <p>Cryptocurrency Mining Firms optimize their working capital by utilizing VirgoCX Wealth. We
                                 provide best in class execution of digital
                                 assets and rapid settlement for our clients to be able to have liquidity to hedge, pay
                                 expenses, and more. </p>
@@ -672,8 +675,7 @@ get_header('otc');
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <p data-translate="OTC_landing_banner4_col2-3">Our liquidity pools allow us to provide<span
-                                    class="gold"> one of the best prices </span>in Canada for trading BTC,
-                            ETH, USDT, and more.</p>
+                                    class="gold"> one of the best prices </span>in Canada for trading BTC , ETH , USDT and 40+ other cryptocurrencies .</p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between">
@@ -711,7 +713,7 @@ get_header('otc');
                         <h3 data-translate="OTC_landing_banner4_col1-5">Personalized Services</h3>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <p data-translate="OTC_landing_banner4_col2-5">Our OTC account managers are available <span
+                        <p data-translate="OTC_landing_banner4_col2-5">Our Wealth account managers are available <span
                                     class="gold">24/7 </span>to facilitate every request for your business or
                             trading needs. You will also have access to <span class="gold">industry insights </span>on
                             the cryptocurrency
@@ -728,7 +730,7 @@ get_header('otc');
                     <div class="col-lg-6 col-md-12">
                         <p data-translate="OTC_landing_banner4_col2-6">We provide <span class="gold">a same-day, no-limit settlement </span>for
                             your USD and CAD trades. This also applies to
-                            your Bitcoin, Ethereum, USDT, and any other cryptocurrency.</p>
+                            your Bitcoin, Ethereum, and any other cryptocurrency.</p>
                     </div>
                 </div>
             </div>

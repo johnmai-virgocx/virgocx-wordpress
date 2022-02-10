@@ -1,66 +1,3 @@
-<?php
-
-/**
- * Template Name: NFT detail page
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Virgocx
- */
-// 关联数组
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where id = 1', ARRAY_A);
-$detail = $rows[0];
-get_header('otc');
-?>
-<div class="nft-detail-container">
-  <div class="content-container">
-      <div class="image-container">
-          <img class="image" src="<?php echo $detail["thumbnail"]; ?>" alt="">
-      </div>
-    <div class="content">
-      <p class="title"><?php echo $detail["title"]; ?></p>
-      <p class="value"><?php echo $detail["blockchain_value"]; ?> <?php echo $detail["blockchain"]; ?></p>
-
-      <div class="link">
-            <?php if(!empty($detail["recent_link"])): ?>
-                <a onclick="window.open('<?php echo  $detail["recent_link"] ?>','_blank').focus();"><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
-                  Recent Trends </span></a>
-            <?php endif; ?>
-            <?php if(!empty($detail["analytics_link"])): ?>
-                <a onclick="window.open('<?php echo $detail["analytics_link"] ?>','_blank').focus();"
-                ><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
-                      Analytics</span></a>
-            <?php endif; ?>
-      </div>
-      <p class="desc" data-translate="<?php echo $detail["description"]; ?>"></p>
-
-      <div class="action">
-        <a data-translate="NFT_Buy" class="buy" href="../en-otc-nft-brokerage/?#contact-form" target ="_blank">Buy with VirgoCX</a>
-        
-      </div>
-    </div>
-  </div>
-  <div class="table">
-    <div class="header" data-translate="NFT_Details">Details</div>
-
-    <div class="stats" data-translate="NFT_Stats">Stats</div>
-    <div class="stats-value"><?php echo $detail["stats"]; ?></div>
-    <div class="stats" data-translate="NFT_ContractAddress">Contract Address</div>
-    <div class="stats-value"><?php echo $detail["contract_address"]; ?></div>
-    <div class="stats-wrap row">
-        <div class="col-lg-6 col-sm-12" style="padding:0">
-            <div class="stats" data-translate="NFT_TokenID">Token ID</div>
-            <div class="stats-value"><?php echo $detail["token_id"]; ?></div>
-
-        </div>
-        <div class="col-lg-6 col-sm-12" style="padding:0">
-            <div class="stats " data-translate="NFT_Blockchain">Blockchain</div>
-            <div class="stats-value "  style="border-left:2px solid #F5F5F5;"><?php echo $detail["blockchain"]; ?></div>
-        </div>
-    </div>
-  </div>
-</div>
-
 <style type="text/css">
     h1,h2,h1> span, h2>span,h3 ,h4{
         font-family: "Matter-Bold"!important;
@@ -83,7 +20,7 @@ get_header('otc');
       height: 400px;
   }
     .stats-wrap{
-        margin: 0;
+        margin: 0 !important;
     }
   .nft-detail-container .content-container .image-container .image{
       width: auto;
@@ -448,6 +385,103 @@ get_header('otc');
         padding: 5px 20px;
     }
   }
+</style>
+<?php
+
+/**
+ * Template Name: NFT detail page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Virgocx
+ */
+// 获取id
+$actual_uri = "$_SERVER[REQUEST_URI]";
+$pos = strpos($actual_uri, "?id=")+4;
+$nft_id= base64_decode(substr($actual_uri,$pos));
+
+// 关联数组
+// $response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList')); //testvirgocx
+$response_data = json_decode(file_get_contents('https://virgocx.ca/Nft/getList')); //production virgocx
+$array=$response_data->data->nftList;
+$rows=array();
+foreach ($array as $rkey => $array){
+  if ($array->id == $nft_id&&$array->market==1){
+    $rows[] = $array;
+  }
+}
+$detail = $rows[0];
+if(!$detail->id){
+  
+  echo "<script type='text/javascript'> document.location = '../en-otc-nft-market'; </script>";
+  die();
+}
+
+
+get_header('otc');
+
+
+?>
+<div class="nft-detail-container">
+  <div class="content-container">
+      <div class="image-container">
+          <img class="image" src="<?php echo $detail->thumbnail; ?>" alt="">
+      </div>
+    <div class="content">
+      <p class="title"><?php echo $detail->title; ?></p>
+      <p class="value"><?php echo $detail->blockChainValue; ?> <?php echo $detail->blockChain; ?></p>
+
+      <div class="link">
+            <?php if(!empty($detail->recentLink)): ?>
+                <a onclick="window.open('<?php echo  $detail->recentLink ?>','_blank').focus();"><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/See_recent_trends.svg" alt=""><span data-translate="NFT_SeeTrends">See
+                  Recent Trends </span></a>
+            <?php endif; ?>
+            <?php if(!empty($detail->analyticsLink)): ?>
+                <a onclick="window.open('<?php echo $detail->analyticsLink ?>','_blank').focus();"
+                ><img class="icon" style="margin-right: 15px;" src="<?= get_template_directory_uri() ?>/img/nft/see_analytics.svg" alt=""><span data-translate="NFT_SeeAnalytics" >See
+                      Analytics</span></a>
+            <?php endif; ?>
+      </div>
+      <p class="desc" ><?php echo (strpos($actual_uri, "en-")? $detail->enDescription:$detail->zhDescription); ?></p>
+
+      <div class="action">
+        <a data-translate="NFT_Buy" class="buy" href="../en-otc-nft-brokerage/?#contact-form" target ="_blank">Buy with VirgoCX</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="table">
+    <div class="header" data-translate="NFT_Details">Details</div>
+
+    <div class="stats" data-translate="NFT_Stats">Stats</div>
+    <div class="stats-value"><?php echo $detail->stats; ?></div>
+    <div class="stats" data-translate="NFT_ContractAddress">Contract Address</div>
+    <div class="stats-value"><?php echo $detail->contractAddress; ?></div>
+    <div class="stats-wrap row">
+        <div class="col-lg-6 col-sm-12" style="padding:0">
+            <div class="stats" data-translate="NFT_TokenID">Token ID</div>
+            <div class="stats-value"><?php echo $detail->tokenId; ?></div>
+
+        </div>
+        <div class="col-lg-6 col-sm-12" style="padding:0">
+            <div class="stats " data-translate="NFT_Blockchain">Blockchain</div>
+            <div class="stats-value "  style="border-left:2px solid #F5F5F5;"><?php echo $detail->blockChain; ?></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+@media screen and (min-width: 900px){
+  .table {
+    border: 2px solid #F5F5F5;
+    box-sizing: border-box;
+    width: 1280px;
+    border-radius: 10px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+}
 </style>
 
 

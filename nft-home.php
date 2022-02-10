@@ -1,362 +1,3 @@
-<?php
-
-/**
- * Template Name: NFT home page
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Virgocx
- */
-
-$rows = $wpdb->get_results('SELECT * FROM wp_virgocx_article where trending_virgocx = 1', ARRAY_A);
-get_header('otc');
-?>
-<div class="nft-home-container">
-  <div class="banner-container">
-    <div class="content">
-      <div class="title">
-        <span class="gold" data-translate="NFT_Find">FIND</span>
-        <span data-translate="NFT_Comma">,</span>
-        <span class="gold" data-translate="NFT_Trade">TRADE</span>
-        <span data-translate="NFT_And">, and </span>
-        <span class="gold" data-translate="NFT_Collect">COLLECT</span>
-        <span data-translate="NFT_Collect_zh"></span>
-        <span class= "gold" data-translate="NFT_Collect_zh2"></span>
-        <span data-translate="NFT_Valuable">valuable NFTs with our Brokerage Service.</span>
-      </div>
-      <div class="action">
-          <button class="buy" data-translate="NFT_BuyNFT"
-                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlUM1RXQ1RHM0o2VTZKWFM1QVZKNjJENTY2Vi4u" target ="_blank">Buy
-              an NFT</button>
-        <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
-          NFT</button>
-      </div>
-      <div class="follow">
-        <span  class="followUs"  data-translate="NFT_Follow">Follow Us Today：</span>
-        <a href="https://twitter.com/VirgoNFT" target="_blank"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-twitter.png" alt=""></a>
-        <a href="https://medium.com/@VirgoCX_NFT" target="_blank"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-mail.png" alt=""></a>
-      </div>
-    </div>
-
-    <img class="banner-image" src="<?= get_template_directory_uri() ?>/img/nft/Banner_Desktop.svg" alt="">
-  </div>
-
-  <!-- 模态框（Modal） -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p data-translate="NFT_ModalTitle_1">We would like to know more about your NFT. </p>
-          <p data-translate="NFT_ModalTitle_2">I would like to :</p>
-          <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlUM1VVWkJHTkIzUE1OVk1NMTlNV0paS0s3Qi4u','_blank').focus();"
-            data-translate="NFT_ModalOption_1">
-            Sell an NFT from existing collection</p>
-          <p
-            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlURUNGR0FQWVUxSkM4UjJYTTk0RVNWSkNJSC4u','_blank').focus();"
-            data-translate="NFT_ModalOption_2">
-            Deploy my own collection</p>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-  </div>
-
-
-
-
-  <div class="slider-container">
-    <h3 data-translate="NFT_TrendingNFT">Trending on VirgoCX</h3>
-
-    <div class="slider-bg">
-      <img class="top-image" src="<?= get_template_directory_uri() ?>/img/nft/star.svg" alt="">
-      <img class="bottom-image" src="<?= get_template_directory_uri() ?>/img/nft/bg_element.svg" alt="">
-    </div>
-
-    <section class="carousel-area">
-      <div class="container custom-container">
-        <div class="tabs-horizontal">
-          <div class="row carousel-background">
-            <div class="container">
-              <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                <div class="owl-stage-outer">
-                  <div class="owl-stage">
-                    <?php foreach (array_reverse($rows) as $row) { ?>
-                    <div class="owl-item card">
-                      <a class="pg-top" href="<?php echo $row["detail_link"] ?>" target ="_blank">
-                        <div class="img-container">
-                          <img src="<?php echo $row["thumbnail"]; ?>" alt="">
-                        </div>
-                        <div class="content">
-                          <p class="title"><?php echo $row["title"]; ?></p>
-                          <p class="desc" data-translate="<?php echo $row["description"]; ?>"></p>
-                            <p class="value" > <span data-translate="NFT_ViewProfile">View Profile</span></p>
-
-                        </div>
-                      </a>
-                    </div>
-
-                    <?php } ?>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="action">
-      <a class="view-more round-btn-light" data-translate="NFT_ViewMore"  href="../en-otc-nft-market/" target ="_blank">View More</a>
-    </div>
-  </div>
-
-  <div class="middle-block">
-    <div class="left">
-      <span class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients </span>
-        <span class="gold" data-translate="NFT_note2">find and trade high value art pieces & collectables.</span>
-    </div>
-    <div class="right">
-      <span data-translate="NFT_note3">We navigate the markets to find rare and upcoming NFTs. Our insider reports
-        provides actionable insights for
-        our clients to make purchasing decisions. </span>
-    </div>
-  </div>
-
-
-  <section class="how-area">
-    <h2 data-translate="NFT_HowItWorks">How It Works?</h2>
-
-    <div class="tabs">
-      <nav class="tab-switch row">
-        <a class="selected" data-translate="NFT_BuyingNFT">Buying an NFT</a>
-        <a data-translate="NFT_SellingNFT">Selling your NFT </a>
-      </nav>
-      <div class="how-container">
-        <div class="row custom-container">
-          <div class="icon-box">
-
-            <img class="image" style="width: 65px"
-              src="<?= get_template_directory_uri() ?>/img/nft/How_it_works_buying_an_NFT.svg" alt="">
-          </div>
-          <div class="num-box">
-            <p>1.</p>
-            <p>2.</p>
-            <p>3.</p>
-            <p>4.</p>
-          </div>
-          <div class="content-box">
-            <p data-translate="NFT_BuyNote1"></p>
-            <p data-translate="NFT_BuyNote2"></p>
-            <p data-translate="NFT_BuyNote3"></p>
-            <p data-translate="NFT_BuyNote4"></p>
-          </div>
-        </div>
-      </div>
-      <div class="how-container" style="display: none;">
-        <div class="row custom-container">
-          <div class="icon-box">
-            <img class="image" style="width: 65px"
-              src="<?= get_template_directory_uri() ?>/img/nft/How_it_works_Selling_your_NFT.svg" alt="">
-
-          </div>
-          <div class="num-box">
-            <p>1.</p>
-            <p>2.</p>
-            <p>3.</p>
-            <p>4.</p>
-          </div>
-          <div class="content-box">
-            <p data-translate="NFT_SellNote1"></p>
-            <p data-translate="NFT_SellNote2"></p>
-            <p data-translate="NFT_SellNote3"></p>
-            <p data-translate="NFT_SellNote4"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="getstart-btn scroll-to-sign-up" data-translate="NFT_GetStarted">Get Started</div>
-  </section>
-
-
-  <div class="middle-block-commission">
-    <div class="background-img">
-      <img src="<?= get_template_directory_uri() ?>/img/nft/bg-left.png" alt="images not found">
-      <img src="<?= get_template_directory_uri() ?>/img/nft/bg-right.png" alt="images not found">
-    </div>
-    <div class="commission-title" data-translate="NFT_OurCommissionFee">Our Commission Fee</div>
-    <div class="commission-container">
-      <div class="commission-fee">
-        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo1.png" alt="">
-        <div class="commission-percentage">2%</div>
-        <div class="commission-plus">+</div>
-        <div class="commission-gas-fee" data-translate="NFT_NoGasFees">No Gas Fees</div>
-        <div class="commission-gas-for" data-translate="NFT_CommissionDes1">for all transactions over 5 Eth</div>
-      </div>
-      <div class="commission-fee">
-        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo2.png" alt="">
-        <div class="commission-percentage">2%</div>
-        <div class="commission-plus">+</div>
-        <div class="commission-gas-fee" data-translate="NFT_GasFees">Gas Fees</div>
-        <div class="commission-gas-for" data-translate="NFT_CommissionDes2">for all transactions over 1 Eth</div>
-      </div>
-      <div class="commission-fee">
-        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo3.png" alt="">
-        <div class="commission-percentage">5%</div>
-        <div class="commission-plus">+</div>
-        <div class="commission-gas-fee" data-translate="NFT_GasFees">Gas Fees</div>
-        <div class="commission-gas-for" data-translate="NFT_CommissionDes3">for all transactions under 1 Eth</div>
-      </div>
-    </div>
-    <div class="commission-container">
-      <div class="commission-container-left">
-        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/staricon.png" alt="">
-        <span data-translate="NFT_Commission1" >All inclusive pricing to buy from our marketplace</span>
-      </div>
-      <div class="commission-container-left">
-        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/staricon.png" alt="">
-        <span data-translate="NFT_Commission2">All inclusive pricing to sell to us directly</span>
-      </div>
-    </div>
-    <div class="contact-info" data-translate="NFT_ContactInfo">
-      Contact us for more information
-    </div>
-
-    <div class="contact-btn scroll-to-sign-up" data-translate="NFT_ContactUs"></div>
-    
-  </div>
-
-
-
-  <section class="faq" aria-label="Question Accordions">
-    <div class="custom-container">
-      <h2 data-translate="NFT_FAQ">Frequently Asked Questions </h2>
-      <div class="panel-group" id="faq" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-          <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
-            <h3 class="panel-title">
-              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse0"
-                aria-expanded="true" aria-controls="collapse0">
-                <span data-translate="NFT_Q1">What are NFTs (Non Fungible Tokens)</span>
-
-                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
-              </div>
-            </h3>
-          </div>
-          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
-            <div class="panel-body px-3 mb-4">
-              <p data-translate="NFT_A1"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
-            <h3 class="panel-title">
-              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse1"
-                aria-expanded="true" aria-controls="collapse1">
-                <span data-translate="NFT_Q2">How do I buy the NFT and where do I store it?</span>
-
-                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
-
-              </div>
-            </h3>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-            <div class="panel-body px-3 mb-4">
-              <p data-translate="NFT_A2"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
-            <h3 class="panel-title">
-              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse2"
-                aria-expanded="true" aria-controls="collapse2">
-                <span data-translate="NFT_Q3">Can I sell an NFT that I bought?</span>
-                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
-              </div>
-            </h3>
-          </div>
-          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-            <div class="panel-body px-3 mb-4">
-              <p data-translate="NFT_A3_1"></p>
-              <p data-translate="NFT_A3_3"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
-            <h3 class="panel-title">
-              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse3"
-                aria-expanded="true" aria-controls="collapse3">
-                <span data-translate="NFT_Q4">How do I get started?</span>
-
-                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
-              </div>
-            </h3>
-          </div>
-          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-            <div class="panel-body px-3 mb-4">
-              <p data-translate="NFT_A4_1"></p>
-              <div data-translate="NFT_A4_2"  class="faq_gold scroll-to-sign-up"></div>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
-            <h3 class="panel-title">
-              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse4"
-                aria-expanded="true" aria-controls="collapse4">
-                <span data-translate="NFT_Q5">Why would i buy from you and not on OpenSea?</span>
-                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
-              </div>
-            </h3>
-          </div>
-          <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-            <div class="panel-body px-3 mb-4">
-              <p data-translate="NFT_A5"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="background-img">
-      <img src="<?= get_template_directory_uri() ?>/img/bg3.svg" alt="images not found">
-      <img class="mobile" src="<?= get_template_directory_uri() ?>/img/bg3_mobile.svg" alt="images not found">
-    </div>
-  </section>
-
-
-  <section class="signup-area">
-    <div class="background-img">
-      <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 2.svg" alt="images not found">
-      <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 1.svg" alt="images not found">
-    </div>
-    <div class="container custom-container" id="contact-form">
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-6 col-md-12">
-          <div class="">
-            <h2 data-translate="NFT_SignUp">Sign Up Today</h2>
-          </div>
-          <div class="how-content">
-            <div class="how-item">
-              <?= do_shortcode('[contact-form-7 id="70" title="NFT-signup"]') ?>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
 <style type="text/css">
     h1,h2,h1> span, h2>span,h3 ,h4{
         font-family: "Matter-Bold"!important;
@@ -1196,13 +837,6 @@ get_header('otc');
   background: #FFFFFF !important;
   box-shadow: 0px 4px 4px rgba(171, 168, 168, 0.25);
 }
-.owl-prev img{
-    margin: -8px 0 0 -3px;
-}
-
-.owl-next img{
-    margin: -8px 0 0 2px;
-}
 .owl-prev {
   position: absolute;
   left: -30px;
@@ -1289,6 +923,533 @@ get_header('otc');
 .modal-header {
   border-bottom: none;
 }
+
+
+.nft-home-container .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #05004D;
+}
+
+.checkbox-list {
+  text-align: left;
+}
+
+.checkbox-list .checkbox-title {
+  padding-left: 10px;
+}
+
+.checkbox-list .wpcf7-list-item-label {
+  margin-left: 10px;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 0px 0px 20px 20px;
+}
+.card:hover{
+    /*background: #f2f2f2;*/
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px #E4E3DB;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+</style>
+
+<?php
+
+/**
+ * Template Name: NFT home page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Virgocx
+ */
+
+// $response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/Nft/getList')); //testvirgocx
+$response_data = json_decode(file_get_contents('https://virgocx.ca/Nft/getList')); //production virgocx
+$array=$response_data->data->nftList;
+$rows=array();
+foreach ($array as $rkey => $array){
+  if ($array->trendingVirgocx == 1){
+    $rows[] = $array;
+  }
+}
+
+$actual_uri = "$_SERVER[REQUEST_URI]";
+// echo("<script>console.log('uri: " . $actual_uri . "');</script>");
+
+
+get_header('otc');
+?>
+
+<div class="nft-home-container">
+  <div class="banner-container">
+    <div class="content">
+      <div class="title">
+        <span class="gold" data-translate="NFT_Find">FIND</span>
+        <span data-translate="NFT_Comma">,</span>
+        <span class="gold" data-translate="NFT_Trade">TRADE</span>
+        <span data-translate="NFT_And">, and </span>
+        <span class="gold" data-translate="NFT_Collect">COLLECT</span>
+        <span data-translate="NFT_Collect_zh"></span>
+        <span class= "gold" data-translate="NFT_Collect_zh2"></span>
+        <span data-translate="NFT_Valuable">valuable NFTs with our Brokerage Service.</span>
+      </div>
+      <div class="action">
+          <button class="buy" data-translate="NFT_BuyNFT"
+                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlUM1RXQ1RHM0o2VTZKWFM1QVZKNjJENTY2Vi4u" target ="_blank">Buy
+              an NFT</button>
+        <button class="sell" data-toggle="modal" data-target="#myModal" data-translate="NFT_SellNFT">Sell your
+          NFT</button>
+      </div>
+      <div class="follow">
+        <span  class="followUs"  data-translate="NFT_Follow">Follow Us Today：</span>
+        <a href="https://twitter.com/VirgoNFT" target="_blank"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-twitter.png" alt=""></a>
+        <a href="https://medium.com/@VirgoCX_NFT" target="_blank"><img class="socialicon" src="<?= get_template_directory_uri() ?>/img/nft/socialicon-mail.png" alt=""></a>
+      </div>
+    </div>
+
+    <img class="banner-image" src="<?= get_template_directory_uri() ?>/img/nft/Banner_Desktop.svg" alt="">
+  </div>
+
+  <!-- 模态框（Modal） -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p data-translate="NFT_ModalTitle_1">We would like to know more about your NFT. </p>
+          <p data-translate="NFT_ModalTitle_2">I would like to :</p>
+          <p
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlUM1VVWkJHTkIzUE1OVk1NMTlNV0paS0s3Qi4u','_blank').focus();"
+            data-translate="NFT_ModalOption_1">
+            Sell an NFT from existing collection</p>
+          <p
+            onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=UGpbGTMbYkSNfBKfZ4hKr5Te7538MdtAqne1F81ApQlURUNGR0FQWVUxSkM4UjJYTTk0RVNWSkNJSC4u','_blank').focus();"
+            data-translate="NFT_ModalOption_2">
+            Deploy my own collection</p>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
+
+
+
+
+  <div class="slider-container">
+    <h3 data-translate="NFT_TrendingNFT">Trending on VirgoCX</h3>
+
+    <div class="slider-bg">
+      <img class="top-image" src="<?= get_template_directory_uri() ?>/img/nft/star.svg" alt="">
+      <img class="bottom-image" src="<?= get_template_directory_uri() ?>/img/nft/bg_element.svg" alt="">
+    </div>
+
+    <section class="carousel-area">
+      <div class="container custom-container">
+        <div class="tabs-horizontal">
+          <div class="row carousel-background">
+            <div class="container">
+              <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <?php foreach (array_reverse($rows) as $row) { ?>
+                    <div class="owl-item card">
+                      <a class="pg-top" href="../en-nft-detail/?id=<?php echo base64_encode($row->id) ?>"  target ="_blank">
+                        <div class="img-container">
+                          <img src="<?php echo $row->thumbnail; ?>" alt="">
+                        </div>
+                        <div class="content">
+                          <p class="title"><?php echo $row->title; ?></p>
+                          <p class="desc"> <?php 
+                          echo (strpos($actual_uri, "en-")? $row->enDescription:$row->zhDescription); 
+                          ?></p>
+                            <p class="value" > <span data-translate="NFT_ViewProfile">View Profile</span></p>
+
+                        </div>
+                      </a>
+                    </div>
+
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="action">
+      <a class="view-more round-btn-light" data-translate="NFT_ViewMore"  href="../en-otc-nft-market/" target ="_blank">View More</a>
+    </div>
+  </div>
+
+  <div class="middle-block">
+    <div class="left">
+      <span class="text" data-translate="NFT_note1">The VirgoCX NFT Brokerage helps our clients </span>
+        <span class="gold" data-translate="NFT_note2">find and trade high value art pieces & collectables.</span>
+    </div>
+    <div class="right">
+      <span data-translate="NFT_note3">We navigate the markets to find rare and upcoming NFTs. Our insider reports
+        provides actionable insights for
+        our clients to make purchasing decisions. </span>
+    </div>
+  </div>
+
+
+  <section class="how-area">
+    <h2 data-translate="NFT_HowItWorks">How It Works?</h2>
+
+    <div class="tabs">
+      <nav class="tab-switch row">
+        <a class="selected" data-translate="NFT_BuyingNFT">Buying an NFT</a>
+        <a data-translate="NFT_SellingNFT">Selling your NFT </a>
+      </nav>
+      <div class="how-container">
+        <div class="row custom-container">
+          <div class="icon-box">
+
+            <img class="image" style="width: 65px"
+              src="<?= get_template_directory_uri() ?>/img/nft/How_it_works_buying_an_NFT.svg" alt="">
+          </div>
+          <div class="num-box">
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+          </div>
+          <div class="content-box">
+            <p data-translate="NFT_BuyNote1"></p>
+            <p data-translate="NFT_BuyNote2"></p>
+            <p data-translate="NFT_BuyNote3"></p>
+            <p data-translate="NFT_BuyNote4"></p>
+          </div>
+        </div>
+      </div>
+      <div class="how-container" style="display: none;">
+        <div class="row custom-container">
+          <div class="icon-box">
+            <img class="image" style="width: 65px"
+              src="<?= get_template_directory_uri() ?>/img/nft/How_it_works_Selling_your_NFT.svg" alt="">
+
+          </div>
+          <div class="num-box">
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+          </div>
+          <div class="content-box">
+            <p data-translate="NFT_SellNote1"></p>
+            <p data-translate="NFT_SellNote2"></p>
+            <p data-translate="NFT_SellNote3"></p>
+            <p data-translate="NFT_SellNote4"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="getstart-btn scroll-to-sign-up" data-translate="NFT_GetStarted">Get Started</div>
+  </section>
+
+
+  <div class="middle-block-commission">
+    <div class="background-img">
+      <img src="<?= get_template_directory_uri() ?>/img/nft/bg-left.png" alt="images not found">
+      <img src="<?= get_template_directory_uri() ?>/img/nft/bg-right.png" alt="images not found">
+    </div>
+    <div class="commission-title" data-translate="NFT_OurCommissionFee">Our Commission Fee</div>
+    <div class="commission-container">
+      <div class="commission-fee">
+        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo1.png" alt="">
+        <div class="commission-percentage">2%</div>
+        <div class="commission-plus">+</div>
+        <div class="commission-gas-fee" data-translate="NFT_NoGasFees">No Gas Fees</div>
+        <div class="commission-gas-for" data-translate="NFT_CommissionDes1">for all transactions over 5 Eth</div>
+      </div>
+      <div class="commission-fee">
+        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo2.png" alt="">
+        <div class="commission-percentage">2%</div>
+        <div class="commission-plus">+</div>
+        <div class="commission-gas-fee" data-translate="NFT_GasFees">Gas Fees</div>
+        <div class="commission-gas-for" data-translate="NFT_CommissionDes2">for all transactions over 1 Eth</div>
+      </div>
+      <div class="commission-fee">
+        <img class="commission-logo" src="<?= get_template_directory_uri() ?>/img/nft/commission-logo3.png" alt="">
+        <div class="commission-percentage">5%</div>
+        <div class="commission-plus">+</div>
+        <div class="commission-gas-fee" data-translate="NFT_GasFees">Gas Fees</div>
+        <div class="commission-gas-for" data-translate="NFT_CommissionDes3">for all transactions under 1 Eth</div>
+      </div>
+    </div>
+    <div class="commission-container">
+      <div class="commission-container-left">
+        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/staricon.png" alt="">
+        <span data-translate="NFT_Commission1" >All inclusive pricing to buy from our marketplace</span>
+      </div>
+      <div class="commission-container-left">
+        <img class="commission-staricon" src="<?= get_template_directory_uri() ?>/img/nft/staricon.png" alt="">
+        <span data-translate="NFT_Commission2">All inclusive pricing to sell to us directly</span>
+      </div>
+    </div>
+    <div class="contact-info" data-translate="NFT_ContactInfo">
+      Contact us for more information
+    </div>
+
+    <div class="contact-btn scroll-to-sign-up" data-translate="NFT_ContactUs"></div>
+    
+  </div>
+
+
+
+  <section class="faq" aria-label="Question Accordions">
+    <div class="custom-container">
+      <h2 data-translate="NFT_FAQ">Frequently Asked Questions </h2>
+      <div class="panel-group" id="faq" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+            <h3 class="panel-title">
+              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse0"
+                aria-expanded="true" aria-controls="collapse0">
+                <span data-translate="NFT_Q1">What are NFTs (Non Fungible Tokens)</span>
+
+                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+              </div>
+            </h3>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body px-3 mb-4">
+              <p data-translate="NFT_A1"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+            <h3 class="panel-title">
+              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse1"
+                aria-expanded="true" aria-controls="collapse1">
+                <span data-translate="NFT_Q2">How do I buy the NFT and where do I store it?</span>
+
+                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+
+              </div>
+            </h3>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body px-3 mb-4">
+              <p data-translate="NFT_A2"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse2"
+                aria-expanded="true" aria-controls="collapse2">
+                <span data-translate="NFT_Q3">Can I sell an NFT that I bought?</span>
+                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+              </div>
+            </h3>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p data-translate="NFT_A3_1"></p>
+              <p data-translate="NFT_A3_3"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+            <h3 class="panel-title">
+              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse3"
+                aria-expanded="true" aria-controls="collapse3">
+                <span data-translate="NFT_Q4">How do I get started?</span>
+
+                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+              </div>
+            </h3>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body px-3 mb-4">
+              <p data-translate="NFT_A4_1"></p>
+              <div data-translate="NFT_A4_2"  class="faq_gold scroll-to-sign-up"></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
+            <h3 class="panel-title">
+              <div class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#faq" href="#collapse4"
+                aria-expanded="true" aria-controls="collapse4">
+                <span data-translate="NFT_Q5">Why would i buy from you and not on OpenSea?</span>
+                <img src="<?= get_template_directory_uri() ?>/img/arrowdd.svg" alt="images not found" />
+              </div>
+            </h3>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+            <div class="panel-body px-3 mb-4">
+              <p data-translate="NFT_A5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="background-img">
+      <img src="<?= get_template_directory_uri() ?>/img/bg3.svg" alt="images not found">
+      <img class="mobile" src="<?= get_template_directory_uri() ?>/img/bg3_mobile.svg" alt="images not found">
+    </div>
+  </section>
+
+
+  <section class="signup-area">
+    <div class="background-img">
+      <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 2.svg" alt="images not found">
+      <img src="<?= get_template_directory_uri() ?>/img/Sign Up Today/Background 1.svg" alt="images not found">
+    </div>
+    <div class="container custom-container" id="contact-form">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="">
+            <h2 data-translate="NFT_SignUp">Sign Up Today</h2>
+          </div>
+          <div class="how-content">
+            <div class="how-item">
+              <?= do_shortcode('[contact-form-7 id="70" title="NFT-signup"]') ?>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<script type="text/javascript">
+(function($) {
+
+  $('.tabs nav a').on('click', function() {
+    const children = this.parentElement.querySelectorAll('a');
+    children.forEach((element, index) => {
+      $(element).removeClass('selected')
+      $($('.how-container')[index]).css('display', 'none')
+    });
+    $(this).addClass('selected')
+    $($('.how-container')[$(this).index()]).css('display', 'block')
+
+
+  });
+
+  // faq triangle toggle
+  $('.panel-title').click(function() {
+    $(this).children().children().toggleClass('flipped')
+  });
+})(jQuery);
+
+
+(function($) {
+  $(document).ready(function() {
+    $('[data-toggle="popover"]').popover()
+    var owl = $('.owl-carousel');
+    if (screen.width > 900) {
+      owl.owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay: false,
+        autoplayTimeout: 1500,
+        pagination: true,
+        nav: true,
+        dots: true,
+          navText : ["<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_left.png' alt=''>","<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_right.png' alt=''>"],
+        autoplayHoverPause: true
+      });
+    } else {
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: false,
+        autoplayTimeout: 1500,
+        pagination: false,
+        dots: true,
+        autoplayHoverPause: true
+      });
+    }
+
+
+    $('.tabs-vertical nav a').on('click', function() {
+      show_container_vertical($(this).index());
+    });
+
+    show_container_vertical(0);
+
+    function show_container_vertical(index) {
+      // Make the container visible
+      $('.tabs-vertical .container.visible').removeClass('visible');
+      $('.tabs-vertical .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+      // Set the tab to selected
+      $('.tabs-vertical nav a.selected').removeClass('selected');
+      $('.tabs-vertical nav .tab-dot.selected').removeClass('selected');
+      $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+      $('.tabs-vertical nav .tab-dot:nth-of-type(' + (index + 1) + ')').addClass('selected');
+    }
+
+    $('.tabs-horizontal nav a').on('click', function() {
+      show_container('.tabs-horizontal', $(this).index());
+    });
+    $('.product-tabs-horizontal nav a').on('click', function() {
+      show_container('.product-tabs-horizontal', $(this).index());
+    });
+
+    // $('.tabs nav a').on('click', function() {
+    //   scroll_to_container($(this).index());
+    // });
+
+    function scroll_to_container(index) {
+      // Make the container visible
+      console.log(index);
+      console.log('.tabs .custom-container:nth-of-type(' + (index + 1) + ')');
+      $('html, body').animate({
+        scrollTop: $('.tabs .custom-container:nth-of-type(' + (index + 1) + ')').offset().top
+      }, 800);
+    }
+
+    show_container('.tabs-horizontal', 0);
+    show_container('.product-tabs-horizontal', 0);
+
+    function show_container(name, index) {
+      // Make the container visible
+      $(name + ' .container.visible').removeClass('visible');
+      $(name + ' .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+      // Set the tab to selected
+      $(name + ' nav a.selected').removeClass('selected');
+      $(name + ' nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
+    }
+  });
+
+
+})(jQuery);
+</script>
+
+<style type="text/css">
+  .tab-switch {
+    display: none;
+    margin: 0 auto;
+  }
+
 
 @media screen and (max-width: 900px) {
 
@@ -1505,9 +1666,6 @@ get_header('otc');
     color: #C7BA9A;
   }
 
-  .middle-block-commission .commission-logo{
-    margin-top:-47px;
-  }
   .middle-block-commission .commission-percentage{
     margin-top:2px;
   }
@@ -1908,13 +2066,8 @@ get_header('otc');
     left: -5px;
   }
 
-    .owl-prev img{
-      margin: -8px 0 0 -3px;
-  }
 
-    .owl-next img{
-        margin: -8px 0 0 -3px;
-    }
+  
 
   .owl-next {
     position: absolute;
@@ -1998,148 +2151,15 @@ get_header('otc');
     border-bottom: none;
   }
 }
-
-.nft-home-container .owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #05004D;
+.slider-container .owl-item {
+  border: 1px solid white;
 }
-
-.checkbox-list {
-  text-align: left;
+@media screen and (max-width: 374px){
+  .how-area .icon-box{
+    margin-left:0px;
+  }
 }
-
-.checkbox-list .checkbox-title {
-  padding-left: 10px;
-}
-
-.checkbox-list .wpcf7-list-item-label {
-  margin-left: 10px;
-}
-.card{
-    border: 1px solid white;
-    border-radius: 0px 0px 20px 20px;
-}
-.card:hover{
-    /*background: #f2f2f2;*/
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 10px 10px 15px #E4E3DB;
-}
-
-body{
-    background-color: #F5F5F5;
-}
-
 </style>
-
-<script type="text/javascript">
-(function($) {
-
-  $('.tabs nav a').on('click', function() {
-    const children = this.parentElement.querySelectorAll('a');
-    children.forEach((element, index) => {
-      $(element).removeClass('selected')
-      $($('.how-container')[index]).css('display', 'none')
-    });
-    $(this).addClass('selected')
-    $($('.how-container')[$(this).index()]).css('display', 'block')
-
-
-  });
-
-  // faq triangle toggle
-  $('.panel-title').click(function() {
-    $(this).children().children().toggleClass('flipped')
-  });
-})(jQuery);
-
-
-(function($) {
-  $(document).ready(function() {
-    $('[data-toggle="popover"]').popover()
-    var owl = $('.owl-carousel');
-    if (screen.width > 900) {
-      owl.owlCarousel({
-        items: 3,
-        loop: true,
-        margin: 10,
-        autoplay: false,
-        autoplayTimeout: 1500,
-        pagination: true,
-        nav: true,
-        dots: true,
-          navText : ["<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_left.png' alt=''>","<img src='<?= get_template_directory_uri() ?>/img/nft/arrow_right.png' alt=''>"],
-        autoplayHoverPause: true
-      });
-    } else {
-      owl.owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        autoplay: false,
-        autoplayTimeout: 1500,
-        pagination: false,
-        dots: true,
-        autoplayHoverPause: true
-      });
-    }
-
-
-    $('.tabs-vertical nav a').on('click', function() {
-      show_container_vertical($(this).index());
-    });
-
-    show_container_vertical(0);
-
-    function show_container_vertical(index) {
-      // Make the container visible
-      $('.tabs-vertical .container.visible').removeClass('visible');
-      $('.tabs-vertical .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
-
-      // Set the tab to selected
-      $('.tabs-vertical nav a.selected').removeClass('selected');
-      $('.tabs-vertical nav .tab-dot.selected').removeClass('selected');
-      $('.tabs-vertical nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
-      $('.tabs-vertical nav .tab-dot:nth-of-type(' + (index + 1) + ')').addClass('selected');
-    }
-
-    $('.tabs-horizontal nav a').on('click', function() {
-      show_container('.tabs-horizontal', $(this).index());
-    });
-    $('.product-tabs-horizontal nav a').on('click', function() {
-      show_container('.product-tabs-horizontal', $(this).index());
-    });
-
-    // $('.tabs nav a').on('click', function() {
-    //   scroll_to_container($(this).index());
-    // });
-
-    function scroll_to_container(index) {
-      // Make the container visible
-      console.log(index);
-      console.log('.tabs .custom-container:nth-of-type(' + (index + 1) + ')');
-      $('html, body').animate({
-        scrollTop: $('.tabs .custom-container:nth-of-type(' + (index + 1) + ')').offset().top
-      }, 800);
-    }
-
-    show_container('.tabs-horizontal', 0);
-    show_container('.product-tabs-horizontal', 0);
-
-    function show_container(name, index) {
-      // Make the container visible
-      $(name + ' .container.visible').removeClass('visible');
-      $(name + ' .container:nth-of-type(' + (index + 1) + ')').addClass('visible');
-
-      // Set the tab to selected
-      $(name + ' nav a.selected').removeClass('selected');
-      $(name + ' nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
-    }
-  });
-
-
-})(jQuery);
-</script>
 
 <?php
 get_footer('otc');

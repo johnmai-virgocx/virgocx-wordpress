@@ -31,7 +31,7 @@ get_header('otc');
                             <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                                 Get started
                             </a>
-                            <p class="emailUs" data-translate="OTC_email_us">Or email us: <span>otc@virgocx.ca</span></p>
+                            <p class="emailUs" data-translate="OTC_email_us">Ask for a demo: <span>otc@virgocx.ca</span></p>
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@ get_header('otc');
                          alt="flags"/>
                 </div>
                 <h4 data-translate="OTC_chat_24">24/7</h4>
-                <p data-translate="OTC_chat_why_1">OTC Direct allows you to trade around the clock without having to work with the OTC account
+                <p data-translate="OTC_chat_why_1">OTC Direct allows you to trade around the clock without having to work with the Wealth account
                     managers.</p>
                 <p data-translate="OTC_chat_why_1-1">
                 We can provide your team with a <span class="blue">seamless trading
@@ -108,7 +108,7 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC</h3>
+                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX Wealth</h3>
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
                                      alt="flags" width="100%"/>
@@ -126,7 +126,7 @@ get_header('otc');
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
                             <p data-translate="OTC_direct_how_1_1">
-                                Contact our OTC account managers to get started as an individual or as a corporate entity. 
+                                Contact our Wealth account managers to get started as an individual or as a corporate entity. 
                             <ul>
                                 <li data-translate="OTC_direct_how_1_2">All onboarding information will be securely stored.</li>
                                 <li data-translate="OTC_direct_how_1_3">Account registration will typically take less than one day.</li>
@@ -302,7 +302,7 @@ get_header('otc');
                     </div>
                     <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_chat_faq1_1">We can offer a fast track enrollment on OTC if you have already onboarded on the retail
+                            <p data-translate="OTC_chat_faq1_1">We can offer a fast track enrollment with Chat Broker if you have already onboarded on the retail
                                 platform.</p>
                         </div>
                     </div>

@@ -28,7 +28,7 @@ get_header('otc');
                             </a>
                             
                         </div>
-                        <p class="emailUs" data-translate="OTC_email_us">Or email us: <span>otc@virgocx.ca</span></p>
+                        <p class="emailUs" data-translate="OTC_email_us">Ask for a demo: <span>otc@virgocx.ca</span></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
@@ -49,12 +49,12 @@ get_header('otc');
                          alt="flags"/>
                 </div>
                 <h4 data-translate="OTC_direct_24_7">24/7</h4>
-                <p data-translate="OTC_direct_banner2_col1">OTC Direct allows you to trade around the clock without
-                    having to work with the OTC account managers.
+                <p data-translate="OTC_direct_banner2_col1">OTC direct allows you to trade around 
+                    the clock across 40+ crypto currencies supported by a dedicated account manager. 
 
                 </p>
                 <p data-translate="OTC_direct_banner2_col1_2">
-                    With optimized uptime on our platform, OTC Direct can provide your team with a <span class="blue">seamless trading
+                    With optimized uptime on our platform, OTC Direct can provide you with a <span class="blue">seamless trading
                     experience</span> for your larger orders.
                 </p>
             </div>
@@ -109,7 +109,7 @@ get_header('otc');
                     <div class="col-4"></div>
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text title-right">
-                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX OTC</h3>
+                            <h3 data-translate="OTC_direct_how_1">Onboard with VirgoCX Wealth</h3>
                                 <img class="number-right"
                                      src="<?= get_template_directory_uri() ?>/img/OTC_Direct_ Chat_Broker/Desktop/No.1.png"
                                      alt="flags" width="100%"/>
@@ -127,7 +127,7 @@ get_header('otc');
                     <div class="col-lg-8 col-sm-12">
                         <div class="how-text">
                             <p data-translate="OTC_direct_how_1_1">
-                                Contact our OTC account managers to get started as an individual or as a corporate
+                                Contact our Wealth account managers to get started as an individual or as a corporate
                                 entity.
                             <ul>
                                 <li data-translate="OTC_direct_how_1_2">All onboarding information will be securely
@@ -253,6 +253,8 @@ get_header('otc');
                                 <li data-translate="OTC_direct_how_4_3">Access large liquidity limit orders and RFQ
                                     orders on our platform.
                                 </li>
+                                <li data-translate="OTC_direct_how_4_4">Connect with our API for automated trading strategy. 
+                                </li>
                             </ul>
                             </p>
                         </div>
@@ -318,7 +320,7 @@ get_header('otc');
                     </div>
                     <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body px-3 mb-4">
-                            <p data-translate="OTC_direct_faq_1_1">We can offer a fast track enrollment on OTC if you have already onboarded on the retail
+                            <p data-translate="OTC_direct_faq_1_1">We can offer a fast track enrollment with Chat Broker if you have already onboarded on the retail
                                 platform.</p>
                         </div>
                     </div>

@@ -11,5 +11,5 @@ $args = [
 	'name' => 'Tether',
 	'ticker' => 'USDT',
 ];
-get_template_part('template-parts/sell', 'coin', $args);
+get_template_part('template-parts/sell-coin-otc', 'coin', $args);
 ?>

@@ -105,7 +105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         @media (min-width: 1200px) {
             .menu{
-                width: 350px;
+                width: 360px;
             }
         }
 
