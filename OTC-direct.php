@@ -28,7 +28,7 @@ get_header('otc');
                             </a>
                             
                         </div>
-                        <p class="emailUs" data-translate="OTC_email_us">Ask for a demo: <span>otc@virgocx.ca</span></p>
+                            <p class="emailUs"><span style="color:white" data-translate="OTC_email_us">Ask for a demo: </span><span>otc@virgocx.ca</span></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
