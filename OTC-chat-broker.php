@@ -31,7 +31,7 @@ get_header('otc');
                             <a class="round-btn scroll-to-sign-up" data-translate="OTC_landing_btn1">
                                 Get started
                             </a>
-                            <p class="emailUs" data-translate="OTC_email_us">Ask for a demo: <span>otc@virgocx.ca</span></p>
+                            <p class="emailUs"><span style="color:white" data-translate="OTC_email_us">Ask for a demo: </span><span>otc@virgocx.ca</span></p>
                         </div>
                     </div>
 

@@ -127,7 +127,7 @@
 	"footer_Brand": "©2019-2022 VirgoCX Inc. MSB (FINTRAC): M19955733",
 	"footer_Make_In_Canada": "Proudly made in Canada",
 
-	"OTC_header3_tag6_desc":"We provide a same-day, no-limit settlement for your USD and CAD trades. This also applies to your Bitcoin, Ethereum, and any other cryptocurrency.",
+	"OTC_header3_tag6_desc":"We provide a same-day, no-limit settlement for your USD and CAD trades. This also applies to your Bitcoin, Ethereum, USDT, and any other cryptocurrency.",
 	"OTC_landing_banner_desc":"Dedicated for seamless execution of large block transactions over $30,000.",
 	"OTC_landing_banner_2":"VirgoCX Wealth offers a full service trade desk for high value transactions.",
 	"OTC_landing_banner_2desc":"VirgoCX Wealth offers direct market access for cryptocurrencies with optimal price execution. We bridge the gap between traditional financial services and the cryptocurrency markets by allowing our clients to have access to a deep pool of crypto and fiat currencies to fill large orders at a desired market price.",
@@ -709,7 +709,15 @@
 	"0x":"0x",
 	"STORJ":"STORJ",
 	"Storj":"Storj",
-	
+	"Alchemy Pay":"Alchemy Pay",
+	"ACH":"ACH",
+	"Smooth Love Potion":"Smooth Love Potion",
+	"SLP":"SLP",
+	"API3":"API3",
+	"NuCypher":"NuCypher",
+	"NU":"NU",
+	"Ethereum Name Service":"Ethereum Name Service",
+	"ENS":"ENS",
 
 
 
