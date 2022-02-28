@@ -589,6 +589,11 @@
             //     'zrx/cad': '/page#/advancedTrade/100',
             //     'dydx/cad': '/page#/advancedTrade/101',
             //     'storj/cad': '/page#/advancedTrade/102',
+            //     'api3/cad': 'https://virgocx.ca/page#/advancedTrade/103',
+            //     'slp/cad': 'https://virgocx.ca/page#/advancedTrade/104',
+            //     'nu/cad': 'https://virgocx.ca/page#/advancedTrade/105',
+            //     'ens/cad': 'https://virgocx.ca/page#/advancedTrade/106',
+            //     'ach/cad': 'https://virgocx.ca/page#/advancedTrade/107',
             // }//testvirgocx
 
             const tradingMapping = {
@@ -647,6 +652,11 @@
                 'zrx/cad': 'https://virgocx.ca/page#/advancedTrade/100',
                 'dydx/cad': 'https://virgocx.ca/page#/advancedTrade/101',
                 'storj/cad': 'https://virgocx.ca/page#/advancedTrade/102',
+                'api3/cad': 'https://virgocx.ca/page#/advancedTrade/103',
+                'slp/cad': 'https://virgocx.ca/page#/advancedTrade/104',
+                'nu/cad': 'https://virgocx.ca/page#/advancedTrade/105',
+                'ens/cad': 'https://virgocx.ca/page#/advancedTrade/106',
+                'ach/cad': 'https://virgocx.ca/page#/advancedTrade/107',
             }//production
 
             let index = 1;
