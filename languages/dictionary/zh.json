@@ -712,6 +712,16 @@
 	"0x":"0x",
 	"STORJ":"STORJ",
 	"Storj":"Storj",
+	"Alchemy Pay":"Alchemy Pay",
+	"ACH":"ACH",
+	"Smooth Love Potion":"Smooth Love Potion",
+	"SLP":"SLP",
+	"API3":"API3",
+	"NuCypher":"NuCypher",
+	"NU":"NU",
+	"Ethereum Name Service":"Ethereum Name Service",
+	"ENS":"ENS",
+
 
 	"NFT_header":"NFT",
 	"NFT_Buy": "通过VirgoCX购买",
