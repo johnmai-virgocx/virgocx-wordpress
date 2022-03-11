@@ -20,6 +20,11 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5BQZZQZ');</script>
     <!-- End Google Tag Manager -->
+    
+    <!-- 测试禁google tag -->
+    <!-- <meta name="googlebot" content="noindex"> -->
+    <!-- google tag end -->
+    
     <script type="text/javascript">
 
         var hasoffers_domain = "https://go.virgocx.ca";
