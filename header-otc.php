@@ -57,6 +57,7 @@
     <link rel="shortcut icon" href="img/fav.png"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147248930-1"></script>
+    <!-- Google Tag Manager -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -68,6 +69,7 @@
 
         gtag('config', 'UA-147248930-1');
     </script>
+    <!-- end of Google Tag Manager -->
     <?php wp_head(); ?>
     <script type="text/javascript">
         const _virgocx_theme_url = '<?= get_template_directory_uri() ?>';
