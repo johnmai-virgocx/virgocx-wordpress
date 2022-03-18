@@ -595,6 +595,7 @@
             //     'ens/cad': '/page#/advancedTrade/106',
             //     'ach/cad': '/page#/advancedTrade/107',
             //     'algo/cad': '/page#/advancedTrade/108',
+                // 'ape/cad': '/page#/advancedTrade/109',
             // }//testvirgocx
 
             const tradingMapping = {
@@ -659,6 +660,7 @@
                 'ens/cad': 'https://virgocx.ca/page#/advancedTrade/106',
                 'ach/cad': 'https://virgocx.ca/page#/advancedTrade/107',
                 'algo/cad': 'https://virgocx.ca/page#/advancedTrade/108',
+                'ape/cad': 'https://virgocx.ca/page#/advancedTrade/109',
             }//production
 
             let index = 1;
