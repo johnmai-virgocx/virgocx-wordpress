@@ -46,7 +46,7 @@ get_header('otc');
 							</p>
 
 							<div class="hero-signup get-started-content">
-								<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
+								<input type="submit" onclick="goToSignUp()" value="Get Started" class="wpcf7-form-control wpcf7-submit" aria-invalid="false">
 							</div>
 						</div>
 					</div>
@@ -180,8 +180,7 @@ get_header('otc');
 			<div class="container custom-container">
 				<h3 data-translate="Buy_header6_otc"></h3>
 				<div class="getStart-content get-started-content">
-										<!-- <span data-translate="Buy_email"></span> -->
-										<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started"]') ?>
+					<input type="submit" onclick="goToSignUp()" value="Get Started" class="wpcf7-form-control wpcf7-submit" aria-invalid="false">
 				</div>
 			</div>
 		</section>
@@ -298,6 +297,12 @@ get_header('otc');
 document.addEventListener( 'wpcf7invalid', function( event ) {
 	alert('Please provide a valid email address');
 });
+function goToSignUp(){
+	var url = window.location.href;
+	var redirect = url.substr(0,url.indexOf('-'))+'-otc-direct/#contact-form'
+	window.location.href =redirect;
+};
+
 </script>
 
 	</div>
