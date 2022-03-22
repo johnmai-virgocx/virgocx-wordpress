@@ -68,7 +68,7 @@
 	"Registers": "Register",
 	"Learn": "Learn",
 	"About": "About",
-	"Contact": "Contact",
+	"Contact": "Contact Us",
 	"Support": "Support",
 	"footer_col2": "Buy Crypto",
 	"Buy Bitcoin (BTC)": "Buy Bitcoin (BTC)",
@@ -721,6 +721,8 @@
 	"ENS":"ENS",
 	"ALGO":"ALGO",
 	"Algorand":"Algorand",
+	"APE":"APE",
+	"ApeCoin":"ApeCoin",
 
 
 
