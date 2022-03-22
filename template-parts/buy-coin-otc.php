@@ -180,7 +180,7 @@ get_header('otc');
 			<div class="container custom-container">
 				<h3 data-translate="Buy_header6_otc"></h3>
 				<div class="getStart-content get-started-content">
-					<input type="submit" onclick="goToSignUp()" value="Get Started" class="wpcf7-form-control wpcf7-submit" aria-invalid="false">
+					<input onclick="goToSignUp()" type="submit"  value="Get Started" class="wpcf7-form-control wpcf7-submit" aria-invalid="false">
 				</div>
 			</div>
 		</section>
@@ -260,8 +260,14 @@ get_header('otc');
 .hero-signup input[type=submit]{
     background: #C7BA9A !important;
 }
-.getStart-content form input[type=submit]{
+.getStart-content input[type=submit]{
+	margin-left:187px;
+	width:125px;
+	height:46px;
+	border:none;
+	color:#fff;
 	background: #C7BA9A;
+	border-radius:5px;
 }
 .getStart-area{
 	background-image: url(/wp-content/themes/virgocx/img/bg3.svg);
