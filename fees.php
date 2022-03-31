@@ -97,7 +97,7 @@ get_header();
                         <div class="row justify-content-md-center">
                             <div class="fees-header">
                                 <h2 data-translate="Fees_title1"></h2>
-                                <p data-translate="Fees_title1_desc"></p>
+                                <p style="font-size: 20px;font-weight: 700;" data-translate="Fees_title1_desc"></p>
                             </div>
                         </div>
 
