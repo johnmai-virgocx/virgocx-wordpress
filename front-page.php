@@ -678,28 +678,28 @@ if ($totalNumber === 1): ?>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-1" style="background:#5E3BDF;">
+                <div class="feature-item fibg-1" style="background:#7965E6;">
                     <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature1.png" alt="images not found"/>
                     <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag1"/></h5>
                     <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag1_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-2" style="background:#DC9FA5;">
+                <div class="feature-item fibg-2" style="background:#E09F9F;">
                     <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature2.png" alt="images not found"/>
                     <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag2"/></h5>
                     <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag2_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-1" style="background:#364696;">
+                <div class="feature-item fibg-1" style="background:#739DE5;">
                     <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature3.png" alt="images not found"/>
                     <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag3"/></h5>
                     <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag3_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-2" style="background:#E3897D;">
+                <div class="feature-item fibg-2" style="background:#E49A81;">
                     <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature4.png" alt="images not found"/>
                     <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag4"/></h5>
                     <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag4_desc"/></p>
