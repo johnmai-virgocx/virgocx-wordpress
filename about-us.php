@@ -208,7 +208,7 @@ Xtra Small Screen - Small Mobile
           <div class="since-our-humble-beg-1DesI1 font-class-1" data-translate="AboutUs_header4_desc">
           </div>
 					<div class="view-openings">
-						<a href="https://www.linkedin.com/company/virgocx/" class="btn blue-gradient-btn" data-translate="AboutUs_header4_btn"></a>
+						<a href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=817853f8-f29a-4242-9ac5-bfceec283850&ccId=19000101_000001&jobId=422470&source=CC2&lang=en_CA&selectedMenuKey=CareerCenter" class="btn blue-gradient-btn" data-translate="AboutUs_header4_btn"></a>
 					</div>
 				</div>
 
