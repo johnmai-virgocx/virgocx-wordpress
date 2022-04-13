@@ -204,9 +204,10 @@ get_header();
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12" >
-						<h1 data-translate="Buy_header23"></h1>
+						<h1 data-translate="Buy_header23" style="margin-top:77px"></h1>
 					</div>
 				</div>
+				<div class="line1"></div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12" >
 						<h2 data-translate="Buy_header24"></h2>
@@ -400,13 +401,15 @@ get_header();
     font-weight: 700;
 	color: #66617F;
 	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 90px;
 }
 #learn-about h2{
 	font-size: 36px;
     font-weight: 700;
 	color: #66617F;
+	display:inline-block;
+	background-color:#D4CCF7;
+	line-height: 0px;
+	padding-bottom: 16px;
 }
 #learn-about p{
 	font-size: 18px;
@@ -443,6 +446,14 @@ get_header();
     flex-direction: column;
     align-items: center;
 	text-align: center;
+}
+.line1{
+	width:100px;
+	height:6px;
+	border-radius:6px;
+	background-color: #6B47ED;
+	margin: 0 auto;
+	margin-bottom: 100px;
 }
 
 
