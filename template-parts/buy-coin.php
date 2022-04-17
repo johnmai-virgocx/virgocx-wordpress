@@ -6,7 +6,7 @@
  * @package Virgocx
  */
 
-get_header();
+get_header('buy');
 ?>
 
 <style type="text/css">
@@ -39,7 +39,7 @@ get_header();
 							<?php else : ?>
 								<h1><span data-translate="Buy_header1_1" ></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Buy_header1_2"></span></h1>
 							<?php endif; ?>
-							<p class="tag-line" data-translate="Buy_header1_desc"></p>
+							<p class="tag-line" data-translate="Buy_header1_desc1"></p>
 							<p class="tag-line2" data-translate="Buy_header1_desc2"></p>
 
 							<div class="hero-signup get-started-content">
@@ -61,10 +61,11 @@ get_header();
 						<h3>
 							<span data-translate="Buy_header13_desc1"></span> 
 							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header13_desc2"></span> 
 						</h3>
 						<h3>
-							<span data-translate="Buy_header13_desc2"></span> 
 							<span data-translate="Buy_header13_desc3" style="color: #6B47ED;"></span> 
+							<span data-translate="Buy_header13_desc4"></span> 
 						</h3>
 					</div>
 				</div>
@@ -73,7 +74,7 @@ get_header();
 						<h2 data-translate="Buy_header10"></h2>
 						<p >
 							<span data-translate="Buy_header10_desc1"></span>
-							<a href="https://virgocx.ca/page#/register" data-translate="Buy_header2_desc2" style="color: #6B47ED;"></a> 
+							<a href="https://virgocx.ca/page#/register" data-translate="Buy_header10_desc2" style="color: #6B47ED;"></a> 
 							<span data-translate="Buy_header10_desc3"></span>
 							<span data-translate="Buy_header10_desc4" style="color: #6B47ED;"></span>
 							<span data-translate="Buy_header10_desc5"></span>
@@ -85,8 +86,8 @@ get_header();
 						<img src="<?= get_template_directory_uri() ?>/img/app_display_new2.png" alt="images not found" width="100%"/>
 					</div>
 
-					<div class="col-lg-5 col-md-12">
-						<?php get_template_part('template-parts/app', 'qr'); ?>
+					<div class="col-lg-6 col-md-12">
+						<?php get_template_part('template-parts/app', 'qrNew'); ?>
 					</div>
 				</div>
 				<div id="step-2" class="row">
@@ -128,7 +129,8 @@ get_header();
 							<span data-translate="Buy_header14_desc2"></span> 
 						</h3>
 						<h3>
-							<span data-translate="Buy_header14_desc3" style="color: #6B47ED;"></span> 
+							<span data-translate="Buy_header14_desc3"></span> 
+							<span data-translate="Buy_header14_desc4" style="color: #6B47ED;"></span> 
 						</h3>
 					</div>
 				</div>
@@ -175,7 +177,7 @@ get_header();
 							<h2 style="color:#6D9E8E" data-translate="Buy_header20"></h2>
 							<div class="innerBox" style="background-color: #6D9E8E;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon5.png" />
-								<p data-translate="Buy_header20_desc1" style="padding-bottom:0px"></p>
+								<p data-translate="Buy_header20_desc1" style="margin-bottom:0px;padding-bottom:0px"></p>
 								<p data-translate="Buy_header20_desc2"></p>
 							</div>
 						</div>
@@ -220,7 +222,10 @@ get_header();
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h2 data-translate="Buy_header25"></h2>
-						<h3 data-translate="Buy_header26" style="margin-top:50px;"></h3>
+						<h3 style="margin-top:50px;">
+							<span data-translate="Buy_header26"></span>
+							<span data-translate="Buy_header26_1" style="color:#6B47ED"></span>
+						</h3>
 						<p data-translate="Buy_header26_desc1"></p>
 					</div>
 				</div>
@@ -262,7 +267,9 @@ get_header();
 				<div class="row" style="margin-top:90px; margin-bottom:60px;">
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header31"></h3>
-						<p data-translate="Buy_header31_desc1" style="margin-bottom:90px;"></p>
+						<p data-translate="Buy_header31_desc1" style="margin-bottom:50px;"></p>
+						<h3 data-translate="Buy_header31_desc2"></h3>
+						<p data-translate="Buy_header31_desc3" style="margin-bottom:90px;"></p>
 						<h2 data-translate="Buy_header32"></h2>
 					</div>
 				</div>
