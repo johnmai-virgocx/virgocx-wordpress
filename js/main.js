@@ -667,7 +667,9 @@
 
             let index = 1;
             prices.forEach(function (price) {
-                const link = tradingMapping[price.symbol.toLowerCase()];
+                // const link = tradingMapping[price.symbol.toLowerCase()];
+                // const link = "https://wordpress.virgocx.org/page#/market/"+price.symbol.toUpperCase().replace('/','_')//测试服test
+                const link = "https://virgocx.ca/page#/market/"+price.symbol.toUpperCase().replace('/','_')//production
 
                 // console.log('go through each price', price)
                 const item = document.createElement('div');

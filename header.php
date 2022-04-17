@@ -153,12 +153,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         //											?>
                         <ul class="menu navbar-nav">
                             <li>
-                                <a class="item" href="https://virgocx.ca/page#/advancedTrade/24"
+                                <a class="item" href="https://virgocx.ca/page#/market/BTC_CAD"
                                    data-translate="header_Market"></a>
                                    <!-- production virgocx -->              
                                    
                                    
-                                <!-- <a class="item" href="https://wordpress.virgocx.org/page#/advancedTrade/24"
+                                <!-- <a class="item" href="https://wordpress.virgocx.org/page#/market/BTC_CAD"
                                 data-translate="header_Market"></a> -->
                                 <!-- testvirgocx -->   
                             </li>
