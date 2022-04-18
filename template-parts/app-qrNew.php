@@ -3,7 +3,7 @@
 	
 	<div class="title" data-translate="Buy_header2_download"></div>
 	<div class="row">
-		<div id="stores" class="col-lg-5 col-md-5 app-store">
+		<div id="stores" class="col-lg-5 col-sm-5 col-11 app-store">
 			<a href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048">
 				<img class="app_store_download" data-value="app_store" src="<?= get_template_directory_uri() ?>/img/app_buttonsNew/app_store.png" alt="images not found" />
 			</a>
@@ -15,7 +15,7 @@
 			</a>
 		</div>
 
-		<img class="col-lg-5 col-md-7 col-sm-7" id="app_qr_image" src="<?= get_template_directory_uri() ?>/img/qr_codes/app_store.png" alt="images not found" /></a>
+		<img class="col-lg-5 col-sm-5 col-8 qrImg" id="app_qr_image" src="<?= get_template_directory_uri() ?>/img/qr_codes/app_store.png" alt="images not found" /></a>
 	</div>
 </div>
 
@@ -32,6 +32,24 @@
 	color: #66617F;
 	font-size: 18px;
 	line-height: 4;
+}
+@media screen and (max-width: 440px) {
+	.background{
+		background-color: #F9F9F9;
+		padding-top: 30px;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 1px;
+	}
+	.app_store_download{
+		width: auto !important;
+	}
+	.play_store_download{
+		width: auto !important;
+	}
+	.android_download{
+		width: auto !important;
+	}
 }
 </style>
 

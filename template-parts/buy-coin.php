@@ -193,7 +193,7 @@ get_header('buy');
 					</div>
 
 					<div class="col-lg-6 col-md-12">
-						<div class="whyBuyBox" style="margin-top:180px">
+						<div class="whyBuyBox box1">
 							<h2 style="color:#6D9E8E" data-translate="Buy_header20"></h2>
 							<div class="innerBox" style="background-color: #6D9E8E;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon5.png" />
@@ -294,7 +294,7 @@ get_header('buy');
 						</div>
 					</div>
 				</div>
-				<div class="row" style="margin-top:50px;">
+				<div class="row box2">
 					<div class="col-lg-6 col-md-12" style="display:flex;align-items: center;">
 						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon10.png" />
 						<div>
@@ -336,11 +336,11 @@ get_header('buy');
 						</p>
 					</div>
 					<div class="col-lg-6 col-md-12" >
-						<h3 data-translate="Buy_header34"></h3>
+						<h3 data-translate="Buy_header34" class="box3"></h3>
 						<p data-translate="Buy_header34_desc1"></p>
 					</div>
 				</div>
-				<div class="row" style="margin-top:50px; margin-bottom:50px;">
+				<div class="row" style="margin-top:50px; margin-bottom:30px;">
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header35"></h3>
 						<p>
@@ -506,6 +506,7 @@ get_header('buy');
 	margin-right: 20px
 }
 .walletBox1{
+	margin-top: 20px;
 	background-color:#EDD0D0; 
 	border-radius: 32px 0px 0px 32px;
 	padding: 30px 50px 30px 50px;
@@ -515,6 +516,7 @@ get_header('buy');
 	text-align: center;
 }
 .walletBox2{
+	margin-top: 20px;
 	background-color:#5944B1; 
 	border-radius: 0px 32px 32px 0px;
 	padding: 30px 50px 30px 50px;
@@ -574,6 +576,33 @@ get_header('buy');
 	background-color: #F9F9F9;
 	padding-left: 0px;
 	display: none;
+}
+.box1{
+	margin-top:180px
+}
+.box2{
+	margin-top:50px
+}
+@media screen and (max-width: 992px) {
+	.box1{
+		margin-top:50px
+	}
+	.box2{
+		margin-top:5px
+	}
+	.box3{
+		margin-top:30px
+	}
+}
+@media screen and (max-width: 576px) {
+	.walletBox1{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.walletBox2{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
 </style>
 
