@@ -161,7 +161,11 @@ get_header('buy');
 							<h2 style="color:#E7A645" data-translate="Buy_header17"></h2>
 							<div class="innerBox" style="background-color: #E7A645;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon2.png" />
-								<p data-translate="Buy_header17_desc1"></p>
+								<p>
+									<span data-translate="Buy_header17_desc1"></span>
+									<span data-translate="Buy_header17_desc2" style="font-weight:700"></span>
+									<span data-translate="Buy_header17_desc3"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
@@ -239,11 +243,13 @@ get_header('buy');
 							<span data-translate="Buy_header24"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header24_1"></span>
+							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
 					</div>
 					<div class="col-lg-6 col-md-12" >
-						<p data-translate="Buy_header24_desc1"></p>
-						<p data-translate="Buy_header24_desc2" style="color:#6B47ED"></p>
+						<p id="introduction" data-translate="<?= $args['name'] ?>_intro" class="introSmall"></p>
+						<button id="introBtn1" data-translate="Buy_header24_desc2" onclick="viewMore()" class="introButton1"></button>
+						<button id="introBtn2" data-translate="Buy_header24_desc3" onclick="viewLess()" class="introButton2"></button>
 					</div>
 				</div>
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
@@ -252,6 +258,7 @@ get_header('buy');
 							<span data-translate="Buy_header25"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header25_1"></span>
+							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
 						<h3 style="margin-top:50px;">
 							<span data-translate="Buy_header26"></span>
@@ -307,32 +314,15 @@ get_header('buy');
 				
 				<div class="row" style="margin-top:90px; margin-bottom:60px;">
 					<div class="col-lg-12 col-md-12" >
-						<h3>
-							<span data-translate="Buy_header31"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header31_1"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header31_2"></span>
-						</h3>
-						<p style="margin-bottom:50px;">
-							<span data-translate="Buy_header31_desc1"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header31_desc2"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header31_desc3"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header31_desc4"></span>
-						</p>
-						<h3>
-							<span data-translate="Buy_header40"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header40_1"></span>
-						</h3>
-						<p data-translate="Buy_header40_desc1" style="margin-bottom:90px;"></p>
+						<h3 data-translate="Buy_header31"></h3>
+						<p data-translate="Buy_header31_desc1" style="margin-bottom:90px;"></p>
 						<h2>
 							<span data-translate="Buy_header32"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header32_1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header32_2"></span>
+							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
 					</div>
 				</div>
@@ -493,9 +483,9 @@ get_header('buy');
     font-weight: 700;
 	color: #66617F;
 	display:inline-block;
-	background-color:#D4CCF7;
+	/* background-color:#D4CCF7;
 	line-height: 0px;
-	padding-bottom: 16px;
+	padding-bottom: 16px; */
 }
 #learn-about p{
 	font-size: 18px;
@@ -568,15 +558,42 @@ get_header('buy');
 	font-weight: 700;
 	margin-top: 40px;
 }
+.introSmall{
+	height:120px; 
+	overflow: hidden;
+}
+.introButton1{
+	color: #6B47ED;
+	border-width: 0px;
+	background-color: #F9F9F9;
+	padding-left: 0px;
+}
+.introButton2{
+	color: #6B47ED;
+	border-width: 0px;
+	background-color: #F9F9F9;
+	padding-left: 0px;
+	display: none;
+}
 </style>
 
 <script type="text/javascript">
 document.addEventListener( 'wpcf7invalid', function( event ) {
 	alert('Please provide a valid email address');
 });
+function viewMore(){
+	introduction.style.height="auto";
+	introBtn1.style.display="none";
+	introBtn2.style.display="block";
+}
+function viewLess(){
+	introduction.style.height="120px";
+	introBtn1.style.display="block";
+	introBtn2.style.display="none";
+}
 </script>
 
-	</div>
+</div>
 
 <?php
 get_footer();
