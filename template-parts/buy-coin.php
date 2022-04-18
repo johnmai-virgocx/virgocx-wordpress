@@ -97,6 +97,8 @@ get_header('buy');
 							<p>
 								<span data-translate="Buy_header11_desc1" style="color: #6B47ED;"></span>
 								<span data-translate="Buy_header11_desc2"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header11_desc3"></span>
 							</p>
 						</div>
 						<div class="step-header" style="padding-top:50px">
@@ -106,9 +108,11 @@ get_header('buy');
 							</h2>
 							<p >
 								<span data-translate="Buy_header12_desc1"></span>
-								<span data-translate="Buy_header12_desc2" style="color: #6B47ED;"></span>
-								<span data-translate="Buy_header12_desc3"></span>
-								<span data-translate="Buy_header12_desc4" style="color: #6B47ED;"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header12_desc2"></span>
+								<span data-translate="Buy_header12_desc3" style="color: #6B47ED;"></span>
+								<span data-translate="Buy_header12_desc4"></span>
+								<span data-translate="Buy_header12_desc5" style="color: #6B47ED;"></span>
 							</p>
 						</div>
 					</div>
@@ -146,7 +150,11 @@ get_header('buy');
 							<h2 style="color:#6950D0" data-translate="Buy_header16"></h2>
 							<div class="innerBox" style="background-color: #6950D0;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon1.png" />
-								<p data-translate="Buy_header16_desc1"></p>
+								<p>
+									<span data-translate="Buy_header16_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header16_desc2"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
@@ -160,14 +168,22 @@ get_header('buy');
 							<h2 style="color:#306CBE" data-translate="Buy_header18"></h2>
 							<div class="innerBox" style="background-color: #306CBE;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon3.png" />
-								<p data-translate="Buy_header18_desc1"></p>
+								<p>
+									<span data-translate="Buy_header18_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header18_desc2"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
 							<h2 style="color:#C45F53" data-translate="Buy_header19"></h2>
 							<div class="innerBox" style="background-color: #C45F53;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon4.png" />
-								<p data-translate="Buy_header19_desc1"></p>
+								<p>
+									<span data-translate="Buy_header19_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header19_desc2"></span>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -185,7 +201,11 @@ get_header('buy');
 							<h2 style="color:#986471" data-translate="Buy_header21"></h2>
 							<div class="innerBox" style="background-color: #E59994;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon6.png" />
-								<p data-translate="Buy_header21_desc1"></p>
+								<p>
+									<span data-translate="Buy_header21_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header21_desc2"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
@@ -206,13 +226,20 @@ get_header('buy');
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12" >
-						<h1 data-translate="Buy_header23" style="margin-top:77px"></h1>
+						<h1 style="margin-top:77px">
+							<span data-translate="Buy_header23"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+						</h1>
 					</div>
 				</div>
 				<div class="line1"></div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12" >
-						<h2 data-translate="Buy_header24"></h2>
+						<h2>
+							<span data-translate="Buy_header24"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header24_1"></span>
+						</h2>
 					</div>
 					<div class="col-lg-6 col-md-12" >
 						<p data-translate="Buy_header24_desc1"></p>
@@ -221,12 +248,22 @@ get_header('buy');
 				</div>
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
-						<h2 data-translate="Buy_header25"></h2>
+						<h2>
+							<span data-translate="Buy_header25"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header25_1"></span>
+						</h2>
 						<h3 style="margin-top:50px;">
 							<span data-translate="Buy_header26"></span>
 							<span data-translate="Buy_header26_1" style="color:#6B47ED"></span>
 						</h3>
-						<p data-translate="Buy_header26_desc1"></p>
+						<p>
+							<span data-translate="Buy_header26_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header26_desc2"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header26_desc3"></span>
+						</p>
 					</div>
 				</div>
 				
@@ -235,7 +272,11 @@ get_header('buy');
 						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon8.png" />
 						<div>
 							<h4 data-translate="Buy_header27"></h4>
-							<p data-translate="Buy_header27_desc1"></p>
+							<p>
+								<span data-translate="Buy_header27_desc1"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header27_desc2"></span>
+							</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12" style="display:flex;align-items: center;">
@@ -266,17 +307,43 @@ get_header('buy');
 				
 				<div class="row" style="margin-top:90px; margin-bottom:60px;">
 					<div class="col-lg-12 col-md-12" >
-						<h3 data-translate="Buy_header31"></h3>
-						<p data-translate="Buy_header31_desc1" style="margin-bottom:50px;"></p>
-						<h3 data-translate="Buy_header31_desc2"></h3>
-						<p data-translate="Buy_header31_desc3" style="margin-bottom:90px;"></p>
-						<h2 data-translate="Buy_header32"></h2>
+						<h3>
+							<span data-translate="Buy_header31"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header31_1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header31_2"></span>
+						</h3>
+						<p style="margin-bottom:50px;">
+							<span data-translate="Buy_header31_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header31_desc2"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header31_desc3"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header31_desc4"></span>
+						</p>
+						<h3>
+							<span data-translate="Buy_header40"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header40_1"></span>
+						</h3>
+						<p data-translate="Buy_header40_desc1" style="margin-bottom:90px;"></p>
+						<h2>
+							<span data-translate="Buy_header32"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header32_1"></span>
+						</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12" >
 						<h3 data-translate="Buy_header33"></h3>
-						<p data-translate="Buy_header33_desc1"></p>
+						<p>
+							<span data-translate="Buy_header33_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header33_desc2"></span>
+						</p>
 					</div>
 					<div class="col-lg-6 col-md-12" >
 						<h3 data-translate="Buy_header34"></h3>
@@ -286,8 +353,16 @@ get_header('buy');
 				<div class="row" style="margin-top:50px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header35"></h3>
-						<p data-translate="Buy_header35_desc1"></p>
-						<p data-translate="Buy_header35_desc2"></p>
+						<p>
+							<span data-translate="Buy_header35_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header35_desc2"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header35_desc3"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header35_desc4"></span>
+						</p>
+						<p data-translate="Buy_header35_desc5"></p>
 					</div>
 				</div>
 
@@ -306,7 +381,11 @@ get_header('buy');
 				<div class="row" style="margin-top:50px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header38"></h3>
-						<p data-translate="Buy_header38_desc1"></p>
+						<p>
+							<span data-translate="Buy_header38_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header38_desc2"></span>
+						</p>
 					</div>
 				</div>
 				<div class="row" style="margin-bottom:70px;">
