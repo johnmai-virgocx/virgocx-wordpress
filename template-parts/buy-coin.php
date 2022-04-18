@@ -6,7 +6,7 @@
  * @package Virgocx
  */
 
-get_header();
+get_header('buy');
 ?>
 
 <style type="text/css">
@@ -39,7 +39,7 @@ get_header();
 							<?php else : ?>
 								<h1><span data-translate="Buy_header1_1" ></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Buy_header1_2"></span></h1>
 							<?php endif; ?>
-							<p class="tag-line" data-translate="Buy_header1_desc"></p>
+							<p class="tag-line" data-translate="Buy_header1_desc1"></p>
 							<p class="tag-line2" data-translate="Buy_header1_desc2"></p>
 
 							<div class="hero-signup get-started-content">
@@ -61,10 +61,11 @@ get_header();
 						<h3>
 							<span data-translate="Buy_header13_desc1"></span> 
 							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header13_desc2"></span> 
 						</h3>
 						<h3>
-							<span data-translate="Buy_header13_desc2"></span> 
 							<span data-translate="Buy_header13_desc3" style="color: #6B47ED;"></span> 
+							<span data-translate="Buy_header13_desc4"></span> 
 						</h3>
 					</div>
 				</div>
@@ -73,7 +74,7 @@ get_header();
 						<h2 data-translate="Buy_header10"></h2>
 						<p >
 							<span data-translate="Buy_header10_desc1"></span>
-							<a href="https://virgocx.ca/page#/register" data-translate="Buy_header2_desc2" style="color: #6B47ED;"></a> 
+							<a href="https://virgocx.ca/page#/register" data-translate="Buy_header10_desc2" style="color: #6B47ED;"></a> 
 							<span data-translate="Buy_header10_desc3"></span>
 							<span data-translate="Buy_header10_desc4" style="color: #6B47ED;"></span>
 							<span data-translate="Buy_header10_desc5"></span>
@@ -85,8 +86,8 @@ get_header();
 						<img src="<?= get_template_directory_uri() ?>/img/app_display_new2.png" alt="images not found" width="100%"/>
 					</div>
 
-					<div class="col-lg-5 col-md-12">
-						<?php get_template_part('template-parts/app', 'qr'); ?>
+					<div class="col-lg-6 col-md-12">
+						<?php get_template_part('template-parts/app', 'qrNew'); ?>
 					</div>
 				</div>
 				<div id="step-2" class="row">
@@ -96,6 +97,8 @@ get_header();
 							<p>
 								<span data-translate="Buy_header11_desc1" style="color: #6B47ED;"></span>
 								<span data-translate="Buy_header11_desc2"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header11_desc3"></span>
 							</p>
 						</div>
 						<div class="step-header" style="padding-top:50px">
@@ -105,9 +108,11 @@ get_header();
 							</h2>
 							<p >
 								<span data-translate="Buy_header12_desc1"></span>
-								<span data-translate="Buy_header12_desc2" style="color: #6B47ED;"></span>
-								<span data-translate="Buy_header12_desc3"></span>
-								<span data-translate="Buy_header12_desc4" style="color: #6B47ED;"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header12_desc2"></span>
+								<span data-translate="Buy_header12_desc3" style="color: #6B47ED;"></span>
+								<span data-translate="Buy_header12_desc4"></span>
+								<span data-translate="Buy_header12_desc5" style="color: #6B47ED;"></span>
 							</p>
 						</div>
 					</div>
@@ -128,7 +133,8 @@ get_header();
 							<span data-translate="Buy_header14_desc2"></span> 
 						</h3>
 						<h3>
-							<span data-translate="Buy_header14_desc3" style="color: #6B47ED;"></span> 
+							<span data-translate="Buy_header14_desc3"></span> 
+							<span data-translate="Buy_header14_desc4" style="color: #6B47ED;"></span> 
 						</h3>
 					</div>
 				</div>
@@ -144,38 +150,54 @@ get_header();
 							<h2 style="color:#6950D0" data-translate="Buy_header16"></h2>
 							<div class="innerBox" style="background-color: #6950D0;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon1.png" />
-								<p data-translate="Buy_header16_desc1"></p>
+								<p>
+									<span data-translate="Buy_header16_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header16_desc2"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
 							<h2 style="color:#E7A645" data-translate="Buy_header17"></h2>
 							<div class="innerBox" style="background-color: #E7A645;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon2.png" />
-								<p data-translate="Buy_header17_desc1"></p>
+								<p>
+									<span data-translate="Buy_header17_desc1"></span>
+									<span data-translate="Buy_header17_desc2" style="font-weight:700"></span>
+									<span data-translate="Buy_header17_desc3"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
 							<h2 style="color:#306CBE" data-translate="Buy_header18"></h2>
 							<div class="innerBox" style="background-color: #306CBE;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon3.png" />
-								<p data-translate="Buy_header18_desc1"></p>
+								<p>
+									<span data-translate="Buy_header18_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header18_desc2"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
 							<h2 style="color:#C45F53" data-translate="Buy_header19"></h2>
 							<div class="innerBox" style="background-color: #C45F53;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon4.png" />
-								<p data-translate="Buy_header19_desc1"></p>
+								<p>
+									<span data-translate="Buy_header19_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header19_desc2"></span>
+								</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-6 col-md-12">
-						<div class="whyBuyBox" style="margin-top:180px">
+						<div class="whyBuyBox box1">
 							<h2 style="color:#6D9E8E" data-translate="Buy_header20"></h2>
 							<div class="innerBox" style="background-color: #6D9E8E;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon5.png" />
-								<p data-translate="Buy_header20_desc1" style="padding-bottom:0px"></p>
+								<p data-translate="Buy_header20_desc1" style="margin-bottom:0px;padding-bottom:0px"></p>
 								<p data-translate="Buy_header20_desc2"></p>
 							</div>
 						</div>
@@ -183,7 +205,11 @@ get_header();
 							<h2 style="color:#986471" data-translate="Buy_header21"></h2>
 							<div class="innerBox" style="background-color: #E59994;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon6.png" />
-								<p data-translate="Buy_header21_desc1"></p>
+								<p>
+									<span data-translate="Buy_header21_desc1"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header21_desc2"></span>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
@@ -204,24 +230,47 @@ get_header();
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12" >
-						<h1 data-translate="Buy_header23" style="margin-top:77px"></h1>
+						<h1 style="margin-top:77px">
+							<span data-translate="Buy_header23"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+						</h1>
 					</div>
 				</div>
 				<div class="line1"></div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12" >
-						<h2 data-translate="Buy_header24"></h2>
+						<h2>
+							<span data-translate="Buy_header24"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header24_1"></span>
+							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
+						</h2>
 					</div>
 					<div class="col-lg-6 col-md-12" >
-						<p data-translate="Buy_header24_desc1"></p>
-						<p data-translate="Buy_header24_desc2" style="color:#6B47ED"></p>
+						<p id="introduction" data-translate="<?= $args['name'] ?>_intro" class="introSmall"></p>
+						<button id="introBtn1" data-translate="Buy_header24_desc2" onclick="viewMore()" class="introButton1"></button>
+						<button id="introBtn2" data-translate="Buy_header24_desc3" onclick="viewLess()" class="introButton2"></button>
 					</div>
 				</div>
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
-						<h2 data-translate="Buy_header25"></h2>
-						<h3 data-translate="Buy_header26" style="margin-top:50px;"></h3>
-						<p data-translate="Buy_header26_desc1"></p>
+						<h2>
+							<span data-translate="Buy_header25"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header25_1"></span>
+							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
+						</h2>
+						<h3 style="margin-top:50px;">
+							<span data-translate="Buy_header26"></span>
+							<span data-translate="Buy_header26_1" style="color:#6B47ED"></span>
+						</h3>
+						<p>
+							<span data-translate="Buy_header26_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header26_desc2"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header26_desc3"></span>
+						</p>
 					</div>
 				</div>
 				
@@ -230,7 +279,11 @@ get_header();
 						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon8.png" />
 						<div>
 							<h4 data-translate="Buy_header27"></h4>
-							<p data-translate="Buy_header27_desc1"></p>
+							<p>
+								<span data-translate="Buy_header27_desc1"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header27_desc2"></span>
+							</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12" style="display:flex;align-items: center;">
@@ -241,7 +294,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="row" style="margin-top:50px;">
+				<div class="row box2">
 					<div class="col-lg-6 col-md-12" style="display:flex;align-items: center;">
 						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon10.png" />
 						<div>
@@ -263,24 +316,43 @@ get_header();
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header31"></h3>
 						<p data-translate="Buy_header31_desc1" style="margin-bottom:90px;"></p>
-						<h2 data-translate="Buy_header32"></h2>
+						<h2>
+							<span data-translate="Buy_header32"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header32_1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header32_2"></span>
+							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
+						</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-6 col-md-12" >
 						<h3 data-translate="Buy_header33"></h3>
-						<p data-translate="Buy_header33_desc1"></p>
+						<p>
+							<span data-translate="Buy_header33_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header33_desc2"></span>
+						</p>
 					</div>
 					<div class="col-lg-6 col-md-12" >
-						<h3 data-translate="Buy_header34"></h3>
+						<h3 data-translate="Buy_header34" class="box3"></h3>
 						<p data-translate="Buy_header34_desc1"></p>
 					</div>
 				</div>
-				<div class="row" style="margin-top:50px; margin-bottom:50px;">
+				<div class="row" style="margin-top:50px; margin-bottom:30px;">
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header35"></h3>
-						<p data-translate="Buy_header35_desc1"></p>
-						<p data-translate="Buy_header35_desc2"></p>
+						<p>
+							<span data-translate="Buy_header35_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header35_desc2"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header35_desc3"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header35_desc4"></span>
+						</p>
+						<p data-translate="Buy_header35_desc5"></p>
 					</div>
 				</div>
 
@@ -299,7 +371,11 @@ get_header();
 				<div class="row" style="margin-top:50px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header38"></h3>
-						<p data-translate="Buy_header38_desc1"></p>
+						<p>
+							<span data-translate="Buy_header38_desc1"></span>
+							<span data-translate="<?= $args['name'] ?>"></span>
+							<span data-translate="Buy_header38_desc2"></span>
+						</p>
 					</div>
 				</div>
 				<div class="row" style="margin-bottom:70px;">
@@ -407,9 +483,9 @@ get_header();
     font-weight: 700;
 	color: #66617F;
 	display:inline-block;
-	background-color:#D4CCF7;
+	/* background-color:#D4CCF7;
 	line-height: 0px;
-	padding-bottom: 16px;
+	padding-bottom: 16px; */
 }
 #learn-about p{
 	font-size: 18px;
@@ -430,6 +506,7 @@ get_header();
 	margin-right: 20px
 }
 .walletBox1{
+	margin-top: 20px;
 	background-color:#EDD0D0; 
 	border-radius: 32px 0px 0px 32px;
 	padding: 30px 50px 30px 50px;
@@ -439,6 +516,7 @@ get_header();
 	text-align: center;
 }
 .walletBox2{
+	margin-top: 20px;
 	background-color:#5944B1; 
 	border-radius: 0px 32px 32px 0px;
 	padding: 30px 50px 30px 50px;
@@ -482,15 +560,69 @@ get_header();
 	font-weight: 700;
 	margin-top: 40px;
 }
+.introSmall{
+	height:120px; 
+	overflow: hidden;
+}
+.introButton1{
+	color: #6B47ED;
+	border-width: 0px;
+	background-color: #F9F9F9;
+	padding-left: 0px;
+}
+.introButton2{
+	color: #6B47ED;
+	border-width: 0px;
+	background-color: #F9F9F9;
+	padding-left: 0px;
+	display: none;
+}
+.box1{
+	margin-top:180px
+}
+.box2{
+	margin-top:50px
+}
+@media screen and (max-width: 992px) {
+	.box1{
+		margin-top:50px
+	}
+	.box2{
+		margin-top:5px
+	}
+	.box3{
+		margin-top:30px
+	}
+}
+@media screen and (max-width: 576px) {
+	.walletBox1{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.walletBox2{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
 </style>
 
 <script type="text/javascript">
 document.addEventListener( 'wpcf7invalid', function( event ) {
 	alert('Please provide a valid email address');
 });
+function viewMore(){
+	introduction.style.height="auto";
+	introBtn1.style.display="none";
+	introBtn2.style.display="block";
+}
+function viewLess(){
+	introduction.style.height="120px";
+	introBtn1.style.display="block";
+	introBtn2.style.display="none";
+}
 </script>
 
-	</div>
+</div>
 
 <?php
 get_footer();
