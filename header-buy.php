@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu navbar-nav">
                             <li>
-                                <a class="item" href="https://virgocx.ca/page#/advancedTrade/24"
+                                <a class="item" href="https://virgocx.ca/page#/market/BTC_CAD"
                                    data-translate="header_Market"></a>
                             </li>
                             <li class="dropdown-toggle-otc">
