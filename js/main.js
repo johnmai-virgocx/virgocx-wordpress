@@ -5,6 +5,16 @@
 // **************************************************************************************
 // langSwitcher
 
+        //暂时代码 为buy page禁掉中文
+        function banBuyCn() {
+            var url = window.location.href;
+            if (url.indexOf('zh-buy-') > -1 && url.indexOf('-buy-tether') <0) {
+                window.location.href = url.replace('/zh-', '/en-');
+            }
+        };
+        banBuyCn();
+        //end of 暂时代码
+
         // Some variables for later
         var dictionary = {},
             currentLang = 'en',
@@ -33,6 +43,12 @@
                 sessionStorage.setItem('lang', currentLang);
                 $("#lang").val(currentLang);
             }
+
+            //localstorage language for react rebuild part
+            if(currentLang=='en')
+                localStorage.setItem("language",'en');
+            else
+                localStorage.setItem("language",'cn');
 
 
 
@@ -127,6 +143,11 @@
                 }
                 redirection(url,language,true,false);
                 currentLang = language;
+                //localstorage language for react rebuild part
+                if(currentLang=='en')
+                    localStorage.setItem("language",'en');
+                else
+                    localStorage.setItem("language",'cn');
             }
         });
 
@@ -141,6 +162,11 @@
                 $(dropdownMenuLinkEN).click();
                 redirection(url,language,true,false);
                 currentLang = language;
+                //localstorage language for react rebuild part
+                if(currentLang=='en')
+                    localStorage.setItem("language",'en');
+                else
+                    localStorage.setItem("language",'cn');
             }
         });
 
@@ -638,11 +664,14 @@
             //     'zrx/cad': '/page#/advancedTrade/100',
             //     'dydx/cad': '/page#/advancedTrade/101',
             //     'storj/cad': '/page#/advancedTrade/102',
-            //     'api3/cad': 'https://virgocx.ca/page#/advancedTrade/103',
-            //     'slp/cad': 'https://virgocx.ca/page#/advancedTrade/104',
-            //     'nu/cad': 'https://virgocx.ca/page#/advancedTrade/105',
-            //     'ens/cad': 'https://virgocx.ca/page#/advancedTrade/106',
-            //     'ach/cad': 'https://virgocx.ca/page#/advancedTrade/107',
+            //     'api3/cad': '/page#/advancedTrade/103',
+            //     'slp/cad': '/page#/advancedTrade/104',
+            //     'nu/cad': '/page#/advancedTrade/105',
+            //     'ens/cad': '/page#/advancedTrade/106',
+            //     'ach/cad': '/page#/advancedTrade/107',
+            //     'algo/cad': '/page#/advancedTrade/108',
+                // 'ape/cad': '/page#/advancedTrade/109',
+                // 'crpt/cad': '/page#/advancedTrade/110',
             // }//testvirgocx
 
             const tradingMapping = {
@@ -706,11 +735,16 @@
                 'nu/cad': 'https://virgocx.ca/page#/advancedTrade/105',
                 'ens/cad': 'https://virgocx.ca/page#/advancedTrade/106',
                 'ach/cad': 'https://virgocx.ca/page#/advancedTrade/107',
+                'algo/cad': 'https://virgocx.ca/page#/advancedTrade/108',
+                'ape/cad': 'https://virgocx.ca/page#/advancedTrade/109',
+                'crpt/cad': 'https://virgocx.ca/page#/advancedTrade/110',
             }//production
 
             let index = 1;
             prices.forEach(function (price) {
-                const link = tradingMapping[price.symbol.toLowerCase()];
+                // const link = tradingMapping[price.symbol.toLowerCase()];
+                // const link = "https://wordpress.virgocx.org/page#/market/"+price.symbol.toUpperCase().replace('/','_')//测试服test
+                const link = "https://virgocx.ca/page#/market/"+price.symbol.toUpperCase().replace('/','_')//production
 
                 // console.log('go through each price', price)
                 const item = document.createElement('div');

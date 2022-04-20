@@ -79,7 +79,7 @@ Xtra Small Screen - Small Mobile
 								<div class="rmain-right-one">
 									<div class="rmain-ro-heading">
 										<h2 class="mb-4">Rewards for OTC</h2>
-										<p>VirgoCX offer a lucrative referral program for anyone that is able to introduce individual or corporate clients to our desk. We offer a one-time $200 CAD reward on the first trade in addition to 0.2% of the notional value of every subsequent trade. </p>
+										<p>VirgoCX offer a lucrative referral program for anyone that is able to introduce individual or corporate clients to our desk. We offer a one-time $200 CAD reward on the first trade in addition to 0.1% of the notional value of every subsequent trade. </p>
 									</div>
 									<div class="rmain-ro-work">
 										<h3>How It Works</h3>

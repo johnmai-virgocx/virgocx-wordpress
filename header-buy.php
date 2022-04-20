@@ -209,9 +209,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="triangle"></div>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkEN" id="lang">
                                     <a value="en" id="en" class="dropdown-item lang-dropdown"
-                                       data-translate="Eng"></>
-                                    <a value="zh" id="zh" class="dropdown-item lang-dropdown"
-                                       data-translate="header_CH"></a>
+                                       data-translate="Eng"></a>
+                                    <!-- <a value="zh" id="zh" class="dropdown-item lang-dropdown"
+                                       data-translate="header_CH"></a> -->
                                 </div>
                             </div>
 

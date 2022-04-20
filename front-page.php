@@ -7,6 +7,10 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 ?>
 
 <style type="text/css">
+    .feature-item img{
+        max-width: 120px !important;
+        margin-top: -50px !important;
+    }
     #trading-fee-wrapper {
         padding: 0 15px;
     }
@@ -594,7 +598,7 @@ if ($totalNumber === 1): ?>
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                             <img src="<?= get_template_directory_uri() ?>/img/canada2x.png" alt="canada flag" width="20"
                                  height="24"/>
-                            <span class="fint">FINTRAC Regulated MSB # M19955733</span>
+                            <span class="fint">FINTRAC Registered MSB # M19955733</span>
                         </div>
                         <!-- <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                         <span>Assets Protected by <img src="/img/ledger.svg"
@@ -674,31 +678,31 @@ if ($totalNumber === 1): ?>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-1">
-                    <img src="<?= get_template_directory_uri() ?>/img/feature5.png" alt="images not found"/>
-                    <h5><span data-translate="frontpage_header1_tag1"/></h5>
-                    <p><span data-translate="frontpage_header1_tag1_desc"/></p>
+                <div class="feature-item fibg-1" style="background:#7965E6;">
+                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature1.png" alt="images not found"/>
+                    <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag1"/></h5>
+                    <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag1_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-2">
-                    <img src="<?= get_template_directory_uri() ?>/img/feature4.png" alt="images not found"/>
-                    <h5><span data-translate="frontpage_header1_tag2"/></h5>
-                    <p><span data-translate="frontpage_header1_tag2_desc"/></p>
+                <div class="feature-item fibg-2" style="background:#E09F9F;">
+                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature2.png" alt="images not found"/>
+                    <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag2"/></h5>
+                    <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag2_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-1">
-                    <img src="<?= get_template_directory_uri() ?>/img/feature2.png" alt="images not found"/>
-                    <h5><span data-translate="frontpage_header1_tag3"/></h5>
-                    <p><span data-translate="frontpage_header1_tag3_desc"/></p>
+                <div class="feature-item fibg-1" style="background:#739DE5;">
+                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature3.png" alt="images not found"/>
+                    <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag3"/></h5>
+                    <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag3_desc"/></p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="feature-item fibg-2">
-                    <img src="<?= get_template_directory_uri() ?>/img/feature3.png" alt="images not found"/>
-                    <h5><span data-translate="frontpage_header1_tag4"/></h5>
-                    <p><span data-translate="frontpage_header1_tag4_desc"/></p>
+                <div class="feature-item fibg-2" style="background:#E49A81;">
+                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feature4.png" alt="images not found"/>
+                    <h5 style="color: #FFFFFF"><span data-translate="frontpage_header1_tag4"/></h5>
+                    <p style="color: #FFFFFF"><span data-translate="frontpage_header1_tag4_desc"/></p>
                 </div>
             </div>
         </div>

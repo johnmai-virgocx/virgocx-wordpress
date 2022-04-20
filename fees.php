@@ -30,7 +30,7 @@ get_header();
         }
 
         #fees-content .hero-box img {
-            height: 85px;
+            height: 100px;
         }
 
         #fees-content tbody {
@@ -97,14 +97,14 @@ get_header();
                         <div class="row justify-content-md-center">
                             <div class="fees-header">
                                 <h2 data-translate="Fees_title1"></h2>
-                                <p data-translate="Fees_title1_desc"></p>
+                                <p style="font-size: 20px;font-weight: 700;" data-translate="Fees_title1_desc"></p>
                             </div>
                         </div>
 
                         <div class="row align-items-center">
                             <div class="col-lg-3 col-md-6 d-flex justify-content-center">
                                 <div class="hero-feature-item" href="#personalinformation">
-                                    <img src="<?= get_template_directory_uri() ?>/img/fees_zero_fees.png"
+                                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feefeature1.png"
                                          class="img-fluid" alt="Personal information is secure" width="150"/>
                                     <h5 data-translate="Fees_title1_tag1"></h5>
                                 </div>
@@ -112,7 +112,7 @@ get_header();
 
                             <div class="col-lg-3 col-md-6 d-flex justify-content-center">
                                 <div class="hero-feature-item" href="#fund">
-                                    <img src="<?= get_template_directory_uri() ?>/img/fees_impeccable_security.png"
+                                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feefeature2.png"
                                          class="img-fluid" alt="Personal information is secure" width="150"/>
                                     <h5 data-translate="Fees_title1_tag2"></h5>
                                 </div>
@@ -120,7 +120,7 @@ get_header();
 
                             <div class="col-lg-3 col-md-6 d-flex justify-content-center">
                                 <div class="hero-feature-item" href="#system">
-                                    <img src="<?= get_template_directory_uri() ?>/img/fees_fiat_payment.png"
+                                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feefeature3.png"
                                          class="img-fluid" alt="Personal information is secure" width="150"/>
                                     <h5 data-translate="Fees_title1_tag3"></h5>
                                 </div>
@@ -128,7 +128,7 @@ get_header();
 
                             <div class="col-lg-3 col-md-6 d-flex justify-content-center">
                                 <div class="hero-feature-item" href="#system">
-                                    <img src="<?= get_template_directory_uri() ?>/img/fees_regulated.png"
+                                    <img src="<?= get_template_directory_uri() ?>/img/home_fee_feature/feefeature4.png"
                                          class="img-fluid" alt="Personal information is secure" width="150"/>
                                     <h5 data-translate="Fees_title1_tag4"></h5>
                                 </div>
@@ -624,7 +624,7 @@ get_header();
                             let maximum = entry.maximum;
                             let minimum = entry.minimum;
                             if (typeof maximum !== 'string') {
-                                maximum = maximum >= 999999 ? 'Unlimited' : '$' + entry.maximum;
+                                maximum = maximum >= 999999 ? 'Unlimited' : '$' + entry.maximum+'/24h';
                             }
 
                             if (typeof entry.minimum !== 'string') {

@@ -42,14 +42,14 @@ get_header();
 }
 #contact-details,
 #contact-form {
-	height: 420px;
+	height: 356px;
 }
 
 #contact-details {
 	background-color: rgb(226, 250, 247);
 	padding: 2rem 1rem;
 	border-radius: 1rem;
-	height: 420px;
+	height: 356px;
 }
 
 #contact-details .col-6 {
@@ -134,14 +134,6 @@ form.normal .form-control input:focus {
 							<div class="col-6">media@virgocx.ca</div>
 						</div>
 
-						<div class="row justify-content-between">
-							<div class="col-5">
-								<img class="phone-XWuRxg" src="<?= get_template_directory_uri() ?>/img/contactus/03-contact-us-phone-6B7FD295-4CB4-41E6-80A8-1F3F81E729433x.png" />
-								<div class="next-to-img" data-translate="ContactUs_phone"></div>
-							</div>
-
-							<div class="col-6">+1 (416) 583-1838</div>
-						</div>
 
 						<div class="row justify-content-between">
 							<div class="col-5">

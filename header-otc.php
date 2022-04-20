@@ -21,6 +21,10 @@
     })(window,document,'script','dataLayer','GTM-5BQZZQZ');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- 测试禁google tag -->
+    <!-- <meta name="googlebot" content="noindex"> -->
+    <!-- google tag end -->
+
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -53,6 +57,7 @@
     <link rel="shortcut icon" href="img/fav.png"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147248930-1"></script>
+    <!-- Google Tag Manager -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -64,6 +69,7 @@
 
         gtag('config', 'UA-147248930-1');
     </script>
+    <!-- end of Google Tag Manager -->
     <?php wp_head(); ?>
     <script type="text/javascript">
         const _virgocx_theme_url = '<?= get_template_directory_uri() ?>';
