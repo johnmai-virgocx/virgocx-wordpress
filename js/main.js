@@ -5,6 +5,16 @@
 // **************************************************************************************
 // langSwitcher
 
+        //暂时代码 为buy page禁掉中文
+        function banBuyCn() {
+            var url = window.location.href;
+            if (url.indexOf('zh-buy-') > -1 && url.indexOf('-buy-tether') == -1) {
+                window.location.href = url.replace(langParam, '/en-');
+            }
+        };
+        banBuyCn();
+        //end of 暂时代码
+
         // Some variables for later
         var dictionary = {},
             currentLang = 'en',
@@ -133,6 +143,11 @@
                 }
                 redirection(url,language,true,false);
                 currentLang = language;
+                //localstorage language for react rebuild part
+                if(currentLang=='en')
+                    localStorage.setItem("language",'en');
+                else
+                    localStorage.setItem("language",'cn');
             }
         });
 
@@ -147,6 +162,11 @@
                 $(dropdownMenuLinkEN).click();
                 redirection(url,language,true,false);
                 currentLang = language;
+                //localstorage language for react rebuild part
+                if(currentLang=='en')
+                    localStorage.setItem("language",'en');
+                else
+                    localStorage.setItem("language",'cn');
             }
         });
 
@@ -171,11 +191,7 @@
                 var langParam = '/' + key + '-';
                 if (url && (url.indexOf(langParam) > -1)) {
                     langPageIndicator = 1;
-                    if(url.indexOf('zh-buy-') > -1&&url.indexOf('-buy-tether')==-1){
-
-                        window.location.href = url.replace(langParam, '/en-');
-                    }
-                    else if(fromSwitcher){
+                    if(fromSwitcher){
                         if(newTab){
                             window.open (url.replace(langParam, '/' + language + '-'),'_blank').focus();
                         }else{
