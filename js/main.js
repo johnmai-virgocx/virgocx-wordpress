@@ -8,8 +8,8 @@
         //暂时代码 为buy page禁掉中文
         function banBuyCn() {
             var url = window.location.href;
-            if (url.indexOf('zh-buy-') > -1 && url.indexOf('-buy-tether') == -1) {
-                window.location.href = url.replace(langParam, '/en-');
+            if (url.indexOf('zh-buy-') > -1 && url.indexOf('-buy-tether') <0) {
+                window.location.href = url.replace('/zh-', '/en-');
             }
         };
         banBuyCn();
