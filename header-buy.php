@@ -141,10 +141,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!--											--><?php
+                        //											wp_nav_menu(
+                        //												array(
+                        //													'menu' => 'menu-1',
+                        //													'theme_location' => 'menu-1',
+                        //													'menu_id'        => 'primary-menu',
+                        //													'menu_class'        => 'navbar-nav',
+                        //												)
+                        //											);
+                        //											?>
                         <ul class="menu navbar-nav">
                             <li>
                                 <a class="item" href="https://virgocx.ca/page#/market/BTC_CAD"
                                    data-translate="header_Market"></a>
+                                   <!-- production virgocx -->              
+                                   
+                                   
+                                <!-- <a class="item" href="https://wordpress.virgocx.org/page#/market/BTC_CAD"
+                                data-translate="header_Market"></a> -->
+                                <!-- testvirgocx -->   
                             </li>
                             <li class="dropdown-toggle-otc">
                                 <a class="item" href="/en-otc/">
@@ -171,22 +187,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a href="/en-referral-friend" class="dropdown-item" data-translate="Refer a Friend"></a>
-                                <a href="/en-referral-otc" class="dropdown-item" data-translate="OTC Referral"></a>
+                                <a href="/en-referral-otc" class="dropdown-item" data-translate="OTC Referral "></a>
                             </div>
                         </div>
 
                         <div class="right-side-btn y-2 my-lg-0">
                             <a href="/page#/login" class="login nav-link" data-translate="Log In">
+
                             </a>
                             <a track="nav-signup-click" class="singup" href="/page#/register"
                                class="regular-button w-button" data-translate="Register"></a>
-                            
                             <div class="navbar-nav nav-item">
-                                <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg" alt="images not found"/>
+                                <img class="dropdown-left-img" src="<?= get_template_directory_uri() ?>/img/cad.svg"
+                                     alt="images not found"/>
                                 <a class="nav-link dropdown-toggle"
                                    href="#"
                                    id="dropdownMenuLinkEN"
                                    data-translate="OTC_header_full">
+                                    English
                                 </a>
                                 <div class="triangle"></div>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkEN" id="lang">
