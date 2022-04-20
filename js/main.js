@@ -34,6 +34,12 @@
                 $("#lang").val(currentLang);
             }
 
+            //localstorage language for react rebuild part
+            if(currentLang=='en')
+                localStorage.setItem("language",'en');
+            else
+                localStorage.setItem("language",'cn');
+
 
 
 
@@ -165,7 +171,11 @@
                 var langParam = '/' + key + '-';
                 if (url && (url.indexOf(langParam) > -1)) {
                     langPageIndicator = 1;
-                    if(fromSwitcher){
+                    if(url.indexOf('zh-buy-') > -1&&url.indexOf('-buy-tether')==-1){
+
+                        window.location.href = url.replace(langParam, '/en-');
+                    }
+                    else if(fromSwitcher){
                         if(newTab){
                             window.open (url.replace(langParam, '/' + language + '-'),'_blank').focus();
                         }else{
