@@ -832,6 +832,14 @@
 	"ApeCoin":"ApeCoin",
 	"CRPT":"CRPT",
 	"Crypterium":"Crypterium",
+	"CVX":"CVX",
+	"Convex Finance":"Convex Finance",
+	"HBAR":"HBAR",
+	"Hedera":"Hedera",
+	"MIR":"MIR",
+	"Mirror Protocol":"Mirror Protocol",
+	"XTZ":"XTZ",
+	"Tezos":"Tezos",
 
 	
 	"Bitcoin_intro": "Bitcoin can be defined as a type of digital currency or cryptocurrency. It is the first and biggest cryptocurrency with the largest market capitalization in the crypto space. It was developed based on blockchain technology. The domain Bitcoin.org was registered in August 2008, shortly after which the Bitcoin whitepaper was published online by Satoshi Nakamoto. Satoshi Nakamoto's true identity is still not known. The whitepaper gave us the first glimpse at the concept behind Bitcoin blockchain, a digital currency that could be used for peer-to-peer transactions over the internet. Bitcoin's genesis block had a reward of 50 BTC, and it is widely accepted as the world's first and largest established cryptocurrency. ",
