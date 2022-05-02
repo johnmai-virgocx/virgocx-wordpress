@@ -39,12 +39,9 @@ get_header('buy');
 							<?php else : ?>
 								<h1><span data-translate="Buy_header1_1" ></span><span data-translate="<?= $args['name'] ?>"></span><br /><span data-translate="Buy_header1_2"></span></h1>
 							<?php endif; ?>
-							<p class="tag-line" data-translate="Buy_header1_desc1"></p>
-							<p class="tag-line2" data-translate="Buy_header1_desc2"></p>
+							<p class="tag-line lineGrey" data-translate="Buy_header1_desc1"></p>
+                            <a href="https://virgocx.ca/page#/register?code=BuyVirgo30" class="btn btn-primary buttonPurple" role="button" data-translate="Buy_header1_desc2"></a>
 
-							<div class="hero-signup get-started-content">
-								<?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
-							</div>
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-12">
@@ -74,7 +71,7 @@ get_header('buy');
 						<h2 data-translate="Buy_header10"></h2>
 						<p >
 							<span data-translate="Buy_header10_desc1"></span>
-							<a href="https://virgocx.ca/page#/register" data-translate="Buy_header10_desc2" style="color: #6B47ED;"></a> 
+							<a href="https://virgocx.ca/page#/register?code=BuyVirgo30" data-translate="Buy_header10_desc2" style="color: #6B47ED; text-decoration:underline; font-weight:700;"></a> 
 							<span data-translate="Buy_header10_desc3"></span>
 							<span data-translate="Buy_header10_desc4" style="color: #6B47ED;"></span>
 							<span data-translate="Buy_header10_desc5"></span>
@@ -107,7 +104,11 @@ get_header('buy');
 								<span data-translate="<?= $args['name'] ?>"></span>
 							</h2>
 							<p >
-								<span data-translate="Buy_header12_desc1"></span>
+								<?php if($args['name'] == ("ApeCoin")) : ?>
+									<span data-translate="Buy_header12_desc1_purchase"></span>
+								<?php else : ?>
+									<span data-translate="Buy_header12_desc1_buy"></span>
+								<?php endif; ?>
 								<span data-translate="<?= $args['name'] ?>"></span>
 								<span data-translate="Buy_header12_desc2"></span>
 								<span data-translate="Buy_header12_desc3" style="color: #6B47ED;"></span>
@@ -162,7 +163,13 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #E7A645;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon2.png" />
 								<p>
-									<span data-translate="Buy_header17_desc1"></span>
+									<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+										<span data-translate="Buy_header17_desc1_USD"></span>
+									<?php elseif($args['name'] == "Amp") : ?>
+										<span data-translate="Buy_header17_desc1_fiatCurrency"></span>
+									<?php else : ?>
+										<span data-translate="Buy_header17_desc1_fiatCurrencies"></span>
+									<?php endif; ?>
 									<span data-translate="Buy_header17_desc2" style="font-weight:700"></span>
 									<span data-translate="Buy_header17_desc3"></span>
 								</p>
@@ -173,7 +180,11 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #306CBE;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon3.png" />
 								<p>
-									<span data-translate="Buy_header18_desc1"></span>
+									<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+										<span data-translate="Buy_header18_desc1_noCharge"></span>
+									<?php else : ?>
+										<span data-translate="Buy_header18_desc1_charge"></span>
+									<?php endif; ?>
 									<span data-translate="<?= $args['name'] ?>"></span>
 									<span data-translate="Buy_header18_desc2"></span>
 								</p>
@@ -198,7 +209,13 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #6D9E8E;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon5.png" />
 								<p data-translate="Buy_header20_desc1" style="margin-bottom:0px;padding-bottom:0px"></p>
-								<p data-translate="Buy_header20_desc2"></p>
+								<p>
+									<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+										<span data-translate="Buy_header20_desc2_usd"></span>
+									<?php else : ?>
+										<span data-translate="Buy_header20_desc2_fiat"></span>
+									<?php endif; ?>
+								</p>
 							</div>
 						</div>
 						<div class="whyBuyBox">
@@ -255,15 +272,20 @@ get_header('buy');
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h2>
-							<span data-translate="Buy_header25"></span>
+							<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+								<span data-translate="Buy_header25_purchase"></span>
+							<?php else : ?>
+								<span data-translate="Buy_header25_buy"></span>
+							<?php endif; ?>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header25_1"></span>
 							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
-						<h3 style="margin-top:50px;">
-							<span data-translate="Buy_header26"></span>
-							<span data-translate="Buy_header26_1" style="color:#6B47ED"></span>
-						</h3>
+						<div style="margin-top:50px;">
+							<img src="<?= get_template_directory_uri() ?>/img/buy_coins/recommendBtn.png" style="margin-right:6px" />
+							<span data-translate="Buy_header26_1" class="recommendBth"></span>
+						</div>
+						<h3 data-translate="Buy_header26"></h3>
 						<p>
 							<span data-translate="Buy_header26_desc1"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
@@ -314,14 +336,19 @@ get_header('buy');
 				
 				<div class="row" style="margin-top:90px; margin-bottom:60px;">
 					<div class="col-lg-12 col-md-12" >
-						<h3 data-translate="Buy_header31"></h3>
-						<p data-translate="Buy_header31_desc1" style="margin-bottom:90px;"></p>
+						<?php if($args['name'] == ("Bitcoin")) : ?>
+							<h3 data-translate="Buy_header41"></h3>
+							<p data-translate="Buy_header41_desc1" style="margin-bottom:50px;"></p>
+							<h3 data-translate="Buy_header42"></h3>
+							<p data-translate="Buy_header42_desc1" style="margin-bottom:90px;"></p>
+						<?php else : ?>
+							<h3 data-translate="Buy_header31"></h3>
+							<p data-translate="Buy_header31_desc1" style="margin-bottom:90px;"></p>
+						<?php endif; ?>
 						<h2>
 							<span data-translate="Buy_header32"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header32_1"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header32_2"></span>
 							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
 					</div>
@@ -329,11 +356,7 @@ get_header('buy');
 				<div class="row">
 					<div class="col-lg-6 col-md-12" >
 						<h3 data-translate="Buy_header33"></h3>
-						<p>
-							<span data-translate="Buy_header33_desc1"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header33_desc2"></span>
-						</p>
+						<p data-translate="Buy_header33_desc1"></p>
 					</div>
 					<div class="col-lg-6 col-md-12" >
 						<h3 data-translate="Buy_header34" class="box3"></h3>
@@ -350,7 +373,11 @@ get_header('buy');
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header35_desc3"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header35_desc4"></span>
+							<?php if($args['name'] == ("Alchemy Pay")) : ?>
+								<span data-translate="Buy_header35_desc4_alchemy"></span>
+							<?php else : ?>
+								<span data-translate="Buy_header35_desc4_normal"></span>
+							<?php endif; ?>
 						</p>
 						<p data-translate="Buy_header35_desc5"></p>
 					</div>
@@ -434,6 +461,30 @@ get_header('buy');
 	margin-top: 5rem;
 }
 
+.lineGrey{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #888888;
+	font-size: 20px;
+}
+.buttonPurple{
+	color: #FFFFFF;
+	background-color: #6B47ED;
+	border-radius: 50px;
+	font-size: 20px;
+	width: 335px;
+	height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 20px;
+}
+.recommendBth{
+	color: #E3897D;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 27px;
+}
 
 #why-buy h3 {
 	font-size: 48px;
