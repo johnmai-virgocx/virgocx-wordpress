@@ -104,7 +104,7 @@ get_header('buy');
 								<span data-translate="<?= $args['name'] ?>"></span>
 							</h2>
 							<p >
-								<?php if($args['name'] == ("ApeCoin")) : ?>
+								<?php if($args['name']=="ApeCoin") : ?>
 									<span data-translate="Buy_header12_desc1_purchase"></span>
 								<?php else : ?>
 									<span data-translate="Buy_header12_desc1_buy"></span>
@@ -163,9 +163,9 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #E7A645;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon2.png" />
 								<p>
-									<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+									<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
 										<span data-translate="Buy_header17_desc1_USD"></span>
-									<?php elseif($args['name'] == "Amp") : ?>
+									<?php elseif($args['name']=="Amp") : ?>
 										<span data-translate="Buy_header17_desc1_fiatCurrency"></span>
 									<?php else : ?>
 										<span data-translate="Buy_header17_desc1_fiatCurrencies"></span>
@@ -180,7 +180,7 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #306CBE;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon3.png" />
 								<p>
-									<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+									<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
 										<span data-translate="Buy_header18_desc1_noCharge"></span>
 									<?php else : ?>
 										<span data-translate="Buy_header18_desc1_charge"></span>
@@ -210,7 +210,7 @@ get_header('buy');
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon5.png" />
 								<p data-translate="Buy_header20_desc1" style="margin-bottom:0px;padding-bottom:0px"></p>
 								<p>
-									<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+									<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
 										<span data-translate="Buy_header20_desc2_usd"></span>
 									<?php else : ?>
 										<span data-translate="Buy_header20_desc2_fiat"></span>
@@ -272,7 +272,7 @@ get_header('buy');
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h2>
-							<?php if($args['name'] == ("Bitcoin" ||"Aave")) : ?>
+							<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
 								<span data-translate="Buy_header25_purchase"></span>
 							<?php else : ?>
 								<span data-translate="Buy_header25_buy"></span>
@@ -285,13 +285,20 @@ get_header('buy');
 							<img src="<?= get_template_directory_uri() ?>/img/buy_coins/recommendBtn.png" style="margin-right:6px" />
 							<span data-translate="Buy_header26_1" class="recommendBth"></span>
 						</div>
-						<h3 data-translate="Buy_header26"></h3>
+						<h3>
+							<?php if($args['name']=="Hedera" || $args['name']=="Mirror Protocol") : ?>
+								<span data-translate="Buy_header26_platforms"></span>
+							<?php else : ?>
+								<span data-translate="Buy_header26_platform"></span>
+							<?php endif; ?>
+						</h3>
 						<p>
 							<span data-translate="Buy_header26_desc1"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header26_desc2"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header26_desc3"></span>
+							<?php if($args['name']=="Tezos") : ?>
+								<span data-translate="Buy_header26_Tezos"></span>
+							<?php endif; ?>
 						</p>
 					</div>
 				</div>
@@ -336,7 +343,7 @@ get_header('buy');
 				
 				<div class="row" style="margin-top:90px; margin-bottom:60px;">
 					<div class="col-lg-12 col-md-12" >
-						<?php if($args['name'] == ("Bitcoin")) : ?>
+						<?php if($args['name']=="Bitcoin") : ?>
 							<h3 data-translate="Buy_header41"></h3>
 							<p data-translate="Buy_header41_desc1" style="margin-bottom:50px;"></p>
 							<h3 data-translate="Buy_header42"></h3>
@@ -373,7 +380,7 @@ get_header('buy');
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header35_desc3"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
-							<?php if($args['name'] == ("Alchemy Pay")) : ?>
+							<?php if($args['name']=="Alchemy Pay") : ?>
 								<span data-translate="Buy_header35_desc4_alchemy"></span>
 							<?php else : ?>
 								<span data-translate="Buy_header35_desc4_normal"></span>
