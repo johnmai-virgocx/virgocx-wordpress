@@ -93,13 +93,7 @@ get_header('buy');
 							<h2 data-translate="Buy_header11"></h2>
 							<p>
 								<span data-translate="Buy_header11_desc1" style="color: #6B47ED;"></span>
-								<?php if($args['name']=="Convex Finance") : ?>
-									<span data-translate="Buy_header11_desc2_is"></span>
-								<?php else : ?>
-									<span data-translate="Buy_header11_desc2_are"></span>
-								<?php endif; ?>
-								<span data-translate="<?= $args['name'] ?>"></span>
-								<span data-translate="Buy_header11_desc3"></span>
+								<span data-translate="Buy_header11_desc2"></span>
 							</p>
 						</div>
 						<div class="step-header" style="padding-top:50px">
