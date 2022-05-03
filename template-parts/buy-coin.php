@@ -672,7 +672,7 @@ function viewMore(){
 	introBtn2.style.display="block";
 }
 function viewLess(){
-	introduction.style.height="120px";
+	introduction.style.height="150px";
 	introBtn1.style.display="block";
 	introBtn2.style.display="none";
 }
