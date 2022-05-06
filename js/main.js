@@ -789,9 +789,9 @@
 
         // Registration form success message
         document.addEventListener('wpcf7mailsent', function (event) {
-            alert('Thanks, its all done!');
+            // alert('Thanks, its all done!');
 
-            const getStartedForm = [78];
+            const getStartedForm = [78,127];
             if (getStartedForm.indexOf(parseInt(event.detail.contactFormId, 10)) !== -1) {
                 const emailEl = event.target.querySelector('.wpcf7-email');
                 window.location.href = `/page#/register?email=${emailEl.value}`;
