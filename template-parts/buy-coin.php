@@ -421,7 +421,7 @@ get_header('buy');
 		</div>
 
 		
-		<section class="getStart-area" style="padding-top:70px; padding-bottom:70px;">
+		<section class="getStart-area" style="padding-top:70px; padding-bottom:70px;background-image: none;">
 			<div class="container custom-container">
 				<div class="buyFooterText" data-translate="Buy_footer_1"></div>
 			</div>
