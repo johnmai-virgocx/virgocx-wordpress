@@ -41,7 +41,7 @@ get_header('buy');
 							<?php endif; ?>
 							<p class="tag-line lineGrey" data-translate="Buy_header1_desc1"></p>
                             <a href="https://virgocx.ca/page#/register?code=BuyVirgo30" class="btn btn-primary buttonPurple" role="button" data-translate="Buy_header1_desc2"></a>
-
+							<p class="tag-line lineGrey" style="color:#6B47ED; font-size:18px; margin-top:10px;" data-translate="Buy_header1_desc3"></p>
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-12">
@@ -58,7 +58,7 @@ get_header('buy');
 						<h2>
 							<span data-translate="Buy_header13_desc1"></span> 
 							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header13_desc2"></span> 
+							<span data-translate="Buy_header13_desc2"></span>
 						</h2>
 						<h2>
 							<span data-translate="Buy_header13_desc3" style="color: #6B47ED;"></span> 
@@ -93,21 +93,49 @@ get_header('buy');
 							<h3 data-translate="Buy_header11"></h3>
 							<p>
 								<span data-translate="Buy_header11_desc1" style="color: #6B47ED;"></span>
-								<span data-translate="Buy_header11_desc2"></span>
+								<?php if($args['name']=="Chiliz" || $args['name']=="Gala" || $args['name']=="Kusama") : ?>
+									<span data-translate="Buy_header11_desc2_is"></span>
+								<?php elseif($args['name']=="Smooth Love Potion") : ?>
+									<span data-translate="Buy_header11_desc2_another"></span>
+								<?php else : ?>
+									<span data-translate="Buy_header11_desc2_are"></span>
+								<?php endif; ?>
+
+								<?php if($args['name']=="Ankr") : ?>
+									<span>Choose the payment method that best suits your needs to buy Ankr.</span>
+								<?php else : ?>
+									<span data-translate="Buy_header11_desc3"></span>
+								<?php endif; ?>
 							</p>
 						</div>
 						<div class="step-header" style="padding-top:50px">
 							<h3>
 								<span data-translate="Buy_header12"></span> 
 								<span data-translate="<?= $args['name'] ?>"></span>
+								<?php if($args['name']=="Avalanche" || $args['name']=="Cosmos" || $args['name']=="Polygon" || $args['name']=="Shiba Inu") : ?>
+									<span data-translate="<?= $args['ticker'] ?>"></span>
+								<?php endif; ?>
 							</h3>
 							<p >
-								<?php if($args['name']=="ApeCoin") : ?>
+								<?php if($args['name']=="Polygon") : ?>
+									<span>Buy Polygon directly - </span>
+								<?php endif; ?>
+								<?php if($args['name']=="ApeCoin" || $args['name']=="Gala" || $args['name']=="Storj" || $args['name']=="dYdX") : ?>
 									<span data-translate="Buy_header12_desc1_purchase"></span>
 								<?php else : ?>
 									<span data-translate="Buy_header12_desc1_buy"></span>
 								<?php endif; ?>
-								<span data-translate="<?= $args['name'] ?>"></span>
+								<?php if($args['name']=="Decentraland") : ?>
+									<span></span>
+								<?php else : ?>
+									<span data-translate="<?= $args['name'] ?>"></span>
+								<?php endif; ?>
+
+								<?php if($args['name']=="Audius"||$args['name']=="Avalanche"||$args['name']=="Axie Infinity"||$args['name']=="Cosmos"||$args['name']=="Decentraland"||$args['name']=="Dogelon Mars"||$args['name']=="Polygon") : ?>
+									<span data-translate="<?= $args['ticker'] ?>"></span>
+								<?php elseif($args['name']=="Shiba Inu") : ?>
+									<span>coin</span>
+								<?php endif; ?>
 								<span data-translate="Buy_header12_desc2"></span>
 								<span data-translate="Buy_header12_desc3" style="color: #6B47ED;"></span>
 								<span data-translate="Buy_header12_desc4"></span>
@@ -129,6 +157,9 @@ get_header('buy');
 						<h2>
 							<span data-translate="Buy_header14_desc1"></span> 
 							<span data-translate="<?= $args['name'] ?>"></span>
+							<?php if($args['name']=="Shiba Inu") : ?>
+								<span>SHIB</span>
+							<?php endif; ?>
 							<span data-translate="Buy_header14_desc2"></span> 
 						</h2>
 						<h2>
@@ -150,8 +181,22 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #6950D0;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon1.png" />
 								<p>
-									<span data-translate="Buy_header16_desc1"></span>
-									<span data-translate="<?= $args['name'] ?>"></span>
+									<?php if($args['name']=="Avalanche") : ?>
+										<span>Buy Avalanche AVAX and sell Avalanche AVAX</span>
+									<?php elseif($args['name']=="Axie Infinity") : ?>
+										<span>Buy Axie Infinity coins and sell Axie Infinity AXS</span>
+									<?php elseif($args['name']=="Cosmos") : ?>
+										<span>Buy and sell Cosmos ATOM</span>
+									<?php elseif($args['name']=="Decentraland") : ?>
+										<span>Buy and sell MANA</span>
+									<?php elseif($args['name']=="Polygon") : ?>
+										<span>Buy and sell Polygon MATIC</span>
+									<?php elseif($args['name']=="Shiba Inu") : ?>
+										<span>Buy and sell Shiba Inu SHIB</span>
+									<?php else : ?>
+										<span data-translate="Buy_header16_desc1"></span>
+										<span data-translate="<?= $args['name'] ?>"></span>
+									<?php endif; ?>
 									<span data-translate="Buy_header16_desc2"></span>
 								</p>
 							</div>
@@ -161,10 +206,15 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #E7A645;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon2.png" />
 								<p>
-									<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
+									<?php if($args['name']=="Bitcoin"||$args['name']=="Bitcoin_Cash"||$args['name']=="Aave"||$args['name']=="Chainlink"
+									||$args['name']=="Curve"||$args['name']=="Dai"||$args['name']=="Dogecoin"||$args['name']=="EOS"
+									||$args['name']=="Litecoin"||$args['name']=="PAX_Gold"||$args['name']=="Stellar"||$args['name']=="Synthetix"
+									||$args['name']=="Uniswap"||$args['name']=="USD_Coin") : ?>
 										<span data-translate="Buy_header17_desc1_USD"></span>
-									<?php elseif($args['name']=="Amp" || $args['name']== "Mirror Protocol") : ?>
+									<?php elseif($args['name']=="Amp" || $args['name']== "Mirror Protocol" || $args['name']== "Quant" || $args['name']== "Ethereum Classic") : ?>
 										<span data-translate="Buy_header17_desc1_fiatCurrency"></span>
+									<?php elseif($args['name']=="Audius") : ?>
+										<span data-translate="Buy_header17_desc1_fiatMoeny"></span>
 									<?php else : ?>
 										<span data-translate="Buy_header17_desc1_fiatCurrencies"></span>
 									<?php endif; ?>
@@ -178,13 +228,30 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #306CBE;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon3.png" />
 								<p>
-									<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
+									<?php if($args['name']=="Bitcoin"||$args['name']=="Bitcoin_Cash"||$args['name']=="Aave"||$args['name']=="Chainlink"
+									||$args['name']=="Curve"||$args['name']=="Dai"||$args['name']=="Dogecoin"||$args['name']=="EOS"
+									||$args['name']=="Litecoin"||$args['name']=="PAX_Gold"||$args['name']=="Stellar"||$args['name']=="Synthetix"
+									||$args['name']=="Uniswap"||$args['name']=="USD_Coin") : ?>
 										<span data-translate="Buy_header18_desc1_noCharge"></span>
+									<?php elseif($args['name']=="Ocean Protocol"||$args['name']=="Smooth Love Potion"||$args['name']=="dYdX") : ?>
+										<span data-translate="Buy_header18_desc1_lessCharge"></span>
 									<?php else : ?>
 										<span data-translate="Buy_header18_desc1_charge"></span>
 									<?php endif; ?>
-									<span data-translate="<?= $args['name'] ?>"></span>
-									<span data-translate="Buy_header18_desc2"></span>
+
+									<?php if($args['name']=="Avalanche") : ?>
+										<span>You will buy and sell Avalanche AVAX</span>
+									<?php elseif($args['name']=="Axie Infinity") : ?>
+										<span>You will buy Axie Infinity and sell Axie Infinity</span>
+									<?php elseif($args['name']=="Cosmos") : ?>
+										<span>You will buy and sell Cosmos ATOM</span>
+									<?php elseif($args['name']=="Shiba Inu") : ?>
+										<span>You will buy and sell Shiba Inu SHIB coin</span>
+									<?php else : ?>
+										<span data-translate="Buy_header18_desc2"></span>
+										<span data-translate="<?= $args['name'] ?>"></span>
+									<?php endif; ?>
+									<span data-translate="Buy_header18_desc3"></span>
 								</p>
 							</div>
 						</div>
@@ -195,7 +262,16 @@ get_header('buy');
 								<p>
 									<span data-translate="Buy_header19_desc1"></span>
 									<span data-translate="<?= $args['name'] ?>"></span>
-									<span data-translate="Buy_header19_desc2"></span>
+									<?php if($args['name']=="Avalanche ") : ?>
+										<span>AVAX</span>
+									<?php elseif($args['name']=="Shiba Inu") : ?>
+										<span>coin</span>
+									<?php endif; ?>
+									<?php if($args['name']=="Amp" || $args['name']=="Crypterium" || $args['name']=="Fantom" || $args['name']=="Gala" || $args['name']=="Kusama" || $args['name']=="Loopring" || $args['name']=="Maker" || $args['name']== "Quant" || $args['name']== "SushiSwap" || $args['name']== "Terra" || $args['name']== "The Graph") : ?>
+										<span data-translate="Buy_header19_desc2_a"></span>
+									<?php else : ?>
+										<span data-translate="Buy_header19_desc2_noA"></span>
+									<?php endif; ?>
 								</p>
 							</div>
 						</div>
@@ -208,10 +284,15 @@ get_header('buy');
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon5.png" />
 								<p data-translate="Buy_header20_desc1" style="margin-bottom:0px;padding-bottom:0px"></p>
 								<p>
-									<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
+									<?php if($args['name']=="Bitcoin"||$args['name']=="Bitcoin_Cash"||$args['name']=="Aave"||$args['name']=="Chainlink"
+									||$args['name']=="Curve"||$args['name']=="Dai"||$args['name']=="Dogecoin"||$args['name']=="EOS"
+									||$args['name']=="Litecoin"||$args['name']=="PAX_Gold"||$args['name']=="Stellar"||$args['name']=="Synthetix"
+									||$args['name']=="Uniswap"||$args['name']=="USD_Coin") : ?>
 										<span data-translate="Buy_header20_desc2_usd"></span>
+									<?php elseif($args['name']=="API3") : ?>
+										<span data-translate="Buy_header20_desc2_money"></span>
 									<?php else : ?>
-										<span data-translate="Buy_header20_desc2_fiat"></span>
+										<span data-translate="Buy_header20_desc2_asset"></span>
 									<?php endif; ?>
 								</p>
 							</div>
@@ -221,8 +302,23 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #E59994;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon6.png" />
 								<p>
-									<span data-translate="Buy_header21_desc1"></span>
-									<span data-translate="<?= $args['name'] ?>"></span>
+									<?php if($args['name']=="dYdX") : ?>
+										<span data-translate="Buy_header21_desc1_dYdX"></span>
+									<?php else : ?>
+										<span data-translate="Buy_header21_desc1_normal"></span>
+									<?php endif; ?>
+									<?php if($args['name']=="Decentraland" || $args['name']=="Polygon") : ?>
+										<span></span>
+									<?php else : ?>
+										<span data-translate="<?= $args['name'] ?>"></span>
+									<?php endif; ?>
+									<?php if($args['name']=="Axie Infinity"||$args['name']=="Cosmos"||$args['name']=="Decentraland") : ?>
+										<span data-translate="<?= $args['ticker'] ?>"></span>
+									<?php elseif($args['name']=="Polygon") : ?>
+										<span>and purchase MATIC in Canada within minutes through a Canadian cryptocurrency trading platform.</span>
+									<?php elseif($args['name']=="Shiba Inu") : ?>
+										<span>coin</span>
+									<?php endif; ?>
 									<span data-translate="Buy_header21_desc2"></span>
 								</p>
 							</div>
@@ -258,6 +354,9 @@ get_header('buy');
 							<span data-translate="Buy_header24"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
 							<span data-translate="Buy_header24_1"></span>
+							<?php if($args['name']=="Axie Infinity") : ?>
+								<span>(AXS)</span>
+							<?php endif; ?>
 							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
 					</div>
@@ -270,7 +369,10 @@ get_header('buy');
 				<div class="row" style="margin-top:90px; margin-bottom:50px;">
 					<div class="col-lg-12 col-md-12" >
 						<h2>
-							<?php if($args['name']=="Bitcoin" || $args['name']=="Aave") : ?>
+							<?php if($args['name']=="Bitcoin"||$args['name']=="Bitcoin_Cash"||$args['name']=="Aave"||$args['name']=="Chainlink"
+							||$args['name']=="Curve"||$args['name']=="Dai"||$args['name']=="Dogecoin"||$args['name']=="EOS"
+							||$args['name']=="Litecoin"||$args['name']=="PAX_Gold"||$args['name']=="Stellar"||$args['name']=="Synthetix"
+							||$args['name']=="Uniswap"||$args['name']=="USD_Coin") : ?>
 								<span data-translate="Buy_header25_purchase"></span>
 							<?php else : ?>
 								<span data-translate="Buy_header25_buy"></span>
@@ -284,18 +386,33 @@ get_header('buy');
 							<span data-translate="Buy_header26_1" class="recommendBth"></span>
 						</div>
 						<h3>
-							<?php if($args['name']=="Hedera" || $args['name']=="Mirror Protocol") : ?>
+							<?php if($args['name']=="Hedera" || $args['name']=="Mirror Protocol" || $args['name']=="Chiliz" || $args['name']=="Fantom" || $args['name']=="Kusama" || $args['name']=="Ocean Protocol" || $args['name']== "SushiSwap") : ?>
 								<span data-translate="Buy_header26_platforms"></span>
 							<?php else : ?>
 								<span data-translate="Buy_header26_platform"></span>
 							<?php endif; ?>
 						</h3>
 						<p>
-							<span data-translate="Buy_header26_desc1"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
+							<?php if($args['name']=="Axie Infinity") : ?>
+								<span>If you’re new to the crypto world, the most convenient way for buying Axie Infinity and selling Axie Infinity</span>
+							<?php else : ?>
+								<span data-translate="Buy_header26_desc1"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+							<?php endif; ?>
+							<?php if($args['name']=="Kusama") : ?>
+								<span>(KSM)</span>
+							<?php elseif($args['name']=="Loopring") : ?>
+								<span>(LRC)</span>
+							<?php elseif($args['name']=="Terra") : ?>
+								<span>(LUNA)</span>
+							<?php elseif($args['name']=="Polygon") : ?>
+								<span>MATIC</span>
+							<?php elseif($args['name']=="Ethereum Classic") : ?>
+								<span>ETC</span>
+							<?php endif; ?>
 							<span data-translate="Buy_header26_desc2"></span>
 							<?php if($args['name']=="Tezos") : ?>
-								<span data-translate="Buy_header26_Tezos"></span>
+								<span>You can use multiple exchanges or buy and sell on the same exchange.</span>
 							<?php endif; ?>
 						</p>
 					</div>
@@ -307,8 +424,34 @@ get_header('buy');
 						<div>
 							<h4 data-translate="Buy_header27"></h4>
 							<p>
-								<span data-translate="Buy_header27_desc1"></span>
-								<span data-translate="<?= $args['name'] ?>"></span>
+								<?php if($args['name']=="Hedera" || $args['name']=="Chiliz" || $args['name']=="Kusama" || $args['name']=="Axie Infinity") : ?>
+									<span data-translate="Buy_header27_desc1_buy"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header27_desc1_sell"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+								<?php elseif($args['name']=="Compound") : ?>
+									<span data-translate="Buy_header27_desc1_purchase"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+									<span data-translate="Buy_header27_desc1_sell"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+								<?php elseif($args['name']=="Fantom") : ?>
+									<span>Fast onboarding, buy FTM and sell FTM</span>
+								<?php elseif($args['name']=="Loopring") : ?>
+									<span>Fast onboarding, buy LRC and sell LRC</span>
+								<?php elseif($args['name']=="Maker") : ?>
+									<span>Fast onboarding, buy MKR and sell MKR</span>
+								<?php elseif($args['name']=="SushiSwap") : ?>
+									<span>Fast onboarding, buy SUSHI and sell SUSHI</span>
+								<?php elseif($args['name']=="Terra") : ?>
+									<span>Fast onboarding, buy LUNA and sell LUNA</span>
+								<?php elseif($args['name']=="Polygon") : ?>
+									<span>Fast onboarding, buy and sell Polygon MATIC</span>
+								<?php elseif($args['name']=="Shiba Inu") : ?>
+									<span>Fast onboarding, buy and sell Shiba Inu coin</span>
+								<?php else : ?>
+									<span data-translate="Buy_header27_desc1_buySell"></span>
+									<span data-translate="<?= $args['name'] ?>"></span>
+								<?php endif; ?>
 								<span data-translate="Buy_header27_desc2"></span>
 							</p>
 						</div>
@@ -346,14 +489,26 @@ get_header('buy');
 							<p data-translate="Buy_header41_desc1" style="margin-bottom:50px;"></p>
 							<h3 data-translate="Buy_header42"></h3>
 							<p data-translate="Buy_header42_desc1" style="margin-bottom:90px;"></p>
+						<?php elseif($args['name']=="Crypterium" || $args['name']=="Loopring" || $args['name']=="Ethereum Classic") : ?>
+							<h3 data-translate="Buy_header31"></h3>
+							<p data-translate="Buy_header31_desc1_card" style="margin-bottom:90px;"></p>
 						<?php else : ?>
 							<h3 data-translate="Buy_header31"></h3>
-							<p data-translate="Buy_header31_desc1" style="margin-bottom:90px;"></p>
+							<p data-translate="Buy_header31_desc1_cards" style="margin-bottom:90px;"></p>
 						<?php endif; ?>
 						<h2>
 							<span data-translate="Buy_header32"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header32_1"></span>
+							<?php if($args['name']=="Bitcoin"||$args['name']=="Bitcoin_Cash"||$args['name']=="Aave"||$args['name']=="Chainlink"
+							||$args['name']=="Curve"||$args['name']=="Dai"||$args['name']=="Dogecoin"||$args['name']=="EOS"
+							||$args['name']=="Litecoin"||$args['name']=="PAX_Gold"||$args['name']=="Stellar"||$args['name']=="Synthetix"
+							||$args['name']=="Uniswap"||$args['name']=="USD_Coin") : ?>
+								<span>(</span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span>Usage)?</span>
+							<?php else : ?>
+								<span data-translate="Buy_header32_1"></span>
+							<?php endif; ?>
 							<div style="background-color:#D4CCF7; height: 18px; margin-top:-20px;"></div>
 						</h2>
 					</div>
@@ -372,12 +527,42 @@ get_header('buy');
 					<div class="col-lg-12 col-md-12" >
 						<h3 data-translate="Buy_header35"></h3>
 						<p>
-							<span data-translate="Buy_header35_desc1"></span>
+							<?php if($args['name']=="Compound") : ?>
+								<span>You can either trade Compound or purchase COMP</span>
+							<?php elseif($args['name']=="Filecoin") : ?>
+								<span>You can either trade Filecoin or buy FIL</span>
+							<?php elseif($args['name']=="Loopring") : ?>
+								<span>You can either trade LRC or buy LRC</span>
+							<?php elseif($args['name']=="OMG Network") : ?>
+								<span>You can either trade OMG Network or purchase OMG Network</span>
+							<?php elseif($args['name']=="Avalanche") : ?>
+								<span>You can either trade Avalanche or purchase Avalanche</span>
+							<?php elseif($args['name']=="Axie Infinity") : ?>
+								<span>You can either trade Axie Infinity or purchase Axie Infinity AXS</span>
+							<?php elseif($args['name']=="Cosmos") : ?>
+								<span>You can either trade Cosmos or purchase Cosmos</span>
+							<?php elseif($args['name']=="Decentraland") : ?>
+								<span>You can either trade Decentraland or buy MANA</span>
+							<?php elseif($args['name']=="Dogelon Mars") : ?>
+								<span>You can either trade Dogelon Mars or purchase Dogelon Mars</span>
+							<?php elseif($args['name']=="Polygon") : ?>
+								<span>You can either trade Polygon MATIC or buy Polygon MATIC</span>
+							<?php elseif($args['name']=="Shiba Inu") : ?>
+								<span>You can either trade Shiba Inu SHIB or purchase Shiba Inu coin</span>
+							<?php else : ?>
+								<span data-translate="Buy_header35_desc1"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="Buy_header35_desc2"></span>
+								<span data-translate="<?= $args['name'] ?>"></span>
+							<?php endif; ?>
+
+							<?php if($args['name']=="API3") : ?>
+								<span data-translate="Buy_header35_desc3_exchangeWallet"></span>
+							<?php else : ?>
+								<span data-translate="Buy_header35_desc3_exchange"></span>
+							<?php endif; ?>
 							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header35_desc2"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header35_desc3"></span>
-							<span data-translate="<?= $args['name'] ?>"></span>
+							
 							<?php if($args['name']=="Alchemy Pay") : ?>
 								<span data-translate="Buy_header35_desc4_alchemy"></span>
 							<?php else : ?>
@@ -406,7 +591,17 @@ get_header('buy');
 						<p>
 							<span data-translate="Buy_header38_desc1"></span>
 							<span data-translate="<?= $args['name'] ?>"></span>
-							<span data-translate="Buy_header38_desc2"></span>
+							<?php if($args['name']=="dYdX") : ?>
+								<span data-translate="Buy_header38_desc2_dYdX"></span>
+							<?php elseif($args['name']=="Polygon") : ?>
+								<span> MATIC </span>
+								<span data-translate="Buy_header38_desc2_normal"></span>
+							<?php elseif($args['name']=="Shiba Inu") : ?>
+								<span> SHIB </span>
+								<span data-translate="Buy_header38_desc2_normal"></span>
+							<?php else : ?>
+								<span data-translate="Buy_header38_desc2_normal"></span>
+							<?php endif; ?>
 						</p>
 					</div>
 				</div>
