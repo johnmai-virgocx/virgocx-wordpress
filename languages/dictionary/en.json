@@ -485,7 +485,7 @@
 	"Buy_header12_desc4": "and ",
 	"Buy_header12_desc5": "competitive pricing. ",
 	"Buy_header13_desc1": "How to Buy ",
-	"Buy_header13_desc2": "in Canada with",
+	"Buy_header13_desc2": "with",
 	"Buy_header13_desc3": "3 Simple Steps",
 	"Buy_header13_desc4": "!",
 	"Buy_header14_desc1": "Why Buy ",
@@ -524,8 +524,7 @@
 	"Buy_header21_desc2": "within minutes.",
 	"Buy_header22": "Large Variety of Coins Available",
 	"Buy_header22_desc1": "VirgoCX offers one of the largest selections of cryptos in Canada and we are constantly adding more to meet growing demands. We offer large and popular coins like Bitcoin, Ethereum, Dogecoin, Cardano, Solana, as well as popular Metaverse, NFT & Web3 coins. Fully enjoy the convenience and availability of trading cryptocurrencies with VirgoCX.",
-	"Buy_footer_1": "Please note Buy Pages Sign-up Bonus will be applied to your account by the last business day of the second and fourth week of each month. VirgoCX will pay you when you sign up and pass verification status for a VirgoCX account and make the first fiat deposit of 100 CAD or more. This offer is only applicable to new VirgoCX clients, being individuals who have not previously registered or created a trade account with VirgoCX. In order to validate this offer, you must click through from the relevant link containing the unique tracking code allowing VirgoCX to identify you. You may only have one (1) VirgoCX trade account. Deposits that are smaller than $100 CAD will not be considered for eligibility of the bonus. Deposits that are split across more than one time will not be considered for eligibility of the bonus. VirgoCX reserves the right to amend, withdraw or restrict this promotion at any time without notice. VirgoCX is the sole arbiter of these rules and any other issue arising under this promotion. If gaming of the system is found, VirgoCX reserves the right to remove all promotions and take any other action it deems appropriate including, but not limited to, closing the account. This offer is only valid for customers in Canada that otherwise meet our eligibility requirements. There is a limit of one promo code/ referral code per sign up. Buy Pages Sign-up Bonus cannot be combined with other offers, discounts or rewards. Our standard terms https://virgocx.ca/termsOofService.html relating to your use of VirgoCX is not affected in any way by this offer. ",
-
+	
 	"Buy_header23": "Learn About ",
 	"Buy_header24": "What is",
 	"Buy_header24_1": "?",
@@ -571,7 +570,7 @@
 	"Buy_header35_desc3_exchangeWallet": "and hold (or 'hodl', which stands for 'hold on for dear life'). You can choose to store your crypto assets on your trusted cryptocurrency exchange wallet/platform or use your",
 	"Buy_header35_desc4_normal": "wallet. Unlike a traditional wallet, a cryptocurrency wallet doesn't store your assets. Instead, the wallet stores your private keys used to access your cryptocurrencies on the blockchain. Therefore, it is extremely important to keep you private key safe!",
 	"Buy_header35_desc4_alchemy": "wallet. Unlike a traditional wallet, a cryptocurrency wallet doesn't store your assets. Instead, the wallet stores your private keys used to access your cryptocurrencies on the blockchain. You will have a public and private address to receive and send cryptos. Therefore, it is extremely important to keep you private key safe!",
-	"Buy_header35_desc5": "There are two types of wallets: Hot wallets and cold wallets.  No matter where you store your private keys, you should NEVER share them.",
+	"Buy_header35_desc5": "There are two types of wallets: Hot wallets and cold wallets.",
 	"Buy_header36": "Hot Wallet",
 	"Buy_header36_desc1": "A hot wallet is connected to the internet. It is usually a software wallet such as a web wallet or mobile wallet. It is convenient and makes your crypto easily accessible, however, it is also more vulnerable to hacking.",
 	"Buy_header37": "Cold Wallet",
@@ -582,6 +581,8 @@
 	"Buy_header38_desc2_dYdX": "through a peer-to-peer system. So you don't have to go through currency conversion. You can use your cryptocurrency wallet to send and receive supported cryptocurrencies. These transactions eliminate the need for middlemen such as banks or other financial institutions, therefore leading to faster processing time and lower transaction fees.",
 	"Buy_header39": "Make a Crypto donation",
 	"Buy_header39_desc1": "There are a variety of charities that accept crypto donations. For example, VirgoCX is supporting SickKids Foundation by processing crypto donations into cash donations.",
+	"Buy_header40_desc1": "Please note Buy Pages Sign-up Bonus will be applied to your account by the last business day of the second and fourth week of each month. VirgoCX will pay you when you sign up and pass verification status for a VirgoCX account and make the first fiat deposit of 100 CAD or more. This offer is only applicable to new VirgoCX clients, being individuals who have not previously registered or created a trade account with VirgoCX. In order to validate this offer, you must click through from the relevant link containing the unique tracking code allowing VirgoCX to identify you. You may only have one (1) VirgoCX trade account. Deposits that are smaller than $100 CAD will not be considered for eligibility of the bonus. Deposits that are split across more than one time will not be considered for eligibility of the bonus. VirgoCX reserves the right to amend, withdraw or restrict this promotion at any time without notice. VirgoCX is the sole arbiter of these rules and any other issue arising under this promotion. If gaming of the system is found, VirgoCX reserves the right to remove all promotions and take any other action it deems appropriate including, but not limited to, closing the account. This offer is only valid for customers in Canada that otherwise meet our eligibility requirements. There is a limit of one promo code/referral code per sign up. Buy Pages Sign-up Bonus cannot be combined with other offers, discounts or rewards. Our standard terms ",
+	"Buy_header40_desc2": "relating to your use of VirgoCX is not affected in any way by this offer. ",
 
 	"Sell_header1_1": "How to Sell ",
 	"Sell_header1_2": " in Canada",

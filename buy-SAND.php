@@ -370,7 +370,13 @@ get_header('buy');
 		
 		<section class="getStart-area" style="padding-top:70px; padding-bottom:70px;background-image: none;">
 			<div class="container custom-container">
-				<div class="buyFooterText" data-translate="Buy_footer_1"></div>
+				<div class="buyFooterText">
+					<span data-translate="Buy_header40_desc1"></span>
+					<a href="https://virgocx.ca/termsOofService.html" style="color: #6B47ED; text-decoration:underline;">
+						https://virgocx.ca/termsOofService.html
+					</a> 
+					<span data-translate="Buy_header40_desc2"></span>
+				</div>
 			</div>
 		</section>
 	</div>
