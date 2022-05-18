@@ -41,7 +41,7 @@ get_header('buy');
 							<?php endif; ?>
 							<p class="tag-line lineGrey" data-translate="Buy_header1_desc1"></p>
                             <a href="https://virgocx.ca/page#/register?code=BuyVirgo30" class="btn btn-primary buttonPurple" role="button" data-translate="Buy_header1_desc2"></a>
-							<p class="tag-line lineGrey" style="color:#6B47ED; font-size:18px; margin-top:10px;" data-translate="Buy_header1_desc3"></p>
+							<p class="tag-line lineGrey" style="color:#6B47ED; font-size:14px; margin-top:-10px;" data-translate="Buy_header1_desc3"></p>
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-12">
