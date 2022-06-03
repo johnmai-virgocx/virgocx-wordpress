@@ -598,7 +598,7 @@ if ($totalNumber === 1): ?>
                         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                             <img src="<?= get_template_directory_uri() ?>/img/canada2x.png" alt="canada flag" width="20"
                                  height="24"/>
-                            <span class="fint">FINTRAC Registered MSB # M19955733</span>
+                            <span class="fint">FINTRAC Registered MSB # M19955733 Restricted Dealer registered with CSA</span>
                         </div>
                         <!-- <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
                         <span>Assets Protected by <img src="/img/ledger.svg"
