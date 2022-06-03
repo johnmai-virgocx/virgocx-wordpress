@@ -140,7 +140,7 @@ get_header('buy');
 							<div class="innerBox" style="background-color: #6950D0;">
 								<img src="<?= get_template_directory_uri() ?>/img/buy_coins/buy_icon1.png" />
 								<p>
-									<span>Buy and sell Ethereum with peace of mind! VirgoCX is a registered MSB (money service business) under FINTRAC. We deploy all efforts to ensure the integrity of our trading platform and take a proactive approach towards compliance with all applicable laws and regulation. </span>
+									<span>Buy and sell Ethereum with peace of mind! VirgoCX is a registered MSB (money service business) under FINTRAC and approved as a Restricted Dealer by the Canadian Securities Administrators (CSA). We deploy all efforts to ensure the integrity of our platform and take a proactive approach towards compliance with all applicable laws and regulation.</span>
 								</p>
 							</div>
 						</div>
