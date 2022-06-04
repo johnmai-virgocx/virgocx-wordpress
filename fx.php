@@ -45,7 +45,7 @@ get_header();
 						<img src="<?= get_template_directory_uri() ?>/img/fx_flags.png" alt="flags" width="100%"/>
 						<div class="fintrac-regulated font-class-6" >
 							<img src="<?= get_template_directory_uri() ?>/img/canada2x.png" alt="canada flag" width="20" />
-							<span data-translate="ForeignExchange_regulated"></span>
+							<span class="fint" data-translate="ForeignExchange_regulated"></span>
 							
 						</div>
 					</div>
@@ -229,6 +229,11 @@ get_header();
 
 	#fx-learn-more .btn {
 		width: 100%;
+	}
+}
+@media screen and (min-width: 576px) {
+	.fint{
+		width:300px;
 	}
 }
 </style>
