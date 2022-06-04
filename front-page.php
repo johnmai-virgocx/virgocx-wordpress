@@ -7,6 +7,12 @@ $announcementLink = get_theme_mod('virgocx_announcement_link');
 ?>
 
 <style type="text/css">
+    
+    @media screen and (min-width: 576px) {
+        .fint{
+            width:300px;
+        }
+    }
     .feature-item img{
         max-width: 120px !important;
         margin-top: -50px !important;
