@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Buy LUNA page
+ * Template Name: Buy LUNA2 page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -8,8 +8,8 @@
  */
 
 $args = [
-	'name' => 'Terra Classic',
-	'ticker' => 'LUNA',
+	'name' => 'Terra',
+	'ticker' => 'LUNA2',
 ];
 get_template_part('template-parts/buy', 'coin', $args);
 ?>

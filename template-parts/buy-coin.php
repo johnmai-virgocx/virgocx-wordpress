@@ -395,6 +395,8 @@ get_header('buy');
 						<p>
 							<?php if($args['name']=="Axie Infinity") : ?>
 								<span>If you’re new to the crypto world, the most convenient way for buying Axie Infinity and selling Axie Infinity</span>
+							<?php elseif($args['name']=="Terra Classic") : ?>
+								<span>If you’re new to the crypto world, the most convenient way for buying Terra Classic (LUNA) and selling Terra Classic</span>
 							<?php else : ?>
 								<span data-translate="Buy_header26_desc1"></span>
 								<span data-translate="<?= $args['name'] ?>"></span>
@@ -442,12 +444,14 @@ get_header('buy');
 									<span>Fast onboarding, buy MKR and sell MKR</span>
 								<?php elseif($args['name']=="SushiSwap") : ?>
 									<span>Fast onboarding, buy SUSHI and sell SUSHI</span>
-								<?php elseif($args['name']=="Terra") : ?>
-									<span>Fast onboarding, buy LUNA and sell LUNA</span>
 								<?php elseif($args['name']=="Polygon") : ?>
 									<span>Fast onboarding, buy and sell Polygon MATIC</span>
 								<?php elseif($args['name']=="Shiba Inu") : ?>
 									<span>Fast onboarding, buy and sell Shiba Inu coin</span>
+								<?php elseif($args['name']=="Terra") : ?>
+									<span>Fast onboarding, buy LUNA and sell LUNA</span>
+								<?php elseif($args['name']=="Terra Classic") : ?>
+									<span>Fast onboarding, buy LUNA and sell LUNA</span>
 								<?php else : ?>
 									<span data-translate="Buy_header27_desc1_buySell"></span>
 									<span data-translate="<?= $args['name'] ?>"></span>
