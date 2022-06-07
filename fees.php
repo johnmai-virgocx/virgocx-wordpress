@@ -143,6 +143,11 @@ get_header();
             <div class="custom-container">
                 <div id="fees-tables">
                 </div><!-- end of custom container -->
+                <p class="foot-note">
+                    <span data-translate="Fees_note_first"></span>
+                    <br/>
+                    <span data-translate="Fees_note_second"></span>
+                </p>
 
                 <p class="foot-note">
                     <sup>1</sup>
