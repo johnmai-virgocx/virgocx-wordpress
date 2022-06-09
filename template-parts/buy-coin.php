@@ -41,7 +41,11 @@ get_header('buy');
 							<?php endif; ?>
 							<p class="tag-line lineGrey" data-translate="Buy_header1_desc1"></p>
                             <a href="https://virgocx.ca/page#/register?code=BuyVirgo30" class="btn btn-primary buttonPurple" role="button" data-translate="Buy_header1_desc2"></a>
-							<p class="tag-line lineGrey" style="color:#6B47ED; font-size:14px; margin-top:-10px;" data-translate="Buy_header1_desc3"></p>
+							<?php if($args['name']=="Celo") : ?>
+								<p class="tag-line lineGrey" style="color:#6B47ED; font-size:14px; margin-top:-10px;" data-translate="Buy_header1_desc4"></p>
+							<?php else : ?>
+								<p class="tag-line lineGrey" style="color:#6B47ED; font-size:14px; margin-top:-10px;" data-translate="Buy_header1_desc3"></p>
+							<?php endif; ?>
 						</div>
 					</div>
 					<div class="col-lg-5 col-md-12">
@@ -193,6 +197,8 @@ get_header('buy');
 										<span>Buy and sell Polygon MATIC</span>
 									<?php elseif($args['name']=="Shiba Inu") : ?>
 										<span>Buy and sell Shiba Inu SHIB</span>
+									<?php elseif($args['name']=="Bancor") : ?>
+										<span>Buy or sell Bancor</span>
 									<?php else : ?>
 										<span data-translate="Buy_header16_desc1"></span>
 										<span data-translate="<?= $args['name'] ?>"></span>
