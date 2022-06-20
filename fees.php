@@ -676,7 +676,7 @@ get_header();
                                     processingTime2 = '(typically within 45 minutes)';
                                 }
                             } else if (entry.transferWay === 'Bill Payment') {
-                                    processingTime2 = 'Fees_billPaymentTime';
+                                    processingTime2 = 'billPaymentTime';
                             }
 
                             acc += `
