@@ -630,8 +630,8 @@ get_header('buy');
 			<div class="container custom-container">
 				<div class="buyFooterText">
 					<span data-translate="Buy_header40_desc1"></span>
-					<a href="https://virgocx.ca/termsOofService.html" style="color: #6B47ED; text-decoration:underline;">
-						https://virgocx.ca/termsOofService.html
+					<a href="https://virgocx.ca/public_front/termsOofService.html" style="color: #6B47ED; text-decoration:underline;">
+						https://virgocx.ca/public_front/termsOofService.html
 					</a> 
 					<span data-translate="Buy_header40_desc2"></span>
 				</div>
