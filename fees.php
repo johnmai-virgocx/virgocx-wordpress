@@ -143,11 +143,16 @@ get_header();
             <div class="custom-container">
                 <div id="fees-tables">
                 </div><!-- end of custom container -->
+                <p class="foot-note">
+                    <span data-translate="Fees_note_first"></span>
+                    <br/>
+                    <span data-translate="Fees_note_second"></span>
+                </p>
 
                 <p class="foot-note">
                     <sup>1</sup>
                     <span data-translate="Fees_note1_1"></span>
-                    <a href="https://virgocx.ca/termsOofService.html" data-translate="Fees_note1_2">
+                    <a href="https://virgocx.ca/public_front/termsOofService.html" data-translate="Fees_note1_2">
                     </a>
                     <span data-translate="Fees_note1_3"></span>
                 </p>
@@ -670,6 +675,8 @@ get_header();
                                 } else {
                                     processingTime2 = '(typically within 45 minutes)';
                                 }
+                            } else if (entry.transferWay === 'Bill Payment') {
+                                    processingTime2 = 'billPaymentTime';
                             }
 
                             acc += `

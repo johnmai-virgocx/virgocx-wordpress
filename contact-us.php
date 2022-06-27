@@ -142,7 +142,7 @@ form.normal .form-control input:focus {
 							</div>
 
 							<div class="col-6">
-								45 Sheppard Ave E, #803, Toronto, ON, Canada M2N 5N1
+								4950 Yonge St, Unit 900, Toronto, ON, M2N 6K1
 							</div>
 						</div>
 

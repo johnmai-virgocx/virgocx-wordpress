@@ -8,7 +8,7 @@
  */
 
 $args = [
-	'name' => 'Terra',
+	'name' => 'Terra Classic',
 	'ticker' => 'LUNA',
 ];
 get_template_part('template-parts/sell', 'coin', $args);
