@@ -555,7 +555,7 @@
 	"Buy_header31_desc1_cards": "You can also buy and sell Bitcoin, Ethereum, Bitcoin Cash, Litecoin, and other cryptocurrencies using your debit or credit cards on a cryptocurrency ATM. But it’s subject to high fees and your options are limited to a few select coins. Depending on how much crypto you want to buy, you also need to consider its daily trading limit and per transaction limit.",
 	"Buy_header31_desc1_card": "You can also buy and sell Bitcoin, Ethereum, Bitcoin Cash, Litecoin, and other cryptocurrencies using your debit card or credit card on a cryptocurrency ATM. But it’s subject to high fees and your options are limited to a few select coins. Depending on how much crypto you want to buy, you also need to consider its daily trading limit and per transaction limit.",
 	"Buy_header41": "Buy Bitcoin in Canada Using a Bitcoin ATM",
-	"Buy_header41_desc1": "You can also buy and sell Bitcoin, Ethereum, Bitcoin Cash, Litecoin, and other cryptocurrencies using your debit or credit cards on Bitcoin ATMs (cryptocurrency ATMs.) But it’s subject to high fees and your options are limited to a few select coins. Depending on how much Bitcoin you want to buy, you also need to take into account its daily trading limit and per transaction limit.",
+	"Buy_header41_desc1": "You can also buy and sell Bitcoin, Ethereum, Bitcoin Cash, Litecoin, and other cryptocurrencies using your debit or credit cards on Bitcoin ATMs (cryptocurrency ATMs). But it’s subject to high fees and your options are limited to a few select coins. Depending on how much Bitcoin you want to buy, you also need to take into account its daily trading limit and per transaction limit.",
 	"Buy_header42": "Get Bitcoin by Mining",
 	"Buy_header42_desc1": "Bitcoin Mining is how new more Bitcoin is added into circulation and how Bitcoin network is maintained and updated. Because of the increasing popularity of Bitcoin, the computers used to mine Bitcoin needs to be significantly high-power and its mining process has become more sophisticated. Bitcoin miners will need to buy powerful machines that have significant computing power.",
 	"Buy_header32": "How Can I Use My",
@@ -868,6 +868,8 @@
 	"Bancor":"Bancor",
 	"CELO":"CELO",
 	"Celo":"Celo",
+	"NEAR":"NEAR",
+	"NEAR Protocol":"NEAR Protocol",
 
 	
 	"Bitcoin_intro": "Bitcoin can be defined as a type of digital currency or cryptocurrency. It is the first and biggest cryptocurrency with the largest market capitalization in the crypto space. It was developed based on blockchain technology. The domain Bitcoin.org was registered in August 2008, shortly after which the Bitcoin whitepaper was published online by Satoshi Nakamoto. Satoshi Nakamoto's true identity is still not known. The whitepaper gave us the first glimpse at the concept behind Bitcoin blockchain, a digital currency that could be used for peer-to-peer transactions over the internet. Bitcoin's genesis block had a reward of 50 BTC, and it is widely accepted as the world's first and largest established cryptocurrency. ",
@@ -938,7 +940,7 @@
 	"Optimism_intro":"Optimism, a Layer 2 (L2) Ethereum scaling solution (with its native crypto token ‘OP’), is a public benefit corporation that balances the financial interest of stakeholders with the best interests of the community and society. Optimism has its unique design philosophy that can help projects without specific business models succeed.",
 	"Bancor_intro":"The Bancor Network is a decentralized protocol meant to facilitate the transaction of one cryptocurrency to another. What makes the Bancor Network so interesting is that it is designed to run on both the Ethereum and EOS blockchains, allowing seamless transitions from one or the other. Its derivative coin, the Bancor Network Token (BNT), is used primarily as an intermediary during currency-to-currency transactions, with percentages of the transaction fees being rewarded to the network’s liquidity providers. ",
 	"Celo_intro":"Celo is a blockchain protocol that aims to reduce the barriers of crypto asset adoption by streamlining the user experience. To this end, Celo utilizes mobile phone numbers as public keys, rather than the cryptographic hashes normally used in traditional blockchains.",
-
+	"NEAR Protocol_intro":"NEAR Protocol (NEAR) is a layer-one blockchain that aims to solve the problems of traditional blockchain networks by offering the abilities to decrease transaction time and increase throughput, all while being compatible with other blockchains. Its derivative token, NEAR, is used both for validation via staking as well as for governance.",
 
 	"NFT_header":"NFT",
 	"NFT_Buy": "Buy with VirgoCX",

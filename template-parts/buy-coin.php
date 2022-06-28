@@ -274,9 +274,9 @@ get_header('buy');
 										<span>coin</span>
 									<?php endif; ?>
 									<?php if($args['name']=="Amp" || $args['name']=="Crypterium" || $args['name']=="Fantom" || $args['name']=="Gala" || $args['name']=="Kusama" || $args['name']=="Loopring" || $args['name']=="Maker" || $args['name']== "Quant" || $args['name']== "SushiSwap" || $args['name']== "Terra" || $args['name']== "The Graph") : ?>
-										<span data-translate="Buy_header19_desc2_a"></span>
+										<span data-translate="Buy_header19_desc2_a" style="margin-left:-4px"></span>
 									<?php else : ?>
-										<span data-translate="Buy_header19_desc2_noA"></span>
+										<span data-translate="Buy_header19_desc2_noA" style="margin-left:-4px"></span>
 									<?php endif; ?>
 								</p>
 							</div>
@@ -514,7 +514,7 @@ get_header('buy');
 							||$args['name']=="Litecoin"||$args['name']=="PAX_Gold"||$args['name']=="Stellar"||$args['name']=="Synthetix"
 							||$args['name']=="Uniswap"||$args['name']=="USD_Coin") : ?>
 								<span>(</span>
-								<span data-translate="<?= $args['name'] ?>"></span>
+								<span data-translate="<?= $args['name'] ?>" style="margin-left:-8px"></span>
 								<span>Usage)?</span>
 							<?php else : ?>
 								<span data-translate="Buy_header32_1"></span>
