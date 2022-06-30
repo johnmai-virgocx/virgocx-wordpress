@@ -128,49 +128,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu">
                             <li>
-                                <a class="item" href="/" data-translate="OTC_home">
+                                <a class="item" href="/en-otc-direct/" data-translate="OTC_landing_banner2_tag1">
 
                                 </a>
                             </li>
-                            <li class="dropdown-toggle-otc">
-                                <a class="item" href="/en-otc/" >
-                                    <span data-translate="OTC"></span>
-                                    <img class="arrow-down ml-1"
-                                         src="<?= get_template_directory_uri() ?>/img/Arrow Down.svg"
-                                         alt="images not found">
+                            <li>
+                                <a class="item" href="/en-otc-chatbroker/"  data-translate="Chat Broker">
+                    
                                 </a>
-                                <div class="dropdown-menu dropdown-otc" aria-labelledby="dropdownMenuLink">
-                                    <a href="/en-otc-direct/" class="dropdown-item"
-                                        data-translate="OTC_landing_banner2_tag1"></a>
-                                    <a href="/en-otc-chatbroker/" class="dropdown-item"
-                                        data-translate="OTC_landing_banner2_tag2"></a>
-                                </div>
                             </li>
                             <li>
                                 <a class="item" id="nft" href="/en-otc-nft-brokerage/" data-translate="NFT_header"></a>
                             </li>
                             <li>
-                                <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn"></a>
+                                <a class="item" href="/" data-translate="header_Learn">Virgocx.ca</a>
                             </li>
                             
-                            <li>
+                            <!-- <li>
                                 <a class="item" href="https://virgocx.zendesk.com/hc/en-us"data-translate="header_Support"></a>
-                            </li>
+                            </li> -->
+                                
                         </ul>
+                        <div class="navbar-nav-otc">
+                                <a class="nav-link earn-btn " href="/en-referral" role="button"
+                                data-translate="Earn $200+" ></a>
+                        </div> 
+                        <!-- <div class="navbar-nav-otc nav-item earn-btn-container"> -->
+                            
 
-                        <div class="navbar-nav-otc dropdown-toggle-otc nav-item earn-btn-container">
-                            <a class="nav-link earn-btn dropdown-toggle" href="/en-referral" role="button"
-                               id="dropdownMenuLink"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                               data-translate="Earn $30+">
-
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a href="/en-referral-friend" class="dropdown-item"
-                                   data-translate="Refer a Friend"></a>
-                                <a href="/en-referral-otc" class="dropdown-item" data-translate="OTC Referral "></a>
-                            </div>
-                        </div>
+                            <!-- </a> -->
+                        
 
                         <div class="right-side-btn-otc">
                             <div class="navbar-nav-otc nav-item">

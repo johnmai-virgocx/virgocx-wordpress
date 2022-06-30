@@ -95,7 +95,7 @@
                                             src="<?= get_template_directory_uri() ?>/img/twitter.png"
                                             alt="images not found"/> <span data-translate="footer_col6_Twitter"></span></a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="https://www.reddit.com/r/VirgoCX/"><img
                                             src="<?= get_template_directory_uri() ?>/img/Reddit.png"
                                             alt="images not found"/> <span
@@ -121,7 +121,7 @@
                                             src="<?= get_template_directory_uri() ?>/img/instagram.png"
                                             alt="images not found"/> <span
                                             data-translate="footer_col6_Instagram"></span></a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-12">
                     <div class="fbt-left">
-                        <ul>
+                        <!-- <ul>
                             <li class="app-download">
                                 <a class="ios"
                                    href="https://apps.apple.com/ca/app/virgocx-buy-sell-bitcoin/id1480501048"
@@ -161,7 +161,7 @@
                                     </div>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12">
