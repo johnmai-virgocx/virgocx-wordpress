@@ -51,7 +51,7 @@ get_header('otc');
 					</div>
 
 					<div class="col-lg-5 col-md-12">
-						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/<?= $args['ticker'] ?>.png" alt="flags" width="100%"/>
+						<img src="<?= get_template_directory_uri() ?>/img/buy_coins/coins/otc_coins_background/<?= $args['ticker'] ?>.png" alt="flags" width="100%"/>
 					</div>
 				</div>
 			</div>

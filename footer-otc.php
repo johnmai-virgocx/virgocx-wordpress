@@ -273,6 +273,7 @@
             line-height: 17px;
 
     }
+    
     @media screen and (min-width: 900px) {
         label {
             white-space: nowrap;
@@ -304,6 +305,9 @@
             margin:auto;
             position: static !important;
         }
+        .copyright{
+        text-align:center;
+    }
         
     }
 </style>
