@@ -141,12 +141,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <a class="item" id="nft" href="/en-otc-nft-brokerage/" data-translate="NFT_header"></a>
                             </li>
                             <li>
-                                <a class="item" href="/" data-translate="header_Learn">Virgocx.ca</a>
+                                <a class="item" href="https://learn.virgocx.ca/" data-translate="header_Learn"></a>
                             </li>
                             
-                            <!-- <li>
-                                <a class="item" href="https://virgocx.zendesk.com/hc/en-us"data-translate="header_Support"></a>
-                            </li> -->
+                            <li>
+                                <a class="item" href="/">Virgocx.ca</a>
+                            </li>
                                 
                         </ul>
                         <div class="navbar-nav-otc">
