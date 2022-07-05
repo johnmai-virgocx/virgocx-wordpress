@@ -23,7 +23,23 @@ get_header('buy');
 		-webkit-transition: 0.4s all ease;
 		-moz-transition: 0.4s all ease;
 	}
-	
+	@media screen and (max-width:900px) {
+		#buy-steps h2 {
+			font-size: 32px;
+		}
+		#buy-steps h3 {
+			font-size: 28px;
+		}
+		#why-buy h2 {
+			font-size: 32px;
+		}
+		#learn-about h1 {
+			font-size: 32px;
+		}
+		#learn-about h2 {
+			font-size: 24px;
+		}
+	}
 	
 	
 </style>
