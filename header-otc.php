@@ -76,6 +76,11 @@
     </script>
 
     <?= get_theme_mod('virgocx_html_head_content') ?>
+    <style type="text/css">
+        .earn-btn::after{
+            content:none !important;
+        }
+    </style>
 </head>
 
 <body id="otc-body" <?php body_class(); ?>>
