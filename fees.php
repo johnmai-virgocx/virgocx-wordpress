@@ -148,7 +148,6 @@ get_header();
                     <br/>
                     <span data-translate="Fees_note_second"></span>
                 </p>
-
                 <p class="foot-note">
                     <sup>1</sup>
                     <span data-translate="Fees_note1_1"></span>
@@ -167,6 +166,10 @@ get_header();
                 <p class="foot-note">
                     <sup>3</sup>
                     <span data-translate="Fees_note3"></span>
+                </p>
+                <p class="foot-note" style="color:red">
+                    <sup>4</sup>
+                    <span data-translate="Fees_note4"></span>
                 </p>
             </div>
         </main><!-- #main -->
@@ -698,7 +701,7 @@ get_header();
 					<td>
 	                    <div data-translate="Fees_${processingTime1}">${processingTime1}</div>
 	                    <div style="display:inline" data-translate="Fees_${processingTime2}">${processingTime2}</div>
-                        <sup style="display:inline">1,2</sup>
+                        <sup style="display:inline">1,2</sup><sup style="color:red">${entry.coinId===22?',4':''}</sup>
 					</td>
 				</tr>
 		`;
@@ -781,7 +784,7 @@ get_header();
 
                 //  fetch('https://wordpress.virgocx.org/transferFee/getList')//testvirgocx
                     // fetch('/wordpress/wp-content/themes/virgocx/feesData.json')
-                    fetch('https://virgocx.ca/transferFee/getList')//production virgocx  
+                    fetch('https://virgocx.ca/transferFee/getList')//production virgocx
                         .then(res => res.json())
                         .then(data => handleFees(data));
                 });
