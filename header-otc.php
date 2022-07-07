@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 
                         </ul>
                         <div class="navbar-nav-otc">
-                                <a class="nav-link earn-btn " href="/en-referral" role="button"
+                                <a class="nav-link earn-btn " href="/en-referral-otc" role="button"
                                 data-translate="Earn $200+" ></a>
                         </div> 
                         <!-- <div class="navbar-nav-otc nav-item earn-btn-container"> -->
