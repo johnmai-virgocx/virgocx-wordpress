@@ -25,19 +25,19 @@ get_header('buy');
 	}
 	@media screen and (max-width:900px) {
 		#buy-steps h2 {
-			font-size: 32px;
+			font-size: 32px !important;
 		}
 		#buy-steps h3 {
-			font-size: 28px;
+			font-size: 28px !important;
 		}
 		#why-buy h2 {
-			font-size: 32px;
+			font-size: 32px !important;
 		}
 		#learn-about h1 {
-			font-size: 32px;
+			font-size: 32px !important;
 		}
 		#learn-about h2 {
-			font-size: 24px;
+			font-size: 24px !important;
 		}
 	}
 	
