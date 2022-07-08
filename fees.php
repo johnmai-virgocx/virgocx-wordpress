@@ -167,7 +167,7 @@ get_header();
                     <sup>3</sup>
                     <span data-translate="Fees_note3"></span>
                 </p>
-                <p class="foot-note" style="color:red">
+                <p class="foot-note">
                     <sup>4</sup>
                     <span data-translate="Fees_note4"></span>
                 </p>
@@ -701,7 +701,7 @@ get_header();
 					<td>
 	                    <div data-translate="Fees_${processingTime1}">${processingTime1}</div>
 	                    <div style="display:inline" data-translate="Fees_${processingTime2}">${processingTime2}</div>
-                        <sup style="display:inline">1,2</sup><sup style="color:red">${entry.coinId===22?',4':''}</sup>
+                        <sup style="display:inline">1,2</sup><sup >${entry.coinId===22?',4':''}</sup>
 					</td>
 				</tr>
 		`;
