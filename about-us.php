@@ -33,15 +33,18 @@ get_header();
 	background-color: #f8f7fe;
 }
 
-#aboutus-values,
+#aboutus-values{
+	/* background-image: linear-gradient(left, #E2FAF7, #E2FAF7, 70%, transparent 70%, transparent 100%);
+	background-image: -webkit-linear-gradient(left, #E2FAF7, #E2FAF7, 70%, transparent 70%, transparent 100%); */
+	background-color: #E2FAF7;
+}
 #join-team {
-	background-image: linear-gradient(left, #E2FAF7, #E2FAF7, 70%, transparent 70%, transparent 100%);
-	background-image: -webkit-linear-gradient(left, #E2FAF7, #E2FAF7, 70%, transparent 70%, transparent 100%);
+	background-color: #F7F5FF;
 }
 #aboutus-values .container,
 #join-team .container {
 	padding: 5rem 0;
-	background-color: #E2FAF7;
+	/* background-color: #E2FAF7; */
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -75,9 +78,11 @@ get_header();
 }
 
 #join-team img.photo5 {
-	width: 38%;
-	position: relative;
-	left: 150px;
+	width: 496px;
+    height: 479px;
+    position: absolute;
+    top: -80px;
+    right: -100px;
 }
 
 #join-team img.photo6 {
@@ -213,9 +218,9 @@ Xtra Small Screen - Small Mobile
 				</div>
 
 				<div class="col-lg-7 col-sm-12">
-          <img class="photo5" src="<?= get_template_directory_uri() ?>/img/aboutus/04-about-us-photo5-EFBC0F98-29A8-41E7-AD2D-12E89DB95F36@3x.png" />
-          <img class="photo6" src="<?= get_template_directory_uri() ?>/img/aboutus/04-about-us-photo6-CA663112-202A-4C89-B192-6E50B97779CE@3x.png" />
-					<img class="photo7" src="<?= get_template_directory_uri() ?>/img/aboutus/04-about-us-photo7-5C0A7C0D-A6AC-419F-93F8-01A562405098@3x.png" />
+          <img class="photo5" src="<?= get_template_directory_uri() ?>/img/aboutus/AboutUsNew.png" />
+          <!-- <img class="photo6" src="<?= get_template_directory_uri() ?>/img/aboutus/04-about-us-photo6-CA663112-202A-4C89-B192-6E50B97779CE@3x.png" />
+					<img class="photo7" src="<?= get_template_directory_uri() ?>/img/aboutus/04-about-us-photo7-5C0A7C0D-A6AC-419F-93F8-01A562405098@3x.png" /> -->
 				</div>
 			</div>
 		</div>
