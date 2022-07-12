@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         //											?>
                         <ul class="menu navbar-nav">
                             <li>
-                                <a class="item" href="https://virgocx.ca/page#/market/BTC_CAD"
+                                <a class="item" href="/page#/market/BTC_CAD"
                                    data-translate="header_Market"></a>
                                    <!-- production virgocx -->              
                                    
