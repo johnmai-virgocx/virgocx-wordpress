@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="copyright">
-							<span> <span data-translate="footer_Brand"></span>
+							<span> <span data-translate="footer_Brand_Otc"></span>
 							&nbsp; &nbsp;<img src="<?= get_template_directory_uri() ?>/img/canada2x.png"
                                               alt="canada flag" width="20"/> <span
                                         data-translate="footer_Make_In_Canada"></span></span>
