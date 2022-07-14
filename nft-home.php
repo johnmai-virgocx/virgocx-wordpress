@@ -970,6 +970,11 @@ body{
 
 // $response_data = json_decode(file_get_contents('https://wordpress.virgocx.org/v2/Nft/getList')); //testvirgocx
 $response_data = json_decode(file_get_contents('https://virgocx.ca/v2/Nft/getList')); //production virgocx
+// //get url
+// $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+// $url = $protocol . $_SERVER['HTTP_HOST'] ;
+// // echo '<script>console.log("' . $url . '");</script>';
+// $response_data = json_decode(file_get_contents($url+'/v2/Nft/getList')); //all 
 $array=$response_data->data->nftList;
 $rows=array();
 foreach ($array as $rkey => $array){

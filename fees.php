@@ -784,7 +784,9 @@ get_header();
 
                 //  fetch('https://wordpress.virgocx.org/transferFee/getList')//testvirgocx
                     // fetch('/wordpress/wp-content/themes/virgocx/feesData.json')
-                    fetch('https://virgocx.ca/transferFee/getList')//production virgocx
+                    // fetch('https://virgocx.ca/transferFee/getList')//production virgocx
+                    // var location_origin=window.location.origin;
+                    fetch(window.location.origin+'/transferFee/getList')//all
                         .then(res => res.json())
                         .then(data => handleFees(data));
                 });
