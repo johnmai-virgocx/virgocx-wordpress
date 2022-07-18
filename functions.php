@@ -199,15 +199,12 @@ return ( current_user_can( 'administrator' ) ) ? $content : false;
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
 
-// update 2022-07-19 03:19 patrick roger
 add_filter( 'rest_endpoints', function( $endpoints ){
-    if ( isset( $endpoints['/contact-form-7/v1/contact-forms'] )|| isset( $endpoints['/contact-form-7/v1/contact-forms/(?P<id>\d+)']) ) {
-         return $endpoints;
-    }else{
-		return new WP_Error(
-            'rest_not_logged_in',
-            __('You are not currently logged in.'),
-            array('status' => 401)
-        );
+    if ( isset( $endpoints['/wp/v2/users'] ) ) {
+        unset( $endpoints['/wp/v2/users'] );
     }
+    if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
 });
