@@ -53,7 +53,7 @@
 
     <!-- Smart banner -->
     <meta name="smartbanner:title" content="VirgoCX">
-    <meta name="smartbanner:author" content="VirgCX">
+    <meta name="smartbanner:author" content="VirgoCX">
     <meta name="smartbanner:price" content="FREE">
     <meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
     <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
