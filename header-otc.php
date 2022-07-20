@@ -52,7 +52,7 @@
     <meta name="decription" content=""/>
 
     <!-- Smart banner -->
-    <meta name="smartbanner:title" content="VirgoCX">
+    <!-- <meta name="smartbanner:title" content="VirgoCX">
     <meta name="smartbanner:author" content="VirgoCX">
     <meta name="smartbanner:price" content="FREE">
     <meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
@@ -67,7 +67,7 @@
     <meta name="smartbanner:button-url-google"
           content="https://play.google.com/store/apps/details?id=ca.virgocx.exchange">
     <meta name="smartbanner:enabled-platforms" content="android,ios">
-    <meta name="smartbanner:close-label" content="Close this banner">
+    <meta name="smartbanner:close-label" content="Close this banner"> -->
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="img/fav.png"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
