@@ -510,7 +510,13 @@ if ($totalNumber === 1): ?>
                             <h1 class="h1-style"> <span data-translate="frontpage_description"/></h1>
 
                             <div class="hero-signup get-started-content">
-                                <?= do_shortcode('[contact-form-7 id="78" title="Homepage Get Started" html_class="hero-signup"]') ?>
+                            <div role="form" class="wpcf7" id="wpcf7-f127-o1" lang="en-US" dir="ltr">
+                                <div class="screen-reader-response"> </div>
+                                <form onsubmit="return toRegister()">
+                                    <p><span class="wpcf7-form-control-wrap your-email"><input id='your_email' type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email emailTranslate" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-required="true" aria-invalid="false" placeholder="Email Address"></span>
+                                    <input type="submit" value="Get Started"  class="wpcf7-form-control has-spinner wpcf7-submit"><span class="wpcf7-spinner"></span></p>
+                                </form>    
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -910,6 +916,14 @@ if ($totalNumber === 1): ?>
     }
     if (listArray && listArray.length > 1) {
         forLoop();
+    }
+
+    //get started 跳转
+    function toRegister(){
+        // var pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$";
+        // var email=document.getElementById('your_email').value;
+        window.location.replace(window.location.origin+"/page#/register?email="+document.getElementById('your_email').value);
+        return false;
     }
 </script>
 
